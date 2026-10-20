@@ -1,0 +1,4541 @@
+{
+ "name": "AgroBench",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/AgroBench",
+ "hf_sha": "159209ebd3f1fdbe6a4a1e6887faa8937e6769bc",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-20T20:15:57+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 4342,
+  "strata_counts_full": {
+   "did": 1502,
+   "tm": 404,
+   "cmn": 411,
+   "pid": 544,
+   "wid": 609,
+   "mqa": 303,
+   "dmn": 569
+  }
+ },
+ "strata_keys": [
+  "source"
+ ],
+ "samples": [
+  {
+   "sample_id": "AgroBench-d225ef2aae",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Maize",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-558d45f8c6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Virus",
+    "crop": "Papaya",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4973be1043",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Raspberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-253fefe5e1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 207,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Chinese cabbage",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f0a46ff3e2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 281,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Beet",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-dd86df652b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Rice",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5f9cbd89a3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 385,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Mango",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4cab271585",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Eggplant",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-89dd08769c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Virus",
+    "crop": "Banana",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ff8a25a527",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Apple",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d866342864",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Grape",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-61ff376f40",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 553,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Chickpea",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5bea19f0a5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Phytoplasma",
+    "crop": "Barley",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-99539e1088",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Tobacco",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7acf643b92",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Banana",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-56b2a7bb99",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 644,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Pecan",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6e3da0ea4f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Lettuce",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-569a5020ab",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Bean",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-58bd6ac7d9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 760,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Chickpea",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-23aed0a631",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Chinese cabbage",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9a10a2171d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 900,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Bean",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ef48eeff11",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 937,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Orchid",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-fd47fffd76",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 940,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Papaya",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c65a73e6eb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 996,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Wheat",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-791b34c017",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1025,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Rice",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-90a05f421c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Chilli Pepper",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-399fde00af",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1048,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Virus",
+    "crop": "Barley",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8b2abfbc51",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1086,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-01edea2faf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1094,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Alfalfa",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6dc9f5d9bc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Pepper",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ec413c6a26",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Cocoa",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-19b7353d70",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Cocoa",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cb1ecd72f1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Rice",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c5fd6cdc77",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Fungus",
+    "crop": "Apricot",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8c23af9c92",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1381,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "did",
+    "category": "Bacteria",
+    "crop": "Sorghum",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_did"
+   }
+  },
+  {
+   "sample_id": "AgroBench-688b799f75",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1510,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Karausu",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-480070d856",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1523,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Three Sisters method",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6c60c54709",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Mortar and pestle",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-72480cf9bf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1546,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Sheaf",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a85d810be0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Composting",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-478aec1860",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Cotton gin",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-22317dc930",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Clay Pot Irrigation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ffc2f8ddce",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1569,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Shishi-odoshi",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-00da37589e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1582,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Hugelkultur",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-91e199e305",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Matcha Stone Mill",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-780f388e31",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1624,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Metate",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-633a1cb234",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1626,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Basket press",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-13ecf809f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1627,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Watermill",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-94357701bb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Crop rotation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-eff06766b9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Three Sisters method",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9561e53354",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Tea-picking",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-038a643102",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1662,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Floating Agriculture",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ba3f1bd7fd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1664,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Xinghua Duotian",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f0d269275a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Agroforestry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d64a459b85",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1686,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Threshing machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d4576f3e62",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1699,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Botanical Pest Control",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a338a1e658",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1703,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Level Basin Irrigation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-adf2e2cc63",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1708,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Treadmill",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-644e4882d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1723,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Horse-ploughing",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ba15603fa2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1728,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Grape-treading",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d7bf2aec2d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1733,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Reservoir irrigation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-52df047681",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Rice-fish system",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-0e173a3ed0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Bisse d'Ayent",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cd84e63dac",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1748,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Three Sisters method",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6fc6dc8926",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1771,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Reservoir irrigation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-e29a7f60ec",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1790,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Karausu",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-e0f550b100",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1807,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Flail",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-66bbf9ee8a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1831,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Slash-and-burn",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d499b5f6eb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1853,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Sloping Agricultural Land Technology",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-03c84e71cc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1860,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "tm",
+    "category": "Furrow irrigation",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_tm"
+   }
+  },
+  {
+   "sample_id": "AgroBench-29e0da143d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1908,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Pepper",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-eeb86a55ab",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1941,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "grain",
+    "crop": "Rice",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5e9c74bb78",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "beverage",
+    "crop": "Coffee",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-0f3de3642c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1953,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "spice",
+    "crop": "Black pepper",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-17b13a9aeb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1956,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "grain",
+    "crop": "Wheat",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d7143c0a3f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1957,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Peach",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8bb442ca65",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1980,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Pear",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-350b8d7959",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1986,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Pumpkin",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f274a5822a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1996,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "nut",
+    "crop": "Chestnut",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cf7ed8c7bc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2008,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Gooseberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7471dfa9f3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2014,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Radish",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-de033ce876",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "nut",
+    "crop": "Chestnut",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-dfa546598b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Almond",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-57256f5566",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2058,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Pumpkin",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5ff5969d84",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "medicinal",
+    "crop": "Aloe_Vera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-58a5e90713",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2084,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Mandarin orange",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b7a34a168b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2095,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "herb",
+    "crop": "Mint",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9a1857ec98",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2098,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Sweet potato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-e900775e55",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "herb",
+    "crop": "Parsley",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a17d1225b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-73c414119b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Dragon fruit",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-035d1ddfb4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Grapefruit",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f2f66e9d6a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Pomegranate",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-134f8ba963",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Squash",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-dd8baaf213",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "beverage",
+    "crop": "Tea",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cf91e813e5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "spice",
+    "crop": "Vanilla",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cf411d9e99",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "grain",
+    "crop": "Oats",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-39a62747ad",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Apricot",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-bd9d8955ee",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Mango",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-14aaf117ff",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Onion",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d25a5e592f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2260,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "fruit",
+    "crop": "Grape",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-84eae29951",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Eggplant",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c223b2514f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2287,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "beverage",
+    "crop": "Coffee",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-388487b502",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "vegetable",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-00c279aa73",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "cmn",
+    "category": "herb",
+    "crop": "Lemongrass",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_cmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4cf9ed7d23",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9dc7f58bb9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4efec3bb07",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2393,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-65a282a93f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2420,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9ab7ace553",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2453,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f0625a745a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-fa0329b8d9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2508,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-78e672f4e6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Acari",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-1b3ac12def",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-126b21662f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7b430bbb5d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-de81ca0f93",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2553,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-223ee36ac1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2583,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Orthoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4e916fcb7c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-57f465eec3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2598,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-15728722f9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4f872f0962",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2612,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Diptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9eb5fb0d1e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-3000ae8815",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2618,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6796653b0e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-44c739ac66",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-aabb6bf78a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2657,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-926e5e7be2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2672,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Coleoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-829f60f507",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2680,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-2ea20ff768",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6c25d85a51",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2694,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9c56f717a8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2701,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Coleoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a275de3236",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Coleoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4b1128ebf8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2742,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-00ed759e6a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2760,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Coleoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-1679641845",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8074ac3371",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2793,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a62ac107b8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2827,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Coleoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a6591da53e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2835,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Lepidoptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-bb5386ecbe",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "pid",
+    "category": "Hemiptera",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_pid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f9a578ee77",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2865,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-12b1616596",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2931,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Fabales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-45ab6df733",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2947,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a0ee1ee6da",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2971,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-403d08f098",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2990,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-75b0427912",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3004,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c8c818b793",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3023,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Poales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cec870a72c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3034,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Poales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-06b8c028d5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3068,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-631825ecc3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3089,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Malpighiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8b4d4e5202",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b887759d35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-124425171d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-109dd57833",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-18d51b4c14",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7d281307c2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Geraniales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c3c3f67552",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Brassicales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8e1e90cd12",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-627683cea4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3250,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c9c80456d0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Lamiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-66e6e0c65c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Boraginales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b82c783f2f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8fae712528",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Fabales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5bc32f000e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Solanales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a7fdcdcb18",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3330,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-48abb1e145",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3344,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6f08f5a120",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3347,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-1344179b11",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Geraniales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-eb35cead2e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3372,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-815e15faf6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Poales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-359eb74a9a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3420,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Brassicales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4ee352ebf1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Caryophyllales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-078c8560e2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Ranunculales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-56a8a6e6aa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Asterales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9c7bd84f3b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "wid",
+    "category": "Malpighiales",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_wid"
+   }
+  },
+  {
+   "sample_id": "AgroBench-e0f62c82f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Corn Harvester",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c572473520",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3484,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Cambridge Roller",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-22e3ae43e1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3491,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Sprayer",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-93c450a985",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3495,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Bale Gripper",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-73b8789dc0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3508,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Ridge Maker",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-3bd3752fc0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3510,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Destoner",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-420f09fa79",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Manure Spreader",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-90446181a6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3531,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "PTO",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-46cb5a358d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3534,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Autonomous Seeder",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5b434bf9fe",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3545,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Disc Harrow",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-2f89685e24",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3555,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Fertilizer Spraying Robot",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-accb0fd260",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3574,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Yam Harvester",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-2b3c15ff17",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3585,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Mechanical Tree Shaker",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6a38a326d9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3588,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Cultivator",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-0f5cdf8d25",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3592,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Spading Machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-bd4661c0fa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Weeder Machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-13c2b39b54",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Strip-Till Implement",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-3ce057ad21",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Reversible Plough",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6877c79cfa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Grape Pruning Machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b1ea8918d5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3634,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Fanner",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b840a3f805",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3638,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Potato Harvester",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-9ee8ea5ac9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3645,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Disc Harrow",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4121dc63e0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3648,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Tine Weeder",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-42bc45585f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Beet Harvester",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-152b279947",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3658,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Potato Bed Former",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-44a71922f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "PTO",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-995d190638",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Roll Baler",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8b54e87684",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Seeding Machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b4ea1a5ce3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Transplanter",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-bc81733ba8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3709,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Disc Harrow",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b0304a9116",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Fertilizer Spreader",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-475c2bb062",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3739,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Cultivator",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ff74e33541",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3743,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Combine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b2cd07e734",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3752,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Beet Cleaner Loader",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c032ce2f1d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "mqa",
+    "category": "Packing Machine",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_mqa"
+   }
+  },
+  {
+   "sample_id": "AgroBench-cdd817098e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3782,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Broccoli",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5c5b705e43",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3793,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Bacteria",
+    "crop": "Alfalfa",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6926a0952d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3795,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Lentil",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-164f187869",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3818,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Onion",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7a8df842a4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3831,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Bacteria",
+    "crop": "Potato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-66d14e4d92",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3848,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Grape",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-6ff53c825e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-03841bbb2d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3876,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Onion",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-808effafb8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3887,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Watermelon",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-fc75bba91e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3889,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Guava",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-31f01f75be",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3926,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Broccoli",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d6d88ab662",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3933,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Maize",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7650d7b1a1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3947,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Broccoli",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-b7ab589b52",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Bacteria",
+    "crop": "Banana",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ddcf1da22c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3994,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Cantaloupe",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7ce1ddc827",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4002,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Phytoplasma",
+    "crop": "Blackberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-1a72b60318",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4009,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Blueberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-3995e32662",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4017,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Bacteria",
+    "crop": "Strawberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-0a94bcb927",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Blackberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-e7b3cee43a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4068,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Cantaloupe",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-4766e8e504",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4093,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Grape",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-52eecf3d24",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Maize",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-c203a78504",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Virus",
+    "crop": "Yams",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8bed4566a0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Watermelon",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-f5f7257030",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Watermelon",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-ebcf93ace0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Bacteria",
+    "crop": "Rice",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d56ffea069",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Cantaloupe",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d489211f89",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Eggplant",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-963174ebb1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Arugula",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-8e0263d8bd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Maize",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-7d11430b66",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Blueberry",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-d3deff9310",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-a07bb5bfa8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Cabbage",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-5f04a10359",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Pumpkin",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  },
+  {
+   "sample_id": "AgroBench-55dd96392c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "source": "dmn",
+    "category": "Fungus",
+    "crop": "Tomato",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrobench_dmn"
+   }
+  }
+ ]
+}

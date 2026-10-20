@@ -1,0 +1,3433 @@
+{
+ "name": "MIRAGE",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/MIRAGE",
+ "hf_sha": "ea6245c8cda9b45a27bf9e0a7c82570cb221e6f7",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-20T20:06:10+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 40880,
+  "strata_counts_full": {
+   "MMST_Standard | oeqa | open_ended": 25541,
+   "MMST_Standard | mcqa | open_ended": 175,
+   "MMST_Contextual | oeqa | open_ended": 3863,
+   "MMST_Contextual | mcqa | open_ended": 70,
+   "MMST_Contextual | mcqa | multiple_choice": 1,
+   "MMMT_Direct | oeqa | open_ended": 5605,
+   "MMMT_Direct | oeqa | multiple_choice": 10,
+   "MMMT_Decomp | oeqa | open_ended": 5605,
+   "MMMT_Decomp | oeqa | multiple_choice": 10
+  }
+ },
+ "strata_keys": [
+  "config",
+  "answer_type",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "MIRAGE-0376adf323",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 87,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-211172c0de",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 351,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-01edc8fff9",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 510,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8849e17bc1",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 584,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9039b45691",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 699,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c8a9b64aae",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 921,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-cd2aaa5a37",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 1135,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-7fe1794e24",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 1172,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c5fc245137",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 1385,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-02ed5208d4",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 1607,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6b6671eff3",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 1723,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a7a468b546",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2459,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-601036c20e",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2463,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a2fe5d3eb8",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2476,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-476547b703",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2812,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c5f758949f",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2821,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c8304c3b75",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2956,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-079a9fec45",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 2971,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-5b13f801de",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3222,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0b3896964d",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3257,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0cf7d29c6a",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3285,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e167709d3d",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3328,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-48f394a957",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3456,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e178bc9779",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3527,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a21cb9cc47",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3552,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e7cf370de0",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3615,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ae6fe27e00",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3639,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-3ee524c5ec",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 3659,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-269808f02b",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 4256,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Identification",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-86f4f062e2",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 4731,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-addeb3641e",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 4755,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-3e301ff341",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5075,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-244e5b9cf9",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5357,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-3ca174d8cb",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5608,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-df511444f5",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5717,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-331c03cbcb",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5758,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6fe6802c57",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 5851,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e2b46f7b87",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6059,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Identification",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ef0356e530",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6165,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Identification",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-f5203626dc",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6443,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0806eea19a",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6549,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-691887eb0b",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6708,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0c10e9f1c3",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6734,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-dca6ff152d",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 6744,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-13834e5c80",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7054,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-39bf9d5e96",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7412,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-184006f47d",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7558,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-952dc5fefa",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7638,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d8f1088c5c",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7670,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-420a23c22c",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7872,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-44d1a4c329",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7879,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-f1f00a39e4",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7904,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-11f4ddf61d",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 7947,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9e28ea0c3c",
+   "ref": {
+    "file": "MMST_Standard/test-0000-of-0001.parquet",
+    "row": 8057,
+    "config": "MMST_Standard",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Standard",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Standard",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_standard_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-919acdb0fb",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 24,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-761e399048",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 74,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-308142ce20",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 134,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d2f3bb5dea",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 136,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-2a888e5ab6",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 215,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-65f115bac4",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 415,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9660500993",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 461,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-87988bd67a",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 488,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-dde574ca36",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 490,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-92a11cbed1",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 566,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9a3a602e36",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 569,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-4db9c9cd11",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 601,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-67a123d860",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 805,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b81bfa4657",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 821,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-3e478e4a69",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 989,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-87fbd057f1",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1019,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d71b642a77",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1416,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-7ec132ba24",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1666,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9b49a822f8",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1695,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9c336e18ff",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1736,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8ea54b97fa",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1888,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a7b7690c20",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 1996,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-2c8c56c7d7",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2011,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-30e6b53159",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2041,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-64c6452814",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2128,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ca72ce3ca1",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2136,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b5df8787c3",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2210,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-bce4b94921",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2244,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c431ec44c9",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2293,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9ee09f0847",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2321,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-39df35a895",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2334,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-64a8a3defb",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2408,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-7d0aa400d4",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2418,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-25949fcbcc",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2565,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c83ddc6ecd",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2611,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Weeds/Invasive Plants Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d0541062ab",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2618,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-01f23f8425",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2634,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-daba0403ad",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2690,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ffd8035cf1",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2729,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a2109db0f4",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2792,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-af990f8790",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 2933,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c0256db82b",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3026,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ac1db6cd0a",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3039,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c45efd8ddf",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3123,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-83398e094d",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3165,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-9b680dba0f",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3328,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6df4c0515e",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3398,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ff0bace0a4",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3410,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-81cf43db55",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3462,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b9fd704486",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3476,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-184b63b4d1",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3598,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-91cf09349f",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3669,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-7d63f9a768",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3688,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Disease Management",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d1be8f3ca4",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3714,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Insect and Pest Management",
+    "answer_type": "oeqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e622e10a32",
+   "ref": {
+    "file": "MMST_Contextual/test-0000-of-0001.parquet",
+    "row": 3915,
+    "config": "MMST_Contextual",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMST_Contextual",
+    "category": "Plant Care and Gardening Guidance",
+    "answer_type": "mcqa",
+    "config": "MMST_Contextual",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmst_contextual_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-dd7e2b6e47",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 442,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a1e26d2ba0",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 1290,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-4f7f8acc37",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 1463,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e6961cbae4",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 2582,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-5df2a6cfe7",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 3770,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-70a469a871",
+   "ref": {
+    "file": "MMMT_Direct/train-0000-of-0001.parquet",
+    "row": 3815,
+    "config": "MMMT_Direct",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0c4fe2d392",
+   "ref": {
+    "file": "MMMT_Direct/dev-0000-of-0001.parquet",
+    "row": 161,
+    "config": "MMMT_Direct",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-cf86a7cd91",
+   "ref": {
+    "file": "MMMT_Direct/dev-0000-of-0001.parquet",
+    "row": 244,
+    "config": "MMMT_Direct",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-95365384c4",
+   "ref": {
+    "file": "MMMT_Direct/dev-0000-of-0001.parquet",
+    "row": 346,
+    "config": "MMMT_Direct",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-5179d036da",
+   "ref": {
+    "file": "MMMT_Direct/dev-0000-of-0001.parquet",
+    "row": 476,
+    "config": "MMMT_Direct",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_direct_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-44f4809c8b",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 48,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a2a3995ce3",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 51,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b49eb48c10",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 72,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-7fe4de6ef9",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 136,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a8c8815c81",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 176,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-864c95bb6d",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 182,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d1207c9866",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 189,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-fb6e2a7979",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 306,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-99c2c7cf5c",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 342,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-4657a88054",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 392,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-524a586fb0",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 408,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-bbecb27f08",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 477,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-673b5cc7e1",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 537,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8ab1b61e68",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 604,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8bea21f32c",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 611,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d4181bee0e",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 626,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-f5f8c996fb",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 631,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b62a7018cb",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 661,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-ddb9ff17c2",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 662,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-dc3004f266",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 664,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-fd8e9a3165",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 667,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-035c413a1a",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 701,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6e760e07ee",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 727,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-fdf0c594ef",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 814,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-5f584cfdcc",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 817,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d45cf2c606",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 832,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-877808af77",
+   "ref": {
+    "file": "MMMT_Direct/test-0000-of-0001.parquet",
+    "row": 850,
+    "config": "MMMT_Direct",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Direct",
+    "answer_type": "oeqa",
+    "config": "MMMT_Direct",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_direct_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-856101c9d4",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 442,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b86a954a1b",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 1290,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8bf43ccbbe",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 1463,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-fed1642258",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 2582,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-f3ac0376ca",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 3770,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-43bb0da2a9",
+   "ref": {
+    "file": "MMMT_Decomp/train-0000-of-0001.parquet",
+    "row": 3815,
+    "config": "MMMT_Decomp",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_train"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-31b21b7377",
+   "ref": {
+    "file": "MMMT_Decomp/dev-0000-of-0001.parquet",
+    "row": 161,
+    "config": "MMMT_Decomp",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0929238028",
+   "ref": {
+    "file": "MMMT_Decomp/dev-0000-of-0001.parquet",
+    "row": 244,
+    "config": "MMMT_Decomp",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-c16a58d14b",
+   "ref": {
+    "file": "MMMT_Decomp/dev-0000-of-0001.parquet",
+    "row": 346,
+    "config": "MMMT_Decomp",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b8e20b77e3",
+   "ref": {
+    "file": "MMMT_Decomp/dev-0000-of-0001.parquet",
+    "row": 476,
+    "config": "MMMT_Decomp",
+    "split": "dev"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "multiple_choice",
+    "id_prefix": "mirage_mmmt_decomp_dev"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-3a6f556dcc",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 4,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-759f296ab4",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 79,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a52355f985",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 107,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6cc2bdcdc5",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 142,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-dd1a029075",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 145,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0c58d6a5d8",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 152,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-33d158bd02",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 162,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d3d7420eaf",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 168,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-4fe249ddb4",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 171,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-cf8d06bf8a",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 231,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-a6c83401b9",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 270,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-827e7d123f",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 280,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-e481edded0",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 337,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-80b0c709e3",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 386,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6d2b2ce1b5",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 400,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-f0f64be3be",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 444,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-42f588aec5",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 449,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-6e83635729",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 453,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-bbd7b07910",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 469,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b9c9564905",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 538,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-d6c6e2ad3e",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 546,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b431ef7fcc",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 553,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-b6b640b086",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 568,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-0a8870b3a1",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 628,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-8f0d360bb6",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 781,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-66177154eb",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 814,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  },
+  {
+   "sample_id": "MIRAGE-652dc2b84e",
+   "ref": {
+    "file": "MMMT_Decomp/test-0000-of-0001.parquet",
+    "row": 851,
+    "config": "MMMT_Decomp",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "subset": "MMMT_Decomp",
+    "answer_type": "oeqa",
+    "config": "MMMT_Decomp",
+    "qa_format": "open_ended",
+    "id_prefix": "mirage_mmmt_decomp_test"
+   }
+  }
+ ]
+}

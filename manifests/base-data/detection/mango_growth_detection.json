@@ -1,0 +1,614 @@
+{
+ "name": "mango_growth_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/mango_growth_detection",
+ "hf_sha": "25a94aa0f2cf8759d5c102d8c38dfc292e0301dc",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T19:51:23+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Early-Fruit",
+   "Mature",
+   "Premature",
+   "Ripe"
+  ],
+  "indexed_rows": 2000
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "mango_growth_detection-fffbd5b5aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       141.0,
+       64.0,
+       499.0,
+       488.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-fd6e55facc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       0.0,
+       32.0,
+       274.0,
+       329.0
+      ]
+     },
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       294.0,
+       323.0,
+       201.0,
+       288.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-0e6502a383",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       61.0,
+       189.0,
+       285.0,
+       252.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       269.0,
+       260.0,
+       180.0,
+       149.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-cfddce8ad8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Fruit",
+      "bbox_raw": [
+       168.0,
+       179.0,
+       292.0,
+       214.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-704e32ca30",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       87.0,
+       340.0,
+       93.0,
+       101.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       77.0,
+       248.0,
+       91.0,
+       91.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       149.0,
+       279.0,
+       85.0,
+       85.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       252.0,
+       534.0,
+       53.0,
+       57.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-5a09967cd2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 764,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       298.0,
+       140.0,
+       234.0,
+       208.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-8c960a9f18",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 775,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       61.0,
+       120.0,
+       303.0,
+       299.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-a21348e197",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 904,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       45.0,
+       316.0,
+       300.0,
+       322.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       309.0,
+       0.0,
+       185.0,
+       166.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-875b036939",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 945,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       182.0,
+       188.0,
+       143.5,
+       163.5
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       204.0,
+       377.0,
+       129.0,
+       155.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-da6c92f062",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 994,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Premature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       267.0,
+       354.0,
+       239.5,
+       286.0
+      ]
+     },
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       292.0,
+       26.0,
+       279.0,
+       262.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-888d99aedc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Premature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       319.0,
+       91.0,
+       321.0,
+       297.0
+      ]
+     },
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       7.0,
+       292.0,
+       317.0,
+       321.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-0826bb7879",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Premature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       312.0,
+       225.0,
+       212.0,
+       300.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-e79720d279",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Premature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       149.0,
+       45.0,
+       180.0,
+       190.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-96630d7df9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Premature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Premature",
+      "bbox_raw": [
+       333.0,
+       298.0,
+       138.5,
+       267.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-ba17a534cb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Ripe",
+      "bbox_raw": [
+       131.0,
+       104.0,
+       430.0,
+       387.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-51ff297ad5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1546,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Ripe",
+      "bbox_raw": [
+       194.0,
+       163.0,
+       259.0,
+       290.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-3c4f155e70",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1634,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Ripe",
+      "bbox_raw": [
+       223.0,
+       173.0,
+       291.0,
+       290.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-47048f4559",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1667,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Ripe",
+      "bbox_raw": [
+       223.0,
+       111.0,
+       283.0,
+       330.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_growth_detection-678f2bf1ff",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Ripe",
+      "bbox_raw": [
+       180.0,
+       165.0,
+       288.5,
+       239.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

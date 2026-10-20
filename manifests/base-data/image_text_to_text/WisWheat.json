@@ -1,0 +1,795 @@
+{
+ "name": "WisWheat",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/WisWheat",
+ "hf_sha": "c70e683a133157faa154ab98a989638a28e4cc9e",
+ "sampling_hash": "95f057c20371",
+ "created": "2026-10-20T19:59:11+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 11265,
+  "strata_counts_full": {
+   "instruct_finetune | wiswheat_instruct_finetune | open_ended": 4002,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train | numeric": 2000,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train | numeric": 2958,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train | numeric": 634,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train | open_ended": 985,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test | numeric": 200,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test | numeric": 330,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test | numeric": 46,
+   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test | open_ended": 110
+  }
+ },
+ "strata_keys": [
+  "config",
+  "id_prefix",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "WisWheat-200dac886d",
+   "ref": {
+    "file": "instruct_finetune/train-00003-of-00007.parquet",
+    "row": 408,
+    "config": "instruct_finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "instruct_finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune"
+   }
+  },
+  {
+   "sample_id": "WisWheat-47b86080c6",
+   "ref": {
+    "file": "instruct_finetune/train-00004-of-00007.parquet",
+    "row": 119,
+    "config": "instruct_finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "instruct_finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune"
+   }
+  },
+  {
+   "sample_id": "WisWheat-66dbe4de20",
+   "ref": {
+    "file": "instruct_finetune/train-00004-of-00007.parquet",
+    "row": 372,
+    "config": "instruct_finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "instruct_finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune"
+   }
+  },
+  {
+   "sample_id": "WisWheat-46f09fccd2",
+   "ref": {
+    "file": "instruct_finetune/train-00006-of-00007.parquet",
+    "row": 226,
+    "config": "instruct_finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "instruct_finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7375b427a0",
+   "ref": {
+    "file": "instruct_finetune/train-00006-of-00007.parquet",
+    "row": 292,
+    "config": "instruct_finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "instruct_finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune"
+   }
+  },
+  {
+   "sample_id": "WisWheat-069c9e72ac",
+   "ref": {
+    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "row": 132,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0abfa41ace",
+   "ref": {
+    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "row": 189,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ecae0c0873",
+   "ref": {
+    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "row": 365,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5aa8058f4a",
+   "ref": {
+    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "row": 586,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5f3739dd2a",
+   "ref": {
+    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "row": 878,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-332d581b33",
+   "ref": {
+    "file": "VQA_Quantitative/train-00001-of-00007.parquet",
+    "row": 277,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-dce75ba069",
+   "ref": {
+    "file": "VQA_Quantitative/train-00001-of-00007.parquet",
+    "row": 297,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8461be0fa5",
+   "ref": {
+    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
+    "row": 26,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-efec4d3e05",
+   "ref": {
+    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
+    "row": 487,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5621ddda80",
+   "ref": {
+    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
+    "row": 809,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-369b506c37",
+   "ref": {
+    "file": "VQA_Quantitative/train-00003-of-00007.parquet",
+    "row": 201,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-370cb098a3",
+   "ref": {
+    "file": "VQA_Quantitative/train-00003-of-00007.parquet",
+    "row": 605,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6e263dceb5",
+   "ref": {
+    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
+    "row": 357,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e1be47bfd3",
+   "ref": {
+    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
+    "row": 388,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-dbf3a1ec46",
+   "ref": {
+    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
+    "row": 808,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-978fb1a756",
+   "ref": {
+    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
+    "row": 922,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b77588392c",
+   "ref": {
+    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
+    "row": 368,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5ff5e49cf4",
+   "ref": {
+    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
+    "row": 638,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e00908b8a8",
+   "ref": {
+    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
+    "row": 666,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-77df51a450",
+   "ref": {
+    "file": "VQA_Quantitative/train-00006-of-00007.parquet",
+    "row": 666,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bbbc0ccfa7",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 77,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2daccd448d",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 95,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b0312d3760",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 133,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-09b52e790a",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 134,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d901e376f2",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 176,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-be0c47fab8",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 205,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e88206d530",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 213,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-91fac1aac9",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 289,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b303a8910e",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 292,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-df992de881",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 318,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5a93303cf5",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 319,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d2619b915b",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 361,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e0296a63e0",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 417,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-199a340d9b",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 431,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4133ba5522",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 457,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-366e2ee6af",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 493,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5a53559f5e",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 512,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ea7b1a9066",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 541,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-313be87310",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 564,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-efa9c1d7e2",
+   "ref": {
+    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "row": 631,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "wiswheat",
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+   }
+  }
+ ]
+}

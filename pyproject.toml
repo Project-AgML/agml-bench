@@ -1,0 +1,34 @@
+[project]
+name = "agbench"
+version = "0.1.0"
+description = "Agricultural benchmarks for evaluating agentic systems"
+readme = "README.md"
+authors = [
+    { name = "eranario", email = "ewranario@ucdavis.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.1.0",
+    "huggingface-hub>=2.2.0",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "pillow>=12.3.0",
+    "pyarrow>=26.0.0",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.66.0",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+agbench = "agbench.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

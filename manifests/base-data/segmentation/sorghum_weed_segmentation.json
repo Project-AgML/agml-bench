@@ -1,0 +1,164 @@
+{
+ "name": "sorghum_weed_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/sorghum_weed_segmentation",
+ "hf_sha": "6ac3ffee11eb4e07aad491d6f4305523408b45b8",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-20T20:07:26+00:00",
+ "info": {
+  "layout": "metadata_jsonl",
+  "class_names": [
+   "BroadLeafWeed",
+   "Grass",
+   "Sorghum"
+  ],
+  "mask_classes": {
+   "0": "background",
+   "1": "BroadLeafWeed",
+   "2": "Grass",
+   "3": "Sorghum"
+  },
+  "indexed_rows": 252
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "sorghum_weed_segmentation-9ae289f8e2",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 17,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/TrainSorghumWeed (18).JPG",
+    "mask_path": "masks/TrainSorghumWeed (18).png"
+   },
+   "keys": [
+    "BroadLeafWeed",
+    "Grass",
+    "Sorghum"
+   ],
+   "ann": {
+    "classes_present": [
+     "BroadLeafWeed",
+     "Grass",
+     "Sorghum"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sorghum_weed_segmentation-5600c96316",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 41,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/TrainSorghumWeed (42).JPG",
+    "mask_path": "masks/TrainSorghumWeed (42).png"
+   },
+   "keys": [
+    "BroadLeafWeed",
+    "Grass",
+    "Sorghum"
+   ],
+   "ann": {
+    "classes_present": [
+     "BroadLeafWeed",
+     "Grass",
+     "Sorghum"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sorghum_weed_segmentation-ee7a18fa27",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 167,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/TrainSorghumWeed (168).JPG",
+    "mask_path": "masks/TrainSorghumWeed (168).png"
+   },
+   "keys": [
+    "BroadLeafWeed",
+    "Grass",
+    "Sorghum"
+   ],
+   "ann": {
+    "classes_present": [
+     "BroadLeafWeed",
+     "Grass",
+     "Sorghum"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sorghum_weed_segmentation-3cce4a00b1",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 198,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/TrainSorghumWeed (199).JPG",
+    "mask_path": "masks/TrainSorghumWeed (199).png"
+   },
+   "keys": [
+    "Grass",
+    "Sorghum"
+   ],
+   "ann": {
+    "classes_present": [
+     "Grass",
+     "Sorghum"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sorghum_weed_segmentation-5676c6812a",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 218,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/ValidateSorghumWeed (17).JPG",
+    "mask_path": "masks/ValidateSorghumWeed (17).png"
+   },
+   "keys": [
+    "BroadLeafWeed",
+    "Grass",
+    "Sorghum"
+   ],
+   "ann": {
+    "classes_present": [
+     "BroadLeafWeed",
+     "Grass",
+     "Sorghum"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sorghum_weed_segmentation-d4c86910f7",
+   "ref": {
+    "file": "metadata.jsonl",
+    "row": 236,
+    "config": "default",
+    "split": "train",
+    "image_path": "images/TestSorghumWeed (10).JPG",
+    "mask_path": "masks/TestSorghumWeed (10).png"
+   },
+   "keys": [
+    "BroadLeafWeed"
+   ],
+   "ann": {
+    "classes_present": [
+     "BroadLeafWeed"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}
