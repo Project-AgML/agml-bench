@@ -173,3 +173,8 @@ def view(data_dir: Path = DataDirOpt, port: int = typer.Option(8501, "--port")):
     app_path = REPO_ROOT / "viewer" / "app.py"
     subprocess.run([sys.executable, "-m", "streamlit", "run", str(app_path), "--server.port", str(port),
                     "--", "--data-dir", str(Path(data_dir).resolve())])
+
+
+from agbench.eval.cli import app as eval_app  # noqa: E402
+
+app.add_typer(eval_app, name="eval")

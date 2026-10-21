@@ -53,3 +53,15 @@ overrides:
   sugarbeet_weed_segmentation:
     include: false
     reason: mask column holds file paths but mask files are missing from the HF repo
+  GobhiSet_cauliflower_segmentation:
+    include: false
+    reason: masks are empty (all background)
+  LeLePhid_classification:
+    include: false
+    reason: masks are empty (all background)
+  grapevine_organ_segmentation:
+    include: false
+    reason: masks cover the whole image
+  soybean_harvest_damage_segmentation:
+    include: false
+    reason: mask values are noise / inconsistent between images

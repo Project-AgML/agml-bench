@@ -1,0 +1,55 @@
+# Names for segmentation masks that AgML publishes without class names (value_N / raw colors).
+# Keys: index "1", color "r,g,b", or range "lo-hi". Keys mapped to the same name are merged into one class.
+# Checked by viewing each value over a sample image unless noted.
+
+# Binary masks named from the dataset
+AppleTreeDataset_intertwined_segmentation: {1: apple tree}
+CWF788_weed_segmentation: {255: weed}
+LSID_bean_segmentation: {255: bean plant}
+OccPepSeg_YOLO_occluded_segmentation: {1: pepper}
+OpenEar_Projection_segmentation: {255: maize ear}
+OpenEar_base_segmentation: {255: maize ear}
+UAV_SaSeg_spartina_segmentation: {1: spartina}
+cabbage_instance_segmentation: {1: cabbage}
+chicory_root_segmentation: {65535: root}
+fruitseg30_segmentation: {255: fruit}
+merlot_mildew_segmentation: {1: mildew lesion}
+pine_wilt_segmentation: {50: wilted pine tree}
+spittlebug_segmentation: {255: spittlebug foam}
+strawberry_runner_segmentation: {255: strawberry runner}
+vineyard_grape_segmentation: {1: grape bunch}
+
+# Multi-value masks, checked visually
+PhenoBench_segmentation: {1: sugar beet, 2: weed, 3: sugar beet, 4: weed}   # 3/4 = partial plants at the border
+CoFly-Weed-DB_weed_segmentation: {1: weed, 2: weed, 3: weed}               # weed species merged
+Sesame_Aerial_weed_segmentation: {127: sesame plant, 255: weed}
+barley_disease_segmentation: {1: disease lesion, 2: disease lesion}
+pdsnet_field_plant_disease_segmentation: {1: leaf, 2: disease lesion}
+bean_synthetic_earlygrowth_aerial: {1: bean stem, 2: bean leaf}
+carrot_weeds_germany: {1: carrot, 2: weed}                                  # matches catalog order "carrot, weeds"
+red_grapes_and_leaves_segmentation: {1: leaf, 2: grape bunch}
+white_grapes_and_leaves_segmentation: {1: leaf, 2: grape bunch}
+greenhouse_leafy_segmentation: {"128-255": lettuce plant}                   # low values are edge noise
+DeepRootLab_root_segmentation: {"255,0,0": root}
+carrot_weed_segmentation: {"255,0,0": carrot, "0,0,255": weed}
+onion_weed_segmentation: {"255,0,0": onion, "0,0,255": weed}
+weed_segmentation_france: {"255,255,255": crop plant, "216,67,82": weed, "254,124,18": weed}
+gran_canaria_vegetation_segmentation:   # color key from the dataset card
+  "147,16,239": thermophilic woodland
+  "254,167,255": balancones scrub
+  "6,250,241": cane thicket
+  "250,145,9": cardonal spurge scrub
+  "226,222,223": cropland
+  "6,248,108": broom scrub
+  "1,0,253": laurel forest
+  "249,9,235": nitrophilous scrub
+  "77,88,232": palm grove
+  "176,136,136": grassland
+  "0,150,1": dense pine forest
+  "26,249,3": open pine forest
+
+# Faulty masks are excluded in configs/base_data.yaml (GobhiSet, LeLePhid, grapevine_organ, soybean_harvest_damage).
+# Still skipped:
+#   ws_dino_weed_segmentation                                     crop vs weed values not distinguishable
+#   WE3DS_weed_segmentation, rural_LUCC_segmentation, subalpine_forest_segmentation,
+#   wetveg2mm_riparian_vegetation_classification                   many classes, no names published

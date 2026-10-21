@@ -1,0 +1,263 @@
+# Ag-task bucket per class. Resolution order:
+#   datasets.<name>.class_overrides -> datasets.<name>.task_type -> agricultural_task (catalog) -> name keywords -> other
+# ITT samples use itt rules (per-sample strata field, then dataset default).
+
+buckets: [disease, pest_damage, quality_maturity, species_id, localization, other]
+
+agricultural_task:
+  disease_classification: disease
+  disease_detection: disease
+  disease_segmentation: disease
+  damage_classification: pest_damage
+  forest_damage_detection: pest_damage
+  quality_classification: quality_maturity
+  maturity_classification: quality_maturity
+  maturity_detection: quality_maturity
+  crop_classification: species_id
+  variety_classification: species_id
+  weed_classification: species_id
+  plant_classification: species_id
+  weed_detection: species_id
+  weed_segmentation: species_id
+  crop_and_weed_segmentation: species_id
+  crop_detection: localization
+  crop_segmentation: localization
+  plant_organ_segmentation: localization
+  root_segmentation: other
+  land_use_classification: other
+  land_use_segmentation: other
+  crop_phenotyping: other
+
+# Used when agricultural_task is missing. First match wins.
+name_keywords:
+  - [pest|insect|bug|whitefly|coccinellid|spittlebug|aphid|mite, pest_damage]
+  - [weed, species_id]
+  - [disease|blight|rust, disease]
+  - [ripe|maturity|quality|grade, quality_maturity]
+  - [tree_crown|plant_part|fruit|flower, localization]
+
+# Class names that suggest pest/abiotic damage; `agbench eval check-agtasks` lists hits without an override.
+pest_keywords: insect|\bpests?\b|mite|aphid|beetle|borer|weevil|\bbug|caterpillar|thrip|miner|hopper|jassid|whitefly|mealy|worm|moth|larva|locust|grasshopper|midge|looper|deficien|toxicity|sunburn|herbicide|nematode
+
+itt:
+  AgroBench: {field: source, map: {did: disease, dmn: disease, pid: pest_damage, wid: species_id, cmn: species_id, mqa: other, tm: other}}
+  MIRAGE:
+    field: category
+    contains: {Disease: disease, Pest: pest_damage, Weed: species_id, Identification: species_id}
+    default: other
+  AgroOmni: {field: category, map: {Leaf_diseases: disease, Pest: pest_damage, Fruit: quality_maturity, Tomato: quality_maturity, Wheat: quality_maturity, crop: species_id, Trees: species_id}, default: other}
+  AgroMind: {field: task, map: {PDD: disease}, default: other}
+  AgroCoT: {field: type_id, map: {"10": disease, "3": disease}, default: other}
+  TomaMMU: {field: question_type, map: {CSI: species_id, DC: disease, HDC: disease, PC: disease, SI: disease, SNC: disease}, default: other}
+  PlantMicro: {field: question_type, map: {class: disease, specie: species_id}, default: other}
+  WisWheat: {field: config, map: {Instruct_Finetune: disease}, default: other}
+  PlantExpertVQA: {default: disease}
+  CDDM: {default: disease}
+  LeafNet: {default: disease}
+  Agri-LLaVA: {default: disease}
+  AgriBench: {default: other}
+
+datasets:
+  # Not covered by agtuned-vlm: pest datasets and pest classes found by keyword scan.
+  BAU_insectV2_classification: {task_type: pest_damage}
+  CT_PestNet_crop_pest_classification: {task_type: pest_damage}
+  ct_pestnet_crop_pest_classification_2: {task_type: pest_damage}
+  mango_pest_original_classification: {task_type: pest_damage}
+  crop_pest_disease_classification: {task_type: disease, class_overrides: {"fall armyworm": pest_damage, "green mite": pest_damage, "leaf beetle": pest_damage, "leaf miner": pest_damage, "grasshoper": pest_damage}}
+  grapevine_leaf_disease_portugal: {task_type: disease, class_overrides: {"Erineum Mite": pest_damage}}
+  papaya_leaf_disease_classification_bd: {task_type: disease, class_overrides: {"Mealybug": pest_damage, "Mite Disease": pest_damage}}
+  Plant_leaf_diseases_dataset_classification: {task_type: disease, class_overrides: {"Tomato___Spider_mites Two-spotted_spider_mite": pest_damage}}
+  plant_doc_classification: {task_type: disease, class_overrides: {"Tomato two spotted spider mites leaf": pest_damage}}
+  plant_village_classification: {task_type: disease, class_overrides: {"Tomato___Spider_mites Two-spotted_spider_mite": pest_damage}}
+  YOLOv8_PlantDisease_classification: {task_type: disease, class_overrides: {"Tomato_Spider_mites_Two_spotted_spider_mite": pest_damage}}
+  RoseLeafInsight_disease_classification: {task_type: disease, class_overrides: {"Insect  Hole": pest_damage}}
+  teaLeafBD_disease_classification_classification: {task_type: disease, class_overrides: {"Green mirid bug": pest_damage, "Helopeltis": pest_damage, "Red spider": pest_damage}}
+  Dhan-Shomadhan_rice_leaf_disease_classification: {task_type: disease, class_overrides: {"Leaf Scaled": pest_damage}}  # TODO: confirm "Leaf Scaled" is hispa/scale damage
+  BMSB_stinkbug_detection: {task_type: pest_damage}
+  Cassava_whitefly_detection: {task_type: pest_damage}
+  Wheat_Coccinellid_detection: {task_type: pest_damage}
+  spittlebug_segmentation: {task_type: pest_damage}
+  larch_casebearer_uav_detection: {task_type: pest_damage}
+  chili_leaf_curl_detection: {task_type: disease, class_overrides: {"Mites": pest_damage}}
+  cocoa_pod_disease_gh_image_classification: {task_type: disease, class_overrides: {"Pod Borer": pest_damage}}
+  cocoa_pod_disease_gh_image_classification_2: {task_type: disease, class_overrides: {"Pod Borer": pest_damage}}
+  RoCoLe_disease_detection: {task_type: disease, class_overrides: {"red_spider_mite": pest_damage}}
+  tea_leaf_disease_pest_detection: {task_type: disease, class_overrides: {"Tea Mosquito bug infested leaf": pest_damage}}
+  plant_doc_detection: {task_type: disease, class_overrides: {"Tomato two spotted spider mites leaf": pest_damage}}
+  niwo_tree_crown_detection: {task_type: localization}
+  image_safari_plant_part_segmentation: {task_type: localization}
+  strawberry_avocado_ripeness_detection: {task_type: quality_maturity}
+  gran_canaria_vegetation_segmentation: {task_type: other}
+  subalpine_forest_segmentation: {task_type: other}
+  wetveg2mm_riparian_vegetation_classification: {task_type: other}
+  tropical_forest_classification: {task_type: species_id}
+  wheat_growth_stage_classification: {task_type: quality_maturity}
+  pea_seed_viability_classification: {task_type: quality_maturity}
+  LeafNet_plant_disease_classification: {task_type: disease}
+  rice_leaf_disease_classification_2: {task_type: disease}
+  # From agtuned-vlm src/config/datasets.yaml (task_type + class_overrides).
+  ACHENY_variety_classification: {task_type: species_id}
+  african_plum_grading_classification: {task_type: quality_maturity}
+  AFruitDB_fruit_grade_classification: {task_type: quality_maturity}
+  agarwood_leaf_disease_classification: {task_type: disease, class_overrides: {"Flea Beetles": "pest_damage", "Mealy bugs": "pest_damage", "Scale insect": "pest_damage", "Spiders": "pest_damage"}}
+  AgriVision4_disease_classification: {task_type: disease, class_overrides: {"Carica_Insect_Hole": "pest_damage", "Insect_Damage": "pest_damage", "Iron_Chlorosis_Damage": "pest_damage"}}
+  apple_leaf_disease_classification: {task_type: disease}
+  arabica_coffee_leaf_disease_classification: {task_type: disease, class_overrides: {"Miner": "pest_damage"}}
+  ash_gourd_disease_classification: {task_type: disease, class_overrides: {"Aphid": "pest_damage", "Leaf miner": "pest_damage"}}
+  bacterial_grain_rot_classification: {task_type: disease}
+  banana_grade_variety_classification: {task_type: quality_maturity}
+  banana_guava_quality_classification: {task_type: quality_maturity}
+  banana_leaf_disease_classification: {task_type: disease}
+  banana_leaf_nutrient_classification: {task_type: pest_damage}
+  banana_variety_classification: {task_type: species_id}
+  BananaImageBD_ripeness_classification: {task_type: quality_maturity}
+  BananaImageBD_variety_classification: {task_type: species_id}
+  BananaLSD_leaf_disease_classification: {task_type: disease}
+  Basmati_rice_seed_varitey_classification: {task_type: species_id}
+  bay_leaf_disease_classification: {task_type: disease}
+  BDHerbalPlants_variety_classification: {task_type: species_id}
+  BDMANGO_variety_classification: {task_type: species_id}
+  BDMediLeaves_variety_classification: {task_type: species_id}
+  bean_cowpea_leaf_disease_classification: {task_type: disease}
+  bean_disease_classification_tanzania: {task_type: disease}
+  bean_disease_uganda: {task_type: disease}
+  betel_leaf_disease_classification: {task_type: disease}
+  betel_leaf_disease_classification_2: {task_type: disease}
+  black_gram_disease_classification: {task_type: disease, class_overrides: {"Insect": "pest_damage"}}
+  blackgram_plant_leaf_disease_classification: {task_type: disease}
+  BPLD_leaf_disease_classification: {task_type: disease}
+  BrinjalFruitX_disease_classification: {task_type: disease, class_overrides: {"Shoot and Fruit Borer": "pest_damage"}}
+  bruised_vegetable_classification: {task_type: species_id}
+  carambola_disease_classification: {task_type: disease, class_overrides: {"Insect Hole leaves": "pest_damage"}}
+  cauliflower_leaf_disease_classification: {task_type: disease, class_overrides: {"Insect Hole": "pest_damage"}}
+  centella_asiatica_leaves: {task_type: disease}
+  chitrak_leaf_disease_classification: {task_type: disease}
+  citrus_fruit_leaf_disease_classification: {task_type: disease}
+  citrus_fruit_variety_classification: {task_type: species_id}
+  citrusuat_disease_classification: {task_type: disease, class_overrides: {"Citrus_leafminer": "pest_damage", "Red_scale": "pest_damage", "Red_scale_sequelae": "pest_damage", "Texas_mite": "pest_damage", "Fe": "pest_damage", "Mg": "pest_damage", "Mn": "pest_damage", "N": "pest_damage", "Zn": "pest_damage"}}
+  coconut_tree_disease_classification: {task_type: disease}
+  coffee_bean_quality_classification: {task_type: quality_maturity}
+  COLD_chili_leaf_disease_classification: {task_type: disease, class_overrides: {"mites_and_trips": "pest_damage", "nutritional": "pest_damage"}}
+  COLD_onion_leaf_disease_classification: {task_type: disease}
+  CoLeaf_nutritional_deficiency_classification: {task_type: pest_damage}
+  corn_leaf_pest_classification: {task_type: pest_damage, class_overrides: {"helminthosporium_leaf_blight": "disease"}}
+  corn_maize_leaf_disease: {task_type: disease}
+  cotton_leaf_disease_classification: {task_type: disease}
+  cotton_leaf_disease_classification_bangladesh_2: {task_type: disease, class_overrides: {"Leaf Hopper Jassids": "pest_damage", "Herbicide Growth Damage": "pest_damage"}}
+  crop_weeds_greece: {task_type: species_id}
+  CS-D_tea_leaf_disease_classification: {task_type: disease, class_overrides: {"Red_Spider_Mite": "pest_damage", "Tea_Mosquito_Bug": "pest_damage"}}
+  cucumber_disease_classification: {task_type: disease}
+  custard_apple_disease_classification: {task_type: disease, class_overrides: {"Mealy Bug": "pest_damage"}}
+  date_grade_variety_classification: {task_type: quality_maturity}
+  date_palm_leaf_disease_classification: {task_type: disease, class_overrides: {"Parlatoria Blanchardi": "pest_damage", "Magnesium Deficiency": "pest_damage", "Manganese Deficiency": "pest_damage", "Potassium Deficiency": "pest_damage"}}
+  date_palm_leaf_disease_classification_iraq: {task_type: disease, class_overrides: {"Bug": "pest_damage", "Dubas": "pest_damage", "Honey": "pest_damage"}}
+  DIMPSAR_medicinal_leaf_classification: {task_type: species_id}
+  DIMPSAR_medicinal_plant_classification: {task_type: species_id}
+  dragonfruit_disease_classification: {task_type: disease}
+  dragonfruit_maturity_classification: {task_type: quality_maturity}
+  dragonfruit_quality_classification: {task_type: quality_maturity}
+  durian_disease_classification: {task_type: disease, class_overrides: {"mealybug_infestation": "pest_damage", "thrips_disease": "pest_damage"}}
+  durian_disease_classification_vietnam: {task_type: disease}
+  EfficientMaize_classification: {task_type: quality_maturity}
+  eggplant_disease_classification: {task_type: disease, class_overrides: {"Insect Pest Disease": "pest_damage"}}
+  eggplant_leaf_disease_classification: {task_type: disease, class_overrides: {"Aphids": "pest_damage", "Flea Beetles": "pest_damage"}}
+  fig_leaf_ficus_worm_classification: {task_type: pest_damage}
+  fresh_rotten_fruit_classification: {task_type: species_id}
+  fruit_leaf_variety_classification: {task_type: species_id}
+  FruitVision_quality_classification: {task_type: quality_maturity}
+  grape_leaf_disease_classification: {task_type: disease}
+  grape_variety_classification: {task_type: species_id}
+  grapevine_disease_classification: {task_type: disease}
+  grapevine_esca_classification: {task_type: disease}
+  groundnut_leaf_disease_classification: {task_type: disease}
+  groundnut_leaf_disease_classification_2: {task_type: disease, class_overrides: {"nutrition deficiency": "pest_damage"}}
+  guava_disease_classification: {task_type: disease}
+  guava_disease_classification_bangladesh: {task_type: disease}
+  guava_disease_pakistan: {task_type: disease}
+  guava_maturity_classification: {task_type: quality_maturity}
+  Hibiscus_Tea_disease_classification: {task_type: disease}
+  hog_plum_leaf_disease_classification: {task_type: disease}
+  ICPTC_pistachio_tree_variety_classification: {task_type: species_id}
+  IDDMSLD_spinach_leaf_disease_classification: {task_type: disease, class_overrides: {"Pest-Damage": "pest_damage"}}
+  java_plum_leaf_disease_classification: {task_type: disease}
+  jujube_bruise_classification: {task_type: pest_damage}
+  jute_disease_classification: {task_type: disease, class_overrides: {"Holed": "pest_damage"}}
+  lemon_leaf_disease_classification: {task_type: disease, class_overrides: {"Spider Mites": "pest_damage", "Deficiency Leaf": "pest_damage"}}
+  lemongrass_disease_classification: {task_type: disease}
+  lentil_disease_classification: {task_type: disease}
+  maize_disease_classification: {task_type: disease}
+  maize_tomato_weed_classification: {task_type: species_id}
+  malabar_spinach_disease_classification: {task_type: disease, class_overrides: {"straw_mite": "pest_damage"}}
+  mandarin_leaf_variety_classification: {task_type: species_id}
+  mangifera2012_variety_classification: {task_type: species_id}
+  mango_leaf_disease_classification: {task_type: disease, class_overrides: {"Cutting_Weevil": "pest_damage", "Gall_Midge": "pest_damage"}}
+  MangoClassify-12_variety_classification: {task_type: species_id}
+  MangoLeafBD_disease_classification: {task_type: disease, class_overrides: {"Cutting Weevil": "pest_damage", "Gall Midge": "pest_damage"}}
+  MedLeafX_disease_classification: {task_type: disease}
+  MH_SoyaHealthVision_disease_classification_leaf: {task_type: disease, class_overrides: {"Caterpillar_Semilooper_Pest": "pest_damage"}}
+  MH_SoyaHealthVision_disease_classification_uav: {task_type: disease, class_overrides: {"Semilooper_Pest": "pest_damage"}}
+  MH_Weed16_weed_variety_classification: {task_type: species_id}
+  mint_leaf_classification: {task_type: quality_maturity}
+  money_plant_disease_classification: {task_type: disease, class_overrides: {"Manganese Toxicity": "pest_damage"}}
+  MoringaLeafNet_disease_classification: {task_type: disease}
+  mulberry_leaf_variety_classification: {task_type: species_id}
+  oil_palm_fruit_ripeness_classification: {task_type: species_id}
+  okra_maturity_classification: {task_type: quality_maturity}
+  OkraDiseaseNet_disease_classification: {task_type: disease}
+  orange_leaf_disease_classification: {task_type: disease, class_overrides: {"citrus_mealybugs": "pest_damage", "spiny_whitefly": "pest_damage"}}
+  paddy_disease_classification: {task_type: disease, class_overrides: {"hispa": "pest_damage"}}
+  PaddyVarietyBD_variety_classification: {task_type: species_id}
+  papaya_leaf_disease_classification_bangladesh: {task_type: disease, class_overrides: {"Mealybug": "pest_damage", "Mite Disease": "pest_damage"}}
+  PFSD_Musa_banana_disease_classification: {task_type: disease, class_overrides: {"BANANA APHIDS": "pest_damage", "BANANA FRUIT- SCARRING BEETLE": "pest_damage", "PSEUDOSTEM WEEVIL": "pest_damage", "POTASSIUM DEFICIENCY": "pest_damage"}}
+  PFSD_Musa_banana_variety_classification: {task_type: species_id}
+  plant_leaf_disease_classification: {task_type: disease}
+  plant_seedlings_aarhus: {task_type: species_id}
+  plum_leaf_fruit_disease_classification: {task_type: disease, class_overrides: {"Insect Hole": "pest_damage"}}
+  pomegranate_disease_classification: {task_type: disease, class_overrides: {"Ectomyelois ceratoniae": "pest_damage", "Sunburn": "pest_damage"}}
+  pomegranate_disease_classification_india: {task_type: disease}
+  pomegranate_quality_classification: {task_type: quality_maturity}
+  potato_leaf_blight_classification: {task_type: disease}
+  potato_leaf_disease_classification: {task_type: disease, class_overrides: {"Nematode": "pest_damage", "Pest": "pest_damage"}}
+  PriBel_betel_leaf_disease_classification: {task_type: disease}
+  radish_leaf_disease_classification: {task_type: disease, class_overrides: {"flea beetle": "pest_damage"}}
+  rangeland_weeds_australia: {task_type: species_id}
+  REMP_plant_classification: {task_type: species_id}
+  rice_disease_classification_bangladesh: {task_type: disease, class_overrides: {"Insect": "pest_damage", "Rice Leaffolder": "pest_damage"}}
+  rice_field_weed_classification: {task_type: species_id}
+  rice_grain_variety_classification: {task_type: species_id}
+  rice_leaf_disease_classification: {task_type: disease}
+  rice_seedling_classification: {task_type: quality_maturity}
+  rice_variety_classification_bangladesh: {task_type: species_id}
+  riseholme_strawberry_classification_2021: {task_type: quality_maturity}
+  RoseNet_leaf_disease_classification: {task_type: disease}
+  SapBark_64_variety_classification: {task_type: species_id}
+  sapota_fruit_size_classification: {task_type: quality_maturity}
+  seasveg_classification_bd: {task_type: species_id}
+  SIMPDV1_plant_classification: {task_type: species_id}
+  sorghum_weed_classification: {task_type: species_id}
+  soybean_damage_classification: {task_type: pest_damage}
+  soybean_insect_classification: {task_type: pest_damage}
+  soybean_leaf_disease_classification: {task_type: disease}
+  soybean_leaf_disease_classification_brazil: {task_type: disease, class_overrides: {"Caterpillar": "pest_damage", "Diabrotica speciosa": "pest_damage"}}
+  soybean_variety_classification: {task_type: species_id}
+  soybean_weed_uav_brazil: {task_type: species_id}
+  SoyNet_leaf_health_classification: {task_type: disease}
+  sugarcane_damage_usa: {task_type: pest_damage}
+  sugarcane_leaf_disease_classification: {task_type: disease}
+  sunflower_disease_classification: {task_type: disease}
+  taro_blight_stage_classification: {task_type: disease}
+  tea_leaf_disease_classification: {task_type: disease, class_overrides: {"helopeltis": "pest_damage"}}
+  tea_leaf_disease_classification_bangladesh: {task_type: disease}
+  three_plant_leaf_disease_classification: {task_type: disease, class_overrides: {"Caterpillars_Infestation": "pest_damage"}}
+  TOM2024_disease_classification: {task_type: disease, class_overrides: {"sunburn-d": "pest_damage", "aphids-p": "pest_damage", "caterpillar-p": "pest_damage", "helicoverpa-armigera-p": "pest_damage", "tuta-absoluta-p": "pest_damage", "spodoptera-frugiperda-p": "pest_damage", "spodoptera-frugiperda-a": "pest_damage", "mite-d": "pest_damage", "alternaria-mite-d": "pest_damage", "abiotic-disease-d": "pest_damage"}}
+  tomato_leaf_disease: {task_type: disease, class_overrides: {"Spider Mites Two-spotted Spider Mite": "pest_damage"}}
+  tomato_maturity_classification: {task_type: quality_maturity}
+  tomato_quality_classification: {task_type: quality_maturity}
+  tropical_flower_variety_classification: {task_type: species_id}
+  turmeric_disease_classification: {task_type: disease}
+  turmeric_leaf_disease_classification: {task_type: disease, class_overrides: {"Aphids_Disease": "pest_damage"}}
+  VegNet_cauliflower_disease_classification: {task_type: disease}
+  VegNet_quality_classification: {task_type: quality_maturity}
+  vine_virus_photo_dataset: {task_type: disease}
+  WaterHyacinth_variety_classification: {task_type: species_id}
+  watermelon_disease_classification: {task_type: disease}
