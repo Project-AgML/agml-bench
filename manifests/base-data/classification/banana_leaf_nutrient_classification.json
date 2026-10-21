@@ -1,0 +1,748 @@
+{
+ "name": "banana_leaf_nutrient_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/banana_leaf_nutrient_classification",
+ "hf_sha": "9bb5d43f05de17c5aa51bacefe94cbdd644fcefe",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:16:18+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Boron",
+   "Calcium",
+   "Healthy",
+   "Iron",
+   "Magnesium",
+   "Manganese",
+   "Potassium",
+   "Sulphur",
+   "Zinc"
+  ],
+  "indexed_rows": 5348
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "banana_leaf_nutrient_classification-0acc878a5b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 233,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-b717582217",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 735,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-713bde9a36",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 823,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-9e2ac80e1d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1158,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-5ba07d72fb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1416,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-1397735e72",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1653,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sulphur"
+   ],
+   "ann": {
+    "label": "Sulphur"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-d89f7a5cd6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1869,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sulphur"
+   ],
+   "ann": {
+    "label": "Sulphur"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-178c826211",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2356,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sulphur"
+   ],
+   "ann": {
+    "label": "Sulphur"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-e214955f44",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2437,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sulphur"
+   ],
+   "ann": {
+    "label": "Sulphur"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-5a8192bd0f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2668,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sulphur"
+   ],
+   "ann": {
+    "label": "Sulphur"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-bd437e40fb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2824,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese"
+   ],
+   "ann": {
+    "label": "Manganese"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-90607fac28",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2826,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese"
+   ],
+   "ann": {
+    "label": "Manganese"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-dfca59351b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2833,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese"
+   ],
+   "ann": {
+    "label": "Manganese"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-f39a2fa2cc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2838,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese"
+   ],
+   "ann": {
+    "label": "Manganese"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-bf434cc4a1",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2842,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese"
+   ],
+   "ann": {
+    "label": "Manganese"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-e75217a716",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3075,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium"
+   ],
+   "ann": {
+    "label": "Potassium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-253d8a3266",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3155,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium"
+   ],
+   "ann": {
+    "label": "Potassium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-92c9dd5483",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3158,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium"
+   ],
+   "ann": {
+    "label": "Potassium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-9f63096be0",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3205,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium"
+   ],
+   "ann": {
+    "label": "Potassium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-c9e249a501",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3213,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium"
+   ],
+   "ann": {
+    "label": "Potassium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-1272f72ef9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3307,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium"
+   ],
+   "ann": {
+    "label": "Magnesium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-5da461a4f2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3376,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium"
+   ],
+   "ann": {
+    "label": "Magnesium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-b37cf076fb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3396,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium"
+   ],
+   "ann": {
+    "label": "Magnesium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-5db715067b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3479,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium"
+   ],
+   "ann": {
+    "label": "Magnesium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-d77ca5c472",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3496,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium"
+   ],
+   "ann": {
+    "label": "Magnesium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-a3d9411770",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3528,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron"
+   ],
+   "ann": {
+    "label": "Iron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-cfb1286205",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3584,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron"
+   ],
+   "ann": {
+    "label": "Iron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-ae6837219d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3652,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron"
+   ],
+   "ann": {
+    "label": "Iron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-82c773a43c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3661,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron"
+   ],
+   "ann": {
+    "label": "Iron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-8b4a257254",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3665,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron"
+   ],
+   "ann": {
+    "label": "Iron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-971ebd7756",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3914,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Zinc"
+   ],
+   "ann": {
+    "label": "Zinc"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-ac05e6d621",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3953,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Zinc"
+   ],
+   "ann": {
+    "label": "Zinc"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-e349f118cb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4020,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Zinc"
+   ],
+   "ann": {
+    "label": "Zinc"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-bc27fa5d07",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4148,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Zinc"
+   ],
+   "ann": {
+    "label": "Zinc"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-58d5212c46",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4356,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Zinc"
+   ],
+   "ann": {
+    "label": "Zinc"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-816cd6f234",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4450,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Calcium"
+   ],
+   "ann": {
+    "label": "Calcium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-3faf3d3c32",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4465,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Calcium"
+   ],
+   "ann": {
+    "label": "Calcium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-ca5613126e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4661,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Calcium"
+   ],
+   "ann": {
+    "label": "Calcium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-a60c051b9e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4876,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Calcium"
+   ],
+   "ann": {
+    "label": "Calcium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-beb4452839",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4990,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Calcium"
+   ],
+   "ann": {
+    "label": "Calcium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-a5e22ab569",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5201,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Boron"
+   ],
+   "ann": {
+    "label": "Boron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-7904eddb3f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5263,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Boron"
+   ],
+   "ann": {
+    "label": "Boron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-a634bad4bc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5267,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Boron"
+   ],
+   "ann": {
+    "label": "Boron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-588cfd8242",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5281,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Boron"
+   ],
+   "ann": {
+    "label": "Boron"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "banana_leaf_nutrient_classification-911f88d1c3",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5334,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Boron"
+   ],
+   "ann": {
+    "label": "Boron"
+   },
+   "strata": {}
+  }
+ ]
+}

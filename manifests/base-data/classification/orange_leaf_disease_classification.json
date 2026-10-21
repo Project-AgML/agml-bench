@@ -1,0 +1,910 @@
+{
+ "name": "orange_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/orange_leaf_disease_classification",
+ "hf_sha": "93552c0ecde07e3e29df01e3a547a0e70764a71e",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:16:07+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "citrus_canker",
+   "citrus_greening",
+   "citrus_mealybugs",
+   "die_back",
+   "foliage_damaged",
+   "healthy_leaf",
+   "powdery_mildew",
+   "shot_hole",
+   "spiny_whitefly",
+   "yellow_dragon",
+   "yellow_leaves"
+  ],
+  "indexed_rows": 5813
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "orange_leaf_disease_classification-ef06eac291",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shot_hole"
+   ],
+   "ann": {
+    "label": "shot_hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-15e6a95424",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shot_hole"
+   ],
+   "ann": {
+    "label": "shot_hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-f0dc83f047",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shot_hole"
+   ],
+   "ann": {
+    "label": "shot_hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-19c6573df9",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shot_hole"
+   ],
+   "ann": {
+    "label": "shot_hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-d383450d4f",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 466,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shot_hole"
+   ],
+   "ann": {
+    "label": "shot_hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-d70d8bb5c9",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 572,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "die_back"
+   ],
+   "ann": {
+    "label": "die_back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-c6b332bf3a",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 598,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "die_back"
+   ],
+   "ann": {
+    "label": "die_back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-146cd77801",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 709,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "die_back"
+   ],
+   "ann": {
+    "label": "die_back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-a4ff021a76",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 797,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "die_back"
+   ],
+   "ann": {
+    "label": "die_back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-a2d00b252a",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "die_back"
+   ],
+   "ann": {
+    "label": "die_back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-13e2900d4e",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "powdery_mildew"
+   ],
+   "ann": {
+    "label": "powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-d96f093b58",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "powdery_mildew"
+   ],
+   "ann": {
+    "label": "powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-635d1838ce",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 571,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "powdery_mildew"
+   ],
+   "ann": {
+    "label": "powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-baa0adf460",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 690,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "powdery_mildew"
+   ],
+   "ann": {
+    "label": "powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-dd0976892e",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 762,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "powdery_mildew"
+   ],
+   "ann": {
+    "label": "powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-5e67873d1f",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaves"
+   ],
+   "ann": {
+    "label": "yellow_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-42879a555a",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaves"
+   ],
+   "ann": {
+    "label": "yellow_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-531aa518bb",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaves"
+   ],
+   "ann": {
+    "label": "yellow_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-8ab9cb46b2",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaves"
+   ],
+   "ann": {
+    "label": "yellow_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-76b2ecb791",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaves"
+   ],
+   "ann": {
+    "label": "yellow_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-eda6157f43",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_canker"
+   ],
+   "ann": {
+    "label": "citrus_canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-82b338c71a",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_canker"
+   ],
+   "ann": {
+    "label": "citrus_canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-16460d016e",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 470,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_canker"
+   ],
+   "ann": {
+    "label": "citrus_canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-a1265c54fe",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 668,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_canker"
+   ],
+   "ann": {
+    "label": "citrus_canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-2e81163d8f",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 727,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_canker"
+   ],
+   "ann": {
+    "label": "citrus_canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-56e2f185d1",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 825,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_greening"
+   ],
+   "ann": {
+    "label": "citrus_greening"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-6381ed8d30",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 877,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_greening"
+   ],
+   "ann": {
+    "label": "citrus_greening"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-3fe4290983",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 937,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_greening"
+   ],
+   "ann": {
+    "label": "citrus_greening"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-9f508f2c4c",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 944,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_greening"
+   ],
+   "ann": {
+    "label": "citrus_greening"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-1175ba6cda",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 960,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_greening"
+   ],
+   "ann": {
+    "label": "citrus_greening"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-ac765ff3e1",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_mealybugs"
+   ],
+   "ann": {
+    "label": "citrus_mealybugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-9f59709bb3",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 444,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_mealybugs"
+   ],
+   "ann": {
+    "label": "citrus_mealybugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-13a55aa335",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_mealybugs"
+   ],
+   "ann": {
+    "label": "citrus_mealybugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-7096c1b6a2",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_mealybugs"
+   ],
+   "ann": {
+    "label": "citrus_mealybugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-249e42d791",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 643,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "citrus_mealybugs"
+   ],
+   "ann": {
+    "label": "citrus_mealybugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-0200ee69f8",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 888,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spiny_whitefly"
+   ],
+   "ann": {
+    "label": "spiny_whitefly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-e951579314",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 931,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spiny_whitefly"
+   ],
+   "ann": {
+    "label": "spiny_whitefly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-6a8c98740d",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 946,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spiny_whitefly"
+   ],
+   "ann": {
+    "label": "spiny_whitefly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-3667c8bbd8",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spiny_whitefly"
+   ],
+   "ann": {
+    "label": "spiny_whitefly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-10c4ea5eb4",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spiny_whitefly"
+   ],
+   "ann": {
+    "label": "spiny_whitefly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-3a896f89aa",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 453,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_dragon"
+   ],
+   "ann": {
+    "label": "yellow_dragon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-cedaff56d0",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_dragon"
+   ],
+   "ann": {
+    "label": "yellow_dragon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-1c213ba828",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 580,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_dragon"
+   ],
+   "ann": {
+    "label": "yellow_dragon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-05bff0b2c0",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_dragon"
+   ],
+   "ann": {
+    "label": "yellow_dragon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-1adc5a22f1",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_dragon"
+   ],
+   "ann": {
+    "label": "yellow_dragon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-5217dcfd55",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 839,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy_leaf"
+   ],
+   "ann": {
+    "label": "healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-9c27a1c4cf",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 883,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy_leaf"
+   ],
+   "ann": {
+    "label": "healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-3161b8782f",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 907,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy_leaf"
+   ],
+   "ann": {
+    "label": "healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-9f9575e246",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 964,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy_leaf"
+   ],
+   "ann": {
+    "label": "healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-ab77f5932d",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy_leaf"
+   ],
+   "ann": {
+    "label": "healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-d4af44de8a",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 569,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage_damaged"
+   ],
+   "ann": {
+    "label": "foliage_damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-9a8dae1369",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage_damaged"
+   ],
+   "ann": {
+    "label": "foliage_damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-a9b5fc9e32",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 786,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage_damaged"
+   ],
+   "ann": {
+    "label": "foliage_damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-3db62b2070",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 821,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage_damaged"
+   ],
+   "ann": {
+    "label": "foliage_damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "orange_leaf_disease_classification-0d8f5388e5",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 953,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage_damaged"
+   ],
+   "ann": {
+    "label": "foliage_damaged"
+   },
+   "strata": {}
+  }
+ ]
+}

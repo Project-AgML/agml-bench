@@ -1,0 +1,424 @@
+{
+ "name": "soybean_damage_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/soybean_damage_classification",
+ "hf_sha": "82be57714b1416f096e5ec5e3290538a13ef9fb8",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:52:40+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Broken",
+   "Immature",
+   "Intact",
+   "Skin-damaged",
+   "Spotted"
+  ],
+  "indexed_rows": 5513
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "soybean_damage_classification-6eae712192",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Skin-damaged"
+   ],
+   "ann": {
+    "label": "Skin-damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-207b78e254",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Skin-damaged"
+   ],
+   "ann": {
+    "label": "Skin-damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-2451dae616",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 626,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Skin-damaged"
+   ],
+   "ann": {
+    "label": "Skin-damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-864d021ee1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 628,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Skin-damaged"
+   ],
+   "ann": {
+    "label": "Skin-damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-875b036939",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 945,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Skin-damaged"
+   ],
+   "ann": {
+    "label": "Skin-damaged"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-3c50822d4b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Broken"
+   ],
+   "ann": {
+    "label": "Broken"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-7b1e096180",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1392,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Broken"
+   ],
+   "ann": {
+    "label": "Broken"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-f1b6dfed24",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Broken"
+   ],
+   "ann": {
+    "label": "Broken"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-56731c2eca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1617,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Broken"
+   ],
+   "ann": {
+    "label": "Broken"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-3c752e887b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1904,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Broken"
+   ],
+   "ann": {
+    "label": "Broken"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-36582f6f4c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "label": "Immature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-657993f1b2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2657,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "label": "Immature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-24566bb9a2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2684,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "label": "Immature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-b4e341aad4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2962,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "label": "Immature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-656697c7ac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3079,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "label": "Immature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-3de96b8b57",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3340,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spotted"
+   ],
+   "ann": {
+    "label": "Spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-7fc591e589",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spotted"
+   ],
+   "ann": {
+    "label": "Spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-b6bd5c2107",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spotted"
+   ],
+   "ann": {
+    "label": "Spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-e8b8f1a656",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spotted"
+   ],
+   "ann": {
+    "label": "Spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-0fc4e98576",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4267,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spotted"
+   ],
+   "ann": {
+    "label": "Spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-84a148ccbb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4783,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Intact"
+   ],
+   "ann": {
+    "label": "Intact"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-67c5b4a36f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4887,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Intact"
+   ],
+   "ann": {
+    "label": "Intact"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-f0ced753f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5010,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Intact"
+   ],
+   "ann": {
+    "label": "Intact"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-08c6b4ed2c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Intact"
+   ],
+   "ann": {
+    "label": "Intact"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_damage_classification-5549215f1d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Intact"
+   ],
+   "ann": {
+    "label": "Intact"
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,829 @@
+{
+ "name": "durian_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/durian_disease_classification",
+ "hf_sha": "0a44e8c0e56dfa35e6a672a5d35d6fec0ba047ba",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:56:17+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "anthracnose_disease",
+   "canker_disease",
+   "fruit_rot",
+   "mealybug_infestation",
+   "pink_disease",
+   "sooty_mold",
+   "stem_blight",
+   "stem_cracking_ gummosis",
+   "thrips_disease",
+   "yellow_leaf"
+  ],
+  "indexed_rows": 5451
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "durian_disease_classification-91bb0c906a",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose_disease"
+   ],
+   "ann": {
+    "label": "anthracnose_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-ffaf43730a",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose_disease"
+   ],
+   "ann": {
+    "label": "anthracnose_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-d3e4b8462f",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose_disease"
+   ],
+   "ann": {
+    "label": "anthracnose_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-ac6245e9d9",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose_disease"
+   ],
+   "ann": {
+    "label": "anthracnose_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-a7cfe0522b",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose_disease"
+   ],
+   "ann": {
+    "label": "anthracnose_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-ac067d5dc7",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "canker_disease"
+   ],
+   "ann": {
+    "label": "canker_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-81188af2fa",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "canker_disease"
+   ],
+   "ann": {
+    "label": "canker_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-df2f81dfce",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "canker_disease"
+   ],
+   "ann": {
+    "label": "canker_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-d9e422ba89",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "canker_disease"
+   ],
+   "ann": {
+    "label": "canker_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-70470de9ab",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fruit_rot"
+   ],
+   "ann": {
+    "label": "fruit_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-af095179aa",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 403,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fruit_rot"
+   ],
+   "ann": {
+    "label": "fruit_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-5bbaad1a40",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fruit_rot"
+   ],
+   "ann": {
+    "label": "fruit_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-b617377565",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fruit_rot"
+   ],
+   "ann": {
+    "label": "fruit_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-97094d2e73",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fruit_rot"
+   ],
+   "ann": {
+    "label": "fruit_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-73a6afd27b",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "mealybug_infestation"
+   ],
+   "ann": {
+    "label": "mealybug_infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-3e37da595f",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "mealybug_infestation"
+   ],
+   "ann": {
+    "label": "mealybug_infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-0fd16e9a8e",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "mealybug_infestation"
+   ],
+   "ann": {
+    "label": "mealybug_infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-5a4fb6613c",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "mealybug_infestation"
+   ],
+   "ann": {
+    "label": "mealybug_infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-f42ca5d9e2",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "pink_disease"
+   ],
+   "ann": {
+    "label": "pink_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-1776ad1f51",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "pink_disease"
+   ],
+   "ann": {
+    "label": "pink_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-0dff548549",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "pink_disease"
+   ],
+   "ann": {
+    "label": "pink_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-c3bd99d867",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 474,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sooty_mold"
+   ],
+   "ann": {
+    "label": "sooty_mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-7f82b85ca0",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sooty_mold"
+   ],
+   "ann": {
+    "label": "sooty_mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-39a4f4f2a7",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sooty_mold"
+   ],
+   "ann": {
+    "label": "sooty_mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-f39a91c44d",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sooty_mold"
+   ],
+   "ann": {
+    "label": "sooty_mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-ed98efc066",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 402,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_blight"
+   ],
+   "ann": {
+    "label": "stem_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-1efde05c90",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_blight"
+   ],
+   "ann": {
+    "label": "stem_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-4b834dba06",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_blight"
+   ],
+   "ann": {
+    "label": "stem_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-1cbfdb0943",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_blight"
+   ],
+   "ann": {
+    "label": "stem_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-c0e0939225",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_cracking_ gummosis"
+   ],
+   "ann": {
+    "label": "stem_cracking_ gummosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-96c11b1248",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_cracking_ gummosis"
+   ],
+   "ann": {
+    "label": "stem_cracking_ gummosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-4472536aef",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_cracking_ gummosis"
+   ],
+   "ann": {
+    "label": "stem_cracking_ gummosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-1ad60f7675",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_cracking_ gummosis"
+   ],
+   "ann": {
+    "label": "stem_cracking_ gummosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-e55a420064",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "thrips_disease"
+   ],
+   "ann": {
+    "label": "thrips_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-a8821cd314",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "thrips_disease"
+   ],
+   "ann": {
+    "label": "thrips_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-7f2b6c0af0",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "thrips_disease"
+   ],
+   "ann": {
+    "label": "thrips_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-858be15fa1",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 385,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "thrips_disease"
+   ],
+   "ann": {
+    "label": "thrips_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-6820b53038",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaf"
+   ],
+   "ann": {
+    "label": "yellow_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-5a642d47fa",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaf"
+   ],
+   "ann": {
+    "label": "yellow_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-f05a450812",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaf"
+   ],
+   "ann": {
+    "label": "yellow_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-14660c3029",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "canker_disease"
+   ],
+   "ann": {
+    "label": "canker_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-14951c215c",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "mealybug_infestation"
+   ],
+   "ann": {
+    "label": "mealybug_infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-a377b831d3",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "pink_disease"
+   ],
+   "ann": {
+    "label": "pink_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-1f791afa17",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sooty_mold"
+   ],
+   "ann": {
+    "label": "sooty_mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-2f1f61b8a7",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaf"
+   ],
+   "ann": {
+    "label": "yellow_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-effc574cc8",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "pink_disease"
+   ],
+   "ann": {
+    "label": "pink_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-2bfc699878",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_blight"
+   ],
+   "ann": {
+    "label": "stem_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-b93fcd4a1f",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "stem_cracking_ gummosis"
+   ],
+   "ann": {
+    "label": "stem_cracking_ gummosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-dd97da5196",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "thrips_disease"
+   ],
+   "ann": {
+    "label": "thrips_disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "durian_disease_classification-2bb11a8c8f",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 517,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "yellow_leaf"
+   ],
+   "ann": {
+    "label": "yellow_leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

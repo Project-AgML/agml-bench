@@ -1,0 +1,149 @@
+{
+ "name": "synthetic_cowpea_pod_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/synthetic_cowpea_pod_detection",
+ "hf_sha": "a761b228792644f49a822a10a0c7ddbfc8ea6144",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:16:32+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Pod"
+  ],
+  "indexed_rows": 8640
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "synthetic_cowpea_pod_detection-7fd941a78a",
+   "ref": {
+    "file": "augmented/train-00004-of-00014.parquet",
+    "row": 471,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Pod"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Pod",
+      "bbox_raw": [
+       0.398436,
+       0.42968800000000007,
+       0.075002,
+       0.334374
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_pod_detection-e0e4d672ce",
+   "ref": {
+    "file": "augmented/train-00006-of-00014.parquet",
+    "row": 337,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Pod"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Pod",
+      "bbox_raw": [
+       0.317187,
+       0.9046895,
+       0.126562,
+       0.095311
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_pod_detection-ae51c84f4c",
+   "ref": {
+    "file": "augmented/train-00007-of-00014.parquet",
+    "row": 268,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Pod"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Pod",
+      "bbox_raw": [
+       0.3906255,
+       0.559377,
+       0.028123,
+       0.224998
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_pod_detection-eac309e76b",
+   "ref": {
+    "file": "augmented/train-00010-of-00014.parquet",
+    "row": 397,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Pod"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Pod",
+      "bbox_raw": [
+       0.171873,
+       0.8093745,
+       0.145314,
+       0.073437
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_pod_detection-70773f33d9",
+   "ref": {
+    "file": "augmented/train-00012-of-00014.parquet",
+    "row": 15,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Pod"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Pod",
+      "bbox_raw": [
+       0.4140625,
+       0.3906265,
+       0.081251,
+       0.418749
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

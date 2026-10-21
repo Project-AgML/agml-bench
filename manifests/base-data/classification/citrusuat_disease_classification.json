@@ -1,0 +1,991 @@
+{
+ "name": "citrusuat_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/citrusuat_disease_classification",
+ "hf_sha": "f5160ab714a86b5695d5a14b296d816bdf98f9b8",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:58:08+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Citrus_leafminer",
+   "Fe",
+   "Greasy_spot",
+   "HLB",
+   "Healthy",
+   "Mg",
+   "Mn",
+   "N",
+   "Red_scale",
+   "Red_scale_sequelae",
+   "Texas_mite",
+   "Zn"
+  ],
+  "indexed_rows": 953
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "citrusuat_disease_classification-a2b782a5c8",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus_leafminer"
+   ],
+   "ann": {
+    "label": "Citrus_leafminer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-ee6a40be59",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus_leafminer"
+   ],
+   "ann": {
+    "label": "Citrus_leafminer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-8481b8e0c8",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus_leafminer"
+   ],
+   "ann": {
+    "label": "Citrus_leafminer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-4a8b46da93",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus_leafminer"
+   ],
+   "ann": {
+    "label": "Citrus_leafminer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-6ad071cd80",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus_leafminer"
+   ],
+   "ann": {
+    "label": "Citrus_leafminer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-dce29e8ce2",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fe"
+   ],
+   "ann": {
+    "label": "Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-be7bdcdd57",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fe"
+   ],
+   "ann": {
+    "label": "Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-b969918cb3",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fe"
+   ],
+   "ann": {
+    "label": "Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-87d4f302ff",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fe"
+   ],
+   "ann": {
+    "label": "Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-3839a0afd0",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fe"
+   ],
+   "ann": {
+    "label": "Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-2906041e40",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Greasy_spot"
+   ],
+   "ann": {
+    "label": "Greasy_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-a2bd013bf1",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Greasy_spot"
+   ],
+   "ann": {
+    "label": "Greasy_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-50954e4ba0",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Greasy_spot"
+   ],
+   "ann": {
+    "label": "Greasy_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-350c8b312f",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Greasy_spot"
+   ],
+   "ann": {
+    "label": "Greasy_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-09ac792dcd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Greasy_spot"
+   ],
+   "ann": {
+    "label": "Greasy_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-9bbb47e1cc",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HLB"
+   ],
+   "ann": {
+    "label": "HLB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-ff2e1d2af8",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HLB"
+   ],
+   "ann": {
+    "label": "HLB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-66c6d8856c",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HLB"
+   ],
+   "ann": {
+    "label": "HLB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-ab9df53872",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HLB"
+   ],
+   "ann": {
+    "label": "HLB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-33db88c1dd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HLB"
+   ],
+   "ann": {
+    "label": "HLB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-50abc07305",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-b191011d2a",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-4ac9d5b98f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-9209eec1a2",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-8e6aa22ab4",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-a1f08496fd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mg"
+   ],
+   "ann": {
+    "label": "Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-160eddfbc8",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mg"
+   ],
+   "ann": {
+    "label": "Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-4e8be27c46",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mg"
+   ],
+   "ann": {
+    "label": "Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-40173aafe1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mg"
+   ],
+   "ann": {
+    "label": "Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-c854299236",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mg"
+   ],
+   "ann": {
+    "label": "Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-d349d64319",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mn"
+   ],
+   "ann": {
+    "label": "Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-b1066a2276",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mn"
+   ],
+   "ann": {
+    "label": "Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-9f149f472f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mn"
+   ],
+   "ann": {
+    "label": "Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-b115ef49cf",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mn"
+   ],
+   "ann": {
+    "label": "Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-37e4950277",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mn"
+   ],
+   "ann": {
+    "label": "Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-51805ccccb",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "N"
+   ],
+   "ann": {
+    "label": "N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-94aa0e78ba",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "N"
+   ],
+   "ann": {
+    "label": "N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-8550f05014",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "N"
+   ],
+   "ann": {
+    "label": "N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-401c8bde9f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "N"
+   ],
+   "ann": {
+    "label": "N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-8371a53e41",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "N"
+   ],
+   "ann": {
+    "label": "N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-cfc25c97b4",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale"
+   ],
+   "ann": {
+    "label": "Red_scale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-fe6713e586",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale"
+   ],
+   "ann": {
+    "label": "Red_scale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-ded7424ca9",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale"
+   ],
+   "ann": {
+    "label": "Red_scale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-c91352bffd",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 168,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale"
+   ],
+   "ann": {
+    "label": "Red_scale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-410f2dc879",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale"
+   ],
+   "ann": {
+    "label": "Red_scale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-e1491636ff",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale_sequelae"
+   ],
+   "ann": {
+    "label": "Red_scale_sequelae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-fdd484a51d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale_sequelae"
+   ],
+   "ann": {
+    "label": "Red_scale_sequelae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-82ce1f2c70",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale_sequelae"
+   ],
+   "ann": {
+    "label": "Red_scale_sequelae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-2c5f6d186b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale_sequelae"
+   ],
+   "ann": {
+    "label": "Red_scale_sequelae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-effc53a01b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red_scale_sequelae"
+   ],
+   "ann": {
+    "label": "Red_scale_sequelae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-e4acbc6020",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Texas_mite"
+   ],
+   "ann": {
+    "label": "Texas_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-9941455722",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Texas_mite"
+   ],
+   "ann": {
+    "label": "Texas_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-4b768a72a7",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Texas_mite"
+   ],
+   "ann": {
+    "label": "Texas_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-01a83129e3",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Texas_mite"
+   ],
+   "ann": {
+    "label": "Texas_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-b4a58d61bd",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Texas_mite"
+   ],
+   "ann": {
+    "label": "Texas_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-11d8a7018e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Zn"
+   ],
+   "ann": {
+    "label": "Zn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-54c76af04d",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Zn"
+   ],
+   "ann": {
+    "label": "Zn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-75849e9a68",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Zn"
+   ],
+   "ann": {
+    "label": "Zn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-c285cf9120",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Zn"
+   ],
+   "ann": {
+    "label": "Zn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "citrusuat_disease_classification-2e8744c597",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Zn"
+   ],
+   "ann": {
+    "label": "Zn"
+   },
+   "strata": {}
+  }
+ ]
+}

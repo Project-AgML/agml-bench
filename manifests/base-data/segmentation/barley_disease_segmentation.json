@@ -1,0 +1,218 @@
+{
+ "name": "barley_disease_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/barley_disease_segmentation",
+ "hf_sha": "e8461e4eff64cbbc79c0e5176bb6eed556074809",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-20T21:21:43+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2"
+  },
+  "indexed_rows": 3049
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "barley_disease_segmentation-d3b062b1b5",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-0cadc29d0d",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 412,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5836893431",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 207,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-aab24ab306",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-8b7721bf99",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-e1a6e79d30",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-f4192bb522",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-ca97e309be",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-310fea3519",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-6d2c995606",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-75a056cdf9",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

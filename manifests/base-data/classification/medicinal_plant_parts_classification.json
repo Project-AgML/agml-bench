@@ -1,0 +1,667 @@
+{
+ "name": "medicinal_plant_parts_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/medicinal_plant_parts_classification",
+ "hf_sha": "27586cfbc118f577afccd61882b1bceea62ea78f",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:35:25+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "leaf",
+   "seed",
+   "root",
+   "bark",
+   "root_leaf",
+   "leaf_seed",
+   "bark_leaf",
+   "un_identified"
+  ],
+  "indexed_rows": 15100
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "medicinal_plant_parts_classification-83f64683c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "seed"
+   ],
+   "ann": {
+    "label": "seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-b8d673d5cd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "un_identified"
+   ],
+   "ann": {
+    "label": "un_identified"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-c7a78573fd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "un_identified"
+   ],
+   "ann": {
+    "label": "un_identified"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-4f8ca5d888",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "seed"
+   ],
+   "ann": {
+    "label": "seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-e2d7345177",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root_leaf"
+   ],
+   "ann": {
+    "label": "root_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-7a8526dccd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1599,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root"
+   ],
+   "ann": {
+    "label": "root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-70ad8de959",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root"
+   ],
+   "ann": {
+    "label": "root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-3d402dd3bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1811,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf"
+   ],
+   "ann": {
+    "label": "leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-62e3bd99c2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2296,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf_seed"
+   ],
+   "ann": {
+    "label": "leaf_seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-ade4bac52e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2760,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "seed"
+   ],
+   "ann": {
+    "label": "seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-7cc2f1611e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "seed"
+   ],
+   "ann": {
+    "label": "seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-42d2ecdef7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "un_identified"
+   ],
+   "ann": {
+    "label": "un_identified"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-383431a9dd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3952,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark"
+   ],
+   "ann": {
+    "label": "bark"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-f380e1ffbe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark"
+   ],
+   "ann": {
+    "label": "bark"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-415710d74f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root_leaf"
+   ],
+   "ann": {
+    "label": "root_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-bdc725daab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4841,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "un_identified"
+   ],
+   "ann": {
+    "label": "un_identified"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-f9a6345763",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root_leaf"
+   ],
+   "ann": {
+    "label": "root_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-7abbd56a14",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root_leaf"
+   ],
+   "ann": {
+    "label": "root_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-d33ecdc219",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root_leaf"
+   ],
+   "ann": {
+    "label": "root_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-f2f4e86127",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root"
+   ],
+   "ann": {
+    "label": "root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-0078675c79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5746,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark_leaf"
+   ],
+   "ann": {
+    "label": "bark_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-cd6e47a563",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5835,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark_leaf"
+   ],
+   "ann": {
+    "label": "bark_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-a01b51b1f4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5836,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark_leaf"
+   ],
+   "ann": {
+    "label": "bark_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-9b070f2bf7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5857,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark_leaf"
+   ],
+   "ann": {
+    "label": "bark_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-6c75fa724c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5947,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark_leaf"
+   ],
+   "ann": {
+    "label": "bark_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-f94f432f30",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6383,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf_seed"
+   ],
+   "ann": {
+    "label": "leaf_seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-d0941a1abe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf_seed"
+   ],
+   "ann": {
+    "label": "leaf_seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-0fa2c72a4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6588,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf_seed"
+   ],
+   "ann": {
+    "label": "leaf_seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-79380911c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7053,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root"
+   ],
+   "ann": {
+    "label": "root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-6619a3f318",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "seed"
+   ],
+   "ann": {
+    "label": "seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-907b73034c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8345,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf"
+   ],
+   "ann": {
+    "label": "leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-2a5935c05c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf"
+   ],
+   "ann": {
+    "label": "leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-1776deaae4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf"
+   ],
+   "ann": {
+    "label": "leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-1e3df5b2eb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10919,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf"
+   ],
+   "ann": {
+    "label": "leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-6ab9a5df8a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 12637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leaf_seed"
+   ],
+   "ann": {
+    "label": "leaf_seed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-b966826385",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 13850,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "un_identified"
+   ],
+   "ann": {
+    "label": "un_identified"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-5342cb5c4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "root"
+   ],
+   "ann": {
+    "label": "root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-301b531d1e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14504,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark"
+   ],
+   "ann": {
+    "label": "bark"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-abbe32d219",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark"
+   ],
+   "ann": {
+    "label": "bark"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_parts_classification-5f4abdc182",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14656,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bark"
+   ],
+   "ann": {
+    "label": "bark"
+   },
+   "strata": {}
+  }
+ ]
+}

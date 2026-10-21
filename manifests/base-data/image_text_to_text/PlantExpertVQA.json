@@ -1,0 +1,4575 @@
+{
+ "name": "PlantExpertVQA",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/PlantExpertVQA",
+ "hf_sha": "c7b1dbddc59fa7dff2cc4cc55966c6fbf5709ade",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-21T06:12:54+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 765186,
+  "strata_counts_full": {
+   "train | disease | open_ended": 399146,
+   "train | healthy | open_ended": 72397,
+   "train | disease | yes_no": 54939,
+   "train | healthy | yes_no": 2225,
+   "train | senescence | open_ended": 6779,
+   "train | natural_senescence | open_ended": 395,
+   "test | healthy | open_ended": 20563,
+   "test | disease | open_ended": 114072,
+   "test | disease | yes_no": 15577,
+   "test | senescence | open_ended": 1939,
+   "test | healthy | yes_no": 653,
+   "test | natural_senescence | open_ended": 117,
+   "validation | disease | open_ended": 56933,
+   "validation | healthy | open_ended": 10281,
+   "validation | disease | yes_no": 7802,
+   "validation | senescence | open_ended": 965,
+   "validation | healthy | yes_no": 348,
+   "validation | natural_senescence | open_ended": 55
+  }
+ },
+ "strata_keys": [
+  "config",
+  "category",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "PlantExpertVQA-8c1cb5a363",
+   "ref": {
+    "file": "data/train/train-00000-of-00024.parquet",
+    "row": 12302,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b2ae4dfee1",
+   "ref": {
+    "file": "data/train/train-00000-of-00024.parquet",
+    "row": 16450,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f96854b96c",
+   "ref": {
+    "file": "data/train/train-00000-of-00024.parquet",
+    "row": 19823,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-86d03eafa1",
+   "ref": {
+    "file": "data/train/train-00001-of-00024.parquet",
+    "row": 8372,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-14846486fc",
+   "ref": {
+    "file": "data/train/train-00001-of-00024.parquet",
+    "row": 18513,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-57ec8f17a7",
+   "ref": {
+    "file": "data/train/train-00002-of-00024.parquet",
+    "row": 818,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-31c70fe992",
+   "ref": {
+    "file": "data/train/train-00002-of-00024.parquet",
+    "row": 1304,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "jackfruit",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3626aad7c7",
+   "ref": {
+    "file": "data/train/train-00002-of-00024.parquet",
+    "row": 3121,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8ff9b9ede2",
+   "ref": {
+    "file": "data/train/train-00003-of-00024.parquet",
+    "row": 2366,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-957f671c4c",
+   "ref": {
+    "file": "data/train/train-00003-of-00024.parquet",
+    "row": 3398,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f93b23fc68",
+   "ref": {
+    "file": "data/train/train-00003-of-00024.parquet",
+    "row": 12885,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-733a34313e",
+   "ref": {
+    "file": "data/train/train-00004-of-00024.parquet",
+    "row": 606,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-05d6e345a8",
+   "ref": {
+    "file": "data/train/train-00004-of-00024.parquet",
+    "row": 11629,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cee497f202",
+   "ref": {
+    "file": "data/train/train-00004-of-00024.parquet",
+    "row": 14236,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3c9fc9fb94",
+   "ref": {
+    "file": "data/train/train-00004-of-00024.parquet",
+    "row": 14609,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3a63e1a18d",
+   "ref": {
+    "file": "data/train/train-00005-of-00024.parquet",
+    "row": 596,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-7e195d7d55",
+   "ref": {
+    "file": "data/train/train-00005-of-00024.parquet",
+    "row": 4273,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "peas",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-49a629576a",
+   "ref": {
+    "file": "data/train/train-00005-of-00024.parquet",
+    "row": 7702,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c667850262",
+   "ref": {
+    "file": "data/train/train-00005-of-00024.parquet",
+    "row": 15272,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-6098005c95",
+   "ref": {
+    "file": "data/train/train-00006-of-00024.parquet",
+    "row": 1279,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8f47f4eb0a",
+   "ref": {
+    "file": "data/train/train-00006-of-00024.parquet",
+    "row": 3095,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-26d9e9f088",
+   "ref": {
+    "file": "data/train/train-00006-of-00024.parquet",
+    "row": 10249,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-7cee2fbfb6",
+   "ref": {
+    "file": "data/train/train-00006-of-00024.parquet",
+    "row": 14539,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-82088a16a0",
+   "ref": {
+    "file": "data/train/train-00006-of-00024.parquet",
+    "row": 17117,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4a6a7cc2db",
+   "ref": {
+    "file": "data/train/train-00008-of-00024.parquet",
+    "row": 9315,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-25008a786c",
+   "ref": {
+    "file": "data/train/train-00009-of-00024.parquet",
+    "row": 11741,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "pepper bell",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-16f9c5fb5b",
+   "ref": {
+    "file": "data/train/train-00009-of-00024.parquet",
+    "row": 16365,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-60de02b1a0",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 1560,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ace47236cf",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 3799,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0039ca4aeb",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 6420,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cf9faaaf53",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 6586,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "arabian jasmine",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0608844699",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 7314,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4786ab79c1",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 9881,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "orange",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-21407bdd3e",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 14855,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "bitter gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-47cd209ca6",
+   "ref": {
+    "file": "data/train/train-00010-of-00024.parquet",
+    "row": 17256,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ca3b866ed3",
+   "ref": {
+    "file": "data/train/train-00011-of-00024.parquet",
+    "row": 1102,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-492fc6e75b",
+   "ref": {
+    "file": "data/train/train-00011-of-00024.parquet",
+    "row": 7860,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ff05ff661c",
+   "ref": {
+    "file": "data/train/train-00011-of-00024.parquet",
+    "row": 13951,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-567395c41e",
+   "ref": {
+    "file": "data/train/train-00012-of-00024.parquet",
+    "row": 143,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cd221c4478",
+   "ref": {
+    "file": "data/train/train-00012-of-00024.parquet",
+    "row": 14775,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-51f6745aa3",
+   "ref": {
+    "file": "data/train/train-00012-of-00024.parquet",
+    "row": 20082,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "orange",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-af424a8968",
+   "ref": {
+    "file": "data/train/train-00012-of-00024.parquet",
+    "row": 21682,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8a3b056a20",
+   "ref": {
+    "file": "data/train/train-00013-of-00024.parquet",
+    "row": 2422,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c060e10689",
+   "ref": {
+    "file": "data/train/train-00013-of-00024.parquet",
+    "row": 10058,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5d058248dc",
+   "ref": {
+    "file": "data/train/train-00013-of-00024.parquet",
+    "row": 12418,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-6b6e8abc44",
+   "ref": {
+    "file": "data/train/train-00014-of-00024.parquet",
+    "row": 9264,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b68d65c5ff",
+   "ref": {
+    "file": "data/train/train-00014-of-00024.parquet",
+    "row": 20358,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3f2ee53f80",
+   "ref": {
+    "file": "data/train/train-00015-of-00024.parquet",
+    "row": 2834,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c9e44b9c7c",
+   "ref": {
+    "file": "data/train/train-00015-of-00024.parquet",
+    "row": 2978,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a3ee2e9837",
+   "ref": {
+    "file": "data/train/train-00015-of-00024.parquet",
+    "row": 7658,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e04e6b9574",
+   "ref": {
+    "file": "data/train/train-00015-of-00024.parquet",
+    "row": 10185,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "grape",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cfd5b01a30",
+   "ref": {
+    "file": "data/train/train-00015-of-00024.parquet",
+    "row": 20689,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3557fafea2",
+   "ref": {
+    "file": "data/train/train-00016-of-00024.parquet",
+    "row": 2029,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-eb181ae87a",
+   "ref": {
+    "file": "data/train/train-00016-of-00024.parquet",
+    "row": 11995,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-2356743abc",
+   "ref": {
+    "file": "data/train/train-00017-of-00024.parquet",
+    "row": 2055,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3fc6c24a67",
+   "ref": {
+    "file": "data/train/train-00017-of-00024.parquet",
+    "row": 20213,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4546ebd6e7",
+   "ref": {
+    "file": "data/train/train-00018-of-00024.parquet",
+    "row": 1153,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b2fecabd47",
+   "ref": {
+    "file": "data/train/train-00018-of-00024.parquet",
+    "row": 14739,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3fbca6145d",
+   "ref": {
+    "file": "data/train/train-00018-of-00024.parquet",
+    "row": 16280,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f3e9f13643",
+   "ref": {
+    "file": "data/train/train-00019-of-00024.parquet",
+    "row": 5540,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "peach",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-77432dadef",
+   "ref": {
+    "file": "data/train/train-00019-of-00024.parquet",
+    "row": 10100,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-9fdfbc09e8",
+   "ref": {
+    "file": "data/train/train-00019-of-00024.parquet",
+    "row": 10869,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b4e06791d2",
+   "ref": {
+    "file": "data/train/train-00020-of-00024.parquet",
+    "row": 612,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-fcfbb4aef5",
+   "ref": {
+    "file": "data/train/train-00020-of-00024.parquet",
+    "row": 2697,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-44096ab5d5",
+   "ref": {
+    "file": "data/train/train-00020-of-00024.parquet",
+    "row": 17572,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e94f21b8fc",
+   "ref": {
+    "file": "data/train/train-00020-of-00024.parquet",
+    "row": 20937,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-903301439d",
+   "ref": {
+    "file": "data/train/train-00020-of-00024.parquet",
+    "row": 22152,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "rice",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8f48b4133b",
+   "ref": {
+    "file": "data/train/train-00021-of-00024.parquet",
+    "row": 817,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f7c0196d33",
+   "ref": {
+    "file": "data/train/train-00021-of-00024.parquet",
+    "row": 5573,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-620383a14a",
+   "ref": {
+    "file": "data/train/train-00021-of-00024.parquet",
+    "row": 17529,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3521ce9674",
+   "ref": {
+    "file": "data/train/train-00022-of-00024.parquet",
+    "row": 8540,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "orange",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e91bb65593",
+   "ref": {
+    "file": "data/train/train-00022-of-00024.parquet",
+    "row": 12300,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-6e2511b5f8",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 4212,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ecd406cd9a",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 4683,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "open",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-958075df03",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 5071,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4fba5a3b73",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 6680,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "grape",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b5054e97f9",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 7325,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-fbcb01ca1b",
+   "ref": {
+    "file": "data/train/train-00023-of-00024.parquet",
+    "row": 10897,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_train"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-2d12ffa031",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 2388,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "arabian jasmine",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-88e1a54e07",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 2638,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5f365c0780",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 3087,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-be32c0b772",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 3276,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5775afd300",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 3982,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "hibiscus",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-807dcf790c",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 6276,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "cherry",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-26b7fa2b5c",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 7176,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "sunflower",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5ce27f13d5",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 8366,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e26e2472a7",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 9610,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3a0e772486",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 10032,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3b2f11585a",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 11477,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-d5b143803c",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 11891,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a54ee89e45",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 12925,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-51961374f5",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 13754,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-54965fa27c",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 16177,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f26c9ece38",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 17585,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1e9b8ee5ab",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 17851,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-dbb1dff2b0",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 18620,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a447bc0cb4",
+   "ref": {
+    "file": "data/test/test-00000-of-00007.parquet",
+    "row": 20818,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "peas",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-61710b6b11",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 9070,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ef4b952051",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 10695,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-9ff18d0d36",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 13256,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e29344c8db",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 14052,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "rice",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-83a91272ea",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 15396,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c451fff02d",
+   "ref": {
+    "file": "data/test/test-00001-of-00007.parquet",
+    "row": 21088,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-6d40f1722f",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 1719,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-fce0116590",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 5026,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e3222847fe",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 12292,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "arabian jasmine",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-78275c678d",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 12870,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b716117a2c",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 13009,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-97287c6adb",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 13937,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-67989c893f",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 14520,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ffdeb8e339",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 16121,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-42f1fe639a",
+   "ref": {
+    "file": "data/test/test-00002-of-00007.parquet",
+    "row": 16833,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-151eff594e",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 132,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tea",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-9d37163395",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 315,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "apple",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-038b2b038a",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 1765,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "cotton",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a1c4d0b153",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 1898,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1c1f2c7340",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 3016,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b33fe81c0b",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 4423,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-378886860c",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 5692,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3bf2c95ae1",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 7553,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e4a5724b8f",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 9186,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4db2a82f03",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 10606,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3b2bc4ac4f",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 10748,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "orange",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4e2e8d86d0",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 12601,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ad42cec442",
+   "ref": {
+    "file": "data/test/test-00003-of-00007.parquet",
+    "row": 18475,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "pea",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-87a2addd15",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 2936,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-fc0b58e0f8",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 3149,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a70177725e",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 3318,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-eb6a36e61a",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 4442,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-32cbae22e7",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 5030,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-77e1d3dc38",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 5355,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-030063b8c7",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 5571,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-aa2be0ef5c",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 7008,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "raspberry",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-750dc4d30c",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 7820,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tea",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-977411132e",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 11593,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1d26a854ab",
+   "ref": {
+    "file": "data/test/test-00004-of-00007.parquet",
+    "row": 13800,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c92cb960e8",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 2046,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c0f1a9297d",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 4166,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "arabian jasmine",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-135fd610fe",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 5097,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0aa86787fc",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 5422,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3092f79d60",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 7176,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-44fd14773c",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 7245,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-d5ebdc0940",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 9725,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-79226f1f8c",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 14862,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0647174825",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 14866,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4b0693afdb",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 16711,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3ffbe517a4",
+   "ref": {
+    "file": "data/test/test-00005-of-00007.parquet",
+    "row": 17670,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8fe5b311ac",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 419,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-34bcaa30cf",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 791,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-eb988767af",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 3053,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-90debd3258",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 4258,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-04eb51f0f7",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 4604,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-7649d2c2d3",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 10173,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a6cadd22cd",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 11796,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "arabian jasmine",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-19810d7cb4",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 12348,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a08112236d",
+   "ref": {
+    "file": "data/test/test-00006-of-00007.parquet",
+    "row": 14570,
+    "config": "test",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "test",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_test"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cf7fee578c",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 1791,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-694b5e04b9",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 2004,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a66a00a707",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 2746,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0961ce7dae",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 3280,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-bee8e130eb",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 3490,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f86e3a4d03",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 4602,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a369a17bfc",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 5254,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "rubber",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-9b89035631",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 6692,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-bc4a2e2cc7",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 6781,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-386a84d9dc",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 7499,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-684276e151",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 8698,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "rubber",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-86be490d81",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 9760,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "apple",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1d8844c42e",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 9826,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0d637d3cfa",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 13164,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-bc942c074d",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 14087,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-76075982d6",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 14312,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3f15be5948",
+   "ref": {
+    "file": "data/val/val-00000-of-00004.parquet",
+    "row": 17729,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1c6c169fda",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 529,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-f898a07467",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 558,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-9366c45a8d",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 922,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ef2fac9d5e",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 1298,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "open",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-62b448b79a",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 2448,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "peach",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-aacd45a2d7",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 2862,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1758ce1d0b",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 5741,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e37189b0a9",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 6053,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-135736fd80",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 6244,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-481d6a520f",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 6827,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e7d20e268c",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 7998,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c1a711d4cb",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 9849,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-22f003ee3b",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 10112,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "orange",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-872e59ff99",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 11406,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tea",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b560aa803a",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 12792,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8918fe7d42",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 12843,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "rice",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-621c6b2e36",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 13468,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e52184ee07",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 15907,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-dc49d53739",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 16189,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8753414cca",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 16259,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tea",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3e5ee00580",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 16762,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e2f6e4a4b9",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 17037,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5a1d10342b",
+   "ref": {
+    "file": "data/val/val-00001-of-00004.parquet",
+    "row": 19081,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1411728f19",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 102,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "citrus",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-cf3b2356fe",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 142,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0679b11c52",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 1135,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a738e68810",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 1510,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-fb732dc543",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 2077,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-34bcbd80fa",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 2744,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e949e9f542",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 2976,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-92a5356a49",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 4321,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-df53005459",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 4432,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-368ff963ec",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 4842,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "pepper bell",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3bf5ae6e0e",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 7034,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-d2eb06b9d6",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 7865,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "rice",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-82f1515091",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 8018,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e3ade71b6a",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 8216,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-facbf5f629",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 8664,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "tomato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-ad86ccb923",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 15136,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-e7cbc25b62",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 15730,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-b6fdf8bf62",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 17656,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "soybean",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-224c442182",
+   "ref": {
+    "file": "data/val/val-00002-of-00004.parquet",
+    "row": 18277,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-afd228a62e",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 311,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "corn",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a98b74ef95",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 975,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-bdb43a086a",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 2163,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "strawberry",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-4e77339ebf",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 2396,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-0fc6dbd177",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 3413,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-26ac8970d4",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 3518,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c8c4a6b53f",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 5773,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "crop": "grape",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-5464eb7c99",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 5978,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-7cf5d3bc0d",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 6317,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-75a687b9bb",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 7351,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "potato",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-8f5b4b8c95",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 8016,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-464eef7c65",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 9279,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "senescence",
+    "crop": "litchi",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c462b9d582",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 10778,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "crop": "mango",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-3f58d34b98",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 10999,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-1f9b46817e",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 11423,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-6038052458",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 12628,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "healthy",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-065323d814",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 14917,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "strawberry",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-c15a9c2939",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 16414,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "disease",
+    "answer_type": "free_form",
+    "crop": "unknown",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "yes_no",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  },
+  {
+   "sample_id": "PlantExpertVQA-a7baaddaba",
+   "ref": {
+    "file": "data/val/val-00003-of-00004.parquet",
+    "row": 18840,
+    "config": "validation",
+    "split": "validation"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "natural_senescence",
+    "crop": "bottle gourd",
+    "origin_dataset": "PlantExpertVQA",
+    "config": "validation",
+    "qa_format": "open_ended",
+    "id_prefix": "PlantExpertVQA_val"
+   }
+  }
+ ]
+}

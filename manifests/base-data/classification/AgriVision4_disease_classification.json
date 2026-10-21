@@ -1,0 +1,1801 @@
+{
+ "name": "AgriVision4_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/AgriVision4_disease_classification",
+ "hf_sha": "fa1c9e21b42e02e13905e9d3efe902f149aef23a",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T20:53:46+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Alternaria_Leaf_Blight",
+   "Angular_Leaf_Spot",
+   "Anthracnose",
+   "Bacterial_Blight",
+   "Carica_Insect_Hole",
+   "Curled_Yellow_Spot",
+   "Downy_Mildew",
+   "Dry_Leaf",
+   "Early_Alternaria_Leaf_Blight",
+   "Fungal_Damage_Leaf",
+   "Healthy",
+   "Healthy_leaf",
+   "Insect_Damage",
+   "Iron_Chlorosis_Damage",
+   "Mosaic",
+   "Mosaic_Virus",
+   "Pathogen_symptoms",
+   "Spot",
+   "White_spot",
+   "Xanthomonas_Leaf_Spot",
+   "Yellow_Mosaic_Virus",
+   "Yellow_Necrotic_Spots_Holes"
+  ],
+  "indexed_rows": 5246
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "AgriVision4_disease_classification-bcfa439abb",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 34,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-ef6c1a9c6a",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 186,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-f6da90196c",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 231,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-4c802775be",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 278,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-57dce78d2a",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 279,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-b5fb766a0d",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 344,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-064e626e93",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 374,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-bbd9cdb2cb",
+   "ref": {
+    "file": "raw/train-00000-of-00011.parquet",
+    "row": 382,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-550f8ca10b",
+   "ref": {
+    "file": "raw/train-00001-of-00011.parquet",
+    "row": 151,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy_Mildew"
+   ],
+   "ann": {
+    "label": "Downy_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-785541250e",
+   "ref": {
+    "file": "raw/train-00001-of-00011.parquet",
+    "row": 257,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy_Mildew"
+   ],
+   "ann": {
+    "label": "Downy_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-dd7b16784d",
+   "ref": {
+    "file": "raw/train-00001-of-00011.parquet",
+    "row": 270,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy_Mildew"
+   ],
+   "ann": {
+    "label": "Downy_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-cbcd7d5f6b",
+   "ref": {
+    "file": "raw/train-00001-of-00011.parquet",
+    "row": 312,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy_Mildew"
+   ],
+   "ann": {
+    "label": "Downy_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-2647e8438e",
+   "ref": {
+    "file": "raw/train-00001-of-00011.parquet",
+    "row": 394,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Early_Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-1f96d03a17",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 6,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Early_Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-e46d3b8636",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 42,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Early_Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-46bc120dee",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 51,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Early_Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-4e51a12b6d",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 84,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Alternaria_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Early_Alternaria_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-eea6aed840",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 92,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Damage_Leaf"
+   ],
+   "ann": {
+    "label": "Fungal_Damage_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-ca66f9ad7d",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Damage_Leaf"
+   ],
+   "ann": {
+    "label": "Fungal_Damage_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-83ed3458a0",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 110,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Damage_Leaf"
+   ],
+   "ann": {
+    "label": "Fungal_Damage_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-7f63aa4800",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 123,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Damage_Leaf"
+   ],
+   "ann": {
+    "label": "Fungal_Damage_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-ed56a9160a",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 126,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Damage_Leaf"
+   ],
+   "ann": {
+    "label": "Fungal_Damage_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-e732689c1e",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-2799f7448c",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 149,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a1243ab9f8",
+   "ref": {
+    "file": "raw/train-00002-of-00011.parquet",
+    "row": 318,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-56fbc07d9b",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 109,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-fd0575c2c3",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 113,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3c8db93f00",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 140,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-8842dfd412",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 172,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a7ad28d77a",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 267,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-da77832b50",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 285,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-03ab4cc3db",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 290,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-417058ea52",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 374,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-da13e57ea6",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 381,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-c9559c168f",
+   "ref": {
+    "file": "raw/train-00003-of-00011.parquet",
+    "row": 467,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica_Insect_Hole"
+   ],
+   "ann": {
+    "label": "Carica_Insect_Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3440fbf55c",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 6,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica_Insect_Hole"
+   ],
+   "ann": {
+    "label": "Carica_Insect_Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3c9f6e3302",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 137,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica_Insect_Hole"
+   ],
+   "ann": {
+    "label": "Carica_Insect_Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-0d68148fc9",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 183,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica_Insect_Hole"
+   ],
+   "ann": {
+    "label": "Carica_Insect_Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-5c3ff79938",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 198,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica_Insect_Hole"
+   ],
+   "ann": {
+    "label": "Carica_Insect_Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-ea1b2711a6",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 433,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curled_Yellow_Spot"
+   ],
+   "ann": {
+    "label": "Curled_Yellow_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-668a8cea8c",
+   "ref": {
+    "file": "raw/train-00004-of-00011.parquet",
+    "row": 464,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curled_Yellow_Spot"
+   ],
+   "ann": {
+    "label": "Curled_Yellow_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a4004ab51e",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 60,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curled_Yellow_Spot"
+   ],
+   "ann": {
+    "label": "Curled_Yellow_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a5df0dd0b8",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 156,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curled_Yellow_Spot"
+   ],
+   "ann": {
+    "label": "Curled_Yellow_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-2d1ad5bd3d",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 202,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curled_Yellow_Spot"
+   ],
+   "ann": {
+    "label": "Curled_Yellow_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-50b6c6befc",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 334,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_leaf"
+   ],
+   "ann": {
+    "label": "Healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-ea39f2fdd1",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 367,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_leaf"
+   ],
+   "ann": {
+    "label": "Healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-2293ef3bd4",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 410,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_leaf"
+   ],
+   "ann": {
+    "label": "Healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-056c3b4929",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 454,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_leaf"
+   ],
+   "ann": {
+    "label": "Healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-0748aef089",
+   "ref": {
+    "file": "raw/train-00005-of-00011.parquet",
+    "row": 459,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_leaf"
+   ],
+   "ann": {
+    "label": "Healthy_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-540844c543",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 128,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3867284d37",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 148,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pathogen_symptoms"
+   ],
+   "ann": {
+    "label": "Pathogen_symptoms"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-aa5f55bc00",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 228,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pathogen_symptoms"
+   ],
+   "ann": {
+    "label": "Pathogen_symptoms"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-86dfd1004e",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 235,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pathogen_symptoms"
+   ],
+   "ann": {
+    "label": "Pathogen_symptoms"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a04d961c7f",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 279,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pathogen_symptoms"
+   ],
+   "ann": {
+    "label": "Pathogen_symptoms"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-0e57f451eb",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 426,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pathogen_symptoms"
+   ],
+   "ann": {
+    "label": "Pathogen_symptoms"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-76086af12a",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 432,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Necrotic_Spots_Holes"
+   ],
+   "ann": {
+    "label": "Yellow_Necrotic_Spots_Holes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a0da122a43",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 440,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Necrotic_Spots_Holes"
+   ],
+   "ann": {
+    "label": "Yellow_Necrotic_Spots_Holes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-57d5a99c86",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 448,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Necrotic_Spots_Holes"
+   ],
+   "ann": {
+    "label": "Yellow_Necrotic_Spots_Holes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-22eef3f241",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 472,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Necrotic_Spots_Holes"
+   ],
+   "ann": {
+    "label": "Yellow_Necrotic_Spots_Holes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-da7e1ea6fe",
+   "ref": {
+    "file": "raw/train-00006-of-00011.parquet",
+    "row": 474,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Necrotic_Spots_Holes"
+   ],
+   "ann": {
+    "label": "Yellow_Necrotic_Spots_Holes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-801d01ebbd",
+   "ref": {
+    "file": "raw/train-00007-of-00011.parquet",
+    "row": 242,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a154048d9b",
+   "ref": {
+    "file": "raw/train-00007-of-00011.parquet",
+    "row": 386,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-66614428bc",
+   "ref": {
+    "file": "raw/train-00007-of-00011.parquet",
+    "row": 402,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-dd0c0c2a40",
+   "ref": {
+    "file": "raw/train-00007-of-00011.parquet",
+    "row": 426,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-9cb4c34f03",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 29,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3675d0e5e6",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 61,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-8ec5ce991a",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 73,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Spot"
+   ],
+   "ann": {
+    "label": "Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-2b494ec15d",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 79,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Spot"
+   ],
+   "ann": {
+    "label": "Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-4882950ceb",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 239,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Spot"
+   ],
+   "ann": {
+    "label": "Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-b6666cf4ba",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 264,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Spot"
+   ],
+   "ann": {
+    "label": "Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-07618436e2",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 279,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Spot"
+   ],
+   "ann": {
+    "label": "Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-b1a3e6775f",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 395,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White_spot"
+   ],
+   "ann": {
+    "label": "White_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-aa0a154410",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 417,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White_spot"
+   ],
+   "ann": {
+    "label": "White_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-12d8507b02",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 424,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White_spot"
+   ],
+   "ann": {
+    "label": "White_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a334e19fda",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 426,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White_spot"
+   ],
+   "ann": {
+    "label": "White_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-60288e4987",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 434,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White_spot"
+   ],
+   "ann": {
+    "label": "White_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-c2e9ee5c93",
+   "ref": {
+    "file": "raw/train-00008-of-00011.parquet",
+    "row": 469,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Angular_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Angular_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-d9a04bd323",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 29,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Angular_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Angular_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a922ad95d3",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 34,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Angular_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Angular_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-44d688c6b0",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 42,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Angular_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Angular_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-3162d2db58",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 81,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Angular_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Angular_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-07848a48a0",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 171,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-8273abf908",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 175,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-21f83e7e74",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 342,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy_Mildew"
+   ],
+   "ann": {
+    "label": "Downy_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-09bfb0d225",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 372,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_Leaf"
+   ],
+   "ann": {
+    "label": "Dry_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-1314cb0a5c",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 401,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_Leaf"
+   ],
+   "ann": {
+    "label": "Dry_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-72d9aab004",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 423,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_Leaf"
+   ],
+   "ann": {
+    "label": "Dry_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-1e323d6204",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 429,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_Leaf"
+   ],
+   "ann": {
+    "label": "Dry_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-b052bfcd50",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 431,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_Leaf"
+   ],
+   "ann": {
+    "label": "Dry_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-e34a10d50a",
+   "ref": {
+    "file": "raw/train-00009-of-00011.parquet",
+    "row": 448,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-26d581053e",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect_Damage"
+   ],
+   "ann": {
+    "label": "Insect_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-eb44f8835c",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 75,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect_Damage"
+   ],
+   "ann": {
+    "label": "Insect_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-d13e40634d",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 110,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect_Damage"
+   ],
+   "ann": {
+    "label": "Insect_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-17e787384b",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 113,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect_Damage"
+   ],
+   "ann": {
+    "label": "Insect_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-bb0304f1cd",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 117,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect_Damage"
+   ],
+   "ann": {
+    "label": "Insect_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-d6ba0a477c",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 130,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron_Chlorosis_Damage"
+   ],
+   "ann": {
+    "label": "Iron_Chlorosis_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-da14877f7d",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron_Chlorosis_Damage"
+   ],
+   "ann": {
+    "label": "Iron_Chlorosis_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-f215db0488",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 150,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron_Chlorosis_Damage"
+   ],
+   "ann": {
+    "label": "Iron_Chlorosis_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-be2a5c90ab",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 160,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron_Chlorosis_Damage"
+   ],
+   "ann": {
+    "label": "Iron_Chlorosis_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-7a03073c9a",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 182,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Iron_Chlorosis_Damage"
+   ],
+   "ann": {
+    "label": "Iron_Chlorosis_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-de60ef74ad",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 192,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Xanthomonas_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Xanthomonas_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-1f4ca4af11",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 217,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Xanthomonas_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Xanthomonas_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-de6aeadde8",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 225,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Xanthomonas_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Xanthomonas_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-a49c042575",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 252,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Xanthomonas_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Xanthomonas_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-6ba06daaca",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 270,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Xanthomonas_Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Xanthomonas_Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-c48af8334a",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 312,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Yellow_Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-1ab7641e73",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 358,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Yellow_Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-b7c77db20a",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 399,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Yellow_Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-d91764d0c8",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 422,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Yellow_Mosaic_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "AgriVision4_disease_classification-030cbcfe84",
+   "ref": {
+    "file": "raw/train-00010-of-00011.parquet",
+    "row": 450,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow_Mosaic_Virus"
+   ],
+   "ann": {
+    "label": "Yellow_Mosaic_Virus"
+   },
+   "strata": {}
+  }
+ ]
+}

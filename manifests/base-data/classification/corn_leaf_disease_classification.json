@@ -1,0 +1,505 @@
+{
+ "name": "corn_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/corn_leaf_disease_classification",
+ "hf_sha": "e0fdb308205c97f76679edecad60d723bc620fca",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:06:13+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bipolaris_Maydis",
+   "Common_Rust",
+   "Curvularia_Lunata(wakker)boed_Spot",
+   "Northern-Leaf-Blight",
+   "Own-Spot",
+   "Sheath-Blight"
+  ],
+  "indexed_rows": 600
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "corn_leaf_disease_classification-11e452a8c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bipolaris_Maydis"
+   ],
+   "ann": {
+    "label": "Bipolaris_Maydis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-2f08dd8ce5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bipolaris_Maydis"
+   ],
+   "ann": {
+    "label": "Bipolaris_Maydis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-55476e358a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bipolaris_Maydis"
+   ],
+   "ann": {
+    "label": "Bipolaris_Maydis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-901d801167",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bipolaris_Maydis"
+   ],
+   "ann": {
+    "label": "Bipolaris_Maydis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-a167547058",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bipolaris_Maydis"
+   ],
+   "ann": {
+    "label": "Bipolaris_Maydis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-851a0c8143",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath-Blight"
+   ],
+   "ann": {
+    "label": "Sheath-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-face577cf3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath-Blight"
+   ],
+   "ann": {
+    "label": "Sheath-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-f23e666bd0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath-Blight"
+   ],
+   "ann": {
+    "label": "Sheath-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-310e72460c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 160,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath-Blight"
+   ],
+   "ann": {
+    "label": "Sheath-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-1f13fb486e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath-Blight"
+   ],
+   "ann": {
+    "label": "Sheath-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-b2fd2c9243",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Northern-Leaf-Blight"
+   ],
+   "ann": {
+    "label": "Northern-Leaf-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-aaf8de6e07",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Northern-Leaf-Blight"
+   ],
+   "ann": {
+    "label": "Northern-Leaf-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-640587f79f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 241,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Northern-Leaf-Blight"
+   ],
+   "ann": {
+    "label": "Northern-Leaf-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-ce7f52fda8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Northern-Leaf-Blight"
+   ],
+   "ann": {
+    "label": "Northern-Leaf-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-a188fe7227",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Northern-Leaf-Blight"
+   ],
+   "ann": {
+    "label": "Northern-Leaf-Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-fad2698109",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common_Rust"
+   ],
+   "ann": {
+    "label": "Common_Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-cd690ca491",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common_Rust"
+   ],
+   "ann": {
+    "label": "Common_Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-ac957f5d28",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common_Rust"
+   ],
+   "ann": {
+    "label": "Common_Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-b2098ff385",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common_Rust"
+   ],
+   "ann": {
+    "label": "Common_Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-270b614816",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common_Rust"
+   ],
+   "ann": {
+    "label": "Common_Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-29caf2572e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curvularia_Lunata(wakker)boed_Spot"
+   ],
+   "ann": {
+    "label": "Curvularia_Lunata(wakker)boed_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-105291de6b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 476,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curvularia_Lunata(wakker)boed_Spot"
+   ],
+   "ann": {
+    "label": "Curvularia_Lunata(wakker)boed_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-9497a0f919",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curvularia_Lunata(wakker)boed_Spot"
+   ],
+   "ann": {
+    "label": "Curvularia_Lunata(wakker)boed_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-e53fe5dd4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 487,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curvularia_Lunata(wakker)boed_Spot"
+   ],
+   "ann": {
+    "label": "Curvularia_Lunata(wakker)boed_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-f57f1f476b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curvularia_Lunata(wakker)boed_Spot"
+   ],
+   "ann": {
+    "label": "Curvularia_Lunata(wakker)boed_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-966ee8bcfd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Own-Spot"
+   ],
+   "ann": {
+    "label": "Own-Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-515bd6ebc3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Own-Spot"
+   ],
+   "ann": {
+    "label": "Own-Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-9fcecc113a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 544,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Own-Spot"
+   ],
+   "ann": {
+    "label": "Own-Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-97f5903daa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 578,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Own-Spot"
+   ],
+   "ann": {
+    "label": "Own-Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "corn_leaf_disease_classification-169512545d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 599,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Own-Spot"
+   ],
+   "ann": {
+    "label": "Own-Spot"
+   },
+   "strata": {}
+  }
+ ]
+}

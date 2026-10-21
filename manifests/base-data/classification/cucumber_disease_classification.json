@@ -1,0 +1,660 @@
+{
+ "name": "cucumber_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/cucumber_disease_classification",
+ "hf_sha": "154096d18ca1437080b2c500e6eaf7be5396f3ad",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:25:43+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+  ],
+  "indexed_rows": 7689
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "cucumber_disease_classification-be1ca4b773",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   ],
+   "ann": {
+    "label": "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-dc36e4a066",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   ],
+   "ann": {
+    "label": "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-ab47c8a442",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 604,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   ],
+   "ann": {
+    "label": "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-0f76c1c4d5",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 660,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   ],
+   "ann": {
+    "label": "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-ed6162413c",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 718,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   ],
+   "ann": {
+    "label": "Anthracnose, Bacterial_Wilt, Belly_Rot, Downy_Mildew, Fresh_Cucumber, Fresh_Leaf, Gummy_Stem_Blight, Pythium_Fruit_Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-54a1c2d5aa",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 1007,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1"
+   ],
+   "ann": {
+    "label": "1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-dc38cc1e9d",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1"
+   ],
+   "ann": {
+    "label": "1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-852042e745",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 349,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1"
+   ],
+   "ann": {
+    "label": "1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-973934bb0e",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1"
+   ],
+   "ann": {
+    "label": "1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-ba78461057",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 607,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1"
+   ],
+   "ann": {
+    "label": "1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-b138de5dd8",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "2"
+   ],
+   "ann": {
+    "label": "2"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-1459e00f90",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 1074,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "2"
+   ],
+   "ann": {
+    "label": "2"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-9905578c05",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 1162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "2"
+   ],
+   "ann": {
+    "label": "2"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-52d6ea82d0",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "2"
+   ],
+   "ann": {
+    "label": "2"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-f2271aa0c4",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "2"
+   ],
+   "ann": {
+    "label": "2"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-9692a2ae57",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "5"
+   ],
+   "ann": {
+    "label": "5"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-c1eacdf065",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 548,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "5"
+   ],
+   "ann": {
+    "label": "5"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-422f86ff7b",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "5"
+   ],
+   "ann": {
+    "label": "5"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-85c9387b3d",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 929,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "5"
+   ],
+   "ann": {
+    "label": "5"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-c0b799e3bf",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 1108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "5"
+   ],
+   "ann": {
+    "label": "5"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-d0b94aaa3b",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 240,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "7"
+   ],
+   "ann": {
+    "label": "7"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-c25243bf48",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "7"
+   ],
+   "ann": {
+    "label": "7"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-be50bc05ea",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 508,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "7"
+   ],
+   "ann": {
+    "label": "7"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-2e7845503c",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "7"
+   ],
+   "ann": {
+    "label": "7"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-c44ca99a84",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 924,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "7"
+   ],
+   "ann": {
+    "label": "7"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-2c459e3cdd",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 1056,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "3"
+   ],
+   "ann": {
+    "label": "3"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-97dbc9ecc6",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "3"
+   ],
+   "ann": {
+    "label": "3"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-1dc9bd7545",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "3"
+   ],
+   "ann": {
+    "label": "3"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-15b4b3ee89",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "3"
+   ],
+   "ann": {
+    "label": "3"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-2d333802d8",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "3"
+   ],
+   "ann": {
+    "label": "3"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-c84ca92f43",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 737,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "4"
+   ],
+   "ann": {
+    "label": "4"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-cdf88c0ab0",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 986,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "4"
+   ],
+   "ann": {
+    "label": "4"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-04f8cd4a35",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 1041,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "4"
+   ],
+   "ann": {
+    "label": "4"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-88da12c34c",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 1098,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "4"
+   ],
+   "ann": {
+    "label": "4"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-d24099a50e",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 1214,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "4"
+   ],
+   "ann": {
+    "label": "4"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-397d812393",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "6"
+   ],
+   "ann": {
+    "label": "6"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-1c84f66cd3",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "6"
+   ],
+   "ann": {
+    "label": "6"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-7cbe5db69d",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 657,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "6"
+   ],
+   "ann": {
+    "label": "6"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-bd53af7f63",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 678,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "6"
+   ],
+   "ann": {
+    "label": "6"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cucumber_disease_classification-d86158e7bb",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 1113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "6"
+   ],
+   "ann": {
+    "label": "6"
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,586 @@
+{
+ "name": "potato_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/potato_leaf_disease_classification",
+ "hf_sha": "d564ae2b7548f8a6ef99139ba69a1f82f2dfed5e",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:10:45+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacteria",
+   "Fungi",
+   "Healthy",
+   "Nematode",
+   "Pest",
+   "Phytopthora",
+   "Virus"
+  ],
+  "indexed_rows": 3076
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "potato_leaf_disease_classification-f69efa18aa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pest"
+   ],
+   "ann": {
+    "label": "Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-4613915343",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pest"
+   ],
+   "ann": {
+    "label": "Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-725cb1c260",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pest"
+   ],
+   "ann": {
+    "label": "Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-88602610fc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 511,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pest"
+   ],
+   "ann": {
+    "label": "Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-e1b98d7fe8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 610,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pest"
+   ],
+   "ann": {
+    "label": "Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-bfd1a0b312",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 639,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-8e93e3764b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 643,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-830dfb6e32",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 644,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-516840595a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-694acec5e3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 806,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-3d41b83c74",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Phytopthora"
+   ],
+   "ann": {
+    "label": "Phytopthora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-67a6746eac",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1027,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Phytopthora"
+   ],
+   "ann": {
+    "label": "Phytopthora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-a0c3fdd7ab",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Phytopthora"
+   ],
+   "ann": {
+    "label": "Phytopthora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-9a37fe21fc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1099,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Phytopthora"
+   ],
+   "ann": {
+    "label": "Phytopthora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-91f5ff780d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Phytopthora"
+   ],
+   "ann": {
+    "label": "Phytopthora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-84ecba03b1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nematode"
+   ],
+   "ann": {
+    "label": "Nematode"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-10af734068",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nematode"
+   ],
+   "ann": {
+    "label": "Nematode"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-69c92d2c4e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nematode"
+   ],
+   "ann": {
+    "label": "Nematode"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-c502529098",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nematode"
+   ],
+   "ann": {
+    "label": "Nematode"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-d0a0c22627",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nematode"
+   ],
+   "ann": {
+    "label": "Nematode"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-10be14f97d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacteria"
+   ],
+   "ann": {
+    "label": "Bacteria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-1751d98e60",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1275,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacteria"
+   ],
+   "ann": {
+    "label": "Bacteria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-edbe56c374",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1372,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacteria"
+   ],
+   "ann": {
+    "label": "Bacteria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-d9689a370b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacteria"
+   ],
+   "ann": {
+    "label": "Bacteria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-09fcd259c6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacteria"
+   ],
+   "ann": {
+    "label": "Bacteria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-4fa2d09379",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fungi"
+   ],
+   "ann": {
+    "label": "Fungi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-f318eae666",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fungi"
+   ],
+   "ann": {
+    "label": "Fungi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-f50d9a87b0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 647,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fungi"
+   ],
+   "ann": {
+    "label": "Fungi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-5d6861ae4c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 800,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fungi"
+   ],
+   "ann": {
+    "label": "Fungi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-83291abd89",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1002,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fungi"
+   ],
+   "ann": {
+    "label": "Fungi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-779a56cc1a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1040,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Virus"
+   ],
+   "ann": {
+    "label": "Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-be5107f2a2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Virus"
+   ],
+   "ann": {
+    "label": "Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-e7fed7a426",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Virus"
+   ],
+   "ann": {
+    "label": "Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-351bcaa5ec",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Virus"
+   ],
+   "ann": {
+    "label": "Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_leaf_disease_classification-cbb7337070",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Virus"
+   ],
+   "ann": {
+    "label": "Virus"
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,424 @@
+{
+ "name": "cotton_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/cotton_disease_classification",
+ "hf_sha": "493b377b2300102dd1024a04bd690850644b0592",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:10:12+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Alternaria",
+   "Bacterial Blight",
+   "Cercospora",
+   "Grey Mildew",
+   "Healthy"
+  ],
+  "indexed_rows": 132
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "cotton_disease_classification-5476b53109",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey Mildew"
+   ],
+   "ann": {
+    "label": "Grey Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-18a73fa005",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey Mildew"
+   ],
+   "ann": {
+    "label": "Grey Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-cf94defa8f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey Mildew"
+   ],
+   "ann": {
+    "label": "Grey Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-85c31c9b56",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey Mildew"
+   ],
+   "ann": {
+    "label": "Grey Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-ce36ab0dfd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey Mildew"
+   ],
+   "ann": {
+    "label": "Grey Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-896caaa0af",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora"
+   ],
+   "ann": {
+    "label": "Cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-7cf190cfd1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora"
+   ],
+   "ann": {
+    "label": "Cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-a801e13699",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora"
+   ],
+   "ann": {
+    "label": "Cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-61fe067acc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora"
+   ],
+   "ann": {
+    "label": "Cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-e060fa50d7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora"
+   ],
+   "ann": {
+    "label": "Cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-8ea1c5bdb1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria"
+   ],
+   "ann": {
+    "label": "Alternaria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-79143cd91b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria"
+   ],
+   "ann": {
+    "label": "Alternaria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-89910ca296",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria"
+   ],
+   "ann": {
+    "label": "Alternaria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-495e0dd309",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria"
+   ],
+   "ann": {
+    "label": "Alternaria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-9fa530e2fd",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria"
+   ],
+   "ann": {
+    "label": "Alternaria"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-abe4b21234",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-203c972702",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-1398392c9b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-c6b2cab89f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-23f557aef0",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-ecc5a91744",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-9e1bb10188",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-f84c598b6a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-1d0ea6147b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_disease_classification-46f1f400e1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,748 @@
+{
+ "name": "BAU_insectV2_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/BAU_insectV2_classification",
+ "hf_sha": "e45dd106ed1fba526ab9ad2a83b5093f40866dd9",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:23:14+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "aphids",
+   "armyworm",
+   "beetle",
+   "bollworm",
+   "grasshopper",
+   "mites",
+   "mosquito",
+   "sawfly",
+   "stem_borer"
+  ],
+  "indexed_rows": 2616
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "BAU_insectV2_classification-6c912fe4fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-0bc86e5f66",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-b7fa9473f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-11fad819a1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-275dbd2404",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-0e6807a52f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "armyworm"
+   ],
+   "ann": {
+    "label": "armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-85ea31b234",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "armyworm"
+   ],
+   "ann": {
+    "label": "armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-901d801167",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "armyworm"
+   ],
+   "ann": {
+    "label": "armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-295bde46ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "armyworm"
+   ],
+   "ann": {
+    "label": "armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-7c50385000",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "armyworm"
+   ],
+   "ann": {
+    "label": "armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-78bc489a3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sawfly"
+   ],
+   "ann": {
+    "label": "sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-8f40bbbcba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sawfly"
+   ],
+   "ann": {
+    "label": "sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-72bdefe987",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sawfly"
+   ],
+   "ann": {
+    "label": "sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sawfly"
+   ],
+   "ann": {
+    "label": "sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-a0cbc1bbbe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sawfly"
+   ],
+   "ann": {
+    "label": "sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-d634107258",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bollworm"
+   ],
+   "ann": {
+    "label": "bollworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-957ae9ae61",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bollworm"
+   ],
+   "ann": {
+    "label": "bollworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-aac8525412",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bollworm"
+   ],
+   "ann": {
+    "label": "bollworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-f80552ebd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bollworm"
+   ],
+   "ann": {
+    "label": "bollworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-3f39a4196f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bollworm"
+   ],
+   "ann": {
+    "label": "bollworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beetle"
+   ],
+   "ann": {
+    "label": "beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-2d1096e731",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 193,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beetle"
+   ],
+   "ann": {
+    "label": "beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-2c67ecb14d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beetle"
+   ],
+   "ann": {
+    "label": "beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-ef86dc472a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 206,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beetle"
+   ],
+   "ann": {
+    "label": "beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-87d8cfbdc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 207,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beetle"
+   ],
+   "ann": {
+    "label": "beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-d41e36f31c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mites"
+   ],
+   "ann": {
+    "label": "mites"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-b2fd2c9243",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mites"
+   ],
+   "ann": {
+    "label": "mites"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-948d411ec3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mites"
+   ],
+   "ann": {
+    "label": "mites"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-d8fde67aeb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mites"
+   ],
+   "ann": {
+    "label": "mites"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-872c4c2f2e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mites"
+   ],
+   "ann": {
+    "label": "mites"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-a561582d94",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "stem_borer"
+   ],
+   "ann": {
+    "label": "stem_borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-6a4b21f3d8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 260,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "stem_borer"
+   ],
+   "ann": {
+    "label": "stem_borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-c397626b3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 264,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "stem_borer"
+   ],
+   "ann": {
+    "label": "stem_borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-ce14634972",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 267,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "stem_borer"
+   ],
+   "ann": {
+    "label": "stem_borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-82679426f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "stem_borer"
+   ],
+   "ann": {
+    "label": "stem_borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-8c371ef83f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 299,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grasshopper"
+   ],
+   "ann": {
+    "label": "grasshopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-a93c2c1025",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 306,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grasshopper"
+   ],
+   "ann": {
+    "label": "grasshopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-80f67a62a0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grasshopper"
+   ],
+   "ann": {
+    "label": "grasshopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-64be05ca65",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 331,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grasshopper"
+   ],
+   "ann": {
+    "label": "grasshopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-330f5640b9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grasshopper"
+   ],
+   "ann": {
+    "label": "grasshopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-891c974e83",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 343,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mosquito"
+   ],
+   "ann": {
+    "label": "mosquito"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-42b77d05fc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 355,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mosquito"
+   ],
+   "ann": {
+    "label": "mosquito"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-8cf6e4c624",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 359,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mosquito"
+   ],
+   "ann": {
+    "label": "mosquito"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-990f369c41",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mosquito"
+   ],
+   "ann": {
+    "label": "mosquito"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BAU_insectV2_classification-bccbe079ff",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 367,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mosquito"
+   ],
+   "ann": {
+    "label": "mosquito"
+   },
+   "strata": {}
+  }
+ ]
+}

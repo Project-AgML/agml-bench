@@ -1,0 +1,424 @@
+{
+ "name": "groundnut_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/groundnut_leaf_disease_classification",
+ "hf_sha": "bd72e3309fa2cc8d422e4fcb23dd64651031f231",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:38:44+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "ALTERNARIA LEAF SPOT",
+   "HEALTHY",
+   "LEAF SPOT",
+   "ROSETTE",
+   "RUST"
+  ],
+  "indexed_rows": 1720
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "groundnut_leaf_disease_classification-0909f3241b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ALTERNARIA LEAF SPOT"
+   ],
+   "ann": {
+    "label": "ALTERNARIA LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-a436df07f3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ALTERNARIA LEAF SPOT"
+   ],
+   "ann": {
+    "label": "ALTERNARIA LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-d689c07939",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ALTERNARIA LEAF SPOT"
+   ],
+   "ann": {
+    "label": "ALTERNARIA LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-e6ca406ca1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 395,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ALTERNARIA LEAF SPOT"
+   ],
+   "ann": {
+    "label": "ALTERNARIA LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-02246d115e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ALTERNARIA LEAF SPOT"
+   ],
+   "ann": {
+    "label": "ALTERNARIA LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-09f298a1f3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 535,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HEALTHY"
+   ],
+   "ann": {
+    "label": "HEALTHY"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-1be474911f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 812,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HEALTHY"
+   ],
+   "ann": {
+    "label": "HEALTHY"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-de1ea5b371",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 855,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HEALTHY"
+   ],
+   "ann": {
+    "label": "HEALTHY"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-19678132b3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HEALTHY"
+   ],
+   "ann": {
+    "label": "HEALTHY"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-72db160d53",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "HEALTHY"
+   ],
+   "ann": {
+    "label": "HEALTHY"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-e6932622fa",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "RUST"
+   ],
+   "ann": {
+    "label": "RUST"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-1437dc1ee4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "RUST"
+   ],
+   "ann": {
+    "label": "RUST"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-3fb359309a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "RUST"
+   ],
+   "ann": {
+    "label": "RUST"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-d8d4da89c0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "RUST"
+   ],
+   "ann": {
+    "label": "RUST"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-95c9f2cd1f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "RUST"
+   ],
+   "ann": {
+    "label": "RUST"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-563b5eac27",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 424,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "LEAF SPOT"
+   ],
+   "ann": {
+    "label": "LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-11a9391ad0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "LEAF SPOT"
+   ],
+   "ann": {
+    "label": "LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-b51b7b5c6b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 561,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "LEAF SPOT"
+   ],
+   "ann": {
+    "label": "LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-efbd9216f4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "LEAF SPOT"
+   ],
+   "ann": {
+    "label": "LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-550efae47b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 671,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "LEAF SPOT"
+   ],
+   "ann": {
+    "label": "LEAF SPOT"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-5561eeff10",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 777,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ROSETTE"
+   ],
+   "ann": {
+    "label": "ROSETTE"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-642f260393",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 820,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ROSETTE"
+   ],
+   "ann": {
+    "label": "ROSETTE"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-4a9050e3f8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ROSETTE"
+   ],
+   "ann": {
+    "label": "ROSETTE"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-8c52b454dd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 831,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ROSETTE"
+   ],
+   "ann": {
+    "label": "ROSETTE"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "groundnut_leaf_disease_classification-9442ce147f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 850,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ROSETTE"
+   ],
+   "ann": {
+    "label": "ROSETTE"
+   },
+   "strata": {}
+  }
+ ]
+}

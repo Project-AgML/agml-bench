@@ -1,0 +1,586 @@
+{
+ "name": "cotton_leaf_disease_classification_bangladesh_2",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/cotton_leaf_disease_classification_bangladesh_2",
+ "hf_sha": "514e78b8fcbdaee97bd134c81d798c613fd8c556",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:10:33+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial Blight",
+   "Curl Virus",
+   "Healthy Leaf",
+   "Herbicide Growth Damage",
+   "Leaf Hopper Jassids",
+   "Leaf Redding",
+   "Leaf Variegation"
+  ],
+  "indexed_rows": 2137
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-4e6cb920c6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Hopper Jassids"
+   ],
+   "ann": {
+    "label": "Leaf Hopper Jassids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-74209e4c26",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 19,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Hopper Jassids"
+   ],
+   "ann": {
+    "label": "Leaf Hopper Jassids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-28ef80b4f9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 86,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Hopper Jassids"
+   ],
+   "ann": {
+    "label": "Leaf Hopper Jassids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-4f9243ed71",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Hopper Jassids"
+   ],
+   "ann": {
+    "label": "Leaf Hopper Jassids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-519e907041",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 172,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Hopper Jassids"
+   ],
+   "ann": {
+    "label": "Leaf Hopper Jassids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-251dd1dcc8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 272,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curl Virus"
+   ],
+   "ann": {
+    "label": "Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-caaf934146",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 281,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curl Virus"
+   ],
+   "ann": {
+    "label": "Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-2b8192593a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 502,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curl Virus"
+   ],
+   "ann": {
+    "label": "Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-7ced08d833",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 509,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curl Virus"
+   ],
+   "ann": {
+    "label": "Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-01923e2b18",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 653,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Curl Virus"
+   ],
+   "ann": {
+    "label": "Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-ddb0371d53",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 656,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-97deef5ef7",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 670,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-045d636d18",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 714,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-d3eb273e5b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 855,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-a60210b6c9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 863,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-0963f1c234",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 914,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Herbicide Growth Damage"
+   ],
+   "ann": {
+    "label": "Herbicide Growth Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-628f34358d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1004,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Herbicide Growth Damage"
+   ],
+   "ann": {
+    "label": "Herbicide Growth Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-b5dbe5ca2c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1103,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Herbicide Growth Damage"
+   ],
+   "ann": {
+    "label": "Herbicide Growth Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-153b094673",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1159,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Herbicide Growth Damage"
+   ],
+   "ann": {
+    "label": "Herbicide Growth Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-b6a426a2d3",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1192,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Herbicide Growth Damage"
+   ],
+   "ann": {
+    "label": "Herbicide Growth Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-8b80a73171",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1194,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Variegation"
+   ],
+   "ann": {
+    "label": "Leaf Variegation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-6953a3eb60",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1236,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Variegation"
+   ],
+   "ann": {
+    "label": "Leaf Variegation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-de5f2b4753",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1237,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Variegation"
+   ],
+   "ann": {
+    "label": "Leaf Variegation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-f1ad826986",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1250,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Variegation"
+   ],
+   "ann": {
+    "label": "Leaf Variegation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-c18ccb9093",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1269,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Variegation"
+   ],
+   "ann": {
+    "label": "Leaf Variegation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-71475d5f5f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1352,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-da032fc904",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1462,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-51cbcfdde1",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1477,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-878c9af5d6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1483,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-7b7b23ad0a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1488,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Blight"
+   ],
+   "ann": {
+    "label": "Bacterial Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-1ccad4fae2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1909,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Redding"
+   ],
+   "ann": {
+    "label": "Leaf Redding"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-3e4edee481",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1927,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Redding"
+   ],
+   "ann": {
+    "label": "Leaf Redding"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-ec843bae95",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1929,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Redding"
+   ],
+   "ann": {
+    "label": "Leaf Redding"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-5ef7dd3eb5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2130,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Redding"
+   ],
+   "ann": {
+    "label": "Leaf Redding"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cotton_leaf_disease_classification_bangladesh_2-50a3501358",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2134,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Redding"
+   ],
+   "ann": {
+    "label": "Leaf Redding"
+   },
+   "strata": {}
+  }
+ ]
+}

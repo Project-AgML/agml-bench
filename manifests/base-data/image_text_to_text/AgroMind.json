@@ -1,0 +1,4258 @@
+{
+ "name": "AgroMind",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/AgroMind",
+ "hf_sha": "47ee6b115a0cc7b77180321ba599da5102367ffc",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-20T20:56:48+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 28482,
+  "strata_counts_full": {
+   "AR | multiple_choice": 1321,
+   "AR | yes_no": 200,
+   "AS | multiple_choice": 3176,
+   "BD | multiple_choice": 1200,
+   "BD | open_ended": 620,
+   "CO | numeric": 3047,
+   "CO | multiple_choice": 1184,
+   "CTR | yes_no": 200,
+   "CTR | multiple_choice": 873,
+   "GSR | numeric": 600,
+   "GSR | multiple_choice": 600,
+   "OC | multiple_choice": 2247,
+   "OC | yes_no": 1230,
+   "PDD | multiple_choice": 2300,
+   "PL | multiple_choice": 955,
+   "PL | open_ended": 1184,
+   "PL | yes_no": 202,
+   "SC | multiple_choice": 1027,
+   "SC | yes_no": 202,
+   "SC | numeric": 428,
+   "SL | multiple_choice": 1834,
+   "SL | open_ended": 202,
+   "SR | multiple_choice": 1286,
+   "VPR | numeric": 1253,
+   "VPR | multiple_choice": 600,
+   "VPR | open_ended": 511
+  }
+ },
+ "strata_keys": [
+  "task",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "AgroMind-a6830c7e35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fe6f1a924d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b6afefb637",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-399ea18e7a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4e45629f95",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-351be804b7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0acde481db",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5e38efbf9a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4f72d8aa22",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-87a3251d9a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-cc2211d2d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a82cad96eb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 462,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2eaae1fb3e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 642,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d36dc78fc2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 982,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6cf30a03c9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6630c5e894",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1063,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5b5ebc9387",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5bc203ac5f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ar"
+   }
+  },
+  {
+   "sample_id": "AgroMind-dd8baaf213",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-968f0426cc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2928,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fcd7fb696a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a278428199",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fce04d56e7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-44a71922f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-814aedb2a5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3858,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-339d9d1abd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-f67eb65da6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "AS",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_as"
+   }
+  },
+  {
+   "sample_id": "AgroMind-43b2a0f270",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7614cb09a9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4822,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-db16fadda7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6324e413b8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5aada71866",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b595008073",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5753,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c26564a814",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5817,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2ea872c0a2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5855,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3d889db04d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5985,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0e5e015844",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7b8514d592",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8096421060",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-29cc536e21",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6291,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4f49830a17",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-55a712b977",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-cf9852f68d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6358,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c56290660b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2d8f92e515",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6369,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "BD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_bd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-dd1d4b5d18",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6852,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-bc2b6ce6f1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6874,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fc97279699",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6475899852",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d49b5f8049",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7849,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5d6c32df8f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7920,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a30cb9a62e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8342,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-642f6dda5d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8482,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4c4640ef36",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8577,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4837a5f0fc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9e505be0a7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8747,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1167bb4907",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8766,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-652fe1528b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 9135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-32b897dcbd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 9575,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5e73b4e9ef",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 9640,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b0cebd588f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10024,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7934b1315c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10057,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-dcd924cef6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CO",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_co"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5071dde30b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10882,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c6d5062cf1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10925,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-f15fd4fbf1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10939,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ed409c6cb7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 10942,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7b0dd69dcd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11056,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a991fa3926",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11085,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6e58546f6f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6b2dee3e3f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fa833f312d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1f02f92918",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4a030429b3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11523,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1fcc697e90",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9f6eee936c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7c41dad160",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-afab96ff2f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11665,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-acc04d44b5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11693,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0927d29086",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7129fe6e88",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11737,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "CTR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_ctr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0852d8fad1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1b8ea429df",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4dc2a29df9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11941,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-083f292c38",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 11981,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-73ac5209a1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12003,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-32157d53b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0c5f9ace9d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5ff437b289",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-cfc65940d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12267,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ee7f2ae7b9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12297,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3a99e2cc4b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-343bf69ab8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12554,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-43bbac37b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12625,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-888c4b515c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12643,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-58ee1205d8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3309333cb6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12800,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-572cf18bce",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1b47742a81",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12947,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "GSR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_gsr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9a7d66b0ad",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ba648b52d6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13424,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a61e6feba2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13577,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8da590b7f5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-03c344d418",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14069,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-f175742dd8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0c428dfb30",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14389,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b997838e72",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14436,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3a35607353",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14557,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-45625e0783",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14628,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-21b8175b15",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2acfea4e1a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14876,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2d3aac9712",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 15382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-820fa5932a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 15581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9d708c0b37",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 15663,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5a0d03eca1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 16025,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ecc6f1f436",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 16323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c8fd95e83e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 16454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "OC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_oc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-392b9d9c25",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 16624,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-27ead24453",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 17013,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fb4b1e17a6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 17135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8f1d005fa3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7a097405ea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-42d752869a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b731ddd2a8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3bc18a111d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18622,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e33d93956b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18673,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PDD",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pdd"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4851f09286",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 18908,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8b8079a8e0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19023,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0fdb3bdc4f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-214739870c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0abbb14bc8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c081fa5448",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d1756db669",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19501,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-03bc758922",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19555,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-50b457b4d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19657,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-10d7ae6139",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19801,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-544ca2cc86",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19905,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-af7c259fb7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 19948,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b46c13ed89",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-78a90e8dc5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20054,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d4e5a11d87",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c738e46842",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20450,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-a6811973bf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20474,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b6fde963fe",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9e7030eae9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-be06ce3f79",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20695,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c8a0f6b0d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20746,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-575c555ebf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b80687e084",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20849,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6daf658840",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 20957,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3a4363a6fc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21074,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4db54c6d2f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9ead9d73a2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "PL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_pl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-f9132a5ade",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8e85b23bb2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-b7b43bfad7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-39fdae6fd3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21308,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-be27dcab35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21337,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-83eac2a1e6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21413,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-cf18bcaaf1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21470,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-539dfcf11a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3d49fa5ca1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21561,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5ccf83124e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-3f1567a5b9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4558211b4a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-09f08d2500",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21795,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-5c9233a776",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6f79b413a4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e56992b4ea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21871,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-73eb05e15a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 21966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-45306f90e8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22074,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-edacfe93ea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22075,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-41427d7b02",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-0c38ec1fa4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ca8ca97139",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-154e5ab5b3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c9d1216570",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-601ba392ca",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-df87904e1d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22427,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-804f0dd0d9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SC",
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_sc"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1cc22890a8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22929,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-85fb24d2c4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-35f6388314",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8a4757da61",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e05650457e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-65543e86fa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-898d2f25b0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-02e521b1d9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23614,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fdee134309",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1fb0646f40",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8bc26609f0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4468e7081c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24340,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2c154a3ed4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2d056aad9c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-db359a1e14",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9bca237992",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-142dc88340",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24707,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ea6c05d278",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24783,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SL",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sl"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e254947acb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25034,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e2fd5dbaed",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25036,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8a712a456c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-89ebda3fbf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2fa73331a0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25558,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-171282d22b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25873,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-cdc062b24a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25888,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-f1ca4553b3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 25963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-21bbbdc3d1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "SR",
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_sr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-c5a3f8e219",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-80f75a8f9e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26396,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e7db15cfdf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-fb5bdce092",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9eefa23a33",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26873,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-1116b74ce2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-08302c6185",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26918,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-95e3762d53",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26935,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-7631c805b2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d2268166f7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27038,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e7e6b0ad01",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27058,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9cd5c14b69",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4c44e173b6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-ad05462f23",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-995c13c04c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4733d6b03d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27625,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-665998c687",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27638,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-9b1cb99281",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27666,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-93dfc66aae",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-2ae0d31e94",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27715,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4e422f75f7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 27944,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-8685fe8bfb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28010,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d9d4d094a3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28066,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-4cfbd11c48",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-d83b983b35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-6838321417",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agromind_vpr"
+   }
+  },
+  {
+   "sample_id": "AgroMind-e7bf2deed4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28380,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "task": "VPR",
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agromind_vpr"
+   }
+  }
+ ]
+}

@@ -1,0 +1,829 @@
+{
+ "name": "seasveg_classification_bd",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/seasveg_classification_bd",
+ "hf_sha": "42b9524dc8cb9830e98a09825f444b0b92d431ac",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:47:20+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Abelmoschus esculentus",
+   "Brassica oleracea",
+   "Carica Papaya",
+   "Lablab purpureus",
+   "Momordica charantia",
+   "Momordica dioica",
+   "Raphanus sativus",
+   "Solanum Iycopersicum",
+   "Trichosanthes cucumerina",
+   "Trichosanthes dioica"
+  ],
+  "indexed_rows": 1504
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "seasveg_classification_bd-729848fd6a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raphanus sativus"
+   ],
+   "ann": {
+    "label": "Raphanus sativus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-7b78b8a130",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 57,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raphanus sativus"
+   ],
+   "ann": {
+    "label": "Raphanus sativus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-f5a0efc627",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 62,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raphanus sativus"
+   ],
+   "ann": {
+    "label": "Raphanus sativus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-5321936bf2",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 131,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raphanus sativus"
+   ],
+   "ann": {
+    "label": "Raphanus sativus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-d6da7a2c13",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 136,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raphanus sativus"
+   ],
+   "ann": {
+    "label": "Raphanus sativus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-b6b515aef4",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 163,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica Papaya"
+   ],
+   "ann": {
+    "label": "Carica Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-3a3d87821e",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 178,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica Papaya"
+   ],
+   "ann": {
+    "label": "Carica Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-24b1f1cf8e",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 233,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica Papaya"
+   ],
+   "ann": {
+    "label": "Carica Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-d8fa339c06",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 274,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica Papaya"
+   ],
+   "ann": {
+    "label": "Carica Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-efaffe3f7f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 289,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Carica Papaya"
+   ],
+   "ann": {
+    "label": "Carica Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-1051fbc638",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 333,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica charantia"
+   ],
+   "ann": {
+    "label": "Momordica charantia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-8694b56b12",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 347,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica charantia"
+   ],
+   "ann": {
+    "label": "Momordica charantia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-0b2428deac",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 351,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica charantia"
+   ],
+   "ann": {
+    "label": "Momordica charantia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-5ebf2b9c14",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 357,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica charantia"
+   ],
+   "ann": {
+    "label": "Momordica charantia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-2df5d188b4",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 364,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica charantia"
+   ],
+   "ann": {
+    "label": "Momordica charantia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-fc9ab300e4",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 139,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica dioica"
+   ],
+   "ann": {
+    "label": "Momordica dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-ae083a3d38",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica dioica"
+   ],
+   "ann": {
+    "label": "Momordica dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-94eb3acc00",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 180,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica dioica"
+   ],
+   "ann": {
+    "label": "Momordica dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-2829349356",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 184,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica dioica"
+   ],
+   "ann": {
+    "label": "Momordica dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-de067eab06",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 212,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Momordica dioica"
+   ],
+   "ann": {
+    "label": "Momordica dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-de24ffc5f0",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 233,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Lablab purpureus"
+   ],
+   "ann": {
+    "label": "Lablab purpureus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-16ff642576",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 237,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Lablab purpureus"
+   ],
+   "ann": {
+    "label": "Lablab purpureus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-978e0dc4b0",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 244,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Lablab purpureus"
+   ],
+   "ann": {
+    "label": "Lablab purpureus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-82d4ddac97",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 317,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Lablab purpureus"
+   ],
+   "ann": {
+    "label": "Lablab purpureus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-0b06acfc4d",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 333,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Lablab purpureus"
+   ],
+   "ann": {
+    "label": "Lablab purpureus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-10b5eed9a2",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 16,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes dioica"
+   ],
+   "ann": {
+    "label": "Trichosanthes dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-a1ffacdc94",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 29,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes dioica"
+   ],
+   "ann": {
+    "label": "Trichosanthes dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-3e55ac570d",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes dioica"
+   ],
+   "ann": {
+    "label": "Trichosanthes dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-8c5a1b6823",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 66,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes dioica"
+   ],
+   "ann": {
+    "label": "Trichosanthes dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-c03c23b7bc",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 89,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes dioica"
+   ],
+   "ann": {
+    "label": "Trichosanthes dioica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-5fc260c933",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 191,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Abelmoschus esculentus"
+   ],
+   "ann": {
+    "label": "Abelmoschus esculentus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-68b40c27c0",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 194,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Abelmoschus esculentus"
+   ],
+   "ann": {
+    "label": "Abelmoschus esculentus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-86934fb17a",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 240,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Abelmoschus esculentus"
+   ],
+   "ann": {
+    "label": "Abelmoschus esculentus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-31596204d5",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Abelmoschus esculentus"
+   ],
+   "ann": {
+    "label": "Abelmoschus esculentus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-f15d242b6c",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 278,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Abelmoschus esculentus"
+   ],
+   "ann": {
+    "label": "Abelmoschus esculentus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-832a563c66",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 307,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes cucumerina"
+   ],
+   "ann": {
+    "label": "Trichosanthes cucumerina"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-6f23cb70be",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 317,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes cucumerina"
+   ],
+   "ann": {
+    "label": "Trichosanthes cucumerina"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-b77272c73e",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 343,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes cucumerina"
+   ],
+   "ann": {
+    "label": "Trichosanthes cucumerina"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-0b60f6fba9",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 9,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes cucumerina"
+   ],
+   "ann": {
+    "label": "Trichosanthes cucumerina"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-cc3391daa0",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 47,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Trichosanthes cucumerina"
+   ],
+   "ann": {
+    "label": "Trichosanthes cucumerina"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-a6313d1110",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 84,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Solanum Iycopersicum"
+   ],
+   "ann": {
+    "label": "Solanum Iycopersicum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-3151613c7a",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 105,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Solanum Iycopersicum"
+   ],
+   "ann": {
+    "label": "Solanum Iycopersicum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-80c092eec8",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 164,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Solanum Iycopersicum"
+   ],
+   "ann": {
+    "label": "Solanum Iycopersicum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-3bcf5071f3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 165,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Solanum Iycopersicum"
+   ],
+   "ann": {
+    "label": "Solanum Iycopersicum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-523026bd68",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 184,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Solanum Iycopersicum"
+   ],
+   "ann": {
+    "label": "Solanum Iycopersicum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-2bc1f30a8e",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 249,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Brassica oleracea"
+   ],
+   "ann": {
+    "label": "Brassica oleracea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-a5476bfa36",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 301,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Brassica oleracea"
+   ],
+   "ann": {
+    "label": "Brassica oleracea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-94225dc341",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 306,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Brassica oleracea"
+   ],
+   "ann": {
+    "label": "Brassica oleracea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-772b5312ad",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 344,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Brassica oleracea"
+   ],
+   "ann": {
+    "label": "Brassica oleracea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "seasveg_classification_bd-1320819959",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 371,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Brassica oleracea"
+   ],
+   "ann": {
+    "label": "Brassica oleracea"
+   },
+   "strata": {}
+  }
+ ]
+}

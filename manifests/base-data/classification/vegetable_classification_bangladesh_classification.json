@@ -1,0 +1,991 @@
+{
+ "name": "vegetable_classification_bangladesh_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/vegetable_classification_bangladesh",
+ "hf_sha": "92239166e5239797db1ccc3f898f99dbf0b9b5be",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T04:07:20+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bean",
+   "Bitter melon",
+   "Brinjal",
+   "Cucumber",
+   "Garlic",
+   "Green Chili",
+   "Ladies finger",
+   "Onion",
+   "Pointed gourd",
+   "Potato",
+   "Radish",
+   "Tomato"
+  ],
+  "indexed_rows": 4319
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-bf77f8cf25",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ladies finger"
+   ],
+   "ann": {
+    "label": "Ladies finger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-9d94fe358e",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ladies finger"
+   ],
+   "ann": {
+    "label": "Ladies finger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-0387c8bfe1",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ladies finger"
+   ],
+   "ann": {
+    "label": "Ladies finger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-ba6ec244b5",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ladies finger"
+   ],
+   "ann": {
+    "label": "Ladies finger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-c4fd163df6",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 250,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ladies finger"
+   ],
+   "ann": {
+    "label": "Ladies finger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-5e54914b42",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 392,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Radish"
+   ],
+   "ann": {
+    "label": "Radish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-38dc3ba429",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 492,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Radish"
+   ],
+   "ann": {
+    "label": "Radish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-2a64f7e248",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 500,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Radish"
+   ],
+   "ann": {
+    "label": "Radish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-e9dfa6b5a7",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Radish"
+   ],
+   "ann": {
+    "label": "Radish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-55843af9a8",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Radish"
+   ],
+   "ann": {
+    "label": "Radish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-79467c7288",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-369816ff9a",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 807,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-97ef786efe",
+   "ref": {
+    "file": "data/train-00000-of-00005.parquet",
+    "row": 820,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-ecbec3017a",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-08fbe68157",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-78ef0a06f0",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato"
+   ],
+   "ann": {
+    "label": "Potato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-2a753ffaa0",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato"
+   ],
+   "ann": {
+    "label": "Potato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-d55a774ce7",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 386,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato"
+   ],
+   "ann": {
+    "label": "Potato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-d94068e75b",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato"
+   ],
+   "ann": {
+    "label": "Potato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-cf3dce84a0",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato"
+   ],
+   "ann": {
+    "label": "Potato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-0a9652ecaf",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 491,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bean"
+   ],
+   "ann": {
+    "label": "Bean"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-f7926d2445",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 696,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bean"
+   ],
+   "ann": {
+    "label": "Bean"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-4a16aacef1",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 750,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bean"
+   ],
+   "ann": {
+    "label": "Bean"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-205252aa26",
+   "ref": {
+    "file": "data/train-00001-of-00005.parquet",
+    "row": 792,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bean"
+   ],
+   "ann": {
+    "label": "Bean"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-c8a9f0ac3c",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bean"
+   ],
+   "ann": {
+    "label": "Bean"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-8a911fb3e0",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pointed gourd"
+   ],
+   "ann": {
+    "label": "Pointed gourd"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-0dc37b8a53",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 350,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pointed gourd"
+   ],
+   "ann": {
+    "label": "Pointed gourd"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-b15f6f8819",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 369,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pointed gourd"
+   ],
+   "ann": {
+    "label": "Pointed gourd"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-9d86fe6e59",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 387,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pointed gourd"
+   ],
+   "ann": {
+    "label": "Pointed gourd"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-388e5f443b",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pointed gourd"
+   ],
+   "ann": {
+    "label": "Pointed gourd"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-6a5e510c61",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 412,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cucumber"
+   ],
+   "ann": {
+    "label": "Cucumber"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-f0af6f16cf",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cucumber"
+   ],
+   "ann": {
+    "label": "Cucumber"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-045ea727b1",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cucumber"
+   ],
+   "ann": {
+    "label": "Cucumber"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-913db51602",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cucumber"
+   ],
+   "ann": {
+    "label": "Cucumber"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-46de5534f3",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 735,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cucumber"
+   ],
+   "ann": {
+    "label": "Cucumber"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-4fe1bbfd31",
+   "ref": {
+    "file": "data/train-00002-of-00005.parquet",
+    "row": 825,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brinjal"
+   ],
+   "ann": {
+    "label": "Brinjal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-1193b5ae18",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brinjal"
+   ],
+   "ann": {
+    "label": "Brinjal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-6ccd15f8c2",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brinjal"
+   ],
+   "ann": {
+    "label": "Brinjal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-e3e7dc8d40",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brinjal"
+   ],
+   "ann": {
+    "label": "Brinjal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-cda3fe3e6f",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brinjal"
+   ],
+   "ann": {
+    "label": "Brinjal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-836b14a53b",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 266,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Garlic"
+   ],
+   "ann": {
+    "label": "Garlic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-44ae53a32d",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 479,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Garlic"
+   ],
+   "ann": {
+    "label": "Garlic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-f82ed782e4",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 504,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Garlic"
+   ],
+   "ann": {
+    "label": "Garlic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-0d82ad1996",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Garlic"
+   ],
+   "ann": {
+    "label": "Garlic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-91e6dced9d",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 584,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Garlic"
+   ],
+   "ann": {
+    "label": "Garlic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-16b28a1b9a",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green Chili"
+   ],
+   "ann": {
+    "label": "Green Chili"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-1d10c52a9e",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 678,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green Chili"
+   ],
+   "ann": {
+    "label": "Green Chili"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-3acc27f766",
+   "ref": {
+    "file": "data/train-00003-of-00005.parquet",
+    "row": 784,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green Chili"
+   ],
+   "ann": {
+    "label": "Green Chili"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-6b3094739e",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green Chili"
+   ],
+   "ann": {
+    "label": "Green Chili"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-97318a049c",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green Chili"
+   ],
+   "ann": {
+    "label": "Green Chili"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-baf89ddd4d",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-fd6e75313c",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-e6e9cad3a4",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-58e10d3532",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-530db7cf71",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-6368084d8d",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bitter melon"
+   ],
+   "ann": {
+    "label": "Bitter melon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-6904fa7b29",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 591,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bitter melon"
+   ],
+   "ann": {
+    "label": "Bitter melon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-008ae90eac",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 704,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bitter melon"
+   ],
+   "ann": {
+    "label": "Bitter melon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-f26574f63c",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 790,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bitter melon"
+   ],
+   "ann": {
+    "label": "Bitter melon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_classification_bangladesh_classification-f05a4bdbc3",
+   "ref": {
+    "file": "data/train-00004-of-00005.parquet",
+    "row": 803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bitter melon"
+   ],
+   "ann": {
+    "label": "Bitter melon"
+   },
+   "strata": {}
+  }
+ ]
+}

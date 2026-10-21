@@ -1,0 +1,991 @@
+{
+ "name": "plant_seedlings_aarhus",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/plant_seedlings_aarhus",
+ "hf_sha": "d16401efd93e135022ef446c8c6cb36741e1eb0b",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:41:02+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "black_grass",
+   "charlock",
+   "cleavers",
+   "common_chickweed",
+   "common_wheat",
+   "fat_hen",
+   "loose_silkybent",
+   "maize",
+   "scentless_mayweed",
+   "shepherds_purse",
+   "smallflowered_cranesbill",
+   "sugar_beet"
+  ],
+  "indexed_rows": 5539
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plant_seedlings_aarhus-7cf190cfd1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shepherds_purse"
+   ],
+   "ann": {
+    "label": "shepherds_purse"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-86bc8218ac",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shepherds_purse"
+   ],
+   "ann": {
+    "label": "shepherds_purse"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-a59f1e6654",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shepherds_purse"
+   ],
+   "ann": {
+    "label": "shepherds_purse"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-8ef67a945b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shepherds_purse"
+   ],
+   "ann": {
+    "label": "shepherds_purse"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-0112b134ea",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "shepherds_purse"
+   ],
+   "ann": {
+    "label": "shepherds_purse"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-49ade5f211",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cleavers"
+   ],
+   "ann": {
+    "label": "cleavers"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-a91d50ec11",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cleavers"
+   ],
+   "ann": {
+    "label": "cleavers"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-aa7ba52471",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 482,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cleavers"
+   ],
+   "ann": {
+    "label": "cleavers"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-6329514fa2",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 579,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cleavers"
+   ],
+   "ann": {
+    "label": "cleavers"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-895066bf55",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 583,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cleavers"
+   ],
+   "ann": {
+    "label": "cleavers"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-5bf7323d24",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 666,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "smallflowered_cranesbill"
+   ],
+   "ann": {
+    "label": "smallflowered_cranesbill"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-dc1a41aea4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 850,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "smallflowered_cranesbill"
+   ],
+   "ann": {
+    "label": "smallflowered_cranesbill"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-9fc7a7c34f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 863,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "smallflowered_cranesbill"
+   ],
+   "ann": {
+    "label": "smallflowered_cranesbill"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-329ba9e384",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1040,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "smallflowered_cranesbill"
+   ],
+   "ann": {
+    "label": "smallflowered_cranesbill"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-d378d7293b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "smallflowered_cranesbill"
+   ],
+   "ann": {
+    "label": "smallflowered_cranesbill"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-3cc0501ba9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1376,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_chickweed"
+   ],
+   "ann": {
+    "label": "common_chickweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-9f64139520",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_chickweed"
+   ],
+   "ann": {
+    "label": "common_chickweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-1e5c7c3ba4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_chickweed"
+   ],
+   "ann": {
+    "label": "common_chickweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-23fb884f48",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_chickweed"
+   ],
+   "ann": {
+    "label": "common_chickweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-f52bb68a8a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1755,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_chickweed"
+   ],
+   "ann": {
+    "label": "common_chickweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-f2aa9a39d0",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "loose_silkybent"
+   ],
+   "ann": {
+    "label": "loose_silkybent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-818facb263",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 280,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "loose_silkybent"
+   ],
+   "ann": {
+    "label": "loose_silkybent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-5fe52e3d34",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 281,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "loose_silkybent"
+   ],
+   "ann": {
+    "label": "loose_silkybent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-be33fbb716",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 328,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "loose_silkybent"
+   ],
+   "ann": {
+    "label": "loose_silkybent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-540d00f179",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "loose_silkybent"
+   ],
+   "ann": {
+    "label": "loose_silkybent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-b7d27cff68",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 933,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "black_grass"
+   ],
+   "ann": {
+    "label": "black_grass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-24a5198444",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 940,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "black_grass"
+   ],
+   "ann": {
+    "label": "black_grass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-29bfe032ee",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "black_grass"
+   ],
+   "ann": {
+    "label": "black_grass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-f8c1a55d27",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1051,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "black_grass"
+   ],
+   "ann": {
+    "label": "black_grass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-4f35dd8cae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "black_grass"
+   ],
+   "ann": {
+    "label": "black_grass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-3bc13c68ee",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "scentless_mayweed"
+   ],
+   "ann": {
+    "label": "scentless_mayweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-1ea294270b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "scentless_mayweed"
+   ],
+   "ann": {
+    "label": "scentless_mayweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-98a0da3562",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1450,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "scentless_mayweed"
+   ],
+   "ann": {
+    "label": "scentless_mayweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-cae40b39d1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1493,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "scentless_mayweed"
+   ],
+   "ann": {
+    "label": "scentless_mayweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-183b0cb707",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "scentless_mayweed"
+   ],
+   "ann": {
+    "label": "scentless_mayweed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-01cc878637",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1761,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sugar_beet"
+   ],
+   "ann": {
+    "label": "sugar_beet"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-82ce3571db",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1773,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sugar_beet"
+   ],
+   "ann": {
+    "label": "sugar_beet"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-9c723ef025",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sugar_beet"
+   ],
+   "ann": {
+    "label": "sugar_beet"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-819586ea8d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sugar_beet"
+   ],
+   "ann": {
+    "label": "sugar_beet"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-5940960ac4",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sugar_beet"
+   ],
+   "ann": {
+    "label": "sugar_beet"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-bc61c48bb8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fat_hen"
+   ],
+   "ann": {
+    "label": "fat_hen"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-03f8224882",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fat_hen"
+   ],
+   "ann": {
+    "label": "fat_hen"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-8b11eebc4c",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fat_hen"
+   ],
+   "ann": {
+    "label": "fat_hen"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-ce71dc426e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fat_hen"
+   ],
+   "ann": {
+    "label": "fat_hen"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-ebe487eaaf",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "fat_hen"
+   ],
+   "ann": {
+    "label": "fat_hen"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-c57e2e01ef",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 940,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_wheat"
+   ],
+   "ann": {
+    "label": "common_wheat"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-cb64a51fcc",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 975,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_wheat"
+   ],
+   "ann": {
+    "label": "common_wheat"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-446707005b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1035,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_wheat"
+   ],
+   "ann": {
+    "label": "common_wheat"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-a5501856af",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1045,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_wheat"
+   ],
+   "ann": {
+    "label": "common_wheat"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-ebd45250cc",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1056,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "common_wheat"
+   ],
+   "ann": {
+    "label": "common_wheat"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-633e3a1cca",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "charlock"
+   ],
+   "ann": {
+    "label": "charlock"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-4dd1402e9e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "charlock"
+   ],
+   "ann": {
+    "label": "charlock"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-09de7956ed",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "charlock"
+   ],
+   "ann": {
+    "label": "charlock"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-ca41fad4de",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "charlock"
+   ],
+   "ann": {
+    "label": "charlock"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-4e47b45cce",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "charlock"
+   ],
+   "ann": {
+    "label": "charlock"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-0097c5c944",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1642,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize"
+   ],
+   "ann": {
+    "label": "maize"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-86deb021cd",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1707,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize"
+   ],
+   "ann": {
+    "label": "maize"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-3f3448f107",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1764,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize"
+   ],
+   "ann": {
+    "label": "maize"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-b83786b007",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1776,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize"
+   ],
+   "ann": {
+    "label": "maize"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_seedlings_aarhus-d9db020cfa",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1791,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize"
+   ],
+   "ann": {
+    "label": "maize"
+   },
+   "strata": {}
+  }
+ ]
+}

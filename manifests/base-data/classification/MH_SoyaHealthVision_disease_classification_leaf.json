@@ -1,0 +1,505 @@
+{
+ "name": "MH_SoyaHealthVision_disease_classification_leaf",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/MH_SoyaHealthVision_disease_classification_leaf",
+ "hf_sha": "8cccf101c7b07b1c72daa0f4cea6f45e51c11db5",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:40:29+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Caterpillar_Semilooper_Pest",
+   "Frog_Leaf_Eye",
+   "Healthy",
+   "Mosaic",
+   "Rust",
+   "Spectoria_Brown_Spot"
+  ],
+  "indexed_rows": 2782
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-34f95eec0c",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillar_Semilooper_Pest"
+   ],
+   "ann": {
+    "label": "Caterpillar_Semilooper_Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-dba2a1d3b9",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillar_Semilooper_Pest"
+   ],
+   "ann": {
+    "label": "Caterpillar_Semilooper_Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-e0f2ad316b",
+   "ref": {
+    "file": "data/train-00001-of-00013.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillar_Semilooper_Pest"
+   ],
+   "ann": {
+    "label": "Caterpillar_Semilooper_Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-f49fdff685",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillar_Semilooper_Pest"
+   ],
+   "ann": {
+    "label": "Caterpillar_Semilooper_Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-79497da365",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillar_Semilooper_Pest"
+   ],
+   "ann": {
+    "label": "Caterpillar_Semilooper_Pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-98171ca5cc",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spectoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Spectoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-7d092f0377",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spectoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Spectoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-ac91920370",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spectoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Spectoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-5feaaab85b",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spectoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Spectoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-8abe04af0e",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spectoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Spectoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-766aa6789e",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-ac74a46b2d",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-76a32fb8db",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-c7565f16e3",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-f0494a6504",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-c3b5730a78",
+   "ref": {
+    "file": "data/train-00005-of-00013.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-47b0ef5605",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-65a416ed02",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-81291fdc30",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-8bb2d21f34",
+   "ref": {
+    "file": "data/train-00008-of-00013.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-35ad87a947",
+   "ref": {
+    "file": "data/train-00008-of-00013.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-4b8abce6aa",
+   "ref": {
+    "file": "data/train-00010-of-00013.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-379a3cee18",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-80d36d8f95",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-685caf9fb4",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-1fafdb007d",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frog_Leaf_Eye"
+   ],
+   "ann": {
+    "label": "Frog_Leaf_Eye"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-52a4e17b85",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frog_Leaf_Eye"
+   ],
+   "ann": {
+    "label": "Frog_Leaf_Eye"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-c2ab54d149",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frog_Leaf_Eye"
+   ],
+   "ann": {
+    "label": "Frog_Leaf_Eye"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-5d6c9ede6e",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frog_Leaf_Eye"
+   ],
+   "ann": {
+    "label": "Frog_Leaf_Eye"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MH_SoyaHealthVision_disease_classification_leaf-a86f21756a",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frog_Leaf_Eye"
+   ],
+   "ann": {
+    "label": "Frog_Leaf_Eye"
+   },
+   "strata": {}
+  }
+ ]
+}

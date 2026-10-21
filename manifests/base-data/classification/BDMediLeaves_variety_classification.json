@@ -1,0 +1,829 @@
+{
+ "name": "BDMediLeaves_variety_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/BDMediLeaves_variety_classification",
+ "hf_sha": "5c8a9697004ed286adf0d833710e5d1a64330d3b",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:27:32+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "azadirachta-indica",
+   "calotropis-gigantea",
+   "centella-asiatica",
+   "hibiscus-rosa-sinensis",
+   "justicia-adhatoda",
+   "kalanchoe-pinnata",
+   "mikania-micrantha",
+   "ocimum-tenuiflorum",
+   "phyllanthus-emblica",
+   "terminalia-arjuna"
+  ],
+  "indexed_rows": 2048
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "BDMediLeaves_variety_classification-bbe757f656",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 96,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "azadirachta-indica"
+   ],
+   "ann": {
+    "label": "azadirachta-indica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-4237841ec4",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 159,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "calotropis-gigantea"
+   ],
+   "ann": {
+    "label": "calotropis-gigantea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-baec7ef835",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 301,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "calotropis-gigantea"
+   ],
+   "ann": {
+    "label": "calotropis-gigantea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-5d13f4d635",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 15,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "centella-asiatica"
+   ],
+   "ann": {
+    "label": "centella-asiatica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-ec654bef0c",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 46,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "centella-asiatica"
+   ],
+   "ann": {
+    "label": "centella-asiatica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-555036e114",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 106,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "centella-asiatica"
+   ],
+   "ann": {
+    "label": "centella-asiatica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-f49297cce8",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 109,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "centella-asiatica"
+   ],
+   "ann": {
+    "label": "centella-asiatica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-46c5976acc",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 169,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "hibiscus-rosa-sinensis"
+   ],
+   "ann": {
+    "label": "hibiscus-rosa-sinensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-6596be6992",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 224,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "hibiscus-rosa-sinensis"
+   ],
+   "ann": {
+    "label": "hibiscus-rosa-sinensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-3f16f1bb61",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 248,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "hibiscus-rosa-sinensis"
+   ],
+   "ann": {
+    "label": "hibiscus-rosa-sinensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-ee4cd3725b",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 265,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "justicia-adhatoda"
+   ],
+   "ann": {
+    "label": "justicia-adhatoda"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-21e639e9d3",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 331,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "justicia-adhatoda"
+   ],
+   "ann": {
+    "label": "justicia-adhatoda"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-3150003269",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 335,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "justicia-adhatoda"
+   ],
+   "ann": {
+    "label": "justicia-adhatoda"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-4da891865e",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 50,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "justicia-adhatoda"
+   ],
+   "ann": {
+    "label": "justicia-adhatoda"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-45a539d17e",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "justicia-adhatoda"
+   ],
+   "ann": {
+    "label": "justicia-adhatoda"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-6ba05b07ee",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 96,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "kalanchoe-pinnata"
+   ],
+   "ann": {
+    "label": "kalanchoe-pinnata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-16c1d38ff5",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 125,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "kalanchoe-pinnata"
+   ],
+   "ann": {
+    "label": "kalanchoe-pinnata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-9d1fb64dd5",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 131,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "kalanchoe-pinnata"
+   ],
+   "ann": {
+    "label": "kalanchoe-pinnata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-ccc8017f1d",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 197,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "kalanchoe-pinnata"
+   ],
+   "ann": {
+    "label": "kalanchoe-pinnata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-9fabda629b",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 309,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mikania-micrantha"
+   ],
+   "ann": {
+    "label": "mikania-micrantha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-f12b161ae8",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 9,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mikania-micrantha"
+   ],
+   "ann": {
+    "label": "mikania-micrantha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-39fd4eccfe",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 38,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "ocimum-tenuiflorum"
+   ],
+   "ann": {
+    "label": "ocimum-tenuiflorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-2b36d53d49",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 79,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "ocimum-tenuiflorum"
+   ],
+   "ann": {
+    "label": "ocimum-tenuiflorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-20a8a3b088",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 126,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "phyllanthus-emblica"
+   ],
+   "ann": {
+    "label": "phyllanthus-emblica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-9f631e670c",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 129,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "phyllanthus-emblica"
+   ],
+   "ann": {
+    "label": "phyllanthus-emblica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-60a309d681",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 130,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "phyllanthus-emblica"
+   ],
+   "ann": {
+    "label": "phyllanthus-emblica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-eb399e2bcb",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 185,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "phyllanthus-emblica"
+   ],
+   "ann": {
+    "label": "phyllanthus-emblica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-33f893e72a",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 266,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "terminalia-arjuna"
+   ],
+   "ann": {
+    "label": "terminalia-arjuna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-65f8bdc28b",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 275,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "terminalia-arjuna"
+   ],
+   "ann": {
+    "label": "terminalia-arjuna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-30e5d12805",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 316,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "terminalia-arjuna"
+   ],
+   "ann": {
+    "label": "terminalia-arjuna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-f005148c66",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 334,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "terminalia-arjuna"
+   ],
+   "ann": {
+    "label": "terminalia-arjuna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-1db283f8b7",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 95,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "azadirachta-indica"
+   ],
+   "ann": {
+    "label": "azadirachta-indica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-2db726d53b",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "azadirachta-indica"
+   ],
+   "ann": {
+    "label": "azadirachta-indica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-31dc5ba0c4",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 111,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "azadirachta-indica"
+   ],
+   "ann": {
+    "label": "azadirachta-indica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-c8ec34e8bb",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 132,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "calotropis-gigantea"
+   ],
+   "ann": {
+    "label": "calotropis-gigantea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-3280d92d55",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 141,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "calotropis-gigantea"
+   ],
+   "ann": {
+    "label": "calotropis-gigantea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-b6495e9815",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 168,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "centella-asiatica"
+   ],
+   "ann": {
+    "label": "centella-asiatica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-6cac8f575d",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 204,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "hibiscus-rosa-sinensis"
+   ],
+   "ann": {
+    "label": "hibiscus-rosa-sinensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-5f5b991a41",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 219,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "hibiscus-rosa-sinensis"
+   ],
+   "ann": {
+    "label": "hibiscus-rosa-sinensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-454a8f44e0",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 307,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "kalanchoe-pinnata"
+   ],
+   "ann": {
+    "label": "kalanchoe-pinnata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-66c4ddd37d",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mikania-micrantha"
+   ],
+   "ann": {
+    "label": "mikania-micrantha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-973ea8e29e",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 39,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "ocimum-tenuiflorum"
+   ],
+   "ann": {
+    "label": "ocimum-tenuiflorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-f70df5b572",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "ocimum-tenuiflorum"
+   ],
+   "ann": {
+    "label": "ocimum-tenuiflorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-f2c354bfbf",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 158,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "azadirachta-indica"
+   ],
+   "ann": {
+    "label": "azadirachta-indica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-865ca69433",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 163,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "calotropis-gigantea"
+   ],
+   "ann": {
+    "label": "calotropis-gigantea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-80ea8188c5",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 271,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mikania-micrantha"
+   ],
+   "ann": {
+    "label": "mikania-micrantha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-be42d8f9a0",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 273,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mikania-micrantha"
+   ],
+   "ann": {
+    "label": "mikania-micrantha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-a8aef4b475",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 299,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "ocimum-tenuiflorum"
+   ],
+   "ann": {
+    "label": "ocimum-tenuiflorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-dcd4f05dca",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 300,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "phyllanthus-emblica"
+   ],
+   "ann": {
+    "label": "phyllanthus-emblica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BDMediLeaves_variety_classification-4fd6ab3300",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 329,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "terminalia-arjuna"
+   ],
+   "ann": {
+    "label": "terminalia-arjuna"
+   },
+   "strata": {}
+  }
+ ]
+}

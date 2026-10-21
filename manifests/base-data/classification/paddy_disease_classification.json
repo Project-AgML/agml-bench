@@ -1,0 +1,829 @@
+{
+ "name": "paddy_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/paddy_disease_classification",
+ "hf_sha": "e7cd4e729b637a24d3b66fbf3cf2ead4761d5c33",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:18:03+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "bacterial_leaf_blight",
+   "bacterial_leaf_streak",
+   "bacterial_panicle_blight",
+   "blast",
+   "brown_spot",
+   "dead_heart",
+   "downy_mildew",
+   "hispa",
+   "normal",
+   "tungro"
+  ],
+  "indexed_rows": 10407
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "paddy_disease_classification-dc9ba178fb",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "dead_heart"
+   ],
+   "ann": {
+    "label": "dead_heart"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-8e33a588e8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 288,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "dead_heart"
+   ],
+   "ann": {
+    "label": "dead_heart"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-081c1195b2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 607,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "dead_heart"
+   ],
+   "ann": {
+    "label": "dead_heart"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-c7063cfd15",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "dead_heart"
+   ],
+   "ann": {
+    "label": "dead_heart"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-f5b019af39",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "dead_heart"
+   ],
+   "ann": {
+    "label": "dead_heart"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-da0feee55e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1442,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_panicle_blight"
+   ],
+   "ann": {
+    "label": "bacterial_panicle_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-93e023df42",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_panicle_blight"
+   ],
+   "ann": {
+    "label": "bacterial_panicle_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-c34ea3c5f7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_panicle_blight"
+   ],
+   "ann": {
+    "label": "bacterial_panicle_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-dd9008d108",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_panicle_blight"
+   ],
+   "ann": {
+    "label": "bacterial_panicle_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-d4a534e826",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1729,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_panicle_blight"
+   ],
+   "ann": {
+    "label": "bacterial_panicle_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-d0b61d6757",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_blight"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-dff36a468e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1962,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_blight"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-f825400d0a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_blight"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-f3eddd386e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_blight"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-c003767f8d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_blight"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-23a62237a9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_spot"
+   ],
+   "ann": {
+    "label": "brown_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-709434cfcd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_spot"
+   ],
+   "ann": {
+    "label": "brown_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-fa0482832b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2476,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_spot"
+   ],
+   "ann": {
+    "label": "brown_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-34a8131a6d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2874,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_spot"
+   ],
+   "ann": {
+    "label": "brown_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-8013531a04",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2954,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_spot"
+   ],
+   "ann": {
+    "label": "brown_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-a9c37cad43",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "hispa"
+   ],
+   "ann": {
+    "label": "hispa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-429c1683af",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3802,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "hispa"
+   ],
+   "ann": {
+    "label": "hispa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-4b9ed85d9c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4353,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "hispa"
+   ],
+   "ann": {
+    "label": "hispa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-66dcae8b6e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4414,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "hispa"
+   ],
+   "ann": {
+    "label": "hispa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-b6a433a8f9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4757,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "hispa"
+   ],
+   "ann": {
+    "label": "hispa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-fc79bf9329",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4859,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "downy_mildew"
+   ],
+   "ann": {
+    "label": "downy_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-4ee7836462",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "downy_mildew"
+   ],
+   "ann": {
+    "label": "downy_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-07132ebbc4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "downy_mildew"
+   ],
+   "ann": {
+    "label": "downy_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-8a3b9a0a06",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "downy_mildew"
+   ],
+   "ann": {
+    "label": "downy_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-710507e2f9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "downy_mildew"
+   ],
+   "ann": {
+    "label": "downy_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-9f08183c4d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "blast"
+   ],
+   "ann": {
+    "label": "blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-f8ee2e7d1e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "blast"
+   ],
+   "ann": {
+    "label": "blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-f8e61ed594",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "blast"
+   ],
+   "ann": {
+    "label": "blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-cfddcbaf34",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "blast"
+   ],
+   "ann": {
+    "label": "blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-2774fa6cd3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1836,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "blast"
+   ],
+   "ann": {
+    "label": "blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-89926d6111",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "normal"
+   ],
+   "ann": {
+    "label": "normal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-fd15bf165b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "normal"
+   ],
+   "ann": {
+    "label": "normal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-ec65072073",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2444,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "normal"
+   ],
+   "ann": {
+    "label": "normal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-6ae236091a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "normal"
+   ],
+   "ann": {
+    "label": "normal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-673a883e82",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3539,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "normal"
+   ],
+   "ann": {
+    "label": "normal"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-b49b8836b1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_streak"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_streak"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-d5baac9caf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3904,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_streak"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_streak"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-5be9d94a3c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3928,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_streak"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_streak"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-cca4c2859f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3961,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_streak"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_streak"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-a9b4b7c9b7",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4099,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial_leaf_streak"
+   ],
+   "ann": {
+    "label": "bacterial_leaf_streak"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-cde4becfb0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "tungro"
+   ],
+   "ann": {
+    "label": "tungro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-608af2ce80",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "tungro"
+   ],
+   "ann": {
+    "label": "tungro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-b0a42df526",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "tungro"
+   ],
+   "ann": {
+    "label": "tungro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-06713bd38a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4938,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "tungro"
+   ],
+   "ann": {
+    "label": "tungro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "paddy_disease_classification-1ff6411d01",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4971,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "tungro"
+   ],
+   "ann": {
+    "label": "tungro"
+   },
+   "strata": {}
+  }
+ ]
+}

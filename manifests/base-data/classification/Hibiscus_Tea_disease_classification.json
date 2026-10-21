@@ -1,0 +1,991 @@
+{
+ "name": "Hibiscus_Tea_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/Hibiscus_Tea_disease_classification",
+ "hf_sha": "995934b58fe3530bfdf8e9ec87689b12d6426165",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:43:03+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Tea Algal Spot",
+   "Tea Brown Blight",
+   "Citruspot",
+   "Early_Mild_Spotting",
+   "Fungal_Infected",
+   "Tea Grey Blight",
+   "Healthy",
+   "Mild_Edge_Damage",
+   "Tea Red Spot",
+   "Senescent",
+   "Slightly_Diseased",
+   "Wrinkled_Leaf"
+  ],
+  "indexed_rows": 1411
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-ef4bae9d70",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 47,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citruspot"
+   ],
+   "ann": {
+    "label": "Citruspot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-ada1fa4815",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 88,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citruspot"
+   ],
+   "ann": {
+    "label": "Citruspot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-a9c8b5b4fb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 124,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citruspot"
+   ],
+   "ann": {
+    "label": "Citruspot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-b4f500dae5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 130,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citruspot"
+   ],
+   "ann": {
+    "label": "Citruspot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-359e957218",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 148,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citruspot"
+   ],
+   "ann": {
+    "label": "Citruspot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-fffd9ef144",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 161,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Mild_Spotting"
+   ],
+   "ann": {
+    "label": "Early_Mild_Spotting"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-6fe906429b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 173,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Mild_Spotting"
+   ],
+   "ann": {
+    "label": "Early_Mild_Spotting"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8b2cbed245",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 194,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Mild_Spotting"
+   ],
+   "ann": {
+    "label": "Early_Mild_Spotting"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-4489fc5940",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 213,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Mild_Spotting"
+   ],
+   "ann": {
+    "label": "Early_Mild_Spotting"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-4fb855b90a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 224,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Mild_Spotting"
+   ],
+   "ann": {
+    "label": "Early_Mild_Spotting"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-d6ef817663",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 237,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Infected"
+   ],
+   "ann": {
+    "label": "Fungal_Infected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-c7754e5b60",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 238,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Infected"
+   ],
+   "ann": {
+    "label": "Fungal_Infected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-157877bbdd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 243,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Infected"
+   ],
+   "ann": {
+    "label": "Fungal_Infected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-0f99dd1bbc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 253,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Infected"
+   ],
+   "ann": {
+    "label": "Fungal_Infected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-9d797216dc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fungal_Infected"
+   ],
+   "ann": {
+    "label": "Fungal_Infected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-48a4eae78b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 367,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-9c9bf8d2bb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 420,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8f571d9966",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 667,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-0bdad23269",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 680,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-97e274dd00",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 770,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mild_Edge_Damage"
+   ],
+   "ann": {
+    "label": "Mild_Edge_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-24d54d9155",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 789,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mild_Edge_Damage"
+   ],
+   "ann": {
+    "label": "Mild_Edge_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-c5ac48d2f8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 883,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mild_Edge_Damage"
+   ],
+   "ann": {
+    "label": "Mild_Edge_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-b355e2ddff",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 889,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mild_Edge_Damage"
+   ],
+   "ann": {
+    "label": "Mild_Edge_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-b66f5e30a5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 924,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mild_Edge_Damage"
+   ],
+   "ann": {
+    "label": "Mild_Edge_Damage"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-ff40af6978",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 961,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Senescent"
+   ],
+   "ann": {
+    "label": "Senescent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-c54424a9ba",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 966,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Senescent"
+   ],
+   "ann": {
+    "label": "Senescent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8c64c77caf",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 985,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Senescent"
+   ],
+   "ann": {
+    "label": "Senescent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-d7a16233ac",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 989,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Senescent"
+   ],
+   "ann": {
+    "label": "Senescent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-4be2337799",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 990,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Senescent"
+   ],
+   "ann": {
+    "label": "Senescent"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-4326d57b75",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1012,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Slightly_Diseased"
+   ],
+   "ann": {
+    "label": "Slightly_Diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-7bb877e151",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1035,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Slightly_Diseased"
+   ],
+   "ann": {
+    "label": "Slightly_Diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-56dde4c635",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1039,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Slightly_Diseased"
+   ],
+   "ann": {
+    "label": "Slightly_Diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8960de59fd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1074,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Slightly_Diseased"
+   ],
+   "ann": {
+    "label": "Slightly_Diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-b5dbe5ca2c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1103,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Slightly_Diseased"
+   ],
+   "ann": {
+    "label": "Slightly_Diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-68c14b3a2b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1112,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Algal Spot"
+   ],
+   "ann": {
+    "label": "Tea Algal Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-f4958e1a46",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1129,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Algal Spot"
+   ],
+   "ann": {
+    "label": "Tea Algal Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-ac51083d20",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1133,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Algal Spot"
+   ],
+   "ann": {
+    "label": "Tea Algal Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-32cdaf7944",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1148,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Algal Spot"
+   ],
+   "ann": {
+    "label": "Tea Algal Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-153b094673",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1159,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Algal Spot"
+   ],
+   "ann": {
+    "label": "Tea Algal Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-9b86797c04",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1169,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Brown Blight"
+   ],
+   "ann": {
+    "label": "Tea Brown Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-c86029d363",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1170,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Brown Blight"
+   ],
+   "ann": {
+    "label": "Tea Brown Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8758ce0d76",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1172,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Brown Blight"
+   ],
+   "ann": {
+    "label": "Tea Brown Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-e45cc5882e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1174,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Brown Blight"
+   ],
+   "ann": {
+    "label": "Tea Brown Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-af1476074b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1179,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Brown Blight"
+   ],
+   "ann": {
+    "label": "Tea Brown Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-227fdd5140",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1222,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Grey Blight"
+   ],
+   "ann": {
+    "label": "Tea Grey Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-6953a3eb60",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1236,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Grey Blight"
+   ],
+   "ann": {
+    "label": "Tea Grey Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-a08e2bc64e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1245,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Grey Blight"
+   ],
+   "ann": {
+    "label": "Tea Grey Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-fa631d6051",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1248,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Grey Blight"
+   ],
+   "ann": {
+    "label": "Tea Grey Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-915af2f782",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1253,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Grey Blight"
+   ],
+   "ann": {
+    "label": "Tea Grey Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-a50fd6e4bb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1283,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-fd8d01a69d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1312,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Red Spot"
+   ],
+   "ann": {
+    "label": "Tea Red Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-892406c93e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1320,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Red Spot"
+   ],
+   "ann": {
+    "label": "Tea Red Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-2247a7ad4a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1323,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Red Spot"
+   ],
+   "ann": {
+    "label": "Tea Red Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8ed0d32511",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1351,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Red Spot"
+   ],
+   "ann": {
+    "label": "Tea Red Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-6b1e4ac9f5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1355,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Red Spot"
+   ],
+   "ann": {
+    "label": "Tea Red Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-e79a994568",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1360,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wrinkled_Leaf"
+   ],
+   "ann": {
+    "label": "Wrinkled_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-d7091cea44",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1363,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wrinkled_Leaf"
+   ],
+   "ann": {
+    "label": "Wrinkled_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-8bcedc195c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1368,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wrinkled_Leaf"
+   ],
+   "ann": {
+    "label": "Wrinkled_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-0adb52a12b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1372,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wrinkled_Leaf"
+   ],
+   "ann": {
+    "label": "Wrinkled_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Hibiscus_Tea_disease_classification-ef59145d22",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1388,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wrinkled_Leaf"
+   ],
+   "ann": {
+    "label": "Wrinkled_Leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

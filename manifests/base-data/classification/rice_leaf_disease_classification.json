@@ -1,0 +1,505 @@
+{
+ "name": "rice_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/rice_leaf_disease_classification",
+ "hf_sha": "b0675c92b6932e940a4097e09cf49621b35997a4",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:21:04+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial_Leaf_Blight",
+   "Brown_Spot",
+   "Healthy_Rice_Leaf",
+   "Leaf_Blast",
+   "Leaf_Scald",
+   "Sheath_Blight"
+  ],
+  "indexed_rows": 3829
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "rice_leaf_disease_classification-b51247abfa",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Blast"
+   ],
+   "ann": {
+    "label": "Leaf_Blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-da3eb13f76",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Blast"
+   ],
+   "ann": {
+    "label": "Leaf_Blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-7b37eea392",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Blast"
+   ],
+   "ann": {
+    "label": "Leaf_Blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-e0e3c54d7b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Blast"
+   ],
+   "ann": {
+    "label": "Leaf_Blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-07c2cfc229",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 622,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Blast"
+   ],
+   "ann": {
+    "label": "Leaf_Blast"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-b5b9a20495",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 811,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath_Blight"
+   ],
+   "ann": {
+    "label": "Sheath_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-31416c6de7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath_Blight"
+   ],
+   "ann": {
+    "label": "Sheath_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-898c3a5023",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 952,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath_Blight"
+   ],
+   "ann": {
+    "label": "Sheath_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-e6857597c4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath_Blight"
+   ],
+   "ann": {
+    "label": "Sheath_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-b24f9ba124",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sheath_Blight"
+   ],
+   "ann": {
+    "label": "Sheath_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-e76ecf103d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-be9e861abb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 346,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-7e9b280c61",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 390,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-22b0847f9b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-5973f01566",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 516,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Bacterial_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-fd1fc145d7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 754,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Spot"
+   ],
+   "ann": {
+    "label": "Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-9ccf393c87",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 884,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Spot"
+   ],
+   "ann": {
+    "label": "Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-370d67543b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 891,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Spot"
+   ],
+   "ann": {
+    "label": "Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-f591e3c54c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Spot"
+   ],
+   "ann": {
+    "label": "Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-d344911272",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Spot"
+   ],
+   "ann": {
+    "label": "Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-ece2cce3d6",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Rice_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Rice_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-5cd89c7e5e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Rice_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Rice_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-84620f21ed",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Rice_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Rice_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-50e45efa33",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 455,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Rice_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Rice_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-bfa18488ce",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 594,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Rice_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Rice_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-5fd17e3394",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Scald"
+   ],
+   "ann": {
+    "label": "Leaf_Scald"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-7329437b35",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 708,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Scald"
+   ],
+   "ann": {
+    "label": "Leaf_Scald"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-7bcd496682",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 777,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Scald"
+   ],
+   "ann": {
+    "label": "Leaf_Scald"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-dabafc784b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 873,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Scald"
+   ],
+   "ann": {
+    "label": "Leaf_Scald"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rice_leaf_disease_classification-5b83988a5e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 959,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Scald"
+   ],
+   "ann": {
+    "label": "Leaf_Scald"
+   },
+   "strata": {}
+  }
+ ]
+}

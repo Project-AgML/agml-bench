@@ -1,0 +1,2294 @@
+{
+ "name": "BGM_YOLO_plant_disease_classification",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/BGM_YOLO_plant_disease_classification",
+ "hf_sha": "f77788b9e527464c0cd08a0b5dbe70f5a6a998c1",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:35:23+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "豆类角斑病",
+   "豆类锈病",
+   "草莓角斑病",
+   "草莓炭疽果腐病",
+   "草莓花枯病",
+   "草莓灰霉病",
+   "草莓叶斑病",
+   "草莓白粉病（果实）",
+   "草莓白粉病（叶子）",
+   "番茄早疫病",
+   "番茄叶霉病",
+   "番茄红蜘蛛病"
+  ],
+  "indexed_rows": 5482
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-033d66a602",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4319,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄叶霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       25.249999999999993,
+       26.0,
+       315.5,
+       347.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-7b0d71e5f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4327,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄早疫病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄早疫病",
+      "bbox_raw": [
+       8.999999999999991,
+       16.25,
+       375.0,
+       372.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-d2b69ff2d6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4342,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类锈病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       83.0,
+       6.000000000000002,
+       84.0,
+       194.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       83.74999999999999,
+       212.99999999999997,
+       135.5,
+       195.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       172.5,
+       143.5,
+       160.0,
+       144.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       215.25,
+       261.5,
+       72.5,
+       97.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       0.0,
+       112.99999999999999,
+       96.0,
+       211.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-e8b9d8cc4d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4346,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       116.75000000000001,
+       14.999999999999993,
+       111.5,
+       217.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       229.99999999999997,
+       122.75000000000001,
+       94.0,
+       220.49999999999997
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       101.75,
+       231.25000000000003,
+       123.5,
+       155.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-0b9b5584b9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4354,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       191.0,
+       175.00000000000003,
+       191.0,
+       71.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       89.0,
+       226.5,
+       182.0,
+       111.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       83.0,
+       119.0,
+       119.99999999999999,
+       97.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-ff32a59bec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4363,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       105.0,
+       56.25,
+       85.0,
+       291.5
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       188.99999999999997,
+       0.0,
+       112.99999999999999,
+       267.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       8.249999999999993,
+       3.4999999999999876,
+       96.5,
+       320.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-7309a9a42e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4368,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       146.0,
+       19.0,
+       89.0,
+       224.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       72.5,
+       205.99999999999997,
+       133.0,
+       179.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       206.0,
+       174.99999999999997,
+       99.0,
+       193.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       0.2499999999999991,
+       177.00000000000003,
+       74.5,
+       162.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-5d04e42800",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4373,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类锈病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       86.99999999999999,
+       38.49999999999999,
+       101.0,
+       68.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       33.50000000000001,
+       147.99999999999997,
+       188.0,
+       85.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       230.99999999999997,
+       155.0,
+       153.0,
+       101.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       133.0,
+       251.99999999999997,
+       146.0,
+       150.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       249.0,
+       274.25,
+       141.0,
+       94.5
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       177.75,
+       366.0,
+       80.5,
+       50.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       73.99999999999999,
+       309.50000000000006,
+       90.0,
+       62.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       20.250000000000004,
+       219.0,
+       87.5,
+       31.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       110.25000000000001,
+       236.74999999999997,
+       37.5,
+       45.5
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       198.0,
+       86.5,
+       72.0,
+       51.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-928d55871a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4382,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类锈病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       72.00000000000001,
+       167.99999999999997,
+       86.0,
+       101.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       136.00000000000003,
+       113.00000000000001,
+       162.0,
+       72.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       152.0,
+       221.0,
+       111.0,
+       108.00000000000001
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       140.5,
+       305.25,
+       183.0,
+       95.5
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       43.25,
+       299.5,
+       99.5,
+       96.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       60.00000000000001,
+       224.0,
+       96.0,
+       78.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-a4520b1a20",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4397,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类锈病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       101.50000000000001,
+       192.0,
+       143.0,
+       92.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       52.5,
+       292.0,
+       128.0,
+       95.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       193.50000000000003,
+       275.0,
+       123.0,
+       110.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       270.99999999999994,
+       237.49999999999997,
+       94.0,
+       79.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-b81b9773c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4399,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类锈病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       176.5,
+       174.0,
+       61.0,
+       90.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       224.0,
+       68.5,
+       104.0,
+       109.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       227.5,
+       212.99999999999997,
+       110.0,
+       184.0
+      ]
+     },
+     {
+      "label": "豆类锈病",
+      "bbox_raw": [
+       112.0,
+       322.25,
+       143.0,
+       93.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-c3c7aebc45",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4411,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "豆类角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       165.75,
+       2.0000000000000044,
+       136.5,
+       188.0
+      ]
+     },
+     {
+      "label": "豆类角斑病",
+      "bbox_raw": [
+       373.99999999999994,
+       120.99999999999999,
+       42.0,
+       136.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-d7d15280e4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4415,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄早疫病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄早疫病",
+      "bbox_raw": [
+       8.750000000000004,
+       15.749999999999979,
+       392.5,
+       364.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-8a1ac23dde",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4432,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄早疫病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄早疫病",
+      "bbox_raw": [
+       113.00000000000001,
+       0.0,
+       303.0,
+       395.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-a3da413fd7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4436,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄早疫病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄早疫病",
+      "bbox_raw": [
+       11.249999999999995,
+       6.000000000000002,
+       380.5,
+       401.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-1be4712159",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4439,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄红蜘蛛病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄红蜘蛛病",
+      "bbox_raw": [
+       73.99999999999999,
+       24.99999999999998,
+       260.0,
+       358.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-96c7e9290d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4453,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓花枯病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       191.0,
+       143.5,
+       39.0,
+       39.0
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       124.0,
+       179.25,
+       52.0,
+       36.5
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       235.25,
+       236.74999999999997,
+       39.5,
+       43.5
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       228.25000000000003,
+       93.49999999999999,
+       40.5,
+       35.0
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       241.25,
+       135.25,
+       47.5,
+       40.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-22ae63c445",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4486,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       284.75,
+       132.25,
+       97.5,
+       63.50000000000001
+      ]
+     },
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       194.75,
+       247.25,
+       58.5,
+       38.5
+      ]
+     },
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       211.5,
+       359.0,
+       49.0,
+       31.0
+      ]
+     },
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       360.25,
+       74.0,
+       27.5,
+       39.0
+      ]
+     },
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       182.25,
+       135.5,
+       28.500000000000004,
+       41.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-eedede2df0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4491,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄叶霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       13.750000000000009,
+       5.000000000000005,
+       344.5,
+       369.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-6cbebfc24c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4505,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄叶霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       42.75000000000002,
+       23.75000000000002,
+       361.5,
+       371.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-cd5faf471e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4510,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄早疫病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄早疫病",
+      "bbox_raw": [
+       29.25,
+       20.750000000000007,
+       345.5,
+       374.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-dcbfa1d0c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4524,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄叶霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       153.25,
+       265.74999999999994,
+       2.5,
+       0.5
+      ]
+     },
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       100.75,
+       17.249999999999996,
+       298.5,
+       344.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-819d5fa764",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4532,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄红蜘蛛病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄红蜘蛛病",
+      "bbox_raw": [
+       112.24999999999999,
+       28.250000000000004,
+       238.5,
+       323.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-f3cbf14ffc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4539,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄叶霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄叶霉病",
+      "bbox_raw": [
+       46.75000000000001,
+       18.250000000000014,
+       344.5,
+       348.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-17aad88d39",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4547,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄红蜘蛛病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄红蜘蛛病",
+      "bbox_raw": [
+       81.25,
+       28.75,
+       270.5,
+       332.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-8a265baefd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4623,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       0.0,
+       300.0,
+       136.0,
+       115.0
+      ]
+     },
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       85.50000000000001,
+       0.0,
+       191.0,
+       401.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-da156f23a6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4659,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       0.0,
+       74.50000000000001,
+       415.0,
+       300.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-4ab83e3970",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4676,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       56.999999999999986,
+       0.0,
+       358.0,
+       363.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-94e981e81f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4723,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓角斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓角斑病",
+      "bbox_raw": [
+       20.499999999999996,
+       114.49999999999999,
+       352.0,
+       301.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-0046174ae7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4751,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓炭疽果腐病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       79.49999999999997,
+       104.0,
+       282.0,
+       198.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-a212814c46",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4759,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓炭疽果腐病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       279.0,
+       227.5,
+       87.0,
+       55.0
+      ]
+     },
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       129.5,
+       258.0,
+       81.0,
+       56.0
+      ]
+     },
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       83.49999999999999,
+       135.5,
+       70.0,
+       57.00000000000001
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-0fbdf8ddb1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4767,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓炭疽果腐病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       158.5,
+       222.50000000000003,
+       114.00000000000001,
+       162.0
+      ]
+     },
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       229.00000000000003,
+       106.99999999999999,
+       117.0,
+       149.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-84a148ccbb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4783,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓炭疽果腐病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       172.0,
+       137.5,
+       198.0,
+       135.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-e36e9f33ec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4784,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓炭疽果腐病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓炭疽果腐病",
+      "bbox_raw": [
+       115.5,
+       103.5,
+       143.0,
+       128.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-164313c9f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4789,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄红蜘蛛病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄红蜘蛛病",
+      "bbox_raw": [
+       60.99999999999999,
+       20.249999999999986,
+       300.0,
+       355.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-b15fd3c515",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4791,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "番茄红蜘蛛病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "番茄红蜘蛛病",
+      "bbox_raw": [
+       63.74999999999999,
+       39.249999999999986,
+       301.5,
+       343.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-a97ba56d1e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4809,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓花枯病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       240.5,
+       105.0,
+       46.0,
+       84.0
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       185.0,
+       163.5,
+       42.0,
+       65.0
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       138.5,
+       275.5,
+       51.0,
+       82.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-5a54ecb279",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4838,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓花枯病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       164.5,
+       228.5,
+       67.0,
+       81.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-368f6b5961",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4848,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓花枯病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       136.0,
+       170.5,
+       75.0,
+       127.00000000000001
+      ]
+     },
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       25.000000000000004,
+       120.50000000000001,
+       66.0,
+       135.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-a118eb6f6a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4853,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓花枯病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓花枯病",
+      "bbox_raw": [
+       166.0,
+       159.0,
+       74.0,
+       101.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-8e7cd29a0c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4880,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓灰霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       268.0,
+       175.0,
+       67.0,
+       116.0
+      ]
+     },
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       21.5,
+       58.5,
+       29.999999999999996,
+       48.0
+      ]
+     },
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       36.00000000000001,
+       66.5,
+       42.0,
+       40.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-8ed5da5e50",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4905,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓灰霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       155.0,
+       161.49999999999997,
+       94.0,
+       116.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-9e11f6fdb4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4926,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓灰霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       163.99999999999997,
+       137.5,
+       124.0,
+       123.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-77cbf4451b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4949,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓灰霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       243.5,
+       184.5,
+       83.0,
+       92.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-59e869fc5b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4973,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓灰霉病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       150.99999999999997,
+       126.50000000000001,
+       150.0,
+       119.0
+      ]
+     },
+     {
+      "label": "草莓灰霉病",
+      "bbox_raw": [
+       160.5,
+       51.0,
+       44.0,
+       76.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-f0dd00c568",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5049,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓叶斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       249.5,
+       0.0,
+       166.0,
+       138.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       99.5,
+       0.0,
+       305.0,
+       415.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       102.0,
+       300.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       0.0,
+       197.00000000000003,
+       175.0,
+       218.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-e3b32eacbf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5060,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓叶斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       125.0,
+       0.0,
+       216.00000000000003,
+       294.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       212.0,
+       150.0,
+       191.0,
+       265.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       8.499999999999993,
+       132.00000000000003,
+       206.0,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-3e537097d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5149,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓叶斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       81.00000000000001,
+       120.00000000000001,
+       283.0,
+       233.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       310.0,
+       0.0,
+       105.0,
+       37.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       181.0,
+       0.0,
+       117.0,
+       125.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       79.0,
+       217.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       132.00000000000003,
+       272.0,
+       220.0,
+       143.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       0.0,
+       220.0,
+       97.0,
+       195.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-275477b28f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5188,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓叶斑病",
+    "草莓白粉病（果实）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       0.0,
+       368.00000000000006,
+       68.0,
+       47.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       0.0,
+       25.000000000000004,
+       415.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-e3c96ac246",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5210,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓叶斑病"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       243.50000000000003,
+       75.00000000000001,
+       164.0,
+       262.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       36.50000000000001,
+       81.00000000000001,
+       196.0,
+       212.0
+      ]
+     },
+     {
+      "label": "草莓叶斑病",
+      "bbox_raw": [
+       168.0,
+       182.5,
+       141.0,
+       205.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-00a468a9aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5235,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（果实）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       35.49999999999999,
+       191.5,
+       80.0,
+       80.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       155.49999999999997,
+       263.5,
+       58.0,
+       59.99999999999999
+      ]
+     },
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       182.0,
+       294.50000000000006,
+       48.0,
+       62.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       294.5,
+       270.0,
+       37.0,
+       43.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-498a3aca11",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5245,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（果实）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       73.0,
+       83.49999999999999,
+       230.0,
+       189.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-b4821cad54",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5266,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（果实）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       99.0,
+       199.99999999999997,
+       109.0,
+       141.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-d1568b553b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5279,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（果实）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       98.50000000000001,
+       92.5,
+       174.0,
+       257.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（果实）",
+      "bbox_raw": [
+       83.49999999999999,
+       315.0,
+       85.0,
+       100.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-bd2f97dc22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5296,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（叶子）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       29.0,
+       285.5,
+       86.0,
+       91.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       167.0,
+       247.50000000000003,
+       84.0,
+       132.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       114.50000000000001,
+       119.99999999999999,
+       90.0,
+       148.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       199.0,
+       85.00000000000001,
+       121.00000000000001,
+       177.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       210.5,
+       273.0,
+       133.0,
+       142.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       294.0,
+       205.0,
+       121.00000000000001,
+       142.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-66b7c8d448",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5328,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（叶子）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       225.99999999999997,
+       34.99999999999999,
+       189.0,
+       272.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       139.0,
+       0.0,
+       182.0,
+       155.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       0.0,
+       90.49999999999997,
+       258.0,
+       267.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-0676bb4b24",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5337,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（叶子）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       98.49999999999999,
+       174.00000000000003,
+       147.0,
+       203.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       109.5,
+       61.500000000000014,
+       139.0,
+       133.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       195.00000000000003,
+       0.0,
+       79.0,
+       56.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-cce0519b72",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5379,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（叶子）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       91.0,
+       0.0,
+       269.0,
+       278.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "BGM_YOLO_plant_disease_classification-1b2c6dac11",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5457,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "草莓白粉病（叶子）"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       225.99999999999997,
+       253.00000000000003,
+       189.0,
+       162.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       357.5,
+       93.50000000000001,
+       58.0,
+       197.0
+      ]
+     },
+     {
+      "label": "草莓白粉病（叶子）",
+      "bbox_raw": [
+       110.49999999999997,
+       85.5,
+       268.0,
+       245.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

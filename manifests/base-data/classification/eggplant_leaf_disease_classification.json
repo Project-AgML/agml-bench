@@ -1,0 +1,829 @@
+{
+ "name": "eggplant_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/eggplant_leaf_disease_classification",
+ "hf_sha": "10a2de32a81b671c09217641541313299dca1bcc",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:00:20+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Aphids",
+   "Cercospora Leaf Spot",
+   "Defect Eggplant",
+   "Flea Beetles",
+   "Fresh Eggplant",
+   "Fresh Eggplant Leaf",
+   "Leaf Wilt",
+   "Phytophthora Blight",
+   "Powdery Mildew",
+   "Tobacco Mosaic Virus"
+  ],
+  "indexed_rows": 3116
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "eggplant_leaf_disease_classification-646d5ab958",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 57,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Phytophthora Blight"
+   ],
+   "ann": {
+    "label": "Phytophthora Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-8b44a3f59d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 162,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Phytophthora Blight"
+   ],
+   "ann": {
+    "label": "Phytophthora Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-8ae2465655",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 192,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Phytophthora Blight"
+   ],
+   "ann": {
+    "label": "Phytophthora Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-5c76967352",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 270,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Phytophthora Blight"
+   ],
+   "ann": {
+    "label": "Phytophthora Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-1fa0159015",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 282,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Phytophthora Blight"
+   ],
+   "ann": {
+    "label": "Phytophthora Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-812ac2a7c4",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 436,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Wilt"
+   ],
+   "ann": {
+    "label": "Leaf Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-4c34771a4d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 441,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Wilt"
+   ],
+   "ann": {
+    "label": "Leaf Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-c36b9f29f4",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 454,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Wilt"
+   ],
+   "ann": {
+    "label": "Leaf Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-5041d9e03f",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 476,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Wilt"
+   ],
+   "ann": {
+    "label": "Leaf Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-6864e8d143",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 479,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Wilt"
+   ],
+   "ann": {
+    "label": "Leaf Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-af4163f872",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 560,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-a457771f05",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 624,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-f8becd8ea1",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 651,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-7dc9a2779a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 663,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-241345dea5",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 716,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-4f170db7b2",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 818,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-c2e6424908",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 857,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-f03bd5a298",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 876,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-1a3574e2dd",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 925,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-bebe6fd07d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 944,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-f8d28b5ea2",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1100,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tobacco Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tobacco Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-2f489ad47a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1101,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tobacco Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tobacco Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-54cc5a3522",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1249,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tobacco Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tobacco Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-5a25f59b89",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1300,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tobacco Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tobacco Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-0bce5a6578",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1384,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tobacco Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tobacco Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-69fae2829e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 19,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids"
+   ],
+   "ann": {
+    "label": "Aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-1c010104be",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 29,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids"
+   ],
+   "ann": {
+    "label": "Aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-f7f73e4c4d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids"
+   ],
+   "ann": {
+    "label": "Aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-b4c9131b89",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 61,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids"
+   ],
+   "ann": {
+    "label": "Aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-81a46d18c6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 81,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids"
+   ],
+   "ann": {
+    "label": "Aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-de46c4aeb9",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 170,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-b6ca3c44b9",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 457,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-0b577e907b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 485,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-7f1fc884ab",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 639,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-e6965f4d64",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 640,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-d8ca2ab9e0",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 721,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-a421e360c6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 820,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-ca67a6dbe7",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 945,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-101c4a9d4d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 958,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-d440030ab6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 971,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Eggplant Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Eggplant Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-059a171301",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1061,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Defect Eggplant"
+   ],
+   "ann": {
+    "label": "Defect Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-1f11f7519c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1182,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Defect Eggplant"
+   ],
+   "ann": {
+    "label": "Defect Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-acab091137",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1197,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Defect Eggplant"
+   ],
+   "ann": {
+    "label": "Defect Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-9c5fbb313c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1244,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Defect Eggplant"
+   ],
+   "ann": {
+    "label": "Defect Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-d41699c08a",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1285,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Defect Eggplant"
+   ],
+   "ann": {
+    "label": "Defect Eggplant"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-891d88baec",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1432,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora Leaf Spot"
+   ],
+   "ann": {
+    "label": "Cercospora Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-969be9744e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1441,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora Leaf Spot"
+   ],
+   "ann": {
+    "label": "Cercospora Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-ab0ea9b6cd",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1474,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora Leaf Spot"
+   ],
+   "ann": {
+    "label": "Cercospora Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-a9c49e2d51",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1501,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora Leaf Spot"
+   ],
+   "ann": {
+    "label": "Cercospora Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_leaf_disease_classification-8c1d45a79e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 1507,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora Leaf Spot"
+   ],
+   "ann": {
+    "label": "Cercospora Leaf Spot"
+   },
+   "strata": {}
+  }
+ ]
+}

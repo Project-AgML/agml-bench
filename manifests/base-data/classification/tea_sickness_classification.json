@@ -1,0 +1,667 @@
+{
+ "name": "tea_sickness_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/tea_sickness_classification",
+ "hf_sha": "61af3d2da8a20b9a23a7ac4e7da197b1db12a5af",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:20:54+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "algal leaf",
+   "bird eye spot",
+   "brown blight",
+   "gray light",
+   "healthy",
+   "red leaf spot",
+   "white spot"
+  ],
+  "indexed_rows": 885
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tea_sickness_classification-b4b9946fef",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown blight"
+   ],
+   "ann": {
+    "label": "brown blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-c82f45db3b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown blight"
+   ],
+   "ann": {
+    "label": "brown blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-848843492c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown blight"
+   ],
+   "ann": {
+    "label": "brown blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-6269c3e050",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown blight"
+   ],
+   "ann": {
+    "label": "brown blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-e03f747ba1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown blight"
+   ],
+   "ann": {
+    "label": "brown blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-d60f5fcc48",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red leaf spot"
+   ],
+   "ann": {
+    "label": "red leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-491fd39a72",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red leaf spot"
+   ],
+   "ann": {
+    "label": "red leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-3bd834c12b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red leaf spot"
+   ],
+   "ann": {
+    "label": "red leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-22485a4190",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red leaf spot"
+   ],
+   "ann": {
+    "label": "red leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-b541c41587",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red leaf spot"
+   ],
+   "ann": {
+    "label": "red leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-90aa828549",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white spot"
+   ],
+   "ann": {
+    "label": "white spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-ee6f891061",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white spot"
+   ],
+   "ann": {
+    "label": "white spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-a11fb69dd7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white spot"
+   ],
+   "ann": {
+    "label": "white spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-f4a0f640cd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white spot"
+   ],
+   "ann": {
+    "label": "white spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-dc765bd93b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white spot"
+   ],
+   "ann": {
+    "label": "white spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-179c3eb749",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-3d8cb92c66",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-f8224b1396",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-39c26b5219",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-c53f673cb6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-4e3c50a3bf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-0f34d72cec",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-5671e9af60",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-1c65f3c59f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-c18203a109",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-1233a0b4ab",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bird eye spot"
+   ],
+   "ann": {
+    "label": "bird eye spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-d8f659faf1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bird eye spot"
+   ],
+   "ann": {
+    "label": "bird eye spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-43b3d5fae2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bird eye spot"
+   ],
+   "ann": {
+    "label": "bird eye spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-595ef29b88",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bird eye spot"
+   ],
+   "ann": {
+    "label": "bird eye spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-c333cb728b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bird eye spot"
+   ],
+   "ann": {
+    "label": "bird eye spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-b9a39168f8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray light"
+   ],
+   "ann": {
+    "label": "gray light"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-b69fe6c7fe",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray light"
+   ],
+   "ann": {
+    "label": "gray light"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-bed3756276",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray light"
+   ],
+   "ann": {
+    "label": "gray light"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-c74b1b0226",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray light"
+   ],
+   "ann": {
+    "label": "gray light"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-9ccf4fcc34",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray light"
+   ],
+   "ann": {
+    "label": "gray light"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-960fe4ae7a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal leaf"
+   ],
+   "ann": {
+    "label": "algal leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-62cf91f75e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal leaf"
+   ],
+   "ann": {
+    "label": "algal leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-f9ad50594c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 373,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal leaf"
+   ],
+   "ann": {
+    "label": "algal leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-58e81deaa9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 430,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal leaf"
+   ],
+   "ann": {
+    "label": "algal leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_sickness_classification-8957ef3a85",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 434,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal leaf"
+   ],
+   "ann": {
+    "label": "algal leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

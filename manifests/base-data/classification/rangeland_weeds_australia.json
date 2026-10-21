@@ -1,0 +1,748 @@
+{
+ "name": "rangeland_weeds_australia",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/rangeland_weeds_australia",
+ "hf_sha": "849c69183230606cd1ec1108684cc431d1b11bf2",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:16:30+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "chinee_apple",
+   "lantana",
+   "negative",
+   "parkinsonia",
+   "parthenium",
+   "prickly_acacia",
+   "rubber_vine",
+   "siam_weed",
+   "snake_weed"
+  ],
+  "indexed_rows": 17509
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "rangeland_weeds_australia-202f4046ff",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "prickly_acacia"
+   ],
+   "ann": {
+    "label": "prickly_acacia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-e6fb403273",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "prickly_acacia"
+   ],
+   "ann": {
+    "label": "prickly_acacia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-a1e46b9d3a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "prickly_acacia"
+   ],
+   "ann": {
+    "label": "prickly_acacia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-cb2a5b800b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 802,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "prickly_acacia"
+   ],
+   "ann": {
+    "label": "prickly_acacia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-8c93676b19",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1009,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "prickly_acacia"
+   ],
+   "ann": {
+    "label": "prickly_acacia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-32b3f6eacf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "lantana"
+   ],
+   "ann": {
+    "label": "lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-e3443d1469",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "lantana"
+   ],
+   "ann": {
+    "label": "lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-1a6d442f8e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1847,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "lantana"
+   ],
+   "ann": {
+    "label": "lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-431e34bfad",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "lantana"
+   ],
+   "ann": {
+    "label": "lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-314a466efb",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1982,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "lantana"
+   ],
+   "ann": {
+    "label": "lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-d7a6ecf4cc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parkinsonia"
+   ],
+   "ann": {
+    "label": "parkinsonia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-28464c8cca",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2481,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parkinsonia"
+   ],
+   "ann": {
+    "label": "parkinsonia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-26deaf0da3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2812,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parkinsonia"
+   ],
+   "ann": {
+    "label": "parkinsonia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-e74ee0c448",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2943,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parkinsonia"
+   ],
+   "ann": {
+    "label": "parkinsonia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-1280707fc8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parkinsonia"
+   ],
+   "ann": {
+    "label": "parkinsonia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-d268e445a5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "snake_weed"
+   ],
+   "ann": {
+    "label": "snake_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-79e16f3cab",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3427,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "snake_weed"
+   ],
+   "ann": {
+    "label": "snake_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-1ab8c2d338",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3543,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "snake_weed"
+   ],
+   "ann": {
+    "label": "snake_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-b99ecf78ed",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "snake_weed"
+   ],
+   "ann": {
+    "label": "snake_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-87e8285175",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "snake_weed"
+   ],
+   "ann": {
+    "label": "snake_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-fdebc5bb01",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4381,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parthenium"
+   ],
+   "ann": {
+    "label": "parthenium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-412ae7d3d3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parthenium"
+   ],
+   "ann": {
+    "label": "parthenium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-db0ab09805",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4832,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parthenium"
+   ],
+   "ann": {
+    "label": "parthenium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-fab891e9e7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4960,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parthenium"
+   ],
+   "ann": {
+    "label": "parthenium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-073c42f158",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "parthenium"
+   ],
+   "ann": {
+    "label": "parthenium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-83b3a4dbe6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "chinee_apple"
+   ],
+   "ann": {
+    "label": "chinee_apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-71c6c29965",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5450,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "chinee_apple"
+   ],
+   "ann": {
+    "label": "chinee_apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-0d8c07f21a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5651,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "chinee_apple"
+   ],
+   "ann": {
+    "label": "chinee_apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-28efca60e4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6067,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "chinee_apple"
+   ],
+   "ann": {
+    "label": "chinee_apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-ae784ab586",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "chinee_apple"
+   ],
+   "ann": {
+    "label": "chinee_apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-c8b499438c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 8687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "negative"
+   ],
+   "ann": {
+    "label": "negative"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-83291abd89",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1002,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "negative"
+   ],
+   "ann": {
+    "label": "negative"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-dbd96e45a1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "negative"
+   ],
+   "ann": {
+    "label": "negative"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-5b536281a5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4028,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "negative"
+   ],
+   "ann": {
+    "label": "negative"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-51638bf0ff",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4885,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "negative"
+   ],
+   "ann": {
+    "label": "negative"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-5028ab82a4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7091,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "siam_weed"
+   ],
+   "ann": {
+    "label": "siam_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-4f6c8184c8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "siam_weed"
+   ],
+   "ann": {
+    "label": "siam_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-72331de21d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "siam_weed"
+   ],
+   "ann": {
+    "label": "siam_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-a823a1f8d5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "siam_weed"
+   ],
+   "ann": {
+    "label": "siam_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-c26a0a15e8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "siam_weed"
+   ],
+   "ann": {
+    "label": "siam_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-0d86fbce02",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8008,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rubber_vine"
+   ],
+   "ann": {
+    "label": "rubber_vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-8b80a74505",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rubber_vine"
+   ],
+   "ann": {
+    "label": "rubber_vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-ac17150fb5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rubber_vine"
+   ],
+   "ann": {
+    "label": "rubber_vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-02a1a490bf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rubber_vine"
+   ],
+   "ann": {
+    "label": "rubber_vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rangeland_weeds_australia-7c74be98bd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rubber_vine"
+   ],
+   "ann": {
+    "label": "rubber_vine"
+   },
+   "strata": {}
+  }
+ ]
+}

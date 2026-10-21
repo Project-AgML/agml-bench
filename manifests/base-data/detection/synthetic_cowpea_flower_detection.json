@@ -1,0 +1,149 @@
+{
+ "name": "synthetic_cowpea_flower_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/synthetic_cowpea_flower_detection",
+ "hf_sha": "791609c4cb36068ea5293eec1544dc75adc3b706",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:14:33+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Flower"
+  ],
+  "indexed_rows": 9804
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "synthetic_cowpea_flower_detection-294559a16b",
+   "ref": {
+    "file": "augmented/train-00000-of-00003.parquet",
+    "row": 331,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Flower"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Flower",
+      "bbox_raw": [
+       0.5203114999999999,
+       0.11718799999999999,
+       0.025001,
+       0.054688
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_flower_detection-ba3f6ccfa3",
+   "ref": {
+    "file": "augmented/train-00000-of-00003.parquet",
+    "row": 912,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Flower"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Flower",
+      "bbox_raw": [
+       0.41875049999999997,
+       0.41562550000000004,
+       0.054687,
+       0.032813
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_flower_detection-1bbba884ff",
+   "ref": {
+    "file": "augmented/train-00001-of-00003.parquet",
+    "row": 1292,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Flower"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Flower",
+      "bbox_raw": [
+       0.073438,
+       0.9296865,
+       0.0625,
+       0.042189
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_flower_detection-9baec29c7e",
+   "ref": {
+    "file": "augmented/train-00002-of-00003.parquet",
+    "row": 511,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Flower"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Flower",
+      "bbox_raw": [
+       0.3921865,
+       0.41562550000000004,
+       0.054687,
+       0.032813
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "synthetic_cowpea_flower_detection-1a541a634d",
+   "ref": {
+    "file": "augmented/train-00002-of-00003.parquet",
+    "row": 1140,
+    "config": "augmented",
+    "split": "train"
+   },
+   "keys": [
+    "Flower"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Flower",
+      "bbox_raw": [
+       0.6093745,
+       0.7468735,
+       0.028123,
+       0.078125
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

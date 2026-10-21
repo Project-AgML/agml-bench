@@ -1,0 +1,748 @@
+{
+ "name": "CoLeaf_nutritional_deficiency_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/CoLeaf_nutritional_deficiency_classification",
+ "hf_sha": "541b967f99b02db0eb9a803e6a4209970caee2dd",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:06:03+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "boron-B",
+   "calcium-Ca",
+   "healthy",
+   "iron-Fe",
+   "magnesium-Mg",
+   "manganese-Mn",
+   "nitrogen-N",
+   "phosphorus-P",
+   "potasium-K"
+  ],
+  "indexed_rows": 902
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-633f17bf25",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "calcium-Ca"
+   ],
+   "ann": {
+    "label": "calcium-Ca"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-2fd006f745",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "calcium-Ca"
+   ],
+   "ann": {
+    "label": "calcium-Ca"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-323200fb5d",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "calcium-Ca"
+   ],
+   "ann": {
+    "label": "calcium-Ca"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-b969918cb3",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "calcium-Ca"
+   ],
+   "ann": {
+    "label": "calcium-Ca"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-9668c038cc",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "calcium-Ca"
+   ],
+   "ann": {
+    "label": "calcium-Ca"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-17768ffe45",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "manganese-Mn"
+   ],
+   "ann": {
+    "label": "manganese-Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-7d8771d0f1",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "manganese-Mn"
+   ],
+   "ann": {
+    "label": "manganese-Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-8bcca15197",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "manganese-Mn"
+   ],
+   "ann": {
+    "label": "manganese-Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-e0643ec7d9",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "manganese-Mn"
+   ],
+   "ann": {
+    "label": "manganese-Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-8dbb445d3b",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "manganese-Mn"
+   ],
+   "ann": {
+    "label": "manganese-Mn"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-5c5c25c5b4",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-8cf7e35c33",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-6157359677",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-57979656ce",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-c57712a2bb",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-03051375ed",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "magnesium-Mg"
+   ],
+   "ann": {
+    "label": "magnesium-Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-0704a4b086",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "magnesium-Mg"
+   ],
+   "ann": {
+    "label": "magnesium-Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-c33bf2080b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "magnesium-Mg"
+   ],
+   "ann": {
+    "label": "magnesium-Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-23f986fb91",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "magnesium-Mg"
+   ],
+   "ann": {
+    "label": "magnesium-Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-fb709f4e29",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "magnesium-Mg"
+   ],
+   "ann": {
+    "label": "magnesium-Mg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-fa38928b92",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "boron-B"
+   ],
+   "ann": {
+    "label": "boron-B"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-5256c5e2ed",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "boron-B"
+   ],
+   "ann": {
+    "label": "boron-B"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-3fb597d602",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "boron-B"
+   ],
+   "ann": {
+    "label": "boron-B"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-22178b9022",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "boron-B"
+   ],
+   "ann": {
+    "label": "boron-B"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-0c0be73d79",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "boron-B"
+   ],
+   "ann": {
+    "label": "boron-B"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-91a9c48917",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "potasium-K"
+   ],
+   "ann": {
+    "label": "potasium-K"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-926244f9ea",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "potasium-K"
+   ],
+   "ann": {
+    "label": "potasium-K"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-ce68f9844a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "potasium-K"
+   ],
+   "ann": {
+    "label": "potasium-K"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-bc1149b221",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "potasium-K"
+   ],
+   "ann": {
+    "label": "potasium-K"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-34ae21e7c3",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "potasium-K"
+   ],
+   "ann": {
+    "label": "potasium-K"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-46e8d09577",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "iron-Fe"
+   ],
+   "ann": {
+    "label": "iron-Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-2b0f988e63",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "iron-Fe"
+   ],
+   "ann": {
+    "label": "iron-Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-451d1ad84f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "iron-Fe"
+   ],
+   "ann": {
+    "label": "iron-Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-855cfd8b4d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "iron-Fe"
+   ],
+   "ann": {
+    "label": "iron-Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-39425437d1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "iron-Fe"
+   ],
+   "ann": {
+    "label": "iron-Fe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-89372e37fe",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "nitrogen-N"
+   ],
+   "ann": {
+    "label": "nitrogen-N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-3b1d91de34",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "nitrogen-N"
+   ],
+   "ann": {
+    "label": "nitrogen-N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-10c52d0762",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "nitrogen-N"
+   ],
+   "ann": {
+    "label": "nitrogen-N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-b15d2053d2",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "nitrogen-N"
+   ],
+   "ann": {
+    "label": "nitrogen-N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-d772be0bf9",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "nitrogen-N"
+   ],
+   "ann": {
+    "label": "nitrogen-N"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-9fc785ad75",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "phosphorus-P"
+   ],
+   "ann": {
+    "label": "phosphorus-P"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-01a83129e3",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "phosphorus-P"
+   ],
+   "ann": {
+    "label": "phosphorus-P"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-757788a8e3",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "phosphorus-P"
+   ],
+   "ann": {
+    "label": "phosphorus-P"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-321cb4a4f8",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "phosphorus-P"
+   ],
+   "ann": {
+    "label": "phosphorus-P"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CoLeaf_nutritional_deficiency_classification-f1133e53a6",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "phosphorus-P"
+   ],
+   "ann": {
+    "label": "phosphorus-P"
+   },
+   "strata": {}
+  }
+ ]
+}

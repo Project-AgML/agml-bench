@@ -1,0 +1,111 @@
+{
+ "name": "vineyard_grape_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/vineyard_grape_segmentation",
+ "hf_sha": "7d4b6c6956af72722fd880fa4426b3987bcd0cb3",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-21T04:20:08+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1"
+  },
+  "indexed_rows": 646
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "vineyard_grape_segmentation-d9fecf8289",
+   "ref": {
+    "file": "data/train-00002-of-00028.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vineyard_grape_segmentation-1ff9e23218",
+   "ref": {
+    "file": "data/train-00001-of-00028.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vineyard_grape_segmentation-6127c401a0",
+   "ref": {
+    "file": "data/train-00025-of-00028.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vineyard_grape_segmentation-deaad065f0",
+   "ref": {
+    "file": "data/train-00013-of-00028.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vineyard_grape_segmentation-b97c9d836d",
+   "ref": {
+    "file": "data/train-00006-of-00028.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

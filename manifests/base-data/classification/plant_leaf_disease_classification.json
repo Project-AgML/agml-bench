@@ -1,0 +1,1315 @@
+{
+ "name": "plant_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/plant_leaf_disease_classification",
+ "hf_sha": "877c198f53cf2c968730c60062cc8cf2c83c30b7",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:38:18+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "Anthracnose lesions",
+   "Black Rot",
+   "Downey mildew",
+   "Downy mildew",
+   "Eggplant Cercopora leaf spot",
+   "Eggplant begomovirus",
+   "Eggplant fresh leaf",
+   "Eggplant verticillium wilt",
+   "Fresh leaf",
+   "Fusarium wilt",
+   "Mosaic virus",
+   "Tomato Bacterial spot",
+   "Tomato Fresh leaf",
+   "Tomato leaf curl virus",
+   "Tomato spotted wilt"
+  ],
+  "indexed_rows": 12786
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plant_leaf_disease_classification-3bd834c12b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downey mildew"
+   ],
+   "ann": {
+    "label": "Downey mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-e0ada5028c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh leaf"
+   ],
+   "ann": {
+    "label": "Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-0231a380db",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1083,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh leaf"
+   ],
+   "ann": {
+    "label": "Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-641c50e324",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium wilt"
+   ],
+   "ann": {
+    "label": "Fusarium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-0af2406e43",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium wilt"
+   ],
+   "ann": {
+    "label": "Fusarium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-e74fe4ddab",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium wilt"
+   ],
+   "ann": {
+    "label": "Fusarium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-ba30ca5581",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium wilt"
+   ],
+   "ann": {
+    "label": "Fusarium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-df6ceabdc9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium wilt"
+   ],
+   "ann": {
+    "label": "Fusarium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-fae79f43fa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic virus"
+   ],
+   "ann": {
+    "label": "Mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-bced7cc316",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic virus"
+   ],
+   "ann": {
+    "label": "Mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-eb85c6dc15",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1938,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic virus"
+   ],
+   "ann": {
+    "label": "Mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-d3905ae6d1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2040,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic virus"
+   ],
+   "ann": {
+    "label": "Mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-db826f2fb2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic virus"
+   ],
+   "ann": {
+    "label": "Mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-7350b67a46",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2297,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-c73455f680",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-2555b0d2f4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2358,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-e8c89dfc4c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-89daf99d52",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-70a6672119",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downey mildew"
+   ],
+   "ann": {
+    "label": "Downey mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-8e53115cb8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2990,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downey mildew"
+   ],
+   "ann": {
+    "label": "Downey mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-da7fd9d4e6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downey mildew"
+   ],
+   "ann": {
+    "label": "Downey mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-97a6bda3e5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downey mildew"
+   ],
+   "ann": {
+    "label": "Downey mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-5fca723aa3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Rot"
+   ],
+   "ann": {
+    "label": "Black Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-e4a89604d1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4253,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Rot"
+   ],
+   "ann": {
+    "label": "Black Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-06884a573a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Rot"
+   ],
+   "ann": {
+    "label": "Black Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-9d4f39b079",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4488,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Rot"
+   ],
+   "ann": {
+    "label": "Black Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-b9022700af",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4493,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Rot"
+   ],
+   "ann": {
+    "label": "Black Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-749ebeac05",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-74e2b3296b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-99aaa8a292",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-0da80bfcab",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5050,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-1a4d64fba5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh leaf"
+   ],
+   "ann": {
+    "label": "Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-99354d4c85",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5440,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh leaf"
+   ],
+   "ann": {
+    "label": "Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-fa016ac464",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5723,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose lesions"
+   ],
+   "ann": {
+    "label": "Anthracnose lesions"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-897183c5b9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5786,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose lesions"
+   ],
+   "ann": {
+    "label": "Anthracnose lesions"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-39a95991e6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6044,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose lesions"
+   ],
+   "ann": {
+    "label": "Anthracnose lesions"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-cdf56cb4f6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose lesions"
+   ],
+   "ann": {
+    "label": "Anthracnose lesions"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-9d5e1c498d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose lesions"
+   ],
+   "ann": {
+    "label": "Anthracnose lesions"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-c8689b05b9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-4fc3b5103e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 691,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh leaf"
+   ],
+   "ann": {
+    "label": "Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-4e58220e60",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 906,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant Cercopora leaf spot"
+   ],
+   "ann": {
+    "label": "Eggplant Cercopora leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-f03c73f909",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 961,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant Cercopora leaf spot"
+   ],
+   "ann": {
+    "label": "Eggplant Cercopora leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-fd33d1ff53",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant Cercopora leaf spot"
+   ],
+   "ann": {
+    "label": "Eggplant Cercopora leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-c45bc97efa",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1360,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant Cercopora leaf spot"
+   ],
+   "ann": {
+    "label": "Eggplant Cercopora leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-b7566ed13e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant Cercopora leaf spot"
+   ],
+   "ann": {
+    "label": "Eggplant Cercopora leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-9f8439ca3c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant begomovirus"
+   ],
+   "ann": {
+    "label": "Eggplant begomovirus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-8b19fa7a89",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant begomovirus"
+   ],
+   "ann": {
+    "label": "Eggplant begomovirus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-12dc152eab",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1871,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant begomovirus"
+   ],
+   "ann": {
+    "label": "Eggplant begomovirus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-9e3ae76049",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2079,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant begomovirus"
+   ],
+   "ann": {
+    "label": "Eggplant begomovirus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-5e9b764778",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2280,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant begomovirus"
+   ],
+   "ann": {
+    "label": "Eggplant begomovirus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-5b38b2c7c3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2864,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant fresh leaf"
+   ],
+   "ann": {
+    "label": "Eggplant fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-adab961ba4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant fresh leaf"
+   ],
+   "ann": {
+    "label": "Eggplant fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-1153aa9322",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2948,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant fresh leaf"
+   ],
+   "ann": {
+    "label": "Eggplant fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-8a96b2c6bb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2959,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant fresh leaf"
+   ],
+   "ann": {
+    "label": "Eggplant fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-f4c5789510",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant fresh leaf"
+   ],
+   "ann": {
+    "label": "Eggplant fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-c65b80fc8e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant verticillium wilt"
+   ],
+   "ann": {
+    "label": "Eggplant verticillium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-4655cbe6b8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant verticillium wilt"
+   ],
+   "ann": {
+    "label": "Eggplant verticillium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-e77c28d8e0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant verticillium wilt"
+   ],
+   "ann": {
+    "label": "Eggplant verticillium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-f1ca1ab075",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3589,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant verticillium wilt"
+   ],
+   "ann": {
+    "label": "Eggplant verticillium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-799aa456d6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3727,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eggplant verticillium wilt"
+   ],
+   "ann": {
+    "label": "Eggplant verticillium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-f0f355e6e2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3903,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato Bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-cd96575ab9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato Bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-a2a2e856bf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato Bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-01c2c5c7c3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato Bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-c9c1d081ac",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4291,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato Bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-ed3e133600",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4410,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Fresh leaf"
+   ],
+   "ann": {
+    "label": "Tomato Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-d99949e23f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Fresh leaf"
+   ],
+   "ann": {
+    "label": "Tomato Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-6c1f9e7586",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Fresh leaf"
+   ],
+   "ann": {
+    "label": "Tomato Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-0afd9ae9ec",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4664,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Fresh leaf"
+   ],
+   "ann": {
+    "label": "Tomato Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-d6dd72a700",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4823,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Fresh leaf"
+   ],
+   "ann": {
+    "label": "Tomato Fresh leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-90096c3cae",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5027,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf curl virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf curl virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-f5eeb7c1bd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf curl virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf curl virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-eec44ae2fc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5367,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf curl virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf curl virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-2ba86e7f0b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf curl virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf curl virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-164db77534",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf curl virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf curl virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-531305672d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 5996,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato spotted wilt"
+   ],
+   "ann": {
+    "label": "Tomato spotted wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-18da42b98c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 6005,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato spotted wilt"
+   ],
+   "ann": {
+    "label": "Tomato spotted wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-3d51886a55",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 6194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato spotted wilt"
+   ],
+   "ann": {
+    "label": "Tomato spotted wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-34437faff9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 6317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato spotted wilt"
+   ],
+   "ann": {
+    "label": "Tomato spotted wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_leaf_disease_classification-dce16711f8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 6366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato spotted wilt"
+   ],
+   "ann": {
+    "label": "Tomato spotted wilt"
+   },
+   "strata": {}
+  }
+ ]
+}

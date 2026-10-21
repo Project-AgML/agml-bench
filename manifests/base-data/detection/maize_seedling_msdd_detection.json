@@ -1,0 +1,3409 @@
+{
+ "name": "maize_seedling_msdd_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/maize_seedling_msdd_detection",
+ "hf_sha": "1019e1de3ad05c719cbbdf867454656aa42afb3e",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:10:52+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "single_seedling",
+   "double_seedling",
+   "triple_seedling"
+  ],
+  "indexed_rows": 3152
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "maize_seedling_msdd_detection-4fdaf87f66",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "double_seedling",
+    "single_seedling",
+    "triple_seedling"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1396.50048,
+       1294.9996800000001,
+       52.99968,
+       45.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1843.00032,
+       1290.50016,
+       48.0,
+       49.000319999999995
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1609.9996800000001,
+       91.99968,
+       54.0,
+       63.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1335.50016,
+       1299.99936,
+       45.00096,
+       45.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       119.50080000000001,
+       1314.4992,
+       55.00032,
+       43.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1807.00032,
+       692.99904,
+       62.000640000000004,
+       62.000640000000004
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1209.4992,
+       105.0,
+       49.000319999999995,
+       68.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1653.50016,
+       1296.50016,
+       52.99968,
+       46.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1137.0,
+       118.50048,
+       68.00063999999999,
+       64.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1310.49984,
+       1579.99968,
+       64.99968,
+       63.99936
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       631.49952,
+       400.49951999999996,
+       67.00032,
+       56.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       376.50048,
+       1886.49984,
+       55.00032,
+       33.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1737.00096,
+       1001.99904,
+       45.99936,
+       54.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1195.00032,
+       1289.5008,
+       48.0,
+       40.999680000000005
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       526.4995200000001,
+       1881.99936,
+       85.00032,
+       38.000640000000004
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1176.50016,
+       399.50016,
+       61.00032,
+       60.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0009600000000009601,
+       1582.50144,
+       34.99968,
+       56.99904
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       126.50112,
+       408.99936,
+       81.99936000000001,
+       58.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       423.0,
+       698.99904,
+       39.99936,
+       38.000640000000004
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1768.99968,
+       684.99936,
+       69.99936,
+       68.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1246.50048,
+       391.50048000000004,
+       76.99968,
+       70.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1295.99904,
+       32.000640000000004,
+       44.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1488.0,
+       673.50048,
+       57.999359999999996,
+       63.000960000000006
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       431.00064,
+       1881.99936,
+       56.00064,
+       38.000640000000004
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1810.99872,
+       1574.49984,
+       56.00064,
+       55.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1031.5008,
+       695.49984,
+       79.00032,
+       46.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1566.99936,
+       1293.0,
+       51.999359999999996,
+       54.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1687.00032,
+       98.50079999999998,
+       60.0,
+       66.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       481.4995200000001,
+       1026.50112,
+       72.0,
+       40.999680000000005
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1733.49984,
+       1293.50016,
+       56.99904,
+       52.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1833.50016,
+       79.99967999999998,
+       52.99968,
+       78.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1649.5008,
+       996.4992,
+       64.99968,
+       43.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1450.5004800000002,
+       985.0012800000001,
+       52.99968,
+       68.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       233.49887999999999,
+       706.99872,
+       55.00032,
+       44.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1285.5004800000002,
+       985.0003200000001,
+       63.000960000000006,
+       76.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       228.4992,
+       1299.50016,
+       60.0,
+       55.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1541.5008,
+       693.50016,
+       74.99904,
+       50.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1872.0000000000002,
+       391.99968,
+       48.0,
+       66.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1491.50016,
+       415.50048,
+       81.00096,
+       51.999359999999996
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1211.49984,
+       996.9993599999999,
+       70.99968,
+       54.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1363.50048,
+       1002.5001600000002,
+       73.00032,
+       49.000319999999995
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1419.5001599999998,
+       399.0,
+       64.99968,
+       61.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       555.50112,
+       135.99936,
+       58.99968,
+       50.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1343.49984,
+       112.99968000000001,
+       61.00032,
+       69.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1134.0,
+       992.9990399999999,
+       57.999359999999996,
+       67.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1004.5007999999999,
+       48.0,
+       58.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       73.99968,
+       696.4992,
+       63.99936,
+       67.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1816.49952,
+       998.4998400000002,
+       61.00032,
+       52.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1368.5001599999998,
+       687.99936,
+       70.99968,
+       62.000640000000004
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       475.99967999999996,
+       694.99968,
+       61.00032,
+       45.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       624.00096,
+       134.49888,
+       58.99968,
+       56.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       308.5008,
+       704.00064,
+       56.99904,
+       48.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1799.4988799999999,
+       398.49983999999995,
+       67.00032,
+       52.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1865.99904,
+       668.4998400000001,
+       54.0,
+       79.00032
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       268.50048,
+       1869.9993600000003,
+       86.00064,
+       50.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       331.50048,
+       1017.0,
+       56.99904,
+       39.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       708.4992,
+       48.0,
+       55.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       146.5008,
+       696.50112,
+       66.0,
+       52.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       259.50048000000004,
+       1006.5004799999999,
+       61.00032,
+       52.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       308.49984,
+       1300.49952,
+       67.00032,
+       58.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       41.00064,
+       1580.00064,
+       73.00032,
+       72.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1334.49984,
+       404.99904,
+       74.99904,
+       50.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1511.9990400000002,
+       109.00032,
+       80.00064,
+       50.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1710.4991999999997,
+       690.0,
+       67.00032,
+       60.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       277.00032000000004,
+       1595.99904,
+       93.00096,
+       68.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       129.99935999999997,
+       1593.50016,
+       88.99968,
+       64.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       185.49983999999998,
+       1005.0,
+       70.99968,
+       54.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       17.000639999999997,
+       1307.49984,
+       102.0,
+       63.000960000000006
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       376.50048,
+       1579.9996800000001,
+       76.99968,
+       75.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       280.50048,
+       408.00096,
+       55.499520000000004,
+       49.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       601.4995200000001,
+       1899.0000000000002,
+       105.00096,
+       20.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       466.49952,
+       1581.0,
+       54.0,
+       56.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       516.0,
+       1588.49856,
+       81.00096,
+       81.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       607.50048,
+       1592.99904,
+       58.500479999999996,
+       52.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       69.0,
+       1005.0,
+       56.99904,
+       56.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       118.49951999999999,
+       1015.5004800000002,
+       51.00096,
+       54.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1772.99904,
+       103.50048000000001,
+       60.0,
+       54.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       574.50048,
+       696.0,
+       60.0,
+       48.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       446.99904,
+       1303.49952,
+       64.50048,
+       64.50048
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       160.49952,
+       1872.0000000000002,
+       70.50048000000001,
+       48.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       81.0,
+       1857.0009599999998,
+       61.49952,
+       62.99904
+      ]
+     },
+     {
+      "label": "triple_seedling",
+      "bbox_raw": [
+       446.99904000000004,
+       394.50048,
+       76.50048,
+       62.99904
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-4fb1c3994e",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-6082d23a2d",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-58f815b35f",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-a257d754df",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-6d9c050195",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "double_seedling",
+    "single_seedling",
+    "triple_seedling"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1543.00032,
+       498.00095999999996,
+       86.00064,
+       90.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       129.50112,
+       378.49920000000003,
+       147.99936,
+       177.00096000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       182.99904,
+       1342.4995199999998,
+       96.0,
+       133.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.49919999999999964,
+       414.4992,
+       48.0,
+       115.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       45.000960000000006,
+       435.4992,
+       86.99904,
+       106.99968
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1772.4988799999999,
+       794.9990399999999,
+       90.0,
+       127.00031999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1639.99968,
+       1632.99936,
+       63.99936,
+       123.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       134.49984,
+       1636.99968,
+       57.999359999999996,
+       93.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       171.0,
+       1617.0,
+       78.0,
+       116.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1283.00064,
+       1668.9993599999998,
+       75.99936,
+       87.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1830.4991999999997,
+       790.0003199999999,
+       81.00096,
+       116.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       376.00032000000004,
+       1344.5001599999998,
+       63.000960000000006,
+       116.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1700.00064,
+       1.5004799999999952,
+       93.99936,
+       66.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1678.49952,
+       1087.99968,
+       109.00032,
+       126.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       431.49984,
+       1344.99936,
+       80.00064,
+       128.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1183.49856,
+       1661.5008,
+       63.000960000000006,
+       91.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1192.4995199999998,
+       1059.4992,
+       73.00032,
+       109.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1634.49984,
+       795.50016,
+       79.00032,
+       93.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       112.99871999999999,
+       1336.00032,
+       92.00064,
+       128.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1184.00064,
+       505.00032,
+       134.00064,
+       81.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1790.9999999999998,
+       519.99936,
+       63.99936,
+       86.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1506.0,
+       1082.49984,
+       60.0,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1433.49984,
+       1085.5008,
+       73.00032,
+       86.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1417.00032,
+       1651.9996800000001,
+       81.99936000000001,
+       114.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1848.5001599999998,
+       522.0,
+       68.99904,
+       86.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1691.0006400000002,
+       1669.50048,
+       78.0,
+       94.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       296.49888,
+       1340.49984,
+       92.00064,
+       127.00031999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       74.49983999999999,
+       1633.49952,
+       76.99968,
+       112.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       586.5004799999999,
+       442.99967999999996,
+       103.00032,
+       134.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1121.49984,
+       1648.99968,
+       73.00032,
+       105.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1419.0,
+       514.9996800000001,
+       63.99936,
+       86.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1830.50112,
+       1084.50048,
+       86.99904,
+       88.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1482.50016,
+       500.5008,
+       73.00032,
+       114.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1756.00032,
+       1661.4988799999999,
+       87.99936,
+       105.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       231.50112000000001,
+       1624.00032,
+       99.99936,
+       123.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1656.5011200000001,
+       472.50048,
+       98.99904,
+       136.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1425.50016,
+       801.99936,
+       79.00032,
+       84.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1038.99936,
+       1066.50048,
+       92.00064,
+       91.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1497.0,
+       774.50016,
+       68.00063999999999,
+       111.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1269.4992,
+       1075.5004800000002,
+       85.00032,
+       109.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1176.50112,
+       206.00063999999998,
+       86.99904,
+       72.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       739.50048,
+       94.99968,
+       111.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       505.99967999999996,
+       1348.99968,
+       128.99903999999998,
+       134.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       598.99968,
+       1642.00032,
+       93.99936,
+       90.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       327.4992,
+       1629.9993600000003,
+       104.00064,
+       110.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1234.9996800000001,
+       1660.99968,
+       84.0,
+       98.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1340.4998400000002,
+       1668.50016,
+       79.00032,
+       94.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1225.0003199999999,
+       787.5004799999999,
+       129.99936,
+       94.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1519.00032,
+       1666.50048,
+       96.0,
+       91.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       541.49952,
+       1071.50016,
+       96.0,
+       74.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1054.50048,
+       492.00095999999996,
+       79.49951999999999,
+       66.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       126.0,
+       771.00096,
+       112.50048,
+       122.99904
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       13.500480000000007,
+       1321.49952,
+       154.50048,
+       172.50047999999998
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       0.0,
+       1561.49952,
+       103.49952,
+       184.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1064.9990400000002,
+       81.00096,
+       76.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       36.00000000000001,
+       1051.49952,
+       144.0,
+       136.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       162.0,
+       1037.99904,
+       175.49952,
+       162.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       446.99999999999994,
+       1639.50048,
+       154.50048,
+       94.50048
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1555.49952,
+       1081.50048,
+       117.00095999999999,
+       111.00096
+      ]
+     },
+     {
+      "label": "triple_seedling",
+      "bbox_raw": [
+       272.99904000000004,
+       466.4995200000001,
+       288.0,
+       140.99904
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-4da608ad6a",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "double_seedling",
+    "single_seedling",
+    "triple_seedling"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1844.49984,
+       82.50047999999998,
+       74.99904,
+       132.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       127.99968000000001,
+       84.50016,
+       78.0,
+       61.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1745.99904,
+       1561.50048,
+       126.0,
+       111.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1529.49984,
+       1564.0012800000002,
+       97.00032,
+       105.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       411.50112,
+       645.0,
+       82.99968,
+       78.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1849.5004799999997,
+       1569.99936,
+       68.99904,
+       98.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1818.0,
+       1267.50048,
+       96.0,
+       133.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       893.0006400000001,
+       1231.00032,
+       133.00032,
+       134.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       390.50016,
+       1843.50144,
+       104.00064,
+       74.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       202.99967999999998,
+       654.50016,
+       79.00032,
+       87.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       794.0006400000001,
+       1246.50144,
+       117.99936,
+       128.99903999999998
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1391.9990400000002,
+       1555.9996800000001,
+       157.00032,
+       106.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1850.5007999999998,
+       649.99968,
+       68.99904,
+       99.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       179.00064,
+       1816.9996800000001,
+       162.0,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1725.0009599999998,
+       1260.0,
+       117.99936,
+       144.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       690.9993599999999,
+       1819.9996800000001,
+       150.0,
+       75.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       672.99936,
+       1550.4998400000002,
+       116.00064,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       504.4992,
+       1263.50016,
+       139.00032000000002,
+       88.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1417.00032,
+       389.49984,
+       86.00064,
+       82.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       548.5008,
+       654.0,
+       154.99967999999998,
+       76.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1624.4995199999998,
+       1564.50048,
+       116.99904,
+       136.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1870.9996800000001,
+       393.50016000000005,
+       48.0,
+       67.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1767.99936,
+       90.4992,
+       96.0,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       375.49920000000003,
+       1267.99968,
+       126.0,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       61.99968,
+       1804.9996800000001,
+       75.99936,
+       108.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1588.49952,
+       952.9996799999999,
+       85.00032,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       828.99936,
+       1825.49952,
+       114.0,
+       86.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       352.00032,
+       926.4988800000001,
+       116.99904,
+       97.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1771.50048,
+       956.5007999999999,
+       130.99967999999998,
+       97.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       524.5008,
+       1561.49952,
+       82.99968,
+       112.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       478.99968000000007,
+       352.49951999999996,
+       67.00032,
+       104.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       71.49984,
+       924.4992,
+       152.99903999999998,
+       67.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       354.0,
+       642.5001599999999,
+       69.99936,
+       106.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       606.0,
+       1562.99904,
+       93.00096,
+       98.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       444.50016,
+       1558.50048,
+       90.0,
+       103.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       210.50015999999997,
+       64.99967999999998,
+       63.000960000000006,
+       98.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       798.4992,
+       641.00064,
+       93.00096,
+       104.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       767.9990399999999,
+       891.0000000000001,
+       147.00096000000002,
+       178.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1443.50016,
+       945.00096,
+       115.00032,
+       86.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1458.4992000000002,
+       392.00064,
+       139.00032000000002,
+       79.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       13.999679999999998,
+       600.9993599999999,
+       111.00096,
+       152.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1659.99936,
+       923.0006400000001,
+       98.00063999999999,
+       121.00031999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1379.9990400000002,
+       1259.49984,
+       152.00064,
+       157.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1631.49984,
+       390.50111999999996,
+       82.99968,
+       86.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       910.99872,
+       1547.5008,
+       92.00064,
+       112.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       542.9999999999999,
+       360.50016,
+       75.99936,
+       87.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       376.99872,
+       1540.5004800000002,
+       80.00064,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1576.50048,
+       105.50016000000001,
+       112.99968,
+       84.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       483.49920000000003,
+       943.50048,
+       164.00064,
+       68.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1527.0,
+       670.49952,
+       147.99936,
+       97.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       141.99936,
+       630.0,
+       81.00096,
+       108.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       711.00096,
+       657.50112,
+       84.0,
+       99.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1698.99936,
+       92.49984,
+       80.00064,
+       84.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       752.99904,
+       1547.99904,
+       165.00096,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1207.4995199999998,
+       36.0,
+       136.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       16.50048000000001,
+       1245.0,
+       129.00096,
+       121.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       138.0,
+       1257.0000000000002,
+       103.49952,
+       138.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1410.0009599999998,
+       1806.0009599999998,
+       133.49952,
+       68.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1469.99904,
+       1855.4995200000003,
+       126.0,
+       64.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1577.9999999999998,
+       1837.5004800000002,
+       98.99904,
+       82.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1666.49952,
+       1802.9990400000002,
+       147.00096000000002,
+       117.00095999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1795.4995200000003,
+       1825.5004800000002,
+       124.50048,
+       94.50048
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       111.0,
+       1521.0,
+       138.0,
+       140.99904
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       221.99904000000004,
+       1521.0,
+       142.50047999999998,
+       133.49952
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       229.50048000000004,
+       1237.4995199999998,
+       106.50048,
+       165.00096
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1715.99904,
+       385.50048,
+       114.0,
+       138.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       1344.0000000000002,
+       94.49952,
+       194.99904,
+       85.49952
+      ]
+     },
+     {
+      "label": "triple_seedling",
+      "bbox_raw": [
+       0.0,
+       1531.4995199999998,
+       134.99904,
+       132.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-f4667a57e1",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "double_seedling",
+    "single_seedling",
+    "triple_seedling"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1136.0006400000002,
+       1616.0006400000002,
+       84.0,
+       81.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       944.49984,
+       153.4992,
+       98.00063999999999,
+       94.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       61.499520000000004,
+       1590.0,
+       64.99968,
+       69.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1284.4992000000002,
+       679.50048,
+       81.00096,
+       116.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1629.00096,
+       153.99936,
+       117.99936,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1585.0003199999999,
+       62.000640000000004,
+       60.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1445.5008,
+       1298.99904,
+       88.99968,
+       170.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       990.4992000000001,
+       1868.49984,
+       79.00032,
+       50.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       183.99936,
+       1882.99968,
+       55.00032,
+       36.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1322.49984,
+       1863.0,
+       79.00032,
+       56.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       720.50112,
+       676.50144,
+       98.99904,
+       128.99903999999998
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1353.5001599999998,
+       698.4998400000001,
+       103.00032,
+       93.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       767.00064,
+       158.49984,
+       126.0,
+       98.00063999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1199.5008,
+       422.50079999999997,
+       103.00032,
+       87.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1428.4992,
+       1628.49888,
+       91.00032,
+       63.000960000000006
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1749.4992,
+       162.00096000000002,
+       73.00032,
+       106.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       765.50016,
+       995.4998400000001,
+       67.00032,
+       58.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       986.49984,
+       436.99968,
+       91.00032,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       129.49919999999997,
+       1592.00064,
+       102.0,
+       81.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1333.50048,
+       1620.4991999999997,
+       97.00032,
+       64.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1095.99936,
+       428.49984,
+       105.99936,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       12.000960000000012,
+       1291.9996800000001,
+       135.99936,
+       87.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       7.00032,
+       132.50016,
+       98.99904,
+       118.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       826.99968,
+       433.00032000000004,
+       105.00096,
+       100.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       92.49984000000002,
+       104.49983999999999,
+       112.99968,
+       117.99936
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1060.50048,
+       1611.0,
+       88.99968,
+       80.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       426.4992,
+       60.0,
+       72.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       152.5008,
+       1301.49984,
+       106.99968,
+       85.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1770.4991999999997,
+       429.0,
+       124.99967999999998,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1466.5007999999998,
+       680.99904,
+       94.99968,
+       115.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       52.50048000000001,
+       423.49920000000003,
+       69.99936,
+       90.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       211.50047999999998,
+       145.50048,
+       109.49951999999999,
+       140.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1074.0000000000002,
+       163.50047999999998,
+       84.0,
+       73.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1192.5004800000002,
+       149.99904000000004,
+       74.99904,
+       94.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1333.50048,
+       156.0,
+       109.49951999999999,
+       100.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1435.49952,
+       107.99999999999999,
+       88.50048000000001,
+       160.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1538.99904,
+       126.0,
+       64.50048,
+       129.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1444.4995199999998,
+       457.49951999999996,
+       109.49951999999999,
+       100.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       839.9990399999999,
+       718.4995200000001,
+       51.00096,
+       82.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       940.50048,
+       679.50144,
+       72.0,
+       122.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1002.0009600000001,
+       660.0009600000001,
+       90.0,
+       140.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1093.5004800000002,
+       680.9990399999999,
+       94.50048,
+       124.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1180.49952,
+       675.0009600000001,
+       106.50048,
+       127.49952000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1558.49952,
+       654.0,
+       121.49952,
+       132.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1627.4995199999998,
+       669.00096,
+       148.50047999999998,
+       151.49952000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1780.4995200000003,
+       657.0,
+       94.50048,
+       133.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1867.4995199999998,
+       691.4995200000001,
+       52.50048,
+       136.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1345.49952,
+       1003.4995200000001,
+       67.49952,
+       48.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1540.50048,
+       982.50048,
+       79.49951999999999,
+       76.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1618.49952,
+       1008.0009600000002,
+       68.99904,
+       61.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1818.0,
+       985.4995200000002,
+       79.49951999999999,
+       81.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       951.0009599999998,
+       1329.00096,
+       91.49951999999999,
+       98.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1225.4995200000003,
+       1298.99904,
+       81.00096,
+       136.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1303.49952,
+       1299.00096,
+       98.99904,
+       151.49952000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1558.49952,
+       1291.50048,
+       114.0,
+       178.50047999999998
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1714.5004799999997,
+       1303.49952,
+       98.99904,
+       151.49952000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1849.50048,
+       1294.50144,
+       70.50048000000001,
+       140.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       787.4995200000001,
+       1612.5004800000002,
+       72.0,
+       60.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       864.0009600000001,
+       1620.0,
+       109.49951999999999,
+       72.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       970.5004800000002,
+       1620.0,
+       108.0,
+       72.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1254.0,
+       1618.50048,
+       72.0,
+       122.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1504.5004799999997,
+       1603.49952,
+       98.99904,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1662.00096,
+       1620.0009599999998,
+       140.99904,
+       90.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1791.00096,
+       1595.99904,
+       91.49951999999999,
+       106.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       81.00096,
+       1842.00096,
+       79.49951999999999,
+       78.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1870.49952,
+       1625.9999999999998,
+       49.49952,
+       62.99904
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       126.00096,
+       617.99904,
+       169.49952,
+       222.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       115.50048000000001,
+       409.50048,
+       152.99903999999998,
+       118.50048000000001
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       76.49952,
+       924.0,
+       181.49952000000002,
+       134.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       961.5004799999999,
+       84.0,
+       97.49952
+      ]
+     },
+     {
+      "label": "triple_seedling",
+      "bbox_raw": [
+       0.0,
+       615.0,
+       122.99904,
+       219.00096
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-ca7c1a7fb7",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "double_seedling",
+    "single_seedling",
+    "triple_seedling"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       766.00032,
+       323.00064000000003,
+       102.0,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1748.4998400000002,
+       1234.00032,
+       112.99968,
+       80.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       223.00032,
+       41.00063999999999,
+       96.0,
+       97.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       147.49919999999997,
+       38.999039999999994,
+       92.00064,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       793.50048,
+       656.5008,
+       128.99903999999998,
+       109.00032
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1623.0009599999998,
+       286.99968,
+       129.99936,
+       124.99967999999998
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       106.99968,
+       325.49951999999996,
+       88.99968,
+       81.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       19.499520000000004,
+       285.0,
+       110.00064,
+       128.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       194.99904000000004,
+       326.00064,
+       91.00032,
+       76.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1420.5004800000002,
+       286.99872,
+       112.99968,
+       140.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       973.99968,
+       1228.99968,
+       135.99936,
+       110.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       942.00096,
+       660.50016,
+       78.0,
+       111.99936000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1000.0012800000001,
+       951.99936,
+       93.99936,
+       100.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1000.0003200000001,
+       653.99904,
+       85.00032,
+       128.00064
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1541.9990400000002,
+       272.49984,
+       114.0,
+       124.99967999999998
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1582.4995199999998,
+       1262.00064,
+       118.99968,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1776.99936,
+       15.500160000000001,
+       126.0,
+       88.99968
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       6.000000000000005,
+       45.00096,
+       91.49951999999999,
+       115.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       70.50048000000001,
+       14.999999999999993,
+       67.49952,
+       118.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       283.49952,
+       30.0,
+       76.50048,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       363.00000000000006,
+       19.498559999999998,
+       61.49952,
+       111.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       420.00095999999996,
+       30.0,
+       92.99904000000001,
+       98.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       525.0009600000001,
+       30.0,
+       98.99904,
+       127.49952000000002
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       609.0,
+       23.99904,
+       94.50048,
+       106.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       696.0,
+       37.49952,
+       98.99904,
+       105.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       799.5004799999999,
+       22.50048,
+       126.0,
+       122.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       871.4995200000001,
+       37.49856,
+       84.0,
+       111.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       975.0,
+       16.500479999999996,
+       102.0,
+       132.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1049.99904,
+       23.999999999999993,
+       118.50048000000001,
+       132.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1496.9990400000002,
+       15.000960000000001,
+       100.50048000000001,
+       98.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1585.49952,
+       11.999039999999997,
+       129.00096,
+       130.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1531.50144,
+       696.0,
+       98.99904,
+       76.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       139.50048,
+       1458.0,
+       109.49951999999999,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       321.0,
+       1451.9990400000002,
+       111.00096,
+       106.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       265.49951999999996,
+       316.50048,
+       67.49952,
+       100.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       325.50048,
+       313.49951999999996,
+       56.99904,
+       103.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       384.00096,
+       297.0,
+       78.0,
+       126.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       481.4995200000001,
+       305.99904,
+       84.0,
+       130.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       681.0,
+       321.00096,
+       87.00095999999999,
+       98.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       834.0,
+       306.00096,
+       103.49952,
+       121.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       940.5004800000002,
+       316.50048000000004,
+       76.50048,
+       115.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       1017.0009599999998,
+       297.00095999999996,
+       98.99904,
+       139.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       16.500480000000003,
+       688.50048,
+       88.50048000000001,
+       76.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       81.00096,
+       675.0,
+       72.0,
+       85.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       153.00096,
+       669.0,
+       62.99904,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       192.00096000000002,
+       691.49952,
+       56.99904,
+       91.49951999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       248.99903999999998,
+       683.99904,
+       88.50048000000001,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       320.99904,
+       684.0009600000001,
+       81.00096,
+       114.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       394.50144,
+       679.49952,
+       56.99904,
+       98.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       451.49951999999996,
+       698.99904,
+       81.00096,
+       76.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       530.9990399999999,
+       646.4995200000001,
+       81.00096,
+       102.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       616.50144,
+       652.5004799999999,
+       68.99904,
+       120.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       673.4995200000001,
+       672.0000000000001,
+       76.50048,
+       115.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       28.499519999999997,
+       955.4995200000001,
+       102.0,
+       124.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       118.50048000000002,
+       938.9999999999999,
+       76.50048,
+       133.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       219.00096000000002,
+       967.50048,
+       67.49952,
+       114.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       523.50048,
+       973.5004799999999,
+       106.50048,
+       106.50048
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       631.49952,
+       977.9999999999998,
+       74.99904,
+       88.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       882.0,
+       961.5004799999999,
+       100.50048000000001,
+       111.00096
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       1234.4995199999998,
+       36.0,
+       133.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       34.499520000000004,
+       1237.5004800000002,
+       73.49952,
+       114.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       88.50048,
+       1237.49952,
+       103.49952,
+       91.49951999999999
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       173.99903999999998,
+       1227.0,
+       94.50048,
+       90.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       237.00096,
+       1248.0,
+       96.0,
+       100.50048000000001
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       508.49952,
+       1233.0,
+       61.49952,
+       78.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       550.49952,
+       1248.0009599999998,
+       61.49952,
+       73.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       595.50048,
+       1232.9999999999998,
+       61.49952,
+       85.49952
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       649.50048,
+       1245.0,
+       68.99904,
+       73.49952
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       715.49952,
+       1244.99904,
+       132.0,
+       96.0
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       565.50048,
+       285.0,
+       126.0,
+       142.50047999999998
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       0.0,
+       321.00096,
+       43.49952,
+       96.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       317.99904000000004,
+       1240.4995200000003,
+       66.0,
+       68.99904
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       454.4995200000001,
+       1252.5004800000002,
+       70.50048000000001,
+       84.0
+      ]
+     },
+     {
+      "label": "single_seedling",
+      "bbox_raw": [
+       367.49951999999996,
+       1252.49952,
+       98.99904,
+       87.00095999999999
+      ]
+     },
+     {
+      "label": "triple_seedling",
+      "bbox_raw": [
+       302.99904000000004,
+       940.5004799999999,
+       144.0,
+       139.49952
+      ]
+     },
+     {
+      "label": "double_seedling",
+      "bbox_raw": [
+       442.50048,
+       964.4995199999998,
+       98.99904,
+       118.50048000000001
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "maize_seedling_msdd_detection-f6d8514dd6",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  }
+ ]
+}

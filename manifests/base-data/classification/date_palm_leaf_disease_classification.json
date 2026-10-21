@@ -1,0 +1,748 @@
+{
+ "name": "date_palm_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/date_palm_leaf_disease_classification",
+ "hf_sha": "7343e57fb54d632de86ec7cb070e0d441b818556",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:38:09+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Black Scorch",
+   "Fusarium Wilt",
+   "Healthy sample",
+   "Leaf Spots",
+   "Magnesium Deficiency",
+   "Manganese Deficiency",
+   "Parlatoria Blanchardi",
+   "Potassium Deficiency",
+   "Rachis Blight"
+  ],
+  "indexed_rows": 3089
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "date_palm_leaf_disease_classification-a167547058",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium Deficiency"
+   ],
+   "ann": {
+    "label": "Potassium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-c4b0f80cfd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium Deficiency"
+   ],
+   "ann": {
+    "label": "Potassium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-076d2117b2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium Deficiency"
+   ],
+   "ann": {
+    "label": "Potassium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-9fcecc113a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 544,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium Deficiency"
+   ],
+   "ann": {
+    "label": "Potassium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-ab511a5033",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potassium Deficiency"
+   ],
+   "ann": {
+    "label": "Potassium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-d1045326be",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 874,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rachis Blight"
+   ],
+   "ann": {
+    "label": "Rachis Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-b71fde417a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1005,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rachis Blight"
+   ],
+   "ann": {
+    "label": "Rachis Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-fab573a556",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rachis Blight"
+   ],
+   "ann": {
+    "label": "Rachis Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-aca0348400",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1202,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rachis Blight"
+   ],
+   "ann": {
+    "label": "Rachis Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-fcadeda57b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1214,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rachis Blight"
+   ],
+   "ann": {
+    "label": "Rachis Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-5c50d13f52",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spots"
+   ],
+   "ann": {
+    "label": "Leaf Spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-839a1346d9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1240,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spots"
+   ],
+   "ann": {
+    "label": "Leaf Spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-5d3a6d2415",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spots"
+   ],
+   "ann": {
+    "label": "Leaf Spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-ae5401a94d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1276,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spots"
+   ],
+   "ann": {
+    "label": "Leaf Spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-980f5847a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spots"
+   ],
+   "ann": {
+    "label": "Leaf Spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-a0e2b5640c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1337,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium Wilt"
+   ],
+   "ann": {
+    "label": "Fusarium Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-956cd3418d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium Wilt"
+   ],
+   "ann": {
+    "label": "Fusarium Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-490a8b9623",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium Wilt"
+   ],
+   "ann": {
+    "label": "Fusarium Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-bef1c4e16a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1410,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium Wilt"
+   ],
+   "ann": {
+    "label": "Fusarium Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-a53df7fe19",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1511,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fusarium Wilt"
+   ],
+   "ann": {
+    "label": "Fusarium Wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-f0b906846a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parlatoria Blanchardi"
+   ],
+   "ann": {
+    "label": "Parlatoria Blanchardi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-3666a24b0e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parlatoria Blanchardi"
+   ],
+   "ann": {
+    "label": "Parlatoria Blanchardi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-71cdfc0399",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parlatoria Blanchardi"
+   ],
+   "ann": {
+    "label": "Parlatoria Blanchardi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-f6b43beaa1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parlatoria Blanchardi"
+   ],
+   "ann": {
+    "label": "Parlatoria Blanchardi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-76c5cf9a4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parlatoria Blanchardi"
+   ],
+   "ann": {
+    "label": "Parlatoria Blanchardi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-fa50996de9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1627,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese Deficiency"
+   ],
+   "ann": {
+    "label": "Manganese Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-d3719f2f1a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1651,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese Deficiency"
+   ],
+   "ann": {
+    "label": "Manganese Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-0e2a9bc86d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1775,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese Deficiency"
+   ],
+   "ann": {
+    "label": "Manganese Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-3504eafad0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1780,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese Deficiency"
+   ],
+   "ann": {
+    "label": "Manganese Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-5d7c43a8ba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1921,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Manganese Deficiency"
+   ],
+   "ann": {
+    "label": "Manganese Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-d96bc34064",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2160,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium Deficiency"
+   ],
+   "ann": {
+    "label": "Magnesium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-6f312d7fee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium Deficiency"
+   ],
+   "ann": {
+    "label": "Magnesium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-3cb51058ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2543,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium Deficiency"
+   ],
+   "ann": {
+    "label": "Magnesium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-f6a412cb08",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium Deficiency"
+   ],
+   "ann": {
+    "label": "Magnesium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-b5eb81be8c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2588,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Magnesium Deficiency"
+   ],
+   "ann": {
+    "label": "Magnesium Deficiency"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-8d65dd3ebe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scorch"
+   ],
+   "ann": {
+    "label": "Black Scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-edced6274b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2689,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scorch"
+   ],
+   "ann": {
+    "label": "Black Scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-7068638fca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scorch"
+   ],
+   "ann": {
+    "label": "Black Scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-45bd6d7930",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2693,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scorch"
+   ],
+   "ann": {
+    "label": "Black Scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-242f807f4d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2699,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scorch"
+   ],
+   "ann": {
+    "label": "Black Scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-b6a50854c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2795,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy sample"
+   ],
+   "ann": {
+    "label": "Healthy sample"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-7d72e9c17e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2830,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy sample"
+   ],
+   "ann": {
+    "label": "Healthy sample"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-35717bb922",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2908,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy sample"
+   ],
+   "ann": {
+    "label": "Healthy sample"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-f959974ef1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3002,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy sample"
+   ],
+   "ann": {
+    "label": "Healthy sample"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "date_palm_leaf_disease_classification-0647239c7a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3005,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy sample"
+   ],
+   "ann": {
+    "label": "Healthy sample"
+   },
+   "strata": {}
+  }
+ ]
+}

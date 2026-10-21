@@ -1,0 +1,3178 @@
+{
+ "name": "Plant_leaf_diseases_dataset_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/Plant_leaf_diseases_dataset_classification",
+ "hf_sha": "f6add0a4d46299ce5c5101ee2dda2ac743a1060b",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:39:26+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Apple___Apple_scab",
+   "Apple___Black_rot",
+   "Apple___Cedar_apple_rust",
+   "Apple___healthy",
+   "Background_without_leaves",
+   "Blueberry___healthy",
+   "Cherry___Powdery_mildew",
+   "Cherry___healthy",
+   "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+   "Corn___Common_rust",
+   "Corn___Northern_Leaf_Blight",
+   "Corn___healthy",
+   "Grape___Black_rot",
+   "Grape___Esca_(Black_Measles)",
+   "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+   "Grape___healthy",
+   "Orange___Haunglongbing_(Citrus_greening)",
+   "Peach___Bacterial_spot",
+   "Peach___healthy",
+   "Pepper,_bell___Bacterial_spot",
+   "Pepper,_bell___healthy",
+   "Potato___Early_blight",
+   "Potato___Late_blight",
+   "Potato___healthy",
+   "Raspberry___healthy",
+   "Soybean___healthy",
+   "Squash___Powdery_mildew",
+   "Strawberry___Leaf_scorch",
+   "Strawberry___healthy",
+   "Tomato___Bacterial_spot",
+   "Tomato___Early_blight",
+   "Tomato___Late_blight",
+   "Tomato___Leaf_Mold",
+   "Tomato___Septoria_leaf_spot",
+   "Tomato___Spider_mites Two-spotted_spider_mite",
+   "Tomato___Target_Spot",
+   "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+   "Tomato___Tomato_mosaic_virus",
+   "Tomato___healthy"
+  ],
+  "indexed_rows": 55448
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4fb9aac8dd",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 294,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Common_rust"
+   ],
+   "ann": {
+    "label": "Corn___Common_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c2e487d211",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 306,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Common_rust"
+   ],
+   "ann": {
+    "label": "Corn___Common_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-661c0e1c7a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 377,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Common_rust"
+   ],
+   "ann": {
+    "label": "Corn___Common_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1ae1e6fc8a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 813,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Common_rust"
+   ],
+   "ann": {
+    "label": "Corn___Common_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d2854107d6",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 905,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Common_rust"
+   ],
+   "ann": {
+    "label": "Corn___Common_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-bd67b1fad0",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1264,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Target_Spot"
+   ],
+   "ann": {
+    "label": "Tomato___Target_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-9454092007",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1394,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Target_Spot"
+   ],
+   "ann": {
+    "label": "Tomato___Target_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8cec8a7099",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 1649,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Target_Spot"
+   ],
+   "ann": {
+    "label": "Tomato___Target_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-85a15c7715",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2197,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Target_Spot"
+   ],
+   "ann": {
+    "label": "Tomato___Target_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-95b0722830",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2330,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Target_Spot"
+   ],
+   "ann": {
+    "label": "Tomato___Target_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-931c00271d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2607,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry___healthy"
+   ],
+   "ann": {
+    "label": "Raspberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-bf83106c60",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2617,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry___healthy"
+   ],
+   "ann": {
+    "label": "Raspberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ebfb0c158a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2802,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry___healthy"
+   ],
+   "ann": {
+    "label": "Raspberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ba79e45b96",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2929,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry___healthy"
+   ],
+   "ann": {
+    "label": "Raspberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2efcff9434",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 2930,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry___healthy"
+   ],
+   "ann": {
+    "label": "Raspberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-563553eea0",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 3313,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Squash___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Squash___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-96e877b8db",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 3449,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Squash___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Squash___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7282e3b5a8",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 3574,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Squash___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Squash___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4dd0767c6b",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 3705,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Squash___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Squash___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-6ec5cddc93",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 4536,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Squash___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Squash___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-52ef6d4c44",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 4958,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Early_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-103422f17e",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5008,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Early_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2734a401e7",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5074,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Early_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-9e73e9ea00",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5238,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Early_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8ff101a3e2",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5257,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Early_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-6341d54510",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5896,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___Leaf_scorch"
+   ],
+   "ann": {
+    "label": "Strawberry___Leaf_scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-6c05efdb52",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5921,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___Leaf_scorch"
+   ],
+   "ann": {
+    "label": "Strawberry___Leaf_scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-370fe58852",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 5954,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___Leaf_scorch"
+   ],
+   "ann": {
+    "label": "Strawberry___Leaf_scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-84125eaa89",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 6171,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___Leaf_scorch"
+   ],
+   "ann": {
+    "label": "Strawberry___Leaf_scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-0c7d1f20e1",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 6905,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___Leaf_scorch"
+   ],
+   "ann": {
+    "label": "Strawberry___Leaf_scorch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1afb2f3fa2",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 6991,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Cedar_apple_rust"
+   ],
+   "ann": {
+    "label": "Apple___Cedar_apple_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-603d6a9c44",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7055,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Cedar_apple_rust"
+   ],
+   "ann": {
+    "label": "Apple___Cedar_apple_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-db64b6b037",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7141,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Cedar_apple_rust"
+   ],
+   "ann": {
+    "label": "Apple___Cedar_apple_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2cd6ba1f83",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7155,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Cedar_apple_rust"
+   ],
+   "ann": {
+    "label": "Apple___Cedar_apple_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b4ccc93ab5",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7169,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Cedar_apple_rust"
+   ],
+   "ann": {
+    "label": "Apple___Cedar_apple_rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-26ee4a3f6a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7243,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Septoria_leaf_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Septoria_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-092b65c08f",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 7295,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Septoria_leaf_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Septoria_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-922c215fa6",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 8161,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Septoria_leaf_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Septoria_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7cc021a9d5",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 8500,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Septoria_leaf_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Septoria_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-df3f4bc80e",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 8590,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Septoria_leaf_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Septoria_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7284f2dff5",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 9035,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ],
+   "ann": {
+    "label": "Tomato___Spider_mites Two-spotted_spider_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-42f62e7745",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 9434,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ],
+   "ann": {
+    "label": "Tomato___Spider_mites Two-spotted_spider_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b4733ec5f3",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 9578,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ],
+   "ann": {
+    "label": "Tomato___Spider_mites Two-spotted_spider_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-014c6397f6",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 10191,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ],
+   "ann": {
+    "label": "Tomato___Spider_mites Two-spotted_spider_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-93ce37d2c8",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 10257,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ],
+   "ann": {
+    "label": "Tomato___Spider_mites Two-spotted_spider_mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-96b378d01e",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 10998,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Soybean___healthy"
+   ],
+   "ann": {
+    "label": "Soybean___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d5c05afe2b",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 12163,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Soybean___healthy"
+   ],
+   "ann": {
+    "label": "Soybean___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ea25e68300",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 13349,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Soybean___healthy"
+   ],
+   "ann": {
+    "label": "Soybean___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-965009527c",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 13864,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Soybean___healthy"
+   ],
+   "ann": {
+    "label": "Soybean___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-724b542366",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 14562,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Soybean___healthy"
+   ],
+   "ann": {
+    "label": "Soybean___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3a5c2856a3",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 15879,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Northern_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Corn___Northern_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f4f1e24635",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 15937,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Northern_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Corn___Northern_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7f8854584f",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 16105,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Northern_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Corn___Northern_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-0ecdb05213",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 16283,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Northern_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Corn___Northern_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-be3191d7c8",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 16551,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Northern_Leaf_Blight"
+   ],
+   "ann": {
+    "label": "Corn___Northern_Leaf_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-91f35fdb0e",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 16750,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry___healthy"
+   ],
+   "ann": {
+    "label": "Blueberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-e9314a48c6",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 16808,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry___healthy"
+   ],
+   "ann": {
+    "label": "Blueberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c89921a755",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 17524,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry___healthy"
+   ],
+   "ann": {
+    "label": "Blueberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1bbb7c5977",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 17738,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry___healthy"
+   ],
+   "ann": {
+    "label": "Blueberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3084bd368d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18006,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry___healthy"
+   ],
+   "ann": {
+    "label": "Blueberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-de070408b9",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18502,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-07d959f872",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18628,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-134493d228",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18649,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f28296825a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18803,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-03caab89ab",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 18920,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f8e18dfeac",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 19713,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Cherry___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ad7f056323",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 19887,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Cherry___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5dab752c3a",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20000,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Cherry___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a7923bfab1",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20140,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Cherry___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-976e838d25",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20215,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___Powdery_mildew"
+   ],
+   "ann": {
+    "label": "Cherry___Powdery_mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-272e179581",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20319,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Late_blight"
+   ],
+   "ann": {
+    "label": "Potato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d5ad53be69",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20347,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Late_blight"
+   ],
+   "ann": {
+    "label": "Potato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-feef24f778",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 20502,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Late_blight"
+   ],
+   "ann": {
+    "label": "Potato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b700b4f2c9",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21111,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Late_blight"
+   ],
+   "ann": {
+    "label": "Potato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1c51a07635",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21144,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Late_blight"
+   ],
+   "ann": {
+    "label": "Potato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b46e6a70d6",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21480,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___healthy"
+   ],
+   "ann": {
+    "label": "Cherry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-cb4d560d06",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21516,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___healthy"
+   ],
+   "ann": {
+    "label": "Cherry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-68f5bfe947",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21618,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___healthy"
+   ],
+   "ann": {
+    "label": "Cherry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-68ff4a5e15",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21654,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___healthy"
+   ],
+   "ann": {
+    "label": "Cherry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-115997584f",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 21899,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry___healthy"
+   ],
+   "ann": {
+    "label": "Cherry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d1f4b7c2fe",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 22141,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Black_rot"
+   ],
+   "ann": {
+    "label": "Apple___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a6b069c010",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 22212,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Black_rot"
+   ],
+   "ann": {
+    "label": "Apple___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5bdc382d8d",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 22235,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Black_rot"
+   ],
+   "ann": {
+    "label": "Apple___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4749d2df61",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 22449,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Black_rot"
+   ],
+   "ann": {
+    "label": "Apple___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-72d2f46cd3",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 22613,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Black_rot"
+   ],
+   "ann": {
+    "label": "Apple___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-9ae5197656",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 23074,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Late_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-55b2b227e9",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 23378,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Late_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-993576e1e0",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 23473,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Late_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a9bf32b847",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 23530,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Late_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-0bd8ca2008",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 24256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Late_blight"
+   ],
+   "ann": {
+    "label": "Tomato___Late_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5f0874fde7",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 24854,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ed3598f8df",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 26427,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b087b1f0f4",
+   "ref": {
+    "file": "raw/train-00000-of-00002.parquet",
+    "row": 27023,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-db3789730d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 295,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7cfcf81a8b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 749,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-712bf3dff6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2289,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_mosaic_virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_mosaic_virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2373e15a87",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2335,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_mosaic_virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_mosaic_virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b16f80057e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2537,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_mosaic_virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_mosaic_virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5cc651d99f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2553,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_mosaic_virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_mosaic_virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-bef9e6f5bf",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2629,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Tomato_mosaic_virus"
+   ],
+   "ann": {
+    "label": "Tomato___Tomato_mosaic_virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f16f7a3e64",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2727,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   ],
+   "ann": {
+    "label": "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8ff63509d1",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2789,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   ],
+   "ann": {
+    "label": "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-67bd27360d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 2919,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   ],
+   "ann": {
+    "label": "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-9fbae64f75",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3135,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   ],
+   "ann": {
+    "label": "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8be8a2f287",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3160,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   ],
+   "ann": {
+    "label": "Corn___Cercospora_leaf_spot Gray_leaf_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-e457c171f2",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3183,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Background_without_leaves"
+   ],
+   "ann": {
+    "label": "Background_without_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c5f5c44ab5",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3407,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Background_without_leaves"
+   ],
+   "ann": {
+    "label": "Background_without_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5a58bcafe4",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3447,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Background_without_leaves"
+   ],
+   "ann": {
+    "label": "Background_without_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3f5ad5996b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 3935,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Background_without_leaves"
+   ],
+   "ann": {
+    "label": "Background_without_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a9fa3a7d01",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 4104,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Background_without_leaves"
+   ],
+   "ann": {
+    "label": "Background_without_leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a9b47d9aaa",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 4592,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-fa108db56d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 4989,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-e834076834",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 5489,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3c45d70dca",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 5741,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a7ff00515b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6204,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Tomato___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-768fc7de3b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6606,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Leaf_Mold"
+   ],
+   "ann": {
+    "label": "Tomato___Leaf_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5ba23eed17",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6784,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Leaf_Mold"
+   ],
+   "ann": {
+    "label": "Tomato___Leaf_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4424117705",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6830,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Leaf_Mold"
+   ],
+   "ann": {
+    "label": "Tomato___Leaf_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1ba40ef76d",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6888,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Leaf_Mold"
+   ],
+   "ann": {
+    "label": "Tomato___Leaf_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1aab534767",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 6905,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___Leaf_Mold"
+   ],
+   "ann": {
+    "label": "Tomato___Leaf_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-fc525c0ba8",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7402,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___healthy"
+   ],
+   "ann": {
+    "label": "Grape___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-69fb8b3fde",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7468,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___healthy"
+   ],
+   "ann": {
+    "label": "Grape___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3c4971ead6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7504,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___healthy"
+   ],
+   "ann": {
+    "label": "Grape___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-76867a9bcb",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7617,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___healthy"
+   ],
+   "ann": {
+    "label": "Grape___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5e7c97a951",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7764,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___healthy"
+   ],
+   "ann": {
+    "label": "Grape___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-98cb1445f4",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7946,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___healthy"
+   ],
+   "ann": {
+    "label": "Peach___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-42f693acef",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 7967,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___healthy"
+   ],
+   "ann": {
+    "label": "Peach___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-75b5e491cc",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 8026,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___healthy"
+   ],
+   "ann": {
+    "label": "Peach___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2266eb79e3",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 8066,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___healthy"
+   ],
+   "ann": {
+    "label": "Peach___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-7d92e4c791",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 8133,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___healthy"
+   ],
+   "ann": {
+    "label": "Peach___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-2fea30ca66",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 8842,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ],
+   "ann": {
+    "label": "Orange___Haunglongbing_(Citrus_greening)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a146c55ef6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 9898,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ],
+   "ann": {
+    "label": "Orange___Haunglongbing_(Citrus_greening)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d8893d5dbe",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 10175,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ],
+   "ann": {
+    "label": "Orange___Haunglongbing_(Citrus_greening)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4c1959015f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 10578,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ],
+   "ann": {
+    "label": "Orange___Haunglongbing_(Citrus_greening)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c38a7992fc",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 11656,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ],
+   "ann": {
+    "label": "Orange___Haunglongbing_(Citrus_greening)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-27686f2322",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 13739,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Early_blight"
+   ],
+   "ann": {
+    "label": "Potato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-cdaaab79b5",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 13901,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Early_blight"
+   ],
+   "ann": {
+    "label": "Potato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3acc716769",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 13948,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Early_blight"
+   ],
+   "ann": {
+    "label": "Potato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ccf66fe132",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 14138,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Early_blight"
+   ],
+   "ann": {
+    "label": "Potato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8d1274dbdc",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 14404,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___Early_blight"
+   ],
+   "ann": {
+    "label": "Potato___Early_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f1c7155e51",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 14883,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___healthy"
+   ],
+   "ann": {
+    "label": "Corn___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8faac96714",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 14899,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___healthy"
+   ],
+   "ann": {
+    "label": "Corn___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f4e942a0c1",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 14951,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___healthy"
+   ],
+   "ann": {
+    "label": "Corn___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-9e5d17ea4c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 15421,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___healthy"
+   ],
+   "ann": {
+    "label": "Corn___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a0495bee0f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 15660,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Corn___healthy"
+   ],
+   "ann": {
+    "label": "Corn___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-d5435c7239",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 16079,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Apple_scab"
+   ],
+   "ann": {
+    "label": "Apple___Apple_scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ada2fd767f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 16149,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Apple_scab"
+   ],
+   "ann": {
+    "label": "Apple___Apple_scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a8f8f9682e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 16164,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Apple_scab"
+   ],
+   "ann": {
+    "label": "Apple___Apple_scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c8904be8a4",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 16204,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Apple_scab"
+   ],
+   "ann": {
+    "label": "Apple___Apple_scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f0492128e9",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 16291,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___Apple_scab"
+   ],
+   "ann": {
+    "label": "Apple___Apple_scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-cfd6ad9df5",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 17232,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___healthy"
+   ],
+   "ann": {
+    "label": "Apple___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-8d9c6563fa",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 17648,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___healthy"
+   ],
+   "ann": {
+    "label": "Apple___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3959b75180",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 17807,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___healthy"
+   ],
+   "ann": {
+    "label": "Apple___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b7f7c55f4e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18001,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___healthy"
+   ],
+   "ann": {
+    "label": "Apple___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-e96bd58182",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18042,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Apple___healthy"
+   ],
+   "ann": {
+    "label": "Apple___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-b647987d0c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18463,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___healthy"
+   ],
+   "ann": {
+    "label": "Tomato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-ae78067b65",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18612,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___healthy"
+   ],
+   "ann": {
+    "label": "Tomato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-67e0d58cff",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18724,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___healthy"
+   ],
+   "ann": {
+    "label": "Tomato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5317a5df1e",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 18811,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___healthy"
+   ],
+   "ann": {
+    "label": "Tomato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-01c448f888",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 19657,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato___healthy"
+   ],
+   "ann": {
+    "label": "Tomato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-36b840d54b",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 19816,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ],
+   "ann": {
+    "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-78511b8693",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 19960,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ],
+   "ann": {
+    "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-dc7ee664a5",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 20236,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ],
+   "ann": {
+    "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3b5d5f9b6f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 20670,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ],
+   "ann": {
+    "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-199c690350",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 20716,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ],
+   "ann": {
+    "label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f55e099d6a",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 21055,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Esca_(Black_Measles)"
+   ],
+   "ann": {
+    "label": "Grape___Esca_(Black_Measles)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-cd1eb658ca",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 21203,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Esca_(Black_Measles)"
+   ],
+   "ann": {
+    "label": "Grape___Esca_(Black_Measles)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-363b874443",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 21240,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Esca_(Black_Measles)"
+   ],
+   "ann": {
+    "label": "Grape___Esca_(Black_Measles)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-05a0d125f1",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 21544,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Esca_(Black_Measles)"
+   ],
+   "ann": {
+    "label": "Grape___Esca_(Black_Measles)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-03848ef7f1",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 21659,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Esca_(Black_Measles)"
+   ],
+   "ann": {
+    "label": "Grape___Esca_(Black_Measles)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-30e6eccc66",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 22264,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___healthy"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f4d8b99cbf",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 22580,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___healthy"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5a5cab0bfa",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 22939,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___healthy"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-f75f62d226",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23438,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___healthy"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3f037ddd23",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23535,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper,_bell___healthy"
+   ],
+   "ann": {
+    "label": "Pepper,_bell___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-64083b3b2c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23779,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___healthy"
+   ],
+   "ann": {
+    "label": "Strawberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-be7b3c56c6",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23903,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___healthy"
+   ],
+   "ann": {
+    "label": "Strawberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-549f835250",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23915,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___healthy"
+   ],
+   "ann": {
+    "label": "Strawberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-1464e1b7e9",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 23951,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___healthy"
+   ],
+   "ann": {
+    "label": "Strawberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-263ae2c9f0",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 24035,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry___healthy"
+   ],
+   "ann": {
+    "label": "Strawberry___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-3c157dbfe7",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 24124,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Black_rot"
+   ],
+   "ann": {
+    "label": "Grape___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-af1c3fc33c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 24424,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Black_rot"
+   ],
+   "ann": {
+    "label": "Grape___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-6583ca039f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 24730,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Black_rot"
+   ],
+   "ann": {
+    "label": "Grape___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-4e5b07cc09",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 24812,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Black_rot"
+   ],
+   "ann": {
+    "label": "Grape___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-5351395bf8",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 25261,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Grape___Black_rot"
+   ],
+   "ann": {
+    "label": "Grape___Black_rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-adfdf04772",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 25621,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Peach___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-e63ab58222",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 25812,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Peach___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-104ae923cb",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 26981,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Peach___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-cc72e72f36",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27232,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Peach___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-60603ceb6f",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27393,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Peach___Bacterial_spot"
+   ],
+   "ann": {
+    "label": "Peach___Bacterial_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-53fe325d1a",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27577,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___healthy"
+   ],
+   "ann": {
+    "label": "Potato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-6cd3d7af4a",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27583,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___healthy"
+   ],
+   "ann": {
+    "label": "Potato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a887563789",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27642,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___healthy"
+   ],
+   "ann": {
+    "label": "Potato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-a8f0d79b95",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27707,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___healthy"
+   ],
+   "ann": {
+    "label": "Potato___healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Plant_leaf_diseases_dataset_classification-c876f6e15c",
+   "ref": {
+    "file": "raw/train-00001-of-00002.parquet",
+    "row": 27717,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Potato___healthy"
+   ],
+   "ann": {
+    "label": "Potato___healthy"
+   },
+   "strata": {}
+  }
+ ]
+}

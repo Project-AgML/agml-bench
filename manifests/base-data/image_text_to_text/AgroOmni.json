@@ -1,0 +1,4295 @@
+{
+ "name": "AgroOmni",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/AgroOmni",
+ "hf_sha": "d63a9b6872a8419a54eef92d1f39553727e71f93",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-20T20:58:42+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 288831,
+  "strata_counts_full": {
+   "CropLand | yes_no": 1080,
+   "Fruit | numeric": 7408,
+   "Wheat | numeric": 6515,
+   "Rural | open_ended": 12600,
+   "crop | open_ended": 1614,
+   "Wheat | open_ended": 13030,
+   "Trees | open_ended": 10905,
+   "Tomato | open_ended": 2000,
+   "Oil_palm_trees | numeric": 7203,
+   "Leaf_diseases | open_ended": 64666,
+   "Agriculture | open_ended": 28000,
+   "Fruit | yes_no": 3704,
+   "Fruit | open_ended": 7408,
+   "Oil_palm_trees | open_ended": 13201,
+   "Trees | yes_no": 2266,
+   "EarthVQA | open_ended": 4352,
+   "CropHarvest | numeric": 3525,
+   "CropHarvest | open_ended": 1957,
+   "Pest | yes_no": 32400,
+   "Pest | open_ended": 36444,
+   "CropLand | open_ended": 360,
+   "Wheat | yes_no": 6515,
+   "Pest | numeric": 16203,
+   "CropHarvest | yes_no": 4668,
+   "crop | numeric": 807
+  }
+ },
+ "strata_keys": [
+  "category",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "AgroOmni-efe6900658",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-65800d47a7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 164,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-aaca768fa3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 313,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-984ee97972",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 353,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-744dd67846",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 894,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-4a6fc6046d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 899,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-3512ef4297",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 911,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-3677eea3da",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 919,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-aa130c5ac5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 971,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ec2babc577",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1030,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1b47493cf3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1208,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-653b8286f6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2858,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d4c6bdc938",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3485,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b00dd08fe3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5310,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9ba0d251e5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 5344,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ce4f02dd7f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6349,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1e82a3a7f1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6569,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-db34327fd2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6925,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-4711f23658",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 6962,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6188709664",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7216,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b54cc574d0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 7383,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7227840e4f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8255,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-bb65529b4c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 8362,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-558ab41ce8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12349,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b2dc2519d5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 12552,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ddb64a55ae",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13432,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d36f49011f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13529,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d9abaab4a5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13610,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e84a6eb510",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 13864,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d2d4a93ee5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 14602,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f7bcff75a7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 15249,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b4e01ce662",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 15927,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a93b85a95d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22529,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-15b85aa5c6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22532,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-89f0494c21",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22612,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cab8ed826b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22616,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-64502b275e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 22627,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-58d8671a1a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 23518,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-82391e83c3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 24961,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-24ec1c7181",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 26490,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1b18b0720e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28311,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-26c3edde38",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28627,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6d3399924b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 28639,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5bb0c82577",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 29012,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-60843b9d39",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 29211,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ffdbd020e2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 29757,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-99287e8d66",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 36902,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ec98e82178",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 38362,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d52c0472b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 55858,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-3453698a95",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 57534,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-733680ab15",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 59809,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b6a698a4a9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 62078,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-126e36ec46",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 62135,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c355087d17",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 62334,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d8c58c0e35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 66553,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d1ac270a38",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 68501,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b8536c9b06",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 68508,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-17e0fab6bc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 70080,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e59fd1ae25",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 71363,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-66fff34c6e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 71711,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-955ed0e7a6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 72735,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-09750a73c0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 72770,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-4bf7f87069",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 72832,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ef5235da89",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 72891,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f6561d984f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 72898,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7871758763",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 73106,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b6ea265492",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 73248,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7467561e27",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 74216,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e4d54f43ff",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 75333,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6c955bf171",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 76075,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9d11382873",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 76939,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cbba33a974",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 78933,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b8bc7eb288",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 79406,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a90a1ae497",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 80736,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-986a06282d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 81200,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-936832dc88",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 86955,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-951836a279",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 91387,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-05b47a90cf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92046,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-11ee25e216",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92059,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-588d416e8e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92076,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-2e57dbd57f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92102,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5e8ae6c704",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92122,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-30cb77562c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92412,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f4bd5b3915",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92447,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9801e2260c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 92913,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6ff18bf9ce",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 94258,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-0f99d1e05d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 94274,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-dfc283e84f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 95733,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5bf0430d8d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 95920,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7182fe9d19",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 95921,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a827a71cb7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 96210,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-75343e529b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 96852,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-245f8d5679",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 97351,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1f78482bb3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 97525,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cde22ea887",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 97532,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-923835a016",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 97909,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-24ca7484cf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 97911,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-257e697722",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 98060,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6d0e7331ad",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 98899,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-20f66dc6f0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 98953,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d8d8a89850",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 99486,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e632d1e90d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 100041,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-58a2831c79",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 100074,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-eb616d4d49",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 100655,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-17d831eb43",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 100987,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9675940fff",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 101628,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a11ccebf26",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 101939,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-eebf1f53bb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 102733,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6d9d689a82",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 103367,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-767792d636",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 103804,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d643e79efb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 104276,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ecb5d96468",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 104628,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-0aca958577",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 107538,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-aaee42bb07",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 107932,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e365082ccd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 109784,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6dcbb46bdb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 110413,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-92d62591aa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 110694,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-34ccc46505",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 112224,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c64f22b0a9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 114410,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Oil_palm_trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_oil_palm_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-bf2759efc8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 115665,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-3e5b729ce0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 115833,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-14e3af7c86",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 115885,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-38fe7363ad",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 116230,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c7863ed067",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 116456,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e7e8076707",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 116559,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5114d845b2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 116627,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-092937d26b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 116663,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-654aa323a0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 117073,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-85dae907d2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 117081,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-201ae27a90",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 118374,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-815e29b29a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 121961,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6d25a6397a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 124797,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e99fde546e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 130609,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f10bae5351",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 138770,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-8ace16f499",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 141464,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-70bf9c612e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143193,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9cae31258a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143286,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1859f50fb7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143320,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5dfd4a82b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143407,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7a0e5b0acd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143417,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a9f734c533",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143448,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d79fee07a4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143456,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6a013af218",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143492,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-88f7ee6298",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143528,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-412a6cae45",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 143536,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropLand",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_cropland_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-2a4b7ee900",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 144064,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-52fcf03b0a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 144641,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-606e3d6543",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 144797,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-61aa6e0b33",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 145489,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-7ced90f4dc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 145566,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-29e713d590",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 145906,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-99801d0200",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 147044,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b59c0b2dea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 149805,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ede4d89914",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 151444,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9724787ee0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 155480,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1d1b77bd44",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 160226,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e27747a37a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 164128,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6ffbbf5793",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 164474,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f951bbb0b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 166053,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-af811a3995",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 166469,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5051e7fda7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 166996,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f3235aeed0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 167747,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-55dc68c193",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 167785,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-04e7f8aa49",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 170375,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cab9df0cf3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 170524,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cbc6123ee1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 172369,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6082b3df8b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 179639,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ace9b470ae",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 183820,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-8681404c30",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 184511,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-98f5dc9907",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 186738,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d966018bef",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 188234,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ddbd456643",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 189893,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c331eb6f3e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 190127,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f17b74c8d3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 193706,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a756a0f02e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 197987,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Agriculture",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_agriculture_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-640303c6bd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 200907,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-771914d4da",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 201002,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6dd079af6d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 201122,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-932be62217",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 202179,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-bf6880e8b9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 202529,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5b165e2488",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 203151,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-0323fa0bad",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 204250,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-a4ef8c35f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 204979,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-70a6672b17",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 205532,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6519cb3a9e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 205988,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Wheat",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_wheat_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-31d7b8797a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 206806,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-08a6daa342",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 206848,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d18202f713",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 206874,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-82f8f9459f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 206909,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-91512a6070",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 207260,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-6fd5539537",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 207385,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-bed809572b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 207515,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c21d4d85d7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 208260,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f7a039945e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 211830,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-0b525e13e3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 212218,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ae0316a856",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 214989,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-653195fa5f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 215059,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ec9e27c25c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 219142,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-09579be56b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 220393,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-8eb8ce23c2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 221907,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-376ad36e07",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 222417,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cbf5f2bd32",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 223936,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e4244ebbd9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 224169,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d5c4fdff18",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 224210,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-be6b38db80",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 224345,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-2055d654a7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 225782,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-26d4f21e95",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 225789,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-4f3f26d3e8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 226064,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-b3a937148c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 226129,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-13f8189068",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 227197,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cd3fffcd6d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 227775,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "CropHarvest",
+    "config": "train",
+    "qa_format": "yes_no",
+    "id_prefix": "agroomni_cropharvest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-fb505d32f2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 228550,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-bbd579d94b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 228683,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-64445eabe3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 228829,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-dda98c05ee",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 228928,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Tomato",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_tomato_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-adaae14a30",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 231810,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5c8396d7d1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 231907,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c8671e9431",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 232022,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-33c6dbf18e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 232124,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-74145f1fe9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 232478,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-942b0367b9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 232839,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Fruit",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_fruit_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e138f72131",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 235839,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-0ce5ea1236",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 236445,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e6b9311ba8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 239399,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-82587aa8e8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 240452,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c8dce90497",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 240953,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Pest",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_pest_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-403b1d46b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 250309,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-86a1a1b4b7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251021,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-e0da6ec87d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251174,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-9e370a4c76",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251399,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-49189dc964",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251446,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-dfbfcc50b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251464,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-5eb9c220ca",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251476,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-841ddb45cc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251494,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-cfececfb65",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251572,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-972acd1adf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251585,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-39d29e1cec",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251656,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-2eaae1c81e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 251788,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-d5a000d173",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 252079,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "crop",
+    "config": "train",
+    "qa_format": "numeric",
+    "id_prefix": "agroomni_crop_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-c7cd017e16",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 255901,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-2a5f708cbe",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 265349,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-3f4181b888",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 267657,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-1869e62a35",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 276343,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-f0a82e8c0f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 276818,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Leaf_diseases",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_leaf_diseases_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-59469fd07f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 282016,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-211451b8b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 282672,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Rural",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_rural_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-4358bc70f6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 286078,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ef2624dfe0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 286639,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "EarthVQA",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_earthvqa_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-ac6a01715d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 286859,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  },
+  {
+   "sample_id": "AgroOmni-73c8447f86",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 287178,
+    "config": "train",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "category": "Trees",
+    "config": "train",
+    "qa_format": "open_ended",
+    "id_prefix": "agroomni_trees_train"
+   }
+  }
+ ]
+}

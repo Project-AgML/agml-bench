@@ -1,0 +1,586 @@
+{
+ "name": "tropical_flower_variety_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/tropical_flower_variety_classification",
+ "hf_sha": "ad796ef6fd9ff7c844a4b2d3c7b73673c61cd941",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:43:16+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bougainvillea",
+   "Crown of thorns",
+   "Hibiscus",
+   "Jungle geranium",
+   "Madagascar periwinkle",
+   "Marigold",
+   "Rose"
+  ],
+  "indexed_rows": 4319
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tropical_flower_variety_classification-3864f21887",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-c2144e3978",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-beea78035f",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 372,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-1dcd2cd009",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-b48799646b",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 684,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-dc6c83d8cb",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 1048,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jungle geranium"
+   ],
+   "ann": {
+    "label": "Jungle geranium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-f38b2245b7",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jungle geranium"
+   ],
+   "ann": {
+    "label": "Jungle geranium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-8899e25d87",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jungle geranium"
+   ],
+   "ann": {
+    "label": "Jungle geranium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-43f848c264",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jungle geranium"
+   ],
+   "ann": {
+    "label": "Jungle geranium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-7c2794b6cb",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jungle geranium"
+   ],
+   "ann": {
+    "label": "Jungle geranium"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-2e91ad5c16",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 537,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-4a6f3d313f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 726,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-b3b6ca24a9",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 765,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-12c4638e61",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 810,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-97857edeb9",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 882,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-faeb108ed0",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Madagascar periwinkle"
+   ],
+   "ann": {
+    "label": "Madagascar periwinkle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-e124dceac5",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 236,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Madagascar periwinkle"
+   ],
+   "ann": {
+    "label": "Madagascar periwinkle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-89602877f5",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Madagascar periwinkle"
+   ],
+   "ann": {
+    "label": "Madagascar periwinkle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-13929508d1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Madagascar periwinkle"
+   ],
+   "ann": {
+    "label": "Madagascar periwinkle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-bf804a7976",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 439,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Madagascar periwinkle"
+   ],
+   "ann": {
+    "label": "Madagascar periwinkle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-5c1a4d0464",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Crown of thorns"
+   ],
+   "ann": {
+    "label": "Crown of thorns"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-0b4679c723",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 641,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Crown of thorns"
+   ],
+   "ann": {
+    "label": "Crown of thorns"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-65b867899d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 653,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Crown of thorns"
+   ],
+   "ann": {
+    "label": "Crown of thorns"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-db0bb4c924",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Crown of thorns"
+   ],
+   "ann": {
+    "label": "Crown of thorns"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-d5a9c0266b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 717,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Crown of thorns"
+   ],
+   "ann": {
+    "label": "Crown of thorns"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-7588b78206",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-e091b6ae87",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-91a5eecd30",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-37c70e1762",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-7fe3175222",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-16e9c59062",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bougainvillea"
+   ],
+   "ann": {
+    "label": "Bougainvillea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-de4816bb1e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 643,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bougainvillea"
+   ],
+   "ann": {
+    "label": "Bougainvillea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-db2aa38153",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 739,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bougainvillea"
+   ],
+   "ann": {
+    "label": "Bougainvillea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-fcaa891e29",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 870,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bougainvillea"
+   ],
+   "ann": {
+    "label": "Bougainvillea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_flower_variety_classification-6e492d002d",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 896,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bougainvillea"
+   ],
+   "ann": {
+    "label": "Bougainvillea"
+   },
+   "strata": {}
+  }
+ ]
+}

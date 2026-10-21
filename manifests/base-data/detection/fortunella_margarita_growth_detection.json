@@ -1,0 +1,416 @@
+{
+ "name": "fortunella_margarita_growth_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/fortunella_margarita_growth_detection",
+ "hf_sha": "05256edac1389ced8492b5839d1a5fe2aa09246c",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:03:58+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Immature",
+   "Growing",
+   "Mature",
+   "cavity"
+  ],
+  "indexed_rows": 6611
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "fortunella_margarita_growth_detection-c7fe2cfa2d",
+   "ref": {
+    "file": "data/train-00000-of-00016.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Growing",
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       1998.0,
+       1015.0,
+       591.0,
+       434.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       1964.0,
+       2128.0,
+       413.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-774d7df82b",
+   "ref": {
+    "file": "data/train-00000-of-00016.parquet",
+    "row": 379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Growing",
+    "Immature",
+    "cavity"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "cavity",
+      "bbox_raw": [
+       2163.0,
+       1128.0,
+       604.0,
+       462.0
+      ]
+     },
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       1684.0,
+       1307.0,
+       508.0,
+       417.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       1072.0,
+       1253.0,
+       412.0,
+       412.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-2e1a330a6a",
+   "ref": {
+    "file": "data/train-00001-of-00016.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Growing",
+    "Immature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       630.0,
+       2865.0,
+       575.0,
+       713.0
+      ]
+     },
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       1626.0,
+       3024.0,
+       512.0,
+       550.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       738.0,
+       428.0,
+       996.0,
+       808.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-3bd3d709bd",
+   "ref": {
+    "file": "data/train-00005-of-00016.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       1097.0,
+       1999.0,
+       466.0,
+       508.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-6775b3bdd3",
+   "ref": {
+    "file": "data/train-00006-of-00016.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       1405.0,
+       2365.0,
+       521.0,
+       550.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-0bde2b6626",
+   "ref": {
+    "file": "data/train-00010-of-00016.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       1523.0,
+       1496.0,
+       566.0,
+       594.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-46c5539cd5",
+   "ref": {
+    "file": "data/train-00012-of-00016.parquet",
+    "row": 272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Growing",
+    "Immature",
+    "Mature",
+    "cavity"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       2589.0,
+       1731.0,
+       109.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       2639.0,
+       1459.0,
+       234.0,
+       272.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       1767.0,
+       1759.0,
+       272.0,
+       297.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       1367.0,
+       1681.0,
+       381.0,
+       334.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       2189.0,
+       1696.0,
+       250.0,
+       378.0
+      ]
+     },
+     {
+      "label": "cavity",
+      "bbox_raw": [
+       2817.0,
+       1259.0,
+       278.0,
+       265.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-6276a8e95a",
+   "ref": {
+    "file": "data/train-00013-of-00016.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Growing",
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       2002.0,
+       1315.0,
+       509.0,
+       447.0
+      ]
+     },
+     {
+      "label": "Growing",
+      "bbox_raw": [
+       2630.0,
+       1981.0,
+       609.0,
+       465.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       3189.0,
+       821.0,
+       547.0,
+       500.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-4015ab25f7",
+   "ref": {
+    "file": "data/train-00013-of-00016.parquet",
+    "row": 405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Immature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       2023.0,
+       1037.0,
+       663.0,
+       859.0
+      ]
+     },
+     {
+      "label": "Immature",
+      "bbox_raw": [
+       2717.0,
+       1859.0,
+       435.0,
+       565.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fortunella_margarita_growth_detection-8f58e0cace",
+   "ref": {
+    "file": "data/train-00014-of-00016.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mature"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       1867.0,
+       1665.0,
+       613.0,
+       650.0
+      ]
+     },
+     {
+      "label": "Mature",
+      "bbox_raw": [
+       976.0,
+       2690.0,
+       525.0,
+       596.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

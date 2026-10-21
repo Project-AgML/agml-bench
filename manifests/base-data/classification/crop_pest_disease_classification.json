@@ -1,0 +1,1477 @@
+{
+ "name": "crop_pest_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/crop_pest_disease_classification",
+ "hf_sha": "210763ab8e386521c8aa5150d26ae966dfba78d5",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:18:25+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "anthracnose",
+   "bacterial blight",
+   "brown spot",
+   "fall armyworm",
+   "grasshoper",
+   "green mite",
+   "gumosis",
+   "healthy",
+   "leaf beetle",
+   "leaf blight",
+   "leaf curl",
+   "leaf miner",
+   "leaf spot",
+   "mosaic",
+   "red rust",
+   "septoria leaf spot",
+   "streak virus",
+   "verticulium wilt"
+  ],
+  "indexed_rows": 25170
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "crop_pest_disease_classification-0f46883cc4",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 2,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose"
+   ],
+   "ann": {
+    "label": "anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-eb21226089",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose"
+   ],
+   "ann": {
+    "label": "anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-07a4fba107",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 465,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose"
+   ],
+   "ann": {
+    "label": "anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-2a3046ecdf",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 1305,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose"
+   ],
+   "ann": {
+    "label": "anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6486c3c969",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 1653,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "anthracnose"
+   ],
+   "ann": {
+    "label": "anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-e437c1c39b",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 1847,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "gumosis"
+   ],
+   "ann": {
+    "label": "gumosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-ba51e5abce",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 1966,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "gumosis"
+   ],
+   "ann": {
+    "label": "gumosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-0b665d6443",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 1975,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "gumosis"
+   ],
+   "ann": {
+    "label": "gumosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-04372ce0aa",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 2062,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "gumosis"
+   ],
+   "ann": {
+    "label": "gumosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-d225c34a78",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 2085,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "gumosis"
+   ],
+   "ann": {
+    "label": "gumosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-86ce57ad70",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 2145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-b2099a66b9",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 3053,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-2156ead308",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 3924,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf miner"
+   ],
+   "ann": {
+    "label": "leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-044c8c7001",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 3956,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf miner"
+   ],
+   "ann": {
+    "label": "leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-46dc3f8a79",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 4072,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf miner"
+   ],
+   "ann": {
+    "label": "leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6ce4c31443",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 4185,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf miner"
+   ],
+   "ann": {
+    "label": "leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-d970937846",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 4575,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf miner"
+   ],
+   "ann": {
+    "label": "leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-9a76ec0971",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 4951,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "red rust"
+   ],
+   "ann": {
+    "label": "red rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-db8610a0dd",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 5755,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "red rust"
+   ],
+   "ann": {
+    "label": "red rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-b49fe1a134",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 5850,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "red rust"
+   ],
+   "ann": {
+    "label": "red rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5274ce4547",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 5953,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "red rust"
+   ],
+   "ann": {
+    "label": "red rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-ab222d6a17",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 6247,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "red rust"
+   ],
+   "ann": {
+    "label": "red rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-dbf1d75f65",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 8015,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial blight"
+   ],
+   "ann": {
+    "label": "bacterial blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-c1b213915a",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 8071,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial blight"
+   ],
+   "ann": {
+    "label": "bacterial blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-250f9551a2",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 8370,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial blight"
+   ],
+   "ann": {
+    "label": "bacterial blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-0f28a25cec",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 468,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial blight"
+   ],
+   "ann": {
+    "label": "bacterial blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-217d72bd0c",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 712,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial blight"
+   ],
+   "ann": {
+    "label": "bacterial blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-600ac2dc86",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 797,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "brown spot"
+   ],
+   "ann": {
+    "label": "brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-b9e2acc6dc",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 849,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "brown spot"
+   ],
+   "ann": {
+    "label": "brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-61341d1395",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 1454,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "brown spot"
+   ],
+   "ann": {
+    "label": "brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-ae8a6e01e9",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 1780,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "brown spot"
+   ],
+   "ann": {
+    "label": "brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-031515e8ae",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 1857,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "brown spot"
+   ],
+   "ann": {
+    "label": "brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-8cc1d7a159",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 2412,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "green mite"
+   ],
+   "ann": {
+    "label": "green mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-36dd12adf9",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 2745,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "green mite"
+   ],
+   "ann": {
+    "label": "green mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5bf45c5887",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 2987,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "green mite"
+   ],
+   "ann": {
+    "label": "green mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-c4e5f033fe",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 3088,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "green mite"
+   ],
+   "ann": {
+    "label": "green mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-099941efd3",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 3120,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "green mite"
+   ],
+   "ann": {
+    "label": "green mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-1bdeaf5272",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 3784,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-4d19b48e97",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 4633,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mosaic"
+   ],
+   "ann": {
+    "label": "mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-d30f6aeb2b",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 4873,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mosaic"
+   ],
+   "ann": {
+    "label": "mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-4975605f38",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 4890,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mosaic"
+   ],
+   "ann": {
+    "label": "mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-597d0603d7",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5197,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mosaic"
+   ],
+   "ann": {
+    "label": "mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6129a36bd9",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5536,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mosaic"
+   ],
+   "ann": {
+    "label": "mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-61d19562f5",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5753,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fall armyworm"
+   ],
+   "ann": {
+    "label": "fall armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-be960ffacf",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5877,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fall armyworm"
+   ],
+   "ann": {
+    "label": "fall armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-aefe28ab6f",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5891,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fall armyworm"
+   ],
+   "ann": {
+    "label": "fall armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-b9b07074d4",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5911,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fall armyworm"
+   ],
+   "ann": {
+    "label": "fall armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5ddc7b033a",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5916,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fall armyworm"
+   ],
+   "ann": {
+    "label": "fall armyworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-ce2c28572b",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 5979,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "grasshoper"
+   ],
+   "ann": {
+    "label": "grasshoper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-491be4d9d7",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 6256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "grasshoper"
+   ],
+   "ann": {
+    "label": "grasshoper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-b0056064f8",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 6299,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "grasshoper"
+   ],
+   "ann": {
+    "label": "grasshoper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-363e81fd5b",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 6443,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "grasshoper"
+   ],
+   "ann": {
+    "label": "grasshoper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-30c10bc484",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 6622,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "grasshoper"
+   ],
+   "ann": {
+    "label": "grasshoper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5160010951",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 6843,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf beetle"
+   ],
+   "ann": {
+    "label": "leaf beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-45308e02a8",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 7157,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf beetle"
+   ],
+   "ann": {
+    "label": "leaf beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-c11b158edb",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 7457,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf beetle"
+   ],
+   "ann": {
+    "label": "leaf beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-cf031ae119",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 7556,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf beetle"
+   ],
+   "ann": {
+    "label": "leaf beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-d346c32b06",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 7767,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf beetle"
+   ],
+   "ann": {
+    "label": "leaf beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-325cd5f652",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 310,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf blight"
+   ],
+   "ann": {
+    "label": "leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6ff6b34b23",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 429,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf spot"
+   ],
+   "ann": {
+    "label": "leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-293452493b",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 799,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf spot"
+   ],
+   "ann": {
+    "label": "leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-0e604a5fdd",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 1081,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf spot"
+   ],
+   "ann": {
+    "label": "leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5954cd56e6",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 1149,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf spot"
+   ],
+   "ann": {
+    "label": "leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-16f98eacd3",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 1171,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf spot"
+   ],
+   "ann": {
+    "label": "leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-00eddf686a",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 1861,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "streak virus"
+   ],
+   "ann": {
+    "label": "streak virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-c6df928b5f",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2049,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "streak virus"
+   ],
+   "ann": {
+    "label": "streak virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6f20d5ea60",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2258,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "streak virus"
+   ],
+   "ann": {
+    "label": "streak virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-9391a9c576",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2283,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "streak virus"
+   ],
+   "ann": {
+    "label": "streak virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-8841e23d23",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2404,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "streak virus"
+   ],
+   "ann": {
+    "label": "streak virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-9b65c39f0a",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2929,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-8ca736bfde",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 2948,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-6f3995d2f2",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 3416,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf blight"
+   ],
+   "ann": {
+    "label": "leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-144a87c07d",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 3713,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf blight"
+   ],
+   "ann": {
+    "label": "leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-5df8de2224",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4056,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf blight"
+   ],
+   "ann": {
+    "label": "leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-e727a60d47",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4329,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf blight"
+   ],
+   "ann": {
+    "label": "leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-3bc75ceefd",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4428,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf curl"
+   ],
+   "ann": {
+    "label": "leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-77324b7c8f",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4593,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf curl"
+   ],
+   "ann": {
+    "label": "leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-bbe26a8d6e",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4680,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf curl"
+   ],
+   "ann": {
+    "label": "leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-fd724cdabf",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4865,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf curl"
+   ],
+   "ann": {
+    "label": "leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-f584b49a03",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 4866,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "leaf curl"
+   ],
+   "ann": {
+    "label": "leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-a0d2f06d28",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 5571,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "septoria leaf spot"
+   ],
+   "ann": {
+    "label": "septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-3ed71dd30e",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 6266,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "septoria leaf spot"
+   ],
+   "ann": {
+    "label": "septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-9954b88a53",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 6518,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "septoria leaf spot"
+   ],
+   "ann": {
+    "label": "septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-fba72b78eb",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 6780,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "septoria leaf spot"
+   ],
+   "ann": {
+    "label": "septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-0e9c6536a9",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7417,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "septoria leaf spot"
+   ],
+   "ann": {
+    "label": "septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-23418ad27a",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7626,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "verticulium wilt"
+   ],
+   "ann": {
+    "label": "verticulium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-955f5a385b",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7787,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "verticulium wilt"
+   ],
+   "ann": {
+    "label": "verticulium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-bcaab3575b",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7941,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "verticulium wilt"
+   ],
+   "ann": {
+    "label": "verticulium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-4caae38af3",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7961,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "verticulium wilt"
+   ],
+   "ann": {
+    "label": "verticulium wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "crop_pest_disease_classification-65d1137c64",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 7964,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "verticulium wilt"
+   ],
+   "ann": {
+    "label": "verticulium wilt"
+   },
+   "strata": {}
+  }
+ ]
+}

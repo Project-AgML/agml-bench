@@ -1,0 +1,4569 @@
+{
+ "name": "Agri-LLaVA",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/Agri-LLaVA_Agricultural_Pests_And_Diseases_Feature_Alignment_Dataset",
+ "hf_sha": "ae18c1933b6cc5ec2901457d0ca9997d042195eb",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-21T05:28:46+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 391785,
+  "strata_counts_full": {
+   "16": 9868,
+   "45": 10179,
+   "44": 14674,
+   "9": 11182,
+   "29": 5028,
+   "6": 21681,
+   "11": 13997,
+   "37": 12523,
+   "48": 5038,
+   "26": 6373,
+   "0": 12543,
+   "7": 5766,
+   "3": 9470,
+   "17": 8393,
+   "15": 3545,
+   "8": 4651,
+   "13": 4350,
+   "32": 22788,
+   "28": 4224,
+   "19": 8594,
+   "12": 5882,
+   "42": 5619,
+   "27": 18880,
+   "30": 13216,
+   "39": 2794,
+   "22": 9639,
+   "14": 5952,
+   "43": 10153,
+   "38": 4605,
+   "18": 7636,
+   "35": 6672,
+   "10": 5631,
+   "46": 5555,
+   "31": 9903,
+   "1": 6512,
+   "20": 6104,
+   "23": 8655,
+   "49": 3338,
+   "5": 7113,
+   "36": 9121,
+   "34": 7271,
+   "24": 4364,
+   "2": 4758,
+   "41": 8833,
+   "40": 3336,
+   "25": 1668,
+   "4": 4840,
+   "33": 3119,
+   "47": 3336,
+   "21": 2413
+  }
+ },
+ "strata_keys": [
+  "cluster"
+ ],
+ "samples": [
+  {
+   "sample_id": "Agri-LLaVA-3af22bfd28",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 45
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9a906926ce",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 11
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-940a4955e7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 6
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1acd8d74df",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 7
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0bb93aa878",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 15
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0a00a93688",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 13
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-bbffed23fa",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 45
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4c25c6daac",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 11
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-20ba99c0d8",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 30
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e5160df9f2",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 39
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e824b428c8",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 22
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-96dac497d9",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 28
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-61a8bc4fde",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 46
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-799fd67229",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 22
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7647f2d42f",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 6
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-36b8f3766b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 15
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4f7f4d5de5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 49
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-018cf2857a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 24
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-eeb33ff307",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 5
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-23e1877ee1",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 7
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-88951a7001",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 2
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-eb210578ef",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 11
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9b9832a21c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 5
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8b10022221",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 168,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 25
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3fc61919ec",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 8
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c767ea9f28",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 6
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-a59a7499c7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 35
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-cd435b1199",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 12
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-14a9c92a62",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 7
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-be81ac00cd",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 35
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-edcaeacb45",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 43
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b1a60349c6",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 12
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2ae5aae0eb",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 16
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ba9e3c6af6",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 25
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1f1a02721a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 23
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-aee77dfacf",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 25
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5fb7f187b5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 3
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-741cd764f4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 10
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-53a709a017",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 7
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2aa3d7a156",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 39
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-798725eab3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 20
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8e98f60db3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 27
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9ff5364444",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 7
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1ccf4c39d5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 25
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-81e9ced5e7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 34
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8e03402fba",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 34
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6e92320405",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 327,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 49
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-cb77ea446d",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 6
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-74beb53400",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 47
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-42c995eb49",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 337,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 12
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-771f3a7693",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 340,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 34
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4153d21c75",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 358,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 48
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9b1232a05b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 30
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3a8bf54dcb",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 19
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-77ea5d1303",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 27
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-796dfb31ca",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 375,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 6
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-94f47bc089",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 385,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 48
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9f81fabafe",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 34
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5751635943",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 22
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f24677f84a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 395,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 35
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5dbae3692b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 24
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-16e5d179cb",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 33
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-224f34a1b0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 8
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-276d1fe596",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 39
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3cf86e1df0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 34
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1d517a198e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 430,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 15
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c5deeff6f3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 0
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-800b2300de",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 24
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-07eef51c2b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 25
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-252cc70566",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 467,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 15
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8fbce32d0f",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 469,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 2
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4452b5e8c5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 479,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 24
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-df3e111c00",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 47
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-84faabf519",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 501,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 42
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-59422006d0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 39
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8371b8016e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 519,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 40
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d9f8ec7f97",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 530,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 45
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-919f3b81a6",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 3
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c628181292",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 12
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ea1ee94fb7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 13
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-58affb8b58",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 547,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 28
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3d0c214645",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 40
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2ed49ec810",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 556,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 30
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c4921f77a9",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 584,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 22
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-cbef136073",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 592,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 2
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6f05748647",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 594,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 19
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8250920319",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 601,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 11
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-407f751666",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 612,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 8
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-a53e02fc77",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 21
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4f96d1338a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 32
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1fc9b0b2f8",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 656,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 47
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-86116b6d97",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 24
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e0a26d2788",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 671,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 46
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7c9cb60de1",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 672,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 48
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d908181615",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 23
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-69ac027ca5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 5
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-39a46b125c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 689,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 47
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d210052b05",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 698,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 39
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-68f15af854",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 699,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 47
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-68a487ba91",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 19
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-bcf41a9dbd",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 12
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-fc8c7b7130",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 725,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 19
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0841b6c730",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 730,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 3
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-275376c9b1",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 734,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 41
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-09969be018",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 747,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 49
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c2075024ae",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 748,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 5
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6dd090fc62",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 750,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 8
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b7e41a63fc",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 755,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 31
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c170d7f255",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 757,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 22
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9d79b382c2",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 759,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 45
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0853d8636f",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 778,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 8
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d13cb1fb0e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 780,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 46
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8bc483150a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 789,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 9
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-134d49ff92",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 792,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 48
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c04c2b2b5e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 801,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 49
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9419705f96",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 48
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-156885cb7a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 808,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 40
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-46d6a2e6e3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 872,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 23
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d0054c1530",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 884,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 2
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-87f6894d14",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 914,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 35
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7ac1872153",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 918,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 4
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e315a50104",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 921,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 2
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ee576a515a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 922,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 41
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5d09e4b9e4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 933,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 45
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-dd75c3f114",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 36
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7408c523a9",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 937,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 41
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9e2f6490f4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 950,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 21
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-431e5328df",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 965,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 41
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-620fc197fc",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 969,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 33
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-fec049f0a5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 43
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-cb896433df",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 978,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 11
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-424fcc8b03",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 981,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 9
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-cd9bb548b4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 985,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 17
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-fbdf3a2d70",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 988,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 41
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-eec10e90be",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1000,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 46
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-078c0d720c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1005,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 21
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-456b6a1a19",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1011,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 49
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6c1d72b12c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1045,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 21
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d172b9c91e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 5
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-947a3c46ba",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1072,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 23
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-a5506f4eaf",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1077,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 23
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ece24b5eb5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1085,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 3
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-95d69322a2",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1086,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 9
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-eaffe17bc3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1088,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 19
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-16dbb38ebc",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 36
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f5a2714528",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 10
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c21957b931",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 32
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-81433ba698",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 10
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-816bf3b8e4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 28
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e6ec5a93ae",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 13
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-502f20cd93",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 38
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3299002091",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 46
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-de786fc3cc",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 32
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5fc81091d5",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 35
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3f27721bbc",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 31
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e7ef67ea45",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 9
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-aaffb00fb6",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 32
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f682615d3d",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1390,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 38
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e672745309",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 21
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2a33644be8",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1438,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 0
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6f9fa68e8c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 20
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-70ddfe4930",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 42
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f1005b810c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 30
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-a86368848c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 3
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-437f688c79",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 27
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-10123bc669",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 13
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-03fe83f18d",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1516,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 32
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ded9234f67",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1537,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 0
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-55707c6b11",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1572,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 30
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-71dd8ce80c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 38
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4ae153925a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1601,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 37
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-30b12737ff",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1625,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 33
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-53a31decd2",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 36
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4fec08386d",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 15
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-fc12dc4031",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 13
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-eeecb6d812",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1918,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 31
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9324c374a7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 38
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-56f5538926",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 29
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1006fe6495",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1994,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 40
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-8fc357d56a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 1999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 0
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-930f85c52a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 40
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7ff9222fac",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 36
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d9f987fed3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2098,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 38
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d3a61b76b0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 0
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f858f5cb36",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 27
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5bcf83d4ca",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 28
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9ac98d2ef3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2478,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 36
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-7187900903",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 17
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-35bc5b4127",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 20
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-636a9d455e",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 33
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ce168d532c",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 20
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-17e865bef7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2726,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 16
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-05319e87f3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2744,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 31
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e893835bed",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 2833,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 4
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f6e5f5f1d9",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 9
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5a061d4abe",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 27
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ea8bb1adc7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 31
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-79d5dfc8b0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 4
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2806dbc34b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3584,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 10
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2c1d0ad18a",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 10
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-525ba9f970",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 42
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-f2079a60f7",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3848,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 20
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b36e09e778",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 3955,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 17
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b41a4c321b",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 4063,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 43
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b67a1256a0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 4362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 43
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e0a5225a70",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 4512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 14
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3a80f9bb39",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 4547,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 33
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-84bc5b21e8",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 4888,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 43
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-72e4c171be",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5013,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 42
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-beca2e04a4",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 42
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-018fe19647",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5185,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 28
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-bc483b7863",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 17
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-5b1c2447f1",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 26
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-819bc74c8f",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 5861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 16
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-193919fba1",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 6323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 4
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-837bd7f3b2",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 6334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 17
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-b21c7e910f",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 6379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 16
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-938aceffc0",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 6428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 16
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ccfc61be8d",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 8444,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 1
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4e2e22bdf3",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 10675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 4
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-369c458934",
+   "ref": {
+    "file": "data/train-00000-of-00034.parquet",
+    "row": 10907,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 44
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0220513e3a",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 44
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-2b3e251d10",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 18
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-777b3bdd78",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 26
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-613629f633",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 994,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 14
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-43f1e06caf",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 1332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 44
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3f2141f2e0",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 2107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 14
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ffafca05aa",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 2949,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 44
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-fab4c9ce1d",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 3917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 1
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-15c09f24ad",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 4692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 14
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-65e4114d0d",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 4800,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 14
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ab303ae030",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 5151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 26
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-4825cd0343",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 6070,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 44
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-9deb5be91b",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 9026,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 37
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0b49ef6e39",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 10345,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 1
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-6e15d4e3c0",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 10648,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 29
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-3ba876ec88",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 11204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 1
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-a891dbb759",
+   "ref": {
+    "file": "data/train-00001-of-00034.parquet",
+    "row": 11353,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 37
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-76e96d3645",
+   "ref": {
+    "file": "data/train-00002-of-00034.parquet",
+    "row": 327,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 1
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-27c43fd365",
+   "ref": {
+    "file": "data/train-00002-of-00034.parquet",
+    "row": 9845,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 37
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1902d992eb",
+   "ref": {
+    "file": "data/train-00002-of-00034.parquet",
+    "row": 10264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 37
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-c2feb6f739",
+   "ref": {
+    "file": "data/train-00003-of-00034.parquet",
+    "row": 1610,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 26
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-92abde5bee",
+   "ref": {
+    "file": "data/train-00003-of-00034.parquet",
+    "row": 1753,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 26
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-ab5ede0849",
+   "ref": {
+    "file": "data/train-00004-of-00034.parquet",
+    "row": 6603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 29
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-e20d3a021d",
+   "ref": {
+    "file": "data/train-00004-of-00034.parquet",
+    "row": 9081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 29
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-078c6807d1",
+   "ref": {
+    "file": "data/train-00005-of-00034.parquet",
+    "row": 6566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 29
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-268731d9ac",
+   "ref": {
+    "file": "data/train-00009-of-00034.parquet",
+    "row": 6240,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 18
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-d532776fbe",
+   "ref": {
+    "file": "data/train-00013-of-00034.parquet",
+    "row": 5837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 18
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-0ee4e439b7",
+   "ref": {
+    "file": "data/train-00015-of-00034.parquet",
+    "row": 1795,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 18
+   }
+  },
+  {
+   "sample_id": "Agri-LLaVA-1627fbd040",
+   "ref": {
+    "file": "data/train-00015-of-00034.parquet",
+    "row": 4639,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "origin_dataset": "Agri-LLaVA",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agri-llava_pretrain",
+    "cluster": 18
+   }
+  }
+ ]
+}

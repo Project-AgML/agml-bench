@@ -1,0 +1,910 @@
+{
+ "name": "sugarcane_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/sugarcane_leaf_disease_classification",
+ "hf_sha": "84bf801a687632301c4d2e85bc98544a73bba6ca",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:11:30+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Banded Chlorosis",
+   "Brown Spot",
+   "BrownRust",
+   "Dried",
+   "Grassy shoot",
+   "Healthy",
+   "Pokkah Boeng",
+   "Sett Rot",
+   "Smut",
+   "Viral Disease",
+   "Yellow Leaf"
+  ],
+  "indexed_rows": 6748
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-edf8addb22",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dried"
+   ],
+   "ann": {
+    "label": "Dried"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-fdca945bc5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dried"
+   ],
+   "ann": {
+    "label": "Dried"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-6e13c9a1b4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dried"
+   ],
+   "ann": {
+    "label": "Dried"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-8d19b59235",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dried"
+   ],
+   "ann": {
+    "label": "Dried"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-c54ba0acaf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dried"
+   ],
+   "ann": {
+    "label": "Dried"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-a7c8e2f237",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-65183fde7e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-ebfc2dc5b4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-fe544c1d6d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1084,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-833806d20f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1519,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-0533020d35",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1612,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Banded Chlorosis"
+   ],
+   "ann": {
+    "label": "Banded Chlorosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-d8e5843937",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1774,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Banded Chlorosis"
+   ],
+   "ann": {
+    "label": "Banded Chlorosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-d5d4326d86",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1866,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Banded Chlorosis"
+   ],
+   "ann": {
+    "label": "Banded Chlorosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-db15922897",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1941,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Banded Chlorosis"
+   ],
+   "ann": {
+    "label": "Banded Chlorosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-6781ca7174",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1986,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Banded Chlorosis"
+   ],
+   "ann": {
+    "label": "Banded Chlorosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-b1d8f52b96",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2091,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sett Rot"
+   ],
+   "ann": {
+    "label": "Sett Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-d2263fa07b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2328,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sett Rot"
+   ],
+   "ann": {
+    "label": "Sett Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-914329e3d2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2352,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sett Rot"
+   ],
+   "ann": {
+    "label": "Sett Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-a6d61f5d3e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sett Rot"
+   ],
+   "ann": {
+    "label": "Sett Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-ea539d6f88",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sett Rot"
+   ],
+   "ann": {
+    "label": "Sett Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-23acddd793",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-80707c2644",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2802,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-392af588fe",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2827,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-c10c269d87",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-5414a142c3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-506893c652",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grassy shoot"
+   ],
+   "ann": {
+    "label": "Grassy shoot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-065931c267",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grassy shoot"
+   ],
+   "ann": {
+    "label": "Grassy shoot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-8a8595ccfb",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grassy shoot"
+   ],
+   "ann": {
+    "label": "Grassy shoot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-56ee71981d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grassy shoot"
+   ],
+   "ann": {
+    "label": "Grassy shoot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-3e2d0fef4a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 3301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grassy shoot"
+   ],
+   "ann": {
+    "label": "Grassy shoot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-7d682f3958",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pokkah Boeng"
+   ],
+   "ann": {
+    "label": "Pokkah Boeng"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-cfda89b042",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pokkah Boeng"
+   ],
+   "ann": {
+    "label": "Pokkah Boeng"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-25fc51f888",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pokkah Boeng"
+   ],
+   "ann": {
+    "label": "Pokkah Boeng"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-590fd48923",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pokkah Boeng"
+   ],
+   "ann": {
+    "label": "Pokkah Boeng"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-7003fba7d3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pokkah Boeng"
+   ],
+   "ann": {
+    "label": "Pokkah Boeng"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-e423db0a2f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 492,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Viral Disease"
+   ],
+   "ann": {
+    "label": "Viral Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-2246bed87d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Viral Disease"
+   ],
+   "ann": {
+    "label": "Viral Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-ad5c57d285",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 848,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Viral Disease"
+   ],
+   "ann": {
+    "label": "Viral Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-bdb8606bae",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 887,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Viral Disease"
+   ],
+   "ann": {
+    "label": "Viral Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-e3724637a2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 930,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Viral Disease"
+   ],
+   "ann": {
+    "label": "Viral Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-8595e4e24e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1023,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "BrownRust"
+   ],
+   "ann": {
+    "label": "BrownRust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-f9aa768b74",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1084,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "BrownRust"
+   ],
+   "ann": {
+    "label": "BrownRust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-aff743a08e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1093,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "BrownRust"
+   ],
+   "ann": {
+    "label": "BrownRust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-32ced659b1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "BrownRust"
+   ],
+   "ann": {
+    "label": "BrownRust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-e7fed7a426",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "BrownRust"
+   ],
+   "ann": {
+    "label": "BrownRust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-adf1031553",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1410,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Smut"
+   ],
+   "ann": {
+    "label": "Smut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-940e424c24",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1413,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Smut"
+   ],
+   "ann": {
+    "label": "Smut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-a8237c8378",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1468,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Smut"
+   ],
+   "ann": {
+    "label": "Smut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-ecdd758d6a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Smut"
+   ],
+   "ann": {
+    "label": "Smut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-fcccef1040",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1640,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Smut"
+   ],
+   "ann": {
+    "label": "Smut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-45f592bd86",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Spot"
+   ],
+   "ann": {
+    "label": "Brown Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-8c669f0c27",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2087,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Spot"
+   ],
+   "ann": {
+    "label": "Brown Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-0e1326ca0a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2488,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Spot"
+   ],
+   "ann": {
+    "label": "Brown Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-3efa7bbece",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3059,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Spot"
+   ],
+   "ann": {
+    "label": "Brown Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sugarcane_leaf_disease_classification-e001124b0b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3075,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Spot"
+   ],
+   "ann": {
+    "label": "Brown Spot"
+   },
+   "strata": {}
+  }
+ ]
+}

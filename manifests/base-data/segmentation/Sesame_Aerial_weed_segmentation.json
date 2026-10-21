@@ -1,0 +1,122 @@
+{
+ "name": "Sesame_Aerial_weed_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/Sesame_Aerial_weed_segmentation",
+ "hf_sha": "545038e4b2c47a2242a859b4672c59760cbc0f63",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-21T02:47:54+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "file_name",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "127": "value_127",
+   "255": "value_255"
+  },
+  "indexed_rows": 100
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "Sesame_Aerial_weed_segmentation-dcd9ee91b8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "Training"
+   },
+   "keys": [
+    "value_127",
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_127",
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Sesame_Aerial_weed_segmentation-fbf1d9d7ed",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "Training"
+   },
+   "keys": [
+    "value_127",
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_127",
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Sesame_Aerial_weed_segmentation-e949960471",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "Training"
+   },
+   "keys": [
+    "value_127",
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_127",
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Sesame_Aerial_weed_segmentation-088092cf93",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "Training"
+   },
+   "keys": [
+    "value_127",
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_127",
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Sesame_Aerial_weed_segmentation-8338cd87f9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "Training"
+   },
+   "keys": [
+    "value_127",
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_127",
+     "value_255"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

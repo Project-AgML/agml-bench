@@ -1,0 +1,829 @@
+{
+ "name": "fruit_leaf_variety_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/fruit_leaf_variety_classification",
+ "hf_sha": "71483062445b700bca1bacbd7a9cc69e6051ddb9",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:11:16+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Aegle marmelos",
+   "Black plum",
+   "Custard Apple",
+   "Guava",
+   "Jackfruit",
+   "Lotkon",
+   "Lychee",
+   "Mango",
+   "Plum",
+   "Star Fruit"
+  ],
+  "indexed_rows": 3173
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "fruit_leaf_variety_classification-39d9e41b8e",
+   "ref": {
+    "file": "data/train-00000-of-00027.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aegle marmelos"
+   ],
+   "ann": {
+    "label": "Aegle marmelos"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-8c2ec87c56",
+   "ref": {
+    "file": "data/train-00001-of-00027.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aegle marmelos"
+   ],
+   "ann": {
+    "label": "Aegle marmelos"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-71bcae8cc8",
+   "ref": {
+    "file": "data/train-00001-of-00027.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aegle marmelos"
+   ],
+   "ann": {
+    "label": "Aegle marmelos"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-60202d2484",
+   "ref": {
+    "file": "data/train-00002-of-00027.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aegle marmelos"
+   ],
+   "ann": {
+    "label": "Aegle marmelos"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-238d168043",
+   "ref": {
+    "file": "data/train-00002-of-00027.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aegle marmelos"
+   ],
+   "ann": {
+    "label": "Aegle marmelos"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-997b07e426",
+   "ref": {
+    "file": "data/train-00002-of-00027.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black plum"
+   ],
+   "ann": {
+    "label": "Black plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-18efe0a780",
+   "ref": {
+    "file": "data/train-00004-of-00027.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black plum"
+   ],
+   "ann": {
+    "label": "Black plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-9b95856ce1",
+   "ref": {
+    "file": "data/train-00004-of-00027.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black plum"
+   ],
+   "ann": {
+    "label": "Black plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-0200dfac1c",
+   "ref": {
+    "file": "data/train-00004-of-00027.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black plum"
+   ],
+   "ann": {
+    "label": "Black plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-3669be12eb",
+   "ref": {
+    "file": "data/train-00004-of-00027.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black plum"
+   ],
+   "ann": {
+    "label": "Black plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-f1292ae5c1",
+   "ref": {
+    "file": "data/train-00005-of-00027.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-5ea2ac48ce",
+   "ref": {
+    "file": "data/train-00006-of-00027.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-0a553fc812",
+   "ref": {
+    "file": "data/train-00006-of-00027.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-798dfc6ea2",
+   "ref": {
+    "file": "data/train-00006-of-00027.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-56ea879b7e",
+   "ref": {
+    "file": "data/train-00007-of-00027.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-8888ce4e14",
+   "ref": {
+    "file": "data/train-00008-of-00027.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-c50d7ad095",
+   "ref": {
+    "file": "data/train-00010-of-00027.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-5b89ea7b3f",
+   "ref": {
+    "file": "data/train-00010-of-00027.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-c65d424b49",
+   "ref": {
+    "file": "data/train-00010-of-00027.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-8dba923ade",
+   "ref": {
+    "file": "data/train-00010-of-00027.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-d13d739b27",
+   "ref": {
+    "file": "data/train-00010-of-00027.parquet",
+    "row": 108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Plum"
+   ],
+   "ann": {
+    "label": "Plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-6a36e15870",
+   "ref": {
+    "file": "data/train-00011-of-00027.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Plum"
+   ],
+   "ann": {
+    "label": "Plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-aeadf4c4a7",
+   "ref": {
+    "file": "data/train-00011-of-00027.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Plum"
+   ],
+   "ann": {
+    "label": "Plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-84f67564c7",
+   "ref": {
+    "file": "data/train-00011-of-00027.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Plum"
+   ],
+   "ann": {
+    "label": "Plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-73b09345f2",
+   "ref": {
+    "file": "data/train-00011-of-00027.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Plum"
+   ],
+   "ann": {
+    "label": "Plum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-01dd01db26",
+   "ref": {
+    "file": "data/train-00013-of-00027.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lychee"
+   ],
+   "ann": {
+    "label": "Lychee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-bf93bf6905",
+   "ref": {
+    "file": "data/train-00013-of-00027.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lychee"
+   ],
+   "ann": {
+    "label": "Lychee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-224c3cc0e9",
+   "ref": {
+    "file": "data/train-00014-of-00027.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lychee"
+   ],
+   "ann": {
+    "label": "Lychee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-c3b5abcfe8",
+   "ref": {
+    "file": "data/train-00014-of-00027.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lychee"
+   ],
+   "ann": {
+    "label": "Lychee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-57ed780b35",
+   "ref": {
+    "file": "data/train-00015-of-00027.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lychee"
+   ],
+   "ann": {
+    "label": "Lychee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-d01eebdb68",
+   "ref": {
+    "file": "data/train-00016-of-00027.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-bfbf756844",
+   "ref": {
+    "file": "data/train-00018-of-00027.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-ee97323c54",
+   "ref": {
+    "file": "data/train-00018-of-00027.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-48537626f2",
+   "ref": {
+    "file": "data/train-00018-of-00027.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-30c2c402e9",
+   "ref": {
+    "file": "data/train-00018-of-00027.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-79b414101f",
+   "ref": {
+    "file": "data/train-00019-of-00027.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Custard Apple"
+   ],
+   "ann": {
+    "label": "Custard Apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-c746bcae81",
+   "ref": {
+    "file": "data/train-00019-of-00027.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Custard Apple"
+   ],
+   "ann": {
+    "label": "Custard Apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-d690ca31b0",
+   "ref": {
+    "file": "data/train-00019-of-00027.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Custard Apple"
+   ],
+   "ann": {
+    "label": "Custard Apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-634fd1ed5c",
+   "ref": {
+    "file": "data/train-00020-of-00027.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Custard Apple"
+   ],
+   "ann": {
+    "label": "Custard Apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-eceb68f0b6",
+   "ref": {
+    "file": "data/train-00021-of-00027.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Custard Apple"
+   ],
+   "ann": {
+    "label": "Custard Apple"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-824eb952fe",
+   "ref": {
+    "file": "data/train-00021-of-00027.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Star Fruit"
+   ],
+   "ann": {
+    "label": "Star Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-feb02bd9c8",
+   "ref": {
+    "file": "data/train-00022-of-00027.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Star Fruit"
+   ],
+   "ann": {
+    "label": "Star Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-62b255ae3d",
+   "ref": {
+    "file": "data/train-00023-of-00027.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Star Fruit"
+   ],
+   "ann": {
+    "label": "Star Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-d200ed8a81",
+   "ref": {
+    "file": "data/train-00024-of-00027.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Star Fruit"
+   ],
+   "ann": {
+    "label": "Star Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-233450879e",
+   "ref": {
+    "file": "data/train-00024-of-00027.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Star Fruit"
+   ],
+   "ann": {
+    "label": "Star Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-e24c50dfd9",
+   "ref": {
+    "file": "data/train-00025-of-00027.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lotkon"
+   ],
+   "ann": {
+    "label": "Lotkon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-40053fc6bb",
+   "ref": {
+    "file": "data/train-00025-of-00027.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lotkon"
+   ],
+   "ann": {
+    "label": "Lotkon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-13c481c0f8",
+   "ref": {
+    "file": "data/train-00025-of-00027.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lotkon"
+   ],
+   "ann": {
+    "label": "Lotkon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-1715920798",
+   "ref": {
+    "file": "data/train-00026-of-00027.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lotkon"
+   ],
+   "ann": {
+    "label": "Lotkon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "fruit_leaf_variety_classification-7fcdee7390",
+   "ref": {
+    "file": "data/train-00026-of-00027.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lotkon"
+   ],
+   "ann": {
+    "label": "Lotkon"
+   },
+   "strata": {}
+  }
+ ]
+}

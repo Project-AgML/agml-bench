@@ -1,0 +1,7320 @@
+{
+ "name": "plant_doc_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/plant_doc_detection",
+ "hf_sha": "0bed0b75b3f0e563d21b6a4e69d15da21b245986",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:37:18+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Corn leaf blight",
+   "Tomato Early blight leaf",
+   "Potato leaf early blight",
+   "Potato leaf late blight",
+   "Blueberry leaf",
+   "grape leaf black rot",
+   "Bell_pepper leaf spot",
+   "Cherry leaf",
+   "Peach leaf",
+   "Soyabean leaf",
+   "Strawberry leaf",
+   "Apple Scab Leaf",
+   "Corn rust leaf",
+   "Apple leaf",
+   "Corn Gray leaf spot",
+   "Tomato leaf mosaic virus",
+   "Tomato mold leaf",
+   "Tomato leaf yellow virus",
+   "Tomato leaf bacterial spot",
+   "Tomato leaf late blight",
+   "Squash Powdery mildew leaf",
+   "Bell_pepper leaf",
+   "grape leaf",
+   "Apple rust leaf",
+   "Tomato Septoria leaf spot",
+   "Tomato leaf",
+   "Raspberry leaf",
+   "Potato leaf",
+   "Tomato two spotted spider mites leaf"
+  ],
+  "indexed_rows": 2346
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plant_doc_detection-d5bd0b871c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       188.0,
+       121.0,
+       633.0,
+       679.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       707.0,
+       6.0,
+       312.0,
+       329.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       753.0,
+       339.0,
+       373.0,
+       332.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ab4285b1d8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf",
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       141.0,
+       316.0,
+       97.0,
+       133.0
+      ]
+     },
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       67.0,
+       304.0,
+       87.0,
+       57.0
+      ]
+     },
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       345.0,
+       560.0,
+       59.0,
+       139.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       197.0,
+       297.0,
+       101.0,
+       122.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       218.0,
+       254.0,
+       122.0,
+       70.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       265.0,
+       185.0,
+       83.0,
+       78.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       379.0,
+       446.0,
+       135.0,
+       119.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       264.0,
+       498.0,
+       99.0,
+       143.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       174.0,
+       141.0,
+       113.0,
+       86.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       289.0,
+       102.0,
+       104.0,
+       87.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-3d2936a49f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       76.0,
+       30.0,
+       116.0,
+       218.0
+      ]
+     },
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       199.0,
+       123.0,
+       135.0,
+       209.0
+      ]
+     },
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       249.0,
+       49.0,
+       106.0,
+       114.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f448455c96",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       505.0,
+       430.0,
+       480.0,
+       334.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c562eb5f80",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       69.0,
+       108.0,
+       179.0,
+       188.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-85c31c9b56",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       3.0,
+       12.0,
+       501.0,
+       267.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-8db9f6874c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       504.0,
+       277.0,
+       389.0,
+       369.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       713.0,
+       548.0,
+       399.0,
+       379.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       1031.0,
+       554.0,
+       435.0,
+       430.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       220.0,
+       460.0,
+       245.0,
+       320.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-4b836c3352",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       24.0,
+       163.0,
+       429.0,
+       291.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       406.0,
+       0.0,
+       232.0,
+       306.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       613.0,
+       166.0,
+       187.0,
+       431.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       0.0,
+       455.0,
+       671.0,
+       300.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-7797bd5761",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       2.0,
+       2.0,
+       43.0,
+       80.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       49.0,
+       4.0,
+       53.0,
+       73.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       121.0,
+       3.0,
+       72.0,
+       71.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       187.0,
+       15.0,
+       38.0,
+       60.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       29.0,
+       83.0,
+       38.0,
+       71.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       69.0,
+       79.0,
+       39.0,
+       75.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       113.0,
+       77.0,
+       42.0,
+       77.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       158.0,
+       76.0,
+       40.0,
+       78.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6df87c50f5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       156.0,
+       263.0,
+       174.0,
+       174.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       349.0,
+       643.0,
+       416.0,
+       157.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       616.0,
+       556.0,
+       145.0,
+       113.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-0bf4a91e25",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf",
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       276.0,
+       189.0,
+       514.0,
+       396.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       13.0,
+       483.0,
+       345.0,
+       270.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c5a54068b3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn Gray leaf spot",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       432.0,
+       270.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c99bfcd71c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       565.0,
+       297.0,
+       790.0,
+       437.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       365.0,
+       591.0,
+       607.0,
+       458.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       57.0,
+       6.0,
+       420.0,
+       505.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-3d58dfabd8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2016.0,
+       903.0,
+       433.0,
+       340.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2451.0,
+       867.0,
+       426.0,
+       454.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2258.0,
+       1192.0,
+       391.0,
+       294.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       348.0,
+       906.0,
+       619.0,
+       683.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       1083.0,
+       681.0,
+       526.0,
+       455.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       676.0,
+       1574.0,
+       562.0,
+       333.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       19.0,
+       1385.0,
+       655.0,
+       594.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2926.0,
+       1342.0,
+       476.0,
+       458.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2673.0,
+       1435.0,
+       308.0,
+       422.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       2858.0,
+       1699.0,
+       384.0,
+       387.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-346eca4875",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       116.0,
+       2.0,
+       258.0,
+       355.0
+      ]
+     },
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       0.0,
+       202.0,
+       123.0,
+       155.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9ddcf89f2d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       752.0,
+       708.0,
+       199.0,
+       329.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       810.0,
+       635.0,
+       275.0,
+       168.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       520.0,
+       625.0,
+       293.0,
+       235.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-33699f9fee",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       63.0,
+       0.0,
+       387.0,
+       654.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ca42b99fe4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       301.0,
+       162.0,
+       469.0,
+       1201.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-8139d799c5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Squash Powdery mildew leaf",
+      "bbox_raw": [
+       178.0,
+       0.0,
+       2784.0,
+       2363.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6bf7183fab",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf",
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       1667.0,
+       839.0,
+       845.0,
+       733.0
+      ]
+     },
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       1224.0,
+       143.0,
+       697.0,
+       775.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       588.0,
+       973.0,
+       654.0,
+       967.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       1220.0,
+       1024.0,
+       907.0,
+       754.0
+      ]
+     },
+     {
+      "label": "Potato leaf",
+      "bbox_raw": [
+       826.0,
+       92.0,
+       712.0,
+       741.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-e05df64a9d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       259.0,
+       359.0,
+       722.0,
+       1190.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-412e7b935f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-b48fb04ae3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       455.0,
+       161.0,
+       45.0,
+       69.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       451.0,
+       76.0,
+       53.0,
+       46.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       347.0,
+       155.0,
+       47.0,
+       27.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       153.0,
+       128.0,
+       37.0,
+       44.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       175.0,
+       154.0,
+       46.0,
+       41.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       306.0,
+       523.0,
+       54.0,
+       29.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       267.0,
+       544.0,
+       43.0,
+       30.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       305.0,
+       322.0,
+       27.0,
+       41.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       406.0,
+       305.0,
+       50.0,
+       31.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       177.0,
+       202.0,
+       47.0,
+       23.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       362.0,
+       225.0,
+       27.0,
+       33.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       523.0,
+       255.0,
+       28.0,
+       54.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       504.0,
+       188.0,
+       37.0,
+       38.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       509.0,
+       76.0,
+       32.0,
+       39.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       127.0,
+       51.0,
+       25.0,
+       57.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       177.0,
+       63.0,
+       37.0,
+       52.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       293.0,
+       81.0,
+       31.0,
+       43.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       130.0,
+       362.0,
+       40.0,
+       30.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       148.0,
+       252.0,
+       42.0,
+       57.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       199.0,
+       276.0,
+       43.0,
+       32.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       184.0,
+       232.0,
+       38.0,
+       54.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       338.0,
+       289.0,
+       34.0,
+       35.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       466.0,
+       586.0,
+       68.0,
+       41.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       478.0,
+       542.0,
+       44.0,
+       40.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       459.0,
+       477.0,
+       55.0,
+       38.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       472.0,
+       401.0,
+       56.0,
+       58.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       421.0,
+       351.0,
+       40.0,
+       63.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       386.0,
+       404.0,
+       51.0,
+       34.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       79.0,
+       491.0,
+       27.0,
+       78.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       157.0,
+       531.0,
+       66.0,
+       52.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       182.0,
+       560.0,
+       60.0,
+       47.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       199.0,
+       470.0,
+       63.0,
+       43.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       116.0,
+       461.0,
+       71.0,
+       54.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       228.0,
+       400.0,
+       30.0,
+       42.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       206.0,
+       371.0,
+       25.0,
+       48.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       229.0,
+       333.0,
+       40.0,
+       29.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       269.0,
+       308.0,
+       29.0,
+       48.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       255.0,
+       356.0,
+       34.0,
+       35.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       278.0,
+       434.0,
+       50.0,
+       38.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       329.0,
+       420.0,
+       37.0,
+       43.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       339.0,
+       456.0,
+       48.0,
+       35.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       278.0,
+       470.0,
+       63.0,
+       30.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f5b676d755",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       680.0,
+       709.0,
+       168.0,
+       212.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       335.0,
+       389.0,
+       53.0,
+       134.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       499.0,
+       291.0,
+       161.0,
+       414.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       313.0,
+       582.0,
+       308.0,
+       253.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       12.0,
+       687.0,
+       169.0,
+       149.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       233.0,
+       576.0,
+       87.0,
+       96.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-629bdc10bf",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       318.0,
+       215.0,
+       88.0,
+       141.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       368.0,
+       344.0,
+       132.0,
+       155.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       453.0,
+       76.0,
+       46.0,
+       155.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       8.0,
+       395.0,
+       135.0,
+       68.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       0.0,
+       235.0,
+       86.0,
+       74.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       282.0,
+       41.0,
+       52.0,
+       149.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-538a200ccb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       880.0,
+       1974.0,
+       1040.0,
+       1098.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       282.0,
+       1823.0,
+       1548.0,
+       1249.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       32.0,
+       907.0,
+       1382.0,
+       555.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       1455.0,
+       365.0,
+       827.0,
+       936.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       1507.0,
+       1042.0,
+       797.0,
+       325.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       1478.0,
+       1374.0,
+       391.0,
+       447.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-eac906763f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       106.0,
+       116.0,
+       694.0,
+       374.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f6d7701ecb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       380.0,
+       2.0,
+       843.0,
+       830.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       75.0,
+       406.0,
+       696.0,
+       522.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       944.0,
+       761.0,
+       483.0,
+       302.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9c92648049",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       97.0,
+       139.0,
+       72.0,
+       82.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       2.0,
+       115.0,
+       59.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       38.0,
+       4.0,
+       91.0,
+       117.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-329113e032",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 369,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       292.0,
+       525.0,
+       276.0,
+       197.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       577.0,
+       701.0,
+       240.0,
+       168.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       826.0,
+       670.0,
+       183.0,
+       230.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       967.0,
+       314.0,
+       149.0,
+       203.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       1134.0,
+       403.0,
+       238.0,
+       164.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       515.0,
+       90.0,
+       215.0,
+       298.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-df6869807d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 447,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a91d50ec11",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       339.0,
+       104.0,
+       112.0,
+       271.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       419.0,
+       338.0,
+       90.0,
+       179.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       281.0,
+       406.0,
+       134.0,
+       164.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       179.0,
+       344.0,
+       169.0,
+       226.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       15.0,
+       23.0,
+       312.0,
+       328.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       195.0,
+       140.0,
+       128.0,
+       186.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c7392968ef",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       192.0,
+       194.0,
+       308.0,
+       293.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       513.0,
+       0.0,
+       287.0,
+       500.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a202d7ae8f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 476,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       75.0,
+       309.0,
+       165.0,
+       163.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       192.0,
+       118.0,
+       147.0,
+       191.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       484.0,
+       165.0,
+       110.0,
+       199.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       466.0,
+       267.0,
+       81.0,
+       192.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       353.0,
+       261.0,
+       135.0,
+       234.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       357.0,
+       127.0,
+       105.0,
+       120.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       36.0,
+       142.0,
+       180.0,
+       75.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       70.0,
+       230.0,
+       163.0,
+       110.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       167.0,
+       336.0,
+       241.0,
+       149.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-14ec1f70ad",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 484,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn Gray leaf spot",
+      "bbox_raw": [
+       33.0,
+       61.0,
+       867.0,
+       592.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2c4548e781",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 491,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       281.0,
+       215.0,
+       174.0,
+       387.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       448.0,
+       226.0,
+       180.0,
+       323.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       483.0,
+       94.0,
+       186.0,
+       209.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       680.0,
+       80.0,
+       121.0,
+       287.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       201.0,
+       6.0,
+       218.0,
+       214.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ae9dcffc50",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 500,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       33.0,
+       0.0,
+       166.0,
+       135.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f75f251518",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       115.0,
+       24.0,
+       81.0,
+       436.0
+      ]
+     },
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       49.0,
+       42.0,
+       98.0,
+       295.0
+      ]
+     },
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       31.0,
+       259.0,
+       85.0,
+       201.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6ce0d89f80",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 555,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       385.0,
+       206.0,
+       660.0,
+       876.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       14.0,
+       201.0,
+       528.0,
+       843.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       1112.0,
+       274.0,
+       452.0,
+       639.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-4d00ded6e5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       237.0,
+       47.0,
+       177.0,
+       355.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       435.0,
+       192.0,
+       102.0,
+       161.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       86.0,
+       63.0,
+       130.0,
+       195.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-5292128aaa",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 573,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       58.0,
+       68.0,
+       41.0,
+       45.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       7.0,
+       205.0,
+       55.0,
+       72.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       69.0,
+       230.0,
+       137.0,
+       90.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       44.0,
+       157.0,
+       48.0,
+       70.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-62882acdd6",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 592,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       124.0,
+       25.0,
+       188.0,
+       257.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       231.0,
+       232.0,
+       188.0,
+       180.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       106.0,
+       216.0,
+       137.0,
+       275.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       319.0,
+       80.0,
+       109.0,
+       202.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-e6c67c8762",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 604,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn rust leaf",
+      "bbox_raw": [
+       197.0,
+       1.0,
+       152.0,
+       384.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-7925d18c70",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 618,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn Gray leaf spot",
+      "bbox_raw": [
+       0.0,
+       1.0,
+       400.0,
+       225.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-1f924f5fe5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 625,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       1.0,
+       1.0,
+       537.0,
+       398.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-57b1edb7f0",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn Gray leaf spot",
+      "bbox_raw": [
+       34.0,
+       173.0,
+       596.0,
+       199.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-5bf7323d24",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 666,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-eeb7ad2a85",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       21.0,
+       316.0,
+       431.0,
+       421.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       405.0,
+       350.0,
+       225.0,
+       312.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       1109.0,
+       269.0,
+       234.0,
+       559.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       878.0,
+       574.0,
+       253.0,
+       429.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       567.0,
+       559.0,
+       268.0,
+       266.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       244.0,
+       754.0,
+       287.0,
+       307.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       55.0,
+       11.0,
+       420.0,
+       281.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       954.0,
+       5.0,
+       256.0,
+       385.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       695.0,
+       49.0,
+       278.0,
+       205.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       694.0,
+       749.0,
+       140.0,
+       139.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       617.0,
+       764.0,
+       365.0,
+       330.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-262eec562a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 705,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       0.0,
+       1255.0,
+       1433.0,
+       2037.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       1419.0,
+       1478.0,
+       953.0,
+       1662.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       919.0,
+       273.0,
+       1114.0,
+       1549.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2f7418bd04",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 709,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       1243.0,
+       8.0,
+       794.0,
+       506.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       1139.0,
+       400.0,
+       1049.0,
+       572.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       1869.0,
+       851.0,
+       579.0,
+       575.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       1554.0,
+       1258.0,
+       894.0,
+       1497.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       144.0,
+       256.0,
+       1621.0,
+       2825.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-e3dcbbe877",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 717,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       1.0,
+       187.0,
+       236.0,
+       200.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       348.0,
+       203.0,
+       121.0,
+       101.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       461.0,
+       183.0,
+       137.0,
+       103.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       251.0,
+       109.0,
+       148.0,
+       146.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       448.0,
+       376.0,
+       150.0,
+       120.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       391.0,
+       603.0,
+       148.0,
+       159.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       114.0,
+       581.0,
+       291.0,
+       218.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2bf024f709",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 739,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       243.0,
+       38.0,
+       231.0,
+       348.0
+      ]
+     },
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       45.0,
+       77.0,
+       142.0,
+       286.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a7f0d886b1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 781,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       285.0,
+       284.0,
+       202.0,
+       252.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       351.0,
+       133.0,
+       270.0,
+       195.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       158.0,
+       155.0,
+       204.0,
+       231.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ebe6878c45",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       7.0,
+       2.0,
+       681.0,
+       399.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9084c44a4f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       661.0,
+       252.0,
+       370.0,
+       366.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2aa89bb596",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       702.0,
+       319.0,
+       94.0,
+       131.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       676.0,
+       15.0,
+       134.0,
+       298.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       313.0,
+       50.0,
+       159.0,
+       164.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       413.0,
+       27.0,
+       196.0,
+       248.0
+      ]
+     },
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       40.0,
+       139.0,
+       371.0,
+       273.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-d5948d26a6",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       663.0,
+       609.0,
+       1343.0,
+       3239.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       0.0,
+       2497.0,
+       706.0,
+       1165.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       1647.0,
+       5.0,
+       1101.0,
+       1638.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-1a20848df1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       654.0,
+       163.0,
+       226.0,
+       165.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1102.0,
+       160.0,
+       264.0,
+       115.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1159.0,
+       235.0,
+       201.0,
+       99.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1049.0,
+       360.0,
+       277.0,
+       214.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       233.0,
+       53.0,
+       256.0,
+       131.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       104.0,
+       252.0,
+       144.0,
+       180.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       60.0,
+       269.0,
+       115.0,
+       206.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-88c9062aae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       1299.0,
+       50.0,
+       1288.0,
+       1681.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       2162.0,
+       1207.0,
+       1535.0,
+       1411.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       429.0,
+       1420.0,
+       1661.0,
+       1234.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-4d967cdd6d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf",
+    "Tomato leaf bacterial spot",
+    "Tomato two spotted spider mites leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato two spotted spider mites leaf",
+      "bbox_raw": [
+       562.0,
+       402.0,
+       358.0,
+       294.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       44.0,
+       384.0,
+       382.0,
+       331.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       282.0,
+       80.0,
+       196.0,
+       232.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       44.0,
+       82.0,
+       258.0,
+       269.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       732.0,
+       4.0,
+       197.0,
+       203.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       598.0,
+       4.0,
+       115.0,
+       179.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       751.0,
+       76.0,
+       52.0,
+       92.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       766.0,
+       169.0,
+       72.0,
+       118.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       817.0,
+       208.0,
+       143.0,
+       154.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       641.0,
+       176.0,
+       108.0,
+       189.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-899645358e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       831.0,
+       2140.0,
+       308.0,
+       356.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       672.0,
+       2595.0,
+       219.0,
+       325.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       624.0,
+       1933.0,
+       218.0,
+       408.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-1801399c1f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       189.0,
+       409.0,
+       95.0,
+       143.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       13.0,
+       430.0,
+       193.0,
+       183.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       68.0,
+       185.0,
+       218.0,
+       185.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-bc4780dfff",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       2.0,
+       52.0,
+       138.0,
+       275.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       206.0,
+       73.0,
+       269.0,
+       341.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-bf3801a0e3",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       302.0,
+       32.0,
+       149.0,
+       194.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       139.0,
+       172.0,
+       208.0,
+       151.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       369.0,
+       220.0,
+       155.0,
+       195.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-69acee37f7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 266,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       79.0,
+       281.0,
+       222.0,
+       148.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c1d919b508",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       60.0,
+       113.0,
+       200.0,
+       311.0
+      ]
+     },
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       410.0,
+       163.0,
+       197.0,
+       256.0
+      ]
+     },
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       311.0,
+       154.0,
+       118.0,
+       145.0
+      ]
+     },
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       193.0,
+       165.0,
+       158.0,
+       241.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-979c699ed7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 308,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       57.0,
+       143.0,
+       94.0,
+       141.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       87.0,
+       73.0,
+       70.0,
+       85.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       145.0,
+       62.0,
+       48.0,
+       81.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       166.0,
+       101.0,
+       112.0,
+       93.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       131.0,
+       139.0,
+       62.0,
+       69.0
+      ]
+     },
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       199.0,
+       166.0,
+       68.0,
+       62.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-be33fbb716",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 328,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       0.0,
+       11.0,
+       323.0,
+       295.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f687310e89",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       31.0,
+       7.0,
+       476.0,
+       491.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       676.0,
+       168.0,
+       230.0,
+       241.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-54b9a35249",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 348,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       75.0,
+       5.0,
+       245.0,
+       277.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-32d52bf58d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       409.0,
+       77.0,
+       695.0,
+       963.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6be39a7e19",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       105.0,
+       167.0,
+       206.0,
+       88.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f2572d15ec",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       0.0,
+       31.0,
+       150.0,
+       174.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       125.0,
+       61.0,
+       182.0,
+       211.0
+      ]
+     },
+     {
+      "label": "grape leaf black rot",
+      "bbox_raw": [
+       275.0,
+       0.0,
+       155.0,
+       117.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a521a49c1b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf early blight",
+      "bbox_raw": [
+       135.0,
+       69.0,
+       529.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-30a1d3ebb6",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       125.0,
+       31.0,
+       222.0,
+       295.0
+      ]
+     },
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       0.0,
+       128.0,
+       107.0,
+       232.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-067ccd4db5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 470,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       198.0,
+       426.0,
+       283.0,
+       373.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       278.0,
+       674.0,
+       276.0,
+       319.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       61.0,
+       602.0,
+       170.0,
+       472.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       707.0,
+       732.0,
+       152.0,
+       396.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1421.0,
+       2.0,
+       178.0,
+       318.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1251.0,
+       241.0,
+       381.0,
+       200.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1243.0,
+       409.0,
+       313.0,
+       180.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       465.0,
+       0.0,
+       227.0,
+       101.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       59.0,
+       288.0,
+       267.0,
+       179.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-27a50ac5f2",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 473,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       2654.0,
+       83.0,
+       2434.0,
+       1446.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1950.0,
+       209.0,
+       853.0,
+       1464.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1091.0,
+       450.0,
+       982.0,
+       1308.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       361.0,
+       624.0,
+       1312.0,
+       2027.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       2795.0,
+       1413.0,
+       2286.0,
+       1327.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       1846.0,
+       1783.0,
+       1412.0,
+       894.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-0025ef2f5a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       22.0,
+       11.0,
+       325.0,
+       501.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-7025a14931",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 488,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf",
+    "Tomato leaf bacterial spot",
+    "Tomato two spotted spider mites leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato two spotted spider mites leaf",
+      "bbox_raw": [
+       498.0,
+       401.0,
+       441.0,
+       300.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       60.0,
+       401.0,
+       330.0,
+       279.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       300.0,
+       60.0,
+       180.0,
+       265.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       28.0,
+       72.0,
+       283.0,
+       279.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       504.0,
+       23.0,
+       145.0,
+       134.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       499.0,
+       205.0,
+       96.0,
+       114.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       575.0,
+       193.0,
+       84.0,
+       168.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       595.0,
+       18.0,
+       117.0,
+       165.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       748.0,
+       75.0,
+       54.0,
+       108.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       821.0,
+       199.0,
+       131.0,
+       168.0
+      ]
+     },
+     {
+      "label": "Tomato leaf bacterial spot",
+      "bbox_raw": [
+       652.0,
+       185.0,
+       85.0,
+       182.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-540d00f179",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       253.0,
+       14.0,
+       61.0,
+       296.0
+      ]
+     },
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       309.0,
+       2.0,
+       70.0,
+       302.0
+      ]
+     },
+     {
+      "label": "Corn leaf blight",
+      "bbox_raw": [
+       374.0,
+       5.0,
+       76.0,
+       297.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-91597ef95f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn rust leaf",
+      "bbox_raw": [
+       296.0,
+       4.0,
+       269.0,
+       562.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f3cf3341c2",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn rust leaf",
+      "bbox_raw": [
+       121.0,
+       1.0,
+       424.0,
+       349.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2b891dbcd7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn rust leaf",
+      "bbox_raw": [
+       213.0,
+       0.0,
+       265.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-300526740a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 555,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       113.0,
+       37.0,
+       35.0,
+       22.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       38.0,
+       22.0,
+       35.0,
+       46.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       123.0,
+       1.0,
+       50.0,
+       35.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       166.0,
+       30.0,
+       35.0,
+       43.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       134.0,
+       60.0,
+       43.0,
+       45.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       123.0,
+       132.0,
+       44.0,
+       61.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       84.0,
+       110.0,
+       49.0,
+       53.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-368965381b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       61.0,
+       62.0,
+       176.0,
+       67.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-0550960dee",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn rust leaf",
+      "bbox_raw": [
+       141.0,
+       5.0,
+       721.0,
+       860.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-deaf14fa92",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 613,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       205.0,
+       54.0,
+       337.0,
+       543.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-4d84c25212",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 623,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Squash Powdery mildew leaf",
+      "bbox_raw": [
+       158.0,
+       0.0,
+       632.0,
+       500.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-64a5b20e4b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 624,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       345.0,
+       446.0,
+       1415.0,
+       2153.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-bfca29bc33",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 656,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf",
+    "Tomato leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       446.0,
+       358.0,
+       70.0,
+       131.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       535.0,
+       206.0,
+       158.0,
+       105.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       355.0,
+       250.0,
+       79.0,
+       70.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       424.0,
+       282.0,
+       89.0,
+       44.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       702.0,
+       152.0,
+       140.0,
+       112.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       509.0,
+       369.0,
+       70.0,
+       105.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       330.0,
+       91.0,
+       100.0,
+       100.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       224.0,
+       414.0,
+       123.0,
+       60.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-123bf15ecc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 677,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       1010.0,
+       546.0,
+       805.0,
+       683.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       734.0,
+       640.0,
+       395.0,
+       748.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       892.0,
+       238.0,
+       476.0,
+       407.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       269.0,
+       546.0,
+       579.0,
+       746.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       443.0,
+       109.0,
+       541.0,
+       450.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-e67a74b49a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       34.0,
+       43.0,
+       223.0,
+       340.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6fb9ef1a12",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 718,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Corn Gray leaf spot",
+      "bbox_raw": [
+       19.0,
+       0.0,
+       241.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-bf1e069dbb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 725,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       445.0,
+       28.0,
+       447.0,
+       462.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       179.0,
+       339.0,
+       620.0,
+       663.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       829.0,
+       426.0,
+       526.0,
+       484.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-97779f890d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 729,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       0.0,
+       11.0,
+       796.0,
+       791.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-6356a7df70",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       21.0,
+       34.0,
+       406.0,
+       457.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2de92f07fb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 750,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       109.0,
+       181.0,
+       482.0,
+       486.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       511.0,
+       50.0,
+       675.0,
+       633.0
+      ]
+     },
+     {
+      "label": "grape leaf",
+      "bbox_raw": [
+       1058.0,
+       277.0,
+       454.0,
+       407.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-aa1969a602",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       108.0,
+       455.0,
+       708.0,
+       618.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       184.0,
+       3.0,
+       781.0,
+       487.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       721.0,
+       488.0,
+       540.0,
+       599.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-fc2c470d9e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Squash Powdery mildew leaf",
+      "bbox_raw": [
+       12.0,
+       0.0,
+       367.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a4c2b3ec4b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       589.0,
+       407.0,
+       670.0,
+       808.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9d208a214d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       367.0,
+       182.0,
+       663.0,
+       525.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-dafa4ea855",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       3.0,
+       14.0,
+       247.0,
+       235.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-fda72ae0dd",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       65.0,
+       5.0,
+       118.0,
+       82.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       251.0,
+       273.0,
+       68.0,
+       77.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       181.0,
+       181.0,
+       61.0,
+       47.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       251.0,
+       196.0,
+       63.0,
+       57.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       176.0,
+       127.0,
+       169.0,
+       66.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       231.0,
+       24.0,
+       62.0,
+       118.0
+      ]
+     },
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       204.0,
+       76.0,
+       44.0,
+       61.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-3512f48a65",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       24.0,
+       0.0,
+       44.0,
+       34.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       33.0,
+       133.0,
+       20.0,
+       31.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       18.0,
+       81.0,
+       37.0,
+       47.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       60.0,
+       74.0,
+       38.0,
+       76.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       69.0,
+       14.0,
+       33.0,
+       50.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       109.0,
+       22.0,
+       36.0,
+       46.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       85.0,
+       81.0,
+       30.0,
+       43.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       179.0,
+       72.0,
+       80.0,
+       81.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       133.0,
+       2.0,
+       76.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       106.0,
+       94.0,
+       52.0,
+       100.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-729df17bd0",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato mold leaf",
+      "bbox_raw": [
+       0.0,
+       5.0,
+       497.0,
+       662.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f13e547f62",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       104.0,
+       73.0,
+       106.0,
+       120.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       203.0,
+       53.0,
+       83.0,
+       165.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       53.0,
+       192.0,
+       143.0,
+       235.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       157.0,
+       362.0,
+       109.0,
+       81.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       175.0,
+       206.0,
+       112.0,
+       140.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       272.0,
+       196.0,
+       123.0,
+       201.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       561.0,
+       12.0,
+       138.0,
+       178.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       650.0,
+       27.0,
+       88.0,
+       161.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       439.0,
+       174.0,
+       210.0,
+       267.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-bac37f9de9",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       70.0,
+       126.0,
+       804.0,
+       585.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-970be6a781",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       321.0,
+       220.0,
+       169.0,
+       298.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       405.0,
+       31.0,
+       269.0,
+       291.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       654.0,
+       0.0,
+       146.0,
+       355.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       31.0,
+       54.0,
+       440.0,
+       152.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-b6a9e1da33",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       321.0,
+       27.0,
+       233.0,
+       655.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       611.0,
+       261.0,
+       229.0,
+       422.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       547.0,
+       2.0,
+       164.0,
+       395.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       835.0,
+       138.0,
+       189.0,
+       119.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf spot",
+      "bbox_raw": [
+       256.0,
+       70.0,
+       100.0,
+       464.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-1cb0ea5b90",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 266,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf late blight",
+      "bbox_raw": [
+       328.0,
+       163.0,
+       975.0,
+       1866.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c84340ac14",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Squash Powdery mildew leaf",
+      "bbox_raw": [
+       8.0,
+       2.0,
+       510.0,
+       396.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-643a2603f3",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Potato leaf late blight",
+      "bbox_raw": [
+       212.0,
+       0.0,
+       436.0,
+       688.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9f9df6518d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-516a5381c8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Squash Powdery mildew leaf",
+      "bbox_raw": [
+       42.0,
+       21.0,
+       557.0,
+       540.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-d0cb103960",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 343,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       225.0,
+       453.0,
+       366.0,
+       462.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       401.0,
+       343.0,
+       266.0,
+       266.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       237.0,
+       10.0,
+       284.0,
+       304.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       0.0,
+       242.0,
+       197.0,
+       216.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       60.0,
+       427.0,
+       159.0,
+       257.0
+      ]
+     },
+     {
+      "label": "Cherry leaf",
+      "bbox_raw": [
+       108.0,
+       622.0,
+       307.0,
+       378.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-1344bf78d1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 354,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-138f1680a8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 360,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       327.0,
+       163.0,
+       448.0,
+       577.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       658.0,
+       555.0,
+       452.0,
+       420.0
+      ]
+     },
+     {
+      "label": "Raspberry leaf",
+      "bbox_raw": [
+       104.0,
+       686.0,
+       566.0,
+       292.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ebd3f3a6f5",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 373,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       293.0,
+       100.0,
+       212.0,
+       430.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       472.0,
+       447.0,
+       368.0,
+       196.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-b67e87c9e4",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple Scab Leaf",
+      "bbox_raw": [
+       141.0,
+       0.0,
+       107.0,
+       176.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-db79125b76",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 408,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       209.0,
+       437.0,
+       166.0,
+       115.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       387.0,
+       442.0,
+       143.0,
+       80.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       277.0,
+       377.0,
+       148.0,
+       82.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       56.0,
+       254.0,
+       237.0,
+       94.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       400.0,
+       161.0,
+       114.0,
+       91.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       450.0,
+       48.0,
+       89.0,
+       125.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       586.0,
+       96.0,
+       135.0,
+       111.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       509.0,
+       22.0,
+       117.0,
+       88.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       751.0,
+       459.0,
+       150.0,
+       202.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       880.0,
+       461.0,
+       136.0,
+       203.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       868.0,
+       367.0,
+       113.0,
+       100.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       823.0,
+       246.0,
+       148.0,
+       80.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       687.0,
+       212.0,
+       143.0,
+       68.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       550.0,
+       389.0,
+       133.0,
+       57.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       483.0,
+       452.0,
+       88.0,
+       148.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       458.0,
+       349.0,
+       69.0,
+       92.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       528.0,
+       277.0,
+       46.0,
+       101.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       210.0,
+       74.0,
+       87.0,
+       77.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       229.0,
+       1.0,
+       89.0,
+       69.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       2.0,
+       52.0,
+       111.0,
+       68.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       2.0,
+       125.0,
+       60.0,
+       85.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       79.0,
+       114.0,
+       100.0,
+       91.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       116.0,
+       400.0,
+       117.0,
+       82.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       14.0,
+       473.0,
+       94.0,
+       102.0
+      ]
+     },
+     {
+      "label": "Bell_pepper leaf",
+      "bbox_raw": [
+       671.0,
+       9.0,
+       91.0,
+       80.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-782cba6de3",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 414,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       2224.0,
+       2111.0,
+       668.0,
+       959.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       638.0,
+       1604.0,
+       301.0,
+       289.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       446.0,
+       1858.0,
+       429.0,
+       519.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       2408.0,
+       294.0,
+       585.0,
+       963.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       1596.0,
+       26.0,
+       630.0,
+       810.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       946.0,
+       911.0,
+       590.0,
+       920.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-baec7947ca",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       10.0,
+       21.0,
+       273.0,
+       155.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-fbb559c256",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 422,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       500.0,
+       302.0,
+       100.0,
+       147.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       520.0,
+       2.0,
+       80.0,
+       194.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       279.0,
+       6.0,
+       124.0,
+       175.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       447.0,
+       240.0,
+       99.0,
+       109.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       251.0,
+       217.0,
+       220.0,
+       233.0
+      ]
+     },
+     {
+      "label": "Tomato Septoria leaf spot",
+      "bbox_raw": [
+       38.0,
+       49.0,
+       307.0,
+       222.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-2663af3cfa",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 462,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       304.0,
+       299.0,
+       199.0,
+       196.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       396.0,
+       419.0,
+       195.0,
+       172.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       673.0,
+       516.0,
+       193.0,
+       150.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       556.0,
+       520.0,
+       142.0,
+       176.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       605.0,
+       412.0,
+       166.0,
+       173.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       726.0,
+       190.0,
+       155.0,
+       178.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       610.0,
+       205.0,
+       110.0,
+       183.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       608.0,
+       369.0,
+       151.0,
+       92.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       518.0,
+       198.0,
+       107.0,
+       191.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       791.0,
+       37.0,
+       166.0,
+       177.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       685.0,
+       62.0,
+       113.0,
+       180.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       383.0,
+       125.0,
+       128.0,
+       211.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       242.0,
+       164.0,
+       160.0,
+       150.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       171.0,
+       356.0,
+       133.0,
+       147.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       37.0,
+       373.0,
+       161.0,
+       143.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       272.0,
+       567.0,
+       158.0,
+       169.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       144.0,
+       491.0,
+       167.0,
+       143.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       78.0,
+       530.0,
+       128.0,
+       208.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       0.0,
+       291.0,
+       175.0,
+       121.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       122.0,
+       146.0,
+       129.0,
+       165.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       22.0,
+       94.0,
+       127.0,
+       187.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       160.0,
+       91.0,
+       160.0,
+       83.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       88.0,
+       19.0,
+       117.0,
+       136.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-5f11019919",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 478,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       196.0,
+       5.0,
+       100.0,
+       171.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       312.0,
+       10.0,
+       138.0,
+       140.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       7.0,
+       100.0,
+       170.0,
+       111.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       118.0,
+       218.0,
+       172.0,
+       101.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       19.0,
+       213.0,
+       128.0,
+       109.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       364.0,
+       256.0,
+       86.0,
+       142.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       172.0,
+       290.0,
+       196.0,
+       116.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       14.0,
+       321.0,
+       156.0,
+       94.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-e49e4aa66e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 485,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       108.0,
+       57.0,
+       182.0,
+       126.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       283.0,
+       14.0,
+       153.0,
+       148.0
+      ]
+     },
+     {
+      "label": "Apple leaf",
+      "bbox_raw": [
+       31.0,
+       9.0,
+       159.0,
+       163.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-3a88a4f220",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       162.0,
+       97.0,
+       343.0,
+       329.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       537.0,
+       97.0,
+       309.0,
+       473.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       1012.0,
+       260.0,
+       229.0,
+       403.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       88.0,
+       514.0,
+       499.0,
+       175.0
+      ]
+     },
+     {
+      "label": "Blueberry leaf",
+      "bbox_raw": [
+       424.0,
+       576.0,
+       520.0,
+       235.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-83d4af333d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       31.0,
+       37.0,
+       182.0,
+       114.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       190.0,
+       28.0,
+       168.0,
+       85.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       235.0,
+       19.0,
+       153.0,
+       59.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       243.0,
+       139.0,
+       138.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       293.0,
+       129.0,
+       140.0,
+       69.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       211.0,
+       244.0,
+       201.0,
+       60.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       239.0,
+       268.0,
+       165.0,
+       71.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       195.0,
+       270.0,
+       120.0,
+       91.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       12.0,
+       271.0,
+       184.0,
+       98.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       16.0,
+       191.0,
+       213.0,
+       68.0
+      ]
+     },
+     {
+      "label": "Peach leaf",
+      "bbox_raw": [
+       38.0,
+       140.0,
+       146.0,
+       56.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-f2ea2a826f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 547,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       448.0,
+       364.0,
+       279.0,
+       230.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       627.0,
+       200.0,
+       205.0,
+       239.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       717.0,
+       403.0,
+       220.0,
+       240.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       876.0,
+       258.0,
+       291.0,
+       226.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       1138.0,
+       174.0,
+       202.0,
+       259.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       1054.0,
+       394.0,
+       215.0,
+       242.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       244.0,
+       479.0,
+       275.0,
+       195.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       61.0,
+       539.0,
+       213.0,
+       237.0
+      ]
+     },
+     {
+      "label": "Soyabean leaf",
+      "bbox_raw": [
+       137.0,
+       307.0,
+       187.0,
+       239.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-9c450a671a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       167.0,
+       143.0,
+       101.0,
+       163.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       75.0,
+       234.0,
+       130.0,
+       97.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       214.0,
+       231.0,
+       120.0,
+       102.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       12.0,
+       295.0,
+       156.0,
+       82.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       75.0,
+       361.0,
+       105.0,
+       79.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       58.0,
+       58.0,
+       91.0,
+       120.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       64.0,
+       13.0,
+       120.0,
+       73.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       32.0,
+       37.0,
+       57.0,
+       103.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       233.0,
+       9.0,
+       129.0,
+       83.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       277.0,
+       75.0,
+       74.0,
+       118.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       344.0,
+       24.0,
+       72.0,
+       93.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       256.0,
+       368.0,
+       115.0,
+       83.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       277.0,
+       234.0,
+       89.0,
+       150.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a0ed6cea05",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       80.0,
+       34.0,
+       426.0,
+       486.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       500.0,
+       70.0,
+       336.0,
+       500.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       40.0,
+       450.0,
+       480.0,
+       328.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-a482135358",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 567,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       336.0,
+       234.0,
+       126.0,
+       137.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       460.0,
+       257.0,
+       119.0,
+       142.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       292.0,
+       355.0,
+       167.0,
+       97.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       108.0,
+       340.0,
+       166.0,
+       98.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       124.0,
+       215.0,
+       119.0,
+       155.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       42.0,
+       225.0,
+       95.0,
+       141.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       43.0,
+       90.0,
+       99.0,
+       123.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       118.0,
+       81.0,
+       144.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       105.0,
+       25.0,
+       135.0,
+       87.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       443.0,
+       77.0,
+       111.0,
+       109.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       395.0,
+       105.0,
+       87.0,
+       113.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       311.0,
+       26.0,
+       135.0,
+       76.0
+      ]
+     },
+     {
+      "label": "Strawberry leaf",
+      "bbox_raw": [
+       286.0,
+       84.0,
+       132.0,
+       71.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c7eeada17f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 609,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       583.0,
+       316.0,
+       437.0,
+       255.0
+      ]
+     },
+     {
+      "label": "Tomato Early blight leaf",
+      "bbox_raw": [
+       297.0,
+       220.0,
+       157.0,
+       350.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-ec115f57f8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 643,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       228.0,
+       77.0,
+       320.0,
+       258.0
+      ]
+     },
+     {
+      "label": "Tomato leaf",
+      "bbox_raw": [
+       101.0,
+       280.0,
+       1041.0,
+       538.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-d73398a762",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 653,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       253.0,
+       104.0,
+       80.0,
+       84.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       213.0,
+       125.0,
+       54.0,
+       93.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       125.0,
+       119.0,
+       78.0,
+       99.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       14.0,
+       81.0,
+       143.0,
+       87.0
+      ]
+     },
+     {
+      "label": "Tomato leaf mosaic virus",
+      "bbox_raw": [
+       122.0,
+       28.0,
+       84.0,
+       88.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-d4d79201f8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 681,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       97.0,
+       711.0,
+       238.0,
+       409.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       612.0,
+       445.0,
+       203.0,
+       508.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       380.0,
+       417.0,
+       89.0,
+       247.0
+      ]
+     },
+     {
+      "label": "Tomato leaf yellow virus",
+      "bbox_raw": [
+       420.0,
+       730.0,
+       178.0,
+       344.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_detection-c50d21c7f6",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 726,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Apple rust leaf",
+      "bbox_raw": [
+       99.0,
+       95.0,
+       369.0,
+       223.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

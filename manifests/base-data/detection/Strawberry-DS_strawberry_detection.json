@@ -1,0 +1,848 @@
+{
+ "name": "Strawberry-DS_strawberry_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/Strawberry-DS_strawberry_detection",
+ "hf_sha": "291e1cd9eec4ae452c13555ca74b2e36ccc6923c",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:02:57+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Early-Turning",
+   "Green",
+   "Late-Turning",
+   "Red",
+   "Turning",
+   "White"
+  ],
+  "indexed_rows": 247
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-6c912fe4fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2167.2099999999996,
+       1773.335,
+       130.66,
+       226.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2560.4450000000006,
+       1116.665,
+       190.75,
+       206.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2430.475,
+       1313.335,
+       154.05,
+       173.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2650.4249999999997,
+       259.995,
+       120.77000000000001,
+       106.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2880.3650000000002,
+       320.0,
+       160.83,
+       150.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-f696fd8366",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1747.3049999999998,
+       1119.995,
+       373.89,
+       266.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2183.8650000000002,
+       1546.665,
+       247.33,
+       323.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2193.87,
+       1166.665,
+       144.0,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       890.845,
+       986.6649999999998,
+       120.35,
+       83.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-e23ad88511",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       2137.215,
+       1410.005,
+       270.65,
+       443.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2493.7949999999996,
+       1500.005,
+       210.73,
+       343.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       917.5000000000001,
+       903.335,
+       360.36,
+       186.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       640.8999999999999,
+       770.0000000000001,
+       146.96,
+       140.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1314.07,
+       1036.6700000000003,
+       160.46,
+       140.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1700.6450000000002,
+       1293.33,
+       370.55,
+       720.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1254.0850000000003,
+       206.67000000000004,
+       127.11,
+       130.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-a296024faa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       330.85333333333335,
+       956.25,
+       579.0044444444444,
+       239.0625
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2365.937777777778,
+       846.5625,
+       677.2622222222222,
+       239.0625
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1015.1466666666666,
+       1035.0,
+       472.4977777777777,
+       219.375
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1530.5688888888888,
+       947.8125,
+       374.84444444444443,
+       137.8125
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       926.2666666666667,
+       323.4375,
+       401.36888888888893,
+       143.4375
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2259.3066666666664,
+       413.4375,
+       437.22666666666663,
+       143.4375
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2810.2755555555555,
+       680.625,
+       855.1466666666666,
+       275.625
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-72c3dc0f47",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1380.725,
+       1143.33,
+       410.47,
+       570.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1047.475,
+       940.0050000000001,
+       463.73,
+       353.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1207.865,
+       699.9950000000001,
+       216.19,
+       266.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2480.4649999999997,
+       1133.3350000000003,
+       274.07,
+       386.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2507.13,
+       753.335,
+       350.74,
+       363.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2030.5749999999996,
+       520.0,
+       110.63,
+       180.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-869d0cc59c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Early-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2847.045,
+       1109.9950000000001,
+       337.49,
+       436.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1087.4600000000003,
+       1110.0049999999999,
+       280.4,
+       353.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       804.2,
+       0.0,
+       187.0,
+       90.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-226e3e4bfc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       2847.045,
+       233.33500000000004,
+       224.15,
+       163.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2247.1850000000004,
+       1860.005,
+       144.01,
+       233.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       3100.325,
+       479.99500000000006,
+       214.21,
+       166.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2523.7849999999994,
+       1526.6649999999997,
+       157.41,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2930.355,
+       929.995,
+       147.51,
+       106.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2677.085,
+       1320.0,
+       204.11,
+       200.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2823.72,
+       1246.67,
+       127.48,
+       100.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fcbaf74ac1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       367.635,
+       1513.335,
+       220.23,
+       226.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2480.4649999999997,
+       220.00500000000002,
+       174.07,
+       183.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2097.22,
+       570.0,
+       150.64,
+       120.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       284.32000000000005,
+       789.995,
+       196.88,
+       126.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1873.9450000000002,
+       633.335,
+       97.25,
+       93.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1847.2849999999999,
+       730.0,
+       107.25,
+       90.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-8f40bbbcba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2707.075,
+       1116.6650000000002,
+       250.78999999999996,
+       406.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2397.155,
+       1623.335,
+       190.71,
+       136.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2290.5150000000003,
+       1196.665,
+       387.35,
+       263.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1171.2,
+       1123.33,
+       116.22,
+       110.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fb6318a4b9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       2467.1299999999997,
+       1710.0,
+       167.4,
+       210.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2053.9049999999997,
+       1743.335,
+       220.63,
+       323.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2243.8549999999996,
+       1683.33,
+       224.01,
+       300.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       71.035,
+       1660.0000000000002,
+       243.49,
+       230.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3663.52,
+       1156.6650000000002,
+       176.48,
+       236.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2850.3799999999997,
+       1486.6699999999998,
+       190.82,
+       190.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2653.755,
+       1633.335,
+       140.77,
+       133.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3176.9700000000003,
+       933.3349999999999,
+       160.9,
+       106.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       24.385000000000012,
+       1270.005,
+       310.15,
+       313.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       250.99,
+       286.66499999999996,
+       83.54,
+       93.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       367.635,
+       206.66499999999994,
+       130.23,
+       253.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-2e94703e2c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1640.6649999999997,
+       1410.005,
+       343.87,
+       483.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1967.26,
+       1466.67,
+       373.94,
+       490.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2557.115,
+       806.6650000000001,
+       360.75,
+       273.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2150.54,
+       1306.6649999999997,
+       187.32,
+       153.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2720.41,
+       1116.665,
+       267.46,
+       146.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-c14aebc773",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2037.235,
+       950.0,
+       287.29,
+       260.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

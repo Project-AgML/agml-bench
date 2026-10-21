@@ -1,0 +1,505 @@
+{
+ "name": "plum_leaf_fruit_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/plum_leaf_fruit_disease_classification",
+ "hf_sha": "51ad0e4f8061bc58c35fe30a83248104a90fc1b9",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:05:33+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Dead Leaf",
+   "Healthy Fruit",
+   "Healthy Leaf",
+   "Insect Hole",
+   "Unhealthy Fruit",
+   "Yellow"
+  ],
+  "indexed_rows": 3554
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-ff37c427a0",
+   "ref": {
+    "file": "raw/train-00000-of-00013.parquet",
+    "row": 162,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-7b2c9f4866",
+   "ref": {
+    "file": "raw/train-00001-of-00013.parquet",
+    "row": 54,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-f6b4aa6626",
+   "ref": {
+    "file": "raw/train-00001-of-00013.parquet",
+    "row": 99,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-9474db510a",
+   "ref": {
+    "file": "raw/train-00001-of-00013.parquet",
+    "row": 221,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-77aaeeb55e",
+   "ref": {
+    "file": "raw/train-00002-of-00013.parquet",
+    "row": 164,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-f6245ef38f",
+   "ref": {
+    "file": "raw/train-00002-of-00013.parquet",
+    "row": 242,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Unhealthy Fruit"
+   ],
+   "ann": {
+    "label": "Unhealthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-5e25d6ab25",
+   "ref": {
+    "file": "raw/train-00003-of-00013.parquet",
+    "row": 11,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Unhealthy Fruit"
+   ],
+   "ann": {
+    "label": "Unhealthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-c0ff497b4b",
+   "ref": {
+    "file": "raw/train-00003-of-00013.parquet",
+    "row": 101,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Unhealthy Fruit"
+   ],
+   "ann": {
+    "label": "Unhealthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-6d710834fb",
+   "ref": {
+    "file": "raw/train-00003-of-00013.parquet",
+    "row": 110,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Unhealthy Fruit"
+   ],
+   "ann": {
+    "label": "Unhealthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-47ee14be02",
+   "ref": {
+    "file": "raw/train-00004-of-00013.parquet",
+    "row": 2,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Unhealthy Fruit"
+   ],
+   "ann": {
+    "label": "Unhealthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-88100c643b",
+   "ref": {
+    "file": "raw/train-00005-of-00013.parquet",
+    "row": 7,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Fruit"
+   ],
+   "ann": {
+    "label": "Healthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-cdeddb3f9a",
+   "ref": {
+    "file": "raw/train-00005-of-00013.parquet",
+    "row": 8,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Fruit"
+   ],
+   "ann": {
+    "label": "Healthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-30516b76a7",
+   "ref": {
+    "file": "raw/train-00005-of-00013.parquet",
+    "row": 146,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Fruit"
+   ],
+   "ann": {
+    "label": "Healthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-54e95e450c",
+   "ref": {
+    "file": "raw/train-00006-of-00013.parquet",
+    "row": 89,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Fruit"
+   ],
+   "ann": {
+    "label": "Healthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-12c20d9b24",
+   "ref": {
+    "file": "raw/train-00006-of-00013.parquet",
+    "row": 115,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Fruit"
+   ],
+   "ann": {
+    "label": "Healthy Fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-ea2801a05b",
+   "ref": {
+    "file": "raw/train-00007-of-00013.parquet",
+    "row": 182,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Hole"
+   ],
+   "ann": {
+    "label": "Insect Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-248d64afb5",
+   "ref": {
+    "file": "raw/train-00007-of-00013.parquet",
+    "row": 198,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Hole"
+   ],
+   "ann": {
+    "label": "Insect Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-5608a1585e",
+   "ref": {
+    "file": "raw/train-00007-of-00013.parquet",
+    "row": 256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Hole"
+   ],
+   "ann": {
+    "label": "Insect Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-726b58a089",
+   "ref": {
+    "file": "raw/train-00008-of-00013.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Hole"
+   ],
+   "ann": {
+    "label": "Insect Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-4afb467501",
+   "ref": {
+    "file": "raw/train-00008-of-00013.parquet",
+    "row": 145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Hole"
+   ],
+   "ann": {
+    "label": "Insect Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-41a7fa1b65",
+   "ref": {
+    "file": "raw/train-00009-of-00013.parquet",
+    "row": 26,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow"
+   ],
+   "ann": {
+    "label": "Yellow"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-0e6696720a",
+   "ref": {
+    "file": "raw/train-00009-of-00013.parquet",
+    "row": 97,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow"
+   ],
+   "ann": {
+    "label": "Yellow"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-1ad16ae0f1",
+   "ref": {
+    "file": "raw/train-00009-of-00013.parquet",
+    "row": 101,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow"
+   ],
+   "ann": {
+    "label": "Yellow"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-7e1714c8bb",
+   "ref": {
+    "file": "raw/train-00009-of-00013.parquet",
+    "row": 179,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow"
+   ],
+   "ann": {
+    "label": "Yellow"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-166401be32",
+   "ref": {
+    "file": "raw/train-00010-of-00013.parquet",
+    "row": 223,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Yellow"
+   ],
+   "ann": {
+    "label": "Yellow"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-584b6a61d9",
+   "ref": {
+    "file": "raw/train-00011-of-00013.parquet",
+    "row": 5,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dead Leaf"
+   ],
+   "ann": {
+    "label": "Dead Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-3818098458",
+   "ref": {
+    "file": "raw/train-00011-of-00013.parquet",
+    "row": 36,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dead Leaf"
+   ],
+   "ann": {
+    "label": "Dead Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-83b95a9969",
+   "ref": {
+    "file": "raw/train-00011-of-00013.parquet",
+    "row": 134,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dead Leaf"
+   ],
+   "ann": {
+    "label": "Dead Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-2e884ff6d8",
+   "ref": {
+    "file": "raw/train-00012-of-00013.parquet",
+    "row": 64,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dead Leaf"
+   ],
+   "ann": {
+    "label": "Dead Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_fruit_disease_classification-ce5c2dadcc",
+   "ref": {
+    "file": "raw/train-00012-of-00013.parquet",
+    "row": 228,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dead Leaf"
+   ],
+   "ann": {
+    "label": "Dead Leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

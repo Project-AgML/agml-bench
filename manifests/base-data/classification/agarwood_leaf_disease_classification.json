@@ -1,0 +1,1153 @@
+{
+ "name": "agarwood_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/agarwood_leaf_disease_classification",
+ "hf_sha": "97ceaf3c60d11b357059891809ecbca9e2913378",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T20:34:00+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "Black spots",
+   "Brown clumps",
+   "Brown spots",
+   "Downy mildew",
+   "Flea Beetles",
+   "Healthy",
+   "Mealy bugs",
+   "Mosaic Viruses",
+   "Powdery mildew",
+   "Scale insect",
+   "Sooty mold",
+   "Spiders",
+   "Translucent lesion"
+  ],
+  "indexed_rows": 5472
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "agarwood_leaf_disease_classification-32df9983b9",
+   "ref": {
+    "file": "data/train-00000-of-00055.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-647b3df953",
+   "ref": {
+    "file": "data/train-00001-of-00055.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-0a93e81983",
+   "ref": {
+    "file": "data/train-00002-of-00055.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-96501ab4b3",
+   "ref": {
+    "file": "data/train-00002-of-00055.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-85fb89b78b",
+   "ref": {
+    "file": "data/train-00002-of-00055.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-60518f2ee5",
+   "ref": {
+    "file": "data/train-00005-of-00055.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Viruses"
+   ],
+   "ann": {
+    "label": "Mosaic Viruses"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-64254f1aed",
+   "ref": {
+    "file": "data/train-00005-of-00055.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Viruses"
+   ],
+   "ann": {
+    "label": "Mosaic Viruses"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-1d8a2573d0",
+   "ref": {
+    "file": "data/train-00006-of-00055.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Viruses"
+   ],
+   "ann": {
+    "label": "Mosaic Viruses"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-7ca425d00f",
+   "ref": {
+    "file": "data/train-00007-of-00055.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Viruses"
+   ],
+   "ann": {
+    "label": "Mosaic Viruses"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-322f7e3aa8",
+   "ref": {
+    "file": "data/train-00007-of-00055.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Viruses"
+   ],
+   "ann": {
+    "label": "Mosaic Viruses"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-911700169c",
+   "ref": {
+    "file": "data/train-00008-of-00055.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Translucent lesion"
+   ],
+   "ann": {
+    "label": "Translucent lesion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-91bcae032c",
+   "ref": {
+    "file": "data/train-00008-of-00055.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Translucent lesion"
+   ],
+   "ann": {
+    "label": "Translucent lesion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-e03a2cf721",
+   "ref": {
+    "file": "data/train-00010-of-00055.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Translucent lesion"
+   ],
+   "ann": {
+    "label": "Translucent lesion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-aec1085e34",
+   "ref": {
+    "file": "data/train-00011-of-00055.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Translucent lesion"
+   ],
+   "ann": {
+    "label": "Translucent lesion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-668edcd817",
+   "ref": {
+    "file": "data/train-00012-of-00055.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Translucent lesion"
+   ],
+   "ann": {
+    "label": "Translucent lesion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-4ceaa2b9f9",
+   "ref": {
+    "file": "data/train-00013-of-00055.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy bugs"
+   ],
+   "ann": {
+    "label": "Mealy bugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-eff1f542bc",
+   "ref": {
+    "file": "data/train-00014-of-00055.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy bugs"
+   ],
+   "ann": {
+    "label": "Mealy bugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-d1159fe6ea",
+   "ref": {
+    "file": "data/train-00015-of-00055.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy bugs"
+   ],
+   "ann": {
+    "label": "Mealy bugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-24e92979b7",
+   "ref": {
+    "file": "data/train-00015-of-00055.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy bugs"
+   ],
+   "ann": {
+    "label": "Mealy bugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-3fb7f7c455",
+   "ref": {
+    "file": "data/train-00015-of-00055.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy bugs"
+   ],
+   "ann": {
+    "label": "Mealy bugs"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-789b560c16",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scale insect"
+   ],
+   "ann": {
+    "label": "Scale insect"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-adfc53c477",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scale insect"
+   ],
+   "ann": {
+    "label": "Scale insect"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-5ff51d3cd4",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scale insect"
+   ],
+   "ann": {
+    "label": "Scale insect"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-5c3580a8b4",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scale insect"
+   ],
+   "ann": {
+    "label": "Scale insect"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-ab48a8aa47",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scale insect"
+   ],
+   "ann": {
+    "label": "Scale insect"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-c59d49cedd",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-4a3399441f",
+   "ref": {
+    "file": "data/train-00016-of-00055.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-054e92a923",
+   "ref": {
+    "file": "data/train-00017-of-00055.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-8f157087c0",
+   "ref": {
+    "file": "data/train-00017-of-00055.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-abfeafa470",
+   "ref": {
+    "file": "data/train-00018-of-00055.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-3e1f8cb56d",
+   "ref": {
+    "file": "data/train-00019-of-00055.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-6f1870e8dc",
+   "ref": {
+    "file": "data/train-00019-of-00055.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-494b84d40e",
+   "ref": {
+    "file": "data/train-00019-of-00055.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-c0d12f8b89",
+   "ref": {
+    "file": "data/train-00019-of-00055.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-b20bcc8747",
+   "ref": {
+    "file": "data/train-00019-of-00055.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Flea Beetles"
+   ],
+   "ann": {
+    "label": "Flea Beetles"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-4715658f30",
+   "ref": {
+    "file": "data/train-00020-of-00055.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spots"
+   ],
+   "ann": {
+    "label": "Brown spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-822dce711d",
+   "ref": {
+    "file": "data/train-00023-of-00055.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spots"
+   ],
+   "ann": {
+    "label": "Brown spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-eb0f377db5",
+   "ref": {
+    "file": "data/train-00023-of-00055.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spots"
+   ],
+   "ann": {
+    "label": "Brown spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-02843d0023",
+   "ref": {
+    "file": "data/train-00023-of-00055.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spots"
+   ],
+   "ann": {
+    "label": "Brown spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-11090b7a5d",
+   "ref": {
+    "file": "data/train-00030-of-00055.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spots"
+   ],
+   "ann": {
+    "label": "Brown spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-8412d69334",
+   "ref": {
+    "file": "data/train-00031-of-00055.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-dc590f1403",
+   "ref": {
+    "file": "data/train-00032-of-00055.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-9879bbba17",
+   "ref": {
+    "file": "data/train-00033-of-00055.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-3fb4f99732",
+   "ref": {
+    "file": "data/train-00033-of-00055.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-d19ac72f71",
+   "ref": {
+    "file": "data/train-00036-of-00055.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-320ef76f77",
+   "ref": {
+    "file": "data/train-00037-of-00055.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spiders"
+   ],
+   "ann": {
+    "label": "Spiders"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-6dbd219754",
+   "ref": {
+    "file": "data/train-00038-of-00055.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spiders"
+   ],
+   "ann": {
+    "label": "Spiders"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-c5d01440c4",
+   "ref": {
+    "file": "data/train-00039-of-00055.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spiders"
+   ],
+   "ann": {
+    "label": "Spiders"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-128ee79c23",
+   "ref": {
+    "file": "data/train-00040-of-00055.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spiders"
+   ],
+   "ann": {
+    "label": "Spiders"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-b9300849ca",
+   "ref": {
+    "file": "data/train-00041-of-00055.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spiders"
+   ],
+   "ann": {
+    "label": "Spiders"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-5238d4479b",
+   "ref": {
+    "file": "data/train-00041-of-00055.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty mold"
+   ],
+   "ann": {
+    "label": "Sooty mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-440525181f",
+   "ref": {
+    "file": "data/train-00041-of-00055.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty mold"
+   ],
+   "ann": {
+    "label": "Sooty mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-1c4d568b73",
+   "ref": {
+    "file": "data/train-00041-of-00055.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty mold"
+   ],
+   "ann": {
+    "label": "Sooty mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-79213ae7a8",
+   "ref": {
+    "file": "data/train-00042-of-00055.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty mold"
+   ],
+   "ann": {
+    "label": "Sooty mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-89719e3b64",
+   "ref": {
+    "file": "data/train-00042-of-00055.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty mold"
+   ],
+   "ann": {
+    "label": "Sooty mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-c2a62278b9",
+   "ref": {
+    "file": "data/train-00042-of-00055.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown clumps"
+   ],
+   "ann": {
+    "label": "Brown clumps"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-f63dfebe60",
+   "ref": {
+    "file": "data/train-00042-of-00055.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown clumps"
+   ],
+   "ann": {
+    "label": "Brown clumps"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-d1db387a6e",
+   "ref": {
+    "file": "data/train-00042-of-00055.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown clumps"
+   ],
+   "ann": {
+    "label": "Brown clumps"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-059f70d279",
+   "ref": {
+    "file": "data/train-00043-of-00055.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown clumps"
+   ],
+   "ann": {
+    "label": "Brown clumps"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-39b6059287",
+   "ref": {
+    "file": "data/train-00043-of-00055.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown clumps"
+   ],
+   "ann": {
+    "label": "Brown clumps"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-26d572a71a",
+   "ref": {
+    "file": "data/train-00045-of-00055.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-f55d53f336",
+   "ref": {
+    "file": "data/train-00045-of-00055.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-cb9f46b3b5",
+   "ref": {
+    "file": "data/train-00045-of-00055.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-db23dc7f46",
+   "ref": {
+    "file": "data/train-00047-of-00055.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-b44f813259",
+   "ref": {
+    "file": "data/train-00048-of-00055.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-a0df9c4ab2",
+   "ref": {
+    "file": "data/train-00048-of-00055.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black spots"
+   ],
+   "ann": {
+    "label": "Black spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-86c5af1e39",
+   "ref": {
+    "file": "data/train-00049-of-00055.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black spots"
+   ],
+   "ann": {
+    "label": "Black spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-6eed8c7e3e",
+   "ref": {
+    "file": "data/train-00049-of-00055.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black spots"
+   ],
+   "ann": {
+    "label": "Black spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-186fdf20a2",
+   "ref": {
+    "file": "data/train-00052-of-00055.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black spots"
+   ],
+   "ann": {
+    "label": "Black spots"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "agarwood_leaf_disease_classification-5a94fd3c02",
+   "ref": {
+    "file": "data/train-00054-of-00055.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black spots"
+   ],
+   "ann": {
+    "label": "Black spots"
+   },
+   "strata": {}
+  }
+ ]
+}

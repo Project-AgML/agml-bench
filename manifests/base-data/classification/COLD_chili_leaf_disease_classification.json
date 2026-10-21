@@ -1,0 +1,424 @@
+{
+ "name": "COLD_chili_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/COLD_chili_leaf_disease_classification",
+ "hf_sha": "621010d7c9e745e6d1541cc7c02245fa3061d339",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:04:23+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "cercospora",
+   "healthy",
+   "mites_and_trips",
+   "nutritional",
+   "powdery mildew"
+  ],
+  "indexed_rows": 532
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-46b1acc1a4",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-5416d2e4fe",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 13,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-10fcbef202",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 25,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-9db9caa190",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 28,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-70b6cbc057",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 51,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-a4b01eaabd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 89,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "powdery mildew"
+   ],
+   "ann": {
+    "label": "powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-24c140ddaa",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 90,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "powdery mildew"
+   ],
+   "ann": {
+    "label": "powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-c3cf2af4bd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 131,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "powdery mildew"
+   ],
+   "ann": {
+    "label": "powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-8053dcec09",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 145,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "powdery mildew"
+   ],
+   "ann": {
+    "label": "powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-1eb57c5902",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 162,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "powdery mildew"
+   ],
+   "ann": {
+    "label": "powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-bc8d85fb19",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 178,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "nutritional"
+   ],
+   "ann": {
+    "label": "nutritional"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-f653d49b90",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 202,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "nutritional"
+   ],
+   "ann": {
+    "label": "nutritional"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-2ad0897261",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 221,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "nutritional"
+   ],
+   "ann": {
+    "label": "nutritional"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-0f99dd1bbc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 253,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "nutritional"
+   ],
+   "ann": {
+    "label": "nutritional"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-c7a83f5545",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 267,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "nutritional"
+   ],
+   "ann": {
+    "label": "nutritional"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-a462bc9e16",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 274,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mites_and_trips"
+   ],
+   "ann": {
+    "label": "mites_and_trips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-74c648c8c4",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 318,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mites_and_trips"
+   ],
+   "ann": {
+    "label": "mites_and_trips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-e05261d1cc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 337,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mites_and_trips"
+   ],
+   "ann": {
+    "label": "mites_and_trips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-9feff5ce55",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 358,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mites_and_trips"
+   ],
+   "ann": {
+    "label": "mites_and_trips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-5f1a7f77db",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 370,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mites_and_trips"
+   ],
+   "ann": {
+    "label": "mites_and_trips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-b11505b6c8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 384,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "cercospora"
+   ],
+   "ann": {
+    "label": "cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-c7d4210bfb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 395,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "cercospora"
+   ],
+   "ann": {
+    "label": "cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-7e67630635",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 399,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "cercospora"
+   ],
+   "ann": {
+    "label": "cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-31fc6f613a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 521,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "cercospora"
+   ],
+   "ann": {
+    "label": "cercospora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "COLD_chili_leaf_disease_classification-2b8e6a87bc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 522,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "cercospora"
+   ],
+   "ann": {
+    "label": "cercospora"
+   },
+   "strata": {}
+  }
+ ]
+}

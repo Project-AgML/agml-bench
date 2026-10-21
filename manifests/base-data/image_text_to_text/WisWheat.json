@@ -2,22 +2,18 @@
  "name": "WisWheat",
  "task": "image_text_to_text",
  "hf_repo": "Project-AgML/WisWheat",
- "hf_sha": "c70e683a133157faa154ab98a989638a28e4cc9e",
- "sampling_hash": "95f057c20371",
- "created": "2026-10-20T19:59:11+00:00",
+ "hf_sha": "066837f9e97c8d1e763a3533c8805c51700a8a1d",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-21T06:28:32+00:00",
  "info": {
   "layout": "itt_parquet",
   "indexed_rows": 11265,
   "strata_counts_full": {
-   "instruct_finetune | wiswheat_instruct_finetune | open_ended": 4002,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train | numeric": 2000,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train | numeric": 2958,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train | numeric": 634,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train | open_ended": 985,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test | numeric": 200,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test | numeric": 330,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test | numeric": 46,
-   "VQA_Quantitative | wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test | open_ended": 110
+   "Instruct_Finetune | wiswheat_instruct_finetune_train | open_ended": 4002,
+   "VQA_Quantitative | wiswheat_vqa_quantitative_train | open_ended": 985,
+   "VQA_Quantitative | wiswheat_vqa_quantitative_train | numeric": 5592,
+   "VQA_Quantitative | wiswheat_vqa_quantitative_test | open_ended": 110,
+   "VQA_Quantitative | wiswheat_vqa_quantitative_test | numeric": 576
   }
  },
  "strata_keys": [
@@ -27,94 +23,937 @@
  ],
  "samples": [
   {
-   "sample_id": "WisWheat-200dac886d",
+   "sample_id": "WisWheat-d42c7e08a1",
    "ref": {
-    "file": "instruct_finetune/train-00003-of-00007.parquet",
-    "row": 408,
-    "config": "instruct_finetune",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 80,
+    "config": "Instruct_Finetune",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "instruct_finetune",
+    "config": "Instruct_Finetune",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_instruct_finetune"
+    "id_prefix": "wiswheat_instruct_finetune_train"
    }
   },
   {
-   "sample_id": "WisWheat-47b86080c6",
+   "sample_id": "WisWheat-e8a3a51163",
    "ref": {
-    "file": "instruct_finetune/train-00004-of-00007.parquet",
-    "row": 119,
-    "config": "instruct_finetune",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 184,
+    "config": "Instruct_Finetune",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "instruct_finetune",
+    "config": "Instruct_Finetune",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_instruct_finetune"
+    "id_prefix": "wiswheat_instruct_finetune_train"
    }
   },
   {
-   "sample_id": "WisWheat-66dbe4de20",
+   "sample_id": "WisWheat-9bcae72b4d",
    "ref": {
-    "file": "instruct_finetune/train-00004-of-00007.parquet",
-    "row": 372,
-    "config": "instruct_finetune",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 291,
+    "config": "Instruct_Finetune",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "instruct_finetune",
+    "config": "Instruct_Finetune",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_instruct_finetune"
+    "id_prefix": "wiswheat_instruct_finetune_train"
    }
   },
   {
-   "sample_id": "WisWheat-46f09fccd2",
+   "sample_id": "WisWheat-2e6acda6e5",
    "ref": {
-    "file": "instruct_finetune/train-00006-of-00007.parquet",
-    "row": 226,
-    "config": "instruct_finetune",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 382,
+    "config": "Instruct_Finetune",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "instruct_finetune",
+    "config": "Instruct_Finetune",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_instruct_finetune"
+    "id_prefix": "wiswheat_instruct_finetune_train"
    }
   },
   {
-   "sample_id": "WisWheat-7375b427a0",
+   "sample_id": "WisWheat-1946677d0f",
    "ref": {
-    "file": "instruct_finetune/train-00006-of-00007.parquet",
-    "row": 292,
-    "config": "instruct_finetune",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 561,
+    "config": "Instruct_Finetune",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "instruct_finetune",
+    "config": "Instruct_Finetune",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_instruct_finetune"
+    "id_prefix": "wiswheat_instruct_finetune_train"
    }
   },
   {
-   "sample_id": "WisWheat-069c9e72ac",
+   "sample_id": "WisWheat-95305436fe",
    "ref": {
-    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 866,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b7601dd93e",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 869,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-28bbbcbe9a",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 890,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d63580a31f",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1061,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-30aa6d7132",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1066,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1eaa350d0e",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1080,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6d5d613def",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1217,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bec1b3d1cb",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1408,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-670c474860",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1519,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-02a82a6f80",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1556,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0c167a6629",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1621,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4f856c6d11",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1714,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-f548f2921c",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1781,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b3ce73950f",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 1909,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1a700bef05",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2033,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4be95e05bf",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2061,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fb2c04f38b",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2124,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fa5acfe6b9",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2222,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-f0443f8644",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2273,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-aec3df6158",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2407,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-389ad99968",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2489,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-248dde9bfa",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2505,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0877a51934",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2542,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-340b85e283",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2660,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-839a28d250",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2814,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e7a45e25bc",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 2910,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9deec31f2e",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3058,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-eb52e7aa79",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3206,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5aa130e7fd",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3252,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a32a469f17",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3315,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-be078c7772",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3348,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-30fcb74ca4",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3360,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b20a21ab2d",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3406,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9db6dd0ea2",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3411,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6529689bb6",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3444,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-91cc3dae4b",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3491,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0b8ba5e80f",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3504,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-13edea79af",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3558,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-94ce1f0150",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3657,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-07232b25f3",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3701,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4a582ce938",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3723,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4ad55933ea",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3918,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-057715e175",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3957,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-59d7bba8b7",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3966,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-14e0aa939b",
+   "ref": {
+    "file": "Instruct_Finetune/train-0000-of-0001.parquet",
+    "row": 3988,
+    "config": "Instruct_Finetune",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "Instruct_Finetune",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_instruct_finetune_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-90502ae96c",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 14,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-865a59a5e2",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 31,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0d6c2f69af",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 35,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-46e79804a3",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 53,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-63380fee08",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 60,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-60973a8245",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 71,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e8a68a7601",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 75,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8c9b0d4aec",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 105,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bea3c23443",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 132,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -122,16 +961,111 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-0abfa41ace",
+   "sample_id": "WisWheat-e595c72c86",
    "ref": {
-    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 135,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b5d682a49f",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 144,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8eafc2ebd1",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 150,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-47d46dc113",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 163,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0d66dd4f46",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 166,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-177a8070b1",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 175,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-98e76a2e5d",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 189,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -139,16 +1073,111 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-ecae0c0873",
+   "sample_id": "WisWheat-7506f4d726",
    "ref": {
-    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 227,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c3f6d17912",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 237,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a5592461e9",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 258,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0508d3fbf6",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 275,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-02b469b46e",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 306,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c5acde9fa1",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 313,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-17210f8658",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 365,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -156,16 +1185,127 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-5aa8058f4a",
+   "sample_id": "WisWheat-e1cfce6c8d",
    "ref": {
-    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 409,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-cf0e9708a8",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 432,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0eee02c63e",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 435,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5992f30a8a",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 472,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bfefaa0bfd",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 529,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-469727fb73",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 555,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-22e09a0da4",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 574,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-32524ce383",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 586,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -173,16 +1313,191 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-5f3739dd2a",
+   "sample_id": "WisWheat-84d06de0df",
    "ref": {
-    "file": "VQA_Quantitative/train-00000-of-00007.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 589,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-eeb307ad17",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 609,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c52a8d32cf",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 612,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-30ebe77202",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 618,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-32a43244d8",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 673,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fdaf678e97",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 714,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8eb17ad0fa",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 719,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9430cb7727",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 744,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4a520015e6",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 753,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-f1c7dceb6d",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 836,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c4493cb564",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 857,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-65b88f8d49",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 878,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -190,186 +1505,63 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-332d581b33",
-   "ref": {
-    "file": "VQA_Quantitative/train-00001-of-00007.parquet",
-    "row": 277,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-dce75ba069",
-   "ref": {
-    "file": "VQA_Quantitative/train-00001-of-00007.parquet",
-    "row": 297,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-8461be0fa5",
-   "ref": {
-    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
-    "row": 26,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-efec4d3e05",
-   "ref": {
-    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
-    "row": 487,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-5621ddda80",
-   "ref": {
-    "file": "VQA_Quantitative/train-00002-of-00007.parquet",
-    "row": 809,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-369b506c37",
+   "sample_id": "WisWheat-8101a1ccff",
    "ref": {
-    "file": "VQA_Quantitative/train-00003-of-00007.parquet",
-    "row": 201,
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 880,
     "config": "VQA_Quantitative",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-370cb098a3",
+   "sample_id": "WisWheat-ac13892731",
    "ref": {
-    "file": "VQA_Quantitative/train-00003-of-00007.parquet",
-    "row": 605,
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 886,
     "config": "VQA_Quantitative",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-6e263dceb5",
+   "sample_id": "WisWheat-9e56b7c15a",
    "ref": {
-    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
-    "row": 357,
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 909,
     "config": "VQA_Quantitative",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-e1be47bfd3",
+   "sample_id": "WisWheat-86c81295f2",
    "ref": {
-    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
-    "row": 388,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-dbf3a1ec46",
-   "ref": {
-    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
-    "row": 808,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-978fb1a756",
-   "ref": {
-    "file": "VQA_Quantitative/train-00004-of-00007.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
     "row": 922,
     "config": "VQA_Quantitative",
     "split": "train"
@@ -377,84 +1569,1343 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-b77588392c",
-   "ref": {
-    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
-    "row": 368,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
-    "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_train"
-   }
-  },
-  {
-   "sample_id": "WisWheat-5ff5e49cf4",
-   "ref": {
-    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
-    "row": 638,
-    "config": "VQA_Quantitative",
-    "split": "train"
-   },
-   "keys": [],
-   "ann": {},
-   "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-e00908b8a8",
+   "sample_id": "WisWheat-c3d1f38d02",
    "ref": {
-    "file": "VQA_Quantitative/train-00005-of-00007.parquet",
-    "row": 666,
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 956,
     "config": "VQA_Quantitative",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_train"
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-77df51a450",
+   "sample_id": "WisWheat-07757843c8",
    "ref": {
-    "file": "VQA_Quantitative/train-00006-of-00007.parquet",
-    "row": 666,
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 967,
     "config": "VQA_Quantitative",
     "split": "train"
    },
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_train"
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
    }
   },
   {
-   "sample_id": "WisWheat-bbbc0ccfa7",
+   "sample_id": "WisWheat-5d442f2c93",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 979,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ac275b7614",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1005,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7cd29bf1a3",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1169,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-52c5dac909",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1217,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fc51b5fe99",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1237,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7bdcbedfe5",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1311,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9a2f183982",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1446,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-eb354b2db7",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1579,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a176e186a6",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1673,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a636241d7b",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1829,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-26c96d1b06",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 1929,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c0a8968c1e",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2052,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7c7d3d9133",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2213,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-31d65860eb",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2367,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-cbf47e0b5b",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2595,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-081b379781",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2689,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c97958ec12",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 2864,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d571a5bb25",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3021,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-24ff83990c",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3036,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1c94d51366",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3298,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-29b6c0b3a7",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3303,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4ad1458e5b",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3390,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2c857a2140",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3425,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-eb1ea36b56",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3493,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2ae07b7a99",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3564,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4e461b2ea5",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3660,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1e387850cc",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 3836,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-98d9cc801d",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4117,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-099d323aa6",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4148,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8458e0d6a9",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4413,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-96978aa16b",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4471,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7fdf607aea",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4568,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-f116af49a3",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4640,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9832037cba",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4642,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7c30036c3d",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4682,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8218e49c8a",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4790,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-3dad66733f",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 4907,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-00ccacfef6",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5023,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-78d117b238",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5138,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-09df26cecd",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5183,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0c4aa585ab",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5337,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-784036c9db",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5365,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8cbf9b99db",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5393,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bdee7dc9e7",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5550,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fb4de14fd0",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5650,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-66edc6fc2e",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5800,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-58e152b2d0",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5811,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-37c3926efb",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 5898,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-35a2dc84cd",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 6086,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b71d907579",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 6304,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-330ffc9c11",
+   "ref": {
+    "file": "VQA_Quantitative/train-0000-of-0001.parquet",
+    "row": 6518,
+    "config": "VQA_Quantitative",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_train"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c31de943bf",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 0,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-37edc0a864",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 3,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6504606f70",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 4,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5d63f0129a",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 7,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fca68822de",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 8,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2e38f714ea",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 17,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-54a12eb283",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 19,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c22b87d68b",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 20,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9c4c0f3406",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 28,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a15d8177e5",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 32,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-28b3e6ea23",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 33,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5a95b71ffc",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 36,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5f49d4cd83",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 37,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-84fd1f0606",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 42,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a4c125477c",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 43,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d4dca0e10f",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 47,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e3ee043b95",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 49,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ffa5490765",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 51,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c45259bf3a",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 53,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ce14bc941f",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 57,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1431a2d624",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 58,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bf5018bf4f",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 60,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-da2b083fc3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 61,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a625014702",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 62,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0db27e1590",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 64,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-01cce93339",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 67,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e98a6f72b8",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 68,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5f845f60a5",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 69,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-874213ca2e",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 70,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-46766c1ff4",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 74,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-90f479fcea",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 77,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -462,16 +2913,175 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-2daccd448d",
+   "sample_id": "WisWheat-bcd51e7900",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 81,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b3598620ce",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 84,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2d74744278",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 85,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-2061d6ca30",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 86,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e4dc90eff5",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 87,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-bf16233d84",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 88,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-7eaaebca46",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 89,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1b07a6681f",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 90,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1d4b3d2dd2",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 91,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6d8a62cfa4",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 93,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c1f31d698c",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 95,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -479,16 +3089,143 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-b0312d3760",
+   "sample_id": "WisWheat-ceccaa2d0c",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 96,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e215ed41dc",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 97,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-15fc2f81bb",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 98,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5419aa10c3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 99,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8738f665fb",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 103,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a68c1c8619",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 104,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c92ee94639",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 107,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-99a7a5f6c3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 108,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "open_ended",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-95a0c357f6",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 133,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -496,16 +3233,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-09b52e790a",
+   "sample_id": "WisWheat-4204f38dd9",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 134,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -513,16 +3249,47 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-d901e376f2",
+   "sample_id": "WisWheat-45d0263f47",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 145,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-76a8a039c4",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 147,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-647f6c02c8",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 176,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -530,16 +3297,63 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-be0c47fab8",
+   "sample_id": "WisWheat-84f9d8d882",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 180,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-07dafe3a43",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 185,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-16ba2e0b9c",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 191,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-342366d123",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 205,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -547,16 +3361,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-e88206d530",
+   "sample_id": "WisWheat-02e2eb3f4d",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 213,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -564,16 +3377,79 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-91fac1aac9",
+   "sample_id": "WisWheat-068bfc8b35",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 236,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-31436e4623",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 276,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-a08fae6948",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 278,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b1ac728bd2",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 283,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d7673f086c",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 289,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -581,16 +3457,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-b303a8910e",
+   "sample_id": "WisWheat-3ace7e8182",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 292,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -598,16 +3473,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-df992de881",
+   "sample_id": "WisWheat-cf157c3adf",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 318,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -615,16 +3489,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-5a93303cf5",
+   "sample_id": "WisWheat-808140f4ad",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 319,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -632,16 +3505,79 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-d2619b915b",
+   "sample_id": "WisWheat-39f989ac86",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 328,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-6506c2099e",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 331,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-fe6435efe6",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 340,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-8183e0652d",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 358,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-1574d52be7",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 361,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -649,16 +3585,31 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-e0296a63e0",
+   "sample_id": "WisWheat-6aabd573bc",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 404,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-b3837115ec",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 417,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -666,16 +3617,15 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-199a340d9b",
+   "sample_id": "WisWheat-8f4ec7ae6e",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 431,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -683,16 +3633,79 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_spike_count_number_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-4133ba5522",
+   "sample_id": "WisWheat-f937f2f563",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 432,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-61ecbcf3a3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 437,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9262e1bdf8",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 447,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5d61e88733",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 453,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-e4897c1d10",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 457,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -700,16 +3713,79 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-366e2ee6af",
+   "sample_id": "WisWheat-a8886be7fc",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 459,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-dd39f510c9",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 468,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-21731bb762",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 484,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-0fe622c83a",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 488,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-badada26f4",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 493,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -717,16 +3793,47 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-5a53559f5e",
+   "sample_id": "WisWheat-844ab1bdc8",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 509,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d86b730dc2",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 510,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-d806088ea3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 512,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -734,16 +3841,63 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_organ_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-ea7b1a9066",
+   "sample_id": "WisWheat-b537917d47",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 522,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-9781f53188",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 526,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-ca3297fa92",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 528,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-da5253439c",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 541,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -751,16 +3905,31 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
     "qa_format": "numeric",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_rust_percentage_vqa_test"
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-313be87310",
+   "sample_id": "WisWheat-5e473caab1",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 547,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-4b95c6f0d3",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 564,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -768,16 +3937,79 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   },
   {
-   "sample_id": "WisWheat-efa9c1d7e2",
+   "sample_id": "WisWheat-0b1663bd5a",
    "ref": {
-    "file": "VQA_Quantitative/test-00000-of-00001.parquet",
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 569,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-5b9f09b71d",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 612,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-c2e783a81b",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 621,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-783b3f498e",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
+    "row": 627,
+    "config": "VQA_Quantitative",
+    "split": "test"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "config": "VQA_Quantitative",
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
+   }
+  },
+  {
+   "sample_id": "WisWheat-912a394a8b",
+   "ref": {
+    "file": "VQA_Quantitative/test-0000-of-0001.parquet",
     "row": 631,
     "config": "VQA_Quantitative",
     "split": "test"
@@ -785,10 +4017,9 @@
    "keys": [],
    "ann": {},
    "strata": {
-    "origin_dataset": "wiswheat",
     "config": "VQA_Quantitative",
-    "qa_format": "open_ended",
-    "id_prefix": "wiswheat_/Users/uchandar/Documents/Dev-Workspace/AgMLWorkspace/AgML/datasets/originalDatasets/VLM/WisWheat/Wiswheat_VQA_Quantitative/wheat_growth_stage_vqa_test"
+    "qa_format": "numeric",
+    "id_prefix": "wiswheat_vqa_quantitative_test"
    }
   }
  ]

@@ -1,0 +1,3569 @@
+{
+ "name": "AgroCoT",
+ "task": "image_text_to_text",
+ "hf_repo": "Project-AgML/AgroCoT",
+ "hf_sha": "c0f6b0c42f50a84f0da9684cdd8419d9ccf3b5eb",
+ "sampling_hash": "7bab0877da85",
+ "created": "2026-10-20T20:55:21+00:00",
+ "info": {
+  "layout": "itt_parquet",
+  "indexed_rows": 4759,
+  "strata_counts_full": {
+   "1 | multiple_choice": 1453,
+   "6 | multiple_choice": 1065,
+   "3 | yes_no": 728,
+   "4 | multiple_choice": 354,
+   "9 | multiple_choice": 86,
+   "11 | open_ended": 135,
+   "2 | numeric": 684,
+   "5 | multiple_choice": 97,
+   "7 | open_ended": 97,
+   "8 | numeric": 52,
+   "8 | yes_no": 1,
+   "10 | open_ended": 7
+  }
+ },
+ "strata_keys": [
+  "type_id",
+  "qa_format"
+ ],
+ "samples": [
+  {
+   "sample_id": "AgroCoT-5a90dc3ec8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a68ac9175f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4e45629f95",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c2593363a2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-56ce0da064",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-313291bd7b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3c1a3c5fa8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c28bfc40b0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 367,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e5310d816a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-be5e4b1d0b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-b7bb07153b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-536e28a27b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 459,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-aea0c0a71c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-019801d250",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 606,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4801d80fee",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 657,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0a31dee996",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c0dfc30bec",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 694,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f4bb47f366",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 749,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f29489152a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 830,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f781e19ff3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 832,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-81a6dc317c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 965,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3009284956",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1078,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c507c0fe2a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0ee4ac9560",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-6fd97a2e8e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d68cf47128",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-2a266aaf2a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1216,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1b5e23f3e2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-12dfd086f2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-267712c66d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1242,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7db76ba1ea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-feeb75aa95",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-2f1c8ce86a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bfec504070",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-cc37a91fa1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-6151d54d00",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f74eafb9be",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-95da33569b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1330,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9a94f6991a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-499ca14181",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-05b5cae398",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d2ca102c36",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1343,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e3c6849a6c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9da65a97c0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1436,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bffd773209",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-abe031a712",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c6c955abee",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c6578367fb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1574,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9526eadc4d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1611,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-94839311f0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1735,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bcf522aca6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1762,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-84085a1115",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1785,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-ea98d7d86d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1830,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-170eb70a6a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1899,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f68d6b104f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 1973,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-786eaeeea7",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2036,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7f21db588f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2075,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c3806c9caa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2090,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5e18bfd607",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2094,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-74ed54da10",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-2b6c2bc155",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d2ff6a0d36",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-81e29a553e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d8719d29b1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5aad0286ec",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-b20db550da",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-8b7cbf8341",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-6c70c37254",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-57135e9888",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-56eeb60627",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2492,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-43103b478b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2529,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-fe6cf7d729",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2569,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d2eb70274c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2641,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-61fc8114fc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bb0e762ed8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2703,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-ec0c357e18",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2734,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9f02169d08",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2749,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1d538f646e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2794,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-70a5d16158",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2892,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c960c4ac2a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 2896,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-89924237c4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3038,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e3dbfd3a65",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-06b8c028d5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3068,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-aece623395",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3093,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c788fc4b67",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e5630c6c61",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-2286c24bd3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-627683cea4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3250,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bfbed549fc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3d398f8a16",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-378fcd1a4c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1e45998dab",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c68d33df24",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9c730e597b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3356,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1344179b11",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c3941da2f6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4e700726ef",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3381,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a382e452df",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e1d6f492ae",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3386,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-8c2d54a6e2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d743c234b4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3408,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-815e15faf6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-84f33564b5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3413,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-62423e95ea",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7853fa6ccc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3433,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1db005ce3a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3439,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4d34fe4ccd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-482f3c8507",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3bf88ffe0e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e36aa45dd4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3466,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-010ebf5cfd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e0f62c82f4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-86d70d81ac",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3486,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-22e3ae43e1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3491,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f96593191e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3494,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-12ad0161e8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3506,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-1d399dd0aa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3511,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-937318f885",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3524,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-115695fc01",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c196e05503",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3533,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-502bacf93e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3535,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f276f2598f",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3541,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5b434bf9fe",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3545,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0e4d82ceb5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3556,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5388ae2d20",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3575,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4a91386b6c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bb73570cde",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3589,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-9745b85735",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-f2232238b8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3598,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e989a0937e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3629,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3ce057ad21",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-403ded5551",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3639,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-fbdeb02538",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3647,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e0de5b9f81",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c8e7ed72df",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-332c79eb7e",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3661,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-560690a9f2",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3667,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-8206c3650d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3673,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0209a2ae74",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-48e339c2dc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3681,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e5a8f1b28c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3686,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-77d5c36087",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-fc5ed8d3a8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3703,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-abc10bac61",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3707,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4ac16917cb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3713,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c7a9ea6223",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3721,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e6e5ae434d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3722,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-3513a7bd8c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3724,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-14589d5132",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3726,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-768ace362b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3730,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-b0304a9116",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "3",
+    "config": "default",
+    "qa_format": "yes_no",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-906db217dc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3737,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-acf2a0789c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c3f54c1a0d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-ff74e33541",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3743,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-fb81f90ecf",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3756,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c1b511361b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3765,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e985b0fd59",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3777,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-d3f72db316",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3796,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-b8998e95ca",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3801,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c7a532ed5c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3805,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-8924787055",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3833,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-98fd7336ca",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a3c6cf687a",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3860,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-dd5babd352",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bed4f8dd97",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "7",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a558175dfc",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 3995,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-aaec5355b0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4004,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-2a3ebdb473",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4020,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c67ff96501",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-28d08238f1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "6",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4811a45769",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a7bbe0fe68",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-203f4ea5aa",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a4d5bcede8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c86f2c3efb",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-a07bb5bfa8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-363dcaf3c6",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4416da72d0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0f82a7a20d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-828f7d13a4",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-e901d15384",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-89def3c6de",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4375,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4b28a4c5b3",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4381,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-6f889fd6f5",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5dcb7db4f9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4418,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-03dbe6ea39",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4433,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "10",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-11294a003b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-07ca2f1695",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4537,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-48055173df",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4541,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "8",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-abccf58cef",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4548,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-5de6f4c9bd",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-287d03bc85",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-73e645dde0",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-bdcd1d4ede",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4582,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-4ccc43f3c8",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4594,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-608333ea89",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4597,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7525efec2b",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-aaf68977c9",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4627,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "2",
+    "config": "default",
+    "qa_format": "numeric",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-fc70cf008d",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4630,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "5",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-c8d10f3cec",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4644,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-69c8d295c1",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "11",
+    "config": "default",
+    "qa_format": "open_ended",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7f6b474e0c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "1",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-0e90362a16",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4717,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-abd56bc689",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-735a444a17",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4744,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "4",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-54b26b6e8c",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4749,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  },
+  {
+   "sample_id": "AgroCoT-7f40c435af",
+   "ref": {
+    "file": "train-0000-of-0001.parquet",
+    "row": 4756,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [],
+   "ann": {},
+   "strata": {
+    "type_id": "9",
+    "category": "Disease Monitoring",
+    "config": "default",
+    "qa_format": "multiple_choice",
+    "id_prefix": "agrocot_train"
+   }
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "name": "eggplant_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/eggplant_disease_classification",
+ "hf_sha": "5791ade08daba9b3d7bb5aff7052ca78dd72f0e8",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:59:46+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Healthy Leaf",
+   "Insect Pest Disease",
+   "Leaf Spot Disease",
+   "Mosaic Virus Disease",
+   "White Mold Disease",
+   "Wilt Disease"
+  ],
+  "indexed_rows": 4089
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "eggplant_disease_classification-5956366b89",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 261,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-2a02c63d2b",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 549,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-a79c857760",
+   "ref": {
+    "file": "raw/train-00000-of-00006.parquet",
+    "row": 655,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-7c903b65e1",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 143,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-d724511296",
+   "ref": {
+    "file": "raw/train-00001-of-00006.parquet",
+    "row": 175,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-6536d72b34",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 95,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White Mold Disease"
+   ],
+   "ann": {
+    "label": "White Mold Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-00590b06df",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 97,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White Mold Disease"
+   ],
+   "ann": {
+    "label": "White Mold Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-a6bd612540",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 101,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White Mold Disease"
+   ],
+   "ann": {
+    "label": "White Mold Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-1f5797dd2c",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 140,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White Mold Disease"
+   ],
+   "ann": {
+    "label": "White Mold Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-7709f3f8dd",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 143,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "White Mold Disease"
+   ],
+   "ann": {
+    "label": "White Mold Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-61dec69176",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 341,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spot Disease"
+   ],
+   "ann": {
+    "label": "Leaf Spot Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-8a5ed21e5c",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 390,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spot Disease"
+   ],
+   "ann": {
+    "label": "Leaf Spot Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-f18492ea05",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 580,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spot Disease"
+   ],
+   "ann": {
+    "label": "Leaf Spot Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-c5927885ba",
+   "ref": {
+    "file": "raw/train-00002-of-00006.parquet",
+    "row": 612,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spot Disease"
+   ],
+   "ann": {
+    "label": "Leaf Spot Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-bc52ccce07",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 27,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Spot Disease"
+   ],
+   "ann": {
+    "label": "Leaf Spot Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-862d8df53e",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 87,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wilt Disease"
+   ],
+   "ann": {
+    "label": "Wilt Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-278a6c800c",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 88,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wilt Disease"
+   ],
+   "ann": {
+    "label": "Wilt Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-a6b8745df7",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 106,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wilt Disease"
+   ],
+   "ann": {
+    "label": "Wilt Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-0b7f3d6ecb",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 113,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wilt Disease"
+   ],
+   "ann": {
+    "label": "Wilt Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-a30cf01b31",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 117,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Wilt Disease"
+   ],
+   "ann": {
+    "label": "Wilt Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-d1920cfcf8",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 413,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus Disease"
+   ],
+   "ann": {
+    "label": "Mosaic Virus Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-9b4e0014f0",
+   "ref": {
+    "file": "raw/train-00003-of-00006.parquet",
+    "row": 610,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus Disease"
+   ],
+   "ann": {
+    "label": "Mosaic Virus Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-601e95ec2f",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 164,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus Disease"
+   ],
+   "ann": {
+    "label": "Mosaic Virus Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-cc0f60707a",
+   "ref": {
+    "file": "raw/train-00004-of-00006.parquet",
+    "row": 424,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus Disease"
+   ],
+   "ann": {
+    "label": "Mosaic Virus Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-c17900fe49",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 117,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus Disease"
+   ],
+   "ann": {
+    "label": "Mosaic Virus Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-dc69fee16a",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 139,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Pest Disease"
+   ],
+   "ann": {
+    "label": "Insect Pest Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-4c03161686",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 210,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Pest Disease"
+   ],
+   "ann": {
+    "label": "Insect Pest Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-891873d556",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 262,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Pest Disease"
+   ],
+   "ann": {
+    "label": "Insect Pest Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-e47b870ec3",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 349,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Pest Disease"
+   ],
+   "ann": {
+    "label": "Insect Pest Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "eggplant_disease_classification-fa86918e32",
+   "ref": {
+    "file": "raw/train-00005-of-00006.parquet",
+    "row": 407,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Insect Pest Disease"
+   ],
+   "ann": {
+    "label": "Insect Pest Disease"
+   },
+   "strata": {}
+  }
+ ]
+}

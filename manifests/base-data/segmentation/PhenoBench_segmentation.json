@@ -1,0 +1,144 @@
+{
+ "name": "PhenoBench_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/PhenoBench_segmentation",
+ "hf_sha": "038032e381012b3a66ca29383102c3727b034613",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-21T01:33:39+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3",
+   "4": "value_4"
+  },
+  "indexed_rows": 2179
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "PhenoBench_segmentation-84b694f83f",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-f034ee63f6",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-1294bc8beb",
+   "ref": {
+    "file": "data/train-00001-of-00013.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-aaac96abcf",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-d7348402a8",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

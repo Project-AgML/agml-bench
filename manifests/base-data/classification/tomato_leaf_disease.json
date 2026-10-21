@@ -1,0 +1,829 @@
+{
+ "name": "tomato_leaf_disease",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/tomato_leaf_disease",
+ "hf_sha": "76a2f52138563e7b68ccda4d9de02e43c7fe0c94",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:36:13+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial Spot",
+   "Early Blight",
+   "Healthy",
+   "Late Blight",
+   "Leaf Mold",
+   "Septoria Leaf Spot",
+   "Spider Mites Two-spotted Spider Mite",
+   "Target Spot",
+   "Tomato Mosaic Virus",
+   "Tomato Yellow Leaf Curl Virus"
+  ],
+  "indexed_rows": 11000
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tomato_leaf_disease-4340536fb6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-0b1b37251a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 360,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-ddd6d89f73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-c31763e992",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-cc64da2f73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 933,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-65b99df512",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1609,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spider Mites Two-spotted Spider Mite"
+   ],
+   "ann": {
+    "label": "Spider Mites Two-spotted Spider Mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-dc75c5a6b6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1840,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spider Mites Two-spotted Spider Mite"
+   ],
+   "ann": {
+    "label": "Spider Mites Two-spotted Spider Mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-8e19f91548",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spider Mites Two-spotted Spider Mite"
+   ],
+   "ann": {
+    "label": "Spider Mites Two-spotted Spider Mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-5e1fe21fad",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spider Mites Two-spotted Spider Mite"
+   ],
+   "ann": {
+    "label": "Spider Mites Two-spotted Spider Mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-20f9051153",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1973,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spider Mites Two-spotted Spider Mite"
+   ],
+   "ann": {
+    "label": "Spider Mites Two-spotted Spider Mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-633dff081d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early Blight"
+   ],
+   "ann": {
+    "label": "Early Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-f004ac9b2c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2435,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early Blight"
+   ],
+   "ann": {
+    "label": "Early Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-a97c400915",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early Blight"
+   ],
+   "ann": {
+    "label": "Early Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-961e09c5f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2982,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early Blight"
+   ],
+   "ann": {
+    "label": "Early Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-6d55629cc5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early Blight"
+   ],
+   "ann": {
+    "label": "Early Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-3754fbfde8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-ba42f5dc2b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3829,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-034cd96e73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3910,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-eee7bc4fe0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4020,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-d54170b6c3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-7bfc54cbf4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late Blight"
+   ],
+   "ann": {
+    "label": "Late Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-4ab83e3970",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late Blight"
+   ],
+   "ann": {
+    "label": "Late Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-d27df324d8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4701,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late Blight"
+   ],
+   "ann": {
+    "label": "Late Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-6c705d34fd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4839,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late Blight"
+   ],
+   "ann": {
+    "label": "Late Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-1615c8e043",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4885,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late Blight"
+   ],
+   "ann": {
+    "label": "Late Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-d270945a9c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tomato Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-4bf338ddb2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5741,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tomato Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-f3207e747d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5894,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tomato Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-f10233e619",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tomato Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-25309d5923",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Tomato Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-03e4270595",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6611,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Yellow Leaf Curl Virus"
+   ],
+   "ann": {
+    "label": "Tomato Yellow Leaf Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-3ae0f5fccb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6638,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Yellow Leaf Curl Virus"
+   ],
+   "ann": {
+    "label": "Tomato Yellow Leaf Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-0d8d63e2b8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7343,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Yellow Leaf Curl Virus"
+   ],
+   "ann": {
+    "label": "Tomato Yellow Leaf Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-e0c58c8725",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Yellow Leaf Curl Virus"
+   ],
+   "ann": {
+    "label": "Tomato Yellow Leaf Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-29d3ec1758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7648,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Yellow Leaf Curl Virus"
+   ],
+   "ann": {
+    "label": "Tomato Yellow Leaf Curl Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-543f6ca39d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Target Spot"
+   ],
+   "ann": {
+    "label": "Target Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-b52ab02e06",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7927,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Target Spot"
+   ],
+   "ann": {
+    "label": "Target Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-ab65753521",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7955,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Target Spot"
+   ],
+   "ann": {
+    "label": "Target Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-01c3f133b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8711,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Target Spot"
+   ],
+   "ann": {
+    "label": "Target Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-b274efa2b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8793,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Target Spot"
+   ],
+   "ann": {
+    "label": "Target Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-a7de95925c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9447,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria Leaf Spot"
+   ],
+   "ann": {
+    "label": "Septoria Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-3c575b2454",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9612,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria Leaf Spot"
+   ],
+   "ann": {
+    "label": "Septoria Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-1bb6a09614",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9613,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria Leaf Spot"
+   ],
+   "ann": {
+    "label": "Septoria Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-d602798eb4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria Leaf Spot"
+   ],
+   "ann": {
+    "label": "Septoria Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-f439df87d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9871,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria Leaf Spot"
+   ],
+   "ann": {
+    "label": "Septoria Leaf Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-0cf2f72e94",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Mold"
+   ],
+   "ann": {
+    "label": "Leaf Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-cc4a3302e5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10260,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Mold"
+   ],
+   "ann": {
+    "label": "Leaf Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-8ee3968d99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Mold"
+   ],
+   "ann": {
+    "label": "Leaf Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-b4b82be768",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10578,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Mold"
+   ],
+   "ann": {
+    "label": "Leaf Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tomato_leaf_disease-230a9254c3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 10588,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Mold"
+   ],
+   "ann": {
+    "label": "Leaf Mold"
+   },
+   "strata": {}
+  }
+ ]
+}

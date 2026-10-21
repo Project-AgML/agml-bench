@@ -1,0 +1,8281 @@
+{
+ "name": "CT_PestNet_crop_pest_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/CT_PestNet_crop_pest_classification",
+ "hf_sha": "79e413f3032a39c4dad201358a914666339034ad",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:22:45+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "rice leaf roller",
+   "rice leaf caterpillar",
+   "paddy stem maggot",
+   "asiatic rice borer",
+   "yellow rice borer",
+   "rice gall midge",
+   "Rice Stemfly",
+   "brown plant hopper",
+   "white backed plant hopper",
+   "small brown plant hopper",
+   "rice water weevil",
+   "rice leafhopper",
+   "grain spreader thrips",
+   "rice shell pest",
+   "grub",
+   "mole cricket",
+   "wireworm",
+   "white margined moth",
+   "black cutworm",
+   "large cutworm",
+   "yellow cutworm",
+   "red spider",
+   "corn borer",
+   "army worm",
+   "aphids",
+   "Potosiabre vitarsis",
+   "peach borer",
+   "english grain aphid",
+   "green bug",
+   "bird cherry-oataphid",
+   "wheat blossom midge",
+   "penthaleus major",
+   "longlegged spider mite",
+   "wheat phloeothrips",
+   "wheat sawfly",
+   "cerodonta denticornis",
+   "beet fly",
+   "flea beetle",
+   "cabbage army worm",
+   "beet army worm",
+   "Beet spot flies",
+   "meadow moth",
+   "beet weevil",
+   "sericaorient alismots chulsky",
+   "alfalfa weevil",
+   "flax budworm",
+   "alfalfa plant bug",
+   "tarnished plant bug",
+   "Locustoidea",
+   "lytta polita",
+   "legume blister beetle",
+   "blister beetle",
+   "therioaphis maculata Buckton",
+   "odontothrips loti",
+   "Thrips",
+   "alfalfa seed chalcid",
+   "Pieris canidia",
+   "Apolygus lucorum",
+   "Limacodidae",
+   "Viteus vitifoliae",
+   "Colomerus vitis",
+   "Brevipoalpus lewisi McGregor",
+   "oides decempunctata",
+   "Polyphagotars onemus latus",
+   "Pseudococcus comstocki Kuwana",
+   "parathrene regalis",
+   "Ampelophaga",
+   "Lycorma delicatula",
+   "Xylotrechus",
+   "Cicadella viridis",
+   "Miridae",
+   "Trialeurodes vaporariorum",
+   "Erythroneura apicalis",
+   "Papilio xuthus",
+   "Panonchus citri McGregor",
+   "Phyllocoptes oleiverus ashmead",
+   "Icerya purchasi Maskell",
+   "Unaspis yanonensis",
+   "Ceroplastes rubens",
+   "Chrysomphalus aonidum",
+   "Parlatoria zizyphus Lucus",
+   "Nipaecoccus vastalor",
+   "Aleurocanthus spiniferus",
+   "Tetradacus c Bactrocera minax",
+   "Dacus dorsalis(Hendel)",
+   "Bactrocera tsuneonis",
+   "Prodenia litura",
+   "Adristyrannus",
+   "Phyllocnistis citrella Stainton",
+   "Toxoptera citricidus",
+   "Toxoptera aurantii",
+   "Aphis citricola Vander Goot",
+   "Scirtothrips dorsalis Hood",
+   "Dasineura sp",
+   "Lawana imitata Melichar",
+   "Salurnis marginella Guerr",
+   "Deporaus marginatus Pascoe",
+   "Chlumetia transversa",
+   "Mango flat beak leafhopper",
+   "Rhytidodera bowrinii white",
+   "Sternochetus frigidus",
+   "Cicadellidae"
+  ],
+  "indexed_rows": 75222
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d23bd12d23",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9685,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "tarnished plant bug"
+   ],
+   "ann": {
+    "label": "tarnished plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1c2786e569",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9718,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "tarnished plant bug"
+   ],
+   "ann": {
+    "label": "tarnished plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-afd56e3100",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9734,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "tarnished plant bug"
+   ],
+   "ann": {
+    "label": "tarnished plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4282afe5e6",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9736,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "tarnished plant bug"
+   ],
+   "ann": {
+    "label": "tarnished plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d360358641",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9743,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "tarnished plant bug"
+   ],
+   "ann": {
+    "label": "tarnished plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1f21e42790",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9869,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat blossom midge"
+   ],
+   "ann": {
+    "label": "wheat blossom midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-be0b1edddd",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9900,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat blossom midge"
+   ],
+   "ann": {
+    "label": "wheat blossom midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8d45a23c7f",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9907,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat blossom midge"
+   ],
+   "ann": {
+    "label": "wheat blossom midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8c26668a38",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 9929,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat blossom midge"
+   ],
+   "ann": {
+    "label": "wheat blossom midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3e81986bec",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10001,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat blossom midge"
+   ],
+   "ann": {
+    "label": "wheat blossom midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4442b9f13d",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10024,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aphis citricola Vander Goot"
+   ],
+   "ann": {
+    "label": "Aphis citricola Vander Goot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f02249879d",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10052,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aphis citricola Vander Goot"
+   ],
+   "ann": {
+    "label": "Aphis citricola Vander Goot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ae559a4710",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10068,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aphis citricola Vander Goot"
+   ],
+   "ann": {
+    "label": "Aphis citricola Vander Goot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c62d159657",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10076,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aphis citricola Vander Goot"
+   ],
+   "ann": {
+    "label": "Aphis citricola Vander Goot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-237a568063",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10101,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aphis citricola Vander Goot"
+   ],
+   "ann": {
+    "label": "Aphis citricola Vander Goot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7dcf3ca948",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10137,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocoptes oleiverus ashmead"
+   ],
+   "ann": {
+    "label": "Phyllocoptes oleiverus ashmead"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-69483e06b1",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10138,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocoptes oleiverus ashmead"
+   ],
+   "ann": {
+    "label": "Phyllocoptes oleiverus ashmead"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1598ca4640",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10140,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocoptes oleiverus ashmead"
+   ],
+   "ann": {
+    "label": "Phyllocoptes oleiverus ashmead"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5cdde2c2b3",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10153,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocoptes oleiverus ashmead"
+   ],
+   "ann": {
+    "label": "Phyllocoptes oleiverus ashmead"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1afbc9844f",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10163,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocoptes oleiverus ashmead"
+   ],
+   "ann": {
+    "label": "Phyllocoptes oleiverus ashmead"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e344509534",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10212,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Thrips"
+   ],
+   "ann": {
+    "label": "Thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-51c562a10f",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10220,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Thrips"
+   ],
+   "ann": {
+    "label": "Thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4c937d6383",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10247,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Thrips"
+   ],
+   "ann": {
+    "label": "Thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cfa9ae637e",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10351,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Thrips"
+   ],
+   "ann": {
+    "label": "Thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c287fac111",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10428,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Thrips"
+   ],
+   "ann": {
+    "label": "Thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-34f1fb2e28",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10482,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "army worm"
+   ],
+   "ann": {
+    "label": "army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8aad3516e7",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10500,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "army worm"
+   ],
+   "ann": {
+    "label": "army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4bf40bc8b5",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10627,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "army worm"
+   ],
+   "ann": {
+    "label": "army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-53b82bdefb",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10692,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "army worm"
+   ],
+   "ann": {
+    "label": "army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1af2278c0a",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 10694,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "army worm"
+   ],
+   "ann": {
+    "label": "army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4e0a775a71",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bird cherry-oataphid"
+   ],
+   "ann": {
+    "label": "bird cherry-oataphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3a47f7e3ef",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bird cherry-oataphid"
+   ],
+   "ann": {
+    "label": "bird cherry-oataphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-088640c064",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bird cherry-oataphid"
+   ],
+   "ann": {
+    "label": "bird cherry-oataphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bfc0acc72e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bird cherry-oataphid"
+   ],
+   "ann": {
+    "label": "bird cherry-oataphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a31a6ec6bc",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 217,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "bird cherry-oataphid"
+   ],
+   "ann": {
+    "label": "bird cherry-oataphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8ecce9a5d3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 241,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rice Stemfly"
+   ],
+   "ann": {
+    "label": "Rice Stemfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6d6e064d73",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rice Stemfly"
+   ],
+   "ann": {
+    "label": "Rice Stemfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cdb2e74a62",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rice Stemfly"
+   ],
+   "ann": {
+    "label": "Rice Stemfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-229d5fae5d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rice Stemfly"
+   ],
+   "ann": {
+    "label": "Rice Stemfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-71966db167",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rice Stemfly"
+   ],
+   "ann": {
+    "label": "Rice Stemfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-71a5211c0e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leafhopper"
+   ],
+   "ann": {
+    "label": "rice leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5bd5c58046",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 369,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leafhopper"
+   ],
+   "ann": {
+    "label": "rice leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a3610cf231",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 398,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leafhopper"
+   ],
+   "ann": {
+    "label": "rice leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f5ff88714c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 434,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leafhopper"
+   ],
+   "ann": {
+    "label": "rice leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2984aedb29",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 453,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leafhopper"
+   ],
+   "ann": {
+    "label": "rice leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8547229785",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 529,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ampelophaga"
+   ],
+   "ann": {
+    "label": "Ampelophaga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-82b087bdb3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 548,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ampelophaga"
+   ],
+   "ann": {
+    "label": "Ampelophaga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6b84fed5b1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 595,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ampelophaga"
+   ],
+   "ann": {
+    "label": "Ampelophaga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d81107b5aa",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 629,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ampelophaga"
+   ],
+   "ann": {
+    "label": "Ampelophaga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dcdbb23347",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 644,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ampelophaga"
+   ],
+   "ann": {
+    "label": "Ampelophaga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0a765e5746",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 694,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocnistis citrella Stainton"
+   ],
+   "ann": {
+    "label": "Phyllocnistis citrella Stainton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fbb7898e1b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 700,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocnistis citrella Stainton"
+   ],
+   "ann": {
+    "label": "Phyllocnistis citrella Stainton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f3c7e2b46d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 739,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocnistis citrella Stainton"
+   ],
+   "ann": {
+    "label": "Phyllocnistis citrella Stainton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b530a0825f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 753,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocnistis citrella Stainton"
+   ],
+   "ann": {
+    "label": "Phyllocnistis citrella Stainton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-900f7f17f2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 754,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Phyllocnistis citrella Stainton"
+   ],
+   "ann": {
+    "label": "Phyllocnistis citrella Stainton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dcba857140",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 810,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aleurocanthus spiniferus"
+   ],
+   "ann": {
+    "label": "Aleurocanthus spiniferus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-44b28e44a2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 851,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aleurocanthus spiniferus"
+   ],
+   "ann": {
+    "label": "Aleurocanthus spiniferus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-813b349a8d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 871,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aleurocanthus spiniferus"
+   ],
+   "ann": {
+    "label": "Aleurocanthus spiniferus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5b9a64c6f4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 906,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aleurocanthus spiniferus"
+   ],
+   "ann": {
+    "label": "Aleurocanthus spiniferus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7e60bca628",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 967,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Aleurocanthus spiniferus"
+   ],
+   "ann": {
+    "label": "Aleurocanthus spiniferus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09d25cf606",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1018,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf caterpillar"
+   ],
+   "ann": {
+    "label": "rice leaf caterpillar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-95b1495006",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1058,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf caterpillar"
+   ],
+   "ann": {
+    "label": "rice leaf caterpillar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-00c2a1ab12",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1111,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf caterpillar"
+   ],
+   "ann": {
+    "label": "rice leaf caterpillar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-99dfae2db2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1153,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf caterpillar"
+   ],
+   "ann": {
+    "label": "rice leaf caterpillar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9c978781d8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1159,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf caterpillar"
+   ],
+   "ann": {
+    "label": "rice leaf caterpillar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-016520e2ac",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1164,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Brevipoalpus lewisi McGregor"
+   ],
+   "ann": {
+    "label": "Brevipoalpus lewisi McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-16d1c97ae7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1166,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Brevipoalpus lewisi McGregor"
+   ],
+   "ann": {
+    "label": "Brevipoalpus lewisi McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b1274d25b2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1168,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Brevipoalpus lewisi McGregor"
+   ],
+   "ann": {
+    "label": "Brevipoalpus lewisi McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2b606c0a79",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1178,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Brevipoalpus lewisi McGregor"
+   ],
+   "ann": {
+    "label": "Brevipoalpus lewisi McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d43f2b54e8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1183,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Brevipoalpus lewisi McGregor"
+   ],
+   "ann": {
+    "label": "Brevipoalpus lewisi McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-54a3692dca",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1216,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wireworm"
+   ],
+   "ann": {
+    "label": "wireworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f51dcdb384",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1236,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wireworm"
+   ],
+   "ann": {
+    "label": "wireworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-da8584f241",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1313,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wireworm"
+   ],
+   "ann": {
+    "label": "wireworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1e0797c2ad",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1370,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wireworm"
+   ],
+   "ann": {
+    "label": "wireworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-196218d330",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1402,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wireworm"
+   ],
+   "ann": {
+    "label": "wireworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-278a6a8c58",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1457,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Bactrocera tsuneonis"
+   ],
+   "ann": {
+    "label": "Bactrocera tsuneonis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1c9ad18dcd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1459,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Bactrocera tsuneonis"
+   ],
+   "ann": {
+    "label": "Bactrocera tsuneonis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e5dfd988e3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1490,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Bactrocera tsuneonis"
+   ],
+   "ann": {
+    "label": "Bactrocera tsuneonis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dc7f461959",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1491,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Bactrocera tsuneonis"
+   ],
+   "ann": {
+    "label": "Bactrocera tsuneonis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8ccc717657",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1492,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Bactrocera tsuneonis"
+   ],
+   "ann": {
+    "label": "Bactrocera tsuneonis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e85518dc9c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 1900,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7fd5e0f0b1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2334,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4a4e63ac92",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2410,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0645daf0e2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2520,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-47ae0b6285",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2709,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "aphids"
+   ],
+   "ann": {
+    "label": "aphids"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bedba2d01e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2736,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "odontothrips loti"
+   ],
+   "ann": {
+    "label": "odontothrips loti"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b1c4067388",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2742,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "odontothrips loti"
+   ],
+   "ann": {
+    "label": "odontothrips loti"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-933f390acb",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2744,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "odontothrips loti"
+   ],
+   "ann": {
+    "label": "odontothrips loti"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-def7bf3288",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2745,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "odontothrips loti"
+   ],
+   "ann": {
+    "label": "odontothrips loti"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-80c467eb06",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2748,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "odontothrips loti"
+   ],
+   "ann": {
+    "label": "odontothrips loti"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-00064cffcd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2806,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Viteus vitifoliae"
+   ],
+   "ann": {
+    "label": "Viteus vitifoliae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-eda126327e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2823,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Viteus vitifoliae"
+   ],
+   "ann": {
+    "label": "Viteus vitifoliae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fd2a65a619",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2836,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Viteus vitifoliae"
+   ],
+   "ann": {
+    "label": "Viteus vitifoliae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d2e552b4b5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2838,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Viteus vitifoliae"
+   ],
+   "ann": {
+    "label": "Viteus vitifoliae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3515af0e64",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2853,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Viteus vitifoliae"
+   ],
+   "ann": {
+    "label": "Viteus vitifoliae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d96e4c57a8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2898,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ceroplastes rubens"
+   ],
+   "ann": {
+    "label": "Ceroplastes rubens"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a177b94854",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2920,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ceroplastes rubens"
+   ],
+   "ann": {
+    "label": "Ceroplastes rubens"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d0811d2778",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2922,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ceroplastes rubens"
+   ],
+   "ann": {
+    "label": "Ceroplastes rubens"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-822a73c240",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2936,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ceroplastes rubens"
+   ],
+   "ann": {
+    "label": "Ceroplastes rubens"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cc07786775",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2940,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Ceroplastes rubens"
+   ],
+   "ann": {
+    "label": "Ceroplastes rubens"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e1d251837f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2977,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Deporaus marginatus Pascoe"
+   ],
+   "ann": {
+    "label": "Deporaus marginatus Pascoe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d365bb1030",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2990,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Deporaus marginatus Pascoe"
+   ],
+   "ann": {
+    "label": "Deporaus marginatus Pascoe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ef2446ab89",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2994,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Deporaus marginatus Pascoe"
+   ],
+   "ann": {
+    "label": "Deporaus marginatus Pascoe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f031c4ab6e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 2996,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Deporaus marginatus Pascoe"
+   ],
+   "ann": {
+    "label": "Deporaus marginatus Pascoe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1b0dc4f168",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3024,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Deporaus marginatus Pascoe"
+   ],
+   "ann": {
+    "label": "Deporaus marginatus Pascoe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b2cc0d5504",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3041,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Erythroneura apicalis"
+   ],
+   "ann": {
+    "label": "Erythroneura apicalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-37c268cb6e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3044,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Erythroneura apicalis"
+   ],
+   "ann": {
+    "label": "Erythroneura apicalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-405617fb44",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3045,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Erythroneura apicalis"
+   ],
+   "ann": {
+    "label": "Erythroneura apicalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cb96c718d1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3051,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Erythroneura apicalis"
+   ],
+   "ann": {
+    "label": "Erythroneura apicalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-18bcda8842",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3056,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Erythroneura apicalis"
+   ],
+   "ann": {
+    "label": "Erythroneura apicalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-521a5c06d3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3079,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flea beetle"
+   ],
+   "ann": {
+    "label": "flea beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8141724283",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3099,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flea beetle"
+   ],
+   "ann": {
+    "label": "flea beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-708801d685",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3181,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flea beetle"
+   ],
+   "ann": {
+    "label": "flea beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-30261d48e3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3260,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flea beetle"
+   ],
+   "ann": {
+    "label": "flea beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9e1798ec2c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3273,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flea beetle"
+   ],
+   "ann": {
+    "label": "flea beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a3a1f041f7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3295,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Beet spot flies"
+   ],
+   "ann": {
+    "label": "Beet spot flies"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ccfaef1465",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3298,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Beet spot flies"
+   ],
+   "ann": {
+    "label": "Beet spot flies"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5277253900",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3313,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Beet spot flies"
+   ],
+   "ann": {
+    "label": "Beet spot flies"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1c47dbd52a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3342,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Beet spot flies"
+   ],
+   "ann": {
+    "label": "Beet spot flies"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b4c6078b8f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3362,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Beet spot flies"
+   ],
+   "ann": {
+    "label": "Beet spot flies"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9a285dbdb4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3389,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat phloeothrips"
+   ],
+   "ann": {
+    "label": "wheat phloeothrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09ccece87f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3416,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat phloeothrips"
+   ],
+   "ann": {
+    "label": "wheat phloeothrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0f022dab37",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3426,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat phloeothrips"
+   ],
+   "ann": {
+    "label": "wheat phloeothrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8abedbd380",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3448,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat phloeothrips"
+   ],
+   "ann": {
+    "label": "wheat phloeothrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-61fc7a2067",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3461,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat phloeothrips"
+   ],
+   "ann": {
+    "label": "wheat phloeothrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1c75c4bf97",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3472,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa weevil"
+   ],
+   "ann": {
+    "label": "alfalfa weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dacd25a6ad",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3473,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa weevil"
+   ],
+   "ann": {
+    "label": "alfalfa weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7a93a51fc0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3476,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa weevil"
+   ],
+   "ann": {
+    "label": "alfalfa weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4c1622d1df",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3514,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa weevil"
+   ],
+   "ann": {
+    "label": "alfalfa weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-80ef57b484",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3584,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa weevil"
+   ],
+   "ann": {
+    "label": "alfalfa weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bfd5941e34",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3667,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet army worm"
+   ],
+   "ann": {
+    "label": "beet army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-454044a1d4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3670,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet army worm"
+   ],
+   "ann": {
+    "label": "beet army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a6334ea430",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 3794,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet army worm"
+   ],
+   "ann": {
+    "label": "beet army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e96647ba2a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4003,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet army worm"
+   ],
+   "ann": {
+    "label": "beet army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-42cef06e0d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4071,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet army worm"
+   ],
+   "ann": {
+    "label": "beet army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9599ad2bca",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4120,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Mango flat beak leafhopper"
+   ],
+   "ann": {
+    "label": "Mango flat beak leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2cf22ff01d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4124,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Mango flat beak leafhopper"
+   ],
+   "ann": {
+    "label": "Mango flat beak leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3924623971",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4128,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Mango flat beak leafhopper"
+   ],
+   "ann": {
+    "label": "Mango flat beak leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09cae721ed",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4130,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Mango flat beak leafhopper"
+   ],
+   "ann": {
+    "label": "Mango flat beak leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-27221b1032",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4134,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Mango flat beak leafhopper"
+   ],
+   "ann": {
+    "label": "Mango flat beak leafhopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7fd998a648",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4190,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Icerya purchasi Maskell"
+   ],
+   "ann": {
+    "label": "Icerya purchasi Maskell"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ec74b71b7f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4192,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Icerya purchasi Maskell"
+   ],
+   "ann": {
+    "label": "Icerya purchasi Maskell"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6a9a2bd5cd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4207,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Icerya purchasi Maskell"
+   ],
+   "ann": {
+    "label": "Icerya purchasi Maskell"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2675970dcd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4268,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Icerya purchasi Maskell"
+   ],
+   "ann": {
+    "label": "Icerya purchasi Maskell"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5d53b631f3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4345,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Icerya purchasi Maskell"
+   ],
+   "ann": {
+    "label": "Icerya purchasi Maskell"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-37f69adfd8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4402,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Scirtothrips dorsalis Hood"
+   ],
+   "ann": {
+    "label": "Scirtothrips dorsalis Hood"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-97ad61d6ff",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4447,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Scirtothrips dorsalis Hood"
+   ],
+   "ann": {
+    "label": "Scirtothrips dorsalis Hood"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fe8513d66b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4534,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Scirtothrips dorsalis Hood"
+   ],
+   "ann": {
+    "label": "Scirtothrips dorsalis Hood"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-072a3655e2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4568,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Scirtothrips dorsalis Hood"
+   ],
+   "ann": {
+    "label": "Scirtothrips dorsalis Hood"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fba0cadde8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4571,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Scirtothrips dorsalis Hood"
+   ],
+   "ann": {
+    "label": "Scirtothrips dorsalis Hood"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-21d79752b7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4650,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow cutworm"
+   ],
+   "ann": {
+    "label": "yellow cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0b13c62b49",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4687,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow cutworm"
+   ],
+   "ann": {
+    "label": "yellow cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1fed693fa2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4689,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow cutworm"
+   ],
+   "ann": {
+    "label": "yellow cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-29c8c661f5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4728,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow cutworm"
+   ],
+   "ann": {
+    "label": "yellow cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bfbb71d32b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4730,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow cutworm"
+   ],
+   "ann": {
+    "label": "yellow cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-aa6d6ef8c8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4746,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Apolygus lucorum"
+   ],
+   "ann": {
+    "label": "Apolygus lucorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a098a1a6e9",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4777,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Apolygus lucorum"
+   ],
+   "ann": {
+    "label": "Apolygus lucorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4a9890ad5a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4798,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Apolygus lucorum"
+   ],
+   "ann": {
+    "label": "Apolygus lucorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a59c699706",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4810,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Apolygus lucorum"
+   ],
+   "ann": {
+    "label": "Apolygus lucorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5084f2e5a3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4842,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Apolygus lucorum"
+   ],
+   "ann": {
+    "label": "Apolygus lucorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ff3ecdf91d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4884,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "black cutworm"
+   ],
+   "ann": {
+    "label": "black cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7461d21f72",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4906,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "black cutworm"
+   ],
+   "ann": {
+    "label": "black cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-01c387e161",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 4993,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "black cutworm"
+   ],
+   "ann": {
+    "label": "black cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2a190b72ac",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5057,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "black cutworm"
+   ],
+   "ann": {
+    "label": "black cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-088bfe0c29",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5088,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "black cutworm"
+   ],
+   "ann": {
+    "label": "black cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-16b747f409",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5120,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Nipaecoccus vastalor"
+   ],
+   "ann": {
+    "label": "Nipaecoccus vastalor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-788f8f1a6f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5127,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Nipaecoccus vastalor"
+   ],
+   "ann": {
+    "label": "Nipaecoccus vastalor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-02fa68c07c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5128,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Nipaecoccus vastalor"
+   ],
+   "ann": {
+    "label": "Nipaecoccus vastalor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7be4eeb045",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5133,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Nipaecoccus vastalor"
+   ],
+   "ann": {
+    "label": "Nipaecoccus vastalor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-af064b30c1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5138,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Nipaecoccus vastalor"
+   ],
+   "ann": {
+    "label": "Nipaecoccus vastalor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7393c41b84",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5150,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "parathrene regalis"
+   ],
+   "ann": {
+    "label": "parathrene regalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c01f5d1634",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5153,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "parathrene regalis"
+   ],
+   "ann": {
+    "label": "parathrene regalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f703f039f7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5155,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "parathrene regalis"
+   ],
+   "ann": {
+    "label": "parathrene regalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b2852374e4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5158,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "parathrene regalis"
+   ],
+   "ann": {
+    "label": "parathrene regalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3805e7e02c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5167,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "parathrene regalis"
+   ],
+   "ann": {
+    "label": "parathrene regalis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d6445e62d0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5196,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grain spreader thrips"
+   ],
+   "ann": {
+    "label": "grain spreader thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fe93310017",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5204,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grain spreader thrips"
+   ],
+   "ann": {
+    "label": "grain spreader thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-44b40c4605",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5218,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grain spreader thrips"
+   ],
+   "ann": {
+    "label": "grain spreader thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6d6db2ef74",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5220,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grain spreader thrips"
+   ],
+   "ann": {
+    "label": "grain spreader thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-022e441f23",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5223,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grain spreader thrips"
+   ],
+   "ann": {
+    "label": "grain spreader thrips"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d881d0bb38",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5248,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice gall midge"
+   ],
+   "ann": {
+    "label": "rice gall midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-174b4f19aa",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5281,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice gall midge"
+   ],
+   "ann": {
+    "label": "rice gall midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-17592975b1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5342,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice gall midge"
+   ],
+   "ann": {
+    "label": "rice gall midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-84096d353e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5348,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice gall midge"
+   ],
+   "ann": {
+    "label": "rice gall midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-563f8d0d68",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5385,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice gall midge"
+   ],
+   "ann": {
+    "label": "rice gall midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dd7a6a5a62",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5472,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white backed plant hopper"
+   ],
+   "ann": {
+    "label": "white backed plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fe53c9b934",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5491,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white backed plant hopper"
+   ],
+   "ann": {
+    "label": "white backed plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2e23f23ba6",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5506,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white backed plant hopper"
+   ],
+   "ann": {
+    "label": "white backed plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bb3f17c0f3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5533,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white backed plant hopper"
+   ],
+   "ann": {
+    "label": "white backed plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-96a68d5d9e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5640,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white backed plant hopper"
+   ],
+   "ann": {
+    "label": "white backed plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-736e54ee06",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5800,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Prodenia litura"
+   ],
+   "ann": {
+    "label": "Prodenia litura"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-20b334316d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5801,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Prodenia litura"
+   ],
+   "ann": {
+    "label": "Prodenia litura"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-11a45db6fd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5878,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Prodenia litura"
+   ],
+   "ann": {
+    "label": "Prodenia litura"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b78354ba78",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5950,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Prodenia litura"
+   ],
+   "ann": {
+    "label": "Prodenia litura"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f96af56af0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 5964,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Prodenia litura"
+   ],
+   "ann": {
+    "label": "Prodenia litura"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-62ea72e47f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6081,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Xylotrechus"
+   ],
+   "ann": {
+    "label": "Xylotrechus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e87246a951",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6109,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Xylotrechus"
+   ],
+   "ann": {
+    "label": "Xylotrechus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0cb70e507e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6164,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Xylotrechus"
+   ],
+   "ann": {
+    "label": "Xylotrechus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-43cd5c2e20",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6239,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Xylotrechus"
+   ],
+   "ann": {
+    "label": "Xylotrechus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5e0cb95055",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6379,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Xylotrechus"
+   ],
+   "ann": {
+    "label": "Xylotrechus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f4b025f3f8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6616,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mole cricket"
+   ],
+   "ann": {
+    "label": "mole cricket"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-827c7bbdea",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6695,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mole cricket"
+   ],
+   "ann": {
+    "label": "mole cricket"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5ed47dc705",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6706,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mole cricket"
+   ],
+   "ann": {
+    "label": "mole cricket"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-05c020c133",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6784,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mole cricket"
+   ],
+   "ann": {
+    "label": "mole cricket"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c462f126bc",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6845,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "mole cricket"
+   ],
+   "ann": {
+    "label": "mole cricket"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b12d09c8e3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6892,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "oides decempunctata"
+   ],
+   "ann": {
+    "label": "oides decempunctata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c700d76872",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6918,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "oides decempunctata"
+   ],
+   "ann": {
+    "label": "oides decempunctata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f72a744622",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6930,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "oides decempunctata"
+   ],
+   "ann": {
+    "label": "oides decempunctata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3270cd8779",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6967,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "oides decempunctata"
+   ],
+   "ann": {
+    "label": "oides decempunctata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c396d0e06c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6976,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "oides decempunctata"
+   ],
+   "ann": {
+    "label": "oides decempunctata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2135d4e472",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 6979,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "paddy stem maggot"
+   ],
+   "ann": {
+    "label": "paddy stem maggot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dd06b432e3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7007,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "paddy stem maggot"
+   ],
+   "ann": {
+    "label": "paddy stem maggot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5c0c8520bd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7027,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "paddy stem maggot"
+   ],
+   "ann": {
+    "label": "paddy stem maggot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d0284b750d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7032,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "paddy stem maggot"
+   ],
+   "ann": {
+    "label": "paddy stem maggot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cc8f7ef2f4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7042,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "paddy stem maggot"
+   ],
+   "ann": {
+    "label": "paddy stem maggot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09de0d48e6",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7060,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Sternochetus frigidus"
+   ],
+   "ann": {
+    "label": "Sternochetus frigidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1c7737e300",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7082,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Sternochetus frigidus"
+   ],
+   "ann": {
+    "label": "Sternochetus frigidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cd801f3d85",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7154,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Sternochetus frigidus"
+   ],
+   "ann": {
+    "label": "Sternochetus frigidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2ad0e4daa4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7175,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Sternochetus frigidus"
+   ],
+   "ann": {
+    "label": "Sternochetus frigidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a450b794f0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7180,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Sternochetus frigidus"
+   ],
+   "ann": {
+    "label": "Sternochetus frigidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-35151f53ec",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7260,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "legume blister beetle"
+   ],
+   "ann": {
+    "label": "legume blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7055d1b9d7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7283,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "legume blister beetle"
+   ],
+   "ann": {
+    "label": "legume blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-871aa2cddc",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7429,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "legume blister beetle"
+   ],
+   "ann": {
+    "label": "legume blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3f5505a788",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7460,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "legume blister beetle"
+   ],
+   "ann": {
+    "label": "legume blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-10307beeb7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7511,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "legume blister beetle"
+   ],
+   "ann": {
+    "label": "legume blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ac37cdb8e0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7694,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "english grain aphid"
+   ],
+   "ann": {
+    "label": "english grain aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c39b360dcb",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7708,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "english grain aphid"
+   ],
+   "ann": {
+    "label": "english grain aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3b2fbe2ca2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7736,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "english grain aphid"
+   ],
+   "ann": {
+    "label": "english grain aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-30440f7e9c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7767,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "english grain aphid"
+   ],
+   "ann": {
+    "label": "english grain aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d41ef7f93c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7807,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "english grain aphid"
+   ],
+   "ann": {
+    "label": "english grain aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9aa7011bae",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7837,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Trialeurodes vaporariorum"
+   ],
+   "ann": {
+    "label": "Trialeurodes vaporariorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-16b4f36435",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7873,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Trialeurodes vaporariorum"
+   ],
+   "ann": {
+    "label": "Trialeurodes vaporariorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3a0498be50",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7933,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Trialeurodes vaporariorum"
+   ],
+   "ann": {
+    "label": "Trialeurodes vaporariorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c6d8483a4b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7981,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Trialeurodes vaporariorum"
+   ],
+   "ann": {
+    "label": "Trialeurodes vaporariorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0a0c60a43b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 7989,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Trialeurodes vaporariorum"
+   ],
+   "ann": {
+    "label": "Trialeurodes vaporariorum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d9d23315e5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8068,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Salurnis marginella Guerr"
+   ],
+   "ann": {
+    "label": "Salurnis marginella Guerr"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a3d3de1e86",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8079,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Salurnis marginella Guerr"
+   ],
+   "ann": {
+    "label": "Salurnis marginella Guerr"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-83e72500fd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8080,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Salurnis marginella Guerr"
+   ],
+   "ann": {
+    "label": "Salurnis marginella Guerr"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4fd4205254",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8140,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Salurnis marginella Guerr"
+   ],
+   "ann": {
+    "label": "Salurnis marginella Guerr"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3139199211",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8150,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Salurnis marginella Guerr"
+   ],
+   "ann": {
+    "label": "Salurnis marginella Guerr"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-64b920ff1b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8181,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sericaorient alismots chulsky"
+   ],
+   "ann": {
+    "label": "sericaorient alismots chulsky"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-80dfe4ce45",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8189,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sericaorient alismots chulsky"
+   ],
+   "ann": {
+    "label": "sericaorient alismots chulsky"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-72524d0004",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8201,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sericaorient alismots chulsky"
+   ],
+   "ann": {
+    "label": "sericaorient alismots chulsky"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-78b2751bf7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8209,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sericaorient alismots chulsky"
+   ],
+   "ann": {
+    "label": "sericaorient alismots chulsky"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-87b5ea7030",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8211,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "sericaorient alismots chulsky"
+   ],
+   "ann": {
+    "label": "sericaorient alismots chulsky"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a159483e6c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8238,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat sawfly"
+   ],
+   "ann": {
+    "label": "wheat sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4d888b29b5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8247,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat sawfly"
+   ],
+   "ann": {
+    "label": "wheat sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d6d5f590d1",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8249,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat sawfly"
+   ],
+   "ann": {
+    "label": "wheat sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7788745832",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8284,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat sawfly"
+   ],
+   "ann": {
+    "label": "wheat sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-12bfd9e89d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8294,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "wheat sawfly"
+   ],
+   "ann": {
+    "label": "wheat sawfly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1163121125",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8369,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "lytta polita"
+   ],
+   "ann": {
+    "label": "lytta polita"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-edfd47352f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8470,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "lytta polita"
+   ],
+   "ann": {
+    "label": "lytta polita"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-89cdb4cfd8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8478,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "lytta polita"
+   ],
+   "ann": {
+    "label": "lytta polita"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-89b9430311",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8481,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "lytta polita"
+   ],
+   "ann": {
+    "label": "lytta polita"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-40f44611d4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8488,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "lytta polita"
+   ],
+   "ann": {
+    "label": "lytta polita"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5c7d100815",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8550,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Papilio xuthus"
+   ],
+   "ann": {
+    "label": "Papilio xuthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e8a908dc61",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8570,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Papilio xuthus"
+   ],
+   "ann": {
+    "label": "Papilio xuthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ad2e2e8ff4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8575,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Papilio xuthus"
+   ],
+   "ann": {
+    "label": "Papilio xuthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-39e4b3d56a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8641,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Papilio xuthus"
+   ],
+   "ann": {
+    "label": "Papilio xuthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e573b52787",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8660,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Papilio xuthus"
+   ],
+   "ann": {
+    "label": "Papilio xuthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-faa7eddfcd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8666,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chrysomphalus aonidum"
+   ],
+   "ann": {
+    "label": "Chrysomphalus aonidum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d9a51e261e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8684,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chrysomphalus aonidum"
+   ],
+   "ann": {
+    "label": "Chrysomphalus aonidum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-acc52ca1cd",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8688,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chrysomphalus aonidum"
+   ],
+   "ann": {
+    "label": "Chrysomphalus aonidum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a51e6e8a92",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8699,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chrysomphalus aonidum"
+   ],
+   "ann": {
+    "label": "Chrysomphalus aonidum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7b70e267a7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8703,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chrysomphalus aonidum"
+   ],
+   "ann": {
+    "label": "Chrysomphalus aonidum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-da1d95521c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8737,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chlumetia transversa"
+   ],
+   "ann": {
+    "label": "Chlumetia transversa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3f91bf76e0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8743,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chlumetia transversa"
+   ],
+   "ann": {
+    "label": "Chlumetia transversa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1ace7845d4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8753,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chlumetia transversa"
+   ],
+   "ann": {
+    "label": "Chlumetia transversa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7dd7056a3c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8774,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chlumetia transversa"
+   ],
+   "ann": {
+    "label": "Chlumetia transversa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3cbf11271e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8790,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Chlumetia transversa"
+   ],
+   "ann": {
+    "label": "Chlumetia transversa"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-604c18dabf",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8833,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "meadow moth"
+   ],
+   "ann": {
+    "label": "meadow moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2a62497088",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8855,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "meadow moth"
+   ],
+   "ann": {
+    "label": "meadow moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-706d9a81ec",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8887,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "meadow moth"
+   ],
+   "ann": {
+    "label": "meadow moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-974d9fdc5d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8891,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "meadow moth"
+   ],
+   "ann": {
+    "label": "meadow moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3b29aaecc9",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8895,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "meadow moth"
+   ],
+   "ann": {
+    "label": "meadow moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-759926f9b7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8911,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet fly"
+   ],
+   "ann": {
+    "label": "beet fly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f00ff0cc58",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8913,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet fly"
+   ],
+   "ann": {
+    "label": "beet fly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-54fe4218e0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8917,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet fly"
+   ],
+   "ann": {
+    "label": "beet fly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ba3ed31811",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8921,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet fly"
+   ],
+   "ann": {
+    "label": "beet fly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-49eb13571c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8928,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet fly"
+   ],
+   "ann": {
+    "label": "beet fly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-daa3d9b3e7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8953,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dacus dorsalis(Hendel)"
+   ],
+   "ann": {
+    "label": "Dacus dorsalis(Hendel)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-73be66bd9b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8968,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dacus dorsalis(Hendel)"
+   ],
+   "ann": {
+    "label": "Dacus dorsalis(Hendel)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-26276e36ad",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 8971,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dacus dorsalis(Hendel)"
+   ],
+   "ann": {
+    "label": "Dacus dorsalis(Hendel)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-79dcb01f19",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9012,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dacus dorsalis(Hendel)"
+   ],
+   "ann": {
+    "label": "Dacus dorsalis(Hendel)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1752bffb5e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9055,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dacus dorsalis(Hendel)"
+   ],
+   "ann": {
+    "label": "Dacus dorsalis(Hendel)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1b132351e5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9070,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white margined moth"
+   ],
+   "ann": {
+    "label": "white margined moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3afc4f4461",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9079,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white margined moth"
+   ],
+   "ann": {
+    "label": "white margined moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-682b2f1d69",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9097,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white margined moth"
+   ],
+   "ann": {
+    "label": "white margined moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b7f82f98fa",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9101,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white margined moth"
+   ],
+   "ann": {
+    "label": "white margined moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09c2cb2c41",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9104,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "white margined moth"
+   ],
+   "ann": {
+    "label": "white margined moth"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-734a34002d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9142,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Colomerus vitis"
+   ],
+   "ann": {
+    "label": "Colomerus vitis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bf64cbad1a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9145,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Colomerus vitis"
+   ],
+   "ann": {
+    "label": "Colomerus vitis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c92839275b",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9151,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Colomerus vitis"
+   ],
+   "ann": {
+    "label": "Colomerus vitis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0076ec8fcb",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9154,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Colomerus vitis"
+   ],
+   "ann": {
+    "label": "Colomerus vitis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fc68f665e3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9155,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Colomerus vitis"
+   ],
+   "ann": {
+    "label": "Colomerus vitis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4bf3f380b6",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9284,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf roller"
+   ],
+   "ann": {
+    "label": "rice leaf roller"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ab4b12eca2",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9364,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf roller"
+   ],
+   "ann": {
+    "label": "rice leaf roller"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9e4162872a",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9381,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf roller"
+   ],
+   "ann": {
+    "label": "rice leaf roller"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b9ab799588",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9434,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf roller"
+   ],
+   "ann": {
+    "label": "rice leaf roller"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a08a8d59cf",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9453,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice leaf roller"
+   ],
+   "ann": {
+    "label": "rice leaf roller"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9737afce1e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9511,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Limacodidae"
+   ],
+   "ann": {
+    "label": "Limacodidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a10110b615",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9524,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Limacodidae"
+   ],
+   "ann": {
+    "label": "Limacodidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c943a34f70",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9819,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Limacodidae"
+   ],
+   "ann": {
+    "label": "Limacodidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-87ede81678",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9844,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Limacodidae"
+   ],
+   "ann": {
+    "label": "Limacodidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7f003a9c65",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9871,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Limacodidae"
+   ],
+   "ann": {
+    "label": "Limacodidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d3e16232fb",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9922,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "therioaphis maculata Buckton"
+   ],
+   "ann": {
+    "label": "therioaphis maculata Buckton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-02c47c47ba",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9939,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "therioaphis maculata Buckton"
+   ],
+   "ann": {
+    "label": "therioaphis maculata Buckton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5e7955012c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9952,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "therioaphis maculata Buckton"
+   ],
+   "ann": {
+    "label": "therioaphis maculata Buckton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-969934945c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9970,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "therioaphis maculata Buckton"
+   ],
+   "ann": {
+    "label": "therioaphis maculata Buckton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1ed2822c2c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 9995,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "therioaphis maculata Buckton"
+   ],
+   "ann": {
+    "label": "therioaphis maculata Buckton"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4222541fd3",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10011,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Potosiabre vitarsis"
+   ],
+   "ann": {
+    "label": "Potosiabre vitarsis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dd3cf5536f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10025,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Potosiabre vitarsis"
+   ],
+   "ann": {
+    "label": "Potosiabre vitarsis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-786178727c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10050,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Potosiabre vitarsis"
+   ],
+   "ann": {
+    "label": "Potosiabre vitarsis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c0104f12d8",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10098,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Potosiabre vitarsis"
+   ],
+   "ann": {
+    "label": "Potosiabre vitarsis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-99cc5f8733",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10106,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Potosiabre vitarsis"
+   ],
+   "ann": {
+    "label": "Potosiabre vitarsis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fd9bf19ae7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10168,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "green bug"
+   ],
+   "ann": {
+    "label": "green bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9b655b100f",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10180,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "green bug"
+   ],
+   "ann": {
+    "label": "green bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ae88e6d30d",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10203,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "green bug"
+   ],
+   "ann": {
+    "label": "green bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-707add2ef5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10225,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "green bug"
+   ],
+   "ann": {
+    "label": "green bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-29362576f4",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10248,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "green bug"
+   ],
+   "ann": {
+    "label": "green bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f0957e1ab0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10363,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "corn borer"
+   ],
+   "ann": {
+    "label": "corn borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-cf35a2842c",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10433,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "corn borer"
+   ],
+   "ann": {
+    "label": "corn borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1b708872d7",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10434,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "corn borer"
+   ],
+   "ann": {
+    "label": "corn borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-35c18dd7fa",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10660,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "corn borer"
+   ],
+   "ann": {
+    "label": "corn borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1aec267551",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 10668,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "corn borer"
+   ],
+   "ann": {
+    "label": "corn borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4c8d085185",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa seed chalcid"
+   ],
+   "ann": {
+    "label": "alfalfa seed chalcid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6a9b019658",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa seed chalcid"
+   ],
+   "ann": {
+    "label": "alfalfa seed chalcid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-39796cc999",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa seed chalcid"
+   ],
+   "ann": {
+    "label": "alfalfa seed chalcid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-da4d74e5ca",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa seed chalcid"
+   ],
+   "ann": {
+    "label": "alfalfa seed chalcid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3c0b11f0c0",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa seed chalcid"
+   ],
+   "ann": {
+    "label": "alfalfa seed chalcid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e0fa297cda",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Tetradacus c Bactrocera minax"
+   ],
+   "ann": {
+    "label": "Tetradacus c Bactrocera minax"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-147639632c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Tetradacus c Bactrocera minax"
+   ],
+   "ann": {
+    "label": "Tetradacus c Bactrocera minax"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e1614e6ee2",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Tetradacus c Bactrocera minax"
+   ],
+   "ann": {
+    "label": "Tetradacus c Bactrocera minax"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8819e06067",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Tetradacus c Bactrocera minax"
+   ],
+   "ann": {
+    "label": "Tetradacus c Bactrocera minax"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5d6cc17653",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Tetradacus c Bactrocera minax"
+   ],
+   "ann": {
+    "label": "Tetradacus c Bactrocera minax"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-68a79c60d3",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 519,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lycorma delicatula"
+   ],
+   "ann": {
+    "label": "Lycorma delicatula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-29f2d68579",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 642,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lycorma delicatula"
+   ],
+   "ann": {
+    "label": "Lycorma delicatula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5c13aae31a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 721,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lycorma delicatula"
+   ],
+   "ann": {
+    "label": "Lycorma delicatula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-495d8738b9",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1431,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lycorma delicatula"
+   ],
+   "ann": {
+    "label": "Lycorma delicatula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d92ea2c2b7",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1518,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lycorma delicatula"
+   ],
+   "ann": {
+    "label": "Lycorma delicatula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1ae55616e8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1812,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice water weevil"
+   ],
+   "ann": {
+    "label": "rice water weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-719d918065",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1824,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice water weevil"
+   ],
+   "ann": {
+    "label": "rice water weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ce117d9689",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1846,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice water weevil"
+   ],
+   "ann": {
+    "label": "rice water weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-606e8d7227",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 1985,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice water weevil"
+   ],
+   "ann": {
+    "label": "rice water weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8d544d0369",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2033,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice water weevil"
+   ],
+   "ann": {
+    "label": "rice water weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3f40281fa6",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2060,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera citricidus"
+   ],
+   "ann": {
+    "label": "Toxoptera citricidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f7c7177709",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera citricidus"
+   ],
+   "ann": {
+    "label": "Toxoptera citricidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-70a70eaed9",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2067,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera citricidus"
+   ],
+   "ann": {
+    "label": "Toxoptera citricidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-564698f426",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2100,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera citricidus"
+   ],
+   "ann": {
+    "label": "Toxoptera citricidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-937748d2d9",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2104,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera citricidus"
+   ],
+   "ann": {
+    "label": "Toxoptera citricidus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b64c8f46ac",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2182,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "brown plant hopper"
+   ],
+   "ann": {
+    "label": "brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-95e0612f6e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2189,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "brown plant hopper"
+   ],
+   "ann": {
+    "label": "brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b5fa2ceabd",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2243,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "brown plant hopper"
+   ],
+   "ann": {
+    "label": "brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9c41f36aff",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2296,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "brown plant hopper"
+   ],
+   "ann": {
+    "label": "brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fbfcb757a4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2317,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "brown plant hopper"
+   ],
+   "ann": {
+    "label": "brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-782087272b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2369,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "penthaleus major"
+   ],
+   "ann": {
+    "label": "penthaleus major"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f1a073c335",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2384,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "penthaleus major"
+   ],
+   "ann": {
+    "label": "penthaleus major"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-726f34647c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2386,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "penthaleus major"
+   ],
+   "ann": {
+    "label": "penthaleus major"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-416aa806a3",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2394,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "penthaleus major"
+   ],
+   "ann": {
+    "label": "penthaleus major"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8a2519a694",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2416,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "penthaleus major"
+   ],
+   "ann": {
+    "label": "penthaleus major"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8ea914aed4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2490,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa plant bug"
+   ],
+   "ann": {
+    "label": "alfalfa plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-08c4fbb6e8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2516,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa plant bug"
+   ],
+   "ann": {
+    "label": "alfalfa plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f389d29550",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2539,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa plant bug"
+   ],
+   "ann": {
+    "label": "alfalfa plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d5fac649e5",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2594,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa plant bug"
+   ],
+   "ann": {
+    "label": "alfalfa plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dcd30a0174",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2615,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "alfalfa plant bug"
+   ],
+   "ann": {
+    "label": "alfalfa plant bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2340b48210",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2653,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Panonchus citri McGregor"
+   ],
+   "ann": {
+    "label": "Panonchus citri McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5977e710ee",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2666,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Panonchus citri McGregor"
+   ],
+   "ann": {
+    "label": "Panonchus citri McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2aa09eb51c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2691,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Panonchus citri McGregor"
+   ],
+   "ann": {
+    "label": "Panonchus citri McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6845edc89e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2720,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Panonchus citri McGregor"
+   ],
+   "ann": {
+    "label": "Panonchus citri McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-689e3d1ce1",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2741,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Panonchus citri McGregor"
+   ],
+   "ann": {
+    "label": "Panonchus citri McGregor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d6ac658f4c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2745,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera aurantii"
+   ],
+   "ann": {
+    "label": "Toxoptera aurantii"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0d56a32d67",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2769,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera aurantii"
+   ],
+   "ann": {
+    "label": "Toxoptera aurantii"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8e25d1c004",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2787,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera aurantii"
+   ],
+   "ann": {
+    "label": "Toxoptera aurantii"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b499da0bd1",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2799,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera aurantii"
+   ],
+   "ann": {
+    "label": "Toxoptera aurantii"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2315cebd07",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2801,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Toxoptera aurantii"
+   ],
+   "ann": {
+    "label": "Toxoptera aurantii"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ffbc8bbc61",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2867,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lawana imitata Melichar"
+   ],
+   "ann": {
+    "label": "Lawana imitata Melichar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d52baa6053",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2883,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lawana imitata Melichar"
+   ],
+   "ann": {
+    "label": "Lawana imitata Melichar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ad2193515f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2905,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lawana imitata Melichar"
+   ],
+   "ann": {
+    "label": "Lawana imitata Melichar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a0c6e8c91e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2907,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lawana imitata Melichar"
+   ],
+   "ann": {
+    "label": "Lawana imitata Melichar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-98c25836fc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 2916,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Lawana imitata Melichar"
+   ],
+   "ann": {
+    "label": "Lawana imitata Melichar"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3b8a7a5f6e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4039,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Miridae"
+   ],
+   "ann": {
+    "label": "Miridae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c2173e3155",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4109,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Miridae"
+   ],
+   "ann": {
+    "label": "Miridae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bd9432629a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4145,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Miridae"
+   ],
+   "ann": {
+    "label": "Miridae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0ee67e130d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4262,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Miridae"
+   ],
+   "ann": {
+    "label": "Miridae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9b15d41525",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4373,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Miridae"
+   ],
+   "ann": {
+    "label": "Miridae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3dea4623e5",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4544,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Locustoidea"
+   ],
+   "ann": {
+    "label": "Locustoidea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bec0ca3386",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4695,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Locustoidea"
+   ],
+   "ann": {
+    "label": "Locustoidea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bbcf345328",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4730,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Locustoidea"
+   ],
+   "ann": {
+    "label": "Locustoidea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-46a0b9fdfb",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4760,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Locustoidea"
+   ],
+   "ann": {
+    "label": "Locustoidea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-69a9a1751b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4893,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Locustoidea"
+   ],
+   "ann": {
+    "label": "Locustoidea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-43f369983a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4934,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cerodonta denticornis"
+   ],
+   "ann": {
+    "label": "cerodonta denticornis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4a9cf8f5cf",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4957,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cerodonta denticornis"
+   ],
+   "ann": {
+    "label": "cerodonta denticornis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dfde3f8d10",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4961,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cerodonta denticornis"
+   ],
+   "ann": {
+    "label": "cerodonta denticornis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a6c312dcba",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4971,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cerodonta denticornis"
+   ],
+   "ann": {
+    "label": "cerodonta denticornis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d9494967fb",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4972,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cerodonta denticornis"
+   ],
+   "ann": {
+    "label": "cerodonta denticornis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-a0fbc1c601",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 4999,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet weevil"
+   ],
+   "ann": {
+    "label": "beet weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0fb32f24dc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5013,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet weevil"
+   ],
+   "ann": {
+    "label": "beet weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b9b7eef303",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5038,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet weevil"
+   ],
+   "ann": {
+    "label": "beet weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4027f2747b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5043,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet weevil"
+   ],
+   "ann": {
+    "label": "beet weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c7773c1559",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5059,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "beet weevil"
+   ],
+   "ann": {
+    "label": "beet weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-33bbe91903",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5080,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "asiatic rice borer"
+   ],
+   "ann": {
+    "label": "asiatic rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ab28402a06",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5114,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "asiatic rice borer"
+   ],
+   "ann": {
+    "label": "asiatic rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2ca0cc311d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5117,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "asiatic rice borer"
+   ],
+   "ann": {
+    "label": "asiatic rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-217b22a9da",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5129,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "asiatic rice borer"
+   ],
+   "ann": {
+    "label": "asiatic rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0b46d3b069",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5250,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "asiatic rice borer"
+   ],
+   "ann": {
+    "label": "asiatic rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d139c8bb0e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5382,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Polyphagotars onemus latus"
+   ],
+   "ann": {
+    "label": "Polyphagotars onemus latus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-40373320ba",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5388,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Polyphagotars onemus latus"
+   ],
+   "ann": {
+    "label": "Polyphagotars onemus latus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9a9cce6da0",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5395,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Polyphagotars onemus latus"
+   ],
+   "ann": {
+    "label": "Polyphagotars onemus latus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f9bbe7c39a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5401,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Polyphagotars onemus latus"
+   ],
+   "ann": {
+    "label": "Polyphagotars onemus latus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b9d13e38ec",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5405,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Polyphagotars onemus latus"
+   ],
+   "ann": {
+    "label": "Polyphagotars onemus latus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ea2f72a4ad",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5436,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grub"
+   ],
+   "ann": {
+    "label": "grub"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bb178c37e0",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5446,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grub"
+   ],
+   "ann": {
+    "label": "grub"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f2b4079e99",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5502,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grub"
+   ],
+   "ann": {
+    "label": "grub"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0d8b07a763",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5562,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grub"
+   ],
+   "ann": {
+    "label": "grub"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9ce3441999",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5610,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "grub"
+   ],
+   "ann": {
+    "label": "grub"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9ec868b2a7",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5676,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Adristyrannus"
+   ],
+   "ann": {
+    "label": "Adristyrannus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9829ce201c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5705,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Adristyrannus"
+   ],
+   "ann": {
+    "label": "Adristyrannus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-00a7468b88",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5718,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Adristyrannus"
+   ],
+   "ann": {
+    "label": "Adristyrannus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e6dde7f5b8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5747,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Adristyrannus"
+   ],
+   "ann": {
+    "label": "Adristyrannus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ac2feeecac",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5759,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Adristyrannus"
+   ],
+   "ann": {
+    "label": "Adristyrannus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-950e0dc8ee",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5804,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadella viridis"
+   ],
+   "ann": {
+    "label": "Cicadella viridis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2d655bf9f6",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5807,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadella viridis"
+   ],
+   "ann": {
+    "label": "Cicadella viridis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ed75360ff0",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5924,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadella viridis"
+   ],
+   "ann": {
+    "label": "Cicadella viridis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-821a0e9713",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 5935,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadella viridis"
+   ],
+   "ann": {
+    "label": "Cicadella viridis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-57776791cc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6056,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadella viridis"
+   ],
+   "ann": {
+    "label": "Cicadella viridis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-200f84a796",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6164,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "small brown plant hopper"
+   ],
+   "ann": {
+    "label": "small brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-126ef1ef6e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6198,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "small brown plant hopper"
+   ],
+   "ann": {
+    "label": "small brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4a1d51fe69",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6209,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "small brown plant hopper"
+   ],
+   "ann": {
+    "label": "small brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2ae194c92b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6290,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "small brown plant hopper"
+   ],
+   "ann": {
+    "label": "small brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-814a0e11d9",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6291,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "small brown plant hopper"
+   ],
+   "ann": {
+    "label": "small brown plant hopper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0420d97132",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6321,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadellidae"
+   ],
+   "ann": {
+    "label": "Cicadellidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-00a0739464",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 6890,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadellidae"
+   ],
+   "ann": {
+    "label": "Cicadellidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f88de7467c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 7198,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadellidae"
+   ],
+   "ann": {
+    "label": "Cicadellidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e9d855cd96",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 7447,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadellidae"
+   ],
+   "ann": {
+    "label": "Cicadellidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d7ef18527b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 7964,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Cicadellidae"
+   ],
+   "ann": {
+    "label": "Cicadellidae"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0dc262155a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8033,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "peach borer"
+   ],
+   "ann": {
+    "label": "peach borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-eb2e5086c2",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8136,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "peach borer"
+   ],
+   "ann": {
+    "label": "peach borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-1e8b832f7f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8152,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "peach borer"
+   ],
+   "ann": {
+    "label": "peach borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-07b72fbb5f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8169,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "peach borer"
+   ],
+   "ann": {
+    "label": "peach borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-c2626845a7",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8185,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "peach borer"
+   ],
+   "ann": {
+    "label": "peach borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-8fe985e6c2",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8242,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "blister beetle"
+   ],
+   "ann": {
+    "label": "blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ae8a30fc92",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8435,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "blister beetle"
+   ],
+   "ann": {
+    "label": "blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2bc2e3463a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8598,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "blister beetle"
+   ],
+   "ann": {
+    "label": "blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-3aed1ec099",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8628,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "blister beetle"
+   ],
+   "ann": {
+    "label": "blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7cdc8a3f1a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8664,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "blister beetle"
+   ],
+   "ann": {
+    "label": "blister beetle"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dfcca5f589",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8830,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pieris canidia"
+   ],
+   "ann": {
+    "label": "Pieris canidia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-2a65c228f8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8844,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pieris canidia"
+   ],
+   "ann": {
+    "label": "Pieris canidia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b67867c630",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8867,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pieris canidia"
+   ],
+   "ann": {
+    "label": "Pieris canidia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-12f1d8daed",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8882,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pieris canidia"
+   ],
+   "ann": {
+    "label": "Pieris canidia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-01b13d540b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8923,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pieris canidia"
+   ],
+   "ann": {
+    "label": "Pieris canidia"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4f28bd20bd",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 8986,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "red spider"
+   ],
+   "ann": {
+    "label": "red spider"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5e1d2a82c3",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9011,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "red spider"
+   ],
+   "ann": {
+    "label": "red spider"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d5770cf537",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9083,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "red spider"
+   ],
+   "ann": {
+    "label": "red spider"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7e9b5c2c37",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9085,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "red spider"
+   ],
+   "ann": {
+    "label": "red spider"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ceb6e5a299",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9088,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "red spider"
+   ],
+   "ann": {
+    "label": "red spider"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e7543cce8e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9130,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow rice borer"
+   ],
+   "ann": {
+    "label": "yellow rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-62c08e6cbb",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9192,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow rice borer"
+   ],
+   "ann": {
+    "label": "yellow rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-db945a8b3f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9218,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow rice borer"
+   ],
+   "ann": {
+    "label": "yellow rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6710062257",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9222,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow rice borer"
+   ],
+   "ann": {
+    "label": "yellow rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-11445bb691",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9250,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "yellow rice borer"
+   ],
+   "ann": {
+    "label": "yellow rice borer"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-d66ac8b621",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9285,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice shell pest"
+   ],
+   "ann": {
+    "label": "rice shell pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-023bb8f44d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9327,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice shell pest"
+   ],
+   "ann": {
+    "label": "rice shell pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f097855e7e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9344,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice shell pest"
+   ],
+   "ann": {
+    "label": "rice shell pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0c1850e7e4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9350,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice shell pest"
+   ],
+   "ann": {
+    "label": "rice shell pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0128b39ae1",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9380,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "rice shell pest"
+   ],
+   "ann": {
+    "label": "rice shell pest"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-4bd396b63a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9389,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pseudococcus comstocki Kuwana"
+   ],
+   "ann": {
+    "label": "Pseudococcus comstocki Kuwana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-26e95c1e77",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9404,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pseudococcus comstocki Kuwana"
+   ],
+   "ann": {
+    "label": "Pseudococcus comstocki Kuwana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-bc1a3bc755",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9421,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pseudococcus comstocki Kuwana"
+   ],
+   "ann": {
+    "label": "Pseudococcus comstocki Kuwana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7080d01acc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9433,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pseudococcus comstocki Kuwana"
+   ],
+   "ann": {
+    "label": "Pseudococcus comstocki Kuwana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-335d8161fe",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9442,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Pseudococcus comstocki Kuwana"
+   ],
+   "ann": {
+    "label": "Pseudococcus comstocki Kuwana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b0a25248c0",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9483,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "large cutworm"
+   ],
+   "ann": {
+    "label": "large cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-23ed8e968e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9506,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "large cutworm"
+   ],
+   "ann": {
+    "label": "large cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-027fee5bf2",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9507,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "large cutworm"
+   ],
+   "ann": {
+    "label": "large cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b5e69d142d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9548,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "large cutworm"
+   ],
+   "ann": {
+    "label": "large cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dd96c662a8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9564,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "large cutworm"
+   ],
+   "ann": {
+    "label": "large cutworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-094b4761c8",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9630,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Parlatoria zizyphus Lucus"
+   ],
+   "ann": {
+    "label": "Parlatoria zizyphus Lucus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6128d3110c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9631,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Parlatoria zizyphus Lucus"
+   ],
+   "ann": {
+    "label": "Parlatoria zizyphus Lucus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-76e322e84e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9635,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Parlatoria zizyphus Lucus"
+   ],
+   "ann": {
+    "label": "Parlatoria zizyphus Lucus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fb8e8bf596",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9640,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Parlatoria zizyphus Lucus"
+   ],
+   "ann": {
+    "label": "Parlatoria zizyphus Lucus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-dc18f2bc5e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9641,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Parlatoria zizyphus Lucus"
+   ],
+   "ann": {
+    "label": "Parlatoria zizyphus Lucus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ba27e99d75",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9721,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cabbage army worm"
+   ],
+   "ann": {
+    "label": "cabbage army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9363052500",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9743,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cabbage army worm"
+   ],
+   "ann": {
+    "label": "cabbage army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ed79157364",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9825,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cabbage army worm"
+   ],
+   "ann": {
+    "label": "cabbage army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-44db624ba6",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9869,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cabbage army worm"
+   ],
+   "ann": {
+    "label": "cabbage army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-87876b13e7",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9903,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "cabbage army worm"
+   ],
+   "ann": {
+    "label": "cabbage army worm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-80f3d3811f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9936,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flax budworm"
+   ],
+   "ann": {
+    "label": "flax budworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-f707ca7c67",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 9954,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flax budworm"
+   ],
+   "ann": {
+    "label": "flax budworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-fc9177cdf1",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10031,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flax budworm"
+   ],
+   "ann": {
+    "label": "flax budworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-32848e9513",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10110,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flax budworm"
+   ],
+   "ann": {
+    "label": "flax budworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-24d319f28a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10209,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "flax budworm"
+   ],
+   "ann": {
+    "label": "flax budworm"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-598f39b479",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10235,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "longlegged spider mite"
+   ],
+   "ann": {
+    "label": "longlegged spider mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-7c9804f5e5",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10247,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "longlegged spider mite"
+   ],
+   "ann": {
+    "label": "longlegged spider mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-87c376c2a4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10274,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "longlegged spider mite"
+   ],
+   "ann": {
+    "label": "longlegged spider mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-6885e1c051",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10277,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "longlegged spider mite"
+   ],
+   "ann": {
+    "label": "longlegged spider mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-03d5dcaf72",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10300,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "longlegged spider mite"
+   ],
+   "ann": {
+    "label": "longlegged spider mite"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b7b7ee82dd",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10310,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dasineura sp"
+   ],
+   "ann": {
+    "label": "Dasineura sp"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0cead39bcd",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10347,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dasineura sp"
+   ],
+   "ann": {
+    "label": "Dasineura sp"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e3307484ec",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10352,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dasineura sp"
+   ],
+   "ann": {
+    "label": "Dasineura sp"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-24be1ea669",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10372,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dasineura sp"
+   ],
+   "ann": {
+    "label": "Dasineura sp"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b5b80c8f08",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10428,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Dasineura sp"
+   ],
+   "ann": {
+    "label": "Dasineura sp"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-0c97f0a50b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10464,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rhytidodera bowrinii white"
+   ],
+   "ann": {
+    "label": "Rhytidodera bowrinii white"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-9342506e2e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10467,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rhytidodera bowrinii white"
+   ],
+   "ann": {
+    "label": "Rhytidodera bowrinii white"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ee8fbc69c4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10482,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rhytidodera bowrinii white"
+   ],
+   "ann": {
+    "label": "Rhytidodera bowrinii white"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-b61b558b09",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10583,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rhytidodera bowrinii white"
+   ],
+   "ann": {
+    "label": "Rhytidodera bowrinii white"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-5bfcabe8b6",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10593,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Rhytidodera bowrinii white"
+   ],
+   "ann": {
+    "label": "Rhytidodera bowrinii white"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-e9aa0ff49e",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10666,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Unaspis yanonensis"
+   ],
+   "ann": {
+    "label": "Unaspis yanonensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-ed51d5aa23",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10669,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Unaspis yanonensis"
+   ],
+   "ann": {
+    "label": "Unaspis yanonensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-16d02d66c4",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10673,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Unaspis yanonensis"
+   ],
+   "ann": {
+    "label": "Unaspis yanonensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-984239255d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10704,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Unaspis yanonensis"
+   ],
+   "ann": {
+    "label": "Unaspis yanonensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "CT_PestNet_crop_pest_classification-09f96ce4b9",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 10707,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "Unaspis yanonensis"
+   ],
+   "ann": {
+    "label": "Unaspis yanonensis"
+   },
+   "strata": {}
+  }
+ ]
+}

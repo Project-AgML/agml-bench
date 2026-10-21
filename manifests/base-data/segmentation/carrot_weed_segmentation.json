@@ -1,0 +1,135 @@
+{
+ "name": "carrot_weed_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/carrot_weed_segmentation",
+ "hf_sha": "d0a15bddb7842dc009434acd8aa0c6a05d8a4683",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-20T21:45:12+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0,0,0": "0,0,0",
+   "0,0,255": "0,0,255",
+   "255,0,0": "255,0,0",
+   "255,0,255": "255,0,255"
+  },
+  "indexed_rows": 20
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "carrot_weed_segmentation-331fbff4cf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,0,0",
+    "0,0,255",
+    "255,0,0"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,0,0",
+     "0,0,255",
+     "255,0,0"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "carrot_weed_segmentation-0bc86e5f66",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,0,0",
+    "0,0,255",
+    "255,0,0"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,0,0",
+     "0,0,255",
+     "255,0,0"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "carrot_weed_segmentation-adafdcec4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,0,0",
+    "0,0,255",
+    "255,0,0"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,0,0",
+     "0,0,255",
+     "255,0,0"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "carrot_weed_segmentation-92f135cdfb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,0,0",
+    "0,0,255",
+    "255,0,0"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,0,0",
+     "0,0,255",
+     "255,0,0"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "carrot_weed_segmentation-89c4ae02bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,0,0",
+    "0,0,255",
+    "255,0,0",
+    "255,0,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,0,0",
+     "0,0,255",
+     "255,0,0",
+     "255,0,255"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

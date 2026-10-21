@@ -1,0 +1,910 @@
+{
+ "name": "tropical_forest_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/tropical_forest_classification",
+ "hf_sha": "1f1ea84844611d7f41357879321acd65beb7afa2",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:46:45+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Campnosperma panamensis",
+   "Cedrela Odorata",
+   "Cedrelinga cateniformis",
+   "Cordia alliodora",
+   "Cupresus Lusitanica",
+   "Dialyanthera gracilipes",
+   "Eucalyptus globulus",
+   "Fraxinus uhdei",
+   "Handroanthus chrysanthus",
+   "Humiriastrum procerum",
+   "Pinus patula"
+  ],
+  "indexed_rows": 10795
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tropical_forest_classification-9b532bbf5b",
+   "ref": {
+    "file": "raw/train-00000-of-00016.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Campnosperma panamensis"
+   ],
+   "ann": {
+    "label": "Campnosperma panamensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-0036ac8c9e",
+   "ref": {
+    "file": "raw/train-00000-of-00016.parquet",
+    "row": 66,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Campnosperma panamensis"
+   ],
+   "ann": {
+    "label": "Campnosperma panamensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-f7720a98e4",
+   "ref": {
+    "file": "raw/train-00000-of-00016.parquet",
+    "row": 115,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Campnosperma panamensis"
+   ],
+   "ann": {
+    "label": "Campnosperma panamensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-824c52c6fd",
+   "ref": {
+    "file": "raw/train-00000-of-00016.parquet",
+    "row": 559,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Campnosperma panamensis"
+   ],
+   "ann": {
+    "label": "Campnosperma panamensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-d4c36fdf19",
+   "ref": {
+    "file": "raw/train-00001-of-00016.parquet",
+    "row": 67,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Campnosperma panamensis"
+   ],
+   "ann": {
+    "label": "Campnosperma panamensis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-e26b096a2b",
+   "ref": {
+    "file": "raw/train-00001-of-00016.parquet",
+    "row": 208,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrela Odorata"
+   ],
+   "ann": {
+    "label": "Cedrela Odorata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-975c8b5f3e",
+   "ref": {
+    "file": "raw/train-00001-of-00016.parquet",
+    "row": 465,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrela Odorata"
+   ],
+   "ann": {
+    "label": "Cedrela Odorata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-f1d43a7843",
+   "ref": {
+    "file": "raw/train-00001-of-00016.parquet",
+    "row": 546,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrela Odorata"
+   ],
+   "ann": {
+    "label": "Cedrela Odorata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-70e49dbdfc",
+   "ref": {
+    "file": "raw/train-00002-of-00016.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrela Odorata"
+   ],
+   "ann": {
+    "label": "Cedrela Odorata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-e0efccf4a8",
+   "ref": {
+    "file": "raw/train-00002-of-00016.parquet",
+    "row": 355,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrela Odorata"
+   ],
+   "ann": {
+    "label": "Cedrela Odorata"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-f4a173d56e",
+   "ref": {
+    "file": "raw/train-00003-of-00016.parquet",
+    "row": 191,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrelinga cateniformis"
+   ],
+   "ann": {
+    "label": "Cedrelinga cateniformis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6bcd2a05e7",
+   "ref": {
+    "file": "raw/train-00003-of-00016.parquet",
+    "row": 226,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrelinga cateniformis"
+   ],
+   "ann": {
+    "label": "Cedrelinga cateniformis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-87d9cfdcd4",
+   "ref": {
+    "file": "raw/train-00003-of-00016.parquet",
+    "row": 613,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrelinga cateniformis"
+   ],
+   "ann": {
+    "label": "Cedrelinga cateniformis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-3f068b09a5",
+   "ref": {
+    "file": "raw/train-00004-of-00016.parquet",
+    "row": 181,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrelinga cateniformis"
+   ],
+   "ann": {
+    "label": "Cedrelinga cateniformis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-75830aceda",
+   "ref": {
+    "file": "raw/train-00004-of-00016.parquet",
+    "row": 226,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cedrelinga cateniformis"
+   ],
+   "ann": {
+    "label": "Cedrelinga cateniformis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-43c0203ef7",
+   "ref": {
+    "file": "raw/train-00005-of-00016.parquet",
+    "row": 100,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cordia alliodora"
+   ],
+   "ann": {
+    "label": "Cordia alliodora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6b88002327",
+   "ref": {
+    "file": "raw/train-00005-of-00016.parquet",
+    "row": 153,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cordia alliodora"
+   ],
+   "ann": {
+    "label": "Cordia alliodora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-d80228abd1",
+   "ref": {
+    "file": "raw/train-00005-of-00016.parquet",
+    "row": 280,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cordia alliodora"
+   ],
+   "ann": {
+    "label": "Cordia alliodora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-77550c8da6",
+   "ref": {
+    "file": "raw/train-00005-of-00016.parquet",
+    "row": 324,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cordia alliodora"
+   ],
+   "ann": {
+    "label": "Cordia alliodora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-10723c94e9",
+   "ref": {
+    "file": "raw/train-00005-of-00016.parquet",
+    "row": 390,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cordia alliodora"
+   ],
+   "ann": {
+    "label": "Cordia alliodora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6d06859b75",
+   "ref": {
+    "file": "raw/train-00006-of-00016.parquet",
+    "row": 368,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cupresus Lusitanica"
+   ],
+   "ann": {
+    "label": "Cupresus Lusitanica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-42d03b3a4e",
+   "ref": {
+    "file": "raw/train-00006-of-00016.parquet",
+    "row": 422,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cupresus Lusitanica"
+   ],
+   "ann": {
+    "label": "Cupresus Lusitanica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-ef2bc37914",
+   "ref": {
+    "file": "raw/train-00006-of-00016.parquet",
+    "row": 478,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cupresus Lusitanica"
+   ],
+   "ann": {
+    "label": "Cupresus Lusitanica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-cd074b0376",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 21,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cupresus Lusitanica"
+   ],
+   "ann": {
+    "label": "Cupresus Lusitanica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-d82d6956fd",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 49,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cupresus Lusitanica"
+   ],
+   "ann": {
+    "label": "Cupresus Lusitanica"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-2f7578d5a7",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 253,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dialyanthera gracilipes"
+   ],
+   "ann": {
+    "label": "Dialyanthera gracilipes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-a77117069d",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 282,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dialyanthera gracilipes"
+   ],
+   "ann": {
+    "label": "Dialyanthera gracilipes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-5a2f3ce15d",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 479,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dialyanthera gracilipes"
+   ],
+   "ann": {
+    "label": "Dialyanthera gracilipes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6169bc764d",
+   "ref": {
+    "file": "raw/train-00007-of-00016.parquet",
+    "row": 633,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dialyanthera gracilipes"
+   ],
+   "ann": {
+    "label": "Dialyanthera gracilipes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-7a8cf1ac5e",
+   "ref": {
+    "file": "raw/train-00008-of-00016.parquet",
+    "row": 405,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dialyanthera gracilipes"
+   ],
+   "ann": {
+    "label": "Dialyanthera gracilipes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-8c3d236ca0",
+   "ref": {
+    "file": "raw/train-00009-of-00016.parquet",
+    "row": 490,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus globulus"
+   ],
+   "ann": {
+    "label": "Eucalyptus globulus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-7e54c4c096",
+   "ref": {
+    "file": "raw/train-00009-of-00016.parquet",
+    "row": 528,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus globulus"
+   ],
+   "ann": {
+    "label": "Eucalyptus globulus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-49e307a9a9",
+   "ref": {
+    "file": "raw/train-00010-of-00016.parquet",
+    "row": 20,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus globulus"
+   ],
+   "ann": {
+    "label": "Eucalyptus globulus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-d6b75ba8f9",
+   "ref": {
+    "file": "raw/train-00010-of-00016.parquet",
+    "row": 270,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus globulus"
+   ],
+   "ann": {
+    "label": "Eucalyptus globulus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6cb5a1a2de",
+   "ref": {
+    "file": "raw/train-00010-of-00016.parquet",
+    "row": 284,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus globulus"
+   ],
+   "ann": {
+    "label": "Eucalyptus globulus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-0cde2bcc1f",
+   "ref": {
+    "file": "raw/train-00010-of-00016.parquet",
+    "row": 351,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fraxinus uhdei"
+   ],
+   "ann": {
+    "label": "Fraxinus uhdei"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-1bd0e2844f",
+   "ref": {
+    "file": "raw/train-00010-of-00016.parquet",
+    "row": 572,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fraxinus uhdei"
+   ],
+   "ann": {
+    "label": "Fraxinus uhdei"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-36c2741510",
+   "ref": {
+    "file": "raw/train-00011-of-00016.parquet",
+    "row": 12,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fraxinus uhdei"
+   ],
+   "ann": {
+    "label": "Fraxinus uhdei"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-6f864dbdec",
+   "ref": {
+    "file": "raw/train-00011-of-00016.parquet",
+    "row": 263,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fraxinus uhdei"
+   ],
+   "ann": {
+    "label": "Fraxinus uhdei"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-aaadb1f6b5",
+   "ref": {
+    "file": "raw/train-00011-of-00016.parquet",
+    "row": 274,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Fraxinus uhdei"
+   ],
+   "ann": {
+    "label": "Fraxinus uhdei"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-018726e737",
+   "ref": {
+    "file": "raw/train-00012-of-00016.parquet",
+    "row": 65,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Handroanthus chrysanthus"
+   ],
+   "ann": {
+    "label": "Handroanthus chrysanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-3763439bc6",
+   "ref": {
+    "file": "raw/train-00012-of-00016.parquet",
+    "row": 121,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Handroanthus chrysanthus"
+   ],
+   "ann": {
+    "label": "Handroanthus chrysanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-30cb523a0d",
+   "ref": {
+    "file": "raw/train-00012-of-00016.parquet",
+    "row": 142,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Handroanthus chrysanthus"
+   ],
+   "ann": {
+    "label": "Handroanthus chrysanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-2772383841",
+   "ref": {
+    "file": "raw/train-00012-of-00016.parquet",
+    "row": 224,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Handroanthus chrysanthus"
+   ],
+   "ann": {
+    "label": "Handroanthus chrysanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-68970fd5de",
+   "ref": {
+    "file": "raw/train-00013-of-00016.parquet",
+    "row": 54,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Handroanthus chrysanthus"
+   ],
+   "ann": {
+    "label": "Handroanthus chrysanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-d614fe85cc",
+   "ref": {
+    "file": "raw/train-00013-of-00016.parquet",
+    "row": 544,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Humiriastrum procerum"
+   ],
+   "ann": {
+    "label": "Humiriastrum procerum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-847560735e",
+   "ref": {
+    "file": "raw/train-00014-of-00016.parquet",
+    "row": 92,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Humiriastrum procerum"
+   ],
+   "ann": {
+    "label": "Humiriastrum procerum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-cb5349fb83",
+   "ref": {
+    "file": "raw/train-00014-of-00016.parquet",
+    "row": 203,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Humiriastrum procerum"
+   ],
+   "ann": {
+    "label": "Humiriastrum procerum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-2bf9ec180c",
+   "ref": {
+    "file": "raw/train-00014-of-00016.parquet",
+    "row": 359,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Humiriastrum procerum"
+   ],
+   "ann": {
+    "label": "Humiriastrum procerum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-5332eeb287",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 17,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Humiriastrum procerum"
+   ],
+   "ann": {
+    "label": "Humiriastrum procerum"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-9dc4f0bff2",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 256,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pinus patula"
+   ],
+   "ann": {
+    "label": "Pinus patula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-da30545230",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 431,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pinus patula"
+   ],
+   "ann": {
+    "label": "Pinus patula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-9f2a4de82e",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 546,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pinus patula"
+   ],
+   "ann": {
+    "label": "Pinus patula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-54d55aa944",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 587,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pinus patula"
+   ],
+   "ann": {
+    "label": "Pinus patula"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tropical_forest_classification-4195b6b85e",
+   "ref": {
+    "file": "raw/train-00015-of-00016.parquet",
+    "row": 630,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Pinus patula"
+   ],
+   "ann": {
+    "label": "Pinus patula"
+   },
+   "strata": {}
+  }
+ ]
+}

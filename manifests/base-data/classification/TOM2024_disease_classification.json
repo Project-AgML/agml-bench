@@ -1,0 +1,1947 @@
+{
+ "name": "TOM2024_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/TOM2024_disease_classification",
+ "hf_sha": "ce3661eacdd4468183ace9154c3c914441551c30",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:32:58+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "abiotic-disease-d",
+   "alternaria-d",
+   "alternaria-mite-d",
+   "aphids-p",
+   "bacterial-floundering-d",
+   "blossom-end-rot-d",
+   "bulb-blight-d",
+   "caterpillar-p",
+   "curvulariosis-d",
+   "excess-nitrogen-d",
+   "fusarium-d",
+   "healthy-fruit",
+   "healthy-leaf",
+   "helicoverpa-armigera-p",
+   "helminthosporiosis-d",
+   "mite-d",
+   "rust-d",
+   "spodoptera-frugiperda-a",
+   "spodoptera-frugiperda-p",
+   "stripe-d",
+   "sunburn-d",
+   "tomato-late-blight-d",
+   "tuta-absoluta-p",
+   "virosis-d"
+  ],
+  "indexed_rows": 12082
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "TOM2024_disease_classification-193deb5d61",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 57,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-d"
+   ],
+   "ann": {
+    "label": "alternaria-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-71128d4cb2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 302,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-d"
+   ],
+   "ann": {
+    "label": "alternaria-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-c08859edce",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 390,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-d"
+   ],
+   "ann": {
+    "label": "alternaria-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-fc835b1bd5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 516,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bulb-blight-d"
+   ],
+   "ann": {
+    "label": "bulb-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-854606153f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 520,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bulb-blight-d"
+   ],
+   "ann": {
+    "label": "bulb-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a55f4329b7",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 527,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bulb-blight-d"
+   ],
+   "ann": {
+    "label": "bulb-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-eb803bf802",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 540,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bulb-blight-d"
+   ],
+   "ann": {
+    "label": "bulb-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-d192581f29",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 542,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bulb-blight-d"
+   ],
+   "ann": {
+    "label": "bulb-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-74a8df043e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 572,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fusarium-d"
+   ],
+   "ann": {
+    "label": "fusarium-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-f381894434",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 691,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fusarium-d"
+   ],
+   "ann": {
+    "label": "fusarium-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ac7fb9a487",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 992,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fusarium-d"
+   ],
+   "ann": {
+    "label": "fusarium-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-2aec4f2216",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1002,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fusarium-d"
+   ],
+   "ann": {
+    "label": "fusarium-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6e7cb7f8a5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1048,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "fusarium-d"
+   ],
+   "ann": {
+    "label": "fusarium-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a50fd6e4bb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1283,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "caterpillar-p"
+   ],
+   "ann": {
+    "label": "caterpillar-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ee6d4ecb4a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1284,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "caterpillar-p"
+   ],
+   "ann": {
+    "label": "caterpillar-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-13071088b5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1543,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "caterpillar-p"
+   ],
+   "ann": {
+    "label": "caterpillar-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-4a779db71b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1752,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "caterpillar-p"
+   ],
+   "ann": {
+    "label": "caterpillar-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-54586a3666",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1998,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "caterpillar-p"
+   ],
+   "ann": {
+    "label": "caterpillar-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6b43e7dbdb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3044,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tuta-absoluta-p"
+   ],
+   "ann": {
+    "label": "tuta-absoluta-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-43a650bd37",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3050,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tuta-absoluta-p"
+   ],
+   "ann": {
+    "label": "tuta-absoluta-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-97de63dcbe",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3051,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tuta-absoluta-p"
+   ],
+   "ann": {
+    "label": "tuta-absoluta-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-5d8c66a9f1",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3054,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tuta-absoluta-p"
+   ],
+   "ann": {
+    "label": "tuta-absoluta-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0c7d2ec0fb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3055,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tuta-absoluta-p"
+   ],
+   "ann": {
+    "label": "tuta-absoluta-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-d38aa34bec",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3086,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "sunburn-d"
+   ],
+   "ann": {
+    "label": "sunburn-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-aecb640968",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3096,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "sunburn-d"
+   ],
+   "ann": {
+    "label": "sunburn-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-08e4dd7af2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3103,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "sunburn-d"
+   ],
+   "ann": {
+    "label": "sunburn-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e6e8d3b402",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "sunburn-d"
+   ],
+   "ann": {
+    "label": "sunburn-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a9fbcca3a9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3113,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "sunburn-d"
+   ],
+   "ann": {
+    "label": "sunburn-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-5101fbd53d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3215,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-d"
+   ],
+   "ann": {
+    "label": "alternaria-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-afa4348046",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3275,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-d"
+   ],
+   "ann": {
+    "label": "alternaria-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-4b3f605c03",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3464,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helicoverpa-armigera-p"
+   ],
+   "ann": {
+    "label": "helicoverpa-armigera-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-329eb8ae28",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3566,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helicoverpa-armigera-p"
+   ],
+   "ann": {
+    "label": "helicoverpa-armigera-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-c747653839",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3572,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helicoverpa-armigera-p"
+   ],
+   "ann": {
+    "label": "helicoverpa-armigera-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-f0af40a50f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3585,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helicoverpa-armigera-p"
+   ],
+   "ann": {
+    "label": "helicoverpa-armigera-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-4831018a22",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3657,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helicoverpa-armigera-p"
+   ],
+   "ann": {
+    "label": "helicoverpa-armigera-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0d94e6c6e2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3714,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-mite-d"
+   ],
+   "ann": {
+    "label": "alternaria-mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-862fc5a9a7",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3716,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-mite-d"
+   ],
+   "ann": {
+    "label": "alternaria-mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-7d8472115f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3717,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-mite-d"
+   ],
+   "ann": {
+    "label": "alternaria-mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-140a3cd69f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3719,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-mite-d"
+   ],
+   "ann": {
+    "label": "alternaria-mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ccaab7a646",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3721,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "alternaria-mite-d"
+   ],
+   "ann": {
+    "label": "alternaria-mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-95f38e77de",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3743,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "excess-nitrogen-d"
+   ],
+   "ann": {
+    "label": "excess-nitrogen-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-19e6359354",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3758,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "excess-nitrogen-d"
+   ],
+   "ann": {
+    "label": "excess-nitrogen-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-64315d9e98",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3761,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "excess-nitrogen-d"
+   ],
+   "ann": {
+    "label": "excess-nitrogen-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-737f88a3ee",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3771,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "excess-nitrogen-d"
+   ],
+   "ann": {
+    "label": "excess-nitrogen-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e7e6525384",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3779,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "excess-nitrogen-d"
+   ],
+   "ann": {
+    "label": "excess-nitrogen-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-cbc21eab69",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3833,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mite-d"
+   ],
+   "ann": {
+    "label": "mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-fe7f0c4efd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3834,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mite-d"
+   ],
+   "ann": {
+    "label": "mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-b283961747",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3849,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mite-d"
+   ],
+   "ann": {
+    "label": "mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ef249f2d83",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3944,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mite-d"
+   ],
+   "ann": {
+    "label": "mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-defd3dfc40",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4065,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "mite-d"
+   ],
+   "ann": {
+    "label": "mite-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-353fb6b62e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4202,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial-floundering-d"
+   ],
+   "ann": {
+    "label": "bacterial-floundering-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-d552e42dc7",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4338,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial-floundering-d"
+   ],
+   "ann": {
+    "label": "bacterial-floundering-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ff389a0667",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4391,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial-floundering-d"
+   ],
+   "ann": {
+    "label": "bacterial-floundering-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-32228391b5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4410,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial-floundering-d"
+   ],
+   "ann": {
+    "label": "bacterial-floundering-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-8590ed6b27",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4414,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "bacterial-floundering-d"
+   ],
+   "ann": {
+    "label": "bacterial-floundering-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a26750210d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4535,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-leaf"
+   ],
+   "ann": {
+    "label": "healthy-leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-b17a258461",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4554,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-leaf"
+   ],
+   "ann": {
+    "label": "healthy-leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-85349c1263",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 4666,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-leaf"
+   ],
+   "ann": {
+    "label": "healthy-leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-88d41993ee",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5067,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-leaf"
+   ],
+   "ann": {
+    "label": "healthy-leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a6525ea1aa",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5162,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-leaf"
+   ],
+   "ann": {
+    "label": "healthy-leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e8e3faf50a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5332,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-fruit"
+   ],
+   "ann": {
+    "label": "healthy-fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a63a8af18a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5336,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-fruit"
+   ],
+   "ann": {
+    "label": "healthy-fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-b007f12ff1",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5426,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-fruit"
+   ],
+   "ann": {
+    "label": "healthy-fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-510c601802",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5597,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-fruit"
+   ],
+   "ann": {
+    "label": "healthy-fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-3ae503194c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5663,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "healthy-fruit"
+   ],
+   "ann": {
+    "label": "healthy-fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-2dd2c328db",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5762,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "blossom-end-rot-d"
+   ],
+   "ann": {
+    "label": "blossom-end-rot-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-d6c2607c47",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5763,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "blossom-end-rot-d"
+   ],
+   "ann": {
+    "label": "blossom-end-rot-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-f717e39a1e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5838,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "blossom-end-rot-d"
+   ],
+   "ann": {
+    "label": "blossom-end-rot-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-df278a931f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5840,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "blossom-end-rot-d"
+   ],
+   "ann": {
+    "label": "blossom-end-rot-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-ac395fc074",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 5849,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "blossom-end-rot-d"
+   ],
+   "ann": {
+    "label": "blossom-end-rot-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-b6a528a33e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 6306,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "virosis-d"
+   ],
+   "ann": {
+    "label": "virosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-3b59a81511",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 6626,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "virosis-d"
+   ],
+   "ann": {
+    "label": "virosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6cab803347",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7272,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "virosis-d"
+   ],
+   "ann": {
+    "label": "virosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-874f9ec700",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7365,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "virosis-d"
+   ],
+   "ann": {
+    "label": "virosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-d999007b53",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7372,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "virosis-d"
+   ],
+   "ann": {
+    "label": "virosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-66d50bca2b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7450,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tomato-late-blight-d"
+   ],
+   "ann": {
+    "label": "tomato-late-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-c3cc5ac7b5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7458,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tomato-late-blight-d"
+   ],
+   "ann": {
+    "label": "tomato-late-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e950b4d14e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7464,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tomato-late-blight-d"
+   ],
+   "ann": {
+    "label": "tomato-late-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-eb7389027e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7478,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tomato-late-blight-d"
+   ],
+   "ann": {
+    "label": "tomato-late-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0fa79f7eef",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7482,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "tomato-late-blight-d"
+   ],
+   "ann": {
+    "label": "tomato-late-blight-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-9b222417cc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7617,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "stripe-d"
+   ],
+   "ann": {
+    "label": "stripe-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0a11010e78",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 7846,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "stripe-d"
+   ],
+   "ann": {
+    "label": "stripe-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-512f2030cd",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 8621,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "stripe-d"
+   ],
+   "ann": {
+    "label": "stripe-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-88f76c535c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 8712,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "stripe-d"
+   ],
+   "ann": {
+    "label": "stripe-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-40c5b208f0",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9516,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "stripe-d"
+   ],
+   "ann": {
+    "label": "stripe-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-8ee58c92e5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9683,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "aphids-p"
+   ],
+   "ann": {
+    "label": "aphids-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-766c3365e2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9684,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "aphids-p"
+   ],
+   "ann": {
+    "label": "aphids-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-7c51a12a72",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9685,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "aphids-p"
+   ],
+   "ann": {
+    "label": "aphids-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0b4b7afbc6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9686,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "aphids-p"
+   ],
+   "ann": {
+    "label": "aphids-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-529a0e20df",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9713,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helminthosporiosis-d"
+   ],
+   "ann": {
+    "label": "helminthosporiosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-013019b9d2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9723,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helminthosporiosis-d"
+   ],
+   "ann": {
+    "label": "helminthosporiosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6667826f8d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9787,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helminthosporiosis-d"
+   ],
+   "ann": {
+    "label": "helminthosporiosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a73b21822c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9798,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helminthosporiosis-d"
+   ],
+   "ann": {
+    "label": "helminthosporiosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-48a1a2db87",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 9843,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "helminthosporiosis-d"
+   ],
+   "ann": {
+    "label": "helminthosporiosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-4157e7b737",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10025,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-a"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-a"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-8bd23526f3",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10071,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-a"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-a"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-5c573527d2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10098,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-a"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-a"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-7d35cfd9d1",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10183,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-a"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-a"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e623bda3d0",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10342,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-a"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-a"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-9ff92e8306",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10479,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "rust-d"
+   ],
+   "ann": {
+    "label": "rust-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-26ef27ba55",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10481,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "rust-d"
+   ],
+   "ann": {
+    "label": "rust-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-672a8de633",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10528,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "rust-d"
+   ],
+   "ann": {
+    "label": "rust-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-f1e4a5ac58",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10553,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "rust-d"
+   ],
+   "ann": {
+    "label": "rust-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6370584129",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 10554,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "rust-d"
+   ],
+   "ann": {
+    "label": "rust-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-5c413b023f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11146,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "curvulariosis-d"
+   ],
+   "ann": {
+    "label": "curvulariosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e7fd8287f2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11222,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "curvulariosis-d"
+   ],
+   "ann": {
+    "label": "curvulariosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-bbd509a750",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11241,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "curvulariosis-d"
+   ],
+   "ann": {
+    "label": "curvulariosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6b86a942e8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11339,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "curvulariosis-d"
+   ],
+   "ann": {
+    "label": "curvulariosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-793442421f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11349,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "curvulariosis-d"
+   ],
+   "ann": {
+    "label": "curvulariosis-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-efca381b63",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11759,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-p"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-b4f7af58cc",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11781,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-p"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-84415dd5e0",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11823,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-p"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-56bb079a84",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11827,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-p"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-37f5650833",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 11877,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "spodoptera-frugiperda-p"
+   ],
+   "ann": {
+    "label": "spodoptera-frugiperda-p"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-e5dd749c89",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12035,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "abiotic-disease-d"
+   ],
+   "ann": {
+    "label": "abiotic-disease-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-a74330ee62",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12037,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "abiotic-disease-d"
+   ],
+   "ann": {
+    "label": "abiotic-disease-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-6015dc0370",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12040,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "abiotic-disease-d"
+   ],
+   "ann": {
+    "label": "abiotic-disease-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-470a2ac682",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12042,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "abiotic-disease-d"
+   ],
+   "ann": {
+    "label": "abiotic-disease-d"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "TOM2024_disease_classification-0e0471f246",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 12075,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "abiotic-disease-d"
+   ],
+   "ann": {
+    "label": "abiotic-disease-d"
+   },
+   "strata": {}
+  }
+ ]
+}

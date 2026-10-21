@@ -1,0 +1,829 @@
+{
+ "name": "medicinal_plant_classification_bd",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/medicinal_plant_classification_bd",
+ "hf_sha": "9fd449d77446c369e6082180530f2d9c8494a57c",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:35:14+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bohera",
+   "Devilbackbone",
+   "Haritoki",
+   "Lemongrass",
+   "Nayontara",
+   "Neem",
+   "Pathorkuchi",
+   "Thankuni",
+   "Tulsi",
+   "Zenora"
+  ],
+  "indexed_rows": 5000
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "medicinal_plant_classification_bd-0af62fa7d6",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Haritoki"
+   ],
+   "ann": {
+    "label": "Haritoki"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-933408b9b0",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Haritoki"
+   ],
+   "ann": {
+    "label": "Haritoki"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-6155fb98df",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Zenora"
+   ],
+   "ann": {
+    "label": "Zenora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-e2fd4e11fd",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Zenora"
+   ],
+   "ann": {
+    "label": "Zenora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-0c19a3e968",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Zenora"
+   ],
+   "ann": {
+    "label": "Zenora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-1e9e49cdc5",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 202,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-7ab09f5fd2",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-95f81bcce2",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-a47a3a38ef",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-f6021bbc15",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Pathorkuchi"
+   ],
+   "ann": {
+    "label": "Pathorkuchi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-991d5557e9",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 168,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Pathorkuchi"
+   ],
+   "ann": {
+    "label": "Pathorkuchi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-184d32a62c",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Pathorkuchi"
+   ],
+   "ann": {
+    "label": "Pathorkuchi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-55ac13567c",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Thankuni"
+   ],
+   "ann": {
+    "label": "Thankuni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-034ed28a62",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Thankuni"
+   ],
+   "ann": {
+    "label": "Thankuni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-208796feb2",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Thankuni"
+   ],
+   "ann": {
+    "label": "Thankuni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-a80320e3d8",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Thankuni"
+   ],
+   "ann": {
+    "label": "Thankuni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-be3f8faf91",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Thankuni"
+   ],
+   "ann": {
+    "label": "Thankuni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-67af88ebf0",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Bohera"
+   ],
+   "ann": {
+    "label": "Bohera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-c51f38889d",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Bohera"
+   ],
+   "ann": {
+    "label": "Bohera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-d8c40b717a",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 231,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-a1f4ac88b8",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 242,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-d0620dc4d9",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-2581ae3663",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-01da7e12d1",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Devilbackbone"
+   ],
+   "ann": {
+    "label": "Devilbackbone"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-7e2065b1d0",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Devilbackbone"
+   ],
+   "ann": {
+    "label": "Devilbackbone"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-811609b176",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Devilbackbone"
+   ],
+   "ann": {
+    "label": "Devilbackbone"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-398af3ed32",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-b9207cca27",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-14e3920c3e",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-21856f2165",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Nayontara"
+   ],
+   "ann": {
+    "label": "Nayontara"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-4bbd0d69b0",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Nayontara"
+   ],
+   "ann": {
+    "label": "Nayontara"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-e7f9ab01b7",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "Train"
+   },
+   "keys": [
+    "Nayontara"
+   ],
+   "ann": {
+    "label": "Nayontara"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-36afe0c487",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Devilbackbone"
+   ],
+   "ann": {
+    "label": "Devilbackbone"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-9252c61a35",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Devilbackbone"
+   ],
+   "ann": {
+    "label": "Devilbackbone"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-94fa3d8f23",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Nayontara"
+   ],
+   "ann": {
+    "label": "Nayontara"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-8546353449",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Nayontara"
+   ],
+   "ann": {
+    "label": "Nayontara"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-bba794e8aa",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Zenora"
+   ],
+   "ann": {
+    "label": "Zenora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-f069236600",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-b6f82a23d4",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-57daee02df",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Haritoki"
+   ],
+   "ann": {
+    "label": "Haritoki"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-0132330d01",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Haritoki"
+   ],
+   "ann": {
+    "label": "Haritoki"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-f79a4008d8",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Bohera"
+   ],
+   "ann": {
+    "label": "Bohera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-1b567d3d38",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Bohera"
+   ],
+   "ann": {
+    "label": "Bohera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-c1f6fd0a9e",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "Test"
+   },
+   "keys": [
+    "Pathorkuchi"
+   ],
+   "ann": {
+    "label": "Pathorkuchi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-f03cc9b746",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Pathorkuchi"
+   ],
+   "ann": {
+    "label": "Pathorkuchi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-2ac83fb64a",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Zenora"
+   ],
+   "ann": {
+    "label": "Zenora"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-6ce64548e6",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-937d3c32b5",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-684f2654c7",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Haritoki"
+   ],
+   "ann": {
+    "label": "Haritoki"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "medicinal_plant_classification_bd-62a39ae001",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 202,
+    "config": "default",
+    "split": "Validation"
+   },
+   "keys": [
+    "Bohera"
+   ],
+   "ann": {
+    "label": "Bohera"
+   },
+   "strata": {}
+  }
+ ]
+}

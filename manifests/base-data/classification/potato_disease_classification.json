@@ -1,0 +1,829 @@
+{
+ "name": "potato_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/potato_disease_classification",
+ "hf_sha": "956750352f90b93dba0d2c1708423a4669f0ea92",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:09:56+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Black Scurf",
+   "Blackleg",
+   "Blackspot Bruising",
+   "Brown Rot",
+   "Common Scab",
+   "Dry Rot",
+   "Healthy Potatoes",
+   "Miscellaneous",
+   "Pink Rot",
+   "Soft Rot"
+  ],
+  "indexed_rows": 3905
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "potato_disease_classification-adafdcec4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Rot"
+   ],
+   "ann": {
+    "label": "Brown Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a296024faa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Rot"
+   ],
+   "ann": {
+    "label": "Brown Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-f5cea40498",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Rot"
+   ],
+   "ann": {
+    "label": "Brown Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-87bf5da010",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Rot"
+   ],
+   "ann": {
+    "label": "Brown Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-7d2df735d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown Rot"
+   ],
+   "ann": {
+    "label": "Brown Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-ada41aa4da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scurf"
+   ],
+   "ann": {
+    "label": "Black Scurf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-aac8525412",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scurf"
+   ],
+   "ann": {
+    "label": "Black Scurf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-ea5f3792e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scurf"
+   ],
+   "ann": {
+    "label": "Black Scurf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-f80552ebd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scurf"
+   ],
+   "ann": {
+    "label": "Black Scurf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-43ac75d294",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black Scurf"
+   ],
+   "ann": {
+    "label": "Black Scurf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-885228aab1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common Scab"
+   ],
+   "ann": {
+    "label": "Common Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-83f64683c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common Scab"
+   ],
+   "ann": {
+    "label": "Common Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common Scab"
+   ],
+   "ann": {
+    "label": "Common Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-c14aebc773",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common Scab"
+   ],
+   "ann": {
+    "label": "Common Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-fa64811431",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common Scab"
+   ],
+   "ann": {
+    "label": "Common Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-2585587a6d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pink Rot"
+   ],
+   "ann": {
+    "label": "Pink Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-aeaf75edea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 236,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pink Rot"
+   ],
+   "ann": {
+    "label": "Pink Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-872c4c2f2e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pink Rot"
+   ],
+   "ann": {
+    "label": "Pink Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-0f7a5c8f13",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pink Rot"
+   ],
+   "ann": {
+    "label": "Pink Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a035a32eaf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pink Rot"
+   ],
+   "ann": {
+    "label": "Pink Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-dcc257a5af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackleg"
+   ],
+   "ann": {
+    "label": "Blackleg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-737a0b9e24",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackleg"
+   ],
+   "ann": {
+    "label": "Blackleg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-367dad5d6a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 281,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackleg"
+   ],
+   "ann": {
+    "label": "Blackleg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-1c2a2244d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackleg"
+   ],
+   "ann": {
+    "label": "Blackleg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-fad2698109",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackleg"
+   ],
+   "ann": {
+    "label": "Blackleg"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-e0d5c25757",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 495,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soft Rot"
+   ],
+   "ann": {
+    "label": "Soft Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-d23c0754bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soft Rot"
+   ],
+   "ann": {
+    "label": "Soft Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-b1262bf77e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soft Rot"
+   ],
+   "ann": {
+    "label": "Soft Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-f91382452e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 808,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soft Rot"
+   ],
+   "ann": {
+    "label": "Soft Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-3d16e36b82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 812,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soft Rot"
+   ],
+   "ann": {
+    "label": "Soft Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-66d4a582d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackspot Bruising"
+   ],
+   "ann": {
+    "label": "Blackspot Bruising"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a4ecf6e9ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackspot Bruising"
+   ],
+   "ann": {
+    "label": "Blackspot Bruising"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-884194f248",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackspot Bruising"
+   ],
+   "ann": {
+    "label": "Blackspot Bruising"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-6bf633b967",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackspot Bruising"
+   ],
+   "ann": {
+    "label": "Blackspot Bruising"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-ec9c36890d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blackspot Bruising"
+   ],
+   "ann": {
+    "label": "Blackspot Bruising"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-5d2eaf6ae4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1663,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Miscellaneous"
+   ],
+   "ann": {
+    "label": "Miscellaneous"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-2b891b33d9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1715,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Miscellaneous"
+   ],
+   "ann": {
+    "label": "Miscellaneous"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-d4688ceec3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1718,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Miscellaneous"
+   ],
+   "ann": {
+    "label": "Miscellaneous"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-883c4299e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1722,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Miscellaneous"
+   ],
+   "ann": {
+    "label": "Miscellaneous"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a70c06a284",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1723,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Miscellaneous"
+   ],
+   "ann": {
+    "label": "Miscellaneous"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-b82855c5e4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1885,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Potatoes"
+   ],
+   "ann": {
+    "label": "Healthy Potatoes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-826f7a3c1a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2002,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Potatoes"
+   ],
+   "ann": {
+    "label": "Healthy Potatoes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a6d599fac8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2060,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Potatoes"
+   ],
+   "ann": {
+    "label": "Healthy Potatoes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-3b0fdcf4fd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Potatoes"
+   ],
+   "ann": {
+    "label": "Healthy Potatoes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-24589ba7da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Potatoes"
+   ],
+   "ann": {
+    "label": "Healthy Potatoes"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-5e6e699fc9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2725,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry Rot"
+   ],
+   "ann": {
+    "label": "Dry Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-c3406d4e81",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2822,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry Rot"
+   ],
+   "ann": {
+    "label": "Dry Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-357e5a27f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2898,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry Rot"
+   ],
+   "ann": {
+    "label": "Dry Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-a032ccbb3d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry Rot"
+   ],
+   "ann": {
+    "label": "Dry Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "potato_disease_classification-eb06f3f0f8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry Rot"
+   ],
+   "ann": {
+    "label": "Dry Rot"
+   },
+   "strata": {}
+  }
+ ]
+}

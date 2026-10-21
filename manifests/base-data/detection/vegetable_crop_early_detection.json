@@ -1,0 +1,1427 @@
+{
+ "name": "vegetable_crop_early_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/vegetable_crop_early_detection",
+ "hf_sha": "5aebda2496bead69a3e1501bcf711fdee0af0617",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T04:08:41+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "bean",
+   "leek",
+   "maize",
+   "stem_bean",
+   "stem_leek",
+   "stem_maize"
+  ],
+  "indexed_rows": 2801
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "vegetable_crop_early_detection-28958c8e35",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bean",
+    "stem_bean"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "bean",
+      "bbox_raw": [
+       403.0,
+       532.0,
+       282.0,
+       526.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       805.0,
+       438.0,
+       485.0,
+       519.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       942.0,
+       663.0,
+       425.0,
+       407.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1507.0,
+       573.0,
+       315.0,
+       432.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1670.0,
+       548.0,
+       378.0,
+       440.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1.0,
+       822.0,
+       177.0,
+       158.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       550.0,
+       750.0,
+       58.0,
+       67.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1063.0,
+       790.0,
+       60.0,
+       58.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1055.0,
+       710.0,
+       60.0,
+       60.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1601.0,
+       760.0,
+       79.0,
+       70.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1790.0,
+       767.0,
+       70.0,
+       68.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-3ab9548198",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bean",
+    "stem_bean"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "bean",
+      "bbox_raw": [
+       457.0,
+       451.0,
+       397.0,
+       447.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       827.0,
+       363.0,
+       693.0,
+       573.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       537.0,
+       667.0,
+       72.0,
+       69.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1214.0,
+       658.0,
+       94.0,
+       82.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-b56748066c",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bean",
+    "stem_bean"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "bean",
+      "bbox_raw": [
+       95.0,
+       99.0,
+       236.0,
+       199.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       360.0,
+       120.0,
+       256.0,
+       271.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       560.0,
+       91.0,
+       165.0,
+       190.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       474.0,
+       231.0,
+       38.0,
+       29.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       624.0,
+       194.0,
+       38.0,
+       40.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       223.0,
+       189.0,
+       42.0,
+       32.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-93ceba393b",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bean",
+    "stem_bean"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1.0,
+       89.0,
+       135.0,
+       265.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1.0,
+       249.0,
+       28.0,
+       30.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       95.0,
+       224.0,
+       349.0,
+       133.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       247.0,
+       264.0,
+       34.0,
+       35.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       537.0,
+       182.0,
+       99.0,
+       262.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       570.0,
+       291.0,
+       35.0,
+       33.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       845.0,
+       162.0,
+       144.0,
+       304.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       871.0,
+       274.0,
+       33.0,
+       31.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-88d375b158",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize",
+    "stem_maize"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "maize",
+      "bbox_raw": [
+       224.0,
+       268.0,
+       106.0,
+       110.0
+      ]
+     },
+     {
+      "label": "maize",
+      "bbox_raw": [
+       587.0,
+       268.0,
+       196.0,
+       124.0
+      ]
+     },
+     {
+      "label": "maize",
+      "bbox_raw": [
+       759.0,
+       199.0,
+       79.0,
+       213.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       280.0,
+       300.0,
+       19.0,
+       25.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       666.0,
+       315.0,
+       20.0,
+       18.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       768.0,
+       310.0,
+       31.0,
+       21.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-19bcef1464",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize",
+    "stem_maize"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "maize",
+      "bbox_raw": [
+       233.0,
+       190.0,
+       228.0,
+       109.0
+      ]
+     },
+     {
+      "label": "maize",
+      "bbox_raw": [
+       719.0,
+       131.0,
+       222.0,
+       187.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       798.0,
+       296.0,
+       41.0,
+       21.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       398.0,
+       273.0,
+       33.0,
+       26.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-3f51f96089",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 246,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize",
+    "stem_maize"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "maize",
+      "bbox_raw": [
+       54.0,
+       18.0,
+       275.0,
+       254.0
+      ]
+     },
+     {
+      "label": "maize",
+      "bbox_raw": [
+       608.0,
+       66.0,
+       249.0,
+       220.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       716.0,
+       259.0,
+       25.0,
+       26.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       247.0,
+       249.0,
+       33.0,
+       36.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-c030e5e92b",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leek",
+    "stem_leek"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       859.0,
+       383.0,
+       24.0,
+       24.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       672.0,
+       377.0,
+       24.0,
+       27.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       536.0,
+       402.0,
+       24.0,
+       27.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       386.0,
+       359.0,
+       26.0,
+       30.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       258.0,
+       407.0,
+       28.0,
+       26.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       864.0,
+       364.0,
+       160.0,
+       246.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       317.0,
+       372.0,
+       418.0,
+       109.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       390.0,
+       379.0,
+       170.0,
+       139.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       210.0,
+       267.0,
+       198.0,
+       114.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       122.0,
+       365.0,
+       150.0,
+       93.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-0db82c40b1",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leek",
+    "stem_leek"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       840.0,
+       367.0,
+       28.0,
+       30.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       684.0,
+       377.0,
+       25.0,
+       23.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       538.0,
+       377.0,
+       25.0,
+       25.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       383.0,
+       357.0,
+       26.0,
+       28.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       120.0,
+       383.0,
+       22.0,
+       24.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       975.0,
+       378.0,
+       26.0,
+       24.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       935.0,
+       369.0,
+       83.0,
+       38.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       672.0,
+       363.0,
+       193.0,
+       133.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       686.0,
+       379.0,
+       76.0,
+       89.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       469.0,
+       375.0,
+       94.0,
+       80.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       294.0,
+       339.0,
+       111.0,
+       50.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       1.0,
+       354.0,
+       134.0,
+       82.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-d3b32d8d89",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leek",
+    "stem_leek"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       851.0,
+       420.0,
+       22.0,
+       21.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       697.0,
+       426.0,
+       25.0,
+       27.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       523.0,
+       400.0,
+       23.0,
+       28.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       381.0,
+       414.0,
+       24.0,
+       23.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       230.0,
+       446.0,
+       25.0,
+       28.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       105.0,
+       416.0,
+       28.0,
+       27.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       689.0,
+       421.0,
+       333.0,
+       138.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       695.0,
+       426.0,
+       80.0,
+       42.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       525.0,
+       340.0,
+       71.0,
+       186.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       278.0,
+       418.0,
+       127.0,
+       68.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       22.0,
+       451.0,
+       230.0,
+       167.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       1.0,
+       404.0,
+       119.0,
+       62.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-d1e0038575",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 241,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leek",
+    "stem_leek"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "leek",
+      "bbox_raw": [
+       1.0,
+       520.0,
+       169.0,
+       248.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       58.0,
+       570.0,
+       275.0,
+       198.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       263.0,
+       558.0,
+       401.0,
+       191.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       503.0,
+       365.0,
+       503.0,
+       211.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       561.0,
+       491.0,
+       356.0,
+       65.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       152.0,
+       510.0,
+       26.0,
+       31.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       315.0,
+       561.0,
+       25.0,
+       29.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       464.0,
+       557.0,
+       23.0,
+       32.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       597.0,
+       527.0,
+       23.0,
+       28.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       777.0,
+       515.0,
+       33.0,
+       34.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-747d668687",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "leek",
+    "stem_leek"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "leek",
+      "bbox_raw": [
+       1.0,
+       109.0,
+       202.0,
+       259.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       1.0,
+       302.0,
+       75.0,
+       96.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       42.0,
+       302.0,
+       36.0,
+       36.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       166.0,
+       336.0,
+       35.0,
+       30.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       376.0,
+       41.0,
+       503.0,
+       409.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       376.0,
+       374.0,
+       23.0,
+       25.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       511.0,
+       313.0,
+       513.0,
+       131.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       514.0,
+       400.0,
+       25.0,
+       26.0
+      ]
+     },
+     {
+      "label": "leek",
+      "bbox_raw": [
+       649.0,
+       401.0,
+       302.0,
+       48.0
+      ]
+     },
+     {
+      "label": "stem_leek",
+      "bbox_raw": [
+       650.0,
+       426.0,
+       78.0,
+       28.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-aa5e59f28e",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bean",
+    "stem_bean"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "bean",
+      "bbox_raw": [
+       247.0,
+       738.0,
+       252.0,
+       277.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       376.0,
+       676.0,
+       378.0,
+       212.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       763.0,
+       680.0,
+       147.0,
+       335.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1125.0,
+       688.0,
+       169.0,
+       345.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1302.0,
+       693.0,
+       231.0,
+       325.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1495.0,
+       725.0,
+       464.0,
+       342.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       1958.0,
+       753.0,
+       363.0,
+       297.0
+      ]
+     },
+     {
+      "label": "bean",
+      "bbox_raw": [
+       2253.0,
+       676.0,
+       195.0,
+       349.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       363.0,
+       816.0,
+       119.0,
+       126.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       502.0,
+       750.0,
+       127.0,
+       132.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       814.0,
+       773.0,
+       122.0,
+       122.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1116.0,
+       791.0,
+       130.0,
+       131.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1331.0,
+       769.0,
+       156.0,
+       136.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1636.0,
+       850.0,
+       140.0,
+       132.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       1972.0,
+       886.0,
+       138.0,
+       119.0
+      ]
+     },
+     {
+      "label": "stem_bean",
+      "bbox_raw": [
+       2223.0,
+       791.0,
+       136.0,
+       127.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-2f83abe2f5",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize",
+    "stem_maize"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "maize",
+      "bbox_raw": [
+       1384.0,
+       734.0,
+       386.0,
+       118.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       1476.0,
+       735.0,
+       134.0,
+       134.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-53259a892b",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "maize",
+    "stem_maize"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "maize",
+      "bbox_raw": [
+       -3.0,
+       627.0,
+       279.0,
+       326.0
+      ]
+     },
+     {
+      "label": "stem_maize",
+      "bbox_raw": [
+       149.0,
+       692.0,
+       153.0,
+       153.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-ef9ea47a22",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-fcb2eaff7c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-a423bdd1ff",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-85011d4ecc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "vegetable_crop_early_detection-de0890ee41",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  }
+ ]
+}

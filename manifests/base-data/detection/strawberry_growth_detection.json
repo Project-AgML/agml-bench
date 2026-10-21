@@ -1,0 +1,704 @@
+{
+ "name": "strawberry_growth_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/strawberry_growth_detection",
+ "hf_sha": "53126654907faeab0ff8e2d77d255aaa7b576932",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:06:17+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "flower",
+   "green",
+   "overripe",
+   "red",
+   "small g",
+   "turning red",
+   "white"
+  ],
+  "indexed_rows": 1477
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "strawberry_growth_detection-6f6565d235",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "overripe",
+    "red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red",
+      "bbox_raw": [
+       1803.3157894736842,
+       1979.6842105263158,
+       1105.2631578947367,
+       978.9473684210525
+      ]
+     },
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       823.076923076923,
+       1347.4358974358975,
+       984.6153846153846,
+       948.7179487179483
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-76176a65f8",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "overripe",
+    "red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red",
+      "bbox_raw": [
+       1660.5263157894735,
+       1163.157894736842,
+       1542.1052631578948,
+       1600.0
+      ]
+     },
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       3282.0512820512818,
+       216.66666666666663,
+       1276.9230769230776,
+       1625.6410256410254
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-83c85e2859",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "green"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "green",
+      "bbox_raw": [
+       2165.7894736842104,
+       1042.1052631578948,
+       878.9473684210525,
+       800.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-0e54edc2db",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "white"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "white",
+      "bbox_raw": [
+       1310.521739130435,
+       1982.6086956521738,
+       608.695652173913,
+       552.1739130434783
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-56e81d2f44",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "green"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "green",
+      "bbox_raw": [
+       888.204081632653,
+       1850.3469387755101,
+       522.4489795918366,
+       638.7755102040817
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-50a20e58f0",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red",
+    "turning red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red",
+      "bbox_raw": [
+       1059.1020408163267,
+       1647.9591836734694,
+       616.3265306122448,
+       802.0408163265306
+      ]
+     },
+     {
+      "label": "turning red",
+      "bbox_raw": [
+       1601.9591836734694,
+       1450.0,
+       532.6530612244901,
+       610.204081632653
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-8c16f2f8ef",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "turning red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "turning red",
+      "bbox_raw": [
+       1316.2448979591836,
+       1872.4489795918369,
+       579.591836734694,
+       548.9795918367342
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-a51d155eec",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "small g"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "small g",
+      "bbox_raw": [
+       940.1666666666666,
+       2651.125,
+       566.6666666666669,
+       552.0833333333335
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-410a713562",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "green",
+    "small g"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "green",
+      "bbox_raw": [
+       2722.3404255319147,
+       2193.617021276596,
+       395.74468085106355,
+       361.7021276595742
+      ]
+     },
+     {
+      "label": "green",
+      "bbox_raw": [
+       1781.914893617021,
+       1821.276595744681,
+       359.57446808510645,
+       325.5319148936169
+      ]
+     },
+     {
+      "label": "small g",
+      "bbox_raw": [
+       2964.8936170212764,
+       1791.4893617021278,
+       268.08510638297867,
+       223.40425531914912
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-1e9150387e",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "flower",
+    "green",
+    "small g"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "green",
+      "bbox_raw": [
+       1340.625,
+       1468.75,
+       404.16666666666674,
+       414.5833333333335
+      ]
+     },
+     {
+      "label": "small g",
+      "bbox_raw": [
+       1901.0416666666667,
+       739.5833333333334,
+       387.5000000000002,
+       406.2500000000001
+      ]
+     },
+     {
+      "label": "flower",
+      "bbox_raw": [
+       1748.9583333333333,
+       2168.75,
+       556.2500000000002,
+       483.3333333333335
+      ]
+     },
+     {
+      "label": "small g",
+      "bbox_raw": [
+       851.0416666666667,
+       800.0,
+       395.83333333333326,
+       393.75
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-43cbd635af",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "flower",
+    "green",
+    "overripe"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "green",
+      "bbox_raw": [
+       936.4583333333334,
+       1779.1666666666667,
+       402.08333333333337,
+       460.41666666666674
+      ]
+     },
+     {
+      "label": "flower",
+      "bbox_raw": [
+       1180.2083333333333,
+       1085.4166666666667,
+       295.8333333333335,
+       256.25
+      ]
+     },
+     {
+      "label": "green",
+      "bbox_raw": [
+       1826.0416666666667,
+       1441.6666666666667,
+       327.0833333333337,
+       347.91666666666674
+      ]
+     },
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       3673.9583333333335,
+       2393.75,
+       547.9166666666665,
+       481.25
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-743d8f20be",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "flower",
+    "small g",
+    "turning red",
+    "white"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "turning red",
+      "bbox_raw": [
+       2544.736842105263,
+       2631.578947368421,
+       747.3684210526317,
+       931.5789473684213
+      ]
+     },
+     {
+      "label": "white",
+      "bbox_raw": [
+       1865.7894736842104,
+       2726.315789473684,
+       636.8421052631579,
+       915.78947368421
+      ]
+     },
+     {
+      "label": "flower",
+      "bbox_raw": [
+       3292.578947368421,
+       916.2105263157894,
+       347.3684210526317,
+       263.1578947368421
+      ]
+     },
+     {
+      "label": "small g",
+      "bbox_raw": [
+       1682.0526315789473,
+       1737.2631578947367,
+       321.0526315789475,
+       310.52631578947376
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-0109d665c3",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "flower",
+    "overripe",
+    "turning red",
+    "white"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "turning red",
+      "bbox_raw": [
+       841.6666666666667,
+       2912.5,
+       606.25,
+       627.0833333333335
+      ]
+     },
+     {
+      "label": "white",
+      "bbox_raw": [
+       3406.2500000000005,
+       2408.3333333333335,
+       439.58333333333303,
+       535.4166666666665
+      ]
+     },
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       3933.3333333333335,
+       2293.75,
+       402.0833333333335,
+       566.6666666666665
+      ]
+     },
+     {
+      "label": "flower",
+      "bbox_raw": [
+       2706.2500000000005,
+       733.3333333333334,
+       368.75,
+       285.41666666666674
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-47801ff74b",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red",
+    "small g",
+    "white"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red",
+      "bbox_raw": [
+       2040.619260918253,
+       1713.410974244121,
+       720.0190369540869,
+       988.716685330347
+      ]
+     },
+     {
+      "label": "red",
+      "bbox_raw": [
+       2869.0627099664052,
+       1463.3549832026874,
+       776.6819708846583,
+       902.6024636058232
+      ]
+     },
+     {
+      "label": "small g",
+      "bbox_raw": [
+       999.6338185890256,
+       602.1007838745801,
+       369.51511758118704,
+       310.6651735722286
+      ]
+     },
+     {
+      "label": "white",
+      "bbox_raw": [
+       237.48376259798437,
+       328.08062709966407,
+       504.0055991041433,
+       608.0895856662935
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-a4a9bf39ce",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "flower",
+    "red",
+    "turning red",
+    "white"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "white",
+      "bbox_raw": [
+       2543.642777155655,
+       1501.988801791713,
+       472.3146696528552,
+       412.9048152295636
+      ]
+     },
+     {
+      "label": "white",
+      "bbox_raw": [
+       3005.7928331466965,
+       1715.9865621500558,
+       346.3348264277711,
+       345.7155655095189
+      ]
+     },
+     {
+      "label": "white",
+      "bbox_raw": [
+       3313.407614781635,
+       1536.3673012318027,
+       438.7200447928326,
+       416.82418812989954
+      ]
+     },
+     {
+      "label": "turning red",
+      "bbox_raw": [
+       3379.3650615901456,
+       3443.6461366181406,
+       604.6774916013433,
+       555.3538633818594
+      ]
+     },
+     {
+      "label": "red",
+      "bbox_raw": [
+       3484.6282194848823,
+       2613.6349384098544,
+       544.0951847704364,
+       545.9395296752518
+      ]
+     },
+     {
+      "label": "flower",
+      "bbox_raw": [
+       2541.4893617021276,
+       353.19148936170234,
+       387.2340425531911,
+       325.531914893617
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "strawberry_growth_detection-e93a2c46a8",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "overripe",
+    "red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       2097.034482758621,
+       1376.6551724137933,
+       160.34482758620697,
+       267.24137931034466
+      ]
+     },
+     {
+      "label": "overripe",
+      "bbox_raw": [
+       2200.4827586206898,
+       1285.2758620689656,
+       179.31034482758605,
+       241.37931034482767
+      ]
+     },
+     {
+      "label": "red",
+      "bbox_raw": [
+       2350.4827586206898,
+       1355.9655172413793,
+       212.0689655172414,
+       234.48275862068976
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

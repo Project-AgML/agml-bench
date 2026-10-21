@@ -1,0 +1,699 @@
+{
+ "name": "ImageWeeds_aerial_weed_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/ImageWeeds_aerial_weed_detection",
+ "hf_sha": "6d07091380bfee327fbfcea777e6a666c94b1f65",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:52:03+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "ragweed",
+   "waterhemp",
+   "horseweed",
+   "redrootpigweed",
+   "kochia"
+  ],
+  "indexed_rows": 551
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-ed8c7b7247",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed",
+    "waterhemp"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       710.0,
+       1343.0,
+       404.0,
+       350.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       11.0,
+       1247.0,
+       264.0,
+       325.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       2454.0,
+       1317.0,
+       386.0,
+       391.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       4055.0,
+       1414.0,
+       373.0,
+       330.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-fec90de2c9",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       1847.0,
+       1358.0,
+       315.0,
+       265.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2297.0,
+       1199.0,
+       396.0,
+       218.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-ae7673cdb4",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       2485.0,
+       1749.0,
+       372.0,
+       560.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-c6ce7fb397",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       2373.0,
+       1886.0,
+       384.0,
+       265.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       2402.0,
+       1635.0,
+       379.0,
+       303.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-b915123a13",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed",
+    "kochia",
+    "ragweed",
+    "waterhemp"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       1208.0,
+       1310.0,
+       215.0,
+       248.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       1126.0,
+       1542.0,
+       199.0,
+       169.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       1823.0,
+       1288.0,
+       229.0,
+       255.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       1914.0,
+       1528.0,
+       220.0,
+       233.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2832.0,
+       1511.0,
+       140.0,
+       144.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       5097.0,
+       1667.0,
+       310.0,
+       255.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       5094.0,
+       1945.0,
+       298.0,
+       263.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       4366.0,
+       1521.0,
+       269.0,
+       539.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-e2fd6bbc69",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       1079.0,
+       756.0,
+       169.0,
+       279.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       1005.0,
+       497.0,
+       270.0,
+       267.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       5018.0,
+       1456.0,
+       232.0,
+       273.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       5101.0,
+       1184.0,
+       260.0,
+       315.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-67503c0055",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       3394.0,
+       600.0,
+       236.0,
+       163.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       3378.0,
+       285.0,
+       329.0,
+       324.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-fa42f39564",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed",
+    "ragweed",
+    "redrootpigweed",
+    "waterhemp"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       567.0,
+       2048.0,
+       324.0,
+       282.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       610.0,
+       1758.0,
+       339.0,
+       323.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       1476.0,
+       2104.0,
+       291.0,
+       254.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       1497.0,
+       1867.0,
+       276.0,
+       291.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2446.0,
+       1995.0,
+       100.0,
+       134.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       3256.0,
+       1875.0,
+       213.0,
+       227.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       3167.0,
+       2105.0,
+       277.0,
+       230.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       3280.0,
+       2357.0,
+       215.0,
+       210.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       4986.0,
+       2191.0,
+       255.0,
+       256.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       4996.0,
+       2414.0,
+       282.0,
+       308.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-b9f3f4267f",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed",
+    "waterhemp"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2243.0,
+       80.0,
+       62.0,
+       78.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       2038.0,
+       292.0,
+       414.0,
+       348.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-c66de3bc5a",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed",
+    "kochia",
+    "redrootpigweed",
+    "waterhemp"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2158.0,
+       6.0,
+       645.0,
+       182.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       2408.0,
+       710.0,
+       321.0,
+       446.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       2705.0,
+       628.0,
+       280.0,
+       372.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2492.0,
+       1797.0,
+       87.0,
+       129.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2713.0,
+       1812.0,
+       93.0,
+       140.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       2460.0,
+       2723.0,
+       304.0,
+       307.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       2742.0,
+       2712.0,
+       360.0,
+       311.0
+      ]
+     },
+     {
+      "label": "waterhemp",
+      "bbox_raw": [
+       2494.0,
+       3099.0,
+       193.0,
+       131.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-6ee959311a",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed",
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       2142.0,
+       1845.0,
+       412.0,
+       363.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       1783.0,
+       1846.0,
+       378.0,
+       421.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2402.0,
+       2833.0,
+       333.0,
+       314.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2194.0,
+       2868.0,
+       275.0,
+       247.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2029.0,
+       2987.0,
+       236.0,
+       284.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_aerial_weed_detection-22352e8c85",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed",
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       1975.0,
+       2291.0,
+       298.0,
+       336.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2157.0,
+       2112.0,
+       383.0,
+       528.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       2013.0,
+       3331.0,
+       169.0,
+       149.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

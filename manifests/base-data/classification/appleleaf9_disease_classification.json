@@ -1,0 +1,748 @@
+{
+ "name": "appleleaf9_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/appleleaf9_disease_classification",
+ "hf_sha": "55cf43ede7d426aea6359c0e977e92ec715b871a",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:02:46+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Alternaria leaf spot",
+   "Brown spot",
+   "Frogeye leaf spot",
+   "Grey spot",
+   "Health",
+   "Mosaic",
+   "Powdery mildew",
+   "Rust",
+   "Scab"
+  ],
+  "indexed_rows": 14582
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "appleleaf9_disease_classification-2168908170",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria leaf spot"
+   ],
+   "ann": {
+    "label": "Alternaria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-2cefd4e49f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria leaf spot"
+   ],
+   "ann": {
+    "label": "Alternaria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-6122ff0156",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria leaf spot"
+   ],
+   "ann": {
+    "label": "Alternaria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-22599ff0c8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria leaf spot"
+   ],
+   "ann": {
+    "label": "Alternaria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-2e27de959f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Alternaria leaf spot"
+   ],
+   "ann": {
+    "label": "Alternaria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-15b41ce41b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spot"
+   ],
+   "ann": {
+    "label": "Brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-c681d98422",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 504,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spot"
+   ],
+   "ann": {
+    "label": "Brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-94154736e5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 599,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spot"
+   ],
+   "ann": {
+    "label": "Brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-a6467172f1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spot"
+   ],
+   "ann": {
+    "label": "Brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-a71ac7092a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 785,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown spot"
+   ],
+   "ann": {
+    "label": "Brown spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-bd57a7cb63",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frogeye leaf spot"
+   ],
+   "ann": {
+    "label": "Frogeye leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-fca05caaab",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2689,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frogeye leaf spot"
+   ],
+   "ann": {
+    "label": "Frogeye leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-db03444677",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frogeye leaf spot"
+   ],
+   "ann": {
+    "label": "Frogeye leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-7ecfc27e80",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3700,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frogeye leaf spot"
+   ],
+   "ann": {
+    "label": "Frogeye leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-4610a85dc8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3854,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Frogeye leaf spot"
+   ],
+   "ann": {
+    "label": "Frogeye leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-37c2e310d2",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4082,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey spot"
+   ],
+   "ann": {
+    "label": "Grey spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-30ca087273",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey spot"
+   ],
+   "ann": {
+    "label": "Grey spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-96105f3428",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey spot"
+   ],
+   "ann": {
+    "label": "Grey spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-6e004fbf7c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey spot"
+   ],
+   "ann": {
+    "label": "Grey spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-2784c9127d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Grey spot"
+   ],
+   "ann": {
+    "label": "Grey spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-843d485663",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4435,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Health"
+   ],
+   "ann": {
+    "label": "Health"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-8fb6875766",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Health"
+   ],
+   "ann": {
+    "label": "Health"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-3a6f54b380",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4553,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Health"
+   ],
+   "ann": {
+    "label": "Health"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-47f2658ad8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Health"
+   ],
+   "ann": {
+    "label": "Health"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-c6cdf3f0f9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4843,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Health"
+   ],
+   "ann": {
+    "label": "Health"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-8f4529bc10",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-57159e216b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-1caf3678b4",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-560fc733ea",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-61183f2557",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-4913fb0849",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-db2325241c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 722,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-e98b72e272",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 937,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-17a27021da",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-05219db08e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery mildew"
+   ],
+   "ann": {
+    "label": "Powdery mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-cab93384d5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-876e1fa64e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3440,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-aa696c4f11",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3859,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-f8d07b5ebe",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 4005,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-b4861dacde",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 4220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-43ee9e030c",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 941,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-2f273d0413",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-06a6933e53",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2447,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-37045303af",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3839,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "appleleaf9_disease_classification-e87a0ea614",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4348,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  }
+ ]
+}

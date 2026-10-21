@@ -1,0 +1,2199 @@
+{
+ "name": "image_safari_crop_weed_segmentation",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/image_safari_crop_weed_segmentation",
+ "hf_sha": "5ce7b23bc88c03874a57e95046521a3a09867420",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:48:02+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "background",
+   "crop",
+   "weed_broadleaf",
+   "weed_narrowleaf",
+   "fruit"
+  ],
+  "indexed_rows": 2114
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-bd100d7032",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       630.0,
+       717.0,
+       267.2823,
+       258.965
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       205.0,
+       1439.0,
+       506.6871
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-9f3d222cab",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "weed_broadleaf",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1733.0,
+       2663.0,
+       714.376,
+       599.827
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2047.0,
+       2787.0,
+       35.934,
+       62.127
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2034.0,
+       2780.0,
+       14.196,
+       17.609
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2048.0,
+       2744.0,
+       32.007,
+       35.509
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2326.0,
+       2861.0,
+       121.278,
+       85.65
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2236.0,
+       2906.0,
+       19.587,
+       16.959
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2202.0,
+       2930.0,
+       245.392,
+       333.153
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2195.0,
+       3051.0,
+       88.025,
+       75.916
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       2442.0,
+       3259.0
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       761.0,
+       2105.0,
+       123.783,
+       126.363
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       899.0,
+       1992.0,
+       201.6556,
+       274.337
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       833.0,
+       1914.0,
+       149.616,
+       157.614
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       721.0,
+       2261.0,
+       648.7916,
+       349.1874
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-14bcc457d0",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-1a30f010fe",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "fruit",
+    "weed_broadleaf",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "crop",
+      "bbox_raw": [
+       1745.0,
+       855.0,
+       490.506,
+       330.548
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       715.0,
+       3082.0,
+       22.3,
+       89.441
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       764.0,
+       3235.0,
+       19.311,
+       27.669
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       475.0,
+       3165.0,
+       63.575,
+       98.172
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       1772.0,
+       2076.0,
+       76.352,
+       85.422
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       1267.0,
+       62.293,
+       77.271
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       1349.0,
+       65.279,
+       108.654
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       1580.0,
+       208.815,
+       196.73
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       1940.0,
+       50.916,
+       43.953
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       1.0,
+       1813.0,
+       23.319,
+       38.132
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       596.0,
+       2141.0,
+       41.789,
+       49.045
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       473.0,
+       1410.0,
+       30.465,
+       45.207
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       323.0,
+       1322.0,
+       45.564,
+       27.951
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       50.0,
+       990.0,
+       49.72,
+       52.337
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       531.0,
+       99.535,
+       185.068
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       222.0,
+       2445.0,
+       3040.6747
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       1382.0,
+       422.0,
+       74.06,
+       93.189
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1517.0,
+       472.0,
+       38.421,
+       47.296
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1684.0,
+       479.0,
+       18.54,
+       31.887
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       54.734,
+       41.062
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       1287.2231,
+       421.4646
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       305.0,
+       171.0,
+       42.4679,
+       38.7619
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       511.0,
+       139.0,
+       22.5639,
+       31.4051
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       606.0,
+       166.0,
+       49.1923,
+       86.8914
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       233.0,
+       416.0,
+       46.4203,
+       88.8218
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       310.0,
+       502.0,
+       25.8838,
+       17.646
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       460.0,
+       474.0,
+       19.1236,
+       32.6005
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       279.0,
+       574.0,
+       20.2128,
+       22.3933
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2211.0,
+       999.0,
+       147.6495,
+       126.6309
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2092.0,
+       2247.0,
+       94.5289,
+       87.9695
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2302.0,
+       1620.0,
+       32.4019,
+       46.5332
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2332.0,
+       1657.0,
+       33.9341,
+       29.7036
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2380.0,
+       1649.0,
+       31.6664,
+       34.2254
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1958.0,
+       399.0,
+       179.4658,
+       161.9188
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2325.0,
+       0.0,
+       48.4098,
+       52.3954
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1783.0,
+       0.0,
+       309.7332,
+       203.8564
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1429.0,
+       0.0,
+       238.1508,
+       113.0112
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1985.0,
+       37.0,
+       462.1003,
+       353.7725
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2281.0,
+       87.0,
+       20.095,
+       38.0511
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2141.0,
+       128.0,
+       30.5565,
+       24.8095
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       2153.0,
+       0.0,
+       107.0137,
+       129.4271
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2387.0,
+       497.0,
+       60.1087,
+       140.2476
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2273.0,
+       493.0,
+       105.4576,
+       124.6851
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       1133.0,
+       143.0,
+       38.8814,
+       54.963
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       633.0,
+       71.0,
+       572.9238,
+       329.1312
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       1151.0,
+       0.0,
+       38.1196,
+       18.9971
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1120.0,
+       0.0,
+       79.2847,
+       102.8366
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1199.0,
+       0.0,
+       74.9208,
+       21.6749
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1198.0,
+       0.0,
+       118.7197,
+       166.482
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1275.0,
+       0.0,
+       17.1527,
+       22.2323
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1002.0,
+       61.0,
+       86.8615,
+       70.7085
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       31.0,
+       137.0,
+       62.9079,
+       40.4127
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       93.0,
+       12.1007,
+       37.6546
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1.0,
+       202.0,
+       24.0502,
+       30.085
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1874.0,
+       206.0,
+       573.1105,
+       757.7446
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       2336.0,
+       470.0,
+       26.7961,
+       25.1952
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2389.0,
+       591.0,
+       33.3791,
+       32.0902
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       2355.0,
+       605.0,
+       20.3695,
+       8.7363
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       2214.0,
+       2137.0,
+       233.093,
+       160.8654
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1589.0,
+       1514.0,
+       284.3214,
+       699.9938
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1808.0,
+       2153.0,
+       16.7672,
+       48.9169
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1839.0,
+       2105.0,
+       34.051,
+       48.7447
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1874.0,
+       2157.0,
+       16.0377,
+       40.3246
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-a861efae0d",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-8d1c7885a9",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "weed_broadleaf",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       9.0,
+       3726.0,
+       637.986,
+       432.66
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       720.0,
+       3823.0,
+       224.133,
+       335.937
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       915.0,
+       4116.0,
+       162.517,
+       42.857
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1556.0,
+       3905.0,
+       232.807,
+       253.687
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1318.0,
+       3862.0,
+       86.202,
+       106.633
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1431.0,
+       3665.0,
+       242.159,
+       279.416
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1329.0,
+       3636.0,
+       59.464,
+       107.932
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1387.0,
+       3268.0,
+       188.414,
+       233.068
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1676.0,
+       3299.0,
+       56.511,
+       44.354
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1816.0,
+       3272.0,
+       29.854,
+       34.776
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1818.0,
+       3166.0,
+       90.158,
+       79.089
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1930.0,
+       3153.0,
+       29.223,
+       44.412
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1938.0,
+       3060.0,
+       63.536,
+       79.549
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       976.0,
+       3184.0,
+       56.302,
+       96.255
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       758.0,
+       3297.0,
+       422.039,
+       326.319
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       264.0,
+       2915.0,
+       75.576,
+       55.763
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       203.0,
+       2767.0,
+       123.591,
+       137.789
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       465.0,
+       2658.0,
+       247.909,
+       283.386
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       464.0,
+       2721.0,
+       72.819,
+       51.655
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       15.0,
+       3583.0,
+       120.481,
+       140.186
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       0.0,
+       3375.0,
+       48.351,
+       100.871
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       0.0,
+       3172.0,
+       41.895,
+       60.582
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       16.0,
+       3243.0,
+       33.516,
+       47.49
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       271.0,
+       3299.0,
+       65.286,
+       31.724
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2515.0,
+       3416.0,
+       604.164,
+       589.929
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2745.0,
+       3964.0,
+       114.634,
+       99.45
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2874.0,
+       4014.0,
+       46.234,
+       62.521
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2964.0,
+       4010.0,
+       54.079,
+       66.701
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2858.0,
+       3791.0,
+       179.028,
+       189.974
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       3005.0,
+       3771.0,
+       80.829,
+       78.897
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2529.0,
+       3555.0,
+       195.593,
+       110.213
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2889.0,
+       3177.0,
+       230.494,
+       319.375
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       2863.0,
+       3192.0,
+       133.141,
+       127.159
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2901.0,
+       3114.0,
+       104.109,
+       53.731
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2880.0,
+       2725.0,
+       238.822,
+       459.321
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2883.0,
+       2907.0,
+       64.056,
+       62.084
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2714.0,
+       2838.0,
+       79.393,
+       119.608
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2483.0,
+       2831.0,
+       68.508,
+       69.6
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2431.0,
+       2878.0,
+       52.211,
+       31.985
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2301.0,
+       2863.0,
+       18.169,
+       38.12
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2318.0,
+       2820.0,
+       61.036,
+       61.68
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2165.0,
+       2933.0,
+       44.243,
+       32.056
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1577.0,
+       2834.0,
+       63.07,
+       49.422
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2293.0,
+       2711.0,
+       30.498,
+       38.024
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       490.0,
+       32.0,
+       2628.5999,
+       3512.4684
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       670.0,
+       2556.0,
+       19.5883,
+       27.2322
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       728.0,
+       2549.0,
+       20.6816,
+       35.647
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       684.0,
+       2610.0,
+       36.4315,
+       14.0847
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       690.0,
+       2518.0,
+       45.3153,
+       96.0289
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       756.0,
+       2696.0,
+       16.3967,
+       19.8201
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1767.0,
+       2699.0,
+       31.6507,
+       35.0841
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1767.0,
+       2728.0,
+       46.6893,
+       75.5589
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1935.0,
+       2709.0,
+       20.8553,
+       31.8532
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2088.0,
+       2330.0,
+       71.699,
+       101.6804
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2059.0,
+       2323.0,
+       27.4518,
+       12.0792
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2051.0,
+       2304.0,
+       65.503,
+       13.67
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2046.0,
+       2356.0,
+       21.1532,
+       24.7938
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1908.0,
+       2439.0,
+       122.1717,
+       93.2346
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2067.0,
+       2794.0,
+       68.0546,
+       96.0349
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2322.0,
+       2595.0,
+       60.8811,
+       71.3727
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2186.0,
+       2641.0,
+       35.0731,
+       41.7387
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2163.0,
+       2569.0,
+       45.4747,
+       51.4424
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2067.0,
+       2613.0,
+       23.3286,
+       25.3484
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2375.0,
+       2508.0,
+       50.8052,
+       37.3189
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2373.0,
+       2552.0,
+       28.0897,
+       24.9352
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2423.0,
+       2547.0,
+       34.3602,
+       18.5996
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2973.0,
+       2667.0,
+       27.1791,
+       27.73
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2945.0,
+       2508.0,
+       88.6049,
+       60.8633
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2952.0,
+       2477.0,
+       41.7774,
+       33.7876
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2937.0,
+       2505.0,
+       17.6335,
+       14.9617
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       3026.0,
+       2511.0,
+       16.2534,
+       22.2774
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       3063.0,
+       2434.0,
+       55.6304,
+       62.0948
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       3005.0,
+       2415.0,
+       42.7656,
+       27.3388
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2843.0,
+       2364.0,
+       111.1982,
+       60.0136
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2671.0,
+       2448.0,
+       32.5417,
+       52.3553
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2654.0,
+       2476.0,
+       15.23,
+       11.7878
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1848.0,
+       2136.0,
+       87.7377,
+       78.5238
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1944.0,
+       2107.0,
+       63.3998,
+       96.8676
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2014.0,
+       2107.0,
+       97.1308,
+       95.5716
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2015.0,
+       2181.0,
+       90.2647,
+       77.3734
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2177.0,
+       2197.0,
+       72.7138,
+       104.2134
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2196.0,
+       2080.0,
+       70.6951,
+       85.9799
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2935.0,
+       2178.0,
+       108.1095,
+       114.1986
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2599.0,
+       2232.0,
+       111.397,
+       79.0327
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2552.0,
+       2273.0,
+       32.5337,
+       35.5537
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2579.0,
+       2139.0,
+       65.2521,
+       50.5784
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2613.0,
+       2198.0,
+       20.5524,
+       32.7868
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2490.0,
+       2175.0,
+       27.4644,
+       54.585
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2534.0,
+       2149.0,
+       22.165,
+       21.1211
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2305.0,
+       1854.0,
+       117.1671,
+       146.1446
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2252.0,
+       1822.0,
+       23.6742,
+       37.5931
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2265.0,
+       1859.0,
+       36.4864,
+       25.9116
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2732.0,
+       2156.0,
+       46.1357,
+       73.3294
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2704.0,
+       2195.0,
+       20.7019,
+       10.8346
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2827.0,
+       2336.0,
+       38.1151,
+       27.6381
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2853.0,
+       2279.0,
+       28.9242,
+       21.014
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2809.0,
+       2289.0,
+       30.6723,
+       16.629
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2790.0,
+       2297.0,
+       20.6387,
+       23.1883
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2773.0,
+       1726.0,
+       235.2503,
+       197.0442
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2694.0,
+       1997.0,
+       61.9946,
+       53.7421
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2776.0,
+       1986.0,
+       40.0039,
+       36.392
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2815.0,
+       1953.0,
+       46.3041,
+       58.2867
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       2799.0,
+       1919.0,
+       36.965,
+       34.809
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1799.0,
+       2072.0,
+       24.2472,
+       28.0904
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-d1036ac8c2",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-e20fada6f4",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-c8bdd6cad5",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-2c519ec954",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "fruit",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "crop",
+      "bbox_raw": [
+       5.0,
+       0.0,
+       2442.254,
+       3230.8131
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       128.0,
+       1791.0,
+       95.293,
+       110.2809
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       114.0,
+       1927.0,
+       104.087,
+       92.884
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       257.0,
+       1785.0,
+       25.6043,
+       62.8496
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       2164.0,
+       1828.0,
+       25.1913,
+       174.5044
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       2364.0,
+       1669.0,
+       60.7027,
+       272.1961
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       1864.0,
+       1585.0,
+       29.8976,
+       279.2726
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-28e8f919b3",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "fruit",
+    "weed_broadleaf",
+    "weed_narrowleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "crop",
+      "bbox_raw": [
+       697.0,
+       0.0,
+       41.0,
+       37.0
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       0.0,
+       2104.364,
+       2527.0
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       659.0,
+       419.0,
+       62.5071,
+       222.392
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       504.0,
+       119.0,
+       64.0578,
+       152.6574
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       835.0,
+       97.0,
+       45.7326,
+       79.5817
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       374.0,
+       234.0,
+       34.9776,
+       55.188
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       419.0,
+       284.0,
+       44.6682,
+       116.6136
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       2169.0,
+       629.0,
+       144.4027,
+       96.2307
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1492.0,
+       748.0,
+       9.1633,
+       40.8217
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1434.0,
+       770.0,
+       50.5889,
+       29.0694
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1497.0,
+       813.0,
+       12.2003,
+       85.4767
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1483.0,
+       839.0,
+       136.9138,
+       144.8518
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       1458.0,
+       914.0,
+       20.3737,
+       25.8535
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1459.0,
+       971.0,
+       31.4169,
+       15.2166
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1354.0,
+       942.0,
+       87.4393,
+       51.6984
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1387.0,
+       1003.0,
+       25.4891,
+       15.0364
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1426.0,
+       986.0,
+       70.5591,
+       23.146
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       1754.0,
+       0.0,
+       387.1973,
+       407.9954
+      ]
+     },
+     {
+      "label": "weed_narrowleaf",
+      "bbox_raw": [
+       225.0,
+       2989.0,
+       368.5088,
+       241.4161
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-eae85c3281",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "fruit",
+    "weed_broadleaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "crop",
+      "bbox_raw": [
+       3.0,
+       0.0,
+       2972.0,
+       3276.563
+      ]
+     },
+     {
+      "label": "crop",
+      "bbox_raw": [
+       0.0,
+       2890.0,
+       62.241,
+       235.282
+      ]
+     },
+     {
+      "label": "weed_broadleaf",
+      "bbox_raw": [
+       268.0,
+       3133.0,
+       144.329,
+       453.801
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       2090.0,
+       1058.0,
+       37.7813,
+       54.25
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       959.0,
+       500.0,
+       69.75,
+       77.5
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       2697.0,
+       318.0,
+       69.75,
+       54.25
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "image_safari_crop_weed_segmentation-2762233b96",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "crop",
+    "fruit"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "crop",
+      "bbox_raw": [
+       141.0,
+       0.0,
+       2302.896,
+       3262.251
+      ]
+     },
+     {
+      "label": "fruit",
+      "bbox_raw": [
+       1351.0,
+       1253.0,
+       71.7188,
+       57.375
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

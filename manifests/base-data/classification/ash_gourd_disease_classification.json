@@ -1,0 +1,424 @@
+{
+ "name": "ash_gourd_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/ash_gourd_disease_classification",
+ "hf_sha": "6d4bcbd935d800d886346a5c22381f660af31851",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:07:02+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Aphid",
+   "Downy mildew",
+   "Healthy",
+   "Leaf curl",
+   "Leaf miner"
+  ],
+  "indexed_rows": 2676
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "ash_gourd_disease_classification-b5d2a366ab",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 172,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-3d3ef80cfb",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 206,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-4ce74b5ed2",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 533,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-12efd855bc",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 602,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-ba6e9ab1a4",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 663,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-9366efb786",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 816,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf miner"
+   ],
+   "ann": {
+    "label": "Leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-8e17ba7e52",
+   "ref": {
+    "file": "raw/train-00000-of-00003.parquet",
+    "row": 866,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf miner"
+   ],
+   "ann": {
+    "label": "Leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-6ba9ee43f7",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 23,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf miner"
+   ],
+   "ann": {
+    "label": "Leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-7e41ec4e69",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 30,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf miner"
+   ],
+   "ann": {
+    "label": "Leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-1ca8ca37af",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 33,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf miner"
+   ],
+   "ann": {
+    "label": "Leaf miner"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-3959c48bf5",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 109,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf curl"
+   ],
+   "ann": {
+    "label": "Leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-9fa1259d92",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 156,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf curl"
+   ],
+   "ann": {
+    "label": "Leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-7db376108b",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 159,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf curl"
+   ],
+   "ann": {
+    "label": "Leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-19561bf961",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 375,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf curl"
+   ],
+   "ann": {
+    "label": "Leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-d3058e766e",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 551,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf curl"
+   ],
+   "ann": {
+    "label": "Leaf curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-366669cfcf",
+   "ref": {
+    "file": "raw/train-00001-of-00003.parquet",
+    "row": 700,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-88fe5de9e1",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 10,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-3b5bcb912b",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 289,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-28da44bb64",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 320,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-e2bfa71a6d",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 425,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Downy mildew"
+   ],
+   "ann": {
+    "label": "Downy mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-a477d6b668",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 769,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphid"
+   ],
+   "ann": {
+    "label": "Aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-92ea1152ae",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 801,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphid"
+   ],
+   "ann": {
+    "label": "Aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-b8ec9ca4a1",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 829,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphid"
+   ],
+   "ann": {
+    "label": "Aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-dd168da4df",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 833,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphid"
+   ],
+   "ann": {
+    "label": "Aphid"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ash_gourd_disease_classification-76dee8942a",
+   "ref": {
+    "file": "raw/train-00002-of-00003.parquet",
+    "row": 846,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphid"
+   ],
+   "ann": {
+    "label": "Aphid"
+   },
+   "strata": {}
+  }
+ ]
+}

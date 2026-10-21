@@ -1,0 +1,1544 @@
+{
+ "name": "WE3DS_weed_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/WE3DS_weed_segmentation",
+ "hf_sha": "daa8416e5aef2756b9a05d590987dd18733ec881",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-21T04:29:37+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3",
+   "4": "value_4",
+   "5": "value_5",
+   "6": "value_6",
+   "7": "value_7",
+   "8": "value_8",
+   "9": "value_9",
+   "10": "value_10",
+   "11": "value_11",
+   "12": "value_12",
+   "13": "value_13",
+   "14": "value_14",
+   "15": "value_15",
+   "16": "value_16",
+   "17": "value_17",
+   "18": "value_18"
+  },
+  "indexed_rows": 2568
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "WE3DS_weed_segmentation-8df34bab96",
+   "ref": {
+    "file": "data/train-00016-of-00019.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-e6d63d7a56",
+   "ref": {
+    "file": "data/train-00016-of-00019.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-7dd3b9a1ee",
+   "ref": {
+    "file": "data/train-00016-of-00019.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_12",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_12",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-e707580526",
+   "ref": {
+    "file": "data/train-00016-of-00019.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_6"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-980e74cd25",
+   "ref": {
+    "file": "data/train-00016-of-00019.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_11"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_11"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-08846c7e7e",
+   "ref": {
+    "file": "data/train-00015-of-00019.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-b307510fc3",
+   "ref": {
+    "file": "data/train-00015-of-00019.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_14"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_14"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-1a813160c4",
+   "ref": {
+    "file": "data/train-00015-of-00019.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_12"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_12"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-c64f2cca32",
+   "ref": {
+    "file": "data/train-00015-of-00019.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-e697142c12",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_7"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_7"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-9190f5fd6c",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_7"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_7"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-3c96500ef5",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-b253d59c37",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-9999f256e7",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-97354bbc53",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-99ad738741",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-c0b23f657c",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_7"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_7"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-0186f279eb",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_7"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_7"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-a00b167784",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_7"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_7"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-f6ddf0a486",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_9"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-b781d80936",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_16"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_16"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-c668cf095f",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_16"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_16"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-0bf9a81007",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_12",
+    "value_14"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_12",
+     "value_14"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-0f2f43b8c2",
+   "ref": {
+    "file": "data/train-00013-of-00019.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_12"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_12"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-a8e2b6068c",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_18",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_18",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-efd8dcd519",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_13"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_13"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-e7d7c891cd",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-2ad0aec7de",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_9"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-be62e4821c",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_9"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-d28d8d1d28",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_13"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_13"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-ac80e1d45d",
+   "ref": {
+    "file": "data/train-00008-of-00019.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_13"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_13"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-2dd01977df",
+   "ref": {
+    "file": "data/train-00009-of-00019.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_13"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_13"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-c38a4442aa",
+   "ref": {
+    "file": "data/train-00009-of-00019.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_13"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_13"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-5d94f7a791",
+   "ref": {
+    "file": "data/train-00009-of-00019.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-f47ce1aeff",
+   "ref": {
+    "file": "data/train-00009-of-00019.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_9"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-a4f8b6728c",
+   "ref": {
+    "file": "data/train-00009-of-00019.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_15"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_15"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-1244fbc9de",
+   "ref": {
+    "file": "data/train-00001-of-00019.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_10",
+    "value_18"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_10",
+     "value_18"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-fb8ccc5ff7",
+   "ref": {
+    "file": "data/train-00001-of-00019.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_11"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_11"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-6d46775660",
+   "ref": {
+    "file": "data/train-00014-of-00019.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_6"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-129574fc9d",
+   "ref": {
+    "file": "data/train-00014-of-00019.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_10"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_10"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-415ae6456e",
+   "ref": {
+    "file": "data/train-00014-of-00019.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-c91c4247f9",
+   "ref": {
+    "file": "data/train-00014-of-00019.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_6"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-4e283de987",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_8"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_8"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-2b0ef9e4fe",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_8"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_8"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-0f5441a24d",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_6"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-baa27c3908",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_17",
+    "value_18"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_17",
+     "value_18"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-13ad166f13",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_17"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_17"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-f9bc5ae9a0",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_10",
+    "value_18"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_10",
+     "value_18"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-72ed57151b",
+   "ref": {
+    "file": "data/train-00005-of-00019.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_11"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_11"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-a298bdf15b",
+   "ref": {
+    "file": "data/train-00010-of-00019.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_14"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_14"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-1d6a7115d0",
+   "ref": {
+    "file": "data/train-00010-of-00019.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_11",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_11",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-70e2d3aaf8",
+   "ref": {
+    "file": "data/train-00010-of-00019.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_14",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_14",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-14639a2be3",
+   "ref": {
+    "file": "data/train-00018-of-00019.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_10"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_10"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-7a34353992",
+   "ref": {
+    "file": "data/train-00017-of-00019.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-3300f3c0f7",
+   "ref": {
+    "file": "data/train-00004-of-00019.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_11"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_11"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-7ad513c819",
+   "ref": {
+    "file": "data/train-00004-of-00019.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_16"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_16"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-f62b99f6a9",
+   "ref": {
+    "file": "data/train-00004-of-00019.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_16"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_16"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-2fe06819c5",
+   "ref": {
+    "file": "data/train-00004-of-00019.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_16"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_16"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-fb5be2804f",
+   "ref": {
+    "file": "data/train-00003-of-00019.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_8"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_8"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-e3487f06cf",
+   "ref": {
+    "file": "data/train-00003-of-00019.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_8"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_8"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-721ab9db0f",
+   "ref": {
+    "file": "data/train-00003-of-00019.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_8"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_8"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-30b5155f91",
+   "ref": {
+    "file": "data/train-00003-of-00019.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_18",
+    "value_9"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_18",
+     "value_9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-004047b618",
+   "ref": {
+    "file": "data/train-00003-of-00019.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_17"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_17"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-cef12f4de8",
+   "ref": {
+    "file": "data/train-00012-of-00019.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_14"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_14"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-63da144222",
+   "ref": {
+    "file": "data/train-00002-of-00019.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_17",
+    "value_18"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_17",
+     "value_18"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-851836ec71",
+   "ref": {
+    "file": "data/train-00006-of-00019.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_10",
+    "value_18"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_10",
+     "value_18"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-a4926229a8",
+   "ref": {
+    "file": "data/train-00006-of-00019.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_17"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_17"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-61b7c39eff",
+   "ref": {
+    "file": "data/train-00007-of-00019.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-87903cd144",
+   "ref": {
+    "file": "data/train-00007-of-00019.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_6"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-40a3fd3c94",
+   "ref": {
+    "file": "data/train-00007-of-00019.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_12"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_12"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-781e265962",
+   "ref": {
+    "file": "data/train-00011-of-00019.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_15"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_15"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-632409ca61",
+   "ref": {
+    "file": "data/train-00011-of-00019.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_15"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_15"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-f464e3b9d3",
+   "ref": {
+    "file": "data/train-00011-of-00019.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_15"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_15"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "WE3DS_weed_segmentation-3056c1329a",
+   "ref": {
+    "file": "data/train-00011-of-00019.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "test"
+   },
+   "keys": [
+    "value_1",
+    "value_15"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_15"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

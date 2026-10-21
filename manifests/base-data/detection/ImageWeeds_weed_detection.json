@@ -1,0 +1,787 @@
+{
+ "name": "ImageWeeds_weed_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/ImageWeeds_weed_detection",
+ "hf_sha": "c975deaff003afdabfd646123c5204785e22a7fc",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T23:53:08+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "horseweed",
+   "kochia",
+   "corn",
+   "ragweed",
+   "redrootpigweed"
+  ],
+  "indexed_rows": 3208
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "ImageWeeds_weed_detection-835c76acbe",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       42.0,
+       34.0,
+       29.0,
+       22.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-f73b5687c1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       127.0,
+       182.0,
+       58.0,
+       65.0
+      ]
+     },
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       186.0,
+       89.0,
+       69.0,
+       83.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-e5d9fa2df9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       96.0,
+       69.0,
+       86.0,
+       97.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-694acec5e3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 806,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       149.0,
+       78.0,
+       120.0,
+       119.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-bee79f6005",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 901,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "horseweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "horseweed",
+      "bbox_raw": [
+       31.0,
+       7.0,
+       266.0,
+       291.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-cd01102a5b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "corn",
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       237.0,
+       221.0,
+       77.0,
+       71.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       316.0,
+       288.0,
+       28.0,
+       26.0
+      ]
+     },
+     {
+      "label": "corn",
+      "bbox_raw": [
+       534.0,
+       359.0,
+       91.0,
+       116.0
+      ]
+     },
+     {
+      "label": "corn",
+      "bbox_raw": [
+       14.0,
+       142.0,
+       128.0,
+       215.0
+      ]
+     },
+     {
+      "label": "corn",
+      "bbox_raw": [
+       26.0,
+       414.0,
+       161.0,
+       158.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-3deb16f3e4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       180.0,
+       41.0,
+       141.0,
+       124.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-ece3d8106d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       472.0,
+       193.0,
+       56.0,
+       45.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       562.0,
+       149.0,
+       57.0,
+       56.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       347.0,
+       309.0,
+       61.0,
+       55.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       430.0,
+       277.0,
+       96.0,
+       70.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       564.0,
+       251.0,
+       61.0,
+       81.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       648.0,
+       212.0,
+       82.0,
+       104.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       244.0,
+       347.0,
+       41.0,
+       40.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-6742884e0e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       99.0,
+       60.0,
+       146.0,
+       73.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-cf926f4ec7",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kochia"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       32.0,
+       110.0,
+       40.0,
+       26.0
+      ]
+     },
+     {
+      "label": "kochia",
+      "bbox_raw": [
+       64.0,
+       180.0,
+       42.0,
+       38.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-36dc6ccb47",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       317.0,
+       91.0,
+       184.0,
+       168.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-acb0b44dca",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 695,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       163.0,
+       164.0,
+       40.0,
+       35.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-0b248f7e92",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       210.0,
+       175.0,
+       192.0,
+       185.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-c2b4a63d89",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1083,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       235.0,
+       22.0,
+       213.0,
+       188.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       485.0,
+       28.0,
+       211.0,
+       197.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-b7fe074d3e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ragweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       303.0,
+       227.0,
+       142.0,
+       130.0
+      ]
+     },
+     {
+      "label": "ragweed",
+      "bbox_raw": [
+       339.0,
+       123.0,
+       136.0,
+       118.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-9e89f1d20e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       1325.0,
+       835.0,
+       635.0,
+       1260.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2970.0,
+       1005.0,
+       755.0,
+       1535.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       2300.0,
+       2015.0,
+       945.0,
+       940.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       780.0,
+       2910.0,
+       680.0,
+       1165.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-d431e14de2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       113.0,
+       133.0,
+       92.0,
+       93.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       185.0,
+       81.0,
+       93.0,
+       89.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-54fc59e7bb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1569,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       75.0,
+       44.0,
+       20.0,
+       29.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       81.0,
+       85.0,
+       19.0,
+       30.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-81574beaf6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1583,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       75.0,
+       102.0,
+       123.0,
+       121.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       206.0,
+       171.0,
+       124.0,
+       94.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "ImageWeeds_weed_detection-6fff555b96",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "redrootpigweed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       32.0,
+       102.0,
+       58.0,
+       82.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       70.0,
+       188.0,
+       69.0,
+       110.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       153.0,
+       169.0,
+       76.0,
+       123.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       208.0,
+       330.0,
+       72.0,
+       109.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       174.0,
+       609.0,
+       86.0,
+       112.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       276.0,
+       553.0,
+       80.0,
+       109.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       246.0,
+       429.0,
+       67.0,
+       91.0
+      ]
+     },
+     {
+      "label": "redrootpigweed",
+      "bbox_raw": [
+       84.0,
+       356.0,
+       110.0,
+       85.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

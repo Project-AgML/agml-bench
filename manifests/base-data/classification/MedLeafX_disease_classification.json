@@ -1,0 +1,533 @@
+{
+ "name": "MedLeafX_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/MedLeafX_disease_classification",
+ "hf_sha": "a4761878d9b0a3d7dcd3f66097e7f9fa715656f1",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:37:06+00:00",
+ "info": {
+  "layout": "metadata_jsonl",
+  "class_names": [
+   "Bacterial Spot",
+   "Healthy Leaf",
+   "Powdery Mildew",
+   "Shot Hole",
+   "Shot Hole Leaf",
+   "Yellow Leaf"
+  ],
+  "indexed_rows": 10858
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "MedLeafX_disease_classification-b1731bfc7e",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 359,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Camphor/Bacterial Spot/Bacterial Spot_422.jpg"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-7001e39e29",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 1284,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Camphor/Healthy Leaf/Healthy Leaf_534.JPG"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-cbf50d45f5",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 1534,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Camphor/Healthy Leaf/Healthy Leaf_76.jpg"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-50237650be",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 2462,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Bacterial Spot/HariTaki Disease-1_159.jpg"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-39aa3c4ce1",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 2638,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Bacterial Spot/HariTaki Disease-1_317.jpg"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-95e82e7259",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 2663,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Bacterial Spot/HariTaki Disease-1_34.jpg"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-33efa33355",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 3656,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Healthy Leaf/HariTaki Healthy Leaf_510.jpg"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-47e0d14bb5",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 4144,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Shot Hole/HariTaki Disease-2_215.jpg"
+   },
+   "keys": [
+    "Shot Hole"
+   ],
+   "ann": {
+    "label": "Shot Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-afa0b6c4af",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 4263,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Shot Hole/HariTaki Disease-2_322.jpg"
+   },
+   "keys": [
+    "Shot Hole"
+   ],
+   "ann": {
+    "label": "Shot Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-974718e787",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 4458,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Shot Hole/HariTaki Disease-2_499.jpg"
+   },
+   "keys": [
+    "Shot Hole"
+   ],
+   "ann": {
+    "label": "Shot Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-0e8e847ded",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 4597,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Shot Hole/HariTaki Disease-2_623.jpg"
+   },
+   "keys": [
+    "Shot Hole"
+   ],
+   "ann": {
+    "label": "Shot Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-99912d0301",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 4661,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/HariTaki/Shot Hole/HariTaki Disease-2_681.jpg"
+   },
+   "keys": [
+    "Shot Hole"
+   ],
+   "ann": {
+    "label": "Shot Hole"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-273db5bcbd",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 5380,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Healthy Leaf/Healthy Leaf_IMG_20241104_184204.jpg.jpg"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-a054be9ae4",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 5886,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Powdery Mildew/White Spot_20241104_004001.jpg.jpg"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-6614588eb0",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 6340,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Powdery Mildew/White Spot_IMG_20241108_182938.jpg.jpg"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-5399b1face",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 6452,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Powdery Mildew/White Spot_IMG_20241108_184016.jpg.jpg"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-a18e00d868",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 6474,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Powdery Mildew/White Spot_IMG_20241108_184156.jpg.jpg"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-efaabe2eb4",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 6476,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Powdery Mildew/White Spot_IMG_20241108_184205.jpg.jpg"
+   },
+   "keys": [
+    "Powdery Mildew"
+   ],
+   "ann": {
+    "label": "Powdery Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-77e11e3b4d",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 6951,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Shot Hole Leaf/Spot Leaf_20241103_195542.jpg.jpg"
+   },
+   "keys": [
+    "Shot Hole Leaf"
+   ],
+   "ann": {
+    "label": "Shot Hole Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-ec55ca63d8",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7058,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Shot Hole Leaf/Spot Leaf_IMG_20241103_192129.jpg.jpg"
+   },
+   "keys": [
+    "Shot Hole Leaf"
+   ],
+   "ann": {
+    "label": "Shot Hole Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-cca3777995",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7135,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Shot Hole Leaf/Spot Leaf_IMG_20241103_193922.jpg.jpg"
+   },
+   "keys": [
+    "Shot Hole Leaf"
+   ],
+   "ann": {
+    "label": "Shot Hole Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-1cae259a83",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7287,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Shot Hole Leaf/Spot Leaf_IMG_20241103_195602.jpg.jpg"
+   },
+   "keys": [
+    "Shot Hole Leaf"
+   ],
+   "ann": {
+    "label": "Shot Hole Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-3ae5414e37",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7309,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Shot Hole Leaf/Spot Leaf_IMG_20241103_195651.jpg.jpg"
+   },
+   "keys": [
+    "Shot Hole Leaf"
+   ],
+   "ann": {
+    "label": "Shot Hole Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-54a66aa14e",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7769,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Yellow Leaf/Yellow Leaf_20241103_224101.jpg.jpg"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-f55064c2ab",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 7851,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Yellow Leaf/Yellow Leaf_20241108_184328.jpg.jpg"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-880e1cf6ff",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 8320,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Neem/Yellow Leaf/Yellow Leaf_IMG_20241109_195706.jpg.jpg"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-ad2e780e82",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 8430,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Sojina/Bacterial Spot/Spot Leaf_144.JPG"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-410718e64b",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 9375,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Sojina/Healthy Leaf/HealthyLeaf_271.jpg"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-534e23413e",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 10226,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Sojina/Yellow Leaf/Yellow Leaf_263.jpg"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "MedLeafX_disease_classification-732bd41d33",
+   "ref": {
+    "file": "raw/metadata.jsonl",
+    "row": 10683,
+    "config": "default",
+    "split": "train",
+    "image_path": "raw/images/Sojina/Yellow Leaf/Yellow Leaf_675.jpg"
+   },
+   "keys": [
+    "Yellow Leaf"
+   ],
+   "ann": {
+    "label": "Yellow Leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

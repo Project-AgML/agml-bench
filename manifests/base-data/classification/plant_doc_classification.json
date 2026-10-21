@@ -1,0 +1,2239 @@
+{
+ "name": "plant_doc_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/plant_doc_classification",
+ "hf_sha": "28e67009678d00b033dad632263fcbd0e035b520",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:36:10+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Apple Scab Leaf",
+   "Apple leaf",
+   "Apple rust leaf",
+   "Bell_pepper leaf",
+   "Bell_pepper leaf spot",
+   "Blueberry leaf",
+   "Cherry leaf",
+   "Corn Gray leaf spot",
+   "Corn leaf blight",
+   "Corn rust leaf",
+   "Peach leaf",
+   "Potato leaf early blight",
+   "Potato leaf late blight",
+   "Raspberry leaf",
+   "Soyabean leaf",
+   "Squash Powdery mildew leaf",
+   "Strawberry leaf",
+   "Tomato Early blight leaf",
+   "Tomato Septoria leaf spot",
+   "Tomato leaf",
+   "Tomato leaf bacterial spot",
+   "Tomato leaf late blight",
+   "Tomato leaf mosaic virus",
+   "Tomato leaf yellow virus",
+   "Tomato mold leaf",
+   "Tomato two spotted spider mites leaf",
+   "grape leaf",
+   "grape leaf black rot"
+  ],
+  "indexed_rows": 2569
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plant_doc_classification-e7e3763330",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "label": "Tomato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0cd3409ab2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "label": "Tomato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-2d28552102",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "label": "Tomato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-bed81df6b8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "label": "Tomato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6269c3e050",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf late blight"
+   ],
+   "ann": {
+    "label": "Tomato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e44544c9d0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "label": "Potato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-2ef19dfc17",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "label": "Potato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-38c6238430",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "label": "Potato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4613915343",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "label": "Potato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-a436df07f3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf late blight"
+   ],
+   "ann": {
+    "label": "Potato leaf late blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-42f1a0a9f2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 216,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "label": "Soyabean leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-d5796d1807",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "label": "Soyabean leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-09e356182e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "label": "Soyabean leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ccf4722f30",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "label": "Soyabean leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-b533334fdd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Soyabean leaf"
+   ],
+   "ann": {
+    "label": "Soyabean leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-c54ba0acaf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato leaf bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-5540abc23b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato leaf bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-968748ae53",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato leaf bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-dde50665e8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato leaf bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-d6a2613515",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 373,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf bacterial spot"
+   ],
+   "ann": {
+    "label": "Tomato leaf bacterial spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-a33c5ff200",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "label": "Corn leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-04622610fa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "label": "Corn leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-738852ca22",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 510,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "label": "Corn leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-a1e46b9d3a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "label": "Corn leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-66b5163fce",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 531,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn leaf blight"
+   ],
+   "ann": {
+    "label": "Corn leaf blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-993f322805",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "label": "Tomato Early blight leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e1b98d7fe8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 610,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "label": "Tomato Early blight leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-c8d6ab94be",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 636,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "label": "Tomato Early blight leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-dfe35116a4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "label": "Tomato Early blight leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-515973f542",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 647,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Early blight leaf"
+   ],
+   "ann": {
+    "label": "Tomato Early blight leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e98e70bdd4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 697,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "label": "Tomato mold leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-1672acf5c9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 703,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "label": "Tomato mold leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-516840595a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "label": "Tomato mold leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-9711eb9d1a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 732,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "label": "Tomato mold leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-8b332d5f52",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 744,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato mold leaf"
+   ],
+   "ann": {
+    "label": "Tomato mold leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6b566bf006",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 761,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "label": "Raspberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-670050fd59",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 791,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "label": "Raspberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-a6b63bb85b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "label": "Raspberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-2b346dcb90",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 872,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "label": "Raspberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-370a2e3116",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 876,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raspberry leaf"
+   ],
+   "ann": {
+    "label": "Raspberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-235a13d843",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 893,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "label": "Cherry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-67658f1447",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 897,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "label": "Cherry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-db986a4d15",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "label": "Cherry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-096b102a65",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 914,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "label": "Cherry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-7313b01a60",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 932,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cherry leaf"
+   ],
+   "ann": {
+    "label": "Cherry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-dd7a2bff8a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 939,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ca15e35ced",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4aae43e435",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 955,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e950dbc9d8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-b063272d44",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 985,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf mosaic virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf mosaic virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-45601cfd6b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 998,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "label": "Apple leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-39bda3a96d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1031,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "label": "Apple leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-fded26184c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1032,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "label": "Apple leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-f7c17da2c9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "label": "Apple leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-aafa837767",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1074,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple leaf"
+   ],
+   "ann": {
+    "label": "Apple leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0e751a9273",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1097,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf yellow virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-08aab55f68",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf yellow virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-54d0d739ca",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf yellow virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-7ff2edfec1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf yellow virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-fe8c1c5722",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf yellow virus"
+   ],
+   "ann": {
+    "label": "Tomato leaf yellow virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e12571440a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "label": "Tomato leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ac216f7be3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "label": "Tomato leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4859634916",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "label": "Tomato leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6668921969",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "label": "Tomato leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-3c0878a2dd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1206,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato leaf"
+   ],
+   "ann": {
+    "label": "Tomato leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-c0eaaad1f8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "label": "Blueberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e4f69ccbb6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "label": "Blueberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e033f1e44c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "label": "Blueberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ce6c23b8e4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "label": "Blueberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0c8066fdd5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blueberry leaf"
+   ],
+   "ann": {
+    "label": "Blueberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-5be684e760",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6b9359fa58",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ce6e16ff29",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-7bf25884be",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-f4ccbc234b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0df67aee81",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "label": "Apple Scab Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-059345a1ec",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "label": "Apple Scab Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-3836c80de2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "label": "Apple Scab Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6c8f997139",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "label": "Apple Scab Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-d8b3ccf84f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple Scab Leaf"
+   ],
+   "ann": {
+    "label": "Apple Scab Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-1d5b8fb3bf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "label": "grape leaf black rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6a8c1e042d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "label": "grape leaf black rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6e9c85df57",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "label": "grape leaf black rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-949883a1c3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 241,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "label": "grape leaf black rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-95c9f2cd1f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf black rot"
+   ],
+   "ann": {
+    "label": "grape leaf black rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-12e6d2ec10",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "label": "Potato leaf early blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e722b61222",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 314,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "label": "Potato leaf early blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-dee7f04808",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "label": "Potato leaf early blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-a4bbddb4e0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "label": "Potato leaf early blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0f9b1ab0e4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 369,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Potato leaf early blight"
+   ],
+   "ann": {
+    "label": "Potato leaf early blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-ffc18e4f36",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 383,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "label": "Apple rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-5e6106b110",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "label": "Apple rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-63df9816df",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "label": "Apple rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e34e0df801",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "label": "Apple rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-6a3bda2a5b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Apple rust leaf"
+   ],
+   "ann": {
+    "label": "Apple rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-550602ff0f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 480,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "label": "Squash Powdery mildew leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-977ab272ee",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "label": "Squash Powdery mildew leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-9ab7407694",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 556,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "label": "Squash Powdery mildew leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-5ec30717a6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 574,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "label": "Squash Powdery mildew leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-79475a41ed",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 594,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Squash Powdery mildew leaf"
+   ],
+   "ann": {
+    "label": "Squash Powdery mildew leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-57c20a64ef",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 614,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "label": "Corn Gray leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4fbf2183aa",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "label": "Corn Gray leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-8e77461414",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "label": "Corn Gray leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-999b46e736",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "label": "Corn Gray leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-36dc6ccb47",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn Gray leaf spot"
+   ],
+   "ann": {
+    "label": "Corn Gray leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-7d72740a58",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 727,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "label": "Corn rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-69d27f1ab8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 766,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "label": "Corn rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4f0e8e41b2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 767,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "label": "Corn rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-cccb4e1d31",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 778,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "label": "Corn rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-01a74211dd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 783,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Corn rust leaf"
+   ],
+   "ann": {
+    "label": "Corn rust leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-df7c28d310",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 787,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "label": "Strawberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-0e24b1b2fc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 812,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "label": "Strawberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-d3246e0072",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 815,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "label": "Strawberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4e9ba26098",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "label": "Strawberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-c934ba4c1f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 879,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Strawberry leaf"
+   ],
+   "ann": {
+    "label": "Strawberry leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-39cef2d840",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato two spotted spider mites leaf"
+   ],
+   "ann": {
+    "label": "Tomato two spotted spider mites leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-2afa7d5c5f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 882,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato two spotted spider mites leaf"
+   ],
+   "ann": {
+    "label": "Tomato two spotted spider mites leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4e58220e60",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 906,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "label": "grape leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-781122438e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "label": "grape leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-73873bdafc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 923,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "label": "grape leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-3eff2d6881",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 946,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "label": "grape leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-65b0dac148",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 948,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "grape leaf"
+   ],
+   "ann": {
+    "label": "grape leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-1040f80776",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1015,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Tomato Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-244de94583",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Tomato Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-5670cf2e18",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1045,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Tomato Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-43c987c234",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1076,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Tomato Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-aff743a08e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1093,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Tomato Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-77d78f18dc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "label": "Peach leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-21074e3949",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "label": "Peach leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-4ecf004c5b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "label": "Peach leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-62d356422f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "label": "Peach leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-044939f73e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Peach leaf"
+   ],
+   "ann": {
+    "label": "Peach leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-7a1fcd7019",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-2bcae05e1a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e898947954",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-e916a5fe0d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1281,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plant_doc_classification-20507a9a8b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bell_pepper leaf spot"
+   ],
+   "ann": {
+    "label": "Bell_pepper leaf spot"
+   },
+   "strata": {}
+  }
+ ]
+}

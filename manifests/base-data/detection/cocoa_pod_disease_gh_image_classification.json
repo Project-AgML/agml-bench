@@ -1,0 +1,436 @@
+{
+ "name": "cocoa_pod_disease_gh_image_classification",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/cocoa_pod_disease_gh_image_classification",
+ "hf_sha": "b93c402191cf77fdcb6913270d09003a54458668",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:59:46+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   null,
+   "Cocoa",
+   "Pod Borer",
+   "Black Pod Rot"
+  ],
+  "indexed_rows": 2436
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-c73b57a263",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 750,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Black Pod Rot",
+    "Cocoa"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       141.0,
+       0.0,
+       294.0,
+       460.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       319.0,
+       63.0,
+       372.0,
+       920.0
+      ]
+     },
+     {
+      "label": "Black Pod Rot",
+      "bbox_raw": [
+       521.0,
+       274.0,
+       104.0,
+       155.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-13b93e6465",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 801,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Black Pod Rot",
+    "Cocoa"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       774.0,
+       0.0,
+       255.0,
+       83.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       379.0,
+       114.0,
+       339.0,
+       737.0
+      ]
+     },
+     {
+      "label": "Black Pod Rot",
+      "bbox_raw": [
+       460.0,
+       681.0,
+       128.0,
+       117.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-85cee2aebd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 822,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Black Pod Rot",
+    "Cocoa"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black Pod Rot",
+      "bbox_raw": [
+       369.0,
+       530.0,
+       330.0,
+       288.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       298.0,
+       11.0,
+       408.0,
+       809.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-a4a0bb06e5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 826,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Black Pod Rot",
+    "Cocoa"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       314.0,
+       204.0,
+       405.0,
+       759.0
+      ]
+     },
+     {
+      "label": "Black Pod Rot",
+      "bbox_raw": [
+       351.0,
+       211.0,
+       333.0,
+       242.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-0ab8f07bcc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1191,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Black Pod Rot",
+    "Cocoa"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black Pod Rot",
+      "bbox_raw": [
+       1037.0,
+       1414.0,
+       263.0,
+       356.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       859.0,
+       434.0,
+       616.0,
+       1361.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-db163a5ec3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1195,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Cocoa",
+    "Pod Borer"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       216.0,
+       187.0,
+       579.0,
+       805.0
+      ]
+     },
+     {
+      "label": "Pod Borer",
+      "bbox_raw": [
+       382.0,
+       197.0,
+       297.0,
+       508.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-fc99572f46",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1199,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Cocoa",
+    "Pod Borer"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       798.0,
+       749.0,
+       282.0,
+       331.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       0.0,
+       54.0,
+       270.0,
+       495.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       275.0,
+       131.0,
+       421.0,
+       774.0
+      ]
+     },
+     {
+      "label": "Pod Borer",
+      "bbox_raw": [
+       338.0,
+       465.0,
+       63.0,
+       94.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-6795fd274f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1205,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Cocoa",
+    "Pod Borer"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       350.0,
+       212.0,
+       331.0,
+       524.0
+      ]
+     },
+     {
+      "label": "Pod Borer",
+      "bbox_raw": [
+       443.0,
+       512.0,
+       228.0,
+       224.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-2767c311a8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1206,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Cocoa",
+    "Pod Borer"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       241.0,
+       170.0,
+       404.0,
+       839.0
+      ]
+     },
+     {
+      "label": "Pod Borer",
+      "bbox_raw": [
+       406.0,
+       477.0,
+       146.0,
+       285.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cocoa_pod_disease_gh_image_classification-48f2b94e3a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1212,
+    "config": "default",
+    "split": "val"
+   },
+   "keys": [
+    "Cocoa",
+    "Pod Borer"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       119.0,
+       190.0,
+       251.0,
+       389.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       890.0,
+       808.0,
+       190.0,
+       272.0
+      ]
+     },
+     {
+      "label": "Cocoa",
+      "bbox_raw": [
+       336.0,
+       205.0,
+       403.0,
+       714.0
+      ]
+     },
+     {
+      "label": "Pod Borer",
+      "bbox_raw": [
+       378.0,
+       500.0,
+       61.0,
+       97.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

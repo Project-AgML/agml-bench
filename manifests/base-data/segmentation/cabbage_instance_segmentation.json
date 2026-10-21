@@ -1,0 +1,111 @@
+{
+ "name": "cabbage_instance_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/cabbage_instance_segmentation",
+ "hf_sha": "2bc67e3c6b620141658073ed3a362c9a33694050",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-20T21:42:54+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1"
+  },
+  "indexed_rows": 458
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "cabbage_instance_segmentation-c18203a109",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cabbage_instance_segmentation-221277d717",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cabbage_instance_segmentation-8193784b71",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cabbage_instance_segmentation-a628b708e7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "cabbage_instance_segmentation-adb9d13265",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

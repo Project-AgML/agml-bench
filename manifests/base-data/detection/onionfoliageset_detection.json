@@ -1,0 +1,1919 @@
+{
+ "name": "onionfoliageset_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/onionfoliageset_detection",
+ "hf_sha": "34f7bff3e055acf4782c5356d99074159f988129",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T00:57:06+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "onion",
+   "no_crop",
+   "foliage"
+  ],
+  "indexed_rows": 245
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "onionfoliageset_detection-ad7122b448",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1152.3,
+       49.76,
+       582.72,
+       336.96
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       358.62,
+       1420.15,
+       664.61,
+       1579.85
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3197.86,
+       2579.58,
+       591.12,
+       420.42
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1662.99,
+       0.0,
+       603.41,
+       182.23
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       652.06,
+       1265.17,
+       725.54,
+       1561.85
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-c615cbdd99",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-4b836c3352",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop",
+    "onion"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2339.69,
+       1764.51,
+       754.91,
+       511.93
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1066.7,
+       693.27,
+       522.74,
+       624.71
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2750.39,
+       1552.75,
+       391.79,
+       377.48
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       675.13,
+       2732.82,
+       531.33,
+       267.18
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       549.02,
+       2353.76,
+       191.66,
+       275.13
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       89.95,
+       2046.17,
+       451.34,
+       468.34
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1550.2,
+       1434.23,
+       484.06,
+       403.6
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2518.06,
+       1256.94,
+       659.08,
+       301.41
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       0.92,
+       0.3,
+       544.08,
+       140.66
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       0.0,
+       115.8,
+       180.7,
+       518.3
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       3057.63,
+       265.09,
+       226.48,
+       228.64
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2747.42,
+       1.04,
+       274.79,
+       491.61
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1032.74,
+       2110.73,
+       522.16,
+       495.9
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       977.5,
+       1321.21,
+       646.23,
+       763.99
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2063.32,
+       1564.19,
+       452.58,
+       725.24
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1280.65,
+       322.74,
+       532.22,
+       307.7
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1450.6,
+       44.55,
+       332.75,
+       288.02
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1269.02,
+       33.81,
+       245.98,
+       279.98
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1106.22,
+       36.5,
+       220.94,
+       304.12
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       935.38,
+       0.0,
+       183.42,
+       350.46
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       461.2,
+       619.74,
+       469.07,
+       502.35
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2091.46,
+       1318.15,
+       428.15,
+       236.49
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       630.15,
+       1890.96,
+       645.11,
+       563.68
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3100.17,
+       1610.56,
+       354.27,
+       639.92
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1697.92,
+       1523.39,
+       558.31,
+       719.67
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1289.7,
+       1650.1,
+       581.01,
+       625.3
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1936.8,
+       3.36,
+       428.49,
+       161.37
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1868.2,
+       88.68,
+       443.3,
+       317.18
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1777.31,
+       361.34,
+       493.38,
+       252.26
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1738.36,
+       60.86,
+       157.66,
+       280.08
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       467.81,
+       216.67,
+       443.3,
+       430.31
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1374.77,
+       875.75,
+       783.57,
+       624.71
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1823.44,
+       2246.68,
+       587.15,
+       456.19
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       742.32,
+       1238.67,
+       532.34,
+       673.3
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1326.0,
+       2193.3,
+       623.08,
+       469.78
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       144.14,
+       1608.15,
+       542.54,
+       517.5
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       376.92,
+       1747.54,
+       511.53,
+       534.81
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       488.23,
+       1158.63,
+       534.17,
+       598.29
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       723.32,
+       667.51,
+       564.5,
+       561.17
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       832.33,
+       351.54,
+       326.49,
+       267.45
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       472.35,
+       1102.37,
+       244.22,
+       262.92
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       195.68,
+       1097.74,
+       313.77,
+       400.48
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       350.24,
+       1295.74,
+       261.22,
+       305.89
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       723.38,
+       1.61,
+       220.94,
+       356.01
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2537.23,
+       961.72,
+       633.73,
+       340.05
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       0.0,
+       2574.27,
+       257.58,
+       403.28
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1814.01,
+       2830.76,
+       377.61,
+       169.09
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1228.19,
+       2825.19,
+       571.9,
+       174.66
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       135.39,
+       2237.83,
+       211.76,
+       188.58
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       453.8,
+       2305.84,
+       165.39,
+       268.95
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       0.0,
+       2296.57,
+       787.67,
+       650.73
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       127.76,
+       2761.82,
+       653.74,
+       238.18
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       651.65,
+       2381.58,
+       692.47,
+       541.02
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       413.62,
+       0.0,
+       238.03,
+       205.88
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       401.25,
+       9.58,
+       296.56,
+       385.15
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       263.69,
+       256.88,
+       309.84,
+       477.78
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2959.95,
+       0.0,
+       161.0,
+       488.36
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1091.91,
+       326.31,
+       255.82,
+       309.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-57159e216b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-f5633696fc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop",
+    "onion"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1359.74,
+       1.79,
+       200.72,
+       495.91
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       860.61,
+       601.82,
+       269.42,
+       476.58
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1107.35,
+       490.81,
+       367.25,
+       529.73
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       230.61,
+       659.38,
+       202.48,
+       105.11
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2721.32,
+       452.62,
+       551.81,
+       409.27
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2506.47,
+       844.24,
+       327.69,
+       431.25
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2833.85,
+       851.21,
+       518.16,
+       317.84
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       487.07,
+       26.8,
+       439.02,
+       337.05
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1257.96,
+       0.0,
+       177.64,
+       511.21
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       0.92,
+       777.78,
+       219.49,
+       408.06
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       228.14,
+       749.96,
+       190.11,
+       442.06
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2688.6,
+       0.0,
+       762.1,
+       492.33
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1466.0,
+       480.52,
+       138.47,
+       502.35
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2215.88,
+       907.62,
+       282.86,
+       389.51
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2047.4,
+       950.9,
+       170.03,
+       364.78
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1764.54,
+       338.2,
+       553.36,
+       632.79
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-1ba0a285ba",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "__empty__"
+   ],
+   "ann": {
+    "objects": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-62f98f4c79",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop",
+    "onion"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       988.72,
+       256.48,
+       1243.42,
+       1125.0
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1995.3,
+       705.49,
+       833.88,
+       685.86
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       6.81,
+       1465.36,
+       1416.12,
+       1149.67
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       615.3,
+       907.6,
+       1266.51,
+       1233.75
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       3470.63,
+       2352.8,
+       529.37,
+       647.2
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-23f557aef0",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop",
+    "onion"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       578.71,
+       1041.35,
+       438.34,
+       649.58
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2036.85,
+       55.05,
+       424.18,
+       599.36
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2236.38,
+       312.89,
+       819.87,
+       447.51
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2481.99,
+       132.42,
+       329.07,
+       377.75
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2861.19,
+       104.66,
+       439.93,
+       366.47
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       3302.88,
+       9.51,
+       687.74,
+       535.66
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       3032.6,
+       2.58,
+       707.21,
+       305.08
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2680.6,
+       5.07,
+       476.22,
+       357.96
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2884.88,
+       2331.32,
+       597.54,
+       371.88
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2287.65,
+       2246.39,
+       651.45,
+       407.76
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2971.57,
+       2021.27,
+       563.0,
+       417.93
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2815.91,
+       1953.8,
+       240.4,
+       375.79
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3056.31,
+       1702.21,
+       594.08,
+       442.11
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3172.36,
+       1161.32,
+       571.98,
+       571.98
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2241.75,
+       937.41,
+       566.45,
+       301.65
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2151.64,
+       1175.27,
+       353.69,
+       397.9
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2415.53,
+       1103.43,
+       375.79,
+       487.7
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2600.27,
+       1619.68,
+       202.63,
+       329.28
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1826.42,
+       1731.36,
+       269.41,
+       497.38
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2070.96,
+       1861.23,
+       256.97,
+       370.27
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2290.63,
+       1877.81,
+       268.03,
+       373.03
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1023.55,
+       900.03,
+       475.82,
+       658.19
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1386.63,
+       785.64,
+       576.95,
+       339.87
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1299.35,
+       2501.43,
+       574.96,
+       490.98
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1706.34,
+       2604.8,
+       587.88,
+       395.2
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2173.25,
+       2674.73,
+       531.36,
+       324.63
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1737.73,
+       2244.12,
+       404.89,
+       312.88
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2058.24,
+       1591.85,
+       373.85,
+       283.2
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2963.72,
+       881.64,
+       398.38,
+       760.42
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1016.5,
+       1930.08,
+       406.45,
+       585.46
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1169.93,
+       1578.0,
+       383.57,
+       584.92
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       617.4,
+       1294.83,
+       790.7,
+       530.5
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       269.43,
+       1697.78,
+       635.68,
+       610.49
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-3d2057c683",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop",
+    "onion"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1054.32,
+       2046.22,
+       581.38,
+       323.97
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       945.59,
+       2312.5,
+       417.17,
+       348.38
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1558.03,
+       2372.41,
+       170.87,
+       315.1
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1746.65,
+       2379.07,
+       683.46,
+       375.01
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1110.87,
+       737.34,
+       500.53,
+       437.46
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2432.33,
+       2414.57,
+       619.1,
+       359.48
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1349.45,
+       2372.41,
+       208.58,
+       308.45
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1285.8,
+       1388.84,
+       551.0,
+       258.14
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1814.02,
+       1348.71,
+       412.16,
+       328.64
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1213.52,
+       2673.47,
+       224.11,
+       326.53
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       488.77,
+       476.17,
+       435.91,
+       455.29
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2782.46,
+       2790.86,
+       234.65,
+       209.14
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2579.55,
+       2799.4,
+       207.04,
+       200.6
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1917.73,
+       2700.29,
+       386.22,
+       299.71
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1440.55,
+       2708.87,
+       325.99,
+       291.13
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2307.94,
+       2755.21,
+       258.63,
+       244.79
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       236.53,
+       813.96,
+       425.37,
+       361.73
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       648.5,
+       999.85,
+       197.61,
+       254.55
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       765.81,
+       1028.53,
+       432.54,
+       372.77
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1094.7,
+       1150.12,
+       328.89,
+       320.91
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       279.46,
+       1403.26,
+       936.83,
+       655.79
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       785.75,
+       1341.47,
+       500.35,
+       382.71
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       52.22,
+       1283.66,
+       338.86,
+       342.85
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       0.95,
+       1477.77,
+       273.96,
+       584.31
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       737.2,
+       1976.46,
+       387.42,
+       325.33
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       35.2,
+       1873.73,
+       648.51,
+       554.34
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       525.33,
+       2181.93,
+       494.41,
+       515.82
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1768.47,
+       2709.75,
+       134.47,
+       290.25
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       764.5,
+       574.92,
+       577.25,
+       473.16
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1768.76,
+       1658.03,
+       530.7,
+       430.95
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1770.76,
+       2077.01,
+       317.22,
+       319.22
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2058.05,
+       2094.96,
+       500.78,
+       305.26
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1619.13,
+       2079.0,
+       159.61,
+       287.3
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2326.42,
+       379.69,
+       682.74,
+       467.99
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2541.06,
+       2101.69,
+       556.97,
+       339.51
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       906.71,
+       2612.75,
+       307.25,
+       387.25
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       0.4,
+       624.72,
+       127.28,
+       545.94
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       82.46,
+       728.55,
+       162.44,
+       472.26
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       143.91,
+       1018.56,
+       745.49,
+       512.27
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       167.9,
+       1651.13,
+       590.72,
+       505.12
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       645.19,
+       1927.24,
+       194.77,
+       286.8
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       3632.88,
+       1888.07,
+       367.12,
+       287.69
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       3402.09,
+       1363.27,
+       445.76,
+       398.34
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       3348.34,
+       1767.93,
+       208.66,
+       275.05
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1713.97,
+       161.7,
+       520.47,
+       671.88
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       619.4,
+       0.0,
+       441.61,
+       489.75
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       2297.47,
+       1711.9,
+       466.86,
+       373.09
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       281.88,
+       382.5,
+       511.01,
+       447.93
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1055.65,
+       54.82,
+       592.9,
+       670.04
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       486.24,
+       0.26,
+       301.16,
+       379.78
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       835.38,
+       16.18,
+       482.57,
+       569.56
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2052.91,
+       203.43,
+       413.3,
+       650.33
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3007.13,
+       229.77,
+       316.05,
+       559.16
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2063.47,
+       0.54,
+       394.13,
+       189.96
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1349.08,
+       331.61,
+       524.84,
+       533.91
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1416.0,
+       789.95,
+       545.64,
+       432.9
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1478.01,
+       128.94,
+       516.69,
+       377.39
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       1164.24,
+       1628.1,
+       616.49,
+       436.94
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       0.0,
+       1143.87,
+       159.5,
+       393.5
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       275.05,
+       961.33,
+       202.63,
+       133.97
+      ]
+     },
+     {
+      "label": "onion",
+      "bbox_raw": [
+       593.24,
+       963.0,
+       145.69,
+       244.51
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       3196.59,
+       2836.5,
+       306.67,
+       145.43
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       2466.15,
+       0.0,
+       612.58,
+       196.17
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       311.68,
+       0.0,
+       281.16,
+       313.41
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3822.56,
+       1312.68,
+       177.04,
+       218.14
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       3860.5,
+       1132.48,
+       139.5,
+       189.24
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       2676.9,
+       187.22,
+       382.91,
+       338.33
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1844.95,
+       834.59,
+       545.71,
+       384.26
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       1149.33,
+       0.82,
+       883.23,
+       151.41
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "onionfoliageset_detection-58c5cd20d1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "foliage",
+    "no_crop"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1710.92,
+       1348.5,
+       247.02,
+       338.21
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       1469.44,
+       2059.4,
+       324.29,
+       187.09
+      ]
+     },
+     {
+      "label": "no_crop",
+      "bbox_raw": [
+       12.43,
+       814.91,
+       185.37,
+       473.19
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       52.04,
+       870.52,
+       455.92,
+       544.57
+      ]
+     },
+     {
+      "label": "foliage",
+      "bbox_raw": [
+       28.55,
+       649.12,
+       424.84,
+       382.24
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

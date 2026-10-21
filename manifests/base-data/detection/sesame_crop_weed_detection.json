@@ -1,0 +1,388 @@
+{
+ "name": "sesame_crop_weed_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/sesame_crop_weed_detection",
+ "hf_sha": "79198adbc637d788e1cba0457d594d6e13e7184c",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:48:02+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "sesame",
+   "weed"
+  ],
+  "indexed_rows": 1300
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "sesame_crop_weed_detection-234cce6d9c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sesame"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       54.99980800000003,
+       34.00012800000002,
+       409.999872,
+       416.999936
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-abacd324ed",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "weed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed",
+      "bbox_raw": [
+       76.0,
+       161.99987200000004,
+       336.999936,
+       227.999744
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-0e980f99a6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sesame"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       31.00006399999998,
+       120.00000000000003,
+       389.000192,
+       362.999808
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-a68a39447f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "weed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed",
+      "bbox_raw": [
+       138.000128,
+       163.00032,
+       272.999936,
+       218.999808
+      ]
+     },
+     {
+      "label": "weed",
+      "bbox_raw": [
+       8.999936000000005,
+       15.999999999999993,
+       170.999808,
+       126.000128
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-cbb70fb40f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sesame"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       7.999999999999972,
+       8.999935999999991,
+       499.999744,
+       471.000064
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-f09d00bbda",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 469,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "weed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed",
+      "bbox_raw": [
+       96.99967999999998,
+       136.999936,
+       301.000192,
+       225.999872
+      ]
+     },
+     {
+      "label": "weed",
+      "bbox_raw": [
+       104.99993599999999,
+       405.000192,
+       67.999744,
+       103.000064
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-f7a4079adb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "weed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed",
+      "bbox_raw": [
+       157.999872,
+       13.000191999999998,
+       338.999808,
+       384.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-9780434d23",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 755,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sesame"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       151.000064,
+       63.00031999999999,
+       24.999936,
+       57.999872
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       78.00012799999999,
+       99.00006400000001,
+       33.999872,
+       38.000128
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       262.000128,
+       32.999936,
+       64.0,
+       81.999872
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       360.0,
+       60.00025599999999,
+       35.999744,
+       26.999808
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       351.000064,
+       108.00025600000001,
+       49.999872,
+       56.999936
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       201.999872,
+       97.000192,
+       24.999936,
+       31.000064
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       250.000128,
+       360.00025600000004,
+       63.000064,
+       57.999872
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       155.00032,
+       316.0,
+       58.999808,
+       79.000064
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       105.99987199999998,
+       402.999808,
+       83.999744,
+       78.000128
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       364.99968,
+       455.999744,
+       46.000128,
+       29.000192
+      ]
+     },
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       124.999936,
+       10.999808,
+       50.999808,
+       23.000064
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-4ba2359e98",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 850,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "sesame"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "sesame",
+      "bbox_raw": [
+       105.99987199999998,
+       29.000192000000027,
+       382.000128,
+       378.999808
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "sesame_crop_weed_detection-2d3a39a481",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "weed"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "weed",
+      "bbox_raw": [
+       146.000128,
+       213.000192,
+       285.000192,
+       200.999936
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

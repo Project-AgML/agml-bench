@@ -1,0 +1,505 @@
+{
+ "name": "soybean_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/soybean_leaf_disease_classification",
+ "hf_sha": "254a490245a7a7c706a55804231ba26547750517",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T02:55:47+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial leaf Blight",
+   "Dry_leaf",
+   "Healthy",
+   "Root_images",
+   "Septoria_Brown_Spot",
+   "Vein Necrosis"
+  ],
+  "indexed_rows": 1176
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "soybean_leaf_disease_classification-d214e6ea5e",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-05964f134f",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9581229ab9",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-81bab13756",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-7f35e62e57",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b25d648740",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d99fcb861c",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-68b5236ca0",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8f4f58b9e7",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a5b32e9e52",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ac409473fa",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-61e50dbebf",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-35ac880207",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-bb4b2deb2f",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-76b2ecb791",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-308fed8e59",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8a8d1259cd",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-1b4a182129",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4fe5a65b6e",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2a9af7a68e",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9d12f4bb89",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4049bcf77c",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-1a3f9497c8",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d43b48b9bb",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-52ed1e6177",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d33fd6115c",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0f44844bb2",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-43464ef567",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-5359251cae",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4179e198cc",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  }
+ ]
+}

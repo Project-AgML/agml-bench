@@ -1,0 +1,748 @@
+{
+ "name": "three_plant_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/three_plant_leaf_disease_classification",
+ "hf_sha": "319f1fe762d4ba8729a520aa14047148f194d31b",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:21:20+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "Caterpillars_Infestation",
+   "Cercospora_Leaf",
+   "Citrus",
+   "Healthy_Leaf",
+   "Heathy_Leaf",
+   "Leaf_Curl",
+   "Leaf_Spot",
+   "Sooty_Mold"
+  ],
+  "indexed_rows": 3941
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "three_plant_leaf_disease_classification-e88fe7580e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 190,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora_Leaf"
+   ],
+   "ann": {
+    "label": "Cercospora_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-181d20a960",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 254,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora_Leaf"
+   ],
+   "ann": {
+    "label": "Cercospora_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-34733fb503",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 270,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora_Leaf"
+   ],
+   "ann": {
+    "label": "Cercospora_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-2c5887c85f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 280,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora_Leaf"
+   ],
+   "ann": {
+    "label": "Cercospora_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-af24307322",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 361,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Cercospora_Leaf"
+   ],
+   "ann": {
+    "label": "Cercospora_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-3d566923af",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 568,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-74a8df043e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 572,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-45268ae1b6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 612,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-8cd3aa0b36",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 759,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-4d9f7eb07c",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 839,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Curl"
+   ],
+   "ann": {
+    "label": "Leaf_Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-33e35559c6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1018,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Curl"
+   ],
+   "ann": {
+    "label": "Leaf_Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-741475a8b8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1183,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-ee6d4ecb4a",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1284,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-892406c93e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1320,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-f726506403",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1415,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-878c9af5d6",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1483,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-a6b04067c3",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1560,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-0d48005794",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1607,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-f3eeba2b56",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1679,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-21ac0cd97b",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1728,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-03abd56b70",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1870,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-fcf2b89ce9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1969,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillars_Infestation"
+   ],
+   "ann": {
+    "label": "Caterpillars_Infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-62e2d3a95e",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 1983,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillars_Infestation"
+   ],
+   "ann": {
+    "label": "Caterpillars_Infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-82a7310d21",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2133,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillars_Infestation"
+   ],
+   "ann": {
+    "label": "Caterpillars_Infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-9f7be4012f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2157,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillars_Infestation"
+   ],
+   "ann": {
+    "label": "Caterpillars_Infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-23375ec5fe",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2296,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Caterpillars_Infestation"
+   ],
+   "ann": {
+    "label": "Caterpillars_Infestation"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-6e6a036da3",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2342,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Heathy_Leaf"
+   ],
+   "ann": {
+    "label": "Heathy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-8ed5d20382",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2369,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Heathy_Leaf"
+   ],
+   "ann": {
+    "label": "Heathy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-43be9a6019",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2397,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Heathy_Leaf"
+   ],
+   "ann": {
+    "label": "Heathy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-d4918d85b5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2571,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Heathy_Leaf"
+   ],
+   "ann": {
+    "label": "Heathy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-001a63d552",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2588,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Heathy_Leaf"
+   ],
+   "ann": {
+    "label": "Heathy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-b7c9eddc97",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2768,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus"
+   ],
+   "ann": {
+    "label": "Citrus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-7ba32973f2",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2779,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus"
+   ],
+   "ann": {
+    "label": "Citrus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-e41e048e1d",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2818,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus"
+   ],
+   "ann": {
+    "label": "Citrus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-67a9d83076",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2898,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus"
+   ],
+   "ann": {
+    "label": "Citrus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-6bb88d5283",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 2993,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Citrus"
+   ],
+   "ann": {
+    "label": "Citrus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-cee3002b27",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3240,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-d52c6d29cb",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3452,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Curl"
+   ],
+   "ann": {
+    "label": "Leaf_Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-d5e8cfbcb5",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3547,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Curl"
+   ],
+   "ann": {
+    "label": "Leaf_Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-79966a70a9",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3597,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Curl"
+   ],
+   "ann": {
+    "label": "Leaf_Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-dd1c37849f",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3689,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-3650865b73",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3733,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-d6faa111ab",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3836,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-69d4bb5e46",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3837,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "three_plant_leaf_disease_classification-e116ca21b8",
+   "ref": {
+    "file": "raw/train-00000-of-00001.parquet",
+    "row": 3916,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  }
+ ]
+}

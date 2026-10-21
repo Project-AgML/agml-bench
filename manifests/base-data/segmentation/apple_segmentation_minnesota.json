@@ -1,0 +1,111 @@
+{
+ "name": "apple_segmentation_minnesota",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/apple_segmentation_minnesota",
+ "hf_sha": "fb6b82528fa404f430efe60ba7b87ed9fbeaf4d2",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-20T21:01:42+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "apple"
+  },
+  "indexed_rows": 670
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "apple_segmentation_minnesota-f1479ea31e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "apple"
+   ],
+   "ann": {
+    "classes_present": [
+     "apple"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "apple_segmentation_minnesota-8105cb0940",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "apple"
+   ],
+   "ann": {
+    "classes_present": [
+     "apple"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "apple_segmentation_minnesota-0e37030bcb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "apple"
+   ],
+   "ann": {
+    "classes_present": [
+     "apple"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "apple_segmentation_minnesota-70e1d99fce",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "apple"
+   ],
+   "ann": {
+    "classes_present": [
+     "apple"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "apple_segmentation_minnesota-a3260c0bb8",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "apple"
+   ],
+   "ann": {
+    "classes_present": [
+     "apple"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,667 @@
+{
+ "name": "papaya_leaf_disease_classification_bd",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/papaya_leaf_disease_classification_bd",
+ "hf_sha": "cbe0da66e54a59aaee61ec4d8cf15473389afef7",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T01:28:55+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Antracnose",
+   "Bacterial Spot",
+   "Healthy Leaf",
+   "Leaf Curl",
+   "Mealybug",
+   "Mite Disease",
+   "Mosaic",
+   "Ring Spot"
+  ],
+  "indexed_rows": 11074
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-5a17276320",
+   "ref": {
+    "file": "data/train-00004-of-00051.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mite Disease"
+   ],
+   "ann": {
+    "label": "Mite Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-781db2e6a6",
+   "ref": {
+    "file": "data/train-00005-of-00051.parquet",
+    "row": 160,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mite Disease"
+   ],
+   "ann": {
+    "label": "Mite Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-1095856fac",
+   "ref": {
+    "file": "data/train-00005-of-00051.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mite Disease"
+   ],
+   "ann": {
+    "label": "Mite Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-93539230df",
+   "ref": {
+    "file": "data/train-00006-of-00051.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mite Disease"
+   ],
+   "ann": {
+    "label": "Mite Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-843389243b",
+   "ref": {
+    "file": "data/train-00007-of-00051.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mite Disease"
+   ],
+   "ann": {
+    "label": "Mite Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-5a22e58fbc",
+   "ref": {
+    "file": "data/train-00009-of-00051.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Antracnose"
+   ],
+   "ann": {
+    "label": "Antracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-807648bd8f",
+   "ref": {
+    "file": "data/train-00009-of-00051.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Antracnose"
+   ],
+   "ann": {
+    "label": "Antracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-f4bef2f64a",
+   "ref": {
+    "file": "data/train-00010-of-00051.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Antracnose"
+   ],
+   "ann": {
+    "label": "Antracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-bf386eb36e",
+   "ref": {
+    "file": "data/train-00010-of-00051.parquet",
+    "row": 177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Antracnose"
+   ],
+   "ann": {
+    "label": "Antracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-7a72ef0096",
+   "ref": {
+    "file": "data/train-00011-of-00051.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Antracnose"
+   ],
+   "ann": {
+    "label": "Antracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-8732805354",
+   "ref": {
+    "file": "data/train-00013-of-00051.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealybug"
+   ],
+   "ann": {
+    "label": "Mealybug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-f5965513cc",
+   "ref": {
+    "file": "data/train-00014-of-00051.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealybug"
+   ],
+   "ann": {
+    "label": "Mealybug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-16a6e1fb64",
+   "ref": {
+    "file": "data/train-00014-of-00051.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealybug"
+   ],
+   "ann": {
+    "label": "Mealybug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-904dcd05c4",
+   "ref": {
+    "file": "data/train-00017-of-00051.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealybug"
+   ],
+   "ann": {
+    "label": "Mealybug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-3d2402af1a",
+   "ref": {
+    "file": "data/train-00017-of-00051.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealybug"
+   ],
+   "ann": {
+    "label": "Mealybug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-8ddd3ea855",
+   "ref": {
+    "file": "data/train-00020-of-00051.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-c8ae32249a",
+   "ref": {
+    "file": "data/train-00022-of-00051.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-8bf79221b3",
+   "ref": {
+    "file": "data/train-00023-of-00051.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-d073a22a65",
+   "ref": {
+    "file": "data/train-00023-of-00051.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-c7d74f5ba0",
+   "ref": {
+    "file": "data/train-00024-of-00051.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic"
+   ],
+   "ann": {
+    "label": "Mosaic"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-db7986638d",
+   "ref": {
+    "file": "data/train-00027-of-00051.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-add998e548",
+   "ref": {
+    "file": "data/train-00027-of-00051.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-0465f73334",
+   "ref": {
+    "file": "data/train-00028-of-00051.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-659de485a3",
+   "ref": {
+    "file": "data/train-00028-of-00051.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-65bc1e1979",
+   "ref": {
+    "file": "data/train-00029-of-00051.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial Spot"
+   ],
+   "ann": {
+    "label": "Bacterial Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-c9a97ba821",
+   "ref": {
+    "file": "data/train-00030-of-00051.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ring Spot"
+   ],
+   "ann": {
+    "label": "Ring Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-e76b9dce26",
+   "ref": {
+    "file": "data/train-00030-of-00051.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ring Spot"
+   ],
+   "ann": {
+    "label": "Ring Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-0284727147",
+   "ref": {
+    "file": "data/train-00031-of-00051.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ring Spot"
+   ],
+   "ann": {
+    "label": "Ring Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-9fbc17e977",
+   "ref": {
+    "file": "data/train-00032-of-00051.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ring Spot"
+   ],
+   "ann": {
+    "label": "Ring Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-2b7927fb6b",
+   "ref": {
+    "file": "data/train-00035-of-00051.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ring Spot"
+   ],
+   "ann": {
+    "label": "Ring Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-49a35c514a",
+   "ref": {
+    "file": "data/train-00037-of-00051.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-d9eeeafe2e",
+   "ref": {
+    "file": "data/train-00038-of-00051.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-502a789871",
+   "ref": {
+    "file": "data/train-00039-of-00051.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-7a0405b55b",
+   "ref": {
+    "file": "data/train-00040-of-00051.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-9e3fc1e7e1",
+   "ref": {
+    "file": "data/train-00041-of-00051.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy Leaf"
+   ],
+   "ann": {
+    "label": "Healthy Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-abfed93961",
+   "ref": {
+    "file": "data/train-00042-of-00051.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Curl"
+   ],
+   "ann": {
+    "label": "Leaf Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-22a4de2546",
+   "ref": {
+    "file": "data/train-00045-of-00051.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Curl"
+   ],
+   "ann": {
+    "label": "Leaf Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-6ed2ae5106",
+   "ref": {
+    "file": "data/train-00045-of-00051.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Curl"
+   ],
+   "ann": {
+    "label": "Leaf Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-8c8aa26c4a",
+   "ref": {
+    "file": "data/train-00047-of-00051.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Curl"
+   ],
+   "ann": {
+    "label": "Leaf Curl"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "papaya_leaf_disease_classification_bd-aedecbbace",
+   "ref": {
+    "file": "data/train-00049-of-00051.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf Curl"
+   ],
+   "ann": {
+    "label": "Leaf Curl"
+   },
+   "strata": {}
+  }
+ ]
+}

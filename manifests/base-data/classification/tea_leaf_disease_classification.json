@@ -1,0 +1,505 @@
+{
+ "name": "tea_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/tea_leaf_disease_classification",
+ "hf_sha": "d44a9aff2f0f71aae523b22b5f0f821c68bf18ea",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-21T03:17:33+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "algal_spot",
+   "brown_blight",
+   "gray_blight",
+   "healthy",
+   "helopeltis",
+   "red_spot"
+  ],
+  "indexed_rows": 5867
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tea_leaf_disease_classification-4ca2747376",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-ff24fc42e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-51ea2f7611",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 517,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-379fe64e99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-c720e2c3a9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-5b765c46d1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray_blight"
+   ],
+   "ann": {
+    "label": "gray_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-ca0711f353",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1632,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray_blight"
+   ],
+   "ann": {
+    "label": "gray_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-c48dc81083",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1752,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray_blight"
+   ],
+   "ann": {
+    "label": "gray_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-cda52e6a27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1779,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray_blight"
+   ],
+   "ann": {
+    "label": "gray_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-951ce52102",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "gray_blight"
+   ],
+   "ann": {
+    "label": "gray_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-594e28b201",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2597,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spot"
+   ],
+   "ann": {
+    "label": "red_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-c197a76978",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2672,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spot"
+   ],
+   "ann": {
+    "label": "red_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-a7d521c570",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2718,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spot"
+   ],
+   "ann": {
+    "label": "red_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-e76dba3e8c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2742,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spot"
+   ],
+   "ann": {
+    "label": "red_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-159685956d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2800,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spot"
+   ],
+   "ann": {
+    "label": "red_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-48631e3764",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3095,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "helopeltis"
+   ],
+   "ann": {
+    "label": "helopeltis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-2285783d59",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "helopeltis"
+   ],
+   "ann": {
+    "label": "helopeltis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-c801f61d4f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "helopeltis"
+   ],
+   "ann": {
+    "label": "helopeltis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-682eda4534",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3403,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "helopeltis"
+   ],
+   "ann": {
+    "label": "helopeltis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-cf9a1c7b7c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3683,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "helopeltis"
+   ],
+   "ann": {
+    "label": "helopeltis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-9a78a675ca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4041,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal_spot"
+   ],
+   "ann": {
+    "label": "algal_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-f3cc7a9a5f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4086,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal_spot"
+   ],
+   "ann": {
+    "label": "algal_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-750632d53d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal_spot"
+   ],
+   "ann": {
+    "label": "algal_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-18209fbc22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4693,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal_spot"
+   ],
+   "ann": {
+    "label": "algal_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-c70bc8b17f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4977,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "algal_spot"
+   ],
+   "ann": {
+    "label": "algal_spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-35c03f1d44",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_blight"
+   ],
+   "ann": {
+    "label": "brown_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-a7c60af201",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5056,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_blight"
+   ],
+   "ann": {
+    "label": "brown_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-f35abd025e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_blight"
+   ],
+   "ann": {
+    "label": "brown_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-9a32bec755",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5505,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_blight"
+   ],
+   "ann": {
+    "label": "brown_blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_classification-0ab59b6825",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5860,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "brown_blight"
+   ],
+   "ann": {
+    "label": "brown_blight"
+   },
+   "strata": {}
+  }
+ ]
+}

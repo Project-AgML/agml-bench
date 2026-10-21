@@ -1,0 +1,6499 @@
+{
+ "name": "DIMPSAR_medicinal_leaf_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/DIMPSAR_medicinal_leaf_classification",
+ "hf_sha": "9c20f39be6c725c7213fd407a2f5680d88d43a08",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T22:50:14+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Aloevera",
+   "Amla",
+   "Amruthaballi",
+   "Arali",
+   "Astma_weed",
+   "Badipala",
+   "Balloon_Vine",
+   "Bamboo",
+   "Beans",
+   "Betel",
+   "Bhrami",
+   "Bringaraja",
+   "Caricature",
+   "Castor",
+   "Catharanthus",
+   "Chakte",
+   "Chilly",
+   "Citron lime (herelikai)",
+   "Coffee",
+   "Common rue(naagdalli)",
+   "Coriender",
+   "Curry",
+   "Doddpathre",
+   "Drumstick",
+   "Ekka",
+   "Eucalyptus",
+   "Ganigale",
+   "Ganike",
+   "Gasagase",
+   "Ginger",
+   "Globe Amarnath",
+   "Guava",
+   "Henna",
+   "Hibiscus",
+   "Honge",
+   "Insulin",
+   "Jackfruit",
+   "Jasmine",
+   "Kambajala",
+   "Kasambruga",
+   "Kohlrabi",
+   "Lantana",
+   "Lemon",
+   "Lemongrass",
+   "Malabar_Nut",
+   "Malabar_Spinach",
+   "Mango",
+   "Marigold",
+   "Mint",
+   "Neem",
+   "Nelavembu",
+   "Nerale",
+   "Nooni",
+   "Onion",
+   "Padri",
+   "Palak(Spinach)",
+   "Papaya",
+   "Parijatha",
+   "Pea",
+   "Pepper",
+   "Pomoegranate",
+   "Pumpkin",
+   "Raddish",
+   "Rose",
+   "Sampige",
+   "Sapota",
+   "Seethaashoka",
+   "Seethapala",
+   "Spinach1",
+   "Tamarind",
+   "Taro",
+   "Tecoma",
+   "Thumbe",
+   "Tomato",
+   "Tulsi",
+   "Turmeric",
+   "ashoka",
+   "camphor",
+   "kamakasturi",
+   "kepala"
+  ],
+  "indexed_rows": 6900
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-30b64f6ec4",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bhrami"
+   ],
+   "ann": {
+    "label": "Bhrami"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-85d521fbc2",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bhrami"
+   ],
+   "ann": {
+    "label": "Bhrami"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7663ba5217",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bhrami"
+   ],
+   "ann": {
+    "label": "Bhrami"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-878eb5f301",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bhrami"
+   ],
+   "ann": {
+    "label": "Bhrami"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e5f7f4ebe7",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bhrami"
+   ],
+   "ann": {
+    "label": "Bhrami"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b56460a7a1",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Doddpathre"
+   ],
+   "ann": {
+    "label": "Doddpathre"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-13be4cabdb",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Doddpathre"
+   ],
+   "ann": {
+    "label": "Doddpathre"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-571dd81885",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Doddpathre"
+   ],
+   "ann": {
+    "label": "Doddpathre"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-84fe189856",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Doddpathre"
+   ],
+   "ann": {
+    "label": "Doddpathre"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f1680fc42b",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Doddpathre"
+   ],
+   "ann": {
+    "label": "Doddpathre"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fb2bc5df65",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Castor"
+   ],
+   "ann": {
+    "label": "Castor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7681b15413",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Castor"
+   ],
+   "ann": {
+    "label": "Castor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e8d60b735b",
+   "ref": {
+    "file": "data/train-00000-of-00020.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Castor"
+   ],
+   "ann": {
+    "label": "Castor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4aa5d66c3c",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Castor"
+   ],
+   "ann": {
+    "label": "Castor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-cf40ea9980",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Castor"
+   ],
+   "ann": {
+    "label": "Castor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-086d73e4db",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c6534143e9",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6cccb72098",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-30dae4773e",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0425930597",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemongrass"
+   ],
+   "ann": {
+    "label": "Lemongrass"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-79654123e3",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Nut"
+   ],
+   "ann": {
+    "label": "Malabar_Nut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1fd210d28a",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Nut"
+   ],
+   "ann": {
+    "label": "Malabar_Nut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c29c9be23c",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Nut"
+   ],
+   "ann": {
+    "label": "Malabar_Nut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a5c7015e9b",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Nut"
+   ],
+   "ann": {
+    "label": "Malabar_Nut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-461c778663",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Nut"
+   ],
+   "ann": {
+    "label": "Malabar_Nut"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e2393bb12f",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nerale"
+   ],
+   "ann": {
+    "label": "Nerale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-98e312ba7f",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nerale"
+   ],
+   "ann": {
+    "label": "Nerale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-879503a930",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nerale"
+   ],
+   "ann": {
+    "label": "Nerale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ac3319530d",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nerale"
+   ],
+   "ann": {
+    "label": "Nerale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3b5a1ffd30",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nerale"
+   ],
+   "ann": {
+    "label": "Nerale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-74e3d4f1bb",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coriender"
+   ],
+   "ann": {
+    "label": "Coriender"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d6e2f2309c",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coriender"
+   ],
+   "ann": {
+    "label": "Coriender"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-885373e39a",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coriender"
+   ],
+   "ann": {
+    "label": "Coriender"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a925d45fce",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coriender"
+   ],
+   "ann": {
+    "label": "Coriender"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1af520ee2a",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coriender"
+   ],
+   "ann": {
+    "label": "Coriender"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-74a98c7928",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Padri"
+   ],
+   "ann": {
+    "label": "Padri"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a93e1341b5",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Padri"
+   ],
+   "ann": {
+    "label": "Padri"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e394659f88",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Padri"
+   ],
+   "ann": {
+    "label": "Padri"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d1109c9247",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Padri"
+   ],
+   "ann": {
+    "label": "Padri"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-62df598700",
+   "ref": {
+    "file": "data/train-00001-of-00020.parquet",
+    "row": 334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Padri"
+   ],
+   "ann": {
+    "label": "Padri"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-738255d78c",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Arali"
+   ],
+   "ann": {
+    "label": "Arali"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-76275e2225",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Arali"
+   ],
+   "ann": {
+    "label": "Arali"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8729640fe0",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Arali"
+   ],
+   "ann": {
+    "label": "Arali"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b301f67f29",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Arali"
+   ],
+   "ann": {
+    "label": "Arali"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c078197974",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Arali"
+   ],
+   "ann": {
+    "label": "Arali"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ad8ec8f931",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raddish"
+   ],
+   "ann": {
+    "label": "Raddish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c939906dfc",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raddish"
+   ],
+   "ann": {
+    "label": "Raddish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9a23aa955d",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raddish"
+   ],
+   "ann": {
+    "label": "Raddish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c736845bae",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raddish"
+   ],
+   "ann": {
+    "label": "Raddish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-36f1757fd4",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Raddish"
+   ],
+   "ann": {
+    "label": "Raddish"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-cf2361ae13",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tecoma"
+   ],
+   "ann": {
+    "label": "Tecoma"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2ecd5a49e5",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tecoma"
+   ],
+   "ann": {
+    "label": "Tecoma"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-aab887468d",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tecoma"
+   ],
+   "ann": {
+    "label": "Tecoma"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-04212a2771",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tecoma"
+   ],
+   "ann": {
+    "label": "Tecoma"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e650e5b212",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tecoma"
+   ],
+   "ann": {
+    "label": "Tecoma"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-75166d0b39",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganike"
+   ],
+   "ann": {
+    "label": "Ganike"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5bfad2714a",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganike"
+   ],
+   "ann": {
+    "label": "Ganike"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d80d007946",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganike"
+   ],
+   "ann": {
+    "label": "Ganike"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0d83391819",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganike"
+   ],
+   "ann": {
+    "label": "Ganike"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7ab09f5fd2",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganike"
+   ],
+   "ann": {
+    "label": "Ganike"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6d4778f509",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Palak(Spinach)"
+   ],
+   "ann": {
+    "label": "Palak(Spinach)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9221d4c0ea",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Palak(Spinach)"
+   ],
+   "ann": {
+    "label": "Palak(Spinach)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9ca8b9433a",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 329,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Palak(Spinach)"
+   ],
+   "ann": {
+    "label": "Palak(Spinach)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-59a842d2a9",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Palak(Spinach)"
+   ],
+   "ann": {
+    "label": "Palak(Spinach)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-698387b2a6",
+   "ref": {
+    "file": "data/train-00002-of-00020.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Palak(Spinach)"
+   ],
+   "ann": {
+    "label": "Palak(Spinach)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-01f0a8ba8e",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-18d13c923b",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ca905f57d3",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d2691e1472",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-31976e7a04",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Neem"
+   ],
+   "ann": {
+    "label": "Neem"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-bf26797e1b",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amla"
+   ],
+   "ann": {
+    "label": "Amla"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ee4e4fe476",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amla"
+   ],
+   "ann": {
+    "label": "Amla"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4be64cb4a2",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amla"
+   ],
+   "ann": {
+    "label": "Amla"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6e01255f41",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amla"
+   ],
+   "ann": {
+    "label": "Amla"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-64c36fcb52",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amla"
+   ],
+   "ann": {
+    "label": "Amla"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-03e8f6f81a",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b2386d71fd",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7681fa2c69",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f76b0bfaee",
+   "ref": {
+    "file": "data/train-00003-of-00020.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1b8991bb32",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Marigold"
+   ],
+   "ann": {
+    "label": "Marigold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5ec920a263",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Beans"
+   ],
+   "ann": {
+    "label": "Beans"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-920e0caa3b",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Beans"
+   ],
+   "ann": {
+    "label": "Beans"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d672f6df8f",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Beans"
+   ],
+   "ann": {
+    "label": "Beans"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1c7d07bddb",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Beans"
+   ],
+   "ann": {
+    "label": "Beans"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-07f7574ffd",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Beans"
+   ],
+   "ann": {
+    "label": "Beans"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f41304a1b5",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tamarind"
+   ],
+   "ann": {
+    "label": "Tamarind"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-bac863d98a",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tamarind"
+   ],
+   "ann": {
+    "label": "Tamarind"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-21fd5f3d45",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tamarind"
+   ],
+   "ann": {
+    "label": "Tamarind"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-dd44aa2160",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tamarind"
+   ],
+   "ann": {
+    "label": "Tamarind"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-95fb229c99",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tamarind"
+   ],
+   "ann": {
+    "label": "Tamarind"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2f17a59b4e",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mint"
+   ],
+   "ann": {
+    "label": "Mint"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b47bd910c8",
+   "ref": {
+    "file": "data/train-00004-of-00020.parquet",
+    "row": 329,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mint"
+   ],
+   "ann": {
+    "label": "Mint"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b33cc84be1",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mint"
+   ],
+   "ann": {
+    "label": "Mint"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5073631abc",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mint"
+   ],
+   "ann": {
+    "label": "Mint"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-42e8ddc227",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mint"
+   ],
+   "ann": {
+    "label": "Mint"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-786ffe05fc",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curry"
+   ],
+   "ann": {
+    "label": "Curry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-122e87e53e",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curry"
+   ],
+   "ann": {
+    "label": "Curry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0d6ef7f299",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curry"
+   ],
+   "ann": {
+    "label": "Curry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a3b91b03d9",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curry"
+   ],
+   "ann": {
+    "label": "Curry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-309691ef3e",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Curry"
+   ],
+   "ann": {
+    "label": "Curry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8305f104b1",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common rue(naagdalli)"
+   ],
+   "ann": {
+    "label": "Common rue(naagdalli)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4fc8b288c9",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 246,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common rue(naagdalli)"
+   ],
+   "ann": {
+    "label": "Common rue(naagdalli)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-82b7a61a59",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common rue(naagdalli)"
+   ],
+   "ann": {
+    "label": "Common rue(naagdalli)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a522d0175d",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common rue(naagdalli)"
+   ],
+   "ann": {
+    "label": "Common rue(naagdalli)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e0c61436b2",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Common rue(naagdalli)"
+   ],
+   "ann": {
+    "label": "Common rue(naagdalli)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e15fd1af27",
+   "ref": {
+    "file": "data/train-00005-of-00020.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-53bd97ab66",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-76bca40d10",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c50525bfac",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a5c7e19525",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rose"
+   ],
+   "ann": {
+    "label": "Rose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-084fd14e02",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Catharanthus"
+   ],
+   "ann": {
+    "label": "Catharanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b784906f95",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Catharanthus"
+   ],
+   "ann": {
+    "label": "Catharanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1d3e2ff343",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Catharanthus"
+   ],
+   "ann": {
+    "label": "Catharanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3a8b6b58d2",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Catharanthus"
+   ],
+   "ann": {
+    "label": "Catharanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6f48f63ef9",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Catharanthus"
+   ],
+   "ann": {
+    "label": "Catharanthus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0f16690d23",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pomoegranate"
+   ],
+   "ann": {
+    "label": "Pomoegranate"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-498fa560a4",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pomoegranate"
+   ],
+   "ann": {
+    "label": "Pomoegranate"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ad292a8b0f",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pomoegranate"
+   ],
+   "ann": {
+    "label": "Pomoegranate"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a97cae36da",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pomoegranate"
+   ],
+   "ann": {
+    "label": "Pomoegranate"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e559192dc8",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 267,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pomoegranate"
+   ],
+   "ann": {
+    "label": "Pomoegranate"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-41cc8f82ce",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Honge"
+   ],
+   "ann": {
+    "label": "Honge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-268b60f751",
+   "ref": {
+    "file": "data/train-00006-of-00020.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Honge"
+   ],
+   "ann": {
+    "label": "Honge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d5235a824e",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Honge"
+   ],
+   "ann": {
+    "label": "Honge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b40c494f91",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Honge"
+   ],
+   "ann": {
+    "label": "Honge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8d8d360e16",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Honge"
+   ],
+   "ann": {
+    "label": "Honge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1487f95dfc",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chilly"
+   ],
+   "ann": {
+    "label": "Chilly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6d2bfb1deb",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chilly"
+   ],
+   "ann": {
+    "label": "Chilly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-bd3486c910",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chilly"
+   ],
+   "ann": {
+    "label": "Chilly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-66ae44201e",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chilly"
+   ],
+   "ann": {
+    "label": "Chilly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c0ba63e447",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chilly"
+   ],
+   "ann": {
+    "label": "Chilly"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5410ce35b4",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d7f937def1",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-715d65211f",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e23e8e8f94",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8a1b119d84",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Onion"
+   ],
+   "ann": {
+    "label": "Onion"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-aa0b31f610",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bringaraja"
+   ],
+   "ann": {
+    "label": "Bringaraja"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-28aed8ebd0",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bringaraja"
+   ],
+   "ann": {
+    "label": "Bringaraja"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-18bc5a571b",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bringaraja"
+   ],
+   "ann": {
+    "label": "Bringaraja"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-932791af85",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bringaraja"
+   ],
+   "ann": {
+    "label": "Bringaraja"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2dd6974e55",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bringaraja"
+   ],
+   "ann": {
+    "label": "Bringaraja"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-538c89052c",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kasambruga"
+   ],
+   "ann": {
+    "label": "Kasambruga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2405766f13",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kasambruga"
+   ],
+   "ann": {
+    "label": "Kasambruga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-30149c89d5",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 308,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kasambruga"
+   ],
+   "ann": {
+    "label": "Kasambruga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-55adb69276",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 314,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kasambruga"
+   ],
+   "ann": {
+    "label": "Kasambruga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b0bb8fc364",
+   "ref": {
+    "file": "data/train-00007-of-00020.parquet",
+    "row": 317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kasambruga"
+   ],
+   "ann": {
+    "label": "Kasambruga"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5e462b71df",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-344565af23",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5c50bc1e2b",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f198bf660d",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-baf5d0b317",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Guava"
+   ],
+   "ann": {
+    "label": "Guava"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4b93b7362e",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citron lime (herelikai)"
+   ],
+   "ann": {
+    "label": "Citron lime (herelikai)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e2604beaca",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citron lime (herelikai)"
+   ],
+   "ann": {
+    "label": "Citron lime (herelikai)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c232e22e81",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citron lime (herelikai)"
+   ],
+   "ann": {
+    "label": "Citron lime (herelikai)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d38c833b66",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citron lime (herelikai)"
+   ],
+   "ann": {
+    "label": "Citron lime (herelikai)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-820a9a738b",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Citron lime (herelikai)"
+   ],
+   "ann": {
+    "label": "Citron lime (herelikai)"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d8bb5aeb1d",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amruthaballi"
+   ],
+   "ann": {
+    "label": "Amruthaballi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-013d843906",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amruthaballi"
+   ],
+   "ann": {
+    "label": "Amruthaballi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f8c5511c74",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amruthaballi"
+   ],
+   "ann": {
+    "label": "Amruthaballi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-baa9db2421",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amruthaballi"
+   ],
+   "ann": {
+    "label": "Amruthaballi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b63b824d2b",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Amruthaballi"
+   ],
+   "ann": {
+    "label": "Amruthaballi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-71a1457052",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 297,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper"
+   ],
+   "ann": {
+    "label": "Pepper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0c22574f52",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper"
+   ],
+   "ann": {
+    "label": "Pepper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-95766c2f1d",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper"
+   ],
+   "ann": {
+    "label": "Pepper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6f08937d16",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper"
+   ],
+   "ann": {
+    "label": "Pepper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-163a674358",
+   "ref": {
+    "file": "data/train-00008-of-00020.parquet",
+    "row": 304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pepper"
+   ],
+   "ann": {
+    "label": "Pepper"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-88c6fadb3d",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Betel"
+   ],
+   "ann": {
+    "label": "Betel"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-35fa596aaa",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Betel"
+   ],
+   "ann": {
+    "label": "Betel"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-bace0a11cd",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Betel"
+   ],
+   "ann": {
+    "label": "Betel"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-11ce63a43c",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Betel"
+   ],
+   "ann": {
+    "label": "Betel"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c1320747a3",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Betel"
+   ],
+   "ann": {
+    "label": "Betel"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e75a28b2e4",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Drumstick"
+   ],
+   "ann": {
+    "label": "Drumstick"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-79fee2d6e1",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Drumstick"
+   ],
+   "ann": {
+    "label": "Drumstick"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9f846647b0",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Drumstick"
+   ],
+   "ann": {
+    "label": "Drumstick"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-394aefcefb",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Drumstick"
+   ],
+   "ann": {
+    "label": "Drumstick"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-45aca39b3e",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Drumstick"
+   ],
+   "ann": {
+    "label": "Drumstick"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e3d8a86816",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sapota"
+   ],
+   "ann": {
+    "label": "Sapota"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fa600dcf9e",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sapota"
+   ],
+   "ann": {
+    "label": "Sapota"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3f5e9e6e1f",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sapota"
+   ],
+   "ann": {
+    "label": "Sapota"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-887d8b2f6a",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sapota"
+   ],
+   "ann": {
+    "label": "Sapota"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-32244600b3",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sapota"
+   ],
+   "ann": {
+    "label": "Sapota"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8938a2e9a9",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-23121940bb",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e28f31dd13",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c0fd1cdd76",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1191b2c90f",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jackfruit"
+   ],
+   "ann": {
+    "label": "Jackfruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d8c2bd8e04",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pumpkin"
+   ],
+   "ann": {
+    "label": "Pumpkin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2884021352",
+   "ref": {
+    "file": "data/train-00009-of-00020.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pumpkin"
+   ],
+   "ann": {
+    "label": "Pumpkin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a79de1162e",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pumpkin"
+   ],
+   "ann": {
+    "label": "Pumpkin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c7c4774466",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pumpkin"
+   ],
+   "ann": {
+    "label": "Pumpkin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4fcf76d0ca",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pumpkin"
+   ],
+   "ann": {
+    "label": "Pumpkin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5c20835acc",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coffee"
+   ],
+   "ann": {
+    "label": "Coffee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1bd0f900d9",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coffee"
+   ],
+   "ann": {
+    "label": "Coffee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d466c890ec",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coffee"
+   ],
+   "ann": {
+    "label": "Coffee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-abfc0513ec",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coffee"
+   ],
+   "ann": {
+    "label": "Coffee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5843cc4f25",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Coffee"
+   ],
+   "ann": {
+    "label": "Coffee"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e763950b3f",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-26fc9236fb",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-294f2b1d80",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-77f55a0cc1",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a00e2330c3",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mango"
+   ],
+   "ann": {
+    "label": "Mango"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-61756eee38",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caricature"
+   ],
+   "ann": {
+    "label": "Caricature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0ac4ce99f7",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caricature"
+   ],
+   "ann": {
+    "label": "Caricature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e4db283ad6",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 276,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caricature"
+   ],
+   "ann": {
+    "label": "Caricature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5424c29561",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caricature"
+   ],
+   "ann": {
+    "label": "Caricature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-478688192a",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Caricature"
+   ],
+   "ann": {
+    "label": "Caricature"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-65c98e0bca",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Balloon_Vine"
+   ],
+   "ann": {
+    "label": "Balloon_Vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9e94bc0897",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 314,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Balloon_Vine"
+   ],
+   "ann": {
+    "label": "Balloon_Vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fcaae053cc",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 325,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Balloon_Vine"
+   ],
+   "ann": {
+    "label": "Balloon_Vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-61fb48d362",
+   "ref": {
+    "file": "data/train-00010-of-00020.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Balloon_Vine"
+   ],
+   "ann": {
+    "label": "Balloon_Vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9ec002f48f",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Balloon_Vine"
+   ],
+   "ann": {
+    "label": "Balloon_Vine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-da1f85830e",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Henna"
+   ],
+   "ann": {
+    "label": "Henna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5203328439",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Henna"
+   ],
+   "ann": {
+    "label": "Henna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-92468a8c22",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Henna"
+   ],
+   "ann": {
+    "label": "Henna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-965c5f2f06",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Henna"
+   ],
+   "ann": {
+    "label": "Henna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e0babcf0dd",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Henna"
+   ],
+   "ann": {
+    "label": "Henna"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-403dacbc30",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethapala"
+   ],
+   "ann": {
+    "label": "Seethapala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-20db203d7a",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethapala"
+   ],
+   "ann": {
+    "label": "Seethapala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6ae231ddd7",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethapala"
+   ],
+   "ann": {
+    "label": "Seethapala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-07a33c596a",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethapala"
+   ],
+   "ann": {
+    "label": "Seethapala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4595808ce7",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethapala"
+   ],
+   "ann": {
+    "label": "Seethapala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-062ccc8ffa",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kohlrabi"
+   ],
+   "ann": {
+    "label": "Kohlrabi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f16cd37b7d",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kohlrabi"
+   ],
+   "ann": {
+    "label": "Kohlrabi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3e14fbee4e",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kohlrabi"
+   ],
+   "ann": {
+    "label": "Kohlrabi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-14501060ac",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kohlrabi"
+   ],
+   "ann": {
+    "label": "Kohlrabi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d6aecfe7b0",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kohlrabi"
+   ],
+   "ann": {
+    "label": "Kohlrabi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3af2001d78",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-80ac67b641",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 306,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-77d89c9089",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6b7045dc46",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3ecaa18322",
+   "ref": {
+    "file": "data/train-00011-of-00020.parquet",
+    "row": 331,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tomato"
+   ],
+   "ann": {
+    "label": "Tomato"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d6e799bae0",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bamboo"
+   ],
+   "ann": {
+    "label": "Bamboo"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c42df36892",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bamboo"
+   ],
+   "ann": {
+    "label": "Bamboo"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2ee3f81286",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bamboo"
+   ],
+   "ann": {
+    "label": "Bamboo"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8f0f39b79a",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bamboo"
+   ],
+   "ann": {
+    "label": "Bamboo"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-116fb64bbd",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bamboo"
+   ],
+   "ann": {
+    "label": "Bamboo"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-86a584e7c2",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kepala"
+   ],
+   "ann": {
+    "label": "kepala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9590182a7f",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kepala"
+   ],
+   "ann": {
+    "label": "kepala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-24be40ebc6",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kepala"
+   ],
+   "ann": {
+    "label": "kepala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e16183c296",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kepala"
+   ],
+   "ann": {
+    "label": "kepala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0b7642f9cc",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kepala"
+   ],
+   "ann": {
+    "label": "kepala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b732a0d028",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Taro"
+   ],
+   "ann": {
+    "label": "Taro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c2079a70f8",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 206,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Taro"
+   ],
+   "ann": {
+    "label": "Taro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-87f61d035b",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Taro"
+   ],
+   "ann": {
+    "label": "Taro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-09c33f2c2a",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Taro"
+   ],
+   "ann": {
+    "label": "Taro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4027eecc90",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Taro"
+   ],
+   "ann": {
+    "label": "Taro"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f976ce26ec",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ginger"
+   ],
+   "ann": {
+    "label": "Ginger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2590f73399",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ginger"
+   ],
+   "ann": {
+    "label": "Ginger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9c7c4fb1ce",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ginger"
+   ],
+   "ann": {
+    "label": "Ginger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d567701c2f",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ginger"
+   ],
+   "ann": {
+    "label": "Ginger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9a97b58030",
+   "ref": {
+    "file": "data/train-00012-of-00020.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ginger"
+   ],
+   "ann": {
+    "label": "Ginger"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-67ba5d7c3d",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aloevera"
+   ],
+   "ann": {
+    "label": "Aloevera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1faea23090",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aloevera"
+   ],
+   "ann": {
+    "label": "Aloevera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f68f76adb3",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aloevera"
+   ],
+   "ann": {
+    "label": "Aloevera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c5258f57fd",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aloevera"
+   ],
+   "ann": {
+    "label": "Aloevera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-51847551e8",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Aloevera"
+   ],
+   "ann": {
+    "label": "Aloevera"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0f491359b6",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Badipala"
+   ],
+   "ann": {
+    "label": "Badipala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e46ed97461",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Badipala"
+   ],
+   "ann": {
+    "label": "Badipala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2db1c8592d",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Badipala"
+   ],
+   "ann": {
+    "label": "Badipala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1563b76232",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Badipala"
+   ],
+   "ann": {
+    "label": "Badipala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b8821e2698",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Badipala"
+   ],
+   "ann": {
+    "label": "Badipala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-faebf9f2af",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kambajala"
+   ],
+   "ann": {
+    "label": "Kambajala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b40d7ea90b",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kambajala"
+   ],
+   "ann": {
+    "label": "Kambajala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-10c4baf341",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kambajala"
+   ],
+   "ann": {
+    "label": "Kambajala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3823d87d86",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kambajala"
+   ],
+   "ann": {
+    "label": "Kambajala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a73865227f",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Kambajala"
+   ],
+   "ann": {
+    "label": "Kambajala"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-382f58807d",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganigale"
+   ],
+   "ann": {
+    "label": "Ganigale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b1c948f288",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 275,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganigale"
+   ],
+   "ann": {
+    "label": "Ganigale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a35e73cb55",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganigale"
+   ],
+   "ann": {
+    "label": "Ganigale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7200beb0c6",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganigale"
+   ],
+   "ann": {
+    "label": "Ganigale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-108c53fbf7",
+   "ref": {
+    "file": "data/train-00013-of-00020.parquet",
+    "row": 315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ganigale"
+   ],
+   "ann": {
+    "label": "Ganigale"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-41e53f9f86",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Papaya"
+   ],
+   "ann": {
+    "label": "Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-47f61724a3",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Papaya"
+   ],
+   "ann": {
+    "label": "Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-946a0cd197",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Papaya"
+   ],
+   "ann": {
+    "label": "Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0f412a6451",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Papaya"
+   ],
+   "ann": {
+    "label": "Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-cf8f632b2c",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Papaya"
+   ],
+   "ann": {
+    "label": "Papaya"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4a37048891",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemon"
+   ],
+   "ann": {
+    "label": "Lemon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fccd1a9a8e",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemon"
+   ],
+   "ann": {
+    "label": "Lemon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9069292d83",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemon"
+   ],
+   "ann": {
+    "label": "Lemon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-59f6ce5810",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemon"
+   ],
+   "ann": {
+    "label": "Lemon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-73aa68d2b4",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lemon"
+   ],
+   "ann": {
+    "label": "Lemon"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-11ec1808a6",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 236,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "camphor"
+   ],
+   "ann": {
+    "label": "camphor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f5baa794e7",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "camphor"
+   ],
+   "ann": {
+    "label": "camphor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-448b9e5f7a",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "camphor"
+   ],
+   "ann": {
+    "label": "camphor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-82868130f4",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "camphor"
+   ],
+   "ann": {
+    "label": "camphor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b86a08306a",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "camphor"
+   ],
+   "ann": {
+    "label": "camphor"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-94334ac0bf",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parijatha"
+   ],
+   "ann": {
+    "label": "Parijatha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-42ff22a6e8",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parijatha"
+   ],
+   "ann": {
+    "label": "Parijatha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f89216adeb",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 329,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parijatha"
+   ],
+   "ann": {
+    "label": "Parijatha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e8310a2228",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 337,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parijatha"
+   ],
+   "ann": {
+    "label": "Parijatha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ec573180c2",
+   "ref": {
+    "file": "data/train-00014-of-00020.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Parijatha"
+   ],
+   "ann": {
+    "label": "Parijatha"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8773a3f797",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pea"
+   ],
+   "ann": {
+    "label": "Pea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-2f4625185e",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pea"
+   ],
+   "ann": {
+    "label": "Pea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1bbaee94e5",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pea"
+   ],
+   "ann": {
+    "label": "Pea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-875c02dff6",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pea"
+   ],
+   "ann": {
+    "label": "Pea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-20beb34159",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Pea"
+   ],
+   "ann": {
+    "label": "Pea"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0fb28d5509",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spinach1"
+   ],
+   "ann": {
+    "label": "Spinach1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-27f15631c7",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spinach1"
+   ],
+   "ann": {
+    "label": "Spinach1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-cf56a40c82",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spinach1"
+   ],
+   "ann": {
+    "label": "Spinach1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8140979c90",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spinach1"
+   ],
+   "ann": {
+    "label": "Spinach1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5d416266b9",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Spinach1"
+   ],
+   "ann": {
+    "label": "Spinach1"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5196580f21",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nooni"
+   ],
+   "ann": {
+    "label": "Nooni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-51e5ef6007",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nooni"
+   ],
+   "ann": {
+    "label": "Nooni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-39c556930c",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nooni"
+   ],
+   "ann": {
+    "label": "Nooni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-93f6c70272",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nooni"
+   ],
+   "ann": {
+    "label": "Nooni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-dad00de291",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nooni"
+   ],
+   "ann": {
+    "label": "Nooni"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b58ad95ba0",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 207,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turmeric"
+   ],
+   "ann": {
+    "label": "Turmeric"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8eff291534",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turmeric"
+   ],
+   "ann": {
+    "label": "Turmeric"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3c54e9c292",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turmeric"
+   ],
+   "ann": {
+    "label": "Turmeric"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-0f490759b6",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 214,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turmeric"
+   ],
+   "ann": {
+    "label": "Turmeric"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fca6c76dbf",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turmeric"
+   ],
+   "ann": {
+    "label": "Turmeric"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-05f7330870",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethaashoka"
+   ],
+   "ann": {
+    "label": "Seethaashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e15b273a5f",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethaashoka"
+   ],
+   "ann": {
+    "label": "Seethaashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-94eb857fc7",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethaashoka"
+   ],
+   "ann": {
+    "label": "Seethaashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-23eab5b0c1",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethaashoka"
+   ],
+   "ann": {
+    "label": "Seethaashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-44c9e2a759",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Seethaashoka"
+   ],
+   "ann": {
+    "label": "Seethaashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d9c38d25da",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lantana"
+   ],
+   "ann": {
+    "label": "Lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-dd239c89b0",
+   "ref": {
+    "file": "data/train-00015-of-00020.parquet",
+    "row": 334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lantana"
+   ],
+   "ann": {
+    "label": "Lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b738e0841d",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lantana"
+   ],
+   "ann": {
+    "label": "Lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-215715e016",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lantana"
+   ],
+   "ann": {
+    "label": "Lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b81d85d859",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Lantana"
+   ],
+   "ann": {
+    "label": "Lantana"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fa8c515266",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Thumbe"
+   ],
+   "ann": {
+    "label": "Thumbe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-28d7ee1d59",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Thumbe"
+   ],
+   "ann": {
+    "label": "Thumbe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-471fee76ed",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Thumbe"
+   ],
+   "ann": {
+    "label": "Thumbe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f76c20ce4a",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Thumbe"
+   ],
+   "ann": {
+    "label": "Thumbe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7bb4c1aa94",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Thumbe"
+   ],
+   "ann": {
+    "label": "Thumbe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a9ffdef4be",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gasagase"
+   ],
+   "ann": {
+    "label": "Gasagase"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-58697f47df",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gasagase"
+   ],
+   "ann": {
+    "label": "Gasagase"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7b2d5e111e",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gasagase"
+   ],
+   "ann": {
+    "label": "Gasagase"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-68dca13242",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gasagase"
+   ],
+   "ann": {
+    "label": "Gasagase"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-42e51e40fd",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gasagase"
+   ],
+   "ann": {
+    "label": "Gasagase"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-18f686f97e",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nelavembu"
+   ],
+   "ann": {
+    "label": "Nelavembu"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e3b62d7f92",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nelavembu"
+   ],
+   "ann": {
+    "label": "Nelavembu"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f4d08aa939",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nelavembu"
+   ],
+   "ann": {
+    "label": "Nelavembu"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6201a29cd6",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nelavembu"
+   ],
+   "ann": {
+    "label": "Nelavembu"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-60284883b8",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Nelavembu"
+   ],
+   "ann": {
+    "label": "Nelavembu"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b70da9d87c",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus"
+   ],
+   "ann": {
+    "label": "Eucalyptus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-60f199d5c6",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus"
+   ],
+   "ann": {
+    "label": "Eucalyptus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8c3a3913de",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus"
+   ],
+   "ann": {
+    "label": "Eucalyptus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7a8cff4879",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus"
+   ],
+   "ann": {
+    "label": "Eucalyptus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-e25723352b",
+   "ref": {
+    "file": "data/train-00016-of-00020.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Eucalyptus"
+   ],
+   "ann": {
+    "label": "Eucalyptus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-27045f11d4",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Insulin"
+   ],
+   "ann": {
+    "label": "Insulin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7eca4c427b",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Insulin"
+   ],
+   "ann": {
+    "label": "Insulin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d0d229319c",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Insulin"
+   ],
+   "ann": {
+    "label": "Insulin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d4944e0c4c",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Insulin"
+   ],
+   "ann": {
+    "label": "Insulin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-27fe82489a",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Insulin"
+   ],
+   "ann": {
+    "label": "Insulin"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ee54d32271",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sampige"
+   ],
+   "ann": {
+    "label": "Sampige"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8b6b844fd4",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sampige"
+   ],
+   "ann": {
+    "label": "Sampige"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7f955bc412",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sampige"
+   ],
+   "ann": {
+    "label": "Sampige"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d5f048f064",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sampige"
+   ],
+   "ann": {
+    "label": "Sampige"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b6703182d3",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sampige"
+   ],
+   "ann": {
+    "label": "Sampige"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-05d6ee7778",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kamakasturi"
+   ],
+   "ann": {
+    "label": "kamakasturi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-9801f513c4",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kamakasturi"
+   ],
+   "ann": {
+    "label": "kamakasturi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-26e04b30cb",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kamakasturi"
+   ],
+   "ann": {
+    "label": "kamakasturi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6794bf5b89",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kamakasturi"
+   ],
+   "ann": {
+    "label": "kamakasturi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-c90b28248f",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "kamakasturi"
+   ],
+   "ann": {
+    "label": "kamakasturi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-587ba48d70",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Spinach"
+   ],
+   "ann": {
+    "label": "Malabar_Spinach"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-552448e0bf",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 242,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Spinach"
+   ],
+   "ann": {
+    "label": "Malabar_Spinach"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1ae254a810",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Spinach"
+   ],
+   "ann": {
+    "label": "Malabar_Spinach"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-46090f0c40",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 291,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Spinach"
+   ],
+   "ann": {
+    "label": "Malabar_Spinach"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-63c28cf394",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 294,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Malabar_Spinach"
+   ],
+   "ann": {
+    "label": "Malabar_Spinach"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-12bdf3c532",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-7a3eef4ccd",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6d96065182",
+   "ref": {
+    "file": "data/train-00017-of-00020.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a9eda9886f",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-58ae18cb7c",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Hibiscus"
+   ],
+   "ann": {
+    "label": "Hibiscus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-17caa86564",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Globe Amarnath"
+   ],
+   "ann": {
+    "label": "Globe Amarnath"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3e21868a5b",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Globe Amarnath"
+   ],
+   "ann": {
+    "label": "Globe Amarnath"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a5727226fa",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Globe Amarnath"
+   ],
+   "ann": {
+    "label": "Globe Amarnath"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4beb88bfe9",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Globe Amarnath"
+   ],
+   "ann": {
+    "label": "Globe Amarnath"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f1302ce0db",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Globe Amarnath"
+   ],
+   "ann": {
+    "label": "Globe Amarnath"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-cff0c62ef9",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-11503f2ffd",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fe058be25e",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-10715b491d",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f343ac32fd",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tulsi"
+   ],
+   "ann": {
+    "label": "Tulsi"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-d38bb0ebb9",
+   "ref": {
+    "file": "data/train-00018-of-00020.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ashoka"
+   ],
+   "ann": {
+    "label": "ashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-fb58e40ec4",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ashoka"
+   ],
+   "ann": {
+    "label": "ashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-332c227a78",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ashoka"
+   ],
+   "ann": {
+    "label": "ashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-6bc611fa79",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ashoka"
+   ],
+   "ann": {
+    "label": "ashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-34980e861b",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "ashoka"
+   ],
+   "ann": {
+    "label": "ashoka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-895b1df625",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Astma_weed"
+   ],
+   "ann": {
+    "label": "Astma_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1b69da001f",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Astma_weed"
+   ],
+   "ann": {
+    "label": "Astma_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8fdf8fa541",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Astma_weed"
+   ],
+   "ann": {
+    "label": "Astma_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-a02bbeb1a2",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Astma_weed"
+   ],
+   "ann": {
+    "label": "Astma_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5a82e7e443",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Astma_weed"
+   ],
+   "ann": {
+    "label": "Astma_weed"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-4370449eb5",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chakte"
+   ],
+   "ann": {
+    "label": "Chakte"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f22de92708",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chakte"
+   ],
+   "ann": {
+    "label": "Chakte"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-14beff5755",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chakte"
+   ],
+   "ann": {
+    "label": "Chakte"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-8e455b40af",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chakte"
+   ],
+   "ann": {
+    "label": "Chakte"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-3b0699b8e4",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Chakte"
+   ],
+   "ann": {
+    "label": "Chakte"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-913ac854a4",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ekka"
+   ],
+   "ann": {
+    "label": "Ekka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-b11c72f987",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ekka"
+   ],
+   "ann": {
+    "label": "Ekka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-5b973c2c08",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ekka"
+   ],
+   "ann": {
+    "label": "Ekka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-dc3376716c",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ekka"
+   ],
+   "ann": {
+    "label": "Ekka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-25047ea6ab",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Ekka"
+   ],
+   "ann": {
+    "label": "Ekka"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-1f3f9bcd1f",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jasmine"
+   ],
+   "ann": {
+    "label": "Jasmine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-f988e16882",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jasmine"
+   ],
+   "ann": {
+    "label": "Jasmine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-758f707d04",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jasmine"
+   ],
+   "ann": {
+    "label": "Jasmine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-08626e2ed6",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jasmine"
+   ],
+   "ann": {
+    "label": "Jasmine"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "DIMPSAR_medicinal_leaf_classification-ac1da15647",
+   "ref": {
+    "file": "data/train-00019-of-00020.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Jasmine"
+   ],
+   "ann": {
+    "label": "Jasmine"
+   },
+   "strata": {}
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "name": "bean_cowpea_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/bean_cowpea_leaf_disease_classification",
+ "hf_sha": "49d2fa2a97c12609b7a32c311c7a1dddc65b7785",
+ "sampling_hash": "4962326aae13",
+ "created": "2026-10-20T21:28:39+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial wilt",
+   "Blight",
+   "Fresh Leaf",
+   "Mosaic Virus",
+   "Rust",
+   "Septoria leaf spot"
+  ],
+  "indexed_rows": 4467
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-76ac5ac3ab",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1fd9d5055f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-acf9b8bbf3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3065226fda",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 385,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a0145a07b6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ddea19228e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 909,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b2c2ca9608",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 959,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bb40e481fa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1066,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-94a85dd631",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0567cf32a5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1683,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1a621d1838",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1767,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6b7860fa11",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2001,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f825400d0a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-08e4d9bd7f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c431c2fb42",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1b33b035d9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3fb359309a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f0abf313a5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1e478da335",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3effd29767",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 630,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9c7b152da0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 694,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4e58220e60",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 906,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-33723ada1b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3402561191",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4b726991c1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1609,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5cef158da2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1664,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5ce08c5d60",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1937,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a21a3cb3e9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2003,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8078da4ae4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2054,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d971910c97",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  }
+ ]
+}
