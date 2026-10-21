@@ -72,13 +72,6 @@ hf auth login
 uv tool install vllm --with vllm-gguf-plugin
 ```
 
-Data on the GPU server (either):
-
-```bash
-rsync -a <host>:<DATA_DIR>/base-data/ $DATA/base-data/
-uv run agbench sample --data-dir $DATA --from-manifest
-```
-
 GGUF models through llama.cpp instead of vLLM (optional, build >= b10353):
 
 ```bash
