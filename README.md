@@ -63,11 +63,28 @@ uv run agbench view --data-dir $DATA
 
 Rules: [docs/benchmarking.md](docs/benchmarking.md)
 
-Inference servers (on the GPU machine):
+GPU server setup:
 
 ```bash
-uv tool install vllm                        # or set VLLM_BIN
-export LLAMA_SERVER_BIN=/path/to/llama-server   # llama.cpp build >= b10353, for GGUF models
+git clone git@github.com:plant-ai-biophysics-lab/AGgentic-benchmarks.git && cd AGgentic-benchmarks
+uv sync
+hf auth login
+uv tool install vllm --with vllm-gguf-plugin
+```
+
+Data on the GPU server (either):
+
+```bash
+rsync -a <host>:<DATA_DIR>/base-data/ $DATA/base-data/
+uv run agbench sample --data-dir $DATA --from-manifest
+```
+
+GGUF models through llama.cpp instead of vLLM (optional, build >= b10353):
+
+```bash
+git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp
+cmake -B build -DGGML_CUDA=ON && cmake --build build -j 8 --target llama-server
+export LLAMA_SERVER_BIN=$PWD/build/bin/llama-server
 ```
 
 ```bash
@@ -89,14 +106,23 @@ Options:
 --reasoning-effort low         # low | medium | high
 --concurrency 16
 --run-dir runs/<run_dir>       # resume
+--gguf-backend vllm            # serve GGUF models with vLLM instead of llama.cpp
 ```
 
 Compute profile:
 
 ```bash
-scripts/profile_all_models.sh $DATA
-uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 10
-uv run agbench eval view --runs reports/profile --profile reports/profile
+uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-gguf --gguf-backend vllm --data-dir $DATA --limit-per-dataset 2 --only '^(bean_disease_uganda|almond_bloom_2023|apple_flower_segmentation|AgriBench)$'
+uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 5
+scripts/profile_all_models.sh $DATA --gguf-backend vllm
+scripts/profile_all_models.sh $DATA                       # GGUF models through llama.cpp
+```
+
+View results from your laptop:
+
+```bash
+uv run agbench eval view --runs reports/profile --profile reports/profile   # on the server
+ssh -N -L 8502:localhost:8502 <user>@<server>                              # on your laptop, then open http://localhost:8502
 ```
 
 Custom method:

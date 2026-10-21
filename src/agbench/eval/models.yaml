@@ -3,6 +3,8 @@
 #   effort:    request fields per --reasoning-effort level
 #   cot:       true -> no native thinking; use the CoT system prompt and <answer> tags
 #   parallel:  llama-server slots (-np); each gets max_model_len context
+#   base:      original HF repo; tokenizer + config when a GGUF runs through vLLM (--gguf-backend vllm)
+#   vllm_args: extra vLLM args used only with --gguf-backend vllm
 #   est_vram_gb: estimated single-GPU peak (weights + vision + KV at 32K, fp8 KV)
 
 defaults:
@@ -72,6 +74,7 @@ models:
     est_vram_gb: 28
     parallel: 2
     gguf: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
+    base: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
     mmproj: mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
     draft: {repo: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF, file: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr.gguf}
     serve_args: [--spec-type, draft-dflash, --spec-draft-n-max, "6", --spec-draft-ngl, "999",
@@ -92,6 +95,7 @@ models:
     parallel: 4
     min_build: 10353
     gguf: Muse-Glimmer-30B-KQuant-Dynamic-Q4_K_XL.gguf
+    base: meta-models/Muse-Glimmer-30B
     mmproj: mmproj-Muse-Glimmer-30B-Q4_K_M.gguf
     draft: {file: dflash-Muse-Glimmer-30B-Q4_K_M.gguf}
     draft_flag: -md
@@ -110,6 +114,7 @@ models:
     est_vram_gb: 42
     parallel: 2
     gguf: MiniCPM-V-4_7-35B-A3B-Q8_0.gguf
+    base: openbmb/MiniCPM-V-4.7-35B-A3B
     mmproj: mmproj-model-f16.gguf
     # DSpark drafter (dspark-MiniCPM-V-4_7-35B-A3B-F16.gguf) needs a llama.cpp build with DSpark support (OpenBMB llama.cpp-omni).
     sampling: {temperature: 0.7, top_p: 0.95, top_k: 100}

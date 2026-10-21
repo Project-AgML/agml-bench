@@ -93,16 +93,17 @@ def _stats(recs: list[dict], wall: float | None) -> dict:
 
 
 def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task: int, per_task_seq: int,
-                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler) -> dict:
+                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler, gguf_backend: str = "llamacpp") -> dict:
     spec = model_spec(model_id)
-    conc = concurrency or (spec.get("parallel", 2) if spec["backend"] == "llamacpp" else spec["concurrency"])
+    llama = spec["backend"] == "llamacpp" and gguf_backend == "llamacpp"
+    conc = concurrency or (spec.get("parallel", 2) if llama else spec["concurrency"])
     batch_items = pick(all_items, per_task)
     seq_items = pick(all_items, per_task_seq)
-    res = {"model": model_id, "backend": spec["backend"], "weights_gb": spec.get("weights_gb"),
+    res = {"model": model_id, "backend": "llamacpp" if llama else "vllm", "weights_gb": spec.get("weights_gb"),
            "est_vram_gb": spec.get("est_vram_gb"), "concurrency": conc}
     t_start = time.time()
     try:
-        with Server(model_id, out / "server.log") as srv:
+        with Server(model_id, out / "server.log", gguf_backend=gguf_backend) as srv:
             res["load_s"] = round(srv.load_seconds, 1)
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
             kf = spec.get("bbox_key_format")
@@ -146,7 +147,7 @@ def recommend(peak_gb: float) -> int | None:
 
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
                 concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
-                cleanup_weights: bool = False) -> dict:
+                cleanup_weights: bool = False, gguf_backend: str = "llamacpp") -> dict:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     all_items, _ = build_items(Path(data_dir))
@@ -155,7 +156,7 @@ def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per
     with GPUSampler() as gpu:
         hw = gpu.info()
         for m in model_ids:
-            r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu)
+            r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu, gguf_backend)
             r["full_run"] = extrapolate(r, counts)
             results.append(r)
             (out / "profile.json").write_text(json.dumps({"hardware": hw, "counts": counts, "models": results}, indent=2))

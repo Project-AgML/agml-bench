@@ -56,6 +56,7 @@ def run(
     run_dir: Path = typer.Option(None, "--run-dir", help="Resume into this run dir."),
     judge: bool = typer.Option(False, "--judge", help="Judge open-ended answers after the run."),
     judge_endpoint: str = typer.Option(None, "--judge-endpoint"),
+    gguf_backend: str = typer.Option("llamacpp", "--gguf-backend", help="llamacpp | vllm (vllm needs vllm-gguf-plugin)"),
 ):
     """Run a model or custom method over the benchmark."""
     from agbench.eval.methods import VLMMethod, model_spec
@@ -72,13 +73,14 @@ def run(
         res = bench.run(m, rd, concurrency or 8)
     else:
         spec = model_spec(model)
-        conc = concurrency or (spec.get("parallel", 2) if spec["backend"] == "llamacpp" else spec["concurrency"])
+        llama = spec["backend"] == "llamacpp" and gguf_backend == "llamacpp"
+        conc = concurrency or (spec.get("parallel", 2) if llama else spec["concurrency"])
         rd = run_dir or _run_dir(out, model)
         kf = spec.get("bbox_key_format")
         if endpoint:
             res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
         else:
-            with Server(model, rd / "server.log", max_model_len=max_model_len) as srv:
+            with Server(model, rd / "server.log", max_model_len=max_model_len, gguf_backend=gguf_backend) as srv:
                 res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
     if judge and res.metrics["pending_judge"]:
         _judge(rd, judge_endpoint, None)
@@ -153,13 +155,14 @@ def profile(
     judge: bool = typer.Option(True, "--judge/--no-judge"),
     cleanup_weights: bool = typer.Option(False, "--cleanup-weights", help="Delete each model's weights after profiling it."),
     out: Path = typer.Option(Path("reports/profile"), "--out"),
+    gguf_backend: str = typer.Option("llamacpp", "--gguf-backend", help="llamacpp | vllm (vllm needs vllm-gguf-plugin)"),
 ):
     """Measure VRAM, latency and throughput per model and task; estimate full-run compute."""
     from agbench.eval.profile import run_profile
     from agbench.eval.resources import models as reg
 
     ids = list(reg()["models"]) if models == ["all"] else models
-    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights)
+    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, gguf_backend)
 
 
 @app.command()
