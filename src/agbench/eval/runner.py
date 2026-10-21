@@ -84,6 +84,11 @@ class Benchmark:
             self.skipped = []
         self.items = items
 
+    def remaining(self, out_dir) -> list:
+        """Items without a successful prediction in out_dir."""
+        done = {r["item_id"] for r in read_jsonl(Path(out_dir) / "predictions.jsonl") if not r.get("error")}
+        return [it for it in self.items if it.item_id not in done]
+
     def run(self, method: Method, out_dir, concurrency: int = 8, resume: bool = True, key_formats: dict | None = None) -> Result:
         return asyncio.run(self.run_async(method, out_dir, concurrency, resume, key_formats))
 

@@ -98,7 +98,7 @@ Options:
 --no-thinking
 --reasoning-effort low         # low | medium | high
 --concurrency 16
---run-dir runs/<run_dir>       # resume
+--run-dir runs/<run_dir>       # resume (with --judge: judge whatever is left)
 --gguf-backend vllm            # serve GGUF models with vLLM instead of llama.cpp
 ```
 
@@ -109,6 +109,7 @@ uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-gguf --gguf-backen
 uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 5
 scripts/profile_all_models.sh $DATA --gguf-backend vllm
 scripts/profile_all_models.sh $DATA                       # GGUF models through llama.cpp
+scripts/profile_all_models.sh $DATA --gguf-backend vllm --redo   # re-profile models already done
 ```
 
 View results from your laptop:

@@ -77,7 +77,13 @@ def run(
         conc = concurrency or (spec.get("parallel", 2) if llama else spec["concurrency"])
         rd = run_dir or _run_dir(out, model)
         kf = spec.get("bbox_key_format")
-        if endpoint:
+        if run_dir and not bench.remaining(rd):
+            from agbench.eval.runner import finalize, read_jsonl
+
+            typer.echo("all items already done; skipping the model server")
+            ids = {it.item_id for it in bench.items}
+            res = finalize(rd, [r for r in read_jsonl(rd / "predictions.jsonl") if r["item_id"] in ids])
+        elif endpoint:
             res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
         else:
             with Server(model, rd / "server.log", max_model_len=max_model_len, gguf_backend=gguf_backend) as srv:
@@ -156,13 +162,14 @@ def profile(
     cleanup_weights: bool = typer.Option(False, "--cleanup-weights", help="Delete each model's weights after profiling it."),
     out: Path = typer.Option(Path("reports/profile"), "--out"),
     gguf_backend: str = typer.Option("llamacpp", "--gguf-backend", help="llamacpp | vllm (vllm needs vllm-gguf-plugin)"),
+    redo: bool = typer.Option(False, "--redo", help="Re-profile models already in <out>/profile.json."),
 ):
     """Measure VRAM, latency and throughput per model and task; estimate full-run compute."""
     from agbench.eval.profile import run_profile
     from agbench.eval.resources import models as reg
 
     ids = list(reg()["models"]) if models == ["all"] else models
-    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, gguf_backend)
+    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, gguf_backend, redo)
 
 
 @app.command()

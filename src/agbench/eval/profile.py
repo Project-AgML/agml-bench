@@ -108,10 +108,10 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
             kf = spec.get("bbox_key_format")
             t0 = time.time()
-            Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, key_formats=kf)
+            Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, resume=False, key_formats=kf)
             t1 = time.time()
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
-            Benchmark(items=batch_items).run(method, out / "batch", concurrency=conc, key_formats=kf)
+            Benchmark(items=batch_items).run(method, out / "batch", concurrency=conc, resume=False, key_formats=kf)
             t2 = time.time()
     except Exception as e:
         log(f"{model_id} failed: {e}")
@@ -147,25 +147,35 @@ def recommend(peak_gb: float) -> int | None:
 
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
                 concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
-                cleanup_weights: bool = False, gguf_backend: str = "llamacpp") -> dict:
+                cleanup_weights: bool = False, gguf_backend: str = "llamacpp", redo: bool = False) -> dict:
+    """Profiles each model in turn. Models already profiled (no error) in out_dir/profile.json are kept unless redo."""
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     all_items, _ = build_items(Path(data_dir))
     counts = Counter(_key(it) for it in all_items)
-    results = []
+    settings = {"per_task": per_task, "per_task_seq": per_task_seq, "thinking": thinking, "effort": effort}
+    prev = json.loads((out / "profile.json").read_text()) if (out / "profile.json").exists() and not redo else {}
+    kept = {r["model"]: r for r in prev.get("models", []) if not r.get("error")} if prev.get("settings", settings) == settings else {}
+    results = [r for r in prev.get("models", []) if r["model"] in kept and r["model"] not in model_ids]
     with GPUSampler() as gpu:
         hw = gpu.info()
         for m in model_ids:
-            r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu, gguf_backend)
+            if m in kept:
+                log(f"{m}: already profiled, keeping (use --redo to re-run)")
+                r = kept[m]
+            else:
+                r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu, gguf_backend)
+                if cleanup_weights:
+                    delete_weights(m)
             r["full_run"] = extrapolate(r, counts)
             results.append(r)
-            (out / "profile.json").write_text(json.dumps({"hardware": hw, "counts": counts, "models": results}, indent=2))
-            if cleanup_weights:
-                delete_weights(m)
+            (out / "profile.json").write_text(json.dumps({"hardware": hw, "counts": counts, "models": results,
+                                                          "judge": prev.get("judge"), "settings": settings}, indent=2))
         n_open = sum(1 for it in all_items if it.format == "oeq" or it.qa_format == "open_ended")
-        judge_res = profile_judge(out, gpu, n_open) if judge else None
-    data = {"hardware": hw, "counts": dict(counts), "models": results, "judge": judge_res,
-            "settings": {"per_task": per_task, "per_task_seq": per_task_seq, "thinking": thinking, "effort": effort}}
+        judge_res = prev.get("judge") if (prev.get("judge") and not prev["judge"].get("error") and not redo) else None
+        if judge and judge_res is None:
+            judge_res = profile_judge(out, gpu, n_open)
+    data = {"hardware": hw, "counts": dict(counts), "models": results, "judge": judge_res, "settings": settings}
     (out / "profile.json").write_text(json.dumps(data, indent=2))
     write_report(data, out)
     return data

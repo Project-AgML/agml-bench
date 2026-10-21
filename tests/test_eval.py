@@ -171,6 +171,7 @@ def test_benchmark_oracle_scores_perfectly_and_resumes(data_dir, tmp_path):
         "classification/mcqa_within", "classification/mcqa_across", "classification/oeq", "detection", "segmentation", "image_text_to_text"}
     assert any(r["ag_task"] == "pest_damage" for r in res.metrics["ag_task"])
     n = len((tmp_path / "run" / "predictions.jsonl").read_text().splitlines())
+    assert bench.remaining(tmp_path / "run") == []
 
     class Boom(Method):
         name = "boom"
