@@ -112,6 +112,14 @@ scripts/profile_all_models.sh $DATA                       # GGUF models through 
 scripts/profile_all_models.sh $DATA --gguf-backend vllm --redo   # re-profile models already done
 ```
 
+Resume:
+
+```bash
+uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judge --run-dir runs/<run_dir>
+uv run agbench eval judge --run runs/<run_dir>
+scripts/profile_all_models.sh $DATA --gguf-backend vllm   # keeps models already in reports/profile/profile.json
+```
+
 View results from your laptop:
 
 ```bash
