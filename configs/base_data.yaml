@@ -47,3 +47,9 @@ overrides:
   iNatAg-mini:
     include: false
     reason: species-scale (2,958 classes); enable explicitly
+  rice_seedling_segmentation:
+    include: false
+    reason: mask column holds file paths but mask files are missing from the HF repo
+  sugarbeet_weed_segmentation:
+    include: false
+    reason: mask column holds file paths but mask files are missing from the HF repo

@@ -1,0 +1,151 @@
+{
+ "name": "subalpine_forest_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/subalpine_forest_segmentation",
+ "hf_sha": "b7385c351b724fad09909708808998aa7889d342",
+ "sampling_hash": "b3e128deee3a",
+ "created": "2026-10-21T19:29:13+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "bands",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3"
+  },
+  "indexed_rows": 3240
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "subalpine_forest_segmentation-2478d3e842",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-7a476ad8e9",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 900,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-bbc1a64ba0",
+   "ref": {
+    "file": "data/train-00005-of-00007.parquet",
+    "row": 972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-c3f9f66d3e",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 810,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-793bcddfa0",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 992,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-4b9329e0dc",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 1522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  }
+ ]
+}

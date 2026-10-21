@@ -40,7 +40,30 @@ def _name_for(idx, names: list[str] | None, fallback: list[str]) -> str:
 def _image_col(feats: dict) -> str | None:
     if "image" in feats:
         return "image"
-    return next((k for k, v in feats.items() if feature_type(v) == "Image" and k != "mask"), None)
+    col = next((k for k, v in feats.items() if feature_type(v) == "Image" and k != "mask"), None)
+    if col is None and {"bands", "bands_shape", "bands_dtype"} <= feats.keys():
+        return "bands"
+    return col
+
+
+BAND_COLS = ["bands", "bands_shape", "bands_dtype", "band_metadata"]
+
+
+def bands_to_png(row: dict) -> bytes | None:
+    """Raw GeoTIFF band array (bands, H, W) -> RGB PNG, using colorinterp when present."""
+    if not row.get("bands"):
+        return None
+    arr = np.frombuffer(row["bands"], dtype=row["bands_dtype"]).reshape(row["bands_shape"])
+    interp = (json.loads(row.get("band_metadata") or "{}") or {}).get("colorinterp") or []
+    rgb = [interp.index(c) for c in ("red", "green", "blue") if c in interp]
+    idx = rgb if len(rgb) == 3 else [0, 1, 2] if arr.shape[0] >= 3 else [0, 0, 0]
+    img = arr[idx].transpose(1, 2, 0)
+    if img.dtype != np.uint8:
+        lo, hi = np.percentile(img, (1, 99))
+        img = (np.clip((img - lo) / max(hi - lo, 1e-9), 0, 1) * 255).astype(np.uint8)
+    buf = io.BytesIO()
+    Image.fromarray(img).save(buf, "PNG")
+    return buf.getvalue()
 
 
 # ---------------------------------------------------------------- parquet index
@@ -354,9 +377,11 @@ def extract(repo: Repo, name: str, task: str, info: dict, recs: list[dict], out_
                                       ["id", "images", "messages", "raw_metadata", "origin_dataset"], prog)
             loaded = [(r, rows[r["ref"]["row"]]) for r in group]
         else:
-            cols = [info["image_col"]] + (["mask"] if task == "semantic_segmentation" else [])
+            bands = info["image_col"] == "bands"
+            cols = (BAND_COLS if bands else [info["image_col"]]) + (["mask"] if task == "semantic_segmentation" else [])
             rows = fetch_parquet_rows(repo, path, [r["ref"]["row"] for r in group], cols, prog)
-            loaded = [(r, {"image": (rows[r["ref"]["row"]][info["image_col"]] or {}).get("bytes"),
+            loaded = [(r, {"image": bands_to_png(rows[r["ref"]["row"]]) if bands
+                           else (rows[r["ref"]["row"]][info["image_col"]] or {}).get("bytes"),
                            "mask": (rows[r["ref"]["row"]].get("mask") or {}).get("bytes")})
                       for r in group]
 
