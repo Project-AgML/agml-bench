@@ -226,7 +226,7 @@ def page_compute():
         b.markdown("**Images per second, batched**")
         b.bar_chart(pt.pivot_table(index="task", columns="model", values="images/s (batched)"), stack=False, height=300)
         st.subheader("Full-run estimate for this data dir")
-        st.bar_chart(pt.pivot_table(index="model", columns="task", values="full-run h (best)"), height=300)
+        st.bar_chart(pt.pivot_table(index="model", columns="task", values="full-run h (batched)"), height=300)
         models_ = st.multiselect("Model", sorted(pt.model.unique()), default=sorted(pt.model.unique()))
         st.dataframe(pt[pt.model.isin(models_)], hide_index=True, width="stretch")
         st.dataframe(f["totals"], hide_index=True, width="stretch")

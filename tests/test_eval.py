@@ -297,3 +297,19 @@ def test_register_models_from_yaml(tmp_path, monkeypatch):
         assert command("/models/unregistered", 8000)[2] == "/models/unregistered"
     finally:
         reg.clear(); reg.update(saved)
+
+
+def test_steady_wall_ignores_ramp_down_tail():
+    import heapq
+    import random
+    from agbench.eval.profile import steady_wall
+    rng = random.Random(0)
+    lat = [rng.choice([5.0, 10.0, 20.0, 200.0]) for _ in range(300)]
+    slots, recs = [0.0] * 32, []
+    for x in lat:
+        start = heapq.heappop(slots)
+        heapq.heappush(slots, start + x)
+        recs.append({"latency_s": x, "t_end": start + x})
+    ideal, wall = sum(lat) / 32, max(r["t_end"] for r in recs)
+    assert wall > ideal * 1.2  # the ramp-down tail inflates the raw wall time
+    assert abs(steady_wall(recs, 32, wall) - ideal) / ideal < 0.1

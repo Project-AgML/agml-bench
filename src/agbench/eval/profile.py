@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import random
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -14,7 +15,7 @@ from agbench.eval.items import EvalItem, build_items, spread
 from agbench.eval.judge import judge_records
 from agbench.eval.methods import VLMMethod, model_spec
 from agbench.eval.resources import models
-from agbench.eval.runner import Benchmark, read_jsonl
+from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
 from agbench.eval.servers import Server, delete_weights
 from agbench.progress import log
 
@@ -27,21 +28,33 @@ def _key(it_or_rec) -> str:
 
 
 def pick(items: list[EvalItem], per_task: int, seed: int = 0) -> list[EvalItem]:
+    """`per_task` items per task, shuffled so slow tasks don't cluster at the end of the batch."""
     by = defaultdict(list)
     for it in items:
         by[_key(it)].append(it)
-    return [x for k in sorted(by) for x in spread(by[k], per_task, seed)]
+    out = [x for k in sorted(by) for x in spread(by[k], per_task, seed)]
+    random.Random(seed).shuffle(out)
+    return out
 
 
 def _stats(recs: list[dict], wall: float | None) -> dict:
     lat = [r["latency_s"] for r in recs if not r.get("error")]
-    return {"n": len(recs), "p50_s": round(float(np.percentile(lat, 50)), 2) if lat else None,
+    return {"n": len(recs), "mean_s": round(float(np.mean(lat)), 2) if lat else None, "p50_s": round(float(np.percentile(lat, 50)), 2) if lat else None,
             "p95_s": round(float(np.percentile(lat, 95)), 2) if lat else None,
             "throughput_per_s": round(len(recs) / wall, 3) if wall else None,
             "prompt_tokens": round(float(np.mean([r["prompt_tokens"] for r in recs])), 1) if recs else 0,
             "completion_tokens": round(float(np.mean([r["completion_tokens"] for r in recs])), 1) if recs else 0,
             "truncation_rate": round(float(np.mean([r["truncated"] for r in recs])), 3) if recs else 0,
             "error_rate": round(float(np.mean([bool(r.get("error")) for r in recs])), 3) if recs else 0}
+
+
+def steady_wall(recs: list[dict], conc: int, wall: float) -> float:
+    """Time the batch would take with every slot busy: throughput is counted between the first refill and the last
+    request start (each start in that window replaced a finished request), so the ramp-down tail is left out."""
+    starts = sorted(r["t_end"] - r["latency_s"] for r in recs if "t_end" in r)
+    if len(starts) < conc + 3 or starts[-1] <= starts[conc]:
+        return wall
+    return len(recs) * (starts[-1] - starts[conc]) / (len(starts) - conc - 1)
 
 
 def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task: int, per_task_seq: int,
@@ -73,7 +86,8 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
     res["gpu_seq"], res["gpu_batch"] = gpu.summary(t0, t1), gpu.summary(t1, t2)
     res["peak_vram_gb"] = max(v.get("peak_vram_gb", 0) for v in (res["gpu_load"], res["gpu_seq"], res["gpu_batch"]))
     seq, batch = read_jsonl(out / "seq" / "predictions.jsonl"), read_jsonl(out / "batch" / "predictions.jsonl")
-    batch_wall = t2 - t1
+    res["batch_wall_s"] = round(t2 - t1, 1)
+    batch_wall = res["steady_wall_s"] = round(steady_wall(batch, conc, t2 - t1), 1)
     res["tasks"] = {}
     for k in sorted({_key(r) for r in batch}):
         s, b = [r for r in seq if _key(r) == k], [r for r in batch if _key(r) == k]
@@ -83,11 +97,11 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
 
 
 def extrapolate(res: dict, counts: Counter) -> dict:
-    """Hours for the full data dir: sequential (mean latency at c=1) and batched (measured throughput)."""
+    """Hours for the full data dir: batched (steady-state throughput at the run concurrency) and, for reference, c=1 (mean latency)."""
     out = {}
     for k, v in (res.get("tasks") or {}).items():
         n = counts.get(k, 0)
-        seq_mean = v["seq"]["p50_s"] or 0
+        seq_mean = v["seq"].get("mean_s") or v["seq"]["p50_s"] or 0
         tp = v["batch"]["throughput_per_s"] or 0
         out[k] = {"items": n, "hours_seq": round(n * seq_mean / 3600, 2), "hours_batch": round(n / tp / 3600, 2) if tp else None}
     return out
@@ -149,9 +163,10 @@ def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per
 
 
 def profile_judge(out: Path, gpu: GPUSampler, open_items: int) -> dict:
-    """Judge the open-ended answers collected during profiling; report judge throughput."""
+    """Judge the open-ended answers collected during profiling (verdicts saved with each model's batch); report judge throughput."""
     judge_model = models()["judge"]
-    recs = [r for p in out.glob("*/batch/predictions.jsonl") for r in read_jsonl(p) if r.get("needs_judge")]
+    files = {p: read_jsonl(p) for p in out.glob("*/batch/predictions.jsonl")}
+    recs = [r for rs in files.values() for r in rs if r.get("needs_judge")]
     if not recs:
         return {}
     for r in recs:
@@ -163,6 +178,9 @@ def profile_judge(out: Path, gpu: GPUSampler, open_items: int) -> dict:
             t1 = time.time()
     except Exception as e:
         return {"model": judge_model, "error": str(e)}
+    for p, rs in files.items():
+        write_jsonl(p, rs)
+        finalize(p.parent, rs)
     tp = len(recs) / (t1 - t0)
     return {"model": judge_model, "n": len(recs), "throughput_per_s": round(tp, 2), **gpu.summary(t0, t1),
             "open_items_per_model": open_items, "hours_per_model": round(open_items / tp / 3600, 2)}
@@ -233,15 +251,13 @@ def profile_frames(data: dict) -> dict:
             rows.append({"model": r["model"], "task": k, "s/image (c=1, p50)": v["seq"]["p50_s"], "p95": v["seq"]["p95_s"],
                          "images/s (batched)": v["batch"]["throughput_per_s"], "completion tokens": v["batch"]["completion_tokens"],
                          "truncated %": round(100 * v["batch"]["truncation_rate"], 1), "full-run items": f.get("items"),
-                         "full-run h (batched)": f.get("hours_batch"), "full-run h (c=1)": f.get("hours_seq"),
-                         "full-run h (best)": min(h for h in (f.get("hours_batch"), f.get("hours_seq")) if h is not None)
-                         if f.get("hours_batch") is not None or f.get("hours_seq") is not None else None})
+                         "full-run h (batched)": f.get("hours_batch"), "full-run h (c=1)": f.get("hours_seq")})
     per_task = pd.DataFrame(rows)
-    totals = per_task.groupby("model")[["full-run h (batched)", "full-run h (c=1)", "full-run h (best)"]].sum().reset_index() if rows else pd.DataFrame()
+    totals = per_task.groupby("model")[["full-run h (batched)", "full-run h (c=1)"]].sum().reset_index() if rows else pd.DataFrame()
     judge = data.get("judge") or {}
     peak = max([need_gb(r) for r in data["models"]] or [0])
     gpu = max([min_gpu(r, hw_gb) or 0 for r in data["models"]] or [0]) or None
-    total_h = float(totals["full-run h (best)"].sum()) if len(totals) else 0
+    total_h = float(totals["full-run h (batched)"].sum()) if len(totals) else 0
     total_h += (judge.get("hours_per_model") or 0) * len(data["models"])
     hw = ", ".join(f"{g['name']} ({g['memory_gb']} GB)" for g in data["hardware"]["gpus"])
     return {"fit": fit, "per_task": per_task, "totals": totals, "judge": judge, "peak": peak, "gpu": gpu, "total_h": total_h, "hw": hw}
@@ -256,7 +272,7 @@ def write_report(data: dict, out: Path) -> None:
           f"{s['per_task']} items per task batched, {s['per_task_seq']} sequential.\n",
           "## Recommendation\n", f"- Minimum single GPU: {gpu} GB (largest need {peak:.1f} GB)",
           f"- Full suite, all models + judge, on one GPU: {total_h:.1f} GPU-hours "
-          f"({total_h / 24:.1f} days; {total_h / 4:.1f} h on 4 GPUs), using the faster of batched and c=1 per task",
+          f"({total_h / 24:.1f} days; {total_h / 4:.1f} h on 4 GPUs), from steady-state batched throughput at each model's concurrency",
           "- vLLM reserves gpu_memory_utilization of the GPU up front, so its peak VRAM is the reservation; "
           "`needed GB` is the weights + KV estimate for vLLM and the measured peak for llama.cpp\n",
           "## Memory\n", fit.to_markdown(index=False), "\n## Time per image and full-run estimate\n",
