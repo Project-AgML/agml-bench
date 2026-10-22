@@ -93,9 +93,9 @@ def _stats(recs: list[dict], wall: float | None) -> dict:
 
 
 def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task: int, per_task_seq: int,
-                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler, gguf_backend: str = "llamacpp") -> dict:
+                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler) -> dict:
     spec = model_spec(model_id)
-    llama = spec["backend"] == "llamacpp" and gguf_backend == "llamacpp"
+    llama = spec["backend"] == "llamacpp"
     conc = concurrency or (spec.get("parallel", 2) if llama else spec["concurrency"])
     batch_items = pick(all_items, per_task)
     seq_items = pick(all_items, per_task_seq)
@@ -103,7 +103,7 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
            "est_vram_gb": spec.get("est_vram_gb"), "concurrency": conc}
     t_start = time.time()
     try:
-        with Server(model_id, out / "server.log", gguf_backend=gguf_backend) as srv:
+        with Server(model_id, out / "server.log") as srv:
             res["load_s"] = round(srv.load_seconds, 1)
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
             kf = spec.get("bbox_key_format")
@@ -147,7 +147,7 @@ def recommend(peak_gb: float) -> int | None:
 
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
                 concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
-                cleanup_weights: bool = False, gguf_backend: str = "llamacpp", redo: bool = False) -> dict:
+                cleanup_weights: bool = False, redo: bool = False) -> dict:
     """Profiles each model in turn. Models already profiled (no error) in out_dir/profile.json are kept unless redo."""
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -164,7 +164,7 @@ def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per
                 log(f"{m}: already profiled, keeping (use --redo to re-run)")
                 r = kept[m]
             else:
-                r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu, gguf_backend)
+                r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu)
                 if cleanup_weights:
                     delete_weights(m)
             r["full_run"] = extrapolate(r, counts)

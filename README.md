@@ -69,15 +69,7 @@ GPU server setup:
 git clone git@github.com:plant-ai-biophysics-lab/AGgentic-benchmarks.git && cd AGgentic-benchmarks
 uv sync
 hf auth login
-uv tool install vllm --with vllm-gguf-plugin
-```
-
-GGUF models through llama.cpp instead of vLLM (optional, build >= b10353):
-
-```bash
-git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp
-cmake -B build -DGGML_CUDA=ON && cmake --build build -j 8 --target llama-server
-export LLAMA_SERVER_BIN=$PWD/build/bin/llama-server
+uv tool install vllm
 ```
 
 ```bash
@@ -99,17 +91,16 @@ Options:
 --reasoning-effort low         # low | medium | high
 --concurrency 16
 --run-dir runs/<run_dir>       # resume (with --judge: judge whatever is left)
---gguf-backend vllm            # serve GGUF models with vLLM instead of llama.cpp
 ```
 
 Compute profile:
 
 ```bash
-uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-gguf --gguf-backend vllm --data-dir $DATA --limit-per-dataset 2 --only '^(bean_disease_uganda|almond_bloom_2023|apple_flower_segmentation|AgriBench)$'
+uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --data-dir $DATA --limit-per-dataset 2 --only '^(bean_disease_uganda|almond_bloom_2023|apple_flower_segmentation|AgriBench)$'
 uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 5
-scripts/profile_all_models.sh $DATA --gguf-backend vllm
-scripts/profile_all_models.sh $DATA                       # GGUF models through llama.cpp
-scripts/profile_all_models.sh $DATA --gguf-backend vllm --redo   # re-profile models already done
+uv run agbench eval profile --data-dir $DATA --models all
+uv run agbench eval profile --data-dir $DATA --models all --redo   # re-profile models already done
+scripts/profile_all_models.sh $DATA                                 # same, deleting each model's weights after
 ```
 
 Resume:
@@ -117,7 +108,7 @@ Resume:
 ```bash
 uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judge --run-dir runs/<run_dir>
 uv run agbench eval judge --run runs/<run_dir>
-scripts/profile_all_models.sh $DATA --gguf-backend vllm   # keeps models already in reports/profile/profile.json
+uv run agbench eval profile --data-dir $DATA --models all   # keeps models already in reports/profile/profile.json
 ```
 
 View results from your laptop:
