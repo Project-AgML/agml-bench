@@ -10,6 +10,7 @@ defaults:
   max_model_len: 32768
   max_tokens: 16384
   concurrency: 32
+  max_num_seqs: 64   # vLLM; above concurrency, below hybrid models' Mamba cache limit
   max_images: 8
   gpu_memory_utilization: 0.92
 

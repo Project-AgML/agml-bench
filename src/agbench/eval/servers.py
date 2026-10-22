@@ -53,6 +53,7 @@ def command(model_id: str, port: int, max_model_len: int | None = None, extra_ar
         return [_bin("VLLM_BIN", "vllm"), "serve", model, "--served-model-name", model_id, "--port", str(port), "--host", "127.0.0.1",
                 "--max-model-len", ctx, "--gpu-memory-utilization", str(spec["gpu_memory_utilization"]),
                 "--limit-mm-per-prompt", json.dumps({"image": spec["max_images"]}), "--enable-prefix-caching",
+                "--max-num-seqs", str(spec["max_num_seqs"]),
                 *map(str, spec.get("serve_args") or []), *(extra_args or [])]
     if spec["backend"] == "llamacpp":
         from huggingface_hub import hf_hub_download
