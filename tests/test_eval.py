@@ -241,11 +241,30 @@ def test_vlm_method_and_judge_against_fake_server(data_dir, tmp_path, fake_serve
     judge_body = FakeOpenAI.requests[-1]
     assert judge_body["temperature"] == 0.0 and judge_body["chat_template_kwargs"]["enable_thinking"] is False
 
+    sessions = json.loads((tmp_path / "r" / "compute.json").read_text())
+    assert [x["phase"] for x in sessions] == ["generate", "judge"] and sessions[0]["items"] == len(recs)
+    from agbench.eval.profile import actual_frames
+    from agbench.eval.report import load_runs
+    prof = {"models": [{"model": "google/gemma-4-12B-it", "load_s": 60,
+                        "tasks": {k: {"batch": {"throughput_per_s": 2.0}} for k in ("classification/mcqa_within", "classification/mcqa_across", "classification/oeq")}}],
+            "judge": {"throughput_per_s": 5.0}}
+    act = actual_frames(load_runs([tmp_path / "r"]), prof)
+    row = act["models"].iloc[0]
+    assert row["items"] == len(recs) and row["judged"] == sessions[1]["items"]
+    assert row["generate h (est.)"] == round(len(recs) / 2.0 / 3600, 2)
+    assert set(act["tasks"].task) == {"classification/mcqa_within", "classification/mcqa_across", "classification/oeq"}
+
 
 def test_cot_template_for_models_without_thinking(fake_server):
     m = VLMMethod(fake_server, "mistralai/Ministral-3-14B-Instruct-2512")
     assert m.system and "<answer>" in m.system
     assert VLMMethod(fake_server, "google/gemma-4-12B-it").system is None
+
+
+def test_rouge_l():
+    assert sc.rouge_l("brown spots on the leaves", "brown spots on the leaves") == 1.0
+    assert sc.rouge_l("", "x") == 0.0 and sc.rouge_l("green", "brown") == 0.0
+    assert sc.rouge_l("the leaf has brown spots", "brown spots scattered on the leaf") == pytest.approx(2 * (2 / 5) * (2 / 6) / (2 / 5 + 2 / 6))
 
 
 def test_parse_verdict():

@@ -2,7 +2,6 @@
 
 import asyncio
 import json
-import threading
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -10,6 +9,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from agbench.eval.gpu import GPUSampler
 from agbench.eval.items import EvalItem, build_items, spread
 from agbench.eval.judge import judge_records
 from agbench.eval.methods import VLMMethod, model_spec
@@ -19,54 +19,6 @@ from agbench.eval.servers import Server, delete_weights
 from agbench.progress import log
 
 GPU_SIZES = [24, 32, 48, 80, 96, 141, 192]
-
-
-class GPUSampler:
-    """Samples NVML every `interval` s in a thread. Use as a context manager; read .summary()."""
-
-    def __init__(self, interval: float = 0.5):
-        import pynvml
-
-        self.nv, self.interval, self.samples = pynvml, interval, []
-        pynvml.nvmlInit()
-        self.handles = [pynvml.nvmlDeviceGetHandleByIndex(i) for i in range(pynvml.nvmlDeviceGetCount())]
-        self._stop = threading.Event()
-
-    def info(self) -> dict:
-        return {"gpus": [{"name": self.nv.nvmlDeviceGetName(h), "memory_gb": round(self.nv.nvmlDeviceGetMemoryInfo(h).total / 1e9, 1)}
-                         for h in self.handles]}
-
-    def _read(self) -> dict:
-        mem = sum(self.nv.nvmlDeviceGetMemoryInfo(h).used for h in self.handles) / 1e9
-        util = float(np.mean([self.nv.nvmlDeviceGetUtilizationRates(h).gpu for h in self.handles]))
-        try:
-            power = sum(self.nv.nvmlDeviceGetPowerUsage(h) for h in self.handles) / 1000
-        except self.nv.NVMLError:
-            power = 0.0
-        return {"t": time.time(), "mem_gb": mem, "util": util, "power_w": power}
-
-    def _loop(self):
-        while not self._stop.is_set():
-            self.samples.append(self._read())
-            time.sleep(self.interval)
-
-    def __enter__(self):
-        self.baseline_gb = self._read()["mem_gb"]
-        self._thread = threading.Thread(target=self._loop, daemon=True)
-        self._thread.start()
-        return self
-
-    def __exit__(self, *exc):
-        self._stop.set()
-        self._thread.join()
-
-    def summary(self, t0: float = 0, t1: float = float("inf")) -> dict:
-        s = [x for x in self.samples if t0 <= x["t"] <= t1]
-        if not s:
-            return {}
-        return {"peak_vram_gb": round(max(x["mem_gb"] for x in s) - self.baseline_gb, 2),
-                "mean_util": round(float(np.mean([x["util"] for x in s])), 1),
-                "mean_power_w": round(float(np.mean([x["power_w"] for x in s])), 1)}
 
 
 def _key(it_or_rec) -> str:
@@ -108,10 +60,10 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
             kf = spec.get("bbox_key_format")
             t0 = time.time()
-            Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, resume=False, key_formats=kf)
+            Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, resume=False, key_formats=kf, gpu=gpu)
             t1 = time.time()
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
-            Benchmark(items=batch_items).run(method, out / "batch", concurrency=conc, resume=False, key_formats=kf)
+            Benchmark(items=batch_items).run(method, out / "batch", concurrency=conc, resume=False, key_formats=kf, gpu=gpu)
             t2 = time.time()
     except Exception as e:
         log(f"{model_id} failed: {e}")
@@ -214,6 +166,56 @@ def profile_judge(out: Path, gpu: GPUSampler, open_items: int) -> dict:
     tp = len(recs) / (t1 - t0)
     return {"model": judge_model, "n": len(recs), "throughput_per_s": round(tp, 2), **gpu.summary(t0, t1),
             "open_items_per_model": open_items, "hours_per_model": round(open_items / tp / 3600, 2)}
+
+
+def _r(x, nd=2):
+    return round(x, nd) if x is not None else None
+
+
+def actual_frames(runs: list[dict], data: dict | None) -> dict:
+    """Measured compute of real runs (their compute.json) next to the profile's estimate for the same items.
+    Estimates use the profile's batched throughput; actual per-task hours split the generation wall time by latency share."""
+    prof = {r["model"]: r for r in (data or {}).get("models", [])}
+    judge = (data or {}).get("judge") or {}
+    model_rows, task_rows = [], []
+    for run in runs:
+        d = Path(run["dir"])
+        if not (d / "compute.json").exists():
+            continue
+        sessions = json.loads((d / "compute.json").read_text())
+        phase = lambda name: [x for x in sessions if x["phase"] == name]
+        gen, jud, load = phase("generate"), phase("judge"), phase("load")
+        model = run["run"]["method"].get("model_id") or run["name"]
+        p = prof.get(model, {})
+        n, lat = Counter(), defaultdict(float)
+        for r in read_jsonl(d / "predictions.jsonl"):
+            n[_key(r)] += 1
+            lat[_key(r)] += r.get("latency_s", 0)
+        gen_h = sum(x["wall_s"] for x in gen) / 3600
+        est_gen, act_cov = [], 0.0
+        for k in sorted(n):
+            tp = (((p.get("tasks") or {}).get(k) or {}).get("batch") or {}).get("throughput_per_s")
+            est = n[k] / tp / 3600 if tp else None
+            act = gen_h * lat[k] / max(sum(lat.values()), 1e-9)
+            est_gen.append(est)
+            act_cov += act if est else 0
+            task_rows.append({"run": d.name, "model": model, "task": k, "items": n[k], "est. h": _r(est), "actual h": _r(act),
+                              "actual / est.": _r(act / est) if est else None})
+        est_gen_h = sum(e for e in est_gen if e is not None) if any(e is not None for e in est_gen) else None
+        n_judged, judge_h = sum(x["items"] for x in jud), sum(x["wall_s"] for x in jud) / 3600
+        est_judge_h = n_judged / judge["throughput_per_s"] / 3600 if n_judged and judge.get("throughput_per_s") else None
+        wall = sum(x["wall_s"] for x in gen) or 1
+        model_rows.append({
+            "run": d.name, "model": model, "items": sum(n.values()), "concurrency": gen[-1]["concurrency"] if gen else None,
+            "load s (est.)": p.get("load_s"), "load s": load[-1]["wall_s"] if load else None,
+            "generate h (est.)": _r(est_gen_h), "generate h": _r(gen_h),
+            "judged": n_judged, "judge h (est.)": _r(est_judge_h), "judge h": _r(judge_h) if jud else None,
+            "actual / est.": _r((act_cov + (judge_h if est_judge_h else 0)) / (est_gen_h + (est_judge_h or 0))) if est_gen_h else None,
+            "peak VRAM GB (profile)": p.get("peak_vram_gb"),
+            "peak VRAM GB": max((x.get("peak_vram_gb") or 0 for x in gen + load), default=None) or None,
+            "util %": _r(sum(x.get("mean_util", 0) * x["wall_s"] for x in gen) / wall, 1),
+            "power W": _r(sum(x.get("mean_power_w", 0) * x["wall_s"] for x in gen) / wall, 1)})
+    return {"models": pd.DataFrame(model_rows), "tasks": pd.DataFrame(task_rows)}
 
 
 def profile_frames(data: dict) -> dict:

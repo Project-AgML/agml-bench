@@ -69,6 +69,7 @@ def grade(item: EvalItem, pred: Prediction | str, key_formats: dict | None = Non
             r.update(pred_label=num, gt_label=item.answer, correct=sc.numeric_correct(num, item.answer), parse_ok=num is not None)
         else:
             r.update(correct=bool(ans) and sc.fuzzy_correct(ans, item.answer), token_f1=round(sc.token_f1(ans, item.answer), 4),
+                 rouge_l=round(sc.rouge_l(ans, item.answer), 4),
                      parse_ok=bool(ans), needs_judge=bool(ans), question=item.meta.get("question"))
     r["correct"] = float(r["correct"]) if item.task in ("detection", "segmentation") else bool(r["correct"])
     return r

@@ -2,6 +2,8 @@ import importlib
 import json
 import subprocess
 import sys
+import time
+from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
 
@@ -69,9 +71,9 @@ def run(
 ):
     """Run a model or custom method over the benchmark."""
     _register(models_file)
+    from agbench.eval.gpu import sampler
     from agbench.eval.methods import VLMMethod, model_spec
     from agbench.eval.runner import Benchmark
-    from agbench.eval.servers import Server
 
     if not (model or method):
         raise typer.BadParameter("pass --model or --method")
@@ -95,25 +97,39 @@ def run(
         elif endpoint:
             res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
         else:
-            with Server(model, rd / "server.log", max_model_len=max_model_len) as srv:
-                res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
+            with sampler() as gpu, _served(model, rd, "server.log", gpu, max_model_len=max_model_len) as srv:
+                res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf, gpu=gpu)
     if judge and res.metrics["pending_judge"]:
-        _judge(rd, judge_endpoint, None)
+        _judge([rd], judge_endpoint, None)
     _print_summary(rd)
 
 
-def _judge(run_dir: Path, endpoint: str | None, judge_model: str | None):
-    from agbench.eval.judge import judge_run
-    from agbench.eval.resources import models
+@contextmanager
+def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load", max_model_len: int | None = None):
+    """Start a model server, logging its load time and GPU use to run_dir/compute.json."""
+    from agbench.eval.runner import log_compute
     from agbench.eval.servers import Server
 
-    _register(models_file)
+    t0 = time.time()
+    with Server(model_id, run_dir / log_name, max_model_len=max_model_len) as srv:
+        log_compute(run_dir, phase=phase, model=model_id, wall_s=round(srv.load_seconds, 1),
+                    **(gpu.summary(t0, time.time()) if gpu else {}))
+        yield srv
+
+
+def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None):
+    from agbench.eval.gpu import sampler
+    from agbench.eval.judge import judge_run
+    from agbench.eval.resources import models
+
     jm = judge_model or models()["judge"]
     if endpoint:
-        judge_run(run_dir, endpoint, jm)
-    else:
-        with Server(jm, run_dir / "judge_server.log") as srv:
-            judge_run(run_dir, srv.endpoint, jm)
+        for d in run_dirs:
+            judge_run(d, endpoint, jm)
+        return
+    with sampler() as gpu, _served(jm, run_dirs[0], "judge_server.log", gpu, "judge_load") as srv:
+        for d in run_dirs:
+            judge_run(d, srv.endpoint, jm, gpu=gpu)
 
 
 @app.command("judge")
@@ -124,18 +140,8 @@ def judge_cmd(
     models_file: list[Path] = ModelsFileOpt,
 ):
     """Judge open-ended answers with the judge model (default gemma-4-31B-it-FP8)."""
-    from agbench.eval.judge import judge_run
-    from agbench.eval.resources import models
-    from agbench.eval.servers import Server
-
-    jm = judge_model or models()["judge"]
-    if endpoint:
-        for d in run_dir:
-            judge_run(d, endpoint, jm)
-    else:
-        with Server(jm, run_dir[0] / "judge_server.log") as srv:
-            for d in run_dir:
-                judge_run(d, srv.endpoint, jm)
+    _register(models_file)
+    _judge(run_dir, endpoint, judge_model)
 
 
 def _print_summary(run_dir: Path):

@@ -5,6 +5,7 @@ import inspect
 import json
 import subprocess
 import time
+from contextlib import nullcontext
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -12,6 +13,7 @@ from pathlib import Path
 
 from agbench.eval import metrics as mx
 from agbench.eval.client import Prediction
+from agbench.eval.gpu import sampler
 from agbench.eval.grade import grade
 from agbench.eval.items import build_items
 from agbench.eval.methods import Method
@@ -38,6 +40,14 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
         for r in rows:
             f.write(json.dumps(r) + "\n")
     tmp.replace(path)
+
+
+def log_compute(out_dir, **session) -> None:
+    """Append one timed session (load, generate, judge) to out_dir/compute.json."""
+    p = Path(out_dir) / "compute.json"
+    sessions = json.loads(p.read_text()) if p.exists() else []
+    sessions.append({"ended": datetime.now(timezone.utc).isoformat(timespec="seconds"), **session})
+    p.write_text(json.dumps(sessions, indent=2))
 
 
 def _git_sha() -> str | None:
@@ -89,18 +99,21 @@ class Benchmark:
         done = {r["item_id"] for r in read_jsonl(Path(out_dir) / "predictions.jsonl") if not r.get("error")}
         return [it for it in self.items if it.item_id not in done]
 
-    def run(self, method: Method, out_dir, concurrency: int = 8, resume: bool = True, key_formats: dict | None = None) -> Result:
-        return asyncio.run(self.run_async(method, out_dir, concurrency, resume, key_formats))
+    def run(self, method: Method, out_dir, concurrency: int = 8, resume: bool = True, key_formats: dict | None = None,
+            gpu=None) -> Result:
+        return asyncio.run(self.run_async(method, out_dir, concurrency, resume, key_formats, gpu))
 
     async def run_async(self, method: Method, out_dir, concurrency: int = 8, resume: bool = True,
-                        key_formats: dict | None = None) -> Result:
+                        key_formats: dict | None = None, gpu=None) -> Result:
+        """`gpu`: a running GPUSampler (e.g. started before the model server); otherwise one is started here."""
         out = Path(out_dir)
         out.mkdir(parents=True, exist_ok=True)
         pred_path = out / "predictions.jsonl"
         done = {r["item_id"]: r for r in read_jsonl(pred_path)} if resume else {}
         done = {k: r for k, r in done.items() if not r.get("error")}  # retry failed requests
-        if not resume and pred_path.exists():
-            pred_path.unlink()
+        if not resume:
+            pred_path.unlink(missing_ok=True)
+            (out / "compute.json").unlink(missing_ok=True)
         if done:
             write_jsonl(pred_path, list(done.values()))
         todo = [it for it in self.items if it.item_id not in done]
@@ -131,11 +144,16 @@ class Benchmark:
                 done[it.item_id] = rec
                 prog.add()
 
-        try:
-            await asyncio.gather(*(one(it) for it in todo))
-        finally:
-            await method.close()
-        log(f"{method.name}: finished {len(todo)} items in {fmt_duration(time.time() - t0)}")
+        with nullcontext(gpu) if gpu else sampler() as g:
+            try:
+                await asyncio.gather(*(one(it) for it in todo))
+            finally:
+                await method.close()
+            t1 = time.time()
+        log(f"{method.name}: finished {len(todo)} items in {fmt_duration(t1 - t0)}")
+        if todo:
+            log_compute(out, phase="generate", model=method.name, items=len(todo), concurrency=concurrency,
+                        wall_s=round(t1 - t0, 1), **(g.summary(t0, t1) if g else {}))
         return finalize(out, [done[it.item_id] for it in self.items if it.item_id in done])
 
 

@@ -3,12 +3,13 @@
 import asyncio
 import json
 import re
+import time
 from pathlib import Path
 
 from agbench.eval.client import Client
 from agbench.eval.methods import model_spec
 from agbench.eval.resources import models, prompts
-from agbench.eval.runner import finalize, read_jsonl, write_jsonl
+from agbench.eval.runner import finalize, log_compute, read_jsonl, write_jsonl
 from agbench.progress import Progress, log
 
 
@@ -48,11 +49,16 @@ async def judge_records(records: list[dict], endpoint: str, judge_model: str, co
     return len(todo)
 
 
-def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrency: int = 32) -> dict:
+def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrency: int = 32, gpu=None) -> dict:
     run_dir = Path(run_dir)
     judge_model = judge_model or models()["judge"]
     recs = read_jsonl(run_dir / "predictions.jsonl")
+    t0 = time.time()
     n = asyncio.run(judge_records(recs, endpoint, judge_model, concurrency))
+    t1 = time.time()
+    if n:
+        log_compute(run_dir, phase="judge", model=judge_model, items=n, concurrency=concurrency, wall_s=round(t1 - t0, 1),
+                    **(gpu.summary(t0, t1) if gpu else {}))
     write_jsonl(run_dir / "predictions.jsonl", recs)
     run = json.loads((run_dir / "run.json").read_text())
     run["judge"] = {"model": judge_model, "self_judged": run["method"].get("model_id") == judge_model}

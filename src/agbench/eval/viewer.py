@@ -19,7 +19,7 @@ parser.add_argument("--profile", default=None)
 args, _ = parser.parse_known_args()
 THUMB = 520
 PCT = ["accuracy_macro", "f1_macro", "accuracy_micro", "f1_micro", "idk_rate", "nota_accuracy", "truncation_rate",
-       "parse_fail_rate", "accuracy", "f1", "error_rate", "mean_iou"]
+       "parse_fail_rate", "accuracy", "f1", "error_rate", "mean_iou", "rouge_l", "rouge_l_macro", "rouge_l_micro"]
 
 
 @st.cache_data(ttl=60)
@@ -69,6 +69,9 @@ def page_summary():
                 col.markdown(f"**{metric.capitalize()} (%)**")
                 col.dataframe(t, width="stretch")
                 col.bar_chart(t.T, stack=False, height=260)
+    if "cv_rouge_l" in f:
+        st.markdown("**ROUGE-L, open-ended ITT (%)**")
+        st.dataframe((f["cv_rouge_l"] * 100).round(1), width="stretch")
     with st.expander("All summary columns (IDK rate, NOTA accuracy, truncation, parse failures)"):
         st.dataframe(pct(f["cv_rows"].drop(columns=["run"])), hide_index=True, width="stretch")
         st.dataframe(pct(f["ag_rows"].drop(columns=["run"])), hide_index=True, width="stretch")
@@ -144,7 +147,9 @@ def page_samples():
                     st.text(it["prompt"][:2000])
                 if r["task"] not in ("detection", "segmentation"):
                     st.markdown(f"**Answer:** {r['answer'] or '_(empty)_'}  \n**Ground truth:** {r['gt']}")
-                    if r.get("judge_text"):
+                    if r.get("rouge_l") == r.get("rouge_l") and r.get("rouge_l") is not None:
+                        st.caption(f"Token F1 {r['token_f1']:.2f} · ROUGE-L {r['rouge_l']:.2f}")
+                    if isinstance(r.get("judge_text"), str):
                         st.caption(f"Judge: {r['judge_text'][:500]}")
                 else:
                     st.text(r["text"][:1500])
@@ -172,14 +177,30 @@ def page_crops():
 
 
 def page_compute():
-    from agbench.eval.profile import profile_frames
+    from agbench.eval.profile import actual_frames, profile_frames
 
     st.title("Compute")
     path = Path(args.profile or "") / "profile.json"
-    if not args.profile or not path.exists():
-        st.info("No profile loaded. Run `agbench eval profile ...` and pass `--profile <out dir>`.")
+    data = json.loads(path.read_text()) if args.profile and path.exists() else None
+    prof_dir = Path(args.profile).resolve() if args.profile else None
+    real = [r for r in runs() if not (prof_dir and prof_dir in Path(r["dir"]).resolve().parents)]
+    act = actual_frames(real, data)
+    if data is None and not len(act["models"]):
+        st.info("No compute data. Pass `--profile <out dir>` for estimates; runs record their own compute in compute.json.")
         return
-    data = json.loads(path.read_text())
+    if len(act["models"]):
+        st.subheader("Actual runs vs profile estimate")
+        st.caption("Estimate: profile throughput (batched) × the items each run actually did. "
+                   "Actual: wall time logged by the run (compute.json); per-task hours split by latency share.")
+        am = act["models"]
+        if am["generate h (est.)"].notna().any():
+            st.bar_chart(am.set_index("run")[["generate h (est.)", "generate h", "judge h (est.)", "judge h"]], stack=False, height=280)
+        st.dataframe(am, hide_index=True, width="stretch")
+        with st.expander("Per task"):
+            st.dataframe(act["tasks"], hide_index=True, width="stretch")
+    if data is None:
+        return
+    st.subheader("Profile")
     f = profile_frames(data)
     s = data.get("settings") or {}
     st.caption(f"{f['hw']} · thinking {s.get('thinking')} ({s.get('effort')}) · {s.get('per_task')} items per task batched, "

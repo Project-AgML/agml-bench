@@ -6,6 +6,7 @@ import numpy as np
 from sklearn.metrics import f1_score
 
 from agbench.eval.resources import norm
+from agbench.eval.scoring import rouge_l
 
 BOX_TASKS = ("detection", "segmentation")
 CLOSED = ("multiple_choice", "yes_no", "numeric")
@@ -57,6 +58,7 @@ def group(recs: list[dict], pooled: bool = False) -> dict:
         parts.append((len(lab), _macro_f1(lab, prefix=pooled)))
     if opn:
         parts.append((len(opn), float(np.mean([r.get("token_f1", 0.0) for r in opn]))))
+        out["rouge_l"] = float(np.mean([r["rouge_l"] if "rouge_l" in r else rouge_l(r["answer"], r["gt"]) for r in opn]))
     out["f1"] = sum(k * v for k, v in parts) / sum(k for k, _ in parts) if parts else None
     nota = [r for r in recs if r.get("is_nota")]
     out.update(
@@ -79,9 +81,11 @@ def _summarize(rows: list[dict], recs_for, key: str) -> list[dict]:
         ds_rows = [r for r in rows if r[key] == k]
         pooled = group([x for r in ds_rows for x in recs_for(r)], pooled=True)
         f1s = [r["f1"] for r in ds_rows if r["f1"] is not None]
+        rouge = [r["rouge_l"] for r in ds_rows if r.get("rouge_l") is not None]
         out.append({key: k, "datasets": len({r["dataset"] for r in ds_rows}), "n": pooled["n"],
                     "accuracy_macro": float(np.mean([r["accuracy"] for r in ds_rows])), "f1_macro": float(np.mean(f1s)) if f1s else None,
                     "accuracy_micro": pooled["accuracy"], "f1_micro": pooled["f1"],
+                    "rouge_l_macro": float(np.mean(rouge)) if rouge else None, "rouge_l_micro": pooled.get("rouge_l"),
                     "idk_rate": pooled["idk_rate"], "nota_accuracy": pooled["nota_accuracy"],
                     "truncation_rate": pooled["truncation_rate"], "parse_fail_rate": pooled["parse_fail_rate"]})
     return out

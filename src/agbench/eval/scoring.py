@@ -58,6 +58,23 @@ def token_f1(pred: str, gt: str) -> float:
     return 2 * prec * rec / (prec + rec)
 
 
+def rouge_l(pred: str, gt: str) -> float:
+    """ROUGE-L F1: longest common token subsequence (no stemming)."""
+    p, g = norm(pred).split(), norm(gt).split()
+    if not p or not g:
+        return 0.0
+    prev = [0] * (len(g) + 1)
+    for a in p:
+        cur = [0]
+        for j, b in enumerate(g):
+            cur.append(prev[j] + 1 if a == b else max(prev[j + 1], cur[j]))
+        prev = cur
+    if not prev[-1]:
+        return 0.0
+    prec, rec = prev[-1] / len(p), prev[-1] / len(g)
+    return 2 * prec * rec / (prec + rec)
+
+
 # ---- letters / yes-no / numeric (ITT) ----
 
 def parse_letters(pred: str, n_options: int) -> list[str]:

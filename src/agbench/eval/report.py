@@ -38,6 +38,8 @@ def summary_frames(runs: list[dict], average: str = "macro") -> dict[str, pd.Dat
     if len(cv):
         for metric in ("accuracy", "f1"):
             out[f"cv_{metric}"] = cv.pivot_table(index="model", columns="cv_task", values=f"{metric}_{average}")
+        if f"rouge_l_{average}" in cv and cv[f"rouge_l_{average}"].notna().any():
+            out["cv_rouge_l"] = cv.pivot_table(index="model", columns="cv_task", values=f"rouge_l_{average}")
     if len(ag):
         a = ag[ag.cv_task == "all"]
         for metric in ("accuracy", "f1"):
@@ -48,7 +50,7 @@ def summary_frames(runs: list[dict], average: str = "macro") -> dict[str, pd.Dat
 def leaderboard_md(runs: list[dict], average: str = "macro") -> str:
     f = summary_frames(runs, average)
     parts = [f"# Leaderboard ({average} over datasets)\n"]
-    for key, title in (("cv_accuracy", "Accuracy by CV task"), ("cv_f1", "F1 by CV task"),
+    for key, title in (("cv_accuracy", "Accuracy by CV task"), ("cv_f1", "F1 by CV task"), ("cv_rouge_l", "ROUGE-L, open-ended ITT"),
                        ("ag_accuracy", "Accuracy by ag task"), ("ag_f1", "F1 by ag task")):
         if key in f:
             parts += [f"## {title}\n", (f[key] * 100).round(1).to_markdown(), ""]
