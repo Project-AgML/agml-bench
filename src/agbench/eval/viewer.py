@@ -97,15 +97,66 @@ def page_datasets():
         st.dataframe(pct(v.drop(columns=["run"])), hide_index=True, width="stretch")
 
 
-def draw_boxes(path: str, gt: list, pred: list) -> Image.Image:
+def draw_boxes(path: str, gt: list, pred: list, labels: bool = False) -> Image.Image:
     im = Image.open(path).convert("RGB")
     d, lw = ImageDraw.Draw(im), max(2, im.width // 300)
-    for b in gt or []:
-        d.rectangle(b["bbox"], outline=(40, 200, 80), width=lw)
-    for b in pred or []:
-        d.rectangle(b["bbox"], outline=(230, 60, 60), width=lw)
+    for b, color in [(b, (40, 200, 80)) for b in gt or []] + [(b, (230, 60, 60)) for b in pred or []]:
+        d.rectangle(b["bbox"], outline=color, width=lw)
+        if labels and b.get("label"):
+            d.text((b["bbox"][0] + lw, b["bbox"][1] + lw), str(b["label"]), fill=color, font_size=max(12, im.width // 40))
     im.thumbnail((THUMB, THUMB))
     return im
+
+
+def page_boxes():
+    st.title("Boxes")
+    if no_runs():
+        return
+    st.caption("The same image across runs. Green = ground truth, red = prediction.")
+    preds = {}
+    for r in runs():
+        if Path(r["dir"]).name == "seq":  # profile: the batched answers cover the same items
+            continue
+        p = predictions(r["dir"])
+        p = p[p.task.isin(["detection", "segmentation"])] if "task" in p else p.iloc[0:0]
+        if len(p):
+            preds[r["name"]] = (r["dir"], p.set_index("item_id"))
+    if not preds:
+        st.info("No detection or segmentation answers in these runs.")
+        return
+    c1, c2, c3, c4 = st.columns([3, 2, 1, 1])
+    chosen = c1.multiselect("Runs", list(preds), default=list(preds))
+    if not chosen:
+        return
+    datasets = sorted(set().union(*(set(preds[n][1].dataset) for n in chosen)), key=str.lower)
+    ds = c2.selectbox("Dataset", ["all"] + datasets)
+    cols = int(c3.number_input("Columns", 1, 8, min(4, len(chosen))))
+    labels = c4.checkbox("Labels", value=True)
+    ids = sorted({i for n in chosen for i, d in preds[n][1].dataset.items() if ds in ("all", d)})
+    items = {}
+    for n in chosen:
+        f = Path(preds[n][0]) / "items.jsonl"
+        if f.exists():
+            items.update({it["item_id"]: it for it in read_jsonl(f) if it["item_id"] in set(ids)})
+    page_size = 5
+    page = st.number_input("Page", 1, max(1, (len(ids) + page_size - 1) // page_size), 1)
+    for iid in ids[(page - 1) * page_size: page * page_size]:
+        it = items.get(iid, {})
+        img = next((i for i in it.get("images") or [] if Path(i).exists()), None)
+        first = next(preds[n][1].loc[iid] for n in chosen if iid in preds[n][1].index)
+        with st.container(border=True):
+            st.markdown(f"`{iid}` · {first['dataset']} · classes: {', '.join(map(str, it.get('class_names') or []))[:300]}")
+            if not img:
+                st.warning("Image not found on this machine.")
+                continue
+            grid = st.columns(cols)
+            for i, n in enumerate(chosen):
+                if iid not in preds[n][1].index:
+                    continue
+                r = preds[n][1].loc[iid]
+                with grid[i % cols]:
+                    st.image(draw_boxes(img, r.get("gt_boxes"), r.get("pred_boxes"), labels), width="stretch")
+                    st.caption(f"**{n}** · TP {int(r['tp'])} FP {int(r['fp'])} FN {int(r['fn'])}" + ("" if r.get("parse_ok") else " · unparsed"))
 
 
 def page_samples():
@@ -236,5 +287,6 @@ def page_compute():
 
 
 pg = st.navigation([st.Page(page_summary, title="Summary", default=True), st.Page(page_datasets, title="Datasets"),
-                    st.Page(page_samples, title="Samples"), st.Page(page_crops, title="Crops"), st.Page(page_compute, title="Compute")])
+                    st.Page(page_samples, title="Samples"), st.Page(page_boxes, title="Boxes"), st.Page(page_crops, title="Crops"),
+                    st.Page(page_compute, title="Compute")])
 pg.run()
