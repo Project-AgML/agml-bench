@@ -97,7 +97,7 @@ models:
     backend: vllm
     weights_gb: 38.0
     est_vram_gb: 45
-    serve_args: [--trust-remote-code, --reasoning-parser, minicpmv, --kv-cache-dtype, fp8]
+    serve_args: [--reasoning-parser, minicpmv, --kv-cache-dtype, fp8]  # no remote code: the FP8 repo lacks the processing_*.py its auto_map names
     sampling: {temperature: 0.7, top_p: 0.95, top_k: 100, min_p: 0.0, repetition_penalty: 1.03}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
