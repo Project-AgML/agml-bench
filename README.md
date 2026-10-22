@@ -63,7 +63,7 @@ uv run agbench view --data-dir $DATA
 
 Rules: [docs/benchmarking.md](docs/benchmarking.md)
 
-GPU server setup:
+Setup:
 
 ```bash
 git clone git@github.com:plant-ai-biophysics-lab/AGgentic-benchmarks.git && cd AGgentic-benchmarks
@@ -120,11 +120,10 @@ uv run agbench eval judge --run runs/<run_dir>
 uv run agbench eval profile --data-dir $DATA --models all   # keeps models already in reports/profile/profile.json
 ```
 
-View results from your laptop:
+View results (http://localhost:8502):
 
 ```bash
-uv run agbench eval view --runs reports/profile --profile reports/profile   # on the server
-ssh -N -L 8502:localhost:8502 <user>@<server>                              # on your laptop, then open http://localhost:8502
+uv run agbench eval view --runs reports/profile --profile reports/profile
 ```
 
 Your own model (any HF repo or local path; vLLM by default):
