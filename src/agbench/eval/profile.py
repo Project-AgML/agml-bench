@@ -145,6 +145,21 @@ def recommend(peak_gb: float) -> int | None:
     return next((g for g in GPU_SIZES if peak_gb <= g * 0.95), None)
 
 
+def need_gb(r: dict) -> float:
+    """VRAM a model needs. vLLM pre-allocates gpu_memory_utilization of the GPU, so its peak is the
+    reservation; use the weights + KV estimate instead. llama.cpp allocates what it uses: use the peak."""
+    if r.get("backend") == "vllm":
+        return r.get("est_vram_gb") or r.get("peak_vram_gb") or 0
+    return r.get("peak_vram_gb") or r.get("est_vram_gb") or 0
+
+
+def min_gpu(r: dict, hw_gb: float) -> int | None:
+    """Smallest GPU size that fits; a model that ran on this GPU never needs a bigger one."""
+    g = recommend(need_gb(r))
+    ran_on = max((s for s in GPU_SIZES if s <= hw_gb + 1), default=None)
+    return ran_on if (not r.get("error") and ran_on and (g is None or g > ran_on)) else g
+
+
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
                 concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
                 cleanup_weights: bool = False, redo: bool = False) -> dict:
@@ -203,9 +218,10 @@ def profile_judge(out: Path, gpu: GPUSampler, open_items: int) -> dict:
 
 def profile_frames(data: dict) -> dict:
     """Tables shared by the report and the viewer."""
+    hw_gb = min((g["memory_gb"] for g in data["hardware"]["gpus"]), default=0)
     fit = pd.DataFrame([{
         "model": r["model"], "backend": r["backend"], "weights GB": r.get("weights_gb"), "est. VRAM GB": r.get("est_vram_gb"),
-        "peak VRAM GB": r.get("peak_vram_gb"), "load s": r.get("load_s"), "min GPU GB": recommend(r.get("peak_vram_gb") or r.get("est_vram_gb") or 0),
+        "peak VRAM GB": r.get("peak_vram_gb"), "load s": r.get("load_s"), "needed GB": need_gb(r), "min GPU GB": min_gpu(r, hw_gb),
         "util %": (r.get("gpu_batch") or {}).get("mean_util"), "power W": (r.get("gpu_batch") or {}).get("mean_power_w"),
         "error": r.get("error", "")} for r in data["models"]])
     rows = []
@@ -215,27 +231,32 @@ def profile_frames(data: dict) -> dict:
             rows.append({"model": r["model"], "task": k, "s/image (c=1, p50)": v["seq"]["p50_s"], "p95": v["seq"]["p95_s"],
                          "images/s (batched)": v["batch"]["throughput_per_s"], "completion tokens": v["batch"]["completion_tokens"],
                          "truncated %": round(100 * v["batch"]["truncation_rate"], 1), "full-run items": f.get("items"),
-                         "full-run h (batched)": f.get("hours_batch"), "full-run h (c=1)": f.get("hours_seq")})
+                         "full-run h (batched)": f.get("hours_batch"), "full-run h (c=1)": f.get("hours_seq"),
+                         "full-run h (best)": min(h for h in (f.get("hours_batch"), f.get("hours_seq")) if h is not None)
+                         if f.get("hours_batch") is not None or f.get("hours_seq") is not None else None})
     per_task = pd.DataFrame(rows)
-    totals = per_task.groupby("model")[["full-run h (batched)", "full-run h (c=1)"]].sum().reset_index() if rows else pd.DataFrame()
+    totals = per_task.groupby("model")[["full-run h (batched)", "full-run h (c=1)", "full-run h (best)"]].sum().reset_index() if rows else pd.DataFrame()
     judge = data.get("judge") or {}
-    peak = max([r.get("peak_vram_gb") or r.get("est_vram_gb") or 0 for r in data["models"]] or [0])
-    total_h = float(totals["full-run h (batched)"].sum()) if len(totals) else 0
+    peak = max([need_gb(r) for r in data["models"]] or [0])
+    gpu = max([min_gpu(r, hw_gb) or 0 for r in data["models"]] or [0]) or None
+    total_h = float(totals["full-run h (best)"].sum()) if len(totals) else 0
     total_h += (judge.get("hours_per_model") or 0) * len(data["models"])
     hw = ", ".join(f"{g['name']} ({g['memory_gb']} GB)" for g in data["hardware"]["gpus"])
-    return {"fit": fit, "per_task": per_task, "totals": totals, "judge": judge, "peak": peak, "total_h": total_h, "hw": hw}
+    return {"fit": fit, "per_task": per_task, "totals": totals, "judge": judge, "peak": peak, "gpu": gpu, "total_h": total_h, "hw": hw}
 
 
 def write_report(data: dict, out: Path) -> None:
     f = profile_frames(data)
-    fit, per_task, totals, judge, peak, total_h, hw = (f[k] for k in ("fit", "per_task", "totals", "judge", "peak", "total_h", "hw"))
+    fit, per_task, totals, judge, peak, gpu, total_h, hw = (f[k] for k in ("fit", "per_task", "totals", "judge", "peak", "gpu", "total_h", "hw"))
     rows = len(per_task)
     s = data["settings"]
     md = [f"# Compute profile\n", f"Hardware: {hw}  ", f"Thinking: {s['thinking']} (effort {s['effort']}); "
           f"{s['per_task']} items per task batched, {s['per_task_seq']} sequential.\n",
-          "## Recommendation\n", f"- Minimum single GPU: {recommend(peak)} GB (largest peak {peak:.1f} GB)",
-          f"- Full suite, all models + judge, batched on one GPU: {total_h:.1f} GPU-hours "
-          f"({total_h / 24:.1f} days; {total_h / 4:.1f} h on 4 GPUs)\n",
+          "## Recommendation\n", f"- Minimum single GPU: {gpu} GB (largest need {peak:.1f} GB)",
+          f"- Full suite, all models + judge, on one GPU: {total_h:.1f} GPU-hours "
+          f"({total_h / 24:.1f} days; {total_h / 4:.1f} h on 4 GPUs), using the faster of batched and c=1 per task",
+          "- vLLM reserves gpu_memory_utilization of the GPU up front, so its peak VRAM is the reservation; "
+          "`needed GB` is the weights + KV estimate for vLLM and the measured peak for llama.cpp\n",
           "## Memory\n", fit.to_markdown(index=False), "\n## Time per image and full-run estimate\n",
           per_task.to_markdown(index=False) if rows else "_no results_", "\n## Totals per model (hours)\n",
           totals.to_markdown(index=False) if len(totals) else "_no results_"]
@@ -244,8 +265,8 @@ def write_report(data: dict, out: Path) -> None:
     (out / "report.md").write_text("\n".join(md) + "\n")
     html = ["<html><head><meta charset='utf-8'><title>Compute profile</title><style>body{font-family:sans-serif;margin:24px}"
             "table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #ccc;padding:4px 8px}</style></head><body>",
-            f"<h1>Compute profile</h1><p>Hardware: {hw}</p><h2>Recommendation</h2><p>Minimum single GPU: {recommend(peak)} GB. "
-            f"Full suite batched: {total_h:.1f} GPU-hours.</p><h2>Memory</h2>", fit.to_html(index=False),
+            f"<h1>Compute profile</h1><p>Hardware: {hw}</p><h2>Recommendation</h2><p>Minimum single GPU: {gpu} GB. "
+            f"Full suite: {total_h:.1f} GPU-hours.</p><h2>Memory</h2>", fit.to_html(index=False),
             "<h2>Time per image</h2>", per_task.to_html(index=False), "<h2>Totals</h2>", totals.to_html(index=False)]
     if judge:
         html += ["<h2>Judge</h2>", pd.DataFrame([judge]).to_html(index=False)]

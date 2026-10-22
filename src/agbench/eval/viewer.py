@@ -8,7 +8,6 @@ import pandas as pd
 import streamlit as st
 from PIL import Image, ImageDraw
 
-from agbench.eval.profile import recommend
 from agbench.eval.report import load_runs, summary_frames
 from agbench.eval.runner import read_jsonl
 
@@ -186,15 +185,15 @@ def page_compute():
     st.caption(f"{f['hw']} · thinking {s.get('thinking')} ({s.get('effort')}) · {s.get('per_task')} items per task batched, "
                f"{s.get('per_task_seq')} sequential")
     m = st.columns(4)
-    m[0].metric("Largest peak VRAM", f"{f['peak']:.1f} GB")
-    m[1].metric("Minimum single GPU", f"{recommend(f['peak'])} GB")
-    m[2].metric("Full suite (batched)", f"{f['total_h']:.1f} GPU-h")
+    m[0].metric("Largest VRAM need", f"{f['peak']:.1f} GB")
+    m[1].metric("Minimum single GPU", f"{f['gpu']} GB")
+    m[2].metric("Full suite", f"{f['total_h']:.1f} GPU-h")
     m[3].metric("On 4 GPUs", f"{f['total_h'] / 4:.1f} h")
 
     fit = f["fit"]
     st.subheader("Memory")
     if len(fit):
-        st.bar_chart(fit.set_index("model")[["est. VRAM GB", "peak VRAM GB"]], stack=False, height=280)
+        st.bar_chart(fit.set_index("model")[["needed GB", "peak VRAM GB"]], stack=False, height=280)
         st.dataframe(fit, hide_index=True, width="stretch")
 
     pt = f["per_task"]
@@ -206,7 +205,7 @@ def page_compute():
         b.markdown("**Images per second, batched**")
         b.bar_chart(pt.pivot_table(index="task", columns="model", values="images/s (batched)"), stack=False, height=300)
         st.subheader("Full-run estimate for this data dir")
-        st.bar_chart(pt.pivot_table(index="model", columns="task", values="full-run h (batched)"), height=300)
+        st.bar_chart(pt.pivot_table(index="model", columns="task", values="full-run h (best)"), height=300)
         models_ = st.multiselect("Model", sorted(pt.model.unique()), default=sorted(pt.model.unique()))
         st.dataframe(pt[pt.model.isin(models_)], hide_index=True, width="stretch")
         st.dataframe(f["totals"], hide_index=True, width="stretch")
