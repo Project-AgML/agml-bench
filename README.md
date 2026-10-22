@@ -70,6 +70,15 @@ git clone git@github.com:plant-ai-biophysics-lab/AGgentic-benchmarks.git && cd A
 uv sync
 hf auth login
 uv tool install vllm
+vllm download-kernels
+```
+
+llama.cpp (Nemotron GGUF):
+
+```bash
+git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp
+cmake -B build -DGGML_CUDA=ON && cmake --build build -j 8 --target llama-server
+export LLAMA_SERVER_BIN=$PWD/build/bin/llama-server
 ```
 
 ```bash

@@ -67,12 +67,17 @@ models:
     sampling: {temperature: 0.1}
     cot: true
 
-  nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB:
-    backend: vllm
-    weights_gb: 24.1
-    est_vram_gb: 30
-    serve_args: [--trust-remote-code, --reasoning-parser, nemotron_v3, --kv-cache-dtype, fp8,
-                 --mamba-ssm-cache-dtype, bfloat16]
+  nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF:
+    backend: llamacpp  # the vLLM 24GB checkpoint needs Blackwell (b12x kernels); llama.cpp runs IQ2 on Ada
+    weights_gb: 23.7
+    est_vram_gb: 28
+    parallel: 2
+    gguf: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
+    mmproj: mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
+    draft: {repo: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF, file: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr.gguf}
+    serve_args: [--spec-type, draft-dflash, --spec-draft-n-max, "6", --spec-draft-ngl, "999",
+                 --cache-type-k, q8_0, --cache-type-v, q8_0, --batch-size, "2048", --ubatch-size, "512"]
+    draft_flag: --spec-draft-model
     sampling: {temperature: 1.0, top_p: 0.95}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
