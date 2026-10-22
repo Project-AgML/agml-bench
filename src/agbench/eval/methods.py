@@ -28,7 +28,7 @@ class Method:
 def model_spec(model_id: str) -> dict:
     reg = models()
     if model_id not in reg["models"]:
-        return {"backend": "external", **reg["defaults"]}
+        return {"backend": "vllm", **reg["defaults"]}  # unregistered: plain `vllm serve <id>`, no sampling overrides
     return {**reg["defaults"], **reg["models"][model_id]}
 
 

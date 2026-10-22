@@ -118,6 +118,25 @@ uv run agbench eval view --runs reports/profile --profile reports/profile   # on
 ssh -N -L 8502:localhost:8502 <user>@<server>                              # on your laptop, then open http://localhost:8502
 ```
 
+Your own model (any HF repo or local path; vLLM by default):
+
+```bash
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA
+uv run agbench eval run --model /path/to/checkpoint --data-dir $DATA
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --models-file my_models.yaml
+uv run agbench eval profile --models my-org/My-VLM --data-dir $DATA --models-file my_models.yaml
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --endpoint http://localhost:8000
+```
+
+```yaml
+# my_models.yaml (same fields as src/agbench/eval/models.yaml)
+my-org/My-VLM:
+  serve_args: [--reasoning-parser, qwen3, --quantization, awq]
+  sampling: {temperature: 0.7, top_p: 0.95}
+  thinking: {chat_template_kwargs: {enable_thinking: true}}
+  no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+```
+
 Custom method:
 
 ```bash

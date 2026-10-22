@@ -22,7 +22,28 @@ def prompts() -> dict:
 
 
 def models() -> dict:
-    return load("models.yaml")
+    reg = load("models.yaml")
+    for p in filter(None, os.environ.get("AGBENCH_MODELS_EXTRA", "").split(os.pathsep)):
+        if p not in reg.setdefault("_extra", []):
+            register_models(p)
+    return reg
+
+
+def register_models(src) -> None:
+    """Add or override registry models from a YAML path or a dict.
+
+    Accepts the models.yaml layout ({models: {...}, defaults: {...}, judge: ...}) or a bare {model_id: spec}.
+    A spec without `backend` is served with vLLM."""
+    reg = load("models.yaml")
+    if not isinstance(src, dict):
+        reg.setdefault("_extra", []).append(str(src))
+        src = yaml.safe_load(Path(src).read_text()) or {}
+    if not {"models", "defaults", "judge"} & set(src):
+        src = {"models": src}
+    reg["defaults"] = {**reg["defaults"], **(src.get("defaults") or {})}
+    reg["judge"] = src.get("judge", reg["judge"])
+    for mid, spec in (src.get("models") or {}).items():
+        reg["models"][mid] = {"backend": "vllm", **(spec or {})}
 
 
 def ag_tasks() -> dict:

@@ -12,6 +12,14 @@ app = typer.Typer(no_args_is_help=True, help="Benchmark models on base-data.")
 DataDirOpt = typer.Option(..., "--data-dir", help="Data dir with base-data/.")
 TaskOpt = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text")
 FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native")
+ModelsFileOpt = typer.Option(None, "--models-file", help="YAML of extra/overriding models (models.yaml layout).")
+
+
+def _register(files: list[Path] | None):
+    from agbench.eval.resources import register_models
+
+    for f in files or []:
+        register_models(f)
 
 
 def _run_dir(out: Path, name: str) -> Path:
@@ -24,10 +32,11 @@ def _load_method(path: str, kwargs: str | None):
 
 
 @app.command("models")
-def models_cmd():
+def models_cmd(models_file: list[Path] = ModelsFileOpt):
     """List registered models with VRAM estimates."""
     from agbench.eval.resources import models
 
+    _register(models_file)
     reg = models()
     typer.echo(f"{'model':<52} {'backend':<9} {'weights GB':>10} {'est. VRAM GB':>13}")
     for m, s in reg["models"].items():
@@ -38,7 +47,7 @@ def models_cmd():
 @app.command()
 def run(
     data_dir: Path = DataDirOpt,
-    model: str = typer.Option(None, "--model", help="Registry model id (see `agbench eval models`)."),
+    model: str = typer.Option(None, "--model", help="Model id: registry entry, any HF repo or local path (served with vLLM)."),
     method: str = typer.Option(None, "--method", help="Custom method as module:Class."),
     method_kwargs: str = typer.Option(None, "--method-kwargs", help="JSON kwargs for --method."),
     endpoint: str = typer.Option(None, "--endpoint", help="Use a running OpenAI-compatible server instead of launching one."),
@@ -56,8 +65,10 @@ def run(
     run_dir: Path = typer.Option(None, "--run-dir", help="Resume into this run dir."),
     judge: bool = typer.Option(False, "--judge", help="Judge open-ended answers after the run."),
     judge_endpoint: str = typer.Option(None, "--judge-endpoint"),
+    models_file: list[Path] = ModelsFileOpt,
 ):
     """Run a model or custom method over the benchmark."""
+    _register(models_file)
     from agbench.eval.methods import VLMMethod, model_spec
     from agbench.eval.runner import Benchmark
     from agbench.eval.servers import Server
@@ -96,6 +107,7 @@ def _judge(run_dir: Path, endpoint: str | None, judge_model: str | None):
     from agbench.eval.resources import models
     from agbench.eval.servers import Server
 
+    _register(models_file)
     jm = judge_model or models()["judge"]
     if endpoint:
         judge_run(run_dir, endpoint, jm)
@@ -109,6 +121,7 @@ def judge_cmd(
     run_dir: list[Path] = typer.Option(..., "--run", help="Run dir(s) to judge."),
     judge_model: str = typer.Option(None, "--judge-model"),
     endpoint: str = typer.Option(None, "--judge-endpoint"),
+    models_file: list[Path] = ModelsFileOpt,
 ):
     """Judge open-ended answers with the judge model (default gemma-4-31B-it-FP8)."""
     from agbench.eval.judge import judge_run
@@ -160,11 +173,13 @@ def profile(
     cleanup_weights: bool = typer.Option(False, "--cleanup-weights", help="Delete each model's weights after profiling it."),
     out: Path = typer.Option(Path("reports/profile"), "--out"),
     redo: bool = typer.Option(False, "--redo", help="Re-profile models already in <out>/profile.json."),
+    models_file: list[Path] = ModelsFileOpt,
 ):
     """Measure VRAM, latency and throughput per model and task; estimate full-run compute."""
     from agbench.eval.profile import run_profile
     from agbench.eval.resources import models as reg
 
+    _register(models_file)
     ids = list(reg()["models"]) if models == ["all"] else models
     run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, redo)
 

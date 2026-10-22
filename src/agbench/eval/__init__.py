@@ -11,6 +11,7 @@
 from agbench.eval.client import Prediction
 from agbench.eval.items import FORMATS, TASKS, EvalItem, build_items
 from agbench.eval.methods import Method, VLMMethod
+from agbench.eval.resources import register_models
 from agbench.eval.runner import Benchmark, Result
 
-__all__ = ["Benchmark", "Method", "VLMMethod", "EvalItem", "Prediction", "Result", "build_items", "TASKS", "FORMATS"]
+__all__ = ["Benchmark", "Method", "VLMMethod", "EvalItem", "Prediction", "Result", "build_items", "register_models", "TASKS", "FORMATS"]

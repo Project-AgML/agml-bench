@@ -252,3 +252,29 @@ def test_parse_verdict():
     assert parse_verdict('```json\n{"is_match": false, "reasoning": "x"}\n```') is False
     assert parse_verdict('is_match: true') is True
     assert parse_verdict("garbage") is None
+
+
+def test_register_models_from_yaml(tmp_path, monkeypatch):
+    import copy
+
+    from agbench.eval import register_models
+    from agbench.eval.methods import model_spec, request_body
+    from agbench.eval.resources import load
+    from agbench.eval.servers import command
+
+    monkeypatch.setattr("agbench.eval.servers._bin", lambda env, default: default)
+    reg = load("models.yaml")
+    saved = copy.deepcopy(reg)
+    try:
+        f = tmp_path / "mine.yaml"
+        f.write_text("my-org/My-VLM:\n  serve_args: [--quantization, awq]\n  sampling: {temperature: 0.2}\n"
+                     "  thinking: {chat_template_kwargs: {enable_thinking: true}}\n")
+        register_models(f)
+        spec = model_spec("my-org/My-VLM")
+        assert spec["backend"] == "vllm" and spec["max_tokens"] == reg["defaults"]["max_tokens"]
+        assert request_body(spec, True, "medium") == {"temperature": 0.2, "chat_template_kwargs": {"enable_thinking": True}}
+        cmd = command("my-org/My-VLM", 8000)
+        assert cmd[:3] == ["vllm", "serve", "my-org/My-VLM"] and cmd[-2:] == ["--quantization", "awq"]
+        assert command("/models/unregistered", 8000)[2] == "/models/unregistered"
+    finally:
+        reg.clear(); reg.update(saved)
