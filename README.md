@@ -144,6 +144,8 @@ my-org/My-VLM:
   sampling: {temperature: 0.7, top_p: 0.95}
   thinking: {chat_template_kwargs: {enable_thinking: true}}
   no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+  box_order: xyxy                       # box_2d as [x_min, y_min, x_max, y_max]; default yxyx
+  bbox_key_format: {bbox_2d: xyxy_px}   # other box keys: xyxy_1000 | xyxy_px
 ```
 
 Custom method:
@@ -161,6 +163,7 @@ class MyMethod(Method):
         ...  # item.images, item.prompt, item.choices, item.task, item.format, item.crop, item.ag_task
 
 res = Benchmark("/path/to/data_dir", tasks=["classification"]).run(MyMethod(), out_dir="runs/my-method")
+res = Benchmark("/path/to/data_dir", tasks=["detection"]).run(MyMethod(), out_dir="runs/my-method-det", key_formats={"box_2d": "xyxy_1000"})
 res.metrics
 ```
 
