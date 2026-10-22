@@ -58,7 +58,7 @@ models:
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 20, min_p: 0.0, presence_penalty: 1.5}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
-    bbox_key_format: {bbox_2d: xyxy_1000}
+    bbox_key_format: {bbox_2d: xyxy_1000, box_2d: xyxy_1000}   # writes box_2d in x,y order despite the prompt
 
   mistralai/Ministral-3-14B-Instruct-2512:
     backend: vllm
@@ -79,6 +79,7 @@ models:
     serve_args: [--spec-type, draft-dflash, --spec-draft-n-max, "6", --spec-draft-ngl, "999",
                  --cache-type-k, q8_0, --cache-type-v, q8_0, --batch-size, "2048", --ubatch-size, "512"]
     draft_flag: --spec-draft-model
+    bbox_key_format: {box_2d: xyxy_1000}   # writes box_2d in x,y order despite the prompt
     sampling: {temperature: 1.0, top_p: 0.95}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}

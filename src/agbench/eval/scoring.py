@@ -106,17 +106,28 @@ def numeric_correct(pred: float | None, gt: float | None, rel_tol: float = 0.05)
 # ---- boxes ----
 
 def _json_array(text: str):
+    """The answer's JSON array: the last fenced block if any, else the whole [...] span, else the last array of objects
+    (so coordinates quoted in the prose before the JSON don't break parsing)."""
+    fenced = re.findall(r"```(?:json)?\s*(.*?)```", text, re.S)
     text = re.sub(r"```(?:json)?", "", text)
-    start, end = text.find("["), text.rfind("]")
-    if start < 0 or end <= start:
-        return None
-    try:
-        return json.loads(text[start:end + 1])
-    except json.JSONDecodeError:
+    for chunk in fenced[-1:] + [text]:
+        start, end = chunk.find("["), chunk.rfind("]")
+        if start < 0 or end <= start:
+            continue
+        for cand in (chunk[start:end + 1], re.sub(r",\s*([\]}])", r"\1", chunk[start:end + 1])):
+            try:
+                return json.loads(cand)
+            except json.JSONDecodeError:
+                pass
+    found, dec = None, json.JSONDecoder()
+    for m in re.finditer(r"\[", text):
         try:
-            return json.loads(re.sub(r",\s*([\]}])", r"\1", text[start:end + 1]))
+            v, _ = dec.raw_decode(text, m.start())
         except json.JSONDecodeError:
-            return None
+            continue
+        if isinstance(v, list) and any(isinstance(o, dict) for o in v):
+            found = v
+    return found
 
 
 def parse_boxes(text: str, width: int, height: int, key_formats: dict | None = None) -> list[dict] | None:

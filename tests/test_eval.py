@@ -313,3 +313,9 @@ def test_steady_wall_ignores_ramp_down_tail():
     ideal, wall = sum(lat) / 32, max(r["t_end"] for r in recs)
     assert wall > ideal * 1.2  # the ramp-down tail inflates the raw wall time
     assert abs(steady_wall(recs, 32, wall) - ideal) / ideal < 0.1
+
+
+def test_box_json_after_prose_coordinates():
+    text = 'The plant is at [12, 16, 185, 300].\n\n```json\n[{"box_2d": [100, 200, 300, 400], "label": "maize"}]\n```'
+    assert sc.parse_boxes(text, 1000, 1000) == [{"label": "maize", "bbox": [200.0, 100.0, 400.0, 300.0]}]
+    assert sc.parse_boxes('see [1, 2, 3, 4] then [{"box_2d": [0, 0, 500, 500]}]', 1000, 1000)[0]["bbox"] == [0, 0, 500, 500]
