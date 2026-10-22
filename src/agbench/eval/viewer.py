@@ -16,6 +16,7 @@ st.set_page_config(page_title="AgBench results", layout="wide")
 parser = argparse.ArgumentParser()
 parser.add_argument("--runs", nargs="+", required=True)
 parser.add_argument("--profile", default=None)
+parser.add_argument("--data-dir", default=None)
 args, _ = parser.parse_known_args()
 THUMB = 520
 PCT = ["accuracy_macro", "f1_macro", "accuracy_micro", "f1_micro", "idk_rate", "nota_accuracy", "truncation_rate",
@@ -30,6 +31,17 @@ def runs():
 @st.cache_data(ttl=60)
 def predictions(run_dir: str) -> pd.DataFrame:
     return pd.DataFrame(read_jsonl(Path(run_dir) / "predictions.jsonl"))
+
+
+def image_path(p: str) -> str | None:
+    """The image on this machine: as recorded, or its base-data/... part under --data-dir."""
+    if Path(p).exists():
+        return p
+    if args.data_dir and "base-data/" in p:
+        q = Path(args.data_dir) / p[p.index("base-data/"):]
+        if q.exists():
+            return str(q)
+    return None
 
 
 def pct(df: pd.DataFrame) -> pd.DataFrame:
@@ -142,12 +154,12 @@ def page_boxes():
     page = st.number_input("Page", 1, max(1, (len(ids) + page_size - 1) // page_size), 1)
     for iid in ids[(page - 1) * page_size: page * page_size]:
         it = items.get(iid, {})
-        img = next((i for i in it.get("images") or [] if Path(i).exists()), None)
+        img = next(filter(None, map(image_path, it.get("images") or [])), None)
         first = next(preds[n][1].loc[iid] for n in chosen if iid in preds[n][1].index)
         with st.container(border=True):
             st.markdown(f"`{iid}` · {first['dataset']} · classes: {', '.join(map(str, it.get('class_names') or []))[:300]}")
             if not img:
-                st.warning("Image not found on this machine.")
+                st.warning(f"Image not found: {(it.get('images') or ['?'])[0]}. Pass `--data-dir` pointing at a folder with base-data/.")
                 continue
             grid = st.columns(cols)
             for i, n in enumerate(chosen):
@@ -185,11 +197,13 @@ def page_samples():
         with st.container(border=True):
             a, b = st.columns([1, 2])
             with a:
-                for img in (it.get("images") or [])[:3]:
-                    if Path(img).exists():
-                        st.image(draw_boxes(img, r.get("gt_boxes"), r.get("pred_boxes")) if r["task"] in ("detection", "segmentation")
-                                 else Image.open(img).convert("RGB").resize((THUMB, int(THUMB * Image.open(img).height / Image.open(img).width))),
-                                 width="stretch")
+                imgs = list(filter(None, map(image_path, (it.get("images") or [])[:3])))
+                if it.get("images") and not imgs:
+                    st.caption(f"Image not found: {it['images'][0]}. Pass `--data-dir`.")
+                for img in imgs:
+                    st.image(draw_boxes(img, r.get("gt_boxes"), r.get("pred_boxes")) if r["task"] in ("detection", "segmentation")
+                             else Image.open(img).convert("RGB").resize((THUMB, int(THUMB * Image.open(img).height / Image.open(img).width))),
+                             width="stretch")
             with b:
                 score = r["correct"] if r["task"] in ("detection", "segmentation") else ok.loc[_]
                 st.markdown(f"**{'✅' if score >= 0.5 else '❌'}** `{r['item_id']}` · ag task: {r['ag_task']} · crop: {r['crop']}"

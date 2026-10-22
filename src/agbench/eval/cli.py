@@ -194,6 +194,7 @@ def profile(
 def view(
     runs: list[Path] = typer.Option([Path("runs")], "--runs"),
     profile_dir: Path = typer.Option(None, "--profile"),
+    data_dir: Path = typer.Option(None, "--data-dir", help="Folder with base-data/, if images live elsewhere than when the runs were made."),
     port: int = typer.Option(8502, "--port"),
 ):
     """Open the results viewer."""
@@ -202,6 +203,8 @@ def view(
            "--runs", *[str(Path(r).resolve()) for r in runs]]
     if profile_dir:
         cmd += ["--profile", str(profile_dir.resolve())]
+    if data_dir:
+        cmd += ["--data-dir", str(data_dir.resolve())]
     subprocess.run(cmd)
 
 

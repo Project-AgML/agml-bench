@@ -124,6 +124,7 @@ View results (http://localhost:8502):
 
 ```bash
 uv run agbench eval view --runs reports/profile --profile reports/profile
+uv run agbench eval view --runs reports/profile --profile reports/profile --data-dir $DATA   # images under another base-data/ copy
 ```
 
 Your own model (any HF repo or local path; vLLM by default):
