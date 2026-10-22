@@ -2,6 +2,7 @@
 #   thinking:  request fields that turn thinking on (merged into the request body)
 #   effort:    request fields per --reasoning-effort level
 #   cot:       true -> no native thinking; use the CoT system prompt and <answer> tags
+#   config_overlay: {repo, files}: serve a copy of the snapshot with these files taken from another repo
 #   parallel:  llama-server slots (-np); each gets max_model_len context
 #   est_vram_gb: estimated single-GPU peak (weights + vision + KV at 32K, fp8 KV)
 
@@ -97,7 +98,9 @@ models:
     backend: vllm
     weights_gb: 38.0
     est_vram_gb: 45
-    serve_args: [--reasoning-parser, minicpmv, --kv-cache-dtype, fp8]  # no remote code: the FP8 repo lacks the processing_*.py its auto_map names
+    serve_args: [--reasoning-parser, minicpmv, --kv-cache-dtype, fp8]
+    # the quantized repos' processor configs point at processing_*.py files they don't ship; use the base repo's
+    config_overlay: {repo: openbmb/MiniCPM-V-4.7-35B-A3B, files: [processor_config.json, preprocessor_config.json, tokenizer_config.json]}
     sampling: {temperature: 0.7, top_p: 0.95, top_k: 100, min_p: 0.0, repetition_penalty: 1.03}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}

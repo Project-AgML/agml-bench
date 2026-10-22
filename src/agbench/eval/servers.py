@@ -28,11 +28,29 @@ def _bin(env: str, default: str) -> str:
     return b
 
 
+def _overlay(model_id: str, overlay: dict) -> str:
+    """Symlinked copy of the model snapshot with `overlay.files` taken from `overlay.repo` (e.g. fixed processor configs)."""
+    from huggingface_hub import hf_hub_download, snapshot_download
+
+    src = Path(snapshot_download(model_id))
+    dst = Path(os.environ.get("AGBENCH_CACHE", Path.home() / ".cache" / "agbench")) / "models" / model_id.replace("/", "__")
+    dst.mkdir(parents=True, exist_ok=True)
+    for f in src.iterdir():
+        t = dst / f.name
+        if f.name not in overlay["files"] and not t.exists():
+            t.symlink_to(f.resolve())
+    for name in overlay["files"]:
+        (dst / name).unlink(missing_ok=True)
+        shutil.copy(hf_hub_download(overlay["repo"], name), dst / name)
+    return str(dst)
+
+
 def command(model_id: str, port: int, max_model_len: int | None = None, extra_args: list[str] | None = None) -> list[str]:
     spec = model_spec(model_id)
     ctx = str(max_model_len or spec["max_model_len"])
     if spec["backend"] == "vllm":
-        return [_bin("VLLM_BIN", "vllm"), "serve", model_id, "--port", str(port), "--host", "127.0.0.1",
+        model = _overlay(model_id, spec["config_overlay"]) if spec.get("config_overlay") else model_id
+        return [_bin("VLLM_BIN", "vllm"), "serve", model, "--served-model-name", model_id, "--port", str(port), "--host", "127.0.0.1",
                 "--max-model-len", ctx, "--gpu-memory-utilization", str(spec["gpu_memory_utilization"]),
                 "--limit-mm-per-prompt", json.dumps({"image": spec["max_images"]}), "--enable-prefix-caching",
                 *map(str, spec.get("serve_args") or []), *(extra_args or [])]
