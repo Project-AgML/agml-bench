@@ -13,7 +13,7 @@ import pandas as pd
 from agbench.eval.gpu import GPUSampler
 from agbench.eval.items import EvalItem, build_items, spread
 from agbench.eval.judge import judge_records
-from agbench.eval.methods import VLMMethod, model_spec
+from agbench.eval.methods import VLMMethod, key_formats, model_spec
 from agbench.eval.resources import models
 from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
 from agbench.eval.servers import Server, delete_weights
@@ -71,7 +71,7 @@ def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task:
         with Server(model_id, out / "server.log") as srv:
             res["load_s"] = round(srv.load_seconds, 1)
             method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
-            kf = spec.get("bbox_key_format")
+            kf = key_formats(spec)
             t0 = time.time()
             Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, resume=False, key_formats=kf, gpu=gpu)
             t1 = time.time()

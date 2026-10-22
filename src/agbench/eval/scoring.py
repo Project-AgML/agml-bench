@@ -133,7 +133,7 @@ def _json_array(text: str):
 def parse_boxes(text: str, width: int, height: int, key_formats: dict | None = None) -> list[dict] | None:
     """Model JSON -> [{label, bbox: [x1,y1,x2,y2] px}] in the size the image was sent at. None if unparseable.
 
-    box_2d: [y1,x1,y2,x2] on 0-1000 (prompted). bbox_2d / bbox: [x1,y1,x2,y2]; scale from key_formats
+    box_2d: [y1,x1,y2,x2] on 0-1000 unless key_formats says xyxy_1000. bbox_2d / bbox: [x1,y1,x2,y2]; scale from key_formats
     (xyxy_1000 | xyxy_px), else values <= 1 are normalized, else pixels."""
     formats = {"box_2d": "yxyx_1000", **(key_formats or {})}
     arr = _json_array(final_answer(text))

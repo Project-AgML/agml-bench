@@ -72,7 +72,7 @@ def run(
     """Run a model or custom method over the benchmark."""
     _register(models_file)
     from agbench.eval.gpu import sampler
-    from agbench.eval.methods import VLMMethod, model_spec
+    from agbench.eval.methods import VLMMethod, key_formats, model_spec
     from agbench.eval.runner import Benchmark
 
     if not (model or method):
@@ -87,7 +87,7 @@ def run(
         spec = model_spec(model)
         conc = concurrency or (spec.get("parallel", 2) if spec["backend"] == "llamacpp" else spec["concurrency"])
         rd = run_dir or _run_dir(out, model)
-        kf = spec.get("bbox_key_format")
+        kf = key_formats(spec)
         if run_dir and not bench.remaining(rd):
             from agbench.eval.runner import finalize, read_jsonl
 

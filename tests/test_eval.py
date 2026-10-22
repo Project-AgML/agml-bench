@@ -319,3 +319,15 @@ def test_box_json_after_prose_coordinates():
     text = 'The plant is at [12, 16, 185, 300].\n\n```json\n[{"box_2d": [100, 200, 300, 400], "label": "maize"}]\n```'
     assert sc.parse_boxes(text, 1000, 1000) == [{"label": "maize", "bbox": [200.0, 100.0, 400.0, 300.0]}]
     assert sc.parse_boxes('see [1, 2, 3, 4] then [{"box_2d": [0, 0, 500, 500]}]', 1000, 1000)[0]["bbox"] == [0, 0, 500, 500]
+
+
+def test_box_order_switches_prompt_and_parser(data_dir, fake_server):
+    from agbench.eval.methods import key_formats, model_spec
+    it = next(i for i in build_items(data_dir, ["detection"])[0])
+    xy = VLMMethod(fake_server, "mistralai/Ministral-3-14B-Instruct-2512")
+    yx = VLMMethod(fake_server, "google/gemma-4-12B-it")
+    assert "[x_min, y_min, x_max, y_max]" in xy.prompt(it) and "[y_min" not in xy.prompt(it)
+    assert yx.prompt(it) == it.prompt and "[y_min, x_min, y_max, x_max]" in it.prompt
+    text = '[{"box_2d": [100, 200, 300, 400], "label": "apple"}]'
+    assert sc.parse_boxes(text, 1000, 1000, key_formats(model_spec(xy.model_id)))[0]["bbox"] == [100, 200, 300, 400]
+    assert sc.parse_boxes(text, 1000, 1000, key_formats(model_spec(yx.model_id)))[0]["bbox"] == [200, 100, 400, 300]

@@ -12,11 +12,16 @@ oeq:
   localization: "Respond in one sentence: What is shown in this image of {a_crop}?"
   other: "Respond in one sentence: What category best describes this image of {a_crop}?"
 
+# Coordinate order named in the grounding prompt; models.yaml `box_order` picks one per model.
+box_orders:
+  yxyx: "[y_min, x_min, y_max, x_max]"
+  xyxy: "[x_min, y_min, x_max, y_max]"
+
 grounding: |
   Identify and localize every {class_names} visible in this image of {a_crop}. Respond with
   ONLY a JSON array, one object per instance found, each with exactly these
   two keys:
-  "box_2d": [y_min, x_min, y_max, x_max] — coordinates on a 0-1000
+  "box_2d": {box_order} — coordinates on a 0-1000
   normalized scale (top-left corner of the image is [0, 0]), in that exact
   order.
   "label": the class name for that instance, chosen from: {class_names}.

@@ -4,6 +4,7 @@
 #   cot:       true -> no native thinking; use the CoT system prompt and <answer> tags
 #   config_overlay: {repo, files}: serve a copy of the snapshot with these files taken from another repo
 #   parallel:  llama-server slots (-np); each gets max_model_len context
+#   box_order: coordinate order asked for and parsed in box_2d (yxyx default; xyxy where the model's own format is x-first)
 #   est_vram_gb: estimated single-GPU peak (weights + vision + KV at 32K, fp8 KV)
 
 defaults:
@@ -48,6 +49,7 @@ models:
       medium: {reasoning_effort: medium}
       high: {reasoning_effort: xhigh}
     bbox_key_format: {bbox_2d: xyxy_1000}
+    box_order: xyxy   # Qwen's own grounding format is x-first
 
   Qwen/Qwen3.6-35B-A3B-FP8:
     backend: vllm
@@ -58,7 +60,8 @@ models:
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 20, min_p: 0.0, presence_penalty: 1.5}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
-    bbox_key_format: {bbox_2d: xyxy_1000, box_2d: xyxy_1000}   # writes box_2d in x,y order despite the prompt
+    bbox_key_format: {bbox_2d: xyxy_1000}
+    box_order: xyxy   # Qwen's own grounding format is x-first
 
   mistralai/Ministral-3-14B-Instruct-2512:
     backend: vllm
@@ -67,6 +70,7 @@ models:
     serve_args: [--tokenizer-mode, mistral, --config-format, mistral, --load-format, mistral, --kv-cache-dtype, fp8]
     sampling: {temperature: 0.1}
     cot: true
+    box_order: xyxy   # Mistral's box_2d is [xmin, ymin, xmax, ymax] (docs.mistral.ai bbox cookbook)
 
   nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF:
     backend: llamacpp  # the vLLM 24GB checkpoint needs Blackwell (b12x kernels); llama.cpp runs IQ2 on Ada
@@ -79,7 +83,7 @@ models:
     serve_args: [--spec-type, draft-dflash, --spec-draft-n-max, "6", --spec-draft-ngl, "999",
                  --cache-type-k, q8_0, --cache-type-v, q8_0, --batch-size, "2048", --ubatch-size, "512"]
     draft_flag: --spec-draft-model
-    bbox_key_format: {box_2d: xyxy_1000}   # writes box_2d in x,y order despite the prompt
+    box_order: xyxy   # writes x,y order even when prompted for y,x
     sampling: {temperature: 1.0, top_p: 0.95}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
@@ -111,3 +115,4 @@ models:
     sampling: {temperature: 0.7, top_p: 0.95, top_k: 100, min_p: 0.0, repetition_penalty: 1.03}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+    box_order: xyxy   # MiniCPM-V 4.7 grounds as [x1, y1, x2, y2] on 0-1000 (MiniCPM-V CookBook)

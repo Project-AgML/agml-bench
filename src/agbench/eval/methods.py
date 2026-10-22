@@ -32,6 +32,11 @@ def model_spec(model_id: str) -> dict:
     return {**reg["defaults"], **reg["models"][model_id]}
 
 
+def key_formats(spec: dict) -> dict:
+    """How to read box keys in this model's answers: box_2d follows the prompted `box_order`."""
+    return {**(spec.get("bbox_key_format") or {}), "box_2d": f"{spec.get('box_order', 'yxyx')}_1000"}
+
+
 def request_body(spec: dict, thinking: bool, effort: str | None) -> dict:
     body = dict(spec.get("sampling") or {})
     if thinking:
@@ -53,11 +58,19 @@ class VLMMethod(Method):
         self.max_tokens = max_tokens or self.spec["max_tokens"]
         self.body = merge(request_body(self.spec, thinking, effort), body or {})
         self.system = prompts()["cot_system"] if (thinking and self.spec.get("cot")) else None
+        self.box_order = self.spec.get("box_order", "yxyx")
         self.client = Client(endpoint, served_name)
 
+    def prompt(self, item: EvalItem) -> str:
+        """The item prompt, with the grounding coordinate order switched to this model's `box_order`."""
+        orders = prompts()["box_orders"]
+        if item.format == "grounding" and self.box_order != "yxyx":
+            return item.prompt.replace(orders["yxyx"], orders[self.box_order])
+        return item.prompt
+
     async def predict(self, item: EvalItem) -> Prediction:
-        return await self.client.chat(item.prompt, item.images, system=self.system, max_tokens=self.max_tokens, body=self.body)
+        return await self.client.chat(self.prompt(item), item.images, system=self.system, max_tokens=self.max_tokens, body=self.body)
 
     def config(self) -> dict:
         return {"name": self.name, "model_id": self.model_id, "thinking": self.thinking, "effort": self.effort,
-                "max_tokens": self.max_tokens, "body": self.body, "cot": bool(self.system)}
+                "max_tokens": self.max_tokens, "body": self.body, "cot": bool(self.system), "box_order": self.box_order}

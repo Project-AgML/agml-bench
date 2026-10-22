@@ -221,7 +221,7 @@ def _grounding(s, meta, ds_dir, task) -> EvalItem | None:
     shown = ", ".join(pretty(n) for n in names)
     return EvalItem(
         item_id=f"{s['sample_id']}:grounding", sample_id=s["sample_id"], dataset=meta["name"], task=task, format="grounding",
-        images=s["images"], prompt=prompts()["grounding"].format(class_names=shown, a_crop=crops.phrase(crop)), ag_task=bucket,
+        images=s["images"], prompt=prompts()["grounding"].format(class_names=shown, a_crop=crops.phrase(crop), box_order=prompts()["box_orders"]["yxyx"]), ag_task=bucket,
         crop=crop, crop_source=src, gt_boxes=gt, class_names=names, image_size=s.get("image_size"))
 
 
