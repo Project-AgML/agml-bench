@@ -20,6 +20,7 @@ judge: RedHatAI/gemma-4-31B-it-FP8-dynamic
 models:
   google/gemma-4-12B-it:
     backend: vllm
+    concurrency: 64   # tokens/s vs 32 on a 48 GB Ada: +91% (profile_c64)
     weights_gb: 23.9
     est_vram_gb: 33
     serve_args: [--reasoning-parser, gemma4, --kv-cache-dtype, fp8]
@@ -65,6 +66,7 @@ models:
 
   mistralai/Ministral-3-14B-Instruct-2512:
     backend: vllm
+    concurrency: 64   # tokens/s vs 32 on a 48 GB Ada: +10% (profile_c64)
     weights_gb: 15.7
     est_vram_gb: 23
     serve_args: [--tokenizer-mode, mistral, --config-format, mistral, --load-format, mistral, --kv-cache-dtype, fp8]
@@ -94,6 +96,7 @@ models:
 
   RedHatAI/Muse-Glimmer-30B-FP8-block:
     backend: vllm
+    concurrency: 64   # tokens/s vs 32 on a 48 GB Ada: +14% (profile_c64)
     weights_gb: 34.4
     est_vram_gb: 42
     serve_args: [--reasoning-parser, muse_glimmer, --kv-cache-dtype, fp8]
@@ -107,6 +110,7 @@ models:
 
   openbmb/MiniCPM-V-4.7-35B-A3B-FP8:
     backend: vllm
+    concurrency: 64   # tokens/s vs 32 on a 48 GB Ada: +28% (profile_c64)
     weights_gb: 38.0
     est_vram_gb: 45
     serve_args: [--reasoning-parser, minicpmv, --kv-cache-dtype, fp8]
