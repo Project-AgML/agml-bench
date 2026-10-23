@@ -295,6 +295,9 @@ def test_register_models_from_yaml(tmp_path, monkeypatch):
         cmd = command("my-org/My-VLM", 8000)
         assert cmd[:3] == ["vllm", "serve", "my-org/My-VLM"] and cmd[-2:] == ["--quantization", "awq"]
         assert command("/models/unregistered", 8000)[2] == "/models/unregistered"
+        nemo = "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF"
+        register_models({nemo: {"parallel": 4}})
+        assert model_spec(nemo)["parallel"] == 4 and model_spec(nemo)["backend"] == "llamacpp" and model_spec(nemo)["gguf"]
     finally:
         reg.clear(); reg.update(saved)
 

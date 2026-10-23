@@ -33,7 +33,7 @@ def register_models(src) -> None:
     """Add or override registry models from a YAML path or a dict.
 
     Accepts the models.yaml layout ({models: {...}, defaults: {...}, judge: ...}) or a bare {model_id: spec}.
-    A spec without `backend` is served with vLLM."""
+    A new model without `backend` is served with vLLM; for a registered model only the given fields change."""
     reg = load("models.yaml")
     if not isinstance(src, dict):
         reg.setdefault("_extra", []).append(str(src))
@@ -43,7 +43,7 @@ def register_models(src) -> None:
     reg["defaults"] = {**reg["defaults"], **(src.get("defaults") or {})}
     reg["judge"] = src.get("judge", reg["judge"])
     for mid, spec in (src.get("models") or {}).items():
-        reg["models"][mid] = {"backend": "vllm", **(spec or {})}
+        reg["models"][mid] = {**reg["models"].get(mid, {"backend": "vllm"}), **(spec or {})}  # override only the given fields
 
 
 def ag_tasks() -> dict:
