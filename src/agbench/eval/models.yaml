@@ -77,14 +77,14 @@ models:
   nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF:
     backend: llamacpp  # the vLLM 24GB checkpoint needs Blackwell (b12x kernels); llama.cpp runs IQ2 on Ada
     weights_gb: 23.7
-    est_vram_gb: 32
-    parallel: 4   # tokens/s: 1 slot 125, 2 slots 144, 4 slots 147 (profile_nemo_p*)
+    est_vram_gb: 28
+    parallel: 8
     gguf: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
     mmproj: mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
-    draft: {repo: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF, file: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr.gguf}
-    serve_args: [--spec-type, draft-dflash, --spec-draft-n-max, "6", --spec-draft-ngl, "999",
-                 --cache-type-k, q8_0, --cache-type-v, q8_0, --batch-size, "2048", --ubatch-size, "512"]
-    draft_flag: --spec-draft-model
+    # No DFlash draft: batched it is slower. Tokens/s with draft 1/2/4/8 slots: 125/144/147/154;
+    # without: 4 slots 166, 8 slots 202 (profile_nemo_*). To use it: draft: {repo: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF,
+    # file: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr.gguf}, draft_flag: --spec-draft-model, serve_args += --spec-type draft-dflash
+    serve_args: [--cache-type-k, q8_0, --cache-type-v, q8_0, --batch-size, "2048", --ubatch-size, "512"]
     box_order: xyxy   # writes x,y order even when prompted for y,x
     sampling: {temperature: 1.0, top_p: 0.95}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
