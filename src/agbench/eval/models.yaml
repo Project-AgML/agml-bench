@@ -77,8 +77,8 @@ models:
   nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF:
     backend: llamacpp  # the vLLM 24GB checkpoint needs Blackwell (b12x kernels); llama.cpp runs IQ2 on Ada
     weights_gb: 23.7
-    est_vram_gb: 28
-    parallel: 2
+    est_vram_gb: 32
+    parallel: 4   # tokens/s: 1 slot 125, 2 slots 144, 4 slots 147 (profile_nemo_p*)
     gguf: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
     mmproj: mmproj-NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB.gguf
     draft: {repo: nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-GGUF, file: NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr.gguf}
