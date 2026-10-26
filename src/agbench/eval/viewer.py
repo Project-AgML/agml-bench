@@ -247,8 +247,7 @@ def page_compute():
     st.title("Compute")
     path = Path(args.profile or "") / "profile.json"
     data = json.loads(path.read_text()) if args.profile and path.exists() else None
-    prof_dir = Path(args.profile).resolve() if args.profile else None
-    real = [r for r in runs() if not (prof_dir and prof_dir in Path(r["dir"]).resolve().parents)]
+    real = [r for r in runs() if Path(r["dir"]).name not in ("batch", "seq")]  # profile sub-runs aren't real runs
     act = actual_frames(real, data)
     if data is None and not len(act["models"]):
         st.info("No compute data. Pass `--profile <out dir>` for estimates; runs record their own compute in compute.json.")
