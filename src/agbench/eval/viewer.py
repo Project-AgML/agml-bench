@@ -221,8 +221,9 @@ def page_samples():
                 if r.get("reasoning"):
                     with st.expander(f"Reasoning ({r.get('completion_tokens', 0)} tokens, {r.get('latency_s', 0):.1f}s)"):
                         st.text(r["reasoning"][:8000])
-                if r.get("truncated") or r.get("error"):
-                    st.warning(r.get("error") or "Truncated at max_tokens")
+                err = r.get("error") if isinstance(r.get("error"), str) else None  # NaN in rows without an error
+                if r.get("truncated") is True or err:
+                    st.warning(err or "Truncated at max_tokens")
 
 
 def page_crops():
