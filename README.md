@@ -97,7 +97,7 @@ Options:
 --only '^AgroBench$'           # regex on dataset name
 --limit-per-dataset 5
 --no-thinking
---reasoning-effort low         # low | medium | high
+--reasoning-effort medium      # low (default) | medium | high
 --concurrency 16
 --run-dir runs/<run_dir>       # resume (with --judge: judge whatever is left)
 ```

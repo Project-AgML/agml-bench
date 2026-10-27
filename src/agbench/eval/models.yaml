@@ -1,6 +1,6 @@
 # Model registry. Settings follow each HF model card.
 #   thinking:  request fields that turn thinking on (merged into the request body)
-#   effort:    request fields per --reasoning-effort level
+#   effort:    request fields per --reasoning-effort level (default low)
 #   cot:       true -> no native thinking; use the CoT system prompt and <answer> tags
 #   config_overlay: {repo, files}: serve a copy of the snapshot with these files taken from another repo
 #   parallel:  llama-server slots (-np); each gets max_model_len context
@@ -27,6 +27,10 @@ models:
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 64}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+    effort:   # no native effort levels: cap thinking tokens
+      low: {thinking_token_budget: 1024}
+      medium: {thinking_token_budget: 4096}
+      high: {}
 
   RedHatAI/gemma-4-31B-it-FP8-dynamic:
     backend: vllm
@@ -36,6 +40,10 @@ models:
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 64}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+    effort:   # no native effort levels: cap thinking tokens
+      low: {thinking_token_budget: 1024}
+      medium: {thinking_token_budget: 4096}
+      high: {}
 
   Qwen/Qwen3.8-27B-FP8:
     backend: vllm
@@ -61,6 +69,10 @@ models:
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 20, min_p: 0.0, presence_penalty: 1.5}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+    effort:   # no native effort levels: cap thinking tokens
+      low: {thinking_token_budget: 1024}
+      medium: {thinking_token_budget: 4096}
+      high: {}
     bbox_key_format: {bbox_2d: xyxy_1000}
     box_order: xyxy   # Qwen's own grounding format is x-first
 
@@ -120,4 +132,8 @@ models:
     sampling: {temperature: 0.7, top_p: 0.95, top_k: 100, min_p: 0.0, repetition_penalty: 1.03}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+    effort:   # no native effort levels: cap thinking tokens
+      low: {thinking_token_budget: 1024}
+      medium: {thinking_token_budget: 4096}
+      high: {}
     box_order: xyxy   # MiniCPM-V 4.7 grounds as [x1, y1, x2, y2] on 0-1000 (MiniCPM-V CookBook)

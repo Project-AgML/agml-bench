@@ -51,7 +51,7 @@ def request_body(spec: dict, thinking: bool, effort: str | None) -> dict:
 class VLMMethod(Method):
     """Prompt a VLM behind an OpenAI-compatible endpoint, using the registry settings for `model_id`."""
 
-    def __init__(self, endpoint: str, model_id: str, thinking: bool = True, effort: str | None = "medium",
+    def __init__(self, endpoint: str, model_id: str, thinking: bool = True, effort: str | None = "low",
                  max_tokens: int | None = None, body: dict | None = None, served_name: str | None = None):
         self.spec = model_spec(model_id)
         self.name, self.model_id, self.thinking, self.effort = model_id, model_id, thinking, effort

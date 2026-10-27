@@ -57,18 +57,9 @@ def steady_wall(recs: list[dict], conc: int, wall: float) -> float:
     return len(recs) * (starts[-1] - starts[conc]) / (len(starts) - conc - 1)
 
 
-EFFORT_BUDGETS = {"low": 1024, "medium": 4096, "high": None}  # thinking-token caps for vLLM models with on/off thinking only
-
-
 def variant_settings(spec: dict, variant: str) -> tuple[bool, str | None, dict]:
-    """(thinking, effort, extra request body) for an effort variant: off | low | medium | high.
-    Models with native effort levels use them; vLLM models with on/off thinking get a thinking_token_budget."""
-    if variant == "off":
-        return False, None, {}
-    if spec.get("effort") or spec.get("cot") or spec["backend"] != "vllm":
-        return True, variant, {}
-    budget = EFFORT_BUDGETS[variant]
-    return True, None, ({"thinking_token_budget": budget} if budget else {})
+    """(thinking, effort, extra request body) for an effort variant: off | low | medium | high (levels from models.yaml)."""
+    return (False, None, {}) if variant == "off" else (True, variant, {})
 
 
 def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task: int, per_task_seq: int,
@@ -153,7 +144,7 @@ def min_gpu(r: dict, hw_gb: float) -> int | None:
 
 
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
-                concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
+                concurrency: int | None = None, thinking: bool = True, effort: str = "low", judge: bool = True,
                 cleanup_weights: bool = False, redo: bool = False, variants: list[str] | None = None) -> dict:
     """Profiles each model in turn (each `variants` entry as its own row). Rows already profiled (no error) in
     out_dir/profile.json are kept unless redo."""
