@@ -56,8 +56,8 @@ models:
     backend: vllm
     weights_gb: 37.5
     est_vram_gb: 45
-    serve_args: [--reasoning-parser, qwen3, --kv-cache-dtype, fp8,
-                 --speculative-config, '{"method":"qwen3_next_mtp","num_speculative_tokens":2}']
+    concurrency: 64   # without MTP: 1502 tokens/s at 64 vs 1037 with MTP at 32 (opt_qwen36_*); MTP slows batched decoding
+    serve_args: [--reasoning-parser, qwen3, --kv-cache-dtype, fp8]
     sampling: {temperature: 1.0, top_p: 0.95, top_k: 20, min_p: 0.0, presence_penalty: 1.5}
     thinking: {chat_template_kwargs: {enable_thinking: true}}
     no_thinking: {chat_template_kwargs: {enable_thinking: false}}
@@ -66,7 +66,8 @@ models:
 
   mistralai/Ministral-3-14B-Instruct-2512:
     backend: vllm
-    concurrency: 64   # tokens/s vs 32 on a 48 GB Ada: +10% (profile_c64)
+    concurrency: 128   # tokens/s on a 48 GB Ada: 726 at 32, 799 at 64, 930 at 128 (profile_c64, opt_c128)
+    max_num_seqs: 128
     weights_gb: 15.7
     est_vram_gb: 23
     serve_args: [--tokenizer-mode, mistral, --config-format, mistral, --load-format, mistral, --kv-cache-dtype, fp8]
