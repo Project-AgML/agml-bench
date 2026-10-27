@@ -57,43 +57,69 @@ def steady_wall(recs: list[dict], conc: int, wall: float) -> float:
     return len(recs) * (starts[-1] - starts[conc]) / (len(starts) - conc - 1)
 
 
+EFFORT_BUDGETS = {"low": 1024, "medium": 4096, "high": None}  # thinking-token caps for vLLM models with on/off thinking only
+
+
+def variant_settings(spec: dict, variant: str) -> tuple[bool, str | None, dict]:
+    """(thinking, effort, extra request body) for an effort variant: off | low | medium | high.
+    Models with native effort levels use them; vLLM models with on/off thinking get a thinking_token_budget."""
+    if variant == "off":
+        return False, None, {}
+    if spec.get("effort") or spec.get("cot") or spec["backend"] != "vllm":
+        return True, variant, {}
+    budget = EFFORT_BUDGETS[variant]
+    return True, None, ({"thinking_token_budget": budget} if budget else {})
+
+
 def profile_model(model_id: str, all_items: list[EvalItem], out: Path, per_task: int, per_task_seq: int,
-                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler) -> dict:
+                  concurrency: int | None, thinking: bool, effort: str, gpu: GPUSampler,
+                  variants: list[str] | None = None) -> list[dict]:
+    """One result per variant (or one with the given thinking/effort); the model is loaded once."""
     spec = model_spec(model_id)
     llama = spec["backend"] == "llamacpp"
     conc = concurrency or (spec.get("parallel", 2) if llama else spec["concurrency"])
     batch_items = pick(all_items, per_task)
     seq_items = pick(all_items, per_task_seq)
-    res = {"model": model_id, "backend": "llamacpp" if llama else "vllm", "weights_gb": spec.get("weights_gb"),
-           "est_vram_gb": spec.get("est_vram_gb"), "concurrency": conc}
+    base = {"model": model_id, "backend": "llamacpp" if llama else "vllm", "weights_gb": spec.get("weights_gb"),
+            "est_vram_gb": spec.get("est_vram_gb"), "concurrency": conc}
+    plan = [(v, *variant_settings(spec, v)) for v in variants] if variants else [(None, thinking, effort, {})]
+    name = lambda v: f"{model_id} · {v}" if v else model_id
+    done = []
     t_start = time.time()
     try:
         with Server(model_id, out / "server.log") as srv:
-            res["load_s"] = round(srv.load_seconds, 1)
-            method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
-            kf = key_formats(spec)
-            t0 = time.time()
-            Benchmark(items=seq_items).run(method, out / "seq", concurrency=1, resume=False, key_formats=kf, gpu=gpu)
-            t1 = time.time()
-            method = VLMMethod(srv.endpoint, model_id, thinking=thinking, effort=effort)
-            Benchmark(items=batch_items).run(method, out / "batch", concurrency=conc, resume=False, key_formats=kf, gpu=gpu)
-            t2 = time.time()
+            base["load_s"] = round(srv.load_seconds, 1)
+            t_load, kf = time.time(), key_formats(spec)
+            for v, th, ef, body in plan:
+                d = out / v if v else out
+                t0 = time.time()
+                for items, sub, c in ((seq_items, "seq", 1), (batch_items, "batch", conc)):
+                    if items:
+                        method = VLMMethod(srv.endpoint, model_id, thinking=th, effort=ef, body=body)
+                        method.name = name(v)
+                        Benchmark(items=items).run(method, d / sub, concurrency=c, resume=False, key_formats=kf, gpu=gpu)
+                    if sub == "seq":
+                        t1 = time.time()
+                done.append((v, d, t0, t1, time.time(), {"thinking": th, "effort": ef, **body}))
     except Exception as e:
         log(f"{model_id} failed: {e}")
-        res["error"] = str(e)
-        return res
-    res["gpu_load"] = gpu.summary(t_start, t0)
-    res["gpu_seq"], res["gpu_batch"] = gpu.summary(t0, t1), gpu.summary(t1, t2)
-    res["peak_vram_gb"] = max(v.get("peak_vram_gb", 0) for v in (res["gpu_load"], res["gpu_seq"], res["gpu_batch"]))
-    seq, batch = read_jsonl(out / "seq" / "predictions.jsonl"), read_jsonl(out / "batch" / "predictions.jsonl")
-    res["batch_wall_s"] = round(t2 - t1, 1)
-    batch_wall = res["steady_wall_s"] = round(steady_wall(batch, conc, t2 - t1), 1)
-    res["tasks"] = {}
-    for k in sorted({_key(r) for r in batch}):
-        s, b = [r for r in seq if _key(r) == k], [r for r in batch if _key(r) == k]
-        share = sum(r["latency_s"] for r in b) / max(sum(r["latency_s"] for r in batch), 1e-9)
-        res["tasks"][k] = {"seq": _stats(s, None), "batch": _stats(b, batch_wall * share)}
-    return res
+        return [{**base, "model": name(v), "variant": v, "error": str(e)} for v, *_ in plan]
+    results = []
+    for v, d, t0, t1, t2, request in done:
+        res = {**base, "model": name(v), "variant": v, "request": request}
+        res["gpu_load"] = gpu.summary(t_start, t_load)
+        res["gpu_seq"], res["gpu_batch"] = gpu.summary(t0, t1), gpu.summary(t1, t2)
+        res["peak_vram_gb"] = max(x.get("peak_vram_gb", 0) for x in (res["gpu_load"], res["gpu_seq"], res["gpu_batch"]))
+        seq, batch = read_jsonl(d / "seq" / "predictions.jsonl"), read_jsonl(d / "batch" / "predictions.jsonl")
+        res["batch_wall_s"] = round(t2 - t1, 1)
+        batch_wall = res["steady_wall_s"] = round(steady_wall(batch, conc, t2 - t1), 1)
+        res["tasks"] = {}
+        for k in sorted({_key(r) for r in batch}):
+            sq, b = [r for r in seq if _key(r) == k], [r for r in batch if _key(r) == k]
+            share = sum(r["latency_s"] for r in b) / max(sum(r["latency_s"] for r in batch), 1e-9)
+            res["tasks"][k] = {"seq": _stats(sq, None), "batch": _stats(b, batch_wall * share)}
+        results.append(res)
+    return results
 
 
 def extrapolate(res: dict, counts: Counter) -> dict:
@@ -128,28 +154,34 @@ def min_gpu(r: dict, hw_gb: float) -> int | None:
 
 def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per_task_seq: int = 5,
                 concurrency: int | None = None, thinking: bool = True, effort: str = "medium", judge: bool = True,
-                cleanup_weights: bool = False, redo: bool = False) -> dict:
-    """Profiles each model in turn. Models already profiled (no error) in out_dir/profile.json are kept unless redo."""
+                cleanup_weights: bool = False, redo: bool = False, variants: list[str] | None = None) -> dict:
+    """Profiles each model in turn (each `variants` entry as its own row). Rows already profiled (no error) in
+    out_dir/profile.json are kept unless redo."""
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     all_items, _ = build_items(Path(data_dir))
     counts = Counter(_key(it) for it in all_items)
     settings = {"per_task": per_task, "per_task_seq": per_task_seq, "thinking": thinking, "effort": effort}
+    if variants:
+        settings["variants"] = variants
+    names = {m: [f"{m} · {v}" for v in variants] if variants else [m] for m in model_ids}
     prev = json.loads((out / "profile.json").read_text()) if (out / "profile.json").exists() and not redo else {}
     kept = {r["model"]: r for r in prev.get("models", []) if not r.get("error")} if prev.get("settings", settings) == settings else {}
-    results = [r for r in prev.get("models", []) if r["model"] in kept and r["model"] not in model_ids]
+    results = [r for r in prev.get("models", []) if r["model"] in kept and not any(r["model"] in n for n in names.values())]
     with GPUSampler() as gpu:
         hw = gpu.info()
         for m in model_ids:
-            if m in kept:
+            if all(n in kept for n in names[m]):
                 log(f"{m}: already profiled, keeping (use --redo to re-run)")
-                r = kept[m]
+                rs = [kept[n] for n in names[m]]
             else:
-                r = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking, effort, gpu)
+                rs = profile_model(m, all_items, out / m.replace("/", "__"), per_task, per_task_seq, concurrency, thinking,
+                                   effort, gpu, variants)
                 if cleanup_weights:
                     delete_weights(m)
-            r["full_run"] = extrapolate(r, counts)
-            results.append(r)
+            for r in rs:
+                r["full_run"] = extrapolate(r, counts)
+                results.append(r)
             (out / "profile.json").write_text(json.dumps({"hardware": hw, "counts": counts, "models": results,
                                                           "judge": prev.get("judge"), "settings": settings}, indent=2))
         n_open = sum(1 for it in all_items if it.format == "oeq" or it.qa_format == "open_ended")
@@ -165,7 +197,7 @@ def run_profile(model_ids: list[str], data_dir, out_dir, per_task: int = 20, per
 def profile_judge(out: Path, gpu: GPUSampler, open_items: int) -> dict:
     """Judge the open-ended answers collected during profiling (verdicts saved with each model's batch); report judge throughput."""
     judge_model = models()["judge"]
-    files = {p: read_jsonl(p) for p in out.glob("*/batch/predictions.jsonl")}
+    files = {p: read_jsonl(p) for p in out.glob("**/batch/predictions.jsonl")}
     recs = [r for rs in files.values() for r in rs if r.get("needs_judge")]
     if not recs:
         return {}

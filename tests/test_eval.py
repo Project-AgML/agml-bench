@@ -334,3 +334,30 @@ def test_box_order_switches_prompt_and_parser(data_dir, fake_server):
     text = '[{"box_2d": [100, 200, 300, 400], "label": "apple"}]'
     assert sc.parse_boxes(text, 1000, 1000, key_formats(model_spec(xy.model_id)))[0]["bbox"] == [100, 200, 300, 400]
     assert sc.parse_boxes(text, 1000, 1000, key_formats(model_spec(yx.model_id)))[0]["bbox"] == [200, 100, 400, 300]
+
+
+def test_profile_effort_variants_load_once(data_dir, tmp_path, fake_server, monkeypatch):
+    import contextlib
+    from agbench.eval import profile as pf
+    loads = []
+
+    @contextlib.contextmanager
+    def server(model_id, log_path, **kw):
+        loads.append(model_id)
+        yield type("S", (), {"endpoint": fake_server, "load_seconds": 1.0})()
+
+    class GPU:
+        def summary(self, *a):
+            return {}
+
+    monkeypatch.setattr(pf, "Server", server)
+    items, _ = build_items(data_dir, ["classification"], ["mcqa_within"])
+    FakeOpenAI.requests.clear()
+    rows = pf.profile_model("google/gemma-4-12B-it", items, tmp_path / "p", 2, 0, None, True, "medium", GPU(),
+                            ["off", "low", "high"])
+    assert loads == ["google/gemma-4-12B-it"] and [r["model"] for r in rows] == [f"google/gemma-4-12B-it · {v}" for v in ("off", "low", "high")]
+    bodies = FakeOpenAI.requests
+    assert bodies[0]["chat_template_kwargs"]["enable_thinking"] is False
+    assert any(b.get("thinking_token_budget") == 1024 for b in bodies) and not bodies[-1].get("thinking_token_budget")
+    assert pf.variant_settings(pf.model_spec("Qwen/Qwen3.8-27B-FP8"), "low") == (True, "low", {})
+    assert all("tasks" in r and not r.get("error") for r in rows)

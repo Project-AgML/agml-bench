@@ -179,6 +179,7 @@ def profile(
     cleanup_weights: bool = typer.Option(False, "--cleanup-weights", help="Delete each model's weights after profiling it."),
     out: Path = typer.Option(Path("reports/profile"), "--out"),
     redo: bool = typer.Option(False, "--redo", help="Re-profile models already in <out>/profile.json."),
+    efforts: list[str] = typer.Option(None, "--efforts", help="Profile each of these per model, loaded once: off | low | medium | high."),
     models_file: list[Path] = ModelsFileOpt,
 ):
     """Measure VRAM, latency and throughput per model and task; estimate full-run compute."""
@@ -187,7 +188,10 @@ def profile(
 
     _register(models_file)
     ids = list(reg()["models"]) if models == ["all"] else models
-    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, redo)
+    if bad := set(efforts or []) - {"off", "low", "medium", "high"}:
+        raise typer.BadParameter(f"--efforts: unknown {sorted(bad)}")
+    run_profile(ids, data_dir, out, per_task, per_task_seq, concurrency, thinking, effort, judge, cleanup_weights, redo,
+                efforts or None)
 
 
 @app.command()
