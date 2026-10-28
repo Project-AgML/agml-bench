@@ -17,9 +17,14 @@ def load_runs(paths) -> list[dict]:
                 runs.append({"dir": str(d), "name": run["method"].get("name", d.name), "run": run,
                              "metrics": json.loads((d / "metrics.json").read_text())})
     names = [r["name"] for r in runs]
-    for r in runs:  # profile runs share a model name across seq/batch dirs
-        if names.count(r["name"]) > 1:
-            r["name"] = f"{r['name']} ({Path(r['dir']).name})"
+    for r in runs:  # same model in several runs: label by effort, else by run dir (profile seq/batch)
+        same = [x for x in runs if x["name"] == r["name"]]
+        if len(same) > 1:
+            efforts = [x["run"]["method"].get("effort") for x in same]
+            tag = efforts[same.index(r)] if None not in efforts and len(set(efforts)) == len(efforts) else Path(r["dir"]).name
+            r["label"] = f"{r['name']} ({tag})"
+    for r in runs:
+        r["name"] = r.pop("label", r["name"])
     return runs
 
 
