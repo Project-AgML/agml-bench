@@ -240,9 +240,14 @@ def test_vlm_method_and_judge_against_fake_server(data_dir, tmp_path, fake_serve
     assert oeq["accuracy_macro"] == 1.0  # fake judge says every answer matches
     judge_body = FakeOpenAI.requests[-1]
     assert judge_body["temperature"] == 0.0 and judge_body["chat_template_kwargs"]["enable_thinking"] is False
+    n = len(FakeOpenAI.requests)
+    judge_run(tmp_path / "r", fake_server, "RedHatAI/gemma-4-31B-it-FP8-dynamic")
+    assert len(FakeOpenAI.requests) == n  # nothing left to judge
+    judge_run(tmp_path / "r", fake_server, "RedHatAI/gemma-4-31B-it-FP8-dynamic", redo=True)
+    assert len(FakeOpenAI.requests) == n + sum(bool(r.get("needs_judge")) for r in recs)  # everything re-judged
 
     sessions = json.loads((tmp_path / "r" / "compute.json").read_text())
-    assert [x["phase"] for x in sessions] == ["generate", "judge"] and sessions[0]["items"] == len(recs)
+    assert [x["phase"] for x in sessions] == ["generate", "judge", "judge"] and sessions[0]["items"] == len(recs)
     from agbench.eval.profile import actual_frames
     from agbench.eval.report import load_runs
     prof = {"models": [{"model": "google/gemma-4-12B-it", "load_s": 60,

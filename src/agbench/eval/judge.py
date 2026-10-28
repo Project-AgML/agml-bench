@@ -49,10 +49,15 @@ async def judge_records(records: list[dict], endpoint: str, judge_model: str, co
     return len(todo)
 
 
-def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrency: int = 32, gpu=None) -> dict:
+def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrency: int = 32, gpu=None, redo: bool = False) -> dict:
+    """Judge open-ended answers that have no verdict yet (`redo`: all of them, e.g. after changing the judge prompt)."""
     run_dir = Path(run_dir)
     judge_model = judge_model or models()["judge"]
     recs = read_jsonl(run_dir / "predictions.jsonl")
+    if redo:
+        for r in recs:
+            if r.get("needs_judge"):
+                r["judge_correct"] = r["judge_text"] = None
     t0 = time.time()
     n = asyncio.run(judge_records(recs, endpoint, judge_model, concurrency))
     t1 = time.time()

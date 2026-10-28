@@ -117,7 +117,7 @@ def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load
         yield srv
 
 
-def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None):
+def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, redo: bool = False):
     from agbench.eval.gpu import sampler
     from agbench.eval.judge import judge_run
     from agbench.eval.resources import models
@@ -125,11 +125,11 @@ def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None):
     jm = judge_model or models()["judge"]
     if endpoint:
         for d in run_dirs:
-            judge_run(d, endpoint, jm)
+            judge_run(d, endpoint, jm, redo=redo)
         return
     with sampler() as gpu, _served(jm, run_dirs[0], "judge_server.log", gpu, "judge_load") as srv:
         for d in run_dirs:
-            judge_run(d, srv.endpoint, jm, gpu=gpu)
+            judge_run(d, srv.endpoint, jm, gpu=gpu, redo=redo)
 
 
 @app.command("judge")
@@ -137,11 +137,12 @@ def judge_cmd(
     run_dir: list[Path] = typer.Option(..., "--run", help="Run dir(s) to judge."),
     judge_model: str = typer.Option(None, "--judge-model"),
     endpoint: str = typer.Option(None, "--judge-endpoint"),
+    redo: bool = typer.Option(False, "--redo", help="Re-judge answers that already have a verdict (e.g. after editing the judge prompts)."),
     models_file: list[Path] = ModelsFileOpt,
 ):
     """Judge open-ended answers with the judge model (default gemma-4-31B-it-FP8)."""
     _register(models_file)
-    _judge(run_dir, endpoint, judge_model)
+    _judge(run_dir, endpoint, judge_model, redo)
 
 
 def _print_summary(run_dir: Path):

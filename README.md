@@ -87,6 +87,7 @@ uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judg
 uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --task classification --format mcqa_within
 uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --endpoint http://localhost:8000
 uv run agbench eval judge --run runs/<run_dir>
+uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
 uv run agbench eval report --runs runs
 uv run agbench eval view --runs runs --profile reports/profile
 ```
@@ -117,6 +118,7 @@ Resume:
 ```bash
 uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judge --run-dir runs/<run_dir>
 uv run agbench eval judge --run runs/<run_dir>
+uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
 uv run agbench eval profile --data-dir $DATA --models all   # keeps models already in reports/profile/profile.json
 ```
 
