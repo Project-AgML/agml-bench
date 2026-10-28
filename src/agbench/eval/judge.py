@@ -62,7 +62,7 @@ def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrenc
     n = asyncio.run(judge_records(recs, endpoint, judge_model, concurrency))
     t1 = time.time()
     if n:
-        log_compute(run_dir, phase="judge", model=judge_model, items=n, concurrency=concurrency, wall_s=round(t1 - t0, 1),
+        log_compute(run_dir, phase="judge", model=judge_model, items=n, concurrency=concurrency, wall_s=round(t1 - t0, 1), redo=redo,
                     **(gpu.summary(t0, t1) if gpu else {}))
     write_jsonl(run_dir / "predictions.jsonl", recs)
     run = json.loads((run_dir / "run.json").read_text())

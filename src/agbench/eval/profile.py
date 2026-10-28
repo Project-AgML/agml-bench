@@ -227,6 +227,8 @@ def actual_frames(runs: list[dict], data: dict | None) -> dict:
         sessions = json.loads((d / "compute.json").read_text())
         phase = lambda name: [x for x in sessions if x["phase"] == name]
         gen, jud, load = phase("generate"), phase("judge"), phase("load")
+        last_redo = max((i for i, x in enumerate(jud) if x.get("redo")), default=0)
+        jud = jud[last_redo:]  # judging since the last full re-judge
         model = run["run"]["method"].get("model_id") or run["name"]
         label, effort = run["name"], run["run"]["method"].get("effort")
         p = prof.get(model, {})
