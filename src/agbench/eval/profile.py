@@ -218,6 +218,7 @@ def actual_frames(runs: list[dict], data: dict | None) -> dict:
     Estimates use the profile's batched throughput; actual per-task hours split the generation wall time by latency share."""
     prof = {r["model"]: r for r in (data or {}).get("models", [])}
     judge = (data or {}).get("judge") or {}
+    prof_effort = ((data or {}).get("settings") or {}).get("effort")
     model_rows, task_rows = [], []
     for run in runs:
         d = Path(run["dir"])
@@ -227,6 +228,7 @@ def actual_frames(runs: list[dict], data: dict | None) -> dict:
         phase = lambda name: [x for x in sessions if x["phase"] == name]
         gen, jud, load = phase("generate"), phase("judge"), phase("load")
         model = run["run"]["method"].get("model_id") or run["name"]
+        label, effort = run["name"], run["run"]["method"].get("effort")
         p = prof.get(model, {})
         n, lat = Counter(), defaultdict(float)
         for r in read_jsonl(d / "predictions.jsonl"):
@@ -240,14 +242,14 @@ def actual_frames(runs: list[dict], data: dict | None) -> dict:
             act = gen_h * lat[k] / max(sum(lat.values()), 1e-9)
             est_gen.append(est)
             act_cov += act if est else 0
-            task_rows.append({"run": d.name, "model": model, "task": k, "items": n[k], "est. h": _r(est), "actual h": _r(act),
+            task_rows.append({"run": label, "effort": effort, "task": k, "items": n[k], "est. h": _r(est), "actual h": _r(act),
                               "actual / est.": _r(act / est) if est else None})
         est_gen_h = sum(e for e in est_gen if e is not None) if any(e is not None for e in est_gen) else None
         n_judged, judge_h = sum(x["items"] for x in jud), sum(x["wall_s"] for x in jud) / 3600
         est_judge_h = n_judged / judge["throughput_per_s"] / 3600 if n_judged and judge.get("throughput_per_s") else None
         wall = sum(x["wall_s"] for x in gen) or 1
         model_rows.append({
-            "run": d.name, "model": model, "items": sum(n.values()), "concurrency": gen[-1]["concurrency"] if gen else None,
+            "run": label, "effort": effort, "profile effort": prof_effort if p else None, "items": sum(n.values()), "concurrency": gen[-1]["concurrency"] if gen else None,
             "load s (est.)": p.get("load_s"), "load s": load[-1]["wall_s"] if load else None,
             "generate h (est.)": _r(est_gen_h), "generate h": _r(gen_h),
             "judged": n_judged, "judge h (est.)": _r(est_judge_h), "judge h": _r(judge_h) if jud else None,

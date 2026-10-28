@@ -256,7 +256,8 @@ def page_compute():
     if len(act["models"]):
         st.subheader("Actual runs vs profile estimate")
         st.caption("Estimate: profile throughput (batched) × the items each run actually did. "
-                   "Actual: wall time logged by the run (compute.json); per-task hours split by latency share.")
+                   "Actual: wall time logged by the run (compute.json); per-task hours split by latency share. "
+                   "Compare like for like: `effort` (the run) should match `profile effort`.")
         am = act["models"]
         if am["generate h (est.)"].notna().any():
             st.bar_chart(am.set_index("run")[["generate h (est.)", "generate h", "judge h (est.)", "judge h"]], stack=False, height=280)
