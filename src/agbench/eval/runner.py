@@ -137,7 +137,11 @@ class Benchmark:
                     pred = await (asyncio.to_thread(method.predict, it) if sync else method.predict(it))
                 except Exception as e:
                     pred = Prediction(text="", finish_reason="error", error=f"{type(e).__name__}: {e}")
-                rec = grade(it, pred, key_formats)
+                try:
+                    rec = grade(it, pred, key_formats)
+                except Exception as e:  # one ungradable answer must not end the run; it is retried on resume
+                    log(f"{it.item_id}: grading failed: {type(e).__name__}: {e}")
+                    rec = grade(it, Prediction(text="", finish_reason="error", error=f"grading: {type(e).__name__}: {e}"), key_formats)
                 rec["t_end"] = round(time.time(), 2)
             async with lock:
                 with open(pred_path, "a") as f:

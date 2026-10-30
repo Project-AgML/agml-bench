@@ -83,7 +83,7 @@ def parse_letters(pred: str, n_options: int) -> list[str]:
     m = re.match(rf"^\W*([{L}](?:\s*(?:,|and|&|/)?\s*[{L}])*)(?=\s*(?:$|[.):\]\n]))", head)
     if m:
         return sorted(set(re.findall(rf"[{L}]", m.group(1))))
-    m = re.search(rf"(?:answer|option)s?\s*(?:is|are|:)?\s*\(?([{L}])(?![A-Za-z])", head, re.I)
+    m = re.search(rf"(?i:answer|option)s?\s*(?i:is|are|:)?\s*\(?([{L}])(?![A-Za-z])", head)  # letter stays upper-case
     return [m.group(1)] if m else []
 
 

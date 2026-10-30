@@ -366,3 +366,10 @@ def test_profile_effort_variants_load_once(data_dir, tmp_path, fake_server, monk
     assert any(b.get("thinking_token_budget") == 1024 for b in bodies) and not bodies[-1].get("thinking_token_budget")
     assert pf.variant_settings(pf.model_spec("Qwen/Qwen3.8-27B-FP8"), "low") == (True, "low", {})
     assert all("tasks" in r and not r.get("error") for r in rows)
+
+
+def test_parse_letters_ignores_lowercase_words():
+    assert sc.parse_letters("The answer is a weevil, not a beetle.", 4) == []
+    assert sc.parse_letters("The answer is B.", 4) == ["B"]
+    assert sc.parse_letters("answer: c", 4) == []
+    assert sc.parse_letters("A, C", 4) == ["A", "C"]
