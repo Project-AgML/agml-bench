@@ -149,16 +149,18 @@ class Benchmark:
                 done[it.item_id] = rec
                 prog.add()
 
+        n_before = len(done)
         with nullcontext(gpu) if gpu else sampler() as g:
             try:
                 await asyncio.gather(*(one(it) for it in todo))
-            finally:
+            finally:  # log the session even if it dies, so its GPU time still counts
                 await method.close()
-            t1 = time.time()
+                t1 = time.time()
+                if todo:
+                    log_compute(out, phase="generate", model=method.name, items=len(done) - n_before, concurrency=concurrency,
+                                wall_s=round(t1 - t0, 1), **({"partial": True} if len(done) - n_before < len(todo) else {}),
+                                **(g.summary(t0, t1) if g else {}))
         log(f"{method.name}: finished {len(todo)} items in {fmt_duration(t1 - t0)}")
-        if todo:
-            log_compute(out, phase="generate", model=method.name, items=len(todo), concurrency=concurrency,
-                        wall_s=round(t1 - t0, 1), **(g.summary(t0, t1) if g else {}))
         return finalize(out, [done[it.item_id] for it in self.items if it.item_id in done])
 
 
