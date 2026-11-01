@@ -373,3 +373,29 @@ def test_parse_letters_ignores_lowercase_words():
     assert sc.parse_letters("The answer is B.", 4) == ["B"]
     assert sc.parse_letters("answer: c", 4) == []
     assert sc.parse_letters("A, C", 4) == ["A", "C"]
+
+
+def test_mcqa_ablation_options(data_dir):
+    from agbench.eval.items import MCQAOptions
+    mc = lambda **kw: {it.item_id: it for it in build_items(data_dir, ["classification"], ["mcqa_within", "mcqa_across"], mcqa=MCQAOptions(**kw) if kw else None)[0]}
+    base = mc()
+    assert base == mc(nota_rate=0.3, order_seed=None, nota_position="end", idk=True)  # defaults unchanged
+    shuffled = mc(order_seed=1)
+    for k, it in base.items():  # same options and NOTA items, only the order changes
+        assert set(shuffled[k].choices) == set(it.choices) and shuffled[k].is_nota == it.is_nota and shuffled[k].answer == it.answer
+        assert shuffled[k].choices[-2:] == [NOTA, IDK]
+    assert any(shuffled[k].choices != base[k].choices for k in base)
+    rand = mc(order_seed=1, nota_position="random")
+    assert any(it.choices.index(NOTA) != len(it.choices) - 2 for it in rand.values())
+    lo, hi = mc(nota_rate=0.1), mc(nota_rate=0.5)
+    assert {k for k, it in lo.items() if it.is_nota} <= {k for k, it in base.items() if it.is_nota} <= {k for k, it in hi.items() if it.is_nota}
+    assert all(IDK not in it.choices and IDK not in it.prompt for it in mc(idk=False).values())
+
+
+def test_gen_seed_is_sent_per_item(data_dir, fake_server, tmp_path):
+    from agbench.eval.methods import item_seed
+    FakeOpenAI.requests.clear()
+    items = build_items(data_dir, ["classification"], ["mcqa_within"])[0][:3]
+    Benchmark(items=items).run(VLMMethod(fake_server, "google/gemma-4-12B-it", gen_seed=7), tmp_path / "r", concurrency=1, resume=False)
+    assert sorted(b["seed"] for b in FakeOpenAI.requests) == sorted(item_seed(7, it.item_id) for it in items)
+    assert item_seed(7, "x") == item_seed(7, "x") != item_seed(8, "x")

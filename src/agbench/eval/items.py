@@ -39,7 +39,7 @@ class EvalItem:
     ag_task: str
     crop: str
     crop_source: str
-    choices: list[str] | None = None      # options as shown, NOTA/IDK last
+    choices: list[str] | None = None      # options as shown (NOTA/IDK last unless nota_position="random")
     answer: object = None                 # correct option text / letters / yes-no / number / reference text
     gt_label: str | None = None
     gt_boxes: list[dict] | None = None    # [{label, bbox: [x1,y1,x2,y2] px}]
@@ -127,14 +127,27 @@ class AcrossPool:
         return picked
 
 
-def _mcqa(s, meta, classes, fmt, seed, pool) -> EvalItem:
+@dataclass
+class MCQAOptions:
+    """MCQA ablations. Defaults reproduce the standard benchmark.
+    nota_rate: share of items whose true class is removed (nested: items NOTA at a lower rate stay NOTA at a higher one).
+    order_seed: reshuffle only the option order (same distractors, same NOTA items); None keeps the standard order.
+    nota_position: "end" (NOTA, IDK last) or "random" (inserted at random positions, needs/uses the order shuffle).
+    idk: offer "I don't know"."""
+    nota_rate: float = NOTA_SHARE
+    order_seed: int | None = None
+    nota_position: str = "end"
+    idk: bool = True
+
+
+def _mcqa(s, meta, classes, fmt, seed, pool, opt: MCQAOptions = MCQAOptions()) -> EvalItem:
     p = prompts()
     label = s["label"]
     bucket = agtask.class_bucket(meta["name"], meta["catalog"], label)
     crop, src = crops.resolve(meta["catalog"], bucket, [label])
     rng = _rng(seed, s["sample_id"], fmt)
     others = [c for c in classes if norm(c) != norm(label)]
-    nota = bool(others) and _unit(seed, s["sample_id"], fmt, "nota") < NOTA_SHARE
+    nota = bool(others) and _unit(seed, s["sample_id"], fmt, "nota") < opt.nota_rate
     k = N_OPTIONS if nota else N_OPTIONS - 1
     if fmt == "mcqa_within":
         distractors = rng.sample(others, min(k, len(others)))
@@ -142,7 +155,15 @@ def _mcqa(s, meta, classes, fmt, seed, pool) -> EvalItem:
         distractors = pool.draw(rng, bucket, meta["name"], classes, label, k)
     opts = [pretty(c) for c in distractors] + ([] if nota else [pretty(label)])
     rng.shuffle(opts)
-    choices = opts + [p["nota"], p["idk"]]
+    tail = [p["nota"]] + ([p["idk"]] if opt.idk else [])
+    if opt.order_seed is None and opt.nota_position == "end":
+        choices = opts + tail
+    else:
+        orng = _rng("order", seed if opt.order_seed is None else opt.order_seed, s["sample_id"], fmt)
+        orng.shuffle(opts)
+        choices = opts + tail
+        if opt.nota_position == "random":
+            orng.shuffle(choices)
     return EvalItem(
         item_id=f"{s['sample_id']}:{fmt}", sample_id=s["sample_id"], dataset=meta["name"], task="classification", format=fmt,
         images=s["images"], prompt=p["mcqa"].format(a_crop=crops.phrase(crop), options=", ".join(choices)),
@@ -265,7 +286,7 @@ def _itt(s, meta) -> EvalItem:
 
 
 def build_items(data_dir: Path, tasks=None, formats=None, only: str | None = None, limit_per_dataset: int | None = None,
-                seed: int = 0) -> tuple[list[EvalItem], list[dict]]:
+                seed: int = 0, mcqa: MCQAOptions | None = None) -> tuple[list[EvalItem], list[dict]]:
     """Items for the selected tasks/formats, plus a list of skipped datasets with reasons."""
     tasks = tasks or TASKS
     items, skipped, pool = [], [], None
@@ -285,7 +306,7 @@ def build_items(data_dir: Path, tasks=None, formats=None, only: str | None = Non
                     pool = AcrossPool(data_dir)
                 for s in samples:
                     for f in fmts:
-                        items.append(_oeq(s, meta, classes) if f == "oeq" else _mcqa(s, meta, classes, f, seed, pool))
+                        items.append(_oeq(s, meta, classes) if f == "oeq" else _mcqa(s, meta, classes, f, seed, pool, mcqa or MCQAOptions()))
             elif task == "image_text_to_text":
                 items += [_itt(s, meta) for s in samples]
             else:

@@ -7,7 +7,7 @@ import subprocess
 import time
 from contextlib import nullcontext
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,7 +15,7 @@ from agbench.eval import metrics as mx
 from agbench.eval.client import Prediction
 from agbench.eval.gpu import sampler
 from agbench.eval.grade import grade
-from agbench.eval.items import build_items
+from agbench.eval.items import MCQAOptions, build_items
 from agbench.eval.methods import Method
 from agbench.progress import Progress, fmt_duration, log
 
@@ -84,12 +84,12 @@ class Benchmark:
     """
 
     def __init__(self, data_dir=None, tasks=None, formats=None, only: str | None = None, limit_per_dataset: int | None = None,
-                 seed: int = 0, items=None):
+                 seed: int = 0, items=None, mcqa: MCQAOptions | None = None):
         self.data_dir, self.seed = Path(data_dir) if data_dir else None, seed
         self.args = {"data_dir": str(self.data_dir), "tasks": tasks, "formats": formats, "only": only,
-                     "limit_per_dataset": limit_per_dataset, "seed": seed}
+                     "limit_per_dataset": limit_per_dataset, "seed": seed, "mcqa": asdict(mcqa or MCQAOptions())}
         if items is None:
-            items, self.skipped = build_items(self.data_dir, tasks, formats, only, limit_per_dataset, seed)
+            items, self.skipped = build_items(self.data_dir, tasks, formats, only, limit_per_dataset, seed, mcqa)
         else:
             self.skipped = []
         self.items = items

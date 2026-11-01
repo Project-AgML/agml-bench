@@ -62,7 +62,12 @@ def run(
     effort: str = typer.Option("low", "--reasoning-effort", help="low | medium | high"),
     max_tokens: int = typer.Option(None, "--max-tokens"),
     max_model_len: int = typer.Option(None, "--max-model-len"),
-    seed: int = typer.Option(0, "--seed"),
+    seed: int = typer.Option(0, "--seed", help="Item seed: which images, distractors and NOTA items."),
+    gen_seed: int = typer.Option(None, "--gen-seed", help="Sampling seed (per item); replicate runs use different values."),
+    order_seed: int = typer.Option(None, "--order-seed", help="MCQA: reshuffle only the option order."),
+    nota_position: str = typer.Option("end", "--nota-position", help="MCQA: end | random (NOTA/IDK placed among the options)."),
+    nota_rate: float = typer.Option(0.3, "--nota-rate", help="MCQA: share of items whose true class is removed."),
+    idk: bool = typer.Option(True, "--idk/--no-idk", help="MCQA: offer \"I don't know\"."),
     out: Path = typer.Option(Path("runs"), "--out"),
     run_dir: Path = typer.Option(None, "--run-dir", help="Resume into this run dir."),
     judge: bool = typer.Option(False, "--judge", help="Judge open-ended answers after the run."),
@@ -72,12 +77,16 @@ def run(
     """Run a model or custom method over the benchmark."""
     _register(models_file)
     from agbench.eval.gpu import sampler
+    from agbench.eval.items import MCQAOptions
     from agbench.eval.methods import VLMMethod, key_formats, model_spec
     from agbench.eval.runner import Benchmark
 
     if not (model or method):
         raise typer.BadParameter("pass --model or --method")
-    bench = Benchmark(data_dir, task or None, fmt or None, only, limit_per_dataset, seed)
+    if nota_position not in ("end", "random"):
+        raise typer.BadParameter("--nota-position: end | random")
+    bench = Benchmark(data_dir, task or None, fmt or None, only, limit_per_dataset, seed,
+                      mcqa=MCQAOptions(nota_rate, order_seed, nota_position, idk))
     typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
     if method:
         m = _load_method(method, method_kwargs)
@@ -95,10 +104,11 @@ def run(
             ids = {it.item_id for it in bench.items}
             res = finalize(rd, [r for r in read_jsonl(rd / "predictions.jsonl") if r["item_id"] in ids])
         elif endpoint:
-            res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf)
+            res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens, gen_seed=gen_seed), rd, conc, key_formats=kf)
         else:
             with sampler() as gpu, _served(model, rd, "server.log", gpu, max_model_len=max_model_len) as srv:
-                res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens), rd, conc, key_formats=kf, gpu=gpu)
+                res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens, gen_seed=gen_seed), rd, conc,
+                                key_formats=kf, gpu=gpu)
     if judge and res.metrics["pending_judge"]:
         _judge([rd], judge_endpoint, None)
     _print_summary(rd)

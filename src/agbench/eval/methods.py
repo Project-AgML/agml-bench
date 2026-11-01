@@ -1,5 +1,7 @@
 """Methods produce a prediction for an EvalItem. Subclass Method to benchmark your own approach."""
 
+import hashlib
+
 from agbench.eval.client import Client, Prediction, merge
 from agbench.eval.items import EvalItem
 from agbench.eval.resources import models, prompts
@@ -32,6 +34,10 @@ def model_spec(model_id: str) -> dict:
     return {**reg["defaults"], **reg["models"][model_id]}
 
 
+def item_seed(gen_seed: int, item_id: str) -> int:
+    return int(hashlib.sha256(f"{gen_seed}|{item_id}".encode()).hexdigest()[:8], 16)
+
+
 def key_formats(spec: dict) -> dict:
     """How to read box keys in this model's answers: box_2d follows the prompted `box_order`."""
     return {**(spec.get("bbox_key_format") or {}), "box_2d": f"{spec.get('box_order', 'yxyx')}_1000"}
@@ -52,13 +58,15 @@ class VLMMethod(Method):
     """Prompt a VLM behind an OpenAI-compatible endpoint, using the registry settings for `model_id`."""
 
     def __init__(self, endpoint: str, model_id: str, thinking: bool = True, effort: str | None = "low",
-                 max_tokens: int | None = None, body: dict | None = None, served_name: str | None = None):
+                 max_tokens: int | None = None, body: dict | None = None, served_name: str | None = None,
+                 gen_seed: int | None = None):
         self.spec = model_spec(model_id)
         self.name, self.model_id, self.thinking, self.effort = model_id, model_id, thinking, effort
         self.max_tokens = max_tokens or self.spec["max_tokens"]
         self.body = merge(request_body(self.spec, thinking, effort), body or {})
         self.system = prompts()["cot_system"] if (thinking and self.spec.get("cot")) else None
         self.box_order = self.spec.get("box_order", "yxyx")
+        self.gen_seed = gen_seed  # per-item sampling seed derived from it, so a run is reproducible
         self.client = Client(endpoint, served_name)
 
     def prompt(self, item: EvalItem) -> str:
@@ -69,8 +77,10 @@ class VLMMethod(Method):
         return item.prompt
 
     async def predict(self, item: EvalItem) -> Prediction:
-        return await self.client.chat(self.prompt(item), item.images, system=self.system, max_tokens=self.max_tokens, body=self.body)
+        body = self.body if self.gen_seed is None else {**self.body, "seed": item_seed(self.gen_seed, item.item_id)}
+        return await self.client.chat(self.prompt(item), item.images, system=self.system, max_tokens=self.max_tokens, body=body)
 
     def config(self) -> dict:
         return {"name": self.name, "model_id": self.model_id, "thinking": self.thinking, "effort": self.effort,
-                "max_tokens": self.max_tokens, "body": self.body, "cot": bool(self.system), "box_order": self.box_order}
+                "max_tokens": self.max_tokens, "body": self.body, "cot": bool(self.system), "box_order": self.box_order,
+                "gen_seed": self.gen_seed}
