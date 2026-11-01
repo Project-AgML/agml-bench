@@ -399,3 +399,21 @@ def test_gen_seed_is_sent_per_item(data_dir, fake_server, tmp_path):
     Benchmark(items=items).run(VLMMethod(fake_server, "google/gemma-4-12B-it", gen_seed=7), tmp_path / "r", concurrency=1, resume=False)
     assert sorted(b["seed"] for b in FakeOpenAI.requests) == sorted(item_seed(7, it.item_id) for it in items)
     assert item_seed(7, "x") == item_seed(7, "x") != item_seed(8, "x")
+
+
+def test_stats_bootstrap_and_tests():
+    from agbench.eval import stats as S
+    a = {f"d{i}": 0.6 + 0.01 * (i % 3) for i in range(30)}
+    b = {k: v - 0.05 for k, v in a.items()}  # A beats B by 5 points on every dataset
+    p = S.paired(a, b)
+    assert abs(p["diff"] - 0.05) < 1e-9 and p["lo"] > 0 and p["p_boot"] < 0.01
+    tied = S.paired(a, {k: v + (0.05 if i % 2 else -0.05) for i, (k, v) in enumerate(a.items())})
+    assert tied["lo"] < 0 < tied["hi"]
+    c = S.ci(a)
+    assert c["lo"] <= c["mean"] <= c["hi"]
+    assert S.mcnemar({1: True, 2: True, 3: False}, {1: False, 2: True, 3: False}) == {"a_only": 1, "b_only": 0, "p": 1.0}
+    assert S.holm([0.01, 0.04, 0.03]) == [0.03, 0.06, 0.06]
+    recs = [{"dataset": "d", "ag_task": "disease", "is_nota": n, "nota_pick": pick, "idk": False, "correct": n == pick}
+            for n, pick in ((True, True), (True, False), (False, True), (False, False))]
+    beh = S.behaviour(recs)
+    assert beh["nota_recall"] == {"d": 0.5} and beh["false_nota"] == {"d": 0.5} and beh["over_commit"] == {"d": 0.5}

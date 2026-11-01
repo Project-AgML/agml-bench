@@ -206,6 +206,18 @@ def profile(
 
 
 @app.command()
+def stats(
+    runs: list[Path] = typer.Option(..., "--runs", help="Run dirs (or parents) to analyse together, e.g. the seeds of every model."),
+    out: Path = typer.Option(Path("reports/stats"), "--out"),
+    title: str = typer.Option("MCQA statistics", "--title"),
+):
+    """NOTA/IDK behaviour, seed and option-order stability, and model-vs-model tests, with dataset-bootstrap CIs."""
+    from agbench.eval.stats import write_report
+
+    typer.echo(f"report: {write_report(runs, out, title)}")
+
+
+@app.command()
 def view(
     runs: list[Path] = typer.Option([Path("runs")], "--runs"),
     profile_dir: Path = typer.Option(None, "--profile"),

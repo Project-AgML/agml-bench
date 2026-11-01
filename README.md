@@ -89,6 +89,7 @@ uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --endp
 uv run agbench eval judge --run runs/<run_dir>
 uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
 uv run agbench eval report --runs runs
+uv run agbench eval stats --runs runs/exp/seeds --out reports/stats/seeds
 uv run agbench eval view --runs runs --profile reports/profile
 ```
 
@@ -100,6 +101,10 @@ Options:
 --no-thinking
 --reasoning-effort medium      # low (default) | medium | high
 --concurrency 16
+--gen-seed 1                   # sampling seed (replicate runs)
+--order-seed 1 --nota-position random   # MCQA: shuffle option order, NOTA/IDK anywhere
+--nota-rate 0.5                # MCQA: share of items whose true class is removed
+--no-idk                       # MCQA: drop "I don't know"
 --run-dir runs/<run_dir>       # resume (with --judge: judge whatever is left)
 ```
 
