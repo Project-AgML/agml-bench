@@ -13,7 +13,7 @@ app = typer.Typer(no_args_is_help=True, help="Benchmark models on base-data.")
 
 DataDirOpt = typer.Option(..., "--data-dir", help="Data dir with base-data/.")
 TaskOpt = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text")
-FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native")
+FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native | multiple_choice (ITT)")
 ModelsFileOpt = typer.Option(None, "--models-file", help="YAML of extra/overriding models (models.yaml layout).")
 
 

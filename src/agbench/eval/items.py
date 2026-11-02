@@ -19,7 +19,7 @@ FORMATS = {
     "classification": ["mcqa_within", "mcqa_across", "oeq"],
     "detection": ["grounding"],
     "segmentation": ["grounding"],
-    "image_text_to_text": ["native"],
+    "image_text_to_text": ["native", "multiple_choice"],  # native = every ITT question; multiple_choice = only those
 }
 N_OPTIONS = 4
 NOTA_SHARE = 0.3
@@ -341,7 +341,8 @@ def build_items(data_dir: Path, tasks=None, formats=None, only: str | None = Non
                     for f in fmts:
                         items.append(_oeq(s, meta, classes) if f == "oeq" else _mcqa(s, meta, classes, f, seed, pool, mcqa or MCQAOptions()))
             elif task == "image_text_to_text":
-                items += [_itt(s, meta, seed, mcqa or MCQAOptions()) for s in samples]
+                its = [_itt(s, meta, seed, mcqa or MCQAOptions()) for s in samples]
+                items += its if "native" in fmts else [it for it in its if it.qa_format == "multiple_choice"]
             else:
                 items += [it for s in samples if (it := _grounding(s, meta, d, task)) is not None]
             for it in items[n0:]:
