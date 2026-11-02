@@ -60,6 +60,22 @@ def summary_frames(runs: list[dict], average: str = "macro") -> dict[str, pd.Dat
     return out
 
 
+def write_csv(runs: list[dict], out: Path) -> Path:
+    """Every run's scores, long format: per task (scores.csv), per task × ag task (ag_tasks.csv), per dataset (datasets.csv).
+    Each row carries the run's settings, so repeated runs (seeds, ablations) stay distinguishable."""
+    out = Path(out)
+    out.mkdir(parents=True, exist_ok=True)
+    f = summary_frames(runs)
+    info = pd.DataFrame([{"run": r["dir"], "run_dir": Path(r["dir"]).name, "model_id": r["run"]["method"].get("model_id"),
+                          **variant(r["run"])} for r in runs])
+    for name, key in (("scores", "cv_rows"), ("ag_tasks", "ag_rows"), ("datasets", "datasets")):
+        if len(f[key]):
+            df = f[key].merge(info, on="run", how="left").drop(columns=["run"])
+            front = ["model", "model_id", "run_dir", *variant(runs[0]["run"]).keys()]
+            df[front + [c for c in df.columns if c not in front]].to_csv(out / f"{name}.csv", index=False)
+    return out
+
+
 def leaderboard_md(runs: list[dict], average: str = "macro") -> str:
     f = summary_frames(runs, average)
     parts = [f"# Leaderboard ({average} over datasets)\n"]

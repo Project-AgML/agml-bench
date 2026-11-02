@@ -89,6 +89,7 @@ uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --endp
 uv run agbench eval judge --run runs/<run_dir>
 uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
 uv run agbench eval report --runs runs
+uv run agbench eval report --runs runs/full --csv reports/scores/full_low   # scores.csv, ag_tasks.csv, datasets.csv
 uv run agbench eval stats --runs runs/exp/seeds --out reports/stats/seeds
 uv run agbench eval view --runs runs --profile reports/profile
 ```

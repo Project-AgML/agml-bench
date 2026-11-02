@@ -167,14 +167,18 @@ def report(
     runs: list[Path] = typer.Option([Path("runs")], "--runs"),
     average: str = typer.Option("macro", "--average", help="macro | micro"),
     out: Path = typer.Option(None, "--out", help="Write the leaderboard markdown here."),
+    csv: Path = typer.Option(None, "--csv", help="Write scores.csv (per task), ag_tasks.csv and datasets.csv to this dir."),
 ):
     """Leaderboard across runs."""
-    from agbench.eval.report import leaderboard_md, load_runs
+    from agbench.eval.report import leaderboard_md, load_runs, write_csv
 
-    md = leaderboard_md(load_runs(runs), average)
+    rs = load_runs(runs)
+    md = leaderboard_md(rs, average)
     typer.echo(md)
     if out:
         out.write_text(md)
+    if csv:
+        typer.echo(f"csv: {write_csv(rs, csv)}")
 
 
 @app.command()
