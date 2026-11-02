@@ -129,12 +129,14 @@ class AcrossPool:
 
 @dataclass
 class MCQAOptions:
-    """MCQA ablations. Defaults reproduce the standard benchmark.
-    nota_rate: share of items whose true class is removed (nested: items NOTA at a lower rate stay NOTA at a higher one).
-    order_seed: reshuffle only the option order (same distractors, same NOTA items); None keeps the standard order.
-    nota_position: "end" (NOTA, IDK last) or "random" (inserted at random positions, needs/uses the order shuffle).
+    """Ablations for every multiple-choice item (classification MCQA and ITT multiple choice). Defaults reproduce
+    the standard benchmark.
+    nota_rate: share of items whose true option is removed, so NOTA is correct (nested: items NOTA at a lower rate
+        stay NOTA at a higher one). None = the defaults: 0.3 for classification MCQA, 0 for ITT (single-answer only).
+    order_seed: reshuffle only the option order (same options, same NOTA items); None keeps the standard order.
+    nota_position: "end" (NOTA, IDK last) or "random" (placed among the options).
     idk: offer "I don't know"."""
-    nota_rate: float = NOTA_SHARE
+    nota_rate: float | None = None
     order_seed: int | None = None
     nota_position: str = "end"
     idk: bool = True
@@ -147,7 +149,7 @@ def _mcqa(s, meta, classes, fmt, seed, pool, opt: MCQAOptions = MCQAOptions()) -
     crop, src = crops.resolve(meta["catalog"], bucket, [label])
     rng = _rng(seed, s["sample_id"], fmt)
     others = [c for c in classes if norm(c) != norm(label)]
-    nota = bool(others) and _unit(seed, s["sample_id"], fmt, "nota") < opt.nota_rate
+    nota = bool(others) and _unit(seed, s["sample_id"], fmt, "nota") < (NOTA_SHARE if opt.nota_rate is None else opt.nota_rate)
     k = N_OPTIONS if nota else N_OPTIONS - 1
     if fmt == "mcqa_within":
         distractors = rng.sample(others, min(k, len(others)))
@@ -249,17 +251,47 @@ def _grounding(s, meta, ds_dir, task) -> EvalItem | None:
 OPTION_RE = re.compile(r"^\s*([A-P])[\.\)]\s*(.+?)\s*$", re.M)
 
 
-def _itt(s, meta) -> EvalItem:
+def _itt_reshape(q: str, opts: list[tuple[str, str]], ans: list[str], sid: str, seed: int, opt: MCQAOptions):
+    """Rebuild an ITT multiple-choice question under the ablation options; returns (question, choices, answer letters)."""
+    p, L = prompts(), "ABCDEFGHIJKLMNOP"
+    stem = OPTION_RE.sub("", q).rstrip()
+    texts = [t for _, t in opts]
+    gold = [texts[L.index(a)] for a in ans]
+    native_nota = next((t for t in texts if re.match(r"none of (the )?above", norm(t))), None)
+    nota_text = native_nota or p["nota"]
+    rate = 0.0 if opt.nota_rate is None else opt.nota_rate
+    if len(gold) == 1 and not native_nota and len(texts) > 2 and _unit(seed, sid, "itt", "nota") < rate:
+        texts, gold = [t for t in texts if t != gold[0]], [nota_text]
+    body = [t for t in texts if t != native_nota]
+    tail = [nota_text] + ([p["idk"]] if opt.idk else [])
+    if opt.order_seed is not None or opt.nota_position == "random":
+        orng = _rng("order", seed if opt.order_seed is None else opt.order_seed, sid, "itt")
+        orng.shuffle(body)
+        choices = body + tail
+        if opt.nota_position == "random":
+            orng.shuffle(choices)
+    else:
+        choices = body + tail
+    lines = "\n".join(f"{L[i]}. {t}" for i, t in enumerate(choices))
+    return f"{stem}\n{lines}", choices, sorted(L[choices.index(g)] for g in gold)
+
+
+def _itt(s, meta, seed: int = 0, opt: MCQAOptions = MCQAOptions()) -> EvalItem:
     p = prompts()
     q = re.sub(r"<image>", "", s["question"])
     q = re.sub(r"image\d+:\s*,?\s*", "", q).strip()
     answer, fmt = str(s.get("answer") or ""), (s.get("strata") or {}).get("qa_format", "open_ended")
-    choices, gt = None, answer
+    choices, gt, is_nota = None, answer, False
     if fmt == "multiple_choice":
         opts = OPTION_RE.findall(q)
         letters = [l for l, _ in opts]
         ans = sorted(set(re.findall(r"^\s*([A-P])[\.\)]", answer, re.M)) or ([answer.strip()] if answer.strip() in letters else []))
-        if len(opts) >= 2 and ans and set(ans) <= set(letters) and letters == list("ABCDEFGHIJKLMNOP"[:len(letters)]):
+        if len(opts) >= 2 and ans and set(ans) <= set(letters) and letters == list("ABCDEFGHIJKLMNOP"[:len(letters)]) \
+                and opt != MCQAOptions():
+            q, choices, gt = _itt_reshape(q, opts, ans, s["sample_id"], seed, opt)
+            is_nota = [choices["ABCDEFGHIJKLMNOP".index(g)] for g in gt] == [p["nota"]] or any(
+                re.match(r"none of (the )?above", norm(choices["ABCDEFGHIJKLMNOP".index(g)])) for g in gt)
+        elif len(opts) >= 2 and ans and set(ans) <= set(letters) and letters == list("ABCDEFGHIJKLMNOP"[:len(letters)]):
             choices = [t for _, t in opts]
             extra = [x for x in (p["nota"], p["idk"]) if not (x == p["nota"] and any(re.match(r"none of (the )?above", norm(t)) for t in choices))]
             for x in extra:
@@ -282,7 +314,8 @@ def _itt(s, meta) -> EvalItem:
     return EvalItem(
         item_id=f"{s['sample_id']}:native", sample_id=s["sample_id"], dataset=meta["name"], task="image_text_to_text",
         format="native", images=s["images"], prompt=(q + ("\n\n" + suffix if suffix else "")).strip(), ag_task=bucket,
-        crop=crop, crop_source=src, choices=choices, answer=gt, qa_format=fmt, meta={"question": s["question"], "reference": answer})
+        crop=crop, crop_source=src, choices=choices, answer=gt, qa_format=fmt, is_nota=is_nota,
+        meta={"question": s["question"], "reference": answer})
 
 
 def build_items(data_dir: Path, tasks=None, formats=None, only: str | None = None, limit_per_dataset: int | None = None,
@@ -308,7 +341,7 @@ def build_items(data_dir: Path, tasks=None, formats=None, only: str | None = Non
                     for f in fmts:
                         items.append(_oeq(s, meta, classes) if f == "oeq" else _mcqa(s, meta, classes, f, seed, pool, mcqa or MCQAOptions()))
             elif task == "image_text_to_text":
-                items += [_itt(s, meta) for s in samples]
+                items += [_itt(s, meta, seed, mcqa or MCQAOptions()) for s in samples]
             else:
                 items += [it for s in samples if (it := _grounding(s, meta, d, task)) is not None]
             for it in items[n0:]:

@@ -10,7 +10,7 @@ def variant(run: dict) -> dict:
     """The settings that distinguish repeated runs of one model (effort, sampling seed, MCQA ablations)."""
     m, mc = run.get("method", {}), (run.get("benchmark") or {}).get("mcqa") or {}
     return {"effort": m.get("effort"), "gen_seed": m.get("gen_seed"), "order_seed": mc.get("order_seed"),
-            "nota_pos": mc.get("nota_position", "end"), "nota_rate": mc.get("nota_rate", 0.3), "idk": mc.get("idk", True)}
+            "nota_pos": mc.get("nota_position", "end"), "nota_rate": mc.get("nota_rate") or "default", "idk": mc.get("idk", True)}
 
 
 def load_runs(paths) -> list[dict]:

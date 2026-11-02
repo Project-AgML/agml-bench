@@ -1,10 +1,15 @@
-"""Statistics over repeated MCQA runs: seeds, option orders, NOTA rate, IDK, and model-vs-model tests.
+"""Statistics over repeated runs: seeds, option orders, NOTA rate, IDK, and model-vs-model tests.
+
+Formats: mcqa_within, mcqa_across, oeq, detection, segmentation, itt_mc (ITT multiple choice), itt_other (open-ended,
+yes/no, numeric). Accuracy uses the judge's verdict where there is one. NOTA/IDK behaviour and option order apply to
+the multiple-choice formats (mcqa_*, itt_mc).
 
 Every rate is computed per dataset (or per dataset × ag task) and macro-averaged, like the benchmark's summaries.
-Uncertainty comes from a bootstrap over datasets (B resamples, 95% percentile interval); model comparisons are
-paired over datasets, with a Wilcoxon signed-rank test and an item-level McNemar test as checks.
+Uncertainty comes from a bootstrap over datasets (B resamples, 95% percentile interval); comparisons are paired over
+datasets, with a Wilcoxon signed-rank test and an item-level McNemar test as checks.
 """
 
+import re
 from collections import defaultdict
 from itertools import combinations
 from pathlib import Path
@@ -13,31 +18,56 @@ import numpy as np
 import pandas as pd
 from scipy.stats import binomtest, chisquare, wilcoxon
 
+from agbench.eval.metrics import is_correct
 from agbench.eval.report import load_runs, variant
-from agbench.eval.resources import prompts
+from agbench.eval.resources import norm, prompts
 from agbench.eval.runner import read_jsonl
 
 B = 10_000
 BUCKETS = ("disease", "pest_damage", "species_id", "quality_maturity")
+FORMATS = ("mcqa_within", "mcqa_across", "oeq", "itt_mc", "itt_other", "detection", "segmentation")
+MC = ("mcqa_within", "mcqa_across", "itt_mc")
+LETTERS = "ABCDEFGHIJKLMNOP"
 
 
 # ---- loading ----
 
+def fmt_key(r: dict) -> str:
+    if r["task"] == "classification":
+        return r["format"]
+    if r["task"] == "image_text_to_text":
+        return "itt_mc" if r.get("qa_format") == "multiple_choice" else "itt_other"
+    return r["task"]
+
+
+def _is_nota_text(t) -> bool:
+    return bool(t) and (t == prompts()["nota"] or re.match(r"none of (the )?above", norm(t)) is not None)
+
+
 def load(paths) -> list[dict]:
-    """Runs with MCQA records; each record gets `pos` (chosen option index) and `gt_pos` (correct option index)."""
-    nota, out = prompts()["nota"], []
+    """Runs with their records. Each record gets `fk` (format key), `acc` (judge verdict where present), and for
+    multiple choice `pick` (chosen option text), `nota_pick`, `pos` / `gt_pos` (chosen / correct option index)."""
+    out = []
     for r in load_runs(paths):
         d = Path(r["dir"])
         items = {it["item_id"]: it for it in read_jsonl(d / "items.jsonl")} if (d / "items.jsonl").exists() else {}
         recs = []
         for x in read_jsonl(d / "predictions.jsonl"):
-            if x["task"] != "classification" or not x["format"].startswith("mcqa"):
-                continue
-            ch = (items.get(x["item_id"]) or {}).get("choices") or []
-            x["nota_pick"] = x.get("pred_label") == nota
-            x["pos"] = ch.index(x["pred_label"]) if x.get("pred_label") in ch else None
-            x["gt_pos"] = ch.index(x["gt"]) if x.get("gt") in ch else None
-            x["n_opts"] = len(ch)
+            x["fk"], x["acc"] = fmt_key(x), is_correct(x)
+            if x["fk"] in MC:
+                ch = (items.get(x["item_id"]) or {}).get("choices") or []
+                if x["fk"] == "itt_mc":
+                    picked = [LETTERS.index(c) for c in (x.get("pred_label") or "").split(",") if c in LETTERS[:len(ch)]]
+                    gold = [LETTERS.index(c) for c in (x.get("gt_label") or "").split(",") if c in LETTERS[:len(ch)]]
+                    x["pos"] = picked[0] if len(picked) == 1 else None
+                    x["gt_pos"] = gold[0] if len(gold) == 1 else None
+                    x["pick"] = ",".join(ch[i] for i in picked) or None
+                else:
+                    x["pos"] = ch.index(x["pred_label"]) if x.get("pred_label") in ch else None
+                    x["gt_pos"] = ch.index(x["gt"]) if x.get("gt") in ch else None
+                    x["pick"] = x.get("pred_label")
+                x["nota_pick"] = x["pos"] is not None and _is_nota_text(ch[x["pos"]])
+                x["n_opts"] = len(ch)
             recs.append(x)
         if recs:
             out.append({**r, "model": r["run"]["method"].get("model_id") or r["name"], "variant": variant(r["run"]), "recs": recs})
@@ -99,18 +129,18 @@ def holm(ps: list[float]) -> list[float]:
 
 # ---- behaviour metrics ----
 
-METRICS = {  # name: (value, where)
-    "accuracy": (lambda r: r["correct"], lambda r: True),
+METRICS = {  # name: (value, where); NOTA/IDK metrics are for multiple-choice formats
+    "accuracy": (lambda r: r["acc"], lambda r: True),
     "nota_recall": (lambda r: r["nota_pick"], lambda r: r["is_nota"]),
     "over_commit": (lambda r: not r["nota_pick"] and not r.get("idk"), lambda r: r["is_nota"]),
     "false_nota": (lambda r: r["nota_pick"], lambda r: not r["is_nota"]),
     "idk_rate": (lambda r: bool(r.get("idk")), lambda r: True),
-    "selective_acc": (lambda r: r["correct"], lambda r: not r.get("idk")),
+    "selective_acc": (lambda r: r["acc"], lambda r: not r.get("idk")),
 }
 
 
-def behaviour(recs, by_bucket=False) -> dict:
-    return {m: unit_rates(recs, v, w, by_bucket) for m, (v, w) in METRICS.items()}
+def behaviour(recs, by_bucket=False, mc=True) -> dict:
+    return {m: unit_rates(recs, v, w, by_bucket) for m, (v, w) in METRICS.items() if mc or m == "accuracy"}
 
 
 def _fmt(c: dict) -> str:
@@ -121,16 +151,14 @@ def behaviour_table(runs: list[dict], label) -> pd.DataFrame:
     """Rows: run × format × (all + ag-task buckets); cells: macro rate [95% CI]."""
     rows = []
     for r in runs:
-        for fmt in ("mcqa_within", "mcqa_across"):
-            recs = [x for x in r["recs"] if x["format"] == fmt]
-            if not recs:
-                continue
+        for fk in FORMATS:
+            recs = [x for x in r["recs"] if x["fk"] == fk]
             for scope in ("all",) + BUCKETS:
                 sub = recs if scope == "all" else [x for x in recs if x["ag_task"] == scope]
                 if sub:
-                    b = behaviour(sub)
-                    rows.append({"model": r["model"], "variant": label(r), "format": fmt, "ag_task": scope, "n_items": len(sub),
-                                 **{m: _fmt(ci(v)) for m, v in b.items()}})
+                    b = behaviour(sub, mc=fk in MC)
+                    rows.append({"model": r["model"], "variant": label(r), "format": fk, "ag_task": scope, "n_items": len(sub),
+                                 **{m: _fmt(ci(b[m])) if m in b else "" for m in METRICS}})
     return pd.DataFrame(rows)
 
 
@@ -143,59 +171,72 @@ def _by_model(runs):
     return g
 
 
+def _same_answer(fk: str):
+    """What counts as the same answer across repeats: the option (multiple choice) or the outcome (other formats)."""
+    return (lambda x: x["pick"]) if fk in MC else (lambda x: x["acc"] >= 0.5)
+
+
 def seeds_report(runs) -> pd.DataFrame:
-    """Per model and format: accuracy per seed, sd across seeds, share of items answered identically in every seed."""
+    """Per model and format: accuracy per seed, sd across seeds, share of items answered the same in every seed."""
     rows = []
     for model, rs in _by_model(runs).items():
         rs = sorted(rs, key=lambda r: str(r["variant"]["gen_seed"]))
-        for fmt in ("mcqa_within", "mcqa_across"):
-            accs = [ci(unit_rates([x for x in r["recs"] if x["format"] == fmt], lambda x: x["correct"]))["mean"] for r in rs]
-            picks = [{x["item_id"]: x["pred_label"] for x in r["recs"] if x["format"] == fmt} for r in rs]
-            common = set.intersection(*(set(p) for p in picks)) if picks else set()
+        for fk in FORMATS:
+            sets = [[x for x in r["recs"] if x["fk"] == fk] for r in rs]
+            if not all(sets):
+                continue
+            accs = [ci(unit_rates(s, lambda x: x["acc"]))["mean"] for s in sets]
+            same = _same_answer(fk)
+            picks = [{x["item_id"]: same(x) for x in s} for s in sets]
+            common = set.intersection(*(set(p) for p in picks))
             agree = np.mean([len({p[k] for p in picks}) == 1 for k in common]) if common else None
-            rows.append({"model": model, "format": fmt, "seeds": [r["variant"]["gen_seed"] for r in rs],
-                         "accuracy per seed": [round(100 * a, 2) for a in accs if a is not None],
-                         "mean": round(100 * np.mean(accs), 2), "sd": round(100 * np.std(accs, ddof=1), 2) if len(accs) > 1 else None,
-                         "items identical across seeds %": round(100 * agree, 1) if agree is not None else None, "items": len(common)})
+            rows.append({"model": model, "format": fk, "seeds": [r["variant"]["gen_seed"] for r in rs],
+                         "accuracy per seed": [round(100 * a, 2) for a in accs], "mean": round(100 * np.mean(accs), 2),
+                         "sd": round(100 * np.std(accs, ddof=1), 2) if len(accs) > 1 else None,
+                         "same answer in every seed %": round(100 * agree, 1) if agree is not None else None, "items": len(common)})
     return pd.DataFrame(rows)
 
 
 def order_report(runs) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Accuracy across option orders, answer consistency (same content in every order), and position bias."""
+    """Multiple choice: accuracy across option orders, answer consistency (same option in every order), position bias."""
     rows, pos_rows = [], []
     for model, rs in _by_model(runs).items():
-        for fmt in ("mcqa_within", "mcqa_across"):
-            sets = [[x for x in r["recs"] if x["format"] == fmt] for r in rs]
-            accs = [ci(unit_rates(s, lambda x: x["correct"]))["mean"] for s in sets]
-            picks = [{x["item_id"]: x["pred_label"] for x in s} for s in sets]
-            common = set.intersection(*(set(p) for p in picks)) if picks else set()
+        for fk in MC:
+            sets = [[x for x in r["recs"] if x["fk"] == fk] for r in rs]
+            if not all(sets):
+                continue
+            accs = [ci(unit_rates(s, lambda x: x["acc"]))["mean"] for s in sets]
+            picks = [{x["item_id"]: x["pick"] for x in s} for s in sets]
+            common = set.intersection(*(set(p) for p in picks))
             consistent = np.mean([len({p[k] for p in picks}) == 1 for k in common]) if common else None
             recs = [x for s in sets for x in s if x["pos"] is not None and x["gt_pos"] is not None]
             n = max((x["n_opts"] for x in recs), default=0)
             chosen = np.bincount([x["pos"] for x in recs], minlength=n)
             correct_at = np.bincount([x["gt_pos"] for x in recs], minlength=n)
-            p_chi = chisquare(chosen, correct_at * chosen.sum() / correct_at.sum()).pvalue if n and correct_at.all() else None
-            rows.append({"model": model, "format": fmt, "orders": len(rs), "accuracy mean": round(100 * np.mean(accs), 2),
+            keep = correct_at > 0
+            p_chi = chisquare(chosen[keep], correct_at[keep] * chosen[keep].sum() / correct_at[keep].sum()).pvalue if keep.sum() > 1 else None
+            rows.append({"model": model, "format": fk, "orders": len(rs), "accuracy mean": round(100 * np.mean(accs), 2),
                          "sd across orders": round(100 * np.std(accs, ddof=1), 2) if len(accs) > 1 else None,
                          "same answer in every order %": round(100 * consistent, 1) if consistent is not None else None,
                          "position bias p (chi-square)": p_chi})
             for i in range(n):
                 at = [x for x in recs if x["gt_pos"] == i]
-                pos_rows.append({"model": model, "format": fmt, "position": i + 1,
+                pos_rows.append({"model": model, "format": fk, "position": i + 1,
                                  "chosen %": round(100 * chosen[i] / max(chosen.sum(), 1), 1),
                                  "correct answer here %": round(100 * correct_at[i] / max(correct_at.sum(), 1), 1),
-                                 "accuracy when correct answer here %": round(100 * np.mean([x["correct"] for x in at]), 1) if at else None})
+                                 "accuracy when correct answer here %": round(100 * np.mean([x["acc"] for x in at]), 1) if at else None})
     return pd.DataFrame(rows), pd.DataFrame(pos_rows)
 
 
-def model_pairs(runs, metric: str = "accuracy", fmt: str = "mcqa_across") -> pd.DataFrame:
+def model_pairs(runs, metric: str = "accuracy", fk: str = "mcqa_across") -> pd.DataFrame:
     """All model pairs on one metric and format: paired dataset bootstrap, Wilcoxon, McNemar, Holm-adjusted p."""
     value, where = METRICS[metric]
-    per = {r["model"]: [x for x in r["recs"] if x["format"] == fmt] for r in runs}
+    per = {r["model"]: [x for x in r["recs"] if x["fk"] == fk] for r in runs}
+    per = {k: v for k, v in per.items() if v}
     rows = []
     for a, b in combinations(sorted(per), 2):
         pa = paired(unit_rates(per[a], value, where), unit_rates(per[b], value, where))
-        mc = mcnemar({x["item_id"]: bool(value(x)) for x in per[a] if where(x)}, {x["item_id"]: bool(value(x)) for x in per[b] if where(x)})
+        mc = mcnemar({x["item_id"]: value(x) >= 0.5 for x in per[a] if where(x)}, {x["item_id"]: value(x) >= 0.5 for x in per[b] if where(x)})
         rows.append({"a": a, "b": b, "a − b (pts)": None if pa["diff"] is None else round(100 * pa["diff"], 2),
                      "95% CI": None if pa["diff"] is None else f"[{100 * pa['lo']:+.1f}, {100 * pa['hi']:+.1f}]",
                      "p (bootstrap)": pa.get("p_boot"), "p (Wilcoxon)": pa.get("p_wilcoxon"), "p (McNemar)": mc["p"],
@@ -211,8 +252,10 @@ def within_vs_across(runs, metric: str = "false_nota", label=lambda r: "-") -> p
     value, where = METRICS[metric]
     rows = []
     for r in runs:
-        w = [x for x in r["recs"] if x["format"] == "mcqa_within" and where(x)]
-        a = [x for x in r["recs"] if x["format"] == "mcqa_across" and where(x)]
+        w = [x for x in r["recs"] if x["fk"] == "mcqa_within" and where(x)]
+        a = [x for x in r["recs"] if x["fk"] == "mcqa_across" and where(x)]
+        if not w or not a:
+            continue
         pa = paired(unit_rates(w, value), unit_rates(a, value))
         mc = mcnemar({x["sample_id"]: bool(value(x)) for x in w}, {x["sample_id"]: bool(value(x)) for x in a})
         rows.append({"model": r["model"], "variant": label(r), "metric": metric,
@@ -222,13 +265,14 @@ def within_vs_across(runs, metric: str = "false_nota", label=lambda r: "-") -> p
     return pd.DataFrame(rows)
 
 
-def write_report(paths, out: Path, title: str = "MCQA statistics") -> Path:
+def write_report(paths, out: Path, title: str = "Statistics") -> Path:
     runs = load(paths)
     out.mkdir(parents=True, exist_ok=True)
     differing = [k for k in (runs[0]["variant"] if runs else {}) if len({str(r["variant"][k]) for r in runs}) > 1]
     label = lambda r: ", ".join(f"{k}={r['variant'][k]}" for k in differing) or "-"
-    parts = [f"# {title}\n", f"Runs: {len(runs)} · varying: {', '.join(differing) or 'nothing'} · bootstrap B={B} over datasets\n"]
-    parts += ["## Behaviour (macro over datasets, 95% CI)\n", behaviour_table(runs, label).to_markdown(index=False)]
+    parts = [f"# {title}\n", f"Runs: {len(runs)} · varying: {', '.join(differing) or 'nothing'} · bootstrap B={B} over datasets\n",
+             "## Behaviour (macro over datasets, 95% CI; NOTA/IDK metrics for multiple choice)\n",
+             behaviour_table(runs, label).to_markdown(index=False)]
     if "gen_seed" in differing:
         parts += ["\n## Seeds\n", seeds_report(runs).to_markdown(index=False)]
     if "order_seed" in differing:
@@ -236,10 +280,13 @@ def write_report(paths, out: Path, title: str = "MCQA statistics") -> Path:
         parts += ["\n## Option order\n", summary.to_markdown(index=False), "\n### Position\n", pos.to_markdown(index=False)]
     base = [r for r in runs if all(str(r["variant"][k]) == str(runs[0]["variant"][k]) for k in differing)]
     if len({r["model"] for r in base}) > 1:
-        for fmt in ("mcqa_within", "mcqa_across"):
-            parts += [f"\n## Model pairs: accuracy, {fmt} ({label(base[0])})\n", model_pairs(base, "accuracy", fmt).to_markdown(index=False)]
-    parts += ["\n## Within vs across distractors (same images)\n",
-              pd.concat([within_vs_across(runs, m, label) for m in ("accuracy", "false_nota", "over_commit")]).to_markdown(index=False)]
+        for fk in FORMATS:
+            df = model_pairs(base, "accuracy", fk)
+            if len(df):
+                parts += [f"\n## Model pairs: accuracy, {fk} ({label(base[0])})\n", df.to_markdown(index=False)]
+    wa = [within_vs_across(runs, m, label) for m in ("accuracy", "false_nota", "over_commit")]
+    if any(len(x) for x in wa):
+        parts += ["\n## Within vs across distractors (same images)\n", pd.concat(wa).to_markdown(index=False)]
     p = out / "stats.md"
     p.write_text("\n".join(parts) + "\n")
     return p

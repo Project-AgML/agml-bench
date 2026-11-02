@@ -413,7 +413,7 @@ def test_stats_bootstrap_and_tests():
     assert c["lo"] <= c["mean"] <= c["hi"]
     assert S.mcnemar({1: True, 2: True, 3: False}, {1: False, 2: True, 3: False}) == {"a_only": 1, "b_only": 0, "p": 1.0}
     assert S.holm([0.01, 0.04, 0.03]) == [0.03, 0.06, 0.06]
-    recs = [{"dataset": "d", "ag_task": "disease", "is_nota": n, "nota_pick": pick, "idk": False, "correct": n == pick}
+    recs = [{"dataset": "d", "ag_task": "disease", "is_nota": n, "nota_pick": pick, "idk": False, "acc": float(n == pick)}
             for n, pick in ((True, True), (True, False), (False, True), (False, False))]
     beh = S.behaviour(recs)
     assert beh["nota_recall"] == {"d": 0.5} and beh["false_nota"] == {"d": 0.5} and beh["over_commit"] == {"d": 0.5}
