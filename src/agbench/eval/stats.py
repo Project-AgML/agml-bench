@@ -265,6 +265,44 @@ def within_vs_across(runs, metric: str = "false_nota", label=lambda r: "-") -> p
     return pd.DataFrame(rows)
 
 
+def _default_opts(r, *, order=True, nota=True, idk=True) -> bool:
+    """True if the run uses the standard option layout (except for the settings being varied)."""
+    v = r["variant"]
+    return ((not order or (v["order_seed"] is None and v["nota_pos"] == "end"))
+            and (not nota or v["nota_rate"] in ("default", 0.3)) and (not idk or v["idk"] is True))
+
+
+def _rate(v) -> float:
+    return 0.3 if v in ("default", None) else float(v)
+
+
+def ablation_report(runs, vary: str, ref) -> pd.DataFrame:
+    """Each variant vs the reference run of the same model (same items): accuracy and NOTA/IDK behaviour, paired over
+    datasets. `vary` names the setting; `ref(r)` marks the reference runs."""
+    rows = []
+    for model, rs in _by_model(runs).items():
+        refs = [r for r in rs if ref(r)]
+        if not refs:
+            continue
+        base = sorted(refs, key=lambda r: str(r["variant"]["gen_seed"]))[0]
+        for r in sorted(rs, key=lambda r: str(r["variant"][vary])):
+            for fk in MC:
+                a = [x for x in r["recs"] if x["fk"] == fk]
+                b = [x for x in base["recs"] if x["fk"] == fk]
+                if not a or not b:
+                    continue
+                row = {"model": model, vary: r["variant"][vary], "reference": "yes" if r is base else "", "format": fk}
+                for m in ("accuracy", "nota_recall", "false_nota", "over_commit", "idk_rate"):
+                    value, where = METRICS[m]
+                    ra = unit_rates(a, value, where)
+                    row[m] = _fmt(ci(ra))
+                    if r is not base:
+                        pa = paired(ra, unit_rates(b, value, where))
+                        row[f"Δ{m} vs ref"] = None if pa["diff"] is None else f"{100 * pa['diff']:+.1f} [{100 * pa['lo']:+.1f}, {100 * pa['hi']:+.1f}] p={pa['p_boot']:.3g}"
+                rows.append(row)
+    return pd.DataFrame(rows)
+
+
 def write_report(paths, out: Path, title: str = "Statistics") -> Path:
     runs = load(paths)
     out.mkdir(parents=True, exist_ok=True)
@@ -273,12 +311,22 @@ def write_report(paths, out: Path, title: str = "Statistics") -> Path:
     parts = [f"# {title}\n", f"Runs: {len(runs)} · varying: {', '.join(differing) or 'nothing'} · bootstrap B={B} over datasets\n",
              "## Behaviour (macro over datasets, 95% CI; NOTA/IDK metrics for multiple choice)\n",
              behaviour_table(runs, label).to_markdown(index=False)]
-    if "gen_seed" in differing:
-        parts += ["\n## Seeds\n", seeds_report(runs).to_markdown(index=False)]
-    if "order_seed" in differing:
-        summary, pos = order_report(runs)
+    seed_runs = [r for r in runs if _default_opts(r)]
+    if len({str(r["variant"]["gen_seed"]) for r in seed_runs}) > 1:
+        parts += ["\n## Seeds (default options)\n", seeds_report(seed_runs).to_markdown(index=False)]
+    order_runs = [r for r in runs if r["variant"]["order_seed"] is not None and _default_opts(r, order=False)]
+    if order_runs:
+        summary, pos = order_report(order_runs)
         parts += ["\n## Option order\n", summary.to_markdown(index=False), "\n### Position\n", pos.to_markdown(index=False)]
-    base = [r for r in runs if all(str(r["variant"][k]) == str(runs[0]["variant"][k]) for k in differing)]
+    nota_runs = [r for r in runs if _default_opts(r, nota=False)]
+    if len({_rate(r["variant"]["nota_rate"]) for r in nota_runs}) > 1:
+        parts += ["\n## NOTA rate (paired vs the default-rate run)\n",
+                  ablation_report(nota_runs, "nota_rate", lambda r: _rate(r["variant"]["nota_rate"]) == 0.3).to_markdown(index=False)]
+    idk_runs = [r for r in runs if _default_opts(r, idk=False)]
+    if len({r["variant"]["idk"] for r in idk_runs}) > 1:
+        parts += ["\n## IDK removed (paired vs the run with IDK)\n",
+                  ablation_report(idk_runs, "idk", lambda r: r["variant"]["idk"] is True).to_markdown(index=False)]
+    base = [r for r in seed_runs if str(r["variant"]["gen_seed"]) == str(min((str(x["variant"]["gen_seed"]) for x in seed_runs), default=""))] or seed_runs
     if len({r["model"] for r in base}) > 1:
         for fk in FORMATS:
             df = model_pairs(base, "accuracy", fk)
