@@ -1,0 +1,4783 @@
+{
+ "name": "african_plum_grading_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/african_plum_grading_classification",
+ "hf_sha": "f53bbcf6068f9509247b96895c94ef8127f8706d",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T01:22:33+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "bruised",
+   "cracked",
+   "rotten",
+   "spotted",
+   "unaffected",
+   "unripe"
+  ],
+  "indexed_rows": 4507
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "african_plum_grading_classification-e555ff3385",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f696fd8366",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-92f135cdfb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9cf40246bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-869d0cc59c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-bb164b9db2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0a60695a53",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a3ccea64c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-11fad819a1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-721a8fa832",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4340536fb6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-89020cff82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fb53fcd903",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-295bde46ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2462f2bce1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dff7f8e1e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dd5e7f640d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-78c95ebb79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a699768346",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9a0ae7c1db",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e7dd9bb40c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-646cdee043",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a167547058",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-52f72c68a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-b37d6b3280",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-571a1f1ca6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e466a4f2b8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d8be2a1c6a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-118082ffdc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fb6318a4b9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fffbd5b5aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-aac8525412",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fd6e55facc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f6886a9ae5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f80552ebd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3f39a4196f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-43ac75d294",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-41662cc332",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7197c5306b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-82f21a60f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "cracked"
+   ],
+   "ann": {
+    "label": "cracked"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-885228aab1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-02d8e374c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e6d0c9a207",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1f13fb486e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1435b161fc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-871f682787",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f54adb2b6e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7be5b312b1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8039905b36",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-17209ea6cc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-bf635803f1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 231,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-b21d236436",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9e0c98041b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ea47e930ac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-38834086bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c397626b3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5d4baf8344",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-6b9fedcdd8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-605e6e8a5a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4539c576f8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 307,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1c2a2244d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1b1fe9f452",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 325,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-b5a66a3713",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ac957f5d28",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-044379822a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e959f4e386",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7c02198570",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 372,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9487ca940a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 376,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-969d58beca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 385,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c6ff4dbb93",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 389,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-bd30305f79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4f67891a04",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 403,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7db45607b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9aff21cd3e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 413,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a81dc762fe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 418,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c79fa9de99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4a55fe6d6b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-62d28036b3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 430,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f972220a99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-133cb405c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0d888f31a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 462,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f09d00bbda",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 469,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-96db23efe9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 478,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "bruised"
+   ],
+   "ann": {
+    "label": "bruised"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0a794dc37a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4727ae88f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 598,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5743a52aa5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ad25e77ea9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 622,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-afc3389241",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 788,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9b276d5bb9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-732946b718",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 981,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2d3a39a481",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-693e719a7c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1054,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-07aa4732b7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-94cc1e7c20",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-bf09184403",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-884194f248",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a9964b554b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-46d7456dec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-96630d7df9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ecda70fcc0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1346,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-277cb3a85b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-159004937c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1412,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-cfacc0beaa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-473fa86467",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1513,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9c191f4c96",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1553,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4e7c851ae5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1574,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9fe01dca6d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1591,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-767b5c2691",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1597,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d6906d6dab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ca0711f353",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1632,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c0c1563ec4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1658,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5ae4f848a7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1691,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-cd5c01cd0f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-832b6de655",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1761,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9b0be4bd86",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a7565ce09a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1835,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-eef328bf34",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-88ea8a72e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1846,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5346849a2a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1882,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1e860a49b7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1955,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7729209f6c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1956,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a990b18b4c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a09de497ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2015,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5ca3622984",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2064,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ee486c4ffc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2099,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-93c84dc5a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-46e77b8330",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-64ceb9dca1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unaffected"
+   ],
+   "ann": {
+    "label": "unaffected"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5d72d013af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0a57ebbbe3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1f1e54c33c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-6498cae3e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8544e23ea4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-46118261b5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3f83c34ea7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0b1c446242",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2358,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2899fffff6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-c5e6ba7a39",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-06d231ecdf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2388,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fe33e2d85a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2396,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3246f82cea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2434,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a0574b9ae4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2481,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2d2eeaab44",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2482,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dfc91312d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2487,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-6fd573b2c2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2492,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1a5d5e1c51",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2518,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ad34a65326",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-77def3a2d5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2546,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9808089ffb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-26063d5ee8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2578,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4a7bd8587a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2585,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0110dce67c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2601,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7e75022fa6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-aed30289af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2653,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-27e3a2d1cb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2671,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-786a232ba0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2701,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-814d2c783e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2764,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-49425d62e5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-30bbc61117",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2772,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-cdf8b6eb43",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2791,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-594222c5aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2826,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dac0ddc686",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2852,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ebe66e1f86",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d78c0dc420",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2865,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8d2fe8c637",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2902,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0143289723",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2922,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-45fadc5273",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2956,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ab49335872",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2959,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-291a6a2aba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2960,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7fe1e8193c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-13c8d479c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2978,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-db6b1207e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3007,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-edee505089",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3020,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "unripe"
+   ],
+   "ann": {
+    "label": "unripe"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d93b9d3c58",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3035,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4b516722c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3038,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-320f2cf12e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3063,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1747c3d697",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3066,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-cc70b261da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3080,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f9c7b9c398",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3083,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-934ecca274",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3192,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-01396fbcd2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fc4882d320",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a50f589e73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7b57103af0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7fe769befd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ec781840c3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-230424ae4a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d9a6d8bafd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ce90dd8dc2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-025fa1fdd0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3327,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a00b953272",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3345,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-80229b2717",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-ec74e2ad3a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e6fc218bcf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3390,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-f833a6f437",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-18cbb160b7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-20aa9a448d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-1a68e20c99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3433,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9464996ddd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-bbeca9695f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3485,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-902c7b33ff",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8ad91ea852",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3508,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-06dd8ad612",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3533,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a99b1abb8a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3534,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-fd5a1559a9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d9fbad8239",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3565,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3945c2d725",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3587,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8ffea39ee8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-b0d8c84e54",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3632,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-eaeb759f22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3651,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dbdf84d776",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-b225b8f6c4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9d950be4a9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3680,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3fda751fee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3689,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-428b917065",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3727,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dee1d115f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-6c6acc41ab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2ebf9f6b33",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3773,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "spotted"
+   ],
+   "ann": {
+    "label": "spotted"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e14001bbca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3791,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-23eb5d59be",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3802,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2156ec85ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3810,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-13b1a66eb9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3841,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e37150d4ba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3888,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-e6118c625c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3896,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-0220bd3ac0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3929,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-624f8d8891",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3930,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-68e629b108",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3935,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a605ed36b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3940,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a091478fa7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3967,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-3a506b4c5b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3970,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-8b18d9862b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4004,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d07bbdef7c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4009,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9a78a675ca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4041,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-aadad3e3f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4060,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-db381cfa64",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4068,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-af2d7b0d7f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4069,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-55d0648c3d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4070,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-69ed4a23b5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5d01172151",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-189a36bfce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-5c1f745d14",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4f3ae26661",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-93c5d3ff9b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-efac6570db",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a4788d8232",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-859e022ae9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-4ea885dffb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-62a47240d5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-a54cd7a7ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7c4ff7cbb9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-7a15157761",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4296,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d2087b41f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-033d66a602",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-2302ac34fb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4329,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-88249c68b6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-07d5c5d265",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-9a63b5b6a9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-d5fcad7926",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-dacf2cf141",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "african_plum_grading_classification-19748dbc3f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rotten"
+   ],
+   "ann": {
+    "label": "rotten"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "african_plum_grading_classification-f696fd8366",
+    "african_plum_grading_classification-721a8fa832",
+    "african_plum_grading_classification-dd5e7f640d",
+    "african_plum_grading_classification-d8be2a1c6a",
+    "african_plum_grading_classification-43ac75d294",
+    "african_plum_grading_classification-8039905b36",
+    "african_plum_grading_classification-c397626b3c",
+    "african_plum_grading_classification-4539c576f8",
+    "african_plum_grading_classification-ac957f5d28",
+    "african_plum_grading_classification-4f67891a04",
+    "african_plum_grading_classification-ecda70fcc0",
+    "african_plum_grading_classification-277cb3a85b",
+    "african_plum_grading_classification-473fa86467",
+    "african_plum_grading_classification-9c191f4c96",
+    "african_plum_grading_classification-ee486c4ffc",
+    "african_plum_grading_classification-5d72d013af",
+    "african_plum_grading_classification-0a57ebbbe3",
+    "african_plum_grading_classification-9808089ffb",
+    "african_plum_grading_classification-814d2c783e",
+    "african_plum_grading_classification-db6b1207e9",
+    "african_plum_grading_classification-7b57103af0",
+    "african_plum_grading_classification-ce90dd8dc2",
+    "african_plum_grading_classification-025fa1fdd0",
+    "african_plum_grading_classification-80229b2717",
+    "african_plum_grading_classification-b225b8f6c4",
+    "african_plum_grading_classification-a091478fa7",
+    "african_plum_grading_classification-8b18d9862b",
+    "african_plum_grading_classification-033d66a602",
+    "african_plum_grading_classification-2302ac34fb",
+    "african_plum_grading_classification-19748dbc3f"
+   ],
+   "10": [
+    "african_plum_grading_classification-f696fd8366",
+    "african_plum_grading_classification-721a8fa832",
+    "african_plum_grading_classification-295bde46ae",
+    "african_plum_grading_classification-2462f2bce1",
+    "african_plum_grading_classification-dd5e7f640d",
+    "african_plum_grading_classification-571a1f1ca6",
+    "african_plum_grading_classification-d8be2a1c6a",
+    "african_plum_grading_classification-fb6318a4b9",
+    "african_plum_grading_classification-3f39a4196f",
+    "african_plum_grading_classification-43ac75d294",
+    "african_plum_grading_classification-8039905b36",
+    "african_plum_grading_classification-bf635803f1",
+    "african_plum_grading_classification-ea47e930ac",
+    "african_plum_grading_classification-c397626b3c",
+    "african_plum_grading_classification-4539c576f8",
+    "african_plum_grading_classification-1b1fe9f452",
+    "african_plum_grading_classification-b5a66a3713",
+    "african_plum_grading_classification-ac957f5d28",
+    "african_plum_grading_classification-e959f4e386",
+    "african_plum_grading_classification-4f67891a04",
+    "african_plum_grading_classification-2d3a39a481",
+    "african_plum_grading_classification-94cc1e7c20",
+    "african_plum_grading_classification-ecda70fcc0",
+    "african_plum_grading_classification-277cb3a85b",
+    "african_plum_grading_classification-473fa86467",
+    "african_plum_grading_classification-9c191f4c96",
+    "african_plum_grading_classification-5ae4f848a7",
+    "african_plum_grading_classification-eef328bf34",
+    "african_plum_grading_classification-ee486c4ffc",
+    "african_plum_grading_classification-93c84dc5a3",
+    "african_plum_grading_classification-5d72d013af",
+    "african_plum_grading_classification-0a57ebbbe3",
+    "african_plum_grading_classification-dfc91312d2",
+    "african_plum_grading_classification-9808089ffb",
+    "african_plum_grading_classification-aed30289af",
+    "african_plum_grading_classification-814d2c783e",
+    "african_plum_grading_classification-49425d62e5",
+    "african_plum_grading_classification-d78c0dc420",
+    "african_plum_grading_classification-13c8d479c1",
+    "african_plum_grading_classification-db6b1207e9",
+    "african_plum_grading_classification-01396fbcd2",
+    "african_plum_grading_classification-fc4882d320",
+    "african_plum_grading_classification-7b57103af0",
+    "african_plum_grading_classification-ce90dd8dc2",
+    "african_plum_grading_classification-025fa1fdd0",
+    "african_plum_grading_classification-80229b2717",
+    "african_plum_grading_classification-d9fbad8239",
+    "african_plum_grading_classification-3945c2d725",
+    "african_plum_grading_classification-eaeb759f22",
+    "african_plum_grading_classification-b225b8f6c4",
+    "african_plum_grading_classification-a605ed36b4",
+    "african_plum_grading_classification-a091478fa7",
+    "african_plum_grading_classification-8b18d9862b",
+    "african_plum_grading_classification-55d0648c3d",
+    "african_plum_grading_classification-189a36bfce",
+    "african_plum_grading_classification-5c1f745d14",
+    "african_plum_grading_classification-4f3ae26661",
+    "african_plum_grading_classification-033d66a602",
+    "african_plum_grading_classification-2302ac34fb",
+    "african_plum_grading_classification-19748dbc3f"
+   ],
+   "15": [
+    "african_plum_grading_classification-f696fd8366",
+    "african_plum_grading_classification-9cf40246bc",
+    "african_plum_grading_classification-721a8fa832",
+    "african_plum_grading_classification-89020cff82",
+    "african_plum_grading_classification-295bde46ae",
+    "african_plum_grading_classification-2462f2bce1",
+    "african_plum_grading_classification-dd5e7f640d",
+    "african_plum_grading_classification-571a1f1ca6",
+    "african_plum_grading_classification-d8be2a1c6a",
+    "african_plum_grading_classification-fb6318a4b9",
+    "african_plum_grading_classification-aac8525412",
+    "african_plum_grading_classification-f80552ebd3",
+    "african_plum_grading_classification-3f39a4196f",
+    "african_plum_grading_classification-43ac75d294",
+    "african_plum_grading_classification-82f21a60f9",
+    "african_plum_grading_classification-02d8e374c9",
+    "african_plum_grading_classification-871f682787",
+    "african_plum_grading_classification-8039905b36",
+    "african_plum_grading_classification-bf635803f1",
+    "african_plum_grading_classification-ea47e930ac",
+    "african_plum_grading_classification-38834086bf",
+    "african_plum_grading_classification-c397626b3c",
+    "african_plum_grading_classification-4539c576f8",
+    "african_plum_grading_classification-1b1fe9f452",
+    "african_plum_grading_classification-b5a66a3713",
+    "african_plum_grading_classification-ac957f5d28",
+    "african_plum_grading_classification-e959f4e386",
+    "african_plum_grading_classification-969d58beca",
+    "african_plum_grading_classification-4f67891a04",
+    "african_plum_grading_classification-a81dc762fe",
+    "african_plum_grading_classification-0a794dc37a",
+    "african_plum_grading_classification-2d3a39a481",
+    "african_plum_grading_classification-94cc1e7c20",
+    "african_plum_grading_classification-bf09184403",
+    "african_plum_grading_classification-ecda70fcc0",
+    "african_plum_grading_classification-277cb3a85b",
+    "african_plum_grading_classification-159004937c",
+    "african_plum_grading_classification-473fa86467",
+    "african_plum_grading_classification-9c191f4c96",
+    "african_plum_grading_classification-5ae4f848a7",
+    "african_plum_grading_classification-9b0be4bd86",
+    "african_plum_grading_classification-eef328bf34",
+    "african_plum_grading_classification-ee486c4ffc",
+    "african_plum_grading_classification-93c84dc5a3",
+    "african_plum_grading_classification-46e77b8330",
+    "african_plum_grading_classification-5d72d013af",
+    "african_plum_grading_classification-0a57ebbbe3",
+    "african_plum_grading_classification-1f1e54c33c",
+    "african_plum_grading_classification-46118261b5",
+    "african_plum_grading_classification-dfc91312d2",
+    "african_plum_grading_classification-9808089ffb",
+    "african_plum_grading_classification-aed30289af",
+    "african_plum_grading_classification-27e3a2d1cb",
+    "african_plum_grading_classification-786a232ba0",
+    "african_plum_grading_classification-814d2c783e",
+    "african_plum_grading_classification-49425d62e5",
+    "african_plum_grading_classification-594222c5aa",
+    "african_plum_grading_classification-d78c0dc420",
+    "african_plum_grading_classification-13c8d479c1",
+    "african_plum_grading_classification-db6b1207e9",
+    "african_plum_grading_classification-f9c7b9c398",
+    "african_plum_grading_classification-01396fbcd2",
+    "african_plum_grading_classification-fc4882d320",
+    "african_plum_grading_classification-7b57103af0",
+    "african_plum_grading_classification-230424ae4a",
+    "african_plum_grading_classification-ce90dd8dc2",
+    "african_plum_grading_classification-025fa1fdd0",
+    "african_plum_grading_classification-80229b2717",
+    "african_plum_grading_classification-e6fc218bcf",
+    "african_plum_grading_classification-d9fbad8239",
+    "african_plum_grading_classification-3945c2d725",
+    "african_plum_grading_classification-8ffea39ee8",
+    "african_plum_grading_classification-eaeb759f22",
+    "african_plum_grading_classification-b225b8f6c4",
+    "african_plum_grading_classification-dee1d115f2",
+    "african_plum_grading_classification-a605ed36b4",
+    "african_plum_grading_classification-a091478fa7",
+    "african_plum_grading_classification-8b18d9862b",
+    "african_plum_grading_classification-db381cfa64",
+    "african_plum_grading_classification-55d0648c3d",
+    "african_plum_grading_classification-5d01172151",
+    "african_plum_grading_classification-189a36bfce",
+    "african_plum_grading_classification-5c1f745d14",
+    "african_plum_grading_classification-4f3ae26661",
+    "african_plum_grading_classification-859e022ae9",
+    "african_plum_grading_classification-7a15157761",
+    "african_plum_grading_classification-033d66a602",
+    "african_plum_grading_classification-2302ac34fb",
+    "african_plum_grading_classification-07d5c5d265",
+    "african_plum_grading_classification-19748dbc3f"
+   ]
+  },
+  "s1": {
+   "5": [
+    "african_plum_grading_classification-a3ccea64c9",
+    "african_plum_grading_classification-2462f2bce1",
+    "african_plum_grading_classification-a167547058",
+    "african_plum_grading_classification-52f72c68a3",
+    "african_plum_grading_classification-b37d6b3280",
+    "african_plum_grading_classification-b21d236436",
+    "african_plum_grading_classification-ea47e930ac",
+    "african_plum_grading_classification-6b9fedcdd8",
+    "african_plum_grading_classification-7c02198570",
+    "african_plum_grading_classification-c79fa9de99",
+    "african_plum_grading_classification-afc3389241",
+    "african_plum_grading_classification-732946b718",
+    "african_plum_grading_classification-884194f248",
+    "african_plum_grading_classification-cd5c01cd0f",
+    "african_plum_grading_classification-832b6de655",
+    "african_plum_grading_classification-0b1c446242",
+    "african_plum_grading_classification-c5e6ba7a39",
+    "african_plum_grading_classification-7e75022fa6",
+    "african_plum_grading_classification-0143289723",
+    "african_plum_grading_classification-7fe1e8193c",
+    "african_plum_grading_classification-d93b9d3c58",
+    "african_plum_grading_classification-7fe769befd",
+    "african_plum_grading_classification-a99b1abb8a",
+    "african_plum_grading_classification-9d950be4a9",
+    "african_plum_grading_classification-428b917065",
+    "african_plum_grading_classification-0220bd3ac0",
+    "african_plum_grading_classification-3a506b4c5b",
+    "african_plum_grading_classification-93c5d3ff9b",
+    "african_plum_grading_classification-4ea885dffb",
+    "african_plum_grading_classification-7c4ff7cbb9"
+   ],
+   "10": [
+    "african_plum_grading_classification-f696fd8366",
+    "african_plum_grading_classification-bb164b9db2",
+    "african_plum_grading_classification-a3ccea64c9",
+    "african_plum_grading_classification-2462f2bce1",
+    "african_plum_grading_classification-e7dd9bb40c",
+    "african_plum_grading_classification-a167547058",
+    "african_plum_grading_classification-52f72c68a3",
+    "african_plum_grading_classification-b37d6b3280",
+    "african_plum_grading_classification-c2a14d5758",
+    "african_plum_grading_classification-118082ffdc",
+    "african_plum_grading_classification-e6d0c9a207",
+    "african_plum_grading_classification-b21d236436",
+    "african_plum_grading_classification-9e0c98041b",
+    "african_plum_grading_classification-ea47e930ac",
+    "african_plum_grading_classification-6b9fedcdd8",
+    "african_plum_grading_classification-605e6e8a5a",
+    "african_plum_grading_classification-1c2a2244d3",
+    "african_plum_grading_classification-7c02198570",
+    "african_plum_grading_classification-c79fa9de99",
+    "african_plum_grading_classification-f972220a99",
+    "african_plum_grading_classification-ad25e77ea9",
+    "african_plum_grading_classification-afc3389241",
+    "african_plum_grading_classification-732946b718",
+    "african_plum_grading_classification-693e719a7c",
+    "african_plum_grading_classification-884194f248",
+    "african_plum_grading_classification-4e7c851ae5",
+    "african_plum_grading_classification-cd5c01cd0f",
+    "african_plum_grading_classification-832b6de655",
+    "african_plum_grading_classification-5ca3622984",
+    "african_plum_grading_classification-64ceb9dca1",
+    "african_plum_grading_classification-6498cae3e1",
+    "african_plum_grading_classification-0b1c446242",
+    "african_plum_grading_classification-c5e6ba7a39",
+    "african_plum_grading_classification-06d231ecdf",
+    "african_plum_grading_classification-3246f82cea",
+    "african_plum_grading_classification-26063d5ee8",
+    "african_plum_grading_classification-7e75022fa6",
+    "african_plum_grading_classification-cdf8b6eb43",
+    "african_plum_grading_classification-0143289723",
+    "african_plum_grading_classification-7fe1e8193c",
+    "african_plum_grading_classification-d93b9d3c58",
+    "african_plum_grading_classification-cc70b261da",
+    "african_plum_grading_classification-7fe769befd",
+    "african_plum_grading_classification-ec781840c3",
+    "african_plum_grading_classification-20aa9a448d",
+    "african_plum_grading_classification-9464996ddd",
+    "african_plum_grading_classification-a99b1abb8a",
+    "african_plum_grading_classification-b0d8c84e54",
+    "african_plum_grading_classification-9d950be4a9",
+    "african_plum_grading_classification-428b917065",
+    "african_plum_grading_classification-2156ec85ce",
+    "african_plum_grading_classification-e6118c625c",
+    "african_plum_grading_classification-0220bd3ac0",
+    "african_plum_grading_classification-3a506b4c5b",
+    "african_plum_grading_classification-9a78a675ca",
+    "african_plum_grading_classification-69ed4a23b5",
+    "african_plum_grading_classification-93c5d3ff9b",
+    "african_plum_grading_classification-efac6570db",
+    "african_plum_grading_classification-4ea885dffb",
+    "african_plum_grading_classification-7c4ff7cbb9"
+   ],
+   "15": [
+    "african_plum_grading_classification-e555ff3385",
+    "african_plum_grading_classification-f696fd8366",
+    "african_plum_grading_classification-869d0cc59c",
+    "african_plum_grading_classification-bb164b9db2",
+    "african_plum_grading_classification-a3ccea64c9",
+    "african_plum_grading_classification-295bde46ae",
+    "african_plum_grading_classification-2462f2bce1",
+    "african_plum_grading_classification-a699768346",
+    "african_plum_grading_classification-e7dd9bb40c",
+    "african_plum_grading_classification-646cdee043",
+    "african_plum_grading_classification-a167547058",
+    "african_plum_grading_classification-52f72c68a3",
+    "african_plum_grading_classification-b37d6b3280",
+    "african_plum_grading_classification-c2a14d5758",
+    "african_plum_grading_classification-118082ffdc",
+    "african_plum_grading_classification-e6d0c9a207",
+    "african_plum_grading_classification-7be5b312b1",
+    "african_plum_grading_classification-b21d236436",
+    "african_plum_grading_classification-9e0c98041b",
+    "african_plum_grading_classification-ea47e930ac",
+    "african_plum_grading_classification-6b9fedcdd8",
+    "african_plum_grading_classification-605e6e8a5a",
+    "african_plum_grading_classification-1c2a2244d3",
+    "african_plum_grading_classification-7c02198570",
+    "african_plum_grading_classification-9487ca940a",
+    "african_plum_grading_classification-c79fa9de99",
+    "african_plum_grading_classification-4a55fe6d6b",
+    "african_plum_grading_classification-62d28036b3",
+    "african_plum_grading_classification-f972220a99",
+    "african_plum_grading_classification-96db23efe9",
+    "african_plum_grading_classification-4727ae88f6",
+    "african_plum_grading_classification-ad25e77ea9",
+    "african_plum_grading_classification-afc3389241",
+    "african_plum_grading_classification-732946b718",
+    "african_plum_grading_classification-693e719a7c",
+    "african_plum_grading_classification-07aa4732b7",
+    "african_plum_grading_classification-884194f248",
+    "african_plum_grading_classification-cfacc0beaa",
+    "african_plum_grading_classification-4e7c851ae5",
+    "african_plum_grading_classification-ca0711f353",
+    "african_plum_grading_classification-c0c1563ec4",
+    "african_plum_grading_classification-cd5c01cd0f",
+    "african_plum_grading_classification-832b6de655",
+    "african_plum_grading_classification-5ca3622984",
+    "african_plum_grading_classification-64ceb9dca1",
+    "african_plum_grading_classification-6498cae3e1",
+    "african_plum_grading_classification-0b1c446242",
+    "african_plum_grading_classification-2899fffff6",
+    "african_plum_grading_classification-c5e6ba7a39",
+    "african_plum_grading_classification-06d231ecdf",
+    "african_plum_grading_classification-3246f82cea",
+    "african_plum_grading_classification-6fd573b2c2",
+    "african_plum_grading_classification-26063d5ee8",
+    "african_plum_grading_classification-4a7bd8587a",
+    "african_plum_grading_classification-7e75022fa6",
+    "african_plum_grading_classification-cdf8b6eb43",
+    "african_plum_grading_classification-ebe66e1f86",
+    "african_plum_grading_classification-0143289723",
+    "african_plum_grading_classification-7fe1e8193c",
+    "african_plum_grading_classification-edee505089",
+    "african_plum_grading_classification-d93b9d3c58",
+    "african_plum_grading_classification-1747c3d697",
+    "african_plum_grading_classification-cc70b261da",
+    "african_plum_grading_classification-7fe769befd",
+    "african_plum_grading_classification-ec781840c3",
+    "african_plum_grading_classification-a00b953272",
+    "african_plum_grading_classification-20aa9a448d",
+    "african_plum_grading_classification-9464996ddd",
+    "african_plum_grading_classification-8ad91ea852",
+    "african_plum_grading_classification-06dd8ad612",
+    "african_plum_grading_classification-a99b1abb8a",
+    "african_plum_grading_classification-b0d8c84e54",
+    "african_plum_grading_classification-dbdf84d776",
+    "african_plum_grading_classification-9d950be4a9",
+    "african_plum_grading_classification-428b917065",
+    "african_plum_grading_classification-23eb5d59be",
+    "african_plum_grading_classification-2156ec85ce",
+    "african_plum_grading_classification-13b1a66eb9",
+    "african_plum_grading_classification-e37150d4ba",
+    "african_plum_grading_classification-e6118c625c",
+    "african_plum_grading_classification-0220bd3ac0",
+    "african_plum_grading_classification-624f8d8891",
+    "african_plum_grading_classification-3a506b4c5b",
+    "african_plum_grading_classification-9a78a675ca",
+    "african_plum_grading_classification-69ed4a23b5",
+    "african_plum_grading_classification-93c5d3ff9b",
+    "african_plum_grading_classification-efac6570db",
+    "african_plum_grading_classification-4ea885dffb",
+    "african_plum_grading_classification-7c4ff7cbb9",
+    "african_plum_grading_classification-07d5c5d265"
+   ]
+  },
+  "s2": {
+   "5": [
+    "african_plum_grading_classification-869d0cc59c",
+    "african_plum_grading_classification-dff7f8e1e9",
+    "african_plum_grading_classification-9a0ae7c1db",
+    "african_plum_grading_classification-f6886a9ae5",
+    "african_plum_grading_classification-41662cc332",
+    "african_plum_grading_classification-4b285e0a31",
+    "african_plum_grading_classification-1f13fb486e",
+    "african_plum_grading_classification-044379822a",
+    "african_plum_grading_classification-c6ff4dbb93",
+    "african_plum_grading_classification-bd30305f79",
+    "african_plum_grading_classification-46d7456dec",
+    "african_plum_grading_classification-d6906d6dab",
+    "african_plum_grading_classification-5346849a2a",
+    "african_plum_grading_classification-a990b18b4c",
+    "african_plum_grading_classification-a09de497ce",
+    "african_plum_grading_classification-3f83c34ea7",
+    "african_plum_grading_classification-fe33e2d85a",
+    "african_plum_grading_classification-2d2eeaab44",
+    "african_plum_grading_classification-1a5d5e1c51",
+    "african_plum_grading_classification-8d2fe8c637",
+    "african_plum_grading_classification-4b516722c1",
+    "african_plum_grading_classification-934ecca274",
+    "african_plum_grading_classification-ec74e2ad3a",
+    "african_plum_grading_classification-18cbb160b7",
+    "african_plum_grading_classification-1a68e20c99",
+    "african_plum_grading_classification-aadad3e3f2",
+    "african_plum_grading_classification-af2d7b0d7f",
+    "african_plum_grading_classification-a4788d8232",
+    "african_plum_grading_classification-a54cd7a7ae",
+    "african_plum_grading_classification-9a63b5b6a9"
+   ],
+   "10": [
+    "african_plum_grading_classification-92f135cdfb",
+    "african_plum_grading_classification-869d0cc59c",
+    "african_plum_grading_classification-0a60695a53",
+    "african_plum_grading_classification-11fad819a1",
+    "african_plum_grading_classification-fb53fcd903",
+    "african_plum_grading_classification-dff7f8e1e9",
+    "african_plum_grading_classification-9a0ae7c1db",
+    "african_plum_grading_classification-f6886a9ae5",
+    "african_plum_grading_classification-41662cc332",
+    "african_plum_grading_classification-7197c5306b",
+    "african_plum_grading_classification-885228aab1",
+    "african_plum_grading_classification-4b285e0a31",
+    "african_plum_grading_classification-1f13fb486e",
+    "african_plum_grading_classification-1435b161fc",
+    "african_plum_grading_classification-17209ea6cc",
+    "african_plum_grading_classification-044379822a",
+    "african_plum_grading_classification-c6ff4dbb93",
+    "african_plum_grading_classification-bd30305f79",
+    "african_plum_grading_classification-0d888f31a4",
+    "african_plum_grading_classification-f09d00bbda",
+    "african_plum_grading_classification-5743a52aa5",
+    "african_plum_grading_classification-46d7456dec",
+    "african_plum_grading_classification-767b5c2691",
+    "african_plum_grading_classification-d6906d6dab",
+    "african_plum_grading_classification-a7565ce09a",
+    "african_plum_grading_classification-88ea8a72e1",
+    "african_plum_grading_classification-5346849a2a",
+    "african_plum_grading_classification-1e860a49b7",
+    "african_plum_grading_classification-a990b18b4c",
+    "african_plum_grading_classification-a09de497ce",
+    "african_plum_grading_classification-8544e23ea4",
+    "african_plum_grading_classification-3f83c34ea7",
+    "african_plum_grading_classification-fe33e2d85a",
+    "african_plum_grading_classification-2d2eeaab44",
+    "african_plum_grading_classification-1a5d5e1c51",
+    "african_plum_grading_classification-77def3a2d5",
+    "african_plum_grading_classification-0110dce67c",
+    "african_plum_grading_classification-30bbc61117",
+    "african_plum_grading_classification-8d2fe8c637",
+    "african_plum_grading_classification-ab49335872",
+    "african_plum_grading_classification-4b516722c1",
+    "african_plum_grading_classification-320f2cf12e",
+    "african_plum_grading_classification-934ecca274",
+    "african_plum_grading_classification-ec74e2ad3a",
+    "african_plum_grading_classification-18cbb160b7",
+    "african_plum_grading_classification-1a68e20c99",
+    "african_plum_grading_classification-bbeca9695f",
+    "african_plum_grading_classification-902c7b33ff",
+    "african_plum_grading_classification-6c6acc41ab",
+    "african_plum_grading_classification-2ebf9f6b33",
+    "african_plum_grading_classification-e14001bbca",
+    "african_plum_grading_classification-d07bbdef7c",
+    "african_plum_grading_classification-aadad3e3f2",
+    "african_plum_grading_classification-af2d7b0d7f",
+    "african_plum_grading_classification-a4788d8232",
+    "african_plum_grading_classification-a54cd7a7ae",
+    "african_plum_grading_classification-d2087b41f9",
+    "african_plum_grading_classification-88249c68b6",
+    "african_plum_grading_classification-9a63b5b6a9",
+    "african_plum_grading_classification-d5fcad7926"
+   ],
+   "15": [
+    "african_plum_grading_classification-92f135cdfb",
+    "african_plum_grading_classification-869d0cc59c",
+    "african_plum_grading_classification-0a60695a53",
+    "african_plum_grading_classification-11fad819a1",
+    "african_plum_grading_classification-4340536fb6",
+    "african_plum_grading_classification-fb53fcd903",
+    "african_plum_grading_classification-dff7f8e1e9",
+    "african_plum_grading_classification-78c95ebb79",
+    "african_plum_grading_classification-9a0ae7c1db",
+    "african_plum_grading_classification-e466a4f2b8",
+    "african_plum_grading_classification-fffbd5b5aa",
+    "african_plum_grading_classification-fd6e55facc",
+    "african_plum_grading_classification-f6886a9ae5",
+    "african_plum_grading_classification-41662cc332",
+    "african_plum_grading_classification-7197c5306b",
+    "african_plum_grading_classification-885228aab1",
+    "african_plum_grading_classification-4b285e0a31",
+    "african_plum_grading_classification-1f13fb486e",
+    "african_plum_grading_classification-1435b161fc",
+    "african_plum_grading_classification-f54adb2b6e",
+    "african_plum_grading_classification-17209ea6cc",
+    "african_plum_grading_classification-5d4baf8344",
+    "african_plum_grading_classification-044379822a",
+    "african_plum_grading_classification-c6ff4dbb93",
+    "african_plum_grading_classification-bd30305f79",
+    "african_plum_grading_classification-7db45607b4",
+    "african_plum_grading_classification-9aff21cd3e",
+    "african_plum_grading_classification-133cb405c5",
+    "african_plum_grading_classification-0d888f31a4",
+    "african_plum_grading_classification-f09d00bbda",
+    "african_plum_grading_classification-5743a52aa5",
+    "african_plum_grading_classification-9b276d5bb9",
+    "african_plum_grading_classification-a9964b554b",
+    "african_plum_grading_classification-46d7456dec",
+    "african_plum_grading_classification-96630d7df9",
+    "african_plum_grading_classification-9fe01dca6d",
+    "african_plum_grading_classification-767b5c2691",
+    "african_plum_grading_classification-d6906d6dab",
+    "african_plum_grading_classification-a7565ce09a",
+    "african_plum_grading_classification-88ea8a72e1",
+    "african_plum_grading_classification-5346849a2a",
+    "african_plum_grading_classification-1e860a49b7",
+    "african_plum_grading_classification-7729209f6c",
+    "african_plum_grading_classification-a990b18b4c",
+    "african_plum_grading_classification-a09de497ce",
+    "african_plum_grading_classification-8544e23ea4",
+    "african_plum_grading_classification-3f83c34ea7",
+    "african_plum_grading_classification-fe33e2d85a",
+    "african_plum_grading_classification-a0574b9ae4",
+    "african_plum_grading_classification-2d2eeaab44",
+    "african_plum_grading_classification-1a5d5e1c51",
+    "african_plum_grading_classification-ad34a65326",
+    "african_plum_grading_classification-77def3a2d5",
+    "african_plum_grading_classification-0110dce67c",
+    "african_plum_grading_classification-30bbc61117",
+    "african_plum_grading_classification-dac0ddc686",
+    "african_plum_grading_classification-8d2fe8c637",
+    "african_plum_grading_classification-45fadc5273",
+    "african_plum_grading_classification-ab49335872",
+    "african_plum_grading_classification-291a6a2aba",
+    "african_plum_grading_classification-4b516722c1",
+    "african_plum_grading_classification-320f2cf12e",
+    "african_plum_grading_classification-934ecca274",
+    "african_plum_grading_classification-a50f589e73",
+    "african_plum_grading_classification-d9a6d8bafd",
+    "african_plum_grading_classification-ec74e2ad3a",
+    "african_plum_grading_classification-f833a6f437",
+    "african_plum_grading_classification-18cbb160b7",
+    "african_plum_grading_classification-1a68e20c99",
+    "african_plum_grading_classification-bbeca9695f",
+    "african_plum_grading_classification-902c7b33ff",
+    "african_plum_grading_classification-fd5a1559a9",
+    "african_plum_grading_classification-3fda751fee",
+    "african_plum_grading_classification-6c6acc41ab",
+    "african_plum_grading_classification-2ebf9f6b33",
+    "african_plum_grading_classification-e14001bbca",
+    "african_plum_grading_classification-13b1a66eb9",
+    "african_plum_grading_classification-68e629b108",
+    "african_plum_grading_classification-d07bbdef7c",
+    "african_plum_grading_classification-aadad3e3f2",
+    "african_plum_grading_classification-af2d7b0d7f",
+    "african_plum_grading_classification-5d01172151",
+    "african_plum_grading_classification-a4788d8232",
+    "african_plum_grading_classification-62a47240d5",
+    "african_plum_grading_classification-a54cd7a7ae",
+    "african_plum_grading_classification-d2087b41f9",
+    "african_plum_grading_classification-88249c68b6",
+    "african_plum_grading_classification-9a63b5b6a9",
+    "african_plum_grading_classification-d5fcad7926",
+    "african_plum_grading_classification-dacf2cf141"
+   ]
+  }
+ }
+}

@@ -1,0 +1,2506 @@
+{
+ "name": "rural_LUCC_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/rural_LUCC_segmentation",
+ "hf_sha": "55826f92ceaf8159efb5501ceef659a5be8e5419",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T19:53:54+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3",
+   "4": "value_4",
+   "5": "value_5"
+  },
+  "indexed_rows": 2042
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "rural_LUCC_segmentation-9cf40246bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0dedfee51c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-5d0a4ff927",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4340536fb6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0cfc388d27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-78f630ce8a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-adbd849afa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0e6502a383",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-6475a122a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-871f682787",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-8039905b36",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-64237845e6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-3feb987e56",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-192470de45",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-8a8e09b145",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-81174c2271",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0e980f99a6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-048c1445ad",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 420,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-f8529b87d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-d7936b3069",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-f57f1f476b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4de30f277e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 501,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-9111d7766c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-a3c0f44940",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-ab511a5033",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-9ddaae8e2e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 610,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-2451dae616",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 626,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-864d021ee1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 628,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-e99643216f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 644,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-24e2c1ebd1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c32e5e92ac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-53eea584ab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c353670904",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 681,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-137b8e141b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 732,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-fa7bced050",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 768,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-2634002c11",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-8cabf6838c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 782,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-e280cf994c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 835,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c90b9caa55",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 848,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-af968be565",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 875,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-faaf868693",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 943,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4b17bc323c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 946,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-fcc42ac338",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 967,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0842285c5d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1012,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-2c9932f633",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-5f613d44e4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1052,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-824c33dc39",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1064,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-a323b66add",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1067,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-1d0d56d384",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1077,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-48637592bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1079,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-282d0c0038",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-07aa4732b7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-cd6df02c1d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-354b5c59af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-3fd3954a30",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-b9715d6b53",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-41f8f4297c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-09b5613bc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-a9964b554b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-d4ed6daf31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-74fa72cfcf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0d0540aa4b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-b144b15b65",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-96630d7df9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c8f0fbaf75",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-b721322158",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1342,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-82f8fcf0ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1347,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-49010d82cd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1357,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4978ba1d20",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-26780449c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_2",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-159004937c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1412,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-e50d016a35",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-521fb512c8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_2",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-e50478a605",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1446,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-fdf019e72c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1498,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-0388d8012b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1501,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-94074b949f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1519,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-da51d75900",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1521,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-cf28b68b92",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c78e7b1657",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1559,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_2",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-c8c522179a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-23761fdf30",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_2",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-f44b978626",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-5d69d3939e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1633,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-39b39dd467",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4d70acc84e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1666,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-7feae5adfd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-50103ee251",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1721,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-60adb4a1b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1749,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-3e4f46d7e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1773,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-a566a3402b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1784,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-9b0be4bd86",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-eef328bf34",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-382a9a5ad8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1838,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-4837e264f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1867,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-a6a5ab85f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-9613e54ec9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1890,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-ab9371ad08",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1912,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-aa4e95cda8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-2eb5a12ed6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1926,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-7729209f6c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1956,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-d788700bc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1958,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-5e1fe21fad",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-b323efe3f7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2024,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4",
+    "value_5"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4",
+     "value_5"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "rural_LUCC_segmentation-ec1154159d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "rural_LUCC_segmentation-78f630ce8a",
+    "rural_LUCC_segmentation-8039905b36",
+    "rural_LUCC_segmentation-3feb987e56",
+    "rural_LUCC_segmentation-0e980f99a6",
+    "rural_LUCC_segmentation-864d021ee1",
+    "rural_LUCC_segmentation-53eea584ab",
+    "rural_LUCC_segmentation-8cabf6838c",
+    "rural_LUCC_segmentation-4b17bc323c",
+    "rural_LUCC_segmentation-07aa4732b7",
+    "rural_LUCC_segmentation-e50478a605",
+    "rural_LUCC_segmentation-7feae5adfd",
+    "rural_LUCC_segmentation-eef328bf34"
+   ],
+   "10": [
+    "rural_LUCC_segmentation-9cf40246bc",
+    "rural_LUCC_segmentation-78f630ce8a",
+    "rural_LUCC_segmentation-adbd849afa",
+    "rural_LUCC_segmentation-8039905b36",
+    "rural_LUCC_segmentation-3feb987e56",
+    "rural_LUCC_segmentation-0e980f99a6",
+    "rural_LUCC_segmentation-f8529b87d4",
+    "rural_LUCC_segmentation-9111d7766c",
+    "rural_LUCC_segmentation-ab511a5033",
+    "rural_LUCC_segmentation-9ddaae8e2e",
+    "rural_LUCC_segmentation-864d021ee1",
+    "rural_LUCC_segmentation-53eea584ab",
+    "rural_LUCC_segmentation-8cabf6838c",
+    "rural_LUCC_segmentation-4b17bc323c",
+    "rural_LUCC_segmentation-07aa4732b7",
+    "rural_LUCC_segmentation-e50478a605",
+    "rural_LUCC_segmentation-94074b949f",
+    "rural_LUCC_segmentation-c78e7b1657",
+    "rural_LUCC_segmentation-7feae5adfd",
+    "rural_LUCC_segmentation-eef328bf34",
+    "rural_LUCC_segmentation-b323efe3f7",
+    "rural_LUCC_segmentation-ec1154159d"
+   ],
+   "15": [
+    "rural_LUCC_segmentation-9cf40246bc",
+    "rural_LUCC_segmentation-78f630ce8a",
+    "rural_LUCC_segmentation-adbd849afa",
+    "rural_LUCC_segmentation-8039905b36",
+    "rural_LUCC_segmentation-3feb987e56",
+    "rural_LUCC_segmentation-192470de45",
+    "rural_LUCC_segmentation-8a8e09b145",
+    "rural_LUCC_segmentation-0e980f99a6",
+    "rural_LUCC_segmentation-f8529b87d4",
+    "rural_LUCC_segmentation-f57f1f476b",
+    "rural_LUCC_segmentation-9111d7766c",
+    "rural_LUCC_segmentation-9ddaae8e2e",
+    "rural_LUCC_segmentation-864d021ee1",
+    "rural_LUCC_segmentation-53eea584ab",
+    "rural_LUCC_segmentation-8cabf6838c",
+    "rural_LUCC_segmentation-4b17bc323c",
+    "rural_LUCC_segmentation-fcc42ac338",
+    "rural_LUCC_segmentation-5f613d44e4",
+    "rural_LUCC_segmentation-07aa4732b7",
+    "rural_LUCC_segmentation-4978ba1d20",
+    "rural_LUCC_segmentation-521fb512c8",
+    "rural_LUCC_segmentation-e50478a605",
+    "rural_LUCC_segmentation-94074b949f",
+    "rural_LUCC_segmentation-da51d75900",
+    "rural_LUCC_segmentation-c78e7b1657",
+    "rural_LUCC_segmentation-23761fdf30",
+    "rural_LUCC_segmentation-7feae5adfd",
+    "rural_LUCC_segmentation-60adb4a1b4",
+    "rural_LUCC_segmentation-eef328bf34",
+    "rural_LUCC_segmentation-5e1fe21fad",
+    "rural_LUCC_segmentation-b323efe3f7",
+    "rural_LUCC_segmentation-ec1154159d"
+   ]
+  },
+  "s1": {
+   "5": [
+    "rural_LUCC_segmentation-4340536fb6",
+    "rural_LUCC_segmentation-0e6502a383",
+    "rural_LUCC_segmentation-81174c2271",
+    "rural_LUCC_segmentation-c32e5e92ac",
+    "rural_LUCC_segmentation-2634002c11",
+    "rural_LUCC_segmentation-faaf868693",
+    "rural_LUCC_segmentation-824c33dc39",
+    "rural_LUCC_segmentation-a323b66add",
+    "rural_LUCC_segmentation-1d0d56d384",
+    "rural_LUCC_segmentation-354b5c59af",
+    "rural_LUCC_segmentation-74fa72cfcf",
+    "rural_LUCC_segmentation-b721322158",
+    "rural_LUCC_segmentation-159004937c"
+   ],
+   "10": [
+    "rural_LUCC_segmentation-4340536fb6",
+    "rural_LUCC_segmentation-0e6502a383",
+    "rural_LUCC_segmentation-81174c2271",
+    "rural_LUCC_segmentation-048c1445ad",
+    "rural_LUCC_segmentation-c32e5e92ac",
+    "rural_LUCC_segmentation-2634002c11",
+    "rural_LUCC_segmentation-faaf868693",
+    "rural_LUCC_segmentation-0842285c5d",
+    "rural_LUCC_segmentation-824c33dc39",
+    "rural_LUCC_segmentation-a323b66add",
+    "rural_LUCC_segmentation-1d0d56d384",
+    "rural_LUCC_segmentation-354b5c59af",
+    "rural_LUCC_segmentation-3fd3954a30",
+    "rural_LUCC_segmentation-41f8f4297c",
+    "rural_LUCC_segmentation-09b5613bc6",
+    "rural_LUCC_segmentation-74fa72cfcf",
+    "rural_LUCC_segmentation-0d0540aa4b",
+    "rural_LUCC_segmentation-b721322158",
+    "rural_LUCC_segmentation-159004937c",
+    "rural_LUCC_segmentation-f44b978626",
+    "rural_LUCC_segmentation-39b39dd467",
+    "rural_LUCC_segmentation-4d70acc84e",
+    "rural_LUCC_segmentation-382a9a5ad8",
+    "rural_LUCC_segmentation-aa4e95cda8",
+    "rural_LUCC_segmentation-2eb5a12ed6"
+   ],
+   "15": [
+    "rural_LUCC_segmentation-5d0a4ff927",
+    "rural_LUCC_segmentation-4340536fb6",
+    "rural_LUCC_segmentation-c2a14d5758",
+    "rural_LUCC_segmentation-0e6502a383",
+    "rural_LUCC_segmentation-81174c2271",
+    "rural_LUCC_segmentation-048c1445ad",
+    "rural_LUCC_segmentation-2451dae616",
+    "rural_LUCC_segmentation-e99643216f",
+    "rural_LUCC_segmentation-c32e5e92ac",
+    "rural_LUCC_segmentation-137b8e141b",
+    "rural_LUCC_segmentation-2634002c11",
+    "rural_LUCC_segmentation-c90b9caa55",
+    "rural_LUCC_segmentation-faaf868693",
+    "rural_LUCC_segmentation-0842285c5d",
+    "rural_LUCC_segmentation-824c33dc39",
+    "rural_LUCC_segmentation-a323b66add",
+    "rural_LUCC_segmentation-1d0d56d384",
+    "rural_LUCC_segmentation-354b5c59af",
+    "rural_LUCC_segmentation-3fd3954a30",
+    "rural_LUCC_segmentation-41f8f4297c",
+    "rural_LUCC_segmentation-09b5613bc6",
+    "rural_LUCC_segmentation-d4ed6daf31",
+    "rural_LUCC_segmentation-74fa72cfcf",
+    "rural_LUCC_segmentation-0d0540aa4b",
+    "rural_LUCC_segmentation-c8f0fbaf75",
+    "rural_LUCC_segmentation-b721322158",
+    "rural_LUCC_segmentation-49010d82cd",
+    "rural_LUCC_segmentation-159004937c",
+    "rural_LUCC_segmentation-0388d8012b",
+    "rural_LUCC_segmentation-f44b978626",
+    "rural_LUCC_segmentation-39b39dd467",
+    "rural_LUCC_segmentation-4d70acc84e",
+    "rural_LUCC_segmentation-a566a3402b",
+    "rural_LUCC_segmentation-382a9a5ad8",
+    "rural_LUCC_segmentation-a6a5ab85f6",
+    "rural_LUCC_segmentation-aa4e95cda8",
+    "rural_LUCC_segmentation-2eb5a12ed6"
+   ]
+  },
+  "s2": {
+   "5": [
+    "rural_LUCC_segmentation-64237845e6",
+    "rural_LUCC_segmentation-4de30f277e",
+    "rural_LUCC_segmentation-137b8e141b",
+    "rural_LUCC_segmentation-b9715d6b53",
+    "rural_LUCC_segmentation-a9964b554b",
+    "rural_LUCC_segmentation-26780449c1",
+    "rural_LUCC_segmentation-cf28b68b92",
+    "rural_LUCC_segmentation-c8c522179a",
+    "rural_LUCC_segmentation-5d69d3939e",
+    "rural_LUCC_segmentation-3e4f46d7e1",
+    "rural_LUCC_segmentation-9b0be4bd86",
+    "rural_LUCC_segmentation-4837e264f6",
+    "rural_LUCC_segmentation-7729209f6c"
+   ],
+   "10": [
+    "rural_LUCC_segmentation-0dedfee51c",
+    "rural_LUCC_segmentation-0cfc388d27",
+    "rural_LUCC_segmentation-6475a122a4",
+    "rural_LUCC_segmentation-64237845e6",
+    "rural_LUCC_segmentation-4de30f277e",
+    "rural_LUCC_segmentation-24e2c1ebd1",
+    "rural_LUCC_segmentation-c353670904",
+    "rural_LUCC_segmentation-137b8e141b",
+    "rural_LUCC_segmentation-2c9932f633",
+    "rural_LUCC_segmentation-cd6df02c1d",
+    "rural_LUCC_segmentation-b9715d6b53",
+    "rural_LUCC_segmentation-a9964b554b",
+    "rural_LUCC_segmentation-b144b15b65",
+    "rural_LUCC_segmentation-82f8fcf0ee",
+    "rural_LUCC_segmentation-26780449c1",
+    "rural_LUCC_segmentation-e50d016a35",
+    "rural_LUCC_segmentation-cf28b68b92",
+    "rural_LUCC_segmentation-c8c522179a",
+    "rural_LUCC_segmentation-5d69d3939e",
+    "rural_LUCC_segmentation-3e4f46d7e1",
+    "rural_LUCC_segmentation-9b0be4bd86",
+    "rural_LUCC_segmentation-4837e264f6",
+    "rural_LUCC_segmentation-7729209f6c",
+    "rural_LUCC_segmentation-d788700bc6"
+   ],
+   "15": [
+    "rural_LUCC_segmentation-0dedfee51c",
+    "rural_LUCC_segmentation-0cfc388d27",
+    "rural_LUCC_segmentation-6475a122a4",
+    "rural_LUCC_segmentation-871f682787",
+    "rural_LUCC_segmentation-64237845e6",
+    "rural_LUCC_segmentation-d7936b3069",
+    "rural_LUCC_segmentation-4de30f277e",
+    "rural_LUCC_segmentation-a3c0f44940",
+    "rural_LUCC_segmentation-24e2c1ebd1",
+    "rural_LUCC_segmentation-c353670904",
+    "rural_LUCC_segmentation-137b8e141b",
+    "rural_LUCC_segmentation-fa7bced050",
+    "rural_LUCC_segmentation-e280cf994c",
+    "rural_LUCC_segmentation-af968be565",
+    "rural_LUCC_segmentation-2c9932f633",
+    "rural_LUCC_segmentation-48637592bf",
+    "rural_LUCC_segmentation-282d0c0038",
+    "rural_LUCC_segmentation-cd6df02c1d",
+    "rural_LUCC_segmentation-b9715d6b53",
+    "rural_LUCC_segmentation-a9964b554b",
+    "rural_LUCC_segmentation-b144b15b65",
+    "rural_LUCC_segmentation-96630d7df9",
+    "rural_LUCC_segmentation-82f8fcf0ee",
+    "rural_LUCC_segmentation-26780449c1",
+    "rural_LUCC_segmentation-e50d016a35",
+    "rural_LUCC_segmentation-fdf019e72c",
+    "rural_LUCC_segmentation-cf28b68b92",
+    "rural_LUCC_segmentation-c8c522179a",
+    "rural_LUCC_segmentation-5d69d3939e",
+    "rural_LUCC_segmentation-50103ee251",
+    "rural_LUCC_segmentation-3e4f46d7e1",
+    "rural_LUCC_segmentation-9b0be4bd86",
+    "rural_LUCC_segmentation-4837e264f6",
+    "rural_LUCC_segmentation-9613e54ec9",
+    "rural_LUCC_segmentation-ab9371ad08",
+    "rural_LUCC_segmentation-7729209f6c",
+    "rural_LUCC_segmentation-d788700bc6"
+   ]
+  }
+ }
+}

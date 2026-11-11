@@ -1,0 +1,4799 @@
+{
+ "name": "bean_cowpea_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/bean_cowpea_leaf_disease_classification",
+ "hf_sha": "49d2fa2a97c12609b7a32c311c7a1dddc65b7785",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T04:38:43+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial wilt",
+   "Blight",
+   "Fresh Leaf",
+   "Mosaic Virus",
+   "Rust",
+   "Septoria leaf spot"
+  ],
+  "indexed_rows": 4467
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ecf9844e35",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-196fdda0bc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0b31b6e3d0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3b6d624238",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-202f4046ff",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c82f45db3b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f3184e08b0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-01127645dc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-19fdb36470",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bef702fea9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2d28552102",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9699537738",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f488f57035",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1d020ab06a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-266e2f428a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4e83155ca7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d2b9d20306",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3e57cb636a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ded54c658d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-38c6238430",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-249c43893c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2b6ad3ab17",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-abc852f5a4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-41b41ca0c0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d82eaf73a8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 231,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d5796d1807",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-25f3310aac",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0ccc4a6d16",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6dd0abc234",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-37057f0b9f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-01f0552d3c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-38b5d4b6f7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-31c240f5c5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0e0a48247e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d8ce733ca6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 386,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e5135276e4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 398,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0d0ce02d03",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0b8ad140fc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 438,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c28116a6bb",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 442,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-04622610fa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6a003ffba7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 463,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5f41529ce0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 468,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0d1a07c023",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-21c4801a33",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blight"
+   ],
+   "ann": {
+    "label": "Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-88602610fc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 511,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b5014ccfe7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 520,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f1c2be0979",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 524,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b33e4592b4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 562,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5344065ad1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 571,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a21e23c692",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-7bdeb72ba7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2c3ca8c8b0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 619,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-84a77089a4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 663,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c67654f537",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 668,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9a81ae09bf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 715,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-78931144de",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 767,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f69e01f708",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 778,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d8145b6722",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 794,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-11a1d21553",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 807,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-21efa52662",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 840,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-33646f9736",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 884,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3310688cca",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 890,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3601476206",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1029,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bd477bf30f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1041,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-97310f0567",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1051,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a40c3aca8e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1079,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-afecfd3b41",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1080,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-039664558e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1098,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bfcfccba31",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2d2aa45467",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c9fd78dc82",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-059d199f91",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-10af734068",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e0a4eecfc1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4e5597d47f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ff3de59782",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5ca6dae2cc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-546eb80f8d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e9bbb2d315",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0ad996cc41",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-df4a579821",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b4091e57b7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1467,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-aef40aabeb",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1487,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e0b658b51d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-7e10d5a960",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8eb1f775b5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5b256ce40b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2c55b901ca",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1567,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ce2fac0b3b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1584,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8f7cd3b6e4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1606,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a18a225556",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1622,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-99973df469",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1629,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-73874b341f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1630,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fcb9e15742",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1635,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b996d332a6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1636,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a93311f31e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5c79a2438b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c95ff35cd9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1677,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fc6a47c4e0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5b28ff7178",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d3914fe383",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1705,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9f6a10c79d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1724,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-036071e0f6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0af0654ffc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1779,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bced7cc316",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1803,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fb48a7022d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1813,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6e61d93dc8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1815,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-62e564bf68",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1826,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-7528878ad6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1843,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-38e95a15a7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1853,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a0cc8608cf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-166887e5ef",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1870,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-52dab8579b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1890,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-84febf3c6b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1939,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-20a4e775c5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1954,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c6b7ea0fbf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-dfcb8ff8b9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1976,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9d9f6933ad",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 1987,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0a925f73d9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2033,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a6466beea5",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2a4cca8e72",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5b490ca7ba",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2049,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f068799b3d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2054,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-be21241fcf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-44872ced82",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-dd665ba1d7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2a13ee043e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bf694f4b32",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-12b57352c2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-606fb1e3cf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-718999fac8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-208706800b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a3c58eb9cd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-95ca128b58",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2185,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d9a98e6b71",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-cbd277edbe",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fd99aa80c6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-76eb35304a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a2e0b9161c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e2204ad10e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ced8d3824f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-024a783e75",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ce6e16ff29",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-94546c53b3",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-aec6defa7f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2dea97e4fe",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0df67aee81",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-01fe25dae2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-93a82c71c5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-08bd27d669",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d7b0df45b8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-22fee95d9e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-612a292bba",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-40cb847897",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 275,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-50f1cc2f47",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 299,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3687bee05b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8371f14613",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fafca9cf54",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f9ad50594c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 373,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ffc18e4f36",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 383,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2aa787a0a1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 398,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4d8807a3c5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-56e122b9bc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 412,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ce6694313a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 418,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-563b5eac27",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 424,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ee16840417",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 433,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fdd10eaf1e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 438,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6742884e0e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-dc0dd83fd9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-27510537ac",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-eb78a23fcf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2fa92cf295",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-411e129325",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 493,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4f0a3f5cef",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 495,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1ccae21c30",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ff82b9d712",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-c9c9c5316d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 503,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1d75efbacd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 523,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b82224a804",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 530,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial wilt"
+   ],
+   "ann": {
+    "label": "Bacterial wilt"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ce330c35fd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 604,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d4dc49b865",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 610,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1f3f83c6fc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 656,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bbd08b79b0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 658,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-61947af0ad",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8efd66a9fe",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 730,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b90fb57f12",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 754,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1ea80f757d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 763,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f848b9323c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 782,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-4ac0d4530d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 785,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b16332f4f9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 823,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-06e433a90e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 853,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-590a215565",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f68d0428ab",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 859,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-19c4417eb2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 924,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b288fb0217",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 944,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-9f79287db2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 954,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6a0b70847d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 959,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-326cd2c60e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 969,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2eb479b6ba",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1006,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-761abee499",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1050,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Fresh Leaf"
+   ],
+   "ann": {
+    "label": "Fresh Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d00637184e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-743ce6e6c7",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3cc0da8d21",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2021fbc732",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-26346f598b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-17eab6237e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1236,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-2bcae05e1a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fd33d1ff53",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1269,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a2ac616fa6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-40a5fe7600",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-cbb7337070",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-edbfe8e940",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-51a60d6820",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1535,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-0ac6ee292b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-10a3f457e7",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-b240228990",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1577,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8bf9fa1355",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1597,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f749ae59a6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1601,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5e248225a5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1642,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mosaic Virus"
+   ],
+   "ann": {
+    "label": "Mosaic Virus"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-3757738e09",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1671,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f44366aebd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-baf53390ff",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1680,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-958908c352",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1681,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-dfa5cbe34a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e102bbaea8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1694,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-89749737de",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1707,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ddea40addf",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1788,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d00214f7fd",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1804,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5379a2fb2d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1820,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1774a6448b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1824,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d17bb7bd05",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1849,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-75625e7f3b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1851,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f72819b56e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1852,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-da122a6fff",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-5d3e3dd2eb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-e0c9b73221",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-1d06130011",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1889,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-973bad42ac",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1896,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-034a15f713",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1897,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-37e9fd306d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1899,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-ee80f8b429",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1903,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6eba0456be",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1924,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-47a7f61f44",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-6b6d1d0c4c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2013,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fcc019a8a9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2014,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-291f0933f0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2016,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f23595ae41",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2031,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-f6955f26fb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2034,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-53f36dcac7",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2049,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a88c70494b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2059,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-33ee4269fc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2073,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-a8aa9027b5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2088,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-d224e9fa71",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-bd56a90c8b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-cdfca2837e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8efb66de47",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-fd15bf165b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-49244766c8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-7b3116330c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-feab42860d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-cfb217011f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2209,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-37e18191a9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "bean_cowpea_leaf_disease_classification-8a270e0f5e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 2226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria leaf spot"
+   ],
+   "ann": {
+    "label": "Septoria leaf spot"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "bean_cowpea_leaf_disease_classification-f3184e08b0",
+    "bean_cowpea_leaf_disease_classification-266e2f428a",
+    "bean_cowpea_leaf_disease_classification-e5135276e4",
+    "bean_cowpea_leaf_disease_classification-6a003ffba7",
+    "bean_cowpea_leaf_disease_classification-5f41529ce0",
+    "bean_cowpea_leaf_disease_classification-b5014ccfe7",
+    "bean_cowpea_leaf_disease_classification-84a77089a4",
+    "bean_cowpea_leaf_disease_classification-e9bbb2d315",
+    "bean_cowpea_leaf_disease_classification-38e95a15a7",
+    "bean_cowpea_leaf_disease_classification-a0cc8608cf",
+    "bean_cowpea_leaf_disease_classification-a6466beea5",
+    "bean_cowpea_leaf_disease_classification-2a4cca8e72",
+    "bean_cowpea_leaf_disease_classification-606fb1e3cf",
+    "bean_cowpea_leaf_disease_classification-40cb847897",
+    "bean_cowpea_leaf_disease_classification-ffc18e4f36",
+    "bean_cowpea_leaf_disease_classification-6742884e0e",
+    "bean_cowpea_leaf_disease_classification-27510537ac",
+    "bean_cowpea_leaf_disease_classification-b82224a804",
+    "bean_cowpea_leaf_disease_classification-1f3f83c6fc",
+    "bean_cowpea_leaf_disease_classification-1ea80f757d",
+    "bean_cowpea_leaf_disease_classification-761abee499",
+    "bean_cowpea_leaf_disease_classification-743ce6e6c7",
+    "bean_cowpea_leaf_disease_classification-2021fbc732",
+    "bean_cowpea_leaf_disease_classification-fd33d1ff53",
+    "bean_cowpea_leaf_disease_classification-cbb7337070",
+    "bean_cowpea_leaf_disease_classification-89749737de",
+    "bean_cowpea_leaf_disease_classification-d00214f7fd",
+    "bean_cowpea_leaf_disease_classification-5379a2fb2d",
+    "bean_cowpea_leaf_disease_classification-d17bb7bd05",
+    "bean_cowpea_leaf_disease_classification-973bad42ac"
+   ],
+   "10": [
+    "bean_cowpea_leaf_disease_classification-3b6d624238",
+    "bean_cowpea_leaf_disease_classification-f3184e08b0",
+    "bean_cowpea_leaf_disease_classification-266e2f428a",
+    "bean_cowpea_leaf_disease_classification-4e83155ca7",
+    "bean_cowpea_leaf_disease_classification-31c240f5c5",
+    "bean_cowpea_leaf_disease_classification-e5135276e4",
+    "bean_cowpea_leaf_disease_classification-0b8ad140fc",
+    "bean_cowpea_leaf_disease_classification-04622610fa",
+    "bean_cowpea_leaf_disease_classification-6a003ffba7",
+    "bean_cowpea_leaf_disease_classification-5f41529ce0",
+    "bean_cowpea_leaf_disease_classification-b5014ccfe7",
+    "bean_cowpea_leaf_disease_classification-84a77089a4",
+    "bean_cowpea_leaf_disease_classification-f69e01f708",
+    "bean_cowpea_leaf_disease_classification-21efa52662",
+    "bean_cowpea_leaf_disease_classification-039664558e",
+    "bean_cowpea_leaf_disease_classification-e9bbb2d315",
+    "bean_cowpea_leaf_disease_classification-e0b658b51d",
+    "bean_cowpea_leaf_disease_classification-7e10d5a960",
+    "bean_cowpea_leaf_disease_classification-a18a225556",
+    "bean_cowpea_leaf_disease_classification-b996d332a6",
+    "bean_cowpea_leaf_disease_classification-38e95a15a7",
+    "bean_cowpea_leaf_disease_classification-a0cc8608cf",
+    "bean_cowpea_leaf_disease_classification-a6466beea5",
+    "bean_cowpea_leaf_disease_classification-2a4cca8e72",
+    "bean_cowpea_leaf_disease_classification-bf694f4b32",
+    "bean_cowpea_leaf_disease_classification-12b57352c2",
+    "bean_cowpea_leaf_disease_classification-606fb1e3cf",
+    "bean_cowpea_leaf_disease_classification-208706800b",
+    "bean_cowpea_leaf_disease_classification-d9a98e6b71",
+    "bean_cowpea_leaf_disease_classification-e2204ad10e",
+    "bean_cowpea_leaf_disease_classification-ced8d3824f",
+    "bean_cowpea_leaf_disease_classification-40cb847897",
+    "bean_cowpea_leaf_disease_classification-f9ad50594c",
+    "bean_cowpea_leaf_disease_classification-ffc18e4f36",
+    "bean_cowpea_leaf_disease_classification-6742884e0e",
+    "bean_cowpea_leaf_disease_classification-27510537ac",
+    "bean_cowpea_leaf_disease_classification-411e129325",
+    "bean_cowpea_leaf_disease_classification-1d75efbacd",
+    "bean_cowpea_leaf_disease_classification-b82224a804",
+    "bean_cowpea_leaf_disease_classification-1f3f83c6fc",
+    "bean_cowpea_leaf_disease_classification-b90fb57f12",
+    "bean_cowpea_leaf_disease_classification-1ea80f757d",
+    "bean_cowpea_leaf_disease_classification-f848b9323c",
+    "bean_cowpea_leaf_disease_classification-590a215565",
+    "bean_cowpea_leaf_disease_classification-761abee499",
+    "bean_cowpea_leaf_disease_classification-743ce6e6c7",
+    "bean_cowpea_leaf_disease_classification-2021fbc732",
+    "bean_cowpea_leaf_disease_classification-26346f598b",
+    "bean_cowpea_leaf_disease_classification-fd33d1ff53",
+    "bean_cowpea_leaf_disease_classification-cbb7337070",
+    "bean_cowpea_leaf_disease_classification-e102bbaea8",
+    "bean_cowpea_leaf_disease_classification-89749737de",
+    "bean_cowpea_leaf_disease_classification-d00214f7fd",
+    "bean_cowpea_leaf_disease_classification-5379a2fb2d",
+    "bean_cowpea_leaf_disease_classification-d17bb7bd05",
+    "bean_cowpea_leaf_disease_classification-1d06130011",
+    "bean_cowpea_leaf_disease_classification-973bad42ac",
+    "bean_cowpea_leaf_disease_classification-47a7f61f44",
+    "bean_cowpea_leaf_disease_classification-33ee4269fc",
+    "bean_cowpea_leaf_disease_classification-8a270e0f5e"
+   ],
+   "15": [
+    "bean_cowpea_leaf_disease_classification-3b6d624238",
+    "bean_cowpea_leaf_disease_classification-f3184e08b0",
+    "bean_cowpea_leaf_disease_classification-266e2f428a",
+    "bean_cowpea_leaf_disease_classification-4e83155ca7",
+    "bean_cowpea_leaf_disease_classification-38c6238430",
+    "bean_cowpea_leaf_disease_classification-249c43893c",
+    "bean_cowpea_leaf_disease_classification-41b41ca0c0",
+    "bean_cowpea_leaf_disease_classification-37057f0b9f",
+    "bean_cowpea_leaf_disease_classification-38b5d4b6f7",
+    "bean_cowpea_leaf_disease_classification-31c240f5c5",
+    "bean_cowpea_leaf_disease_classification-e5135276e4",
+    "bean_cowpea_leaf_disease_classification-0b8ad140fc",
+    "bean_cowpea_leaf_disease_classification-04622610fa",
+    "bean_cowpea_leaf_disease_classification-6a003ffba7",
+    "bean_cowpea_leaf_disease_classification-5f41529ce0",
+    "bean_cowpea_leaf_disease_classification-b5014ccfe7",
+    "bean_cowpea_leaf_disease_classification-5344065ad1",
+    "bean_cowpea_leaf_disease_classification-84a77089a4",
+    "bean_cowpea_leaf_disease_classification-c67654f537",
+    "bean_cowpea_leaf_disease_classification-f69e01f708",
+    "bean_cowpea_leaf_disease_classification-21efa52662",
+    "bean_cowpea_leaf_disease_classification-97310f0567",
+    "bean_cowpea_leaf_disease_classification-039664558e",
+    "bean_cowpea_leaf_disease_classification-bfcfccba31",
+    "bean_cowpea_leaf_disease_classification-e9bbb2d315",
+    "bean_cowpea_leaf_disease_classification-e0b658b51d",
+    "bean_cowpea_leaf_disease_classification-7e10d5a960",
+    "bean_cowpea_leaf_disease_classification-8f7cd3b6e4",
+    "bean_cowpea_leaf_disease_classification-a18a225556",
+    "bean_cowpea_leaf_disease_classification-73874b341f",
+    "bean_cowpea_leaf_disease_classification-b996d332a6",
+    "bean_cowpea_leaf_disease_classification-5c79a2438b",
+    "bean_cowpea_leaf_disease_classification-d3914fe383",
+    "bean_cowpea_leaf_disease_classification-0af0654ffc",
+    "bean_cowpea_leaf_disease_classification-38e95a15a7",
+    "bean_cowpea_leaf_disease_classification-a0cc8608cf",
+    "bean_cowpea_leaf_disease_classification-a6466beea5",
+    "bean_cowpea_leaf_disease_classification-2a4cca8e72",
+    "bean_cowpea_leaf_disease_classification-bf694f4b32",
+    "bean_cowpea_leaf_disease_classification-12b57352c2",
+    "bean_cowpea_leaf_disease_classification-606fb1e3cf",
+    "bean_cowpea_leaf_disease_classification-718999fac8",
+    "bean_cowpea_leaf_disease_classification-208706800b",
+    "bean_cowpea_leaf_disease_classification-d9a98e6b71",
+    "bean_cowpea_leaf_disease_classification-fd99aa80c6",
+    "bean_cowpea_leaf_disease_classification-e2204ad10e",
+    "bean_cowpea_leaf_disease_classification-ced8d3824f",
+    "bean_cowpea_leaf_disease_classification-94546c53b3",
+    "bean_cowpea_leaf_disease_classification-40cb847897",
+    "bean_cowpea_leaf_disease_classification-3687bee05b",
+    "bean_cowpea_leaf_disease_classification-f9ad50594c",
+    "bean_cowpea_leaf_disease_classification-ffc18e4f36",
+    "bean_cowpea_leaf_disease_classification-6742884e0e",
+    "bean_cowpea_leaf_disease_classification-27510537ac",
+    "bean_cowpea_leaf_disease_classification-eb78a23fcf",
+    "bean_cowpea_leaf_disease_classification-411e129325",
+    "bean_cowpea_leaf_disease_classification-c9c9c5316d",
+    "bean_cowpea_leaf_disease_classification-1d75efbacd",
+    "bean_cowpea_leaf_disease_classification-b82224a804",
+    "bean_cowpea_leaf_disease_classification-1f3f83c6fc",
+    "bean_cowpea_leaf_disease_classification-b90fb57f12",
+    "bean_cowpea_leaf_disease_classification-1ea80f757d",
+    "bean_cowpea_leaf_disease_classification-f848b9323c",
+    "bean_cowpea_leaf_disease_classification-590a215565",
+    "bean_cowpea_leaf_disease_classification-19c4417eb2",
+    "bean_cowpea_leaf_disease_classification-9f79287db2",
+    "bean_cowpea_leaf_disease_classification-761abee499",
+    "bean_cowpea_leaf_disease_classification-d00637184e",
+    "bean_cowpea_leaf_disease_classification-743ce6e6c7",
+    "bean_cowpea_leaf_disease_classification-2021fbc732",
+    "bean_cowpea_leaf_disease_classification-26346f598b",
+    "bean_cowpea_leaf_disease_classification-fd33d1ff53",
+    "bean_cowpea_leaf_disease_classification-cbb7337070",
+    "bean_cowpea_leaf_disease_classification-10a3f457e7",
+    "bean_cowpea_leaf_disease_classification-8bf9fa1355",
+    "bean_cowpea_leaf_disease_classification-e102bbaea8",
+    "bean_cowpea_leaf_disease_classification-89749737de",
+    "bean_cowpea_leaf_disease_classification-d00214f7fd",
+    "bean_cowpea_leaf_disease_classification-5379a2fb2d",
+    "bean_cowpea_leaf_disease_classification-1774a6448b",
+    "bean_cowpea_leaf_disease_classification-d17bb7bd05",
+    "bean_cowpea_leaf_disease_classification-5d3e3dd2eb",
+    "bean_cowpea_leaf_disease_classification-1d06130011",
+    "bean_cowpea_leaf_disease_classification-973bad42ac",
+    "bean_cowpea_leaf_disease_classification-47a7f61f44",
+    "bean_cowpea_leaf_disease_classification-291f0933f0",
+    "bean_cowpea_leaf_disease_classification-33ee4269fc",
+    "bean_cowpea_leaf_disease_classification-cdfca2837e",
+    "bean_cowpea_leaf_disease_classification-cfb217011f",
+    "bean_cowpea_leaf_disease_classification-8a270e0f5e"
+   ]
+  },
+  "s1": {
+   "5": [
+    "bean_cowpea_leaf_disease_classification-202f4046ff",
+    "bean_cowpea_leaf_disease_classification-9699537738",
+    "bean_cowpea_leaf_disease_classification-3e57cb636a",
+    "bean_cowpea_leaf_disease_classification-01f0552d3c",
+    "bean_cowpea_leaf_disease_classification-0d0ce02d03",
+    "bean_cowpea_leaf_disease_classification-5344065ad1",
+    "bean_cowpea_leaf_disease_classification-a21e23c692",
+    "bean_cowpea_leaf_disease_classification-2c55b901ca",
+    "bean_cowpea_leaf_disease_classification-ce2fac0b3b",
+    "bean_cowpea_leaf_disease_classification-5b28ff7178",
+    "bean_cowpea_leaf_disease_classification-6e61d93dc8",
+    "bean_cowpea_leaf_disease_classification-52dab8579b",
+    "bean_cowpea_leaf_disease_classification-dd665ba1d7",
+    "bean_cowpea_leaf_disease_classification-95ca128b58",
+    "bean_cowpea_leaf_disease_classification-024a783e75",
+    "bean_cowpea_leaf_disease_classification-8371f14613",
+    "bean_cowpea_leaf_disease_classification-2aa787a0a1",
+    "bean_cowpea_leaf_disease_classification-ce6694313a",
+    "bean_cowpea_leaf_disease_classification-563b5eac27",
+    "bean_cowpea_leaf_disease_classification-d4dc49b865",
+    "bean_cowpea_leaf_disease_classification-b16332f4f9",
+    "bean_cowpea_leaf_disease_classification-b288fb0217",
+    "bean_cowpea_leaf_disease_classification-17eab6237e",
+    "bean_cowpea_leaf_disease_classification-2bcae05e1a",
+    "bean_cowpea_leaf_disease_classification-0ac6ee292b",
+    "bean_cowpea_leaf_disease_classification-baf53390ff",
+    "bean_cowpea_leaf_disease_classification-ee80f8b429",
+    "bean_cowpea_leaf_disease_classification-a8aa9027b5",
+    "bean_cowpea_leaf_disease_classification-bd56a90c8b",
+    "bean_cowpea_leaf_disease_classification-7b3116330c"
+   ],
+   "10": [
+    "bean_cowpea_leaf_disease_classification-202f4046ff",
+    "bean_cowpea_leaf_disease_classification-9699537738",
+    "bean_cowpea_leaf_disease_classification-3e57cb636a",
+    "bean_cowpea_leaf_disease_classification-ded54c658d",
+    "bean_cowpea_leaf_disease_classification-abc852f5a4",
+    "bean_cowpea_leaf_disease_classification-25f3310aac",
+    "bean_cowpea_leaf_disease_classification-6dd0abc234",
+    "bean_cowpea_leaf_disease_classification-01f0552d3c",
+    "bean_cowpea_leaf_disease_classification-0d0ce02d03",
+    "bean_cowpea_leaf_disease_classification-21c4801a33",
+    "bean_cowpea_leaf_disease_classification-88602610fc",
+    "bean_cowpea_leaf_disease_classification-5344065ad1",
+    "bean_cowpea_leaf_disease_classification-a21e23c692",
+    "bean_cowpea_leaf_disease_classification-9a81ae09bf",
+    "bean_cowpea_leaf_disease_classification-78931144de",
+    "bean_cowpea_leaf_disease_classification-bd477bf30f",
+    "bean_cowpea_leaf_disease_classification-059d199f91",
+    "bean_cowpea_leaf_disease_classification-5ca6dae2cc",
+    "bean_cowpea_leaf_disease_classification-b4091e57b7",
+    "bean_cowpea_leaf_disease_classification-2c55b901ca",
+    "bean_cowpea_leaf_disease_classification-ce2fac0b3b",
+    "bean_cowpea_leaf_disease_classification-5b28ff7178",
+    "bean_cowpea_leaf_disease_classification-9f6a10c79d",
+    "bean_cowpea_leaf_disease_classification-6e61d93dc8",
+    "bean_cowpea_leaf_disease_classification-52dab8579b",
+    "bean_cowpea_leaf_disease_classification-84febf3c6b",
+    "bean_cowpea_leaf_disease_classification-c6b7ea0fbf",
+    "bean_cowpea_leaf_disease_classification-f068799b3d",
+    "bean_cowpea_leaf_disease_classification-44872ced82",
+    "bean_cowpea_leaf_disease_classification-dd665ba1d7",
+    "bean_cowpea_leaf_disease_classification-95ca128b58",
+    "bean_cowpea_leaf_disease_classification-024a783e75",
+    "bean_cowpea_leaf_disease_classification-2dea97e4fe",
+    "bean_cowpea_leaf_disease_classification-93a82c71c5",
+    "bean_cowpea_leaf_disease_classification-50f1cc2f47",
+    "bean_cowpea_leaf_disease_classification-8371f14613",
+    "bean_cowpea_leaf_disease_classification-2aa787a0a1",
+    "bean_cowpea_leaf_disease_classification-ce6694313a",
+    "bean_cowpea_leaf_disease_classification-563b5eac27",
+    "bean_cowpea_leaf_disease_classification-fdd10eaf1e",
+    "bean_cowpea_leaf_disease_classification-2fa92cf295",
+    "bean_cowpea_leaf_disease_classification-d4dc49b865",
+    "bean_cowpea_leaf_disease_classification-b16332f4f9",
+    "bean_cowpea_leaf_disease_classification-f68d0428ab",
+    "bean_cowpea_leaf_disease_classification-b288fb0217",
+    "bean_cowpea_leaf_disease_classification-17eab6237e",
+    "bean_cowpea_leaf_disease_classification-2bcae05e1a",
+    "bean_cowpea_leaf_disease_classification-a2ac616fa6",
+    "bean_cowpea_leaf_disease_classification-edbfe8e940",
+    "bean_cowpea_leaf_disease_classification-0ac6ee292b",
+    "bean_cowpea_leaf_disease_classification-3757738e09",
+    "bean_cowpea_leaf_disease_classification-baf53390ff",
+    "bean_cowpea_leaf_disease_classification-f72819b56e",
+    "bean_cowpea_leaf_disease_classification-ee80f8b429",
+    "bean_cowpea_leaf_disease_classification-6eba0456be",
+    "bean_cowpea_leaf_disease_classification-a88c70494b",
+    "bean_cowpea_leaf_disease_classification-a8aa9027b5",
+    "bean_cowpea_leaf_disease_classification-d224e9fa71",
+    "bean_cowpea_leaf_disease_classification-bd56a90c8b",
+    "bean_cowpea_leaf_disease_classification-7b3116330c"
+   ],
+   "15": [
+    "bean_cowpea_leaf_disease_classification-ecf9844e35",
+    "bean_cowpea_leaf_disease_classification-202f4046ff",
+    "bean_cowpea_leaf_disease_classification-bef702fea9",
+    "bean_cowpea_leaf_disease_classification-9699537738",
+    "bean_cowpea_leaf_disease_classification-1d020ab06a",
+    "bean_cowpea_leaf_disease_classification-3e57cb636a",
+    "bean_cowpea_leaf_disease_classification-ded54c658d",
+    "bean_cowpea_leaf_disease_classification-abc852f5a4",
+    "bean_cowpea_leaf_disease_classification-25f3310aac",
+    "bean_cowpea_leaf_disease_classification-6dd0abc234",
+    "bean_cowpea_leaf_disease_classification-01f0552d3c",
+    "bean_cowpea_leaf_disease_classification-0e0a48247e",
+    "bean_cowpea_leaf_disease_classification-0d0ce02d03",
+    "bean_cowpea_leaf_disease_classification-04622610fa",
+    "bean_cowpea_leaf_disease_classification-21c4801a33",
+    "bean_cowpea_leaf_disease_classification-88602610fc",
+    "bean_cowpea_leaf_disease_classification-5344065ad1",
+    "bean_cowpea_leaf_disease_classification-a21e23c692",
+    "bean_cowpea_leaf_disease_classification-2c3ca8c8b0",
+    "bean_cowpea_leaf_disease_classification-9a81ae09bf",
+    "bean_cowpea_leaf_disease_classification-78931144de",
+    "bean_cowpea_leaf_disease_classification-11a1d21553",
+    "bean_cowpea_leaf_disease_classification-33646f9736",
+    "bean_cowpea_leaf_disease_classification-bd477bf30f",
+    "bean_cowpea_leaf_disease_classification-059d199f91",
+    "bean_cowpea_leaf_disease_classification-e0a4eecfc1",
+    "bean_cowpea_leaf_disease_classification-5ca6dae2cc",
+    "bean_cowpea_leaf_disease_classification-b4091e57b7",
+    "bean_cowpea_leaf_disease_classification-aef40aabeb",
+    "bean_cowpea_leaf_disease_classification-2c55b901ca",
+    "bean_cowpea_leaf_disease_classification-ce2fac0b3b",
+    "bean_cowpea_leaf_disease_classification-a93311f31e",
+    "bean_cowpea_leaf_disease_classification-c95ff35cd9",
+    "bean_cowpea_leaf_disease_classification-5b28ff7178",
+    "bean_cowpea_leaf_disease_classification-9f6a10c79d",
+    "bean_cowpea_leaf_disease_classification-6e61d93dc8",
+    "bean_cowpea_leaf_disease_classification-62e564bf68",
+    "bean_cowpea_leaf_disease_classification-7528878ad6",
+    "bean_cowpea_leaf_disease_classification-52dab8579b",
+    "bean_cowpea_leaf_disease_classification-84febf3c6b",
+    "bean_cowpea_leaf_disease_classification-20a4e775c5",
+    "bean_cowpea_leaf_disease_classification-c6b7ea0fbf",
+    "bean_cowpea_leaf_disease_classification-f068799b3d",
+    "bean_cowpea_leaf_disease_classification-44872ced82",
+    "bean_cowpea_leaf_disease_classification-dd665ba1d7",
+    "bean_cowpea_leaf_disease_classification-95ca128b58",
+    "bean_cowpea_leaf_disease_classification-024a783e75",
+    "bean_cowpea_leaf_disease_classification-ce6e16ff29",
+    "bean_cowpea_leaf_disease_classification-2dea97e4fe",
+    "bean_cowpea_leaf_disease_classification-93a82c71c5",
+    "bean_cowpea_leaf_disease_classification-08bd27d669",
+    "bean_cowpea_leaf_disease_classification-d7b0df45b8",
+    "bean_cowpea_leaf_disease_classification-50f1cc2f47",
+    "bean_cowpea_leaf_disease_classification-8371f14613",
+    "bean_cowpea_leaf_disease_classification-2aa787a0a1",
+    "bean_cowpea_leaf_disease_classification-4d8807a3c5",
+    "bean_cowpea_leaf_disease_classification-56e122b9bc",
+    "bean_cowpea_leaf_disease_classification-ce6694313a",
+    "bean_cowpea_leaf_disease_classification-563b5eac27",
+    "bean_cowpea_leaf_disease_classification-fdd10eaf1e",
+    "bean_cowpea_leaf_disease_classification-2fa92cf295",
+    "bean_cowpea_leaf_disease_classification-d4dc49b865",
+    "bean_cowpea_leaf_disease_classification-b16332f4f9",
+    "bean_cowpea_leaf_disease_classification-06e433a90e",
+    "bean_cowpea_leaf_disease_classification-f68d0428ab",
+    "bean_cowpea_leaf_disease_classification-b288fb0217",
+    "bean_cowpea_leaf_disease_classification-326cd2c60e",
+    "bean_cowpea_leaf_disease_classification-17eab6237e",
+    "bean_cowpea_leaf_disease_classification-2bcae05e1a",
+    "bean_cowpea_leaf_disease_classification-a2ac616fa6",
+    "bean_cowpea_leaf_disease_classification-40a5fe7600",
+    "bean_cowpea_leaf_disease_classification-edbfe8e940",
+    "bean_cowpea_leaf_disease_classification-51a60d6820",
+    "bean_cowpea_leaf_disease_classification-0ac6ee292b",
+    "bean_cowpea_leaf_disease_classification-f749ae59a6",
+    "bean_cowpea_leaf_disease_classification-3757738e09",
+    "bean_cowpea_leaf_disease_classification-f44366aebd",
+    "bean_cowpea_leaf_disease_classification-baf53390ff",
+    "bean_cowpea_leaf_disease_classification-dfa5cbe34a",
+    "bean_cowpea_leaf_disease_classification-ddea40addf",
+    "bean_cowpea_leaf_disease_classification-f72819b56e",
+    "bean_cowpea_leaf_disease_classification-ee80f8b429",
+    "bean_cowpea_leaf_disease_classification-6eba0456be",
+    "bean_cowpea_leaf_disease_classification-53f36dcac7",
+    "bean_cowpea_leaf_disease_classification-a88c70494b",
+    "bean_cowpea_leaf_disease_classification-a8aa9027b5",
+    "bean_cowpea_leaf_disease_classification-d224e9fa71",
+    "bean_cowpea_leaf_disease_classification-bd56a90c8b",
+    "bean_cowpea_leaf_disease_classification-49244766c8",
+    "bean_cowpea_leaf_disease_classification-7b3116330c"
+   ]
+  },
+  "s2": {
+   "5": [
+    "bean_cowpea_leaf_disease_classification-196fdda0bc",
+    "bean_cowpea_leaf_disease_classification-01127645dc",
+    "bean_cowpea_leaf_disease_classification-2d28552102",
+    "bean_cowpea_leaf_disease_classification-f488f57035",
+    "bean_cowpea_leaf_disease_classification-d82eaf73a8",
+    "bean_cowpea_leaf_disease_classification-f1c2be0979",
+    "bean_cowpea_leaf_disease_classification-b33e4592b4",
+    "bean_cowpea_leaf_disease_classification-7bdeb72ba7",
+    "bean_cowpea_leaf_disease_classification-d8145b6722",
+    "bean_cowpea_leaf_disease_classification-a40c3aca8e",
+    "bean_cowpea_leaf_disease_classification-2d2aa45467",
+    "bean_cowpea_leaf_disease_classification-546eb80f8d",
+    "bean_cowpea_leaf_disease_classification-5b256ce40b",
+    "bean_cowpea_leaf_disease_classification-036071e0f6",
+    "bean_cowpea_leaf_disease_classification-fb48a7022d",
+    "bean_cowpea_leaf_disease_classification-166887e5ef",
+    "bean_cowpea_leaf_disease_classification-9d9f6933ad",
+    "bean_cowpea_leaf_disease_classification-be21241fcf",
+    "bean_cowpea_leaf_disease_classification-a2e0b9161c",
+    "bean_cowpea_leaf_disease_classification-22fee95d9e",
+    "bean_cowpea_leaf_disease_classification-dc0dd83fd9",
+    "bean_cowpea_leaf_disease_classification-4f0a3f5cef",
+    "bean_cowpea_leaf_disease_classification-1ccae21c30",
+    "bean_cowpea_leaf_disease_classification-bbd08b79b0",
+    "bean_cowpea_leaf_disease_classification-b240228990",
+    "bean_cowpea_leaf_disease_classification-3757738e09",
+    "bean_cowpea_leaf_disease_classification-6b6d1d0c4c",
+    "bean_cowpea_leaf_disease_classification-f6955f26fb",
+    "bean_cowpea_leaf_disease_classification-feab42860d",
+    "bean_cowpea_leaf_disease_classification-37e18191a9"
+   ],
+   "10": [
+    "bean_cowpea_leaf_disease_classification-196fdda0bc",
+    "bean_cowpea_leaf_disease_classification-0b31b6e3d0",
+    "bean_cowpea_leaf_disease_classification-c82f45db3b",
+    "bean_cowpea_leaf_disease_classification-01127645dc",
+    "bean_cowpea_leaf_disease_classification-2d28552102",
+    "bean_cowpea_leaf_disease_classification-f488f57035",
+    "bean_cowpea_leaf_disease_classification-2b6ad3ab17",
+    "bean_cowpea_leaf_disease_classification-d82eaf73a8",
+    "bean_cowpea_leaf_disease_classification-0ccc4a6d16",
+    "bean_cowpea_leaf_disease_classification-d8ce733ca6",
+    "bean_cowpea_leaf_disease_classification-f1c2be0979",
+    "bean_cowpea_leaf_disease_classification-b33e4592b4",
+    "bean_cowpea_leaf_disease_classification-7bdeb72ba7",
+    "bean_cowpea_leaf_disease_classification-f69e01f708",
+    "bean_cowpea_leaf_disease_classification-d8145b6722",
+    "bean_cowpea_leaf_disease_classification-a40c3aca8e",
+    "bean_cowpea_leaf_disease_classification-afecfd3b41",
+    "bean_cowpea_leaf_disease_classification-2d2aa45467",
+    "bean_cowpea_leaf_disease_classification-c9fd78dc82",
+    "bean_cowpea_leaf_disease_classification-546eb80f8d",
+    "bean_cowpea_leaf_disease_classification-df4a579821",
+    "bean_cowpea_leaf_disease_classification-8eb1f775b5",
+    "bean_cowpea_leaf_disease_classification-5b256ce40b",
+    "bean_cowpea_leaf_disease_classification-99973df469",
+    "bean_cowpea_leaf_disease_classification-036071e0f6",
+    "bean_cowpea_leaf_disease_classification-fb48a7022d",
+    "bean_cowpea_leaf_disease_classification-166887e5ef",
+    "bean_cowpea_leaf_disease_classification-52dab8579b",
+    "bean_cowpea_leaf_disease_classification-9d9f6933ad",
+    "bean_cowpea_leaf_disease_classification-0a925f73d9",
+    "bean_cowpea_leaf_disease_classification-be21241fcf",
+    "bean_cowpea_leaf_disease_classification-2a13ee043e",
+    "bean_cowpea_leaf_disease_classification-a3c58eb9cd",
+    "bean_cowpea_leaf_disease_classification-cbd277edbe",
+    "bean_cowpea_leaf_disease_classification-a2e0b9161c",
+    "bean_cowpea_leaf_disease_classification-0df67aee81",
+    "bean_cowpea_leaf_disease_classification-01fe25dae2",
+    "bean_cowpea_leaf_disease_classification-22fee95d9e",
+    "bean_cowpea_leaf_disease_classification-612a292bba",
+    "bean_cowpea_leaf_disease_classification-fafca9cf54",
+    "bean_cowpea_leaf_disease_classification-dc0dd83fd9",
+    "bean_cowpea_leaf_disease_classification-4f0a3f5cef",
+    "bean_cowpea_leaf_disease_classification-1ccae21c30",
+    "bean_cowpea_leaf_disease_classification-ce330c35fd",
+    "bean_cowpea_leaf_disease_classification-bbd08b79b0",
+    "bean_cowpea_leaf_disease_classification-4ac0d4530d",
+    "bean_cowpea_leaf_disease_classification-6a0b70847d",
+    "bean_cowpea_leaf_disease_classification-2eb479b6ba",
+    "bean_cowpea_leaf_disease_classification-b240228990",
+    "bean_cowpea_leaf_disease_classification-5e248225a5",
+    "bean_cowpea_leaf_disease_classification-3757738e09",
+    "bean_cowpea_leaf_disease_classification-958908c352",
+    "bean_cowpea_leaf_disease_classification-da122a6fff",
+    "bean_cowpea_leaf_disease_classification-e0c9b73221",
+    "bean_cowpea_leaf_disease_classification-37e9fd306d",
+    "bean_cowpea_leaf_disease_classification-6b6d1d0c4c",
+    "bean_cowpea_leaf_disease_classification-f6955f26fb",
+    "bean_cowpea_leaf_disease_classification-8efb66de47",
+    "bean_cowpea_leaf_disease_classification-feab42860d",
+    "bean_cowpea_leaf_disease_classification-37e18191a9"
+   ],
+   "15": [
+    "bean_cowpea_leaf_disease_classification-196fdda0bc",
+    "bean_cowpea_leaf_disease_classification-0b31b6e3d0",
+    "bean_cowpea_leaf_disease_classification-c82f45db3b",
+    "bean_cowpea_leaf_disease_classification-01127645dc",
+    "bean_cowpea_leaf_disease_classification-19fdb36470",
+    "bean_cowpea_leaf_disease_classification-2d28552102",
+    "bean_cowpea_leaf_disease_classification-f488f57035",
+    "bean_cowpea_leaf_disease_classification-d2b9d20306",
+    "bean_cowpea_leaf_disease_classification-2b6ad3ab17",
+    "bean_cowpea_leaf_disease_classification-d82eaf73a8",
+    "bean_cowpea_leaf_disease_classification-d5796d1807",
+    "bean_cowpea_leaf_disease_classification-0ccc4a6d16",
+    "bean_cowpea_leaf_disease_classification-d8ce733ca6",
+    "bean_cowpea_leaf_disease_classification-c28116a6bb",
+    "bean_cowpea_leaf_disease_classification-0d1a07c023",
+    "bean_cowpea_leaf_disease_classification-f1c2be0979",
+    "bean_cowpea_leaf_disease_classification-b33e4592b4",
+    "bean_cowpea_leaf_disease_classification-7bdeb72ba7",
+    "bean_cowpea_leaf_disease_classification-9a81ae09bf",
+    "bean_cowpea_leaf_disease_classification-f69e01f708",
+    "bean_cowpea_leaf_disease_classification-d8145b6722",
+    "bean_cowpea_leaf_disease_classification-3310688cca",
+    "bean_cowpea_leaf_disease_classification-3601476206",
+    "bean_cowpea_leaf_disease_classification-a40c3aca8e",
+    "bean_cowpea_leaf_disease_classification-afecfd3b41",
+    "bean_cowpea_leaf_disease_classification-2d2aa45467",
+    "bean_cowpea_leaf_disease_classification-c9fd78dc82",
+    "bean_cowpea_leaf_disease_classification-10af734068",
+    "bean_cowpea_leaf_disease_classification-4e5597d47f",
+    "bean_cowpea_leaf_disease_classification-ff3de59782",
+    "bean_cowpea_leaf_disease_classification-546eb80f8d",
+    "bean_cowpea_leaf_disease_classification-0ad996cc41",
+    "bean_cowpea_leaf_disease_classification-df4a579821",
+    "bean_cowpea_leaf_disease_classification-8eb1f775b5",
+    "bean_cowpea_leaf_disease_classification-5b256ce40b",
+    "bean_cowpea_leaf_disease_classification-99973df469",
+    "bean_cowpea_leaf_disease_classification-fcb9e15742",
+    "bean_cowpea_leaf_disease_classification-fc6a47c4e0",
+    "bean_cowpea_leaf_disease_classification-036071e0f6",
+    "bean_cowpea_leaf_disease_classification-bced7cc316",
+    "bean_cowpea_leaf_disease_classification-fb48a7022d",
+    "bean_cowpea_leaf_disease_classification-166887e5ef",
+    "bean_cowpea_leaf_disease_classification-52dab8579b",
+    "bean_cowpea_leaf_disease_classification-dfcb8ff8b9",
+    "bean_cowpea_leaf_disease_classification-9d9f6933ad",
+    "bean_cowpea_leaf_disease_classification-0a925f73d9",
+    "bean_cowpea_leaf_disease_classification-5b490ca7ba",
+    "bean_cowpea_leaf_disease_classification-be21241fcf",
+    "bean_cowpea_leaf_disease_classification-2a13ee043e",
+    "bean_cowpea_leaf_disease_classification-a3c58eb9cd",
+    "bean_cowpea_leaf_disease_classification-cbd277edbe",
+    "bean_cowpea_leaf_disease_classification-76eb35304a",
+    "bean_cowpea_leaf_disease_classification-a2e0b9161c",
+    "bean_cowpea_leaf_disease_classification-aec6defa7f",
+    "bean_cowpea_leaf_disease_classification-0df67aee81",
+    "bean_cowpea_leaf_disease_classification-01fe25dae2",
+    "bean_cowpea_leaf_disease_classification-93a82c71c5",
+    "bean_cowpea_leaf_disease_classification-22fee95d9e",
+    "bean_cowpea_leaf_disease_classification-612a292bba",
+    "bean_cowpea_leaf_disease_classification-fafca9cf54",
+    "bean_cowpea_leaf_disease_classification-ee16840417",
+    "bean_cowpea_leaf_disease_classification-dc0dd83fd9",
+    "bean_cowpea_leaf_disease_classification-4f0a3f5cef",
+    "bean_cowpea_leaf_disease_classification-1ccae21c30",
+    "bean_cowpea_leaf_disease_classification-ff82b9d712",
+    "bean_cowpea_leaf_disease_classification-ce330c35fd",
+    "bean_cowpea_leaf_disease_classification-bbd08b79b0",
+    "bean_cowpea_leaf_disease_classification-61947af0ad",
+    "bean_cowpea_leaf_disease_classification-8efd66a9fe",
+    "bean_cowpea_leaf_disease_classification-4ac0d4530d",
+    "bean_cowpea_leaf_disease_classification-6a0b70847d",
+    "bean_cowpea_leaf_disease_classification-2eb479b6ba",
+    "bean_cowpea_leaf_disease_classification-3cc0da8d21",
+    "bean_cowpea_leaf_disease_classification-b240228990",
+    "bean_cowpea_leaf_disease_classification-5e248225a5",
+    "bean_cowpea_leaf_disease_classification-3757738e09",
+    "bean_cowpea_leaf_disease_classification-958908c352",
+    "bean_cowpea_leaf_disease_classification-75625e7f3b",
+    "bean_cowpea_leaf_disease_classification-da122a6fff",
+    "bean_cowpea_leaf_disease_classification-e0c9b73221",
+    "bean_cowpea_leaf_disease_classification-034a15f713",
+    "bean_cowpea_leaf_disease_classification-37e9fd306d",
+    "bean_cowpea_leaf_disease_classification-6b6d1d0c4c",
+    "bean_cowpea_leaf_disease_classification-fcc019a8a9",
+    "bean_cowpea_leaf_disease_classification-f23595ae41",
+    "bean_cowpea_leaf_disease_classification-f6955f26fb",
+    "bean_cowpea_leaf_disease_classification-8efb66de47",
+    "bean_cowpea_leaf_disease_classification-fd15bf165b",
+    "bean_cowpea_leaf_disease_classification-feab42860d",
+    "bean_cowpea_leaf_disease_classification-37e18191a9"
+   ]
+  }
+ }
+}

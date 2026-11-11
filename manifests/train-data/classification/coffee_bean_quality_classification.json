@@ -1,0 +1,5376 @@
+{
+ "name": "coffee_bean_quality_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/coffee_bean_quality_classification",
+ "hf_sha": "9aad7cb042f6d464e113fa49d5e7f32d4206535a",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T08:35:07+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "A",
+   "AA",
+   "AAA",
+   "AB",
+   "Bits",
+   "Bulk",
+   "C",
+   "PB-I",
+   "PB-II"
+  ],
+  "indexed_rows": 464
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "coffee_bean_quality_classification-331fbff4cf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0bc86e5f66",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-91fd9eca68",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0a68a0b029",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e555ff3385",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f696fd8366",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-adafdcec4e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b3f7d0b449",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-92f135cdfb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-89c4ae02bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3064c3b6e3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-9cf40246bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0dedfee51c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ba9aee935d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3e6e0fe7d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f5cea40498",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bb164b9db2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-11e452a8c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0a60695a53",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a3ccea64c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fa79a5ef9a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5d0a4ff927",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c99dd03519",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-234cce6d9c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5fd0e457f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c158507037",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7f3f07c631",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-275dbd2404",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0e6807a52f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-89020cff82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-55476e358a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f19228c7c6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-II"
+   ],
+   "ann": {
+    "label": "PB-II"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3c62c754e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a6847cb4db",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fb53fcd903",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-901d801167",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fcbaf74ac1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c23d6e2e1d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-2462f2bce1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0cfc388d27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-71fe067abf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4c6a666d33",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-dff7f8e1e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-dd5e7f640d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-09798c6f0b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7c50385000",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-2af107cada",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-af1bbdf39e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3c7ec2ff72",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5164fd6785",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6eae712192",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-78c95ebb79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7b7c9dc641",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-9a0ae7c1db",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-eb98fc5ca5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-784689fda9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-45b28f9f4a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-045266f7ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e7dd9bb40c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a167547058",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8f40bbbcba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-72bdefe987",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bulk"
+   ],
+   "ann": {
+    "label": "Bulk"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-90ec787e38",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-851a0c8143",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a44cdeee41",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7d2df735d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6538c109e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-571a1f1ca6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a164583f82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e466a4f2b8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a0cbc1bbbe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5ea8a381b6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-dade6f4866",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ed7a366ea6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-1dc0f29938",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-118082ffdc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-722e3ee53e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0047cf281e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8e0ca4b2c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d634107258",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-957ae9ae61",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4ca2747376",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fffbd5b5aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ada41aa4da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-face577cf3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f23e666bd0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3204bc8c7d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-44bfde11d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0e6502a383",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f6886a9ae5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f80552ebd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b06d64b12e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AB"
+   ],
+   "ann": {
+    "label": "AB"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3f39a4196f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b4d64a0575",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d20b896876",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e5cdd9994d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-41662cc332",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7197c5306b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d490629bde",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-310e72460c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 160,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-82f21a60f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f1269267e0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-83f64683c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-227651e190",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5e8e8bdd70",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-95596d0cdf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-20c4eaa7da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-12fdf4b9fd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-683c3d1c10",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5273bfc7f3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-33c1e393f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e6d0c9a207",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-02488f2365",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-1f13fb486e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c14aebc773",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 184,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ba9e8ebcf0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 185,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f2f559d1bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-030023bd74",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-1435b161fc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-35f2949a5e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-2c67ecb14d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "A"
+   ],
+   "ann": {
+    "label": "A"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-be24d2056e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7d57d21794",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-9fbde48892",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 202,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-46f211b0e0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-87f7ad147a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-065a3adc1e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-98e4dc3072",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f4b261996f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-cb6c6ff413",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ce540cf21c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 216,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4ad8dea27b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d41e36f31c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b2fd2c9243",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-965b4c9517",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f2209fbbbe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-54e05a1472",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-63920f1678",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-2893afc2e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8039905b36",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-17209ea6cc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-aaf8de6e07",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 230,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bf635803f1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 231,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-437cc2a90b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 233,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-2585587a6d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b21d236436",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-15967c0984",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-64ac60e71a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-30e78a0f41",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-640587f79f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 241,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d8fde67aeb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-47093768e4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 246,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-872c4c2f2e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0f7a5c8f13",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AAA"
+   ],
+   "ann": {
+    "label": "AAA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-cda3f98b17",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 250,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a1c7d2f6d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-31c891a0ca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 253,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ce7f52fda8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ffe46826f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a561582d94",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 257,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ea47e930ac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6a4b21f3d8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 260,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a035a32eaf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c397626b3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3feb987e56",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7be1c4b19b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 266,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ce14634972",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 267,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-662ccefcd2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5d4baf8344",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-cfddce8ad8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d42f58eb23",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 272,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6b9fedcdd8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-dcc257a5af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-56005d9a19",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 275,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-69e1c72aeb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 277,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-737a0b9e24",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8e11198626",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-653b3839b3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 284,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fad7803bcd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-377fd53ca9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-956f1afb5d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 288,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-192470de45",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bf58eb4411",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 291,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-605e6e8a5a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8ea5bf9140",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ac9a87bc93",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 294,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-97760ed25d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 296,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bits"
+   ],
+   "ann": {
+    "label": "Bits"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-05a914d01c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-819e23f96e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d299a9af5e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4539c576f8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 307,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e3c8e410e0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 309,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0828729a3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c8cdb167d1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-985528a643",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8d1c38e8df",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 314,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-1c2a2244d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6184dc3f5c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 317,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bcbc80657d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fad2698109",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-38a6d3776c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4c7bf976c8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b5a66a3713",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-099a41b6e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 329,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-64be05ca65",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 331,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f5a1f5c04f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-330f5640b9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-21b54d46f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 334,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0385565168",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-79d9a85289",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-aef5b9aa55",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 342,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-891c974e83",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 343,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7ed6224477",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 345,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-044379822a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ea8ddb282f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 352,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-07eefdc2aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 353,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a68d0fcd25",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 354,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-42b77d05fc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 355,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f3d1711f9a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 356,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8cf6e4c624",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0b1b37251a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 360,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "AA"
+   ],
+   "ann": {
+    "label": "AA"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b2098ff385",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7fd729e158",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6879ead0fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bccbe079ff",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 367,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-136667bfd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ec3a048da3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 369,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f28e4f07a5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7b591f125f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 373,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-19151b567c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 375,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-9487ca940a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 376,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b2c55bcc7d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-ef01e4b7ed",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 380,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-454e13f681",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-34d65df928",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 383,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-320b95100e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-49d07dc5e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 387,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0cc852c132",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 390,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-bd30305f79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f393c9c604",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 393,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-270b614816",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-fec9ae66a0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b19b58fb7c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0e980f99a6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-67c6915eca",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 402,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-7db45607b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-4d3ede3e8e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e5da2f8edc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 406,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f7e5ee9891",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-97eeb9c2f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 410,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-8d1359f2ff",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "PB-I"
+   ],
+   "ann": {
+    "label": "PB-I"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-53b96eb7bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b206224276",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-068c27aa42",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-048c1445ad",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 420,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-c79fa9de99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5fb197133a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 422,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a537ef7528",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 423,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6c073c50ef",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 426,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-d9422db903",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 428,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-62d28036b3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 430,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f8529b87d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 431,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-140f06984c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 435,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-e9f7f17283",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 436,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a68a39447f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-9714b180d1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 438,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-dc62e87e9c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 442,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-f972220a99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a52a8b7b36",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 444,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-b95b7faf1e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-6f15fa81ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 447,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-29caf2572e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0b888b205a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0d3690a2d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-5bd7b868af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-a00ff2b6aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-34fc4ba3f3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-25025184a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 461,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-0d888f31a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 462,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "coffee_bean_quality_classification-3f1dd38e6f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 463,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "C"
+   ],
+   "ann": {
+    "label": "C"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "coffee_bean_quality_classification-331fbff4cf",
+    "coffee_bean_quality_classification-b3f7d0b449",
+    "coffee_bean_quality_classification-92f135cdfb",
+    "coffee_bean_quality_classification-a3ccea64c9",
+    "coffee_bean_quality_classification-5d0a4ff927",
+    "coffee_bean_quality_classification-901d801167",
+    "coffee_bean_quality_classification-2462f2bce1",
+    "coffee_bean_quality_classification-dd5e7f640d",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-45b28f9f4a",
+    "coffee_bean_quality_classification-7d2df735d3",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-fffbd5b5aa",
+    "coffee_bean_quality_classification-face577cf3",
+    "coffee_bean_quality_classification-3204bc8c7d",
+    "coffee_bean_quality_classification-227651e190",
+    "coffee_bean_quality_classification-20c4eaa7da",
+    "coffee_bean_quality_classification-12fdf4b9fd",
+    "coffee_bean_quality_classification-33c1e393f0",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-965b4c9517",
+    "coffee_bean_quality_classification-54e05a1472",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-47093768e4",
+    "coffee_bean_quality_classification-a1c7d2f6d2",
+    "coffee_bean_quality_classification-c397626b3c",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-8e11198626",
+    "coffee_bean_quality_classification-ac9a87bc93",
+    "coffee_bean_quality_classification-0828729a3c",
+    "coffee_bean_quality_classification-c8cdb167d1",
+    "coffee_bean_quality_classification-330f5640b9",
+    "coffee_bean_quality_classification-044379822a",
+    "coffee_bean_quality_classification-0b1b37251a",
+    "coffee_bean_quality_classification-6879ead0fa",
+    "coffee_bean_quality_classification-ec3a048da3",
+    "coffee_bean_quality_classification-9487ca940a",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-a537ef7528",
+    "coffee_bean_quality_classification-f972220a99",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-0d3690a2d4",
+    "coffee_bean_quality_classification-3f1dd38e6f"
+   ],
+   "10": [
+    "coffee_bean_quality_classification-331fbff4cf",
+    "coffee_bean_quality_classification-0bc86e5f66",
+    "coffee_bean_quality_classification-adafdcec4e",
+    "coffee_bean_quality_classification-b3f7d0b449",
+    "coffee_bean_quality_classification-92f135cdfb",
+    "coffee_bean_quality_classification-0a60695a53",
+    "coffee_bean_quality_classification-a3ccea64c9",
+    "coffee_bean_quality_classification-5d0a4ff927",
+    "coffee_bean_quality_classification-0e6807a52f",
+    "coffee_bean_quality_classification-55476e358a",
+    "coffee_bean_quality_classification-901d801167",
+    "coffee_bean_quality_classification-c23d6e2e1d",
+    "coffee_bean_quality_classification-2462f2bce1",
+    "coffee_bean_quality_classification-71fe067abf",
+    "coffee_bean_quality_classification-dd5e7f640d",
+    "coffee_bean_quality_classification-09798c6f0b",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-eb98fc5ca5",
+    "coffee_bean_quality_classification-45b28f9f4a",
+    "coffee_bean_quality_classification-8f40bbbcba",
+    "coffee_bean_quality_classification-7d2df735d3",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-dade6f4866",
+    "coffee_bean_quality_classification-ed7a366ea6",
+    "coffee_bean_quality_classification-118082ffdc",
+    "coffee_bean_quality_classification-722e3ee53e",
+    "coffee_bean_quality_classification-d634107258",
+    "coffee_bean_quality_classification-fffbd5b5aa",
+    "coffee_bean_quality_classification-face577cf3",
+    "coffee_bean_quality_classification-3204bc8c7d",
+    "coffee_bean_quality_classification-b4d64a0575",
+    "coffee_bean_quality_classification-d490629bde",
+    "coffee_bean_quality_classification-82f21a60f9",
+    "coffee_bean_quality_classification-83f64683c5",
+    "coffee_bean_quality_classification-227651e190",
+    "coffee_bean_quality_classification-20c4eaa7da",
+    "coffee_bean_quality_classification-12fdf4b9fd",
+    "coffee_bean_quality_classification-33c1e393f0",
+    "coffee_bean_quality_classification-f2f559d1bf",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-4ad8dea27b",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-965b4c9517",
+    "coffee_bean_quality_classification-54e05a1472",
+    "coffee_bean_quality_classification-2893afc2e9",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-15967c0984",
+    "coffee_bean_quality_classification-640587f79f",
+    "coffee_bean_quality_classification-47093768e4",
+    "coffee_bean_quality_classification-a1c7d2f6d2",
+    "coffee_bean_quality_classification-6a4b21f3d8",
+    "coffee_bean_quality_classification-c397626b3c",
+    "coffee_bean_quality_classification-3feb987e56",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-69e1c72aeb",
+    "coffee_bean_quality_classification-8e11198626",
+    "coffee_bean_quality_classification-653b3839b3",
+    "coffee_bean_quality_classification-605e6e8a5a",
+    "coffee_bean_quality_classification-ac9a87bc93",
+    "coffee_bean_quality_classification-4539c576f8",
+    "coffee_bean_quality_classification-0828729a3c",
+    "coffee_bean_quality_classification-c8cdb167d1",
+    "coffee_bean_quality_classification-4c7bf976c8",
+    "coffee_bean_quality_classification-330f5640b9",
+    "coffee_bean_quality_classification-044379822a",
+    "coffee_bean_quality_classification-07eefdc2aa",
+    "coffee_bean_quality_classification-42b77d05fc",
+    "coffee_bean_quality_classification-8cf6e4c624",
+    "coffee_bean_quality_classification-0b1b37251a",
+    "coffee_bean_quality_classification-6879ead0fa",
+    "coffee_bean_quality_classification-ec3a048da3",
+    "coffee_bean_quality_classification-7b591f125f",
+    "coffee_bean_quality_classification-9487ca940a",
+    "coffee_bean_quality_classification-34d65df928",
+    "coffee_bean_quality_classification-b19b58fb7c",
+    "coffee_bean_quality_classification-7db45607b4",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-c79fa9de99",
+    "coffee_bean_quality_classification-a537ef7528",
+    "coffee_bean_quality_classification-6c073c50ef",
+    "coffee_bean_quality_classification-62d28036b3",
+    "coffee_bean_quality_classification-f972220a99",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-29caf2572e",
+    "coffee_bean_quality_classification-0d3690a2d4",
+    "coffee_bean_quality_classification-3f1dd38e6f"
+   ],
+   "15": [
+    "coffee_bean_quality_classification-331fbff4cf",
+    "coffee_bean_quality_classification-0bc86e5f66",
+    "coffee_bean_quality_classification-adafdcec4e",
+    "coffee_bean_quality_classification-b3f7d0b449",
+    "coffee_bean_quality_classification-92f135cdfb",
+    "coffee_bean_quality_classification-ba9aee935d",
+    "coffee_bean_quality_classification-3e6e0fe7d2",
+    "coffee_bean_quality_classification-11e452a8c5",
+    "coffee_bean_quality_classification-0a60695a53",
+    "coffee_bean_quality_classification-a3ccea64c9",
+    "coffee_bean_quality_classification-fa79a5ef9a",
+    "coffee_bean_quality_classification-5d0a4ff927",
+    "coffee_bean_quality_classification-234cce6d9c",
+    "coffee_bean_quality_classification-0e6807a52f",
+    "coffee_bean_quality_classification-55476e358a",
+    "coffee_bean_quality_classification-901d801167",
+    "coffee_bean_quality_classification-fcbaf74ac1",
+    "coffee_bean_quality_classification-c23d6e2e1d",
+    "coffee_bean_quality_classification-2462f2bce1",
+    "coffee_bean_quality_classification-71fe067abf",
+    "coffee_bean_quality_classification-4c6a666d33",
+    "coffee_bean_quality_classification-dd5e7f640d",
+    "coffee_bean_quality_classification-09798c6f0b",
+    "coffee_bean_quality_classification-af1bbdf39e",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-eb98fc5ca5",
+    "coffee_bean_quality_classification-45b28f9f4a",
+    "coffee_bean_quality_classification-045266f7ae",
+    "coffee_bean_quality_classification-8f40bbbcba",
+    "coffee_bean_quality_classification-72bdefe987",
+    "coffee_bean_quality_classification-90ec787e38",
+    "coffee_bean_quality_classification-7d2df735d3",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-c2a14d5758",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-5ea8a381b6",
+    "coffee_bean_quality_classification-dade6f4866",
+    "coffee_bean_quality_classification-ed7a366ea6",
+    "coffee_bean_quality_classification-1dc0f29938",
+    "coffee_bean_quality_classification-118082ffdc",
+    "coffee_bean_quality_classification-722e3ee53e",
+    "coffee_bean_quality_classification-d634107258",
+    "coffee_bean_quality_classification-fffbd5b5aa",
+    "coffee_bean_quality_classification-face577cf3",
+    "coffee_bean_quality_classification-3204bc8c7d",
+    "coffee_bean_quality_classification-b4d64a0575",
+    "coffee_bean_quality_classification-d20b896876",
+    "coffee_bean_quality_classification-e5cdd9994d",
+    "coffee_bean_quality_classification-7197c5306b",
+    "coffee_bean_quality_classification-d490629bde",
+    "coffee_bean_quality_classification-82f21a60f9",
+    "coffee_bean_quality_classification-f1269267e0",
+    "coffee_bean_quality_classification-83f64683c5",
+    "coffee_bean_quality_classification-227651e190",
+    "coffee_bean_quality_classification-20c4eaa7da",
+    "coffee_bean_quality_classification-12fdf4b9fd",
+    "coffee_bean_quality_classification-33c1e393f0",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-f2f559d1bf",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-46f211b0e0",
+    "coffee_bean_quality_classification-cb6c6ff413",
+    "coffee_bean_quality_classification-4ad8dea27b",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-965b4c9517",
+    "coffee_bean_quality_classification-54e05a1472",
+    "coffee_bean_quality_classification-2893afc2e9",
+    "coffee_bean_quality_classification-8039905b36",
+    "coffee_bean_quality_classification-17209ea6cc",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-15967c0984",
+    "coffee_bean_quality_classification-30e78a0f41",
+    "coffee_bean_quality_classification-640587f79f",
+    "coffee_bean_quality_classification-47093768e4",
+    "coffee_bean_quality_classification-a1c7d2f6d2",
+    "coffee_bean_quality_classification-ce7f52fda8",
+    "coffee_bean_quality_classification-6a4b21f3d8",
+    "coffee_bean_quality_classification-c397626b3c",
+    "coffee_bean_quality_classification-3feb987e56",
+    "coffee_bean_quality_classification-ce14634972",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-69e1c72aeb",
+    "coffee_bean_quality_classification-8e11198626",
+    "coffee_bean_quality_classification-653b3839b3",
+    "coffee_bean_quality_classification-fad7803bcd",
+    "coffee_bean_quality_classification-377fd53ca9",
+    "coffee_bean_quality_classification-192470de45",
+    "coffee_bean_quality_classification-605e6e8a5a",
+    "coffee_bean_quality_classification-ac9a87bc93",
+    "coffee_bean_quality_classification-4539c576f8",
+    "coffee_bean_quality_classification-e3c8e410e0",
+    "coffee_bean_quality_classification-0828729a3c",
+    "coffee_bean_quality_classification-c8cdb167d1",
+    "coffee_bean_quality_classification-8d1c38e8df",
+    "coffee_bean_quality_classification-1c2a2244d3",
+    "coffee_bean_quality_classification-4c7bf976c8",
+    "coffee_bean_quality_classification-330f5640b9",
+    "coffee_bean_quality_classification-0385565168",
+    "coffee_bean_quality_classification-891c974e83",
+    "coffee_bean_quality_classification-044379822a",
+    "coffee_bean_quality_classification-07eefdc2aa",
+    "coffee_bean_quality_classification-42b77d05fc",
+    "coffee_bean_quality_classification-8cf6e4c624",
+    "coffee_bean_quality_classification-0b1b37251a",
+    "coffee_bean_quality_classification-6879ead0fa",
+    "coffee_bean_quality_classification-ec3a048da3",
+    "coffee_bean_quality_classification-7b591f125f",
+    "coffee_bean_quality_classification-9487ca940a",
+    "coffee_bean_quality_classification-454e13f681",
+    "coffee_bean_quality_classification-34d65df928",
+    "coffee_bean_quality_classification-49d07dc5e1",
+    "coffee_bean_quality_classification-bd30305f79",
+    "coffee_bean_quality_classification-fec9ae66a0",
+    "coffee_bean_quality_classification-b19b58fb7c",
+    "coffee_bean_quality_classification-7db45607b4",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-97eeb9c2f2",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-c79fa9de99",
+    "coffee_bean_quality_classification-a537ef7528",
+    "coffee_bean_quality_classification-6c073c50ef",
+    "coffee_bean_quality_classification-62d28036b3",
+    "coffee_bean_quality_classification-f8529b87d4",
+    "coffee_bean_quality_classification-f972220a99",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-29caf2572e",
+    "coffee_bean_quality_classification-0b888b205a",
+    "coffee_bean_quality_classification-0d3690a2d4",
+    "coffee_bean_quality_classification-34fc4ba3f3",
+    "coffee_bean_quality_classification-0d888f31a4",
+    "coffee_bean_quality_classification-3f1dd38e6f"
+   ]
+  },
+  "s1": {
+   "5": [
+    "coffee_bean_quality_classification-91fd9eca68",
+    "coffee_bean_quality_classification-0dedfee51c",
+    "coffee_bean_quality_classification-c158507037",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-f19228c7c6",
+    "coffee_bean_quality_classification-71fe067abf",
+    "coffee_bean_quality_classification-4c6a666d33",
+    "coffee_bean_quality_classification-7c50385000",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-e7dd9bb40c",
+    "coffee_bean_quality_classification-851a0c8143",
+    "coffee_bean_quality_classification-a44cdeee41",
+    "coffee_bean_quality_classification-e466a4f2b8",
+    "coffee_bean_quality_classification-a0cbc1bbbe",
+    "coffee_bean_quality_classification-f6886a9ae5",
+    "coffee_bean_quality_classification-41662cc332",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-030023bd74",
+    "coffee_bean_quality_classification-1435b161fc",
+    "coffee_bean_quality_classification-87f7ad147a",
+    "coffee_bean_quality_classification-ce540cf21c",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-cda3f98b17",
+    "coffee_bean_quality_classification-31c891a0ca",
+    "coffee_bean_quality_classification-cfddce8ad8",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-653b3839b3",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-099a41b6e1",
+    "coffee_bean_quality_classification-64be05ca65",
+    "coffee_bean_quality_classification-79d9a85289",
+    "coffee_bean_quality_classification-b2098ff385",
+    "coffee_bean_quality_classification-19151b567c",
+    "coffee_bean_quality_classification-0cc852c132",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-5fb197133a",
+    "coffee_bean_quality_classification-e9f7f17283",
+    "coffee_bean_quality_classification-0d3690a2d4"
+   ],
+   "10": [
+    "coffee_bean_quality_classification-91fd9eca68",
+    "coffee_bean_quality_classification-e555ff3385",
+    "coffee_bean_quality_classification-adafdcec4e",
+    "coffee_bean_quality_classification-92f135cdfb",
+    "coffee_bean_quality_classification-89c4ae02bd",
+    "coffee_bean_quality_classification-0dedfee51c",
+    "coffee_bean_quality_classification-c158507037",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-89020cff82",
+    "coffee_bean_quality_classification-f19228c7c6",
+    "coffee_bean_quality_classification-3c62c754e9",
+    "coffee_bean_quality_classification-0cfc388d27",
+    "coffee_bean_quality_classification-71fe067abf",
+    "coffee_bean_quality_classification-4c6a666d33",
+    "coffee_bean_quality_classification-7c50385000",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-9a0ae7c1db",
+    "coffee_bean_quality_classification-e7dd9bb40c",
+    "coffee_bean_quality_classification-8f40bbbcba",
+    "coffee_bean_quality_classification-72bdefe987",
+    "coffee_bean_quality_classification-851a0c8143",
+    "coffee_bean_quality_classification-a44cdeee41",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-e466a4f2b8",
+    "coffee_bean_quality_classification-a0cbc1bbbe",
+    "coffee_bean_quality_classification-dade6f4866",
+    "coffee_bean_quality_classification-8e0ca4b2c0",
+    "coffee_bean_quality_classification-957ae9ae61",
+    "coffee_bean_quality_classification-44bfde11d7",
+    "coffee_bean_quality_classification-f6886a9ae5",
+    "coffee_bean_quality_classification-3f39a4196f",
+    "coffee_bean_quality_classification-41662cc332",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-82f21a60f9",
+    "coffee_bean_quality_classification-5e8e8bdd70",
+    "coffee_bean_quality_classification-95596d0cdf",
+    "coffee_bean_quality_classification-683c3d1c10",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-030023bd74",
+    "coffee_bean_quality_classification-1435b161fc",
+    "coffee_bean_quality_classification-87f7ad147a",
+    "coffee_bean_quality_classification-98e4dc3072",
+    "coffee_bean_quality_classification-f4b261996f",
+    "coffee_bean_quality_classification-ce540cf21c",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-54e05a1472",
+    "coffee_bean_quality_classification-63920f1678",
+    "coffee_bean_quality_classification-aaf8de6e07",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-cda3f98b17",
+    "coffee_bean_quality_classification-31c891a0ca",
+    "coffee_bean_quality_classification-a561582d94",
+    "coffee_bean_quality_classification-a035a32eaf",
+    "coffee_bean_quality_classification-cfddce8ad8",
+    "coffee_bean_quality_classification-d42f58eb23",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-56005d9a19",
+    "coffee_bean_quality_classification-653b3839b3",
+    "coffee_bean_quality_classification-97760ed25d",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-099a41b6e1",
+    "coffee_bean_quality_classification-64be05ca65",
+    "coffee_bean_quality_classification-21b54d46f9",
+    "coffee_bean_quality_classification-79d9a85289",
+    "coffee_bean_quality_classification-aef5b9aa55",
+    "coffee_bean_quality_classification-891c974e83",
+    "coffee_bean_quality_classification-7ed6224477",
+    "coffee_bean_quality_classification-ea8ddb282f",
+    "coffee_bean_quality_classification-b2098ff385",
+    "coffee_bean_quality_classification-7fd729e158",
+    "coffee_bean_quality_classification-f28e4f07a5",
+    "coffee_bean_quality_classification-19151b567c",
+    "coffee_bean_quality_classification-0cc852c132",
+    "coffee_bean_quality_classification-f393c9c604",
+    "coffee_bean_quality_classification-4d3ede3e8e",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-53b96eb7bf",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-5fb197133a",
+    "coffee_bean_quality_classification-e9f7f17283",
+    "coffee_bean_quality_classification-a52a8b7b36",
+    "coffee_bean_quality_classification-b95b7faf1e",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-0d3690a2d4",
+    "coffee_bean_quality_classification-25025184a4"
+   ],
+   "15": [
+    "coffee_bean_quality_classification-91fd9eca68",
+    "coffee_bean_quality_classification-e555ff3385",
+    "coffee_bean_quality_classification-adafdcec4e",
+    "coffee_bean_quality_classification-92f135cdfb",
+    "coffee_bean_quality_classification-89c4ae02bd",
+    "coffee_bean_quality_classification-0dedfee51c",
+    "coffee_bean_quality_classification-bb164b9db2",
+    "coffee_bean_quality_classification-a3ccea64c9",
+    "coffee_bean_quality_classification-234cce6d9c",
+    "coffee_bean_quality_classification-5fd0e457f9",
+    "coffee_bean_quality_classification-c158507037",
+    "coffee_bean_quality_classification-7f3f07c631",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-89020cff82",
+    "coffee_bean_quality_classification-f19228c7c6",
+    "coffee_bean_quality_classification-3c62c754e9",
+    "coffee_bean_quality_classification-a6847cb4db",
+    "coffee_bean_quality_classification-0cfc388d27",
+    "coffee_bean_quality_classification-71fe067abf",
+    "coffee_bean_quality_classification-4c6a666d33",
+    "coffee_bean_quality_classification-dff7f8e1e9",
+    "coffee_bean_quality_classification-7c50385000",
+    "coffee_bean_quality_classification-6eae712192",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-9a0ae7c1db",
+    "coffee_bean_quality_classification-eb98fc5ca5",
+    "coffee_bean_quality_classification-784689fda9",
+    "coffee_bean_quality_classification-e7dd9bb40c",
+    "coffee_bean_quality_classification-8f40bbbcba",
+    "coffee_bean_quality_classification-72bdefe987",
+    "coffee_bean_quality_classification-851a0c8143",
+    "coffee_bean_quality_classification-a44cdeee41",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-e466a4f2b8",
+    "coffee_bean_quality_classification-a0cbc1bbbe",
+    "coffee_bean_quality_classification-dade6f4866",
+    "coffee_bean_quality_classification-8e0ca4b2c0",
+    "coffee_bean_quality_classification-957ae9ae61",
+    "coffee_bean_quality_classification-4ca2747376",
+    "coffee_bean_quality_classification-f23e666bd0",
+    "coffee_bean_quality_classification-44bfde11d7",
+    "coffee_bean_quality_classification-0e6502a383",
+    "coffee_bean_quality_classification-f6886a9ae5",
+    "coffee_bean_quality_classification-f80552ebd3",
+    "coffee_bean_quality_classification-3f39a4196f",
+    "coffee_bean_quality_classification-41662cc332",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-82f21a60f9",
+    "coffee_bean_quality_classification-f1269267e0",
+    "coffee_bean_quality_classification-5e8e8bdd70",
+    "coffee_bean_quality_classification-95596d0cdf",
+    "coffee_bean_quality_classification-683c3d1c10",
+    "coffee_bean_quality_classification-5273bfc7f3",
+    "coffee_bean_quality_classification-e6d0c9a207",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-c14aebc773",
+    "coffee_bean_quality_classification-030023bd74",
+    "coffee_bean_quality_classification-1435b161fc",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-9fbde48892",
+    "coffee_bean_quality_classification-87f7ad147a",
+    "coffee_bean_quality_classification-98e4dc3072",
+    "coffee_bean_quality_classification-f4b261996f",
+    "coffee_bean_quality_classification-ce540cf21c",
+    "coffee_bean_quality_classification-d41e36f31c",
+    "coffee_bean_quality_classification-54e05a1472",
+    "coffee_bean_quality_classification-63920f1678",
+    "coffee_bean_quality_classification-2893afc2e9",
+    "coffee_bean_quality_classification-aaf8de6e07",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-437cc2a90b",
+    "coffee_bean_quality_classification-2585587a6d",
+    "coffee_bean_quality_classification-b21d236436",
+    "coffee_bean_quality_classification-0f7a5c8f13",
+    "coffee_bean_quality_classification-cda3f98b17",
+    "coffee_bean_quality_classification-31c891a0ca",
+    "coffee_bean_quality_classification-ce7f52fda8",
+    "coffee_bean_quality_classification-a561582d94",
+    "coffee_bean_quality_classification-a035a32eaf",
+    "coffee_bean_quality_classification-c397626b3c",
+    "coffee_bean_quality_classification-3feb987e56",
+    "coffee_bean_quality_classification-cfddce8ad8",
+    "coffee_bean_quality_classification-d42f58eb23",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-56005d9a19",
+    "coffee_bean_quality_classification-737a0b9e24",
+    "coffee_bean_quality_classification-653b3839b3",
+    "coffee_bean_quality_classification-956f1afb5d",
+    "coffee_bean_quality_classification-97760ed25d",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-d299a9af5e",
+    "coffee_bean_quality_classification-4539c576f8",
+    "coffee_bean_quality_classification-fad2698109",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-099a41b6e1",
+    "coffee_bean_quality_classification-64be05ca65",
+    "coffee_bean_quality_classification-330f5640b9",
+    "coffee_bean_quality_classification-21b54d46f9",
+    "coffee_bean_quality_classification-79d9a85289",
+    "coffee_bean_quality_classification-aef5b9aa55",
+    "coffee_bean_quality_classification-891c974e83",
+    "coffee_bean_quality_classification-7ed6224477",
+    "coffee_bean_quality_classification-ea8ddb282f",
+    "coffee_bean_quality_classification-8cf6e4c624",
+    "coffee_bean_quality_classification-b2098ff385",
+    "coffee_bean_quality_classification-7fd729e158",
+    "coffee_bean_quality_classification-136667bfd3",
+    "coffee_bean_quality_classification-ec3a048da3",
+    "coffee_bean_quality_classification-f28e4f07a5",
+    "coffee_bean_quality_classification-19151b567c",
+    "coffee_bean_quality_classification-9487ca940a",
+    "coffee_bean_quality_classification-b2c55bcc7d",
+    "coffee_bean_quality_classification-320b95100e",
+    "coffee_bean_quality_classification-0cc852c132",
+    "coffee_bean_quality_classification-f393c9c604",
+    "coffee_bean_quality_classification-4d3ede3e8e",
+    "coffee_bean_quality_classification-e5da2f8edc",
+    "coffee_bean_quality_classification-f7e5ee9891",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-53b96eb7bf",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-c79fa9de99",
+    "coffee_bean_quality_classification-5fb197133a",
+    "coffee_bean_quality_classification-a537ef7528",
+    "coffee_bean_quality_classification-6c073c50ef",
+    "coffee_bean_quality_classification-d9422db903",
+    "coffee_bean_quality_classification-e9f7f17283",
+    "coffee_bean_quality_classification-dc62e87e9c",
+    "coffee_bean_quality_classification-a52a8b7b36",
+    "coffee_bean_quality_classification-b95b7faf1e",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-0d3690a2d4",
+    "coffee_bean_quality_classification-25025184a4"
+   ]
+  },
+  "s2": {
+   "5": [
+    "coffee_bean_quality_classification-0a68a0b029",
+    "coffee_bean_quality_classification-e555ff3385",
+    "coffee_bean_quality_classification-f5cea40498",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-55476e358a",
+    "coffee_bean_quality_classification-2af107cada",
+    "coffee_bean_quality_classification-3c7ec2ff72",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-9a0ae7c1db",
+    "coffee_bean_quality_classification-045266f7ae",
+    "coffee_bean_quality_classification-90ec787e38",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-0047cf281e",
+    "coffee_bean_quality_classification-d634107258",
+    "coffee_bean_quality_classification-4ca2747376",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-4b285e0a31",
+    "coffee_bean_quality_classification-ba9e8ebcf0",
+    "coffee_bean_quality_classification-35f2949a5e",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-be24d2056e",
+    "coffee_bean_quality_classification-7d57d21794",
+    "coffee_bean_quality_classification-46f211b0e0",
+    "coffee_bean_quality_classification-64ac60e71a",
+    "coffee_bean_quality_classification-872c4c2f2e",
+    "coffee_bean_quality_classification-ffe46826f0",
+    "coffee_bean_quality_classification-ea47e930ac",
+    "coffee_bean_quality_classification-56005d9a19",
+    "coffee_bean_quality_classification-956f1afb5d",
+    "coffee_bean_quality_classification-8ea5bf9140",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-bcbc80657d",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-21b54d46f9",
+    "coffee_bean_quality_classification-f3d1711f9a",
+    "coffee_bean_quality_classification-bccbe079ff",
+    "coffee_bean_quality_classification-b2c55bcc7d",
+    "coffee_bean_quality_classification-ef01e4b7ed",
+    "coffee_bean_quality_classification-67c6915eca",
+    "coffee_bean_quality_classification-7db45607b4",
+    "coffee_bean_quality_classification-b206224276",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-9714b180d1",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-a00ff2b6aa"
+   ],
+   "10": [
+    "coffee_bean_quality_classification-0a68a0b029",
+    "coffee_bean_quality_classification-e555ff3385",
+    "coffee_bean_quality_classification-f696fd8366",
+    "coffee_bean_quality_classification-89c4ae02bd",
+    "coffee_bean_quality_classification-3064c3b6e3",
+    "coffee_bean_quality_classification-9cf40246bc",
+    "coffee_bean_quality_classification-f5cea40498",
+    "coffee_bean_quality_classification-0a60695a53",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-55476e358a",
+    "coffee_bean_quality_classification-fb53fcd903",
+    "coffee_bean_quality_classification-c23d6e2e1d",
+    "coffee_bean_quality_classification-2af107cada",
+    "coffee_bean_quality_classification-3c7ec2ff72",
+    "coffee_bean_quality_classification-78c95ebb79",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-9a0ae7c1db",
+    "coffee_bean_quality_classification-eb98fc5ca5",
+    "coffee_bean_quality_classification-045266f7ae",
+    "coffee_bean_quality_classification-a167547058",
+    "coffee_bean_quality_classification-90ec787e38",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-a0cbc1bbbe",
+    "coffee_bean_quality_classification-0047cf281e",
+    "coffee_bean_quality_classification-8e0ca4b2c0",
+    "coffee_bean_quality_classification-d634107258",
+    "coffee_bean_quality_classification-4ca2747376",
+    "coffee_bean_quality_classification-f23e666bd0",
+    "coffee_bean_quality_classification-0e6502a383",
+    "coffee_bean_quality_classification-41662cc332",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-5273bfc7f3",
+    "coffee_bean_quality_classification-4b285e0a31",
+    "coffee_bean_quality_classification-02488f2365",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-c14aebc773",
+    "coffee_bean_quality_classification-ba9e8ebcf0",
+    "coffee_bean_quality_classification-35f2949a5e",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-be24d2056e",
+    "coffee_bean_quality_classification-7d57d21794",
+    "coffee_bean_quality_classification-46f211b0e0",
+    "coffee_bean_quality_classification-cb6c6ff413",
+    "coffee_bean_quality_classification-aaf8de6e07",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-2585587a6d",
+    "coffee_bean_quality_classification-64ac60e71a",
+    "coffee_bean_quality_classification-640587f79f",
+    "coffee_bean_quality_classification-872c4c2f2e",
+    "coffee_bean_quality_classification-ce7f52fda8",
+    "coffee_bean_quality_classification-ffe46826f0",
+    "coffee_bean_quality_classification-ea47e930ac",
+    "coffee_bean_quality_classification-a035a32eaf",
+    "coffee_bean_quality_classification-5d4baf8344",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-56005d9a19",
+    "coffee_bean_quality_classification-956f1afb5d",
+    "coffee_bean_quality_classification-bf58eb4411",
+    "coffee_bean_quality_classification-8ea5bf9140",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-819e23f96e",
+    "coffee_bean_quality_classification-d299a9af5e",
+    "coffee_bean_quality_classification-6184dc3f5c",
+    "coffee_bean_quality_classification-bcbc80657d",
+    "coffee_bean_quality_classification-38a6d3776c",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-f5a1f5c04f",
+    "coffee_bean_quality_classification-21b54d46f9",
+    "coffee_bean_quality_classification-f3d1711f9a",
+    "coffee_bean_quality_classification-bccbe079ff",
+    "coffee_bean_quality_classification-136667bfd3",
+    "coffee_bean_quality_classification-b2c55bcc7d",
+    "coffee_bean_quality_classification-ef01e4b7ed",
+    "coffee_bean_quality_classification-bd30305f79",
+    "coffee_bean_quality_classification-0e980f99a6",
+    "coffee_bean_quality_classification-67c6915eca",
+    "coffee_bean_quality_classification-7db45607b4",
+    "coffee_bean_quality_classification-4d3ede3e8e",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-b206224276",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-a68a39447f",
+    "coffee_bean_quality_classification-9714b180d1",
+    "coffee_bean_quality_classification-b95b7faf1e",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-5bd7b868af",
+    "coffee_bean_quality_classification-a00ff2b6aa",
+    "coffee_bean_quality_classification-0d888f31a4"
+   ],
+   "15": [
+    "coffee_bean_quality_classification-0a68a0b029",
+    "coffee_bean_quality_classification-e555ff3385",
+    "coffee_bean_quality_classification-f696fd8366",
+    "coffee_bean_quality_classification-89c4ae02bd",
+    "coffee_bean_quality_classification-3064c3b6e3",
+    "coffee_bean_quality_classification-9cf40246bc",
+    "coffee_bean_quality_classification-f5cea40498",
+    "coffee_bean_quality_classification-bb164b9db2",
+    "coffee_bean_quality_classification-0a60695a53",
+    "coffee_bean_quality_classification-a3ccea64c9",
+    "coffee_bean_quality_classification-fa79a5ef9a",
+    "coffee_bean_quality_classification-c99dd03519",
+    "coffee_bean_quality_classification-275dbd2404",
+    "coffee_bean_quality_classification-0e6807a52f",
+    "coffee_bean_quality_classification-55476e358a",
+    "coffee_bean_quality_classification-3c62c754e9",
+    "coffee_bean_quality_classification-fb53fcd903",
+    "coffee_bean_quality_classification-c23d6e2e1d",
+    "coffee_bean_quality_classification-2af107cada",
+    "coffee_bean_quality_classification-3c7ec2ff72",
+    "coffee_bean_quality_classification-5164fd6785",
+    "coffee_bean_quality_classification-78c95ebb79",
+    "coffee_bean_quality_classification-7b7c9dc641",
+    "coffee_bean_quality_classification-9a0ae7c1db",
+    "coffee_bean_quality_classification-eb98fc5ca5",
+    "coffee_bean_quality_classification-784689fda9",
+    "coffee_bean_quality_classification-45b28f9f4a",
+    "coffee_bean_quality_classification-045266f7ae",
+    "coffee_bean_quality_classification-e7dd9bb40c",
+    "coffee_bean_quality_classification-a167547058",
+    "coffee_bean_quality_classification-90ec787e38",
+    "coffee_bean_quality_classification-6538c109e7",
+    "coffee_bean_quality_classification-c2a14d5758",
+    "coffee_bean_quality_classification-571a1f1ca6",
+    "coffee_bean_quality_classification-a164583f82",
+    "coffee_bean_quality_classification-a0cbc1bbbe",
+    "coffee_bean_quality_classification-0047cf281e",
+    "coffee_bean_quality_classification-8e0ca4b2c0",
+    "coffee_bean_quality_classification-d634107258",
+    "coffee_bean_quality_classification-957ae9ae61",
+    "coffee_bean_quality_classification-4ca2747376",
+    "coffee_bean_quality_classification-ada41aa4da",
+    "coffee_bean_quality_classification-f23e666bd0",
+    "coffee_bean_quality_classification-0e6502a383",
+    "coffee_bean_quality_classification-b06d64b12e",
+    "coffee_bean_quality_classification-b4d64a0575",
+    "coffee_bean_quality_classification-41662cc332",
+    "coffee_bean_quality_classification-310e72460c",
+    "coffee_bean_quality_classification-f1269267e0",
+    "coffee_bean_quality_classification-95596d0cdf",
+    "coffee_bean_quality_classification-12fdf4b9fd",
+    "coffee_bean_quality_classification-5273bfc7f3",
+    "coffee_bean_quality_classification-e6d0c9a207",
+    "coffee_bean_quality_classification-4b285e0a31",
+    "coffee_bean_quality_classification-02488f2365",
+    "coffee_bean_quality_classification-1f13fb486e",
+    "coffee_bean_quality_classification-c14aebc773",
+    "coffee_bean_quality_classification-ba9e8ebcf0",
+    "coffee_bean_quality_classification-35f2949a5e",
+    "coffee_bean_quality_classification-2c67ecb14d",
+    "coffee_bean_quality_classification-be24d2056e",
+    "coffee_bean_quality_classification-7d57d21794",
+    "coffee_bean_quality_classification-46f211b0e0",
+    "coffee_bean_quality_classification-065a3adc1e",
+    "coffee_bean_quality_classification-cb6c6ff413",
+    "coffee_bean_quality_classification-b2fd2c9243",
+    "coffee_bean_quality_classification-f2209fbbbe",
+    "coffee_bean_quality_classification-aaf8de6e07",
+    "coffee_bean_quality_classification-bf635803f1",
+    "coffee_bean_quality_classification-2585587a6d",
+    "coffee_bean_quality_classification-64ac60e71a",
+    "coffee_bean_quality_classification-30e78a0f41",
+    "coffee_bean_quality_classification-640587f79f",
+    "coffee_bean_quality_classification-d8fde67aeb",
+    "coffee_bean_quality_classification-872c4c2f2e",
+    "coffee_bean_quality_classification-a1c7d2f6d2",
+    "coffee_bean_quality_classification-ce7f52fda8",
+    "coffee_bean_quality_classification-ffe46826f0",
+    "coffee_bean_quality_classification-ea47e930ac",
+    "coffee_bean_quality_classification-a035a32eaf",
+    "coffee_bean_quality_classification-7be1c4b19b",
+    "coffee_bean_quality_classification-662ccefcd2",
+    "coffee_bean_quality_classification-5d4baf8344",
+    "coffee_bean_quality_classification-6b9fedcdd8",
+    "coffee_bean_quality_classification-dcc257a5af",
+    "coffee_bean_quality_classification-56005d9a19",
+    "coffee_bean_quality_classification-69e1c72aeb",
+    "coffee_bean_quality_classification-956f1afb5d",
+    "coffee_bean_quality_classification-bf58eb4411",
+    "coffee_bean_quality_classification-8ea5bf9140",
+    "coffee_bean_quality_classification-05a914d01c",
+    "coffee_bean_quality_classification-819e23f96e",
+    "coffee_bean_quality_classification-d299a9af5e",
+    "coffee_bean_quality_classification-985528a643",
+    "coffee_bean_quality_classification-1c2a2244d3",
+    "coffee_bean_quality_classification-6184dc3f5c",
+    "coffee_bean_quality_classification-bcbc80657d",
+    "coffee_bean_quality_classification-38a6d3776c",
+    "coffee_bean_quality_classification-4c7bf976c8",
+    "coffee_bean_quality_classification-b5a66a3713",
+    "coffee_bean_quality_classification-f5a1f5c04f",
+    "coffee_bean_quality_classification-21b54d46f9",
+    "coffee_bean_quality_classification-891c974e83",
+    "coffee_bean_quality_classification-a68d0fcd25",
+    "coffee_bean_quality_classification-f3d1711f9a",
+    "coffee_bean_quality_classification-bccbe079ff",
+    "coffee_bean_quality_classification-136667bfd3",
+    "coffee_bean_quality_classification-ec3a048da3",
+    "coffee_bean_quality_classification-7b591f125f",
+    "coffee_bean_quality_classification-19151b567c",
+    "coffee_bean_quality_classification-b2c55bcc7d",
+    "coffee_bean_quality_classification-ef01e4b7ed",
+    "coffee_bean_quality_classification-0cc852c132",
+    "coffee_bean_quality_classification-bd30305f79",
+    "coffee_bean_quality_classification-270b614816",
+    "coffee_bean_quality_classification-0e980f99a6",
+    "coffee_bean_quality_classification-67c6915eca",
+    "coffee_bean_quality_classification-7db45607b4",
+    "coffee_bean_quality_classification-4d3ede3e8e",
+    "coffee_bean_quality_classification-8d1359f2ff",
+    "coffee_bean_quality_classification-53b96eb7bf",
+    "coffee_bean_quality_classification-b206224276",
+    "coffee_bean_quality_classification-068c27aa42",
+    "coffee_bean_quality_classification-048c1445ad",
+    "coffee_bean_quality_classification-140f06984c",
+    "coffee_bean_quality_classification-a68a39447f",
+    "coffee_bean_quality_classification-9714b180d1",
+    "coffee_bean_quality_classification-a52a8b7b36",
+    "coffee_bean_quality_classification-b95b7faf1e",
+    "coffee_bean_quality_classification-6f15fa81ee",
+    "coffee_bean_quality_classification-29caf2572e",
+    "coffee_bean_quality_classification-5bd7b868af",
+    "coffee_bean_quality_classification-a00ff2b6aa",
+    "coffee_bean_quality_classification-0d888f31a4",
+    "coffee_bean_quality_classification-3f1dd38e6f"
+   ]
+  }
+ }
+}

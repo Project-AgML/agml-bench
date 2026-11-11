@@ -1,0 +1,998 @@
+{
+ "name": "pdsnet_field_plant_disease_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/pdsnet_field_plant_disease_segmentation",
+ "hf_sha": "bd9614d9723f917b59a187312c0ead737b7d3687",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T16:14:47+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2"
+  },
+  "indexed_rows": 240
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-b3f7d0b449",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-f38bbe2450",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-b7fa9473f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-0a60695a53",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-c99dd03519",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-fb53fcd903",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-992f3d6e79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-2462f2bce1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-87bf5da010",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-abacd324ed",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-3c7ec2ff72",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-78c95ebb79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-95ff1c0ebc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-7b7c9dc641",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-e7dd9bb40c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-a167547058",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-52f72c68a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-ada41aa4da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-fd6e55facc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-2e94703e2c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-ea5f3792e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-41662cc332",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-15345aa21c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-d490629bde",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-82f21a60f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-885228aab1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-20c4eaa7da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-5273bfc7f3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-b53408eb7f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-cf64017790",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-35f2949a5e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-87f7ad147a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-64f25b5484",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-ef86dc472a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 206,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-87d8cfbdc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 207,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-fa64811431",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-cb6c6ff413",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-948d411ec3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-17209ea6cc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-bf635803f1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 231,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-1f9768e5c4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pdsnet_field_plant_disease_segmentation-aeaf75edea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 236,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "pdsnet_field_plant_disease_segmentation-fb53fcd903",
+    "pdsnet_field_plant_disease_segmentation-95ff1c0ebc",
+    "pdsnet_field_plant_disease_segmentation-e7dd9bb40c",
+    "pdsnet_field_plant_disease_segmentation-ada41aa4da",
+    "pdsnet_field_plant_disease_segmentation-cb6c6ff413"
+   ],
+   "10": [
+    "pdsnet_field_plant_disease_segmentation-f38bbe2450",
+    "pdsnet_field_plant_disease_segmentation-fb53fcd903",
+    "pdsnet_field_plant_disease_segmentation-95ff1c0ebc",
+    "pdsnet_field_plant_disease_segmentation-e7dd9bb40c",
+    "pdsnet_field_plant_disease_segmentation-c2a14d5758",
+    "pdsnet_field_plant_disease_segmentation-ada41aa4da",
+    "pdsnet_field_plant_disease_segmentation-fd6e55facc",
+    "pdsnet_field_plant_disease_segmentation-ef86dc472a",
+    "pdsnet_field_plant_disease_segmentation-cb6c6ff413",
+    "pdsnet_field_plant_disease_segmentation-948d411ec3"
+   ],
+   "15": [
+    "pdsnet_field_plant_disease_segmentation-f38bbe2450",
+    "pdsnet_field_plant_disease_segmentation-fb53fcd903",
+    "pdsnet_field_plant_disease_segmentation-992f3d6e79",
+    "pdsnet_field_plant_disease_segmentation-3c7ec2ff72",
+    "pdsnet_field_plant_disease_segmentation-95ff1c0ebc",
+    "pdsnet_field_plant_disease_segmentation-e7dd9bb40c",
+    "pdsnet_field_plant_disease_segmentation-52f72c68a3",
+    "pdsnet_field_plant_disease_segmentation-c2a14d5758",
+    "pdsnet_field_plant_disease_segmentation-ada41aa4da",
+    "pdsnet_field_plant_disease_segmentation-fd6e55facc",
+    "pdsnet_field_plant_disease_segmentation-2e94703e2c",
+    "pdsnet_field_plant_disease_segmentation-ea5f3792e2",
+    "pdsnet_field_plant_disease_segmentation-ef86dc472a",
+    "pdsnet_field_plant_disease_segmentation-cb6c6ff413",
+    "pdsnet_field_plant_disease_segmentation-948d411ec3"
+   ]
+  },
+  "s1": {
+   "5": [
+    "pdsnet_field_plant_disease_segmentation-2462f2bce1",
+    "pdsnet_field_plant_disease_segmentation-a167547058",
+    "pdsnet_field_plant_disease_segmentation-885228aab1",
+    "pdsnet_field_plant_disease_segmentation-35f2949a5e",
+    "pdsnet_field_plant_disease_segmentation-87d8cfbdc6"
+   ],
+   "10": [
+    "pdsnet_field_plant_disease_segmentation-2462f2bce1",
+    "pdsnet_field_plant_disease_segmentation-a167547058",
+    "pdsnet_field_plant_disease_segmentation-d490629bde",
+    "pdsnet_field_plant_disease_segmentation-82f21a60f9",
+    "pdsnet_field_plant_disease_segmentation-885228aab1",
+    "pdsnet_field_plant_disease_segmentation-cf64017790",
+    "pdsnet_field_plant_disease_segmentation-35f2949a5e",
+    "pdsnet_field_plant_disease_segmentation-87f7ad147a",
+    "pdsnet_field_plant_disease_segmentation-87d8cfbdc6",
+    "pdsnet_field_plant_disease_segmentation-1f9768e5c4"
+   ],
+   "15": [
+    "pdsnet_field_plant_disease_segmentation-b3f7d0b449",
+    "pdsnet_field_plant_disease_segmentation-2462f2bce1",
+    "pdsnet_field_plant_disease_segmentation-95ff1c0ebc",
+    "pdsnet_field_plant_disease_segmentation-a167547058",
+    "pdsnet_field_plant_disease_segmentation-41662cc332",
+    "pdsnet_field_plant_disease_segmentation-d490629bde",
+    "pdsnet_field_plant_disease_segmentation-82f21a60f9",
+    "pdsnet_field_plant_disease_segmentation-885228aab1",
+    "pdsnet_field_plant_disease_segmentation-b53408eb7f",
+    "pdsnet_field_plant_disease_segmentation-cf64017790",
+    "pdsnet_field_plant_disease_segmentation-35f2949a5e",
+    "pdsnet_field_plant_disease_segmentation-87f7ad147a",
+    "pdsnet_field_plant_disease_segmentation-87d8cfbdc6",
+    "pdsnet_field_plant_disease_segmentation-fa64811431",
+    "pdsnet_field_plant_disease_segmentation-1f9768e5c4"
+   ]
+  },
+  "s2": {
+   "5": [
+    "pdsnet_field_plant_disease_segmentation-b7fa9473f6",
+    "pdsnet_field_plant_disease_segmentation-c99dd03519",
+    "pdsnet_field_plant_disease_segmentation-5273bfc7f3",
+    "pdsnet_field_plant_disease_segmentation-17209ea6cc",
+    "pdsnet_field_plant_disease_segmentation-bf635803f1"
+   ],
+   "10": [
+    "pdsnet_field_plant_disease_segmentation-b7fa9473f6",
+    "pdsnet_field_plant_disease_segmentation-c99dd03519",
+    "pdsnet_field_plant_disease_segmentation-78c95ebb79",
+    "pdsnet_field_plant_disease_segmentation-7b7c9dc641",
+    "pdsnet_field_plant_disease_segmentation-20c4eaa7da",
+    "pdsnet_field_plant_disease_segmentation-5273bfc7f3",
+    "pdsnet_field_plant_disease_segmentation-64f25b5484",
+    "pdsnet_field_plant_disease_segmentation-17209ea6cc",
+    "pdsnet_field_plant_disease_segmentation-bf635803f1",
+    "pdsnet_field_plant_disease_segmentation-aeaf75edea"
+   ],
+   "15": [
+    "pdsnet_field_plant_disease_segmentation-f38bbe2450",
+    "pdsnet_field_plant_disease_segmentation-b7fa9473f6",
+    "pdsnet_field_plant_disease_segmentation-0a60695a53",
+    "pdsnet_field_plant_disease_segmentation-c99dd03519",
+    "pdsnet_field_plant_disease_segmentation-87bf5da010",
+    "pdsnet_field_plant_disease_segmentation-abacd324ed",
+    "pdsnet_field_plant_disease_segmentation-78c95ebb79",
+    "pdsnet_field_plant_disease_segmentation-7b7c9dc641",
+    "pdsnet_field_plant_disease_segmentation-15345aa21c",
+    "pdsnet_field_plant_disease_segmentation-20c4eaa7da",
+    "pdsnet_field_plant_disease_segmentation-5273bfc7f3",
+    "pdsnet_field_plant_disease_segmentation-64f25b5484",
+    "pdsnet_field_plant_disease_segmentation-17209ea6cc",
+    "pdsnet_field_plant_disease_segmentation-bf635803f1",
+    "pdsnet_field_plant_disease_segmentation-aeaf75edea"
+   ]
+  }
+ }
+}

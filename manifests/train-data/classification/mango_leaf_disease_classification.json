@@ -1,0 +1,6309 @@
+{
+ "name": "mango_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/mango_leaf_disease_classification",
+ "hf_sha": "8d5596266bcb0b6abe897976491225280193500c",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T14:31:09+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "Bacterial_Canker",
+   "Cutting_Weevil",
+   "Die_Back",
+   "Gall_Midge",
+   "Healthy",
+   "Powdery_Mildew",
+   "Sooty_Mold"
+  ],
+  "indexed_rows": 4000
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "mango_leaf_disease_classification-3064c3b6e3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5fd0e457f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-7f3f07c631",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9308cfee73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-295bde46ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2af107cada",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a699768346",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-8f40bbbcba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-7d2df735d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-dade6f4866",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-78f630ce8a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0047cf281e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-44bfde11d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fe45e0b834",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cf64017790",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d0327f2800",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1435b161fc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cb6c6ff413",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-948d411ec3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f36d54d3d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 225,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-7339b13d69",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0f7a5c8f13",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-47fba9145a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a1c7d2f6d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9e0c98041b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ffe46826f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cfddce8ad8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b7dd558426",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 327,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-aef5b9aa55",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 342,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9ecf728223",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 350,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-39445759f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 357,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6879ead0fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-34d65df928",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 383,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4d3ede3e8e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f7e5ee9891",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b206224276",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 417,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a537ef7528",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 423,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-34fc4ba3f3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ff24fc42e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-31e4a2848d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d2af9a2c21",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e0d5c25757",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 495,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f888481f78",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e8b8556137",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 516,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-254b2a2abf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 526,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9c5570e09f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 541,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9fcecc113a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 544,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-14e35820d0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 551,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a3c0f44940",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fb12cdd602",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-633b2ddf84",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 612,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-da18baeb14",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 629,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5dd55caf5c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 630,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a22ddb9711",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3bd63d6021",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-78a991166b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 682,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f437d46a52",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 711,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-69f4ea13bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 720,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b0b5ec0bfe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 721,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d8f4239c64",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-25c336fc14",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 747,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-822dd261d0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 752,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9780434d23",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 755,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-92dcb190e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 781,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-85e6a8309e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 824,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-89c1afa835",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e400e56606",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 841,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1bd55940f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 843,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0513adce42",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 851,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-77abe562c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 856,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3c56085ebc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 867,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a8d777f0cd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 870,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6bfd4f4c40",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 879,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6c57bc5467",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 896,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-74615b32d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 927,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-00aa385c63",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 930,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-267b78349c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 948,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fca65c1a8d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 950,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-79e301674f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 957,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-911fdd2831",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9b276d5bb9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f510b8ef82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 970,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2d3a39a481",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ef5a28422a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 984,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-67c869bc43",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 987,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ebea3c08d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 993,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-da6c92f062",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 994,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Canker"
+   ],
+   "ann": {
+    "label": "Bacterial_Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a45418f42e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1010,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-59d74bac26",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1015,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2c9932f633",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2981e09e4f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1032,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-16584622ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1036,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-28108e4671",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1039,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3e1e670c60",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-01c729cbc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1058,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5d4b37ff0c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-affe37cc22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-94cc1e7c20",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1cca5dfab0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-87dfd99175",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-28744ffe79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ab9510bf74",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1ee599521b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fab573a556",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-46d7456dec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b47318f1ec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4616a082d0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-21d3019887",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1267,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-269c5df284",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0826bb7879",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-980f5847a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-02d1fa1b11",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1300,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b92f878684",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f7c70084a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e6944bc725",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fe0333b247",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-630d8b787d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1350,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fb1afd86aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1358,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2db57300c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e0a558cf03",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1c22777795",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b11453622b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-18de253c31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1387,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2abe36685d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-76016d0827",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-899343cc69",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-66faca0f40",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1448,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-31bafe6f41",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1461,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-26d70fb951",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3ac26f4bcb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1466,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-819c5dd283",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0cba30a755",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f6d8fa05bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1509,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f0c06925f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1524,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b6d7eec2dc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1533,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ba17a534cb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fb39784d6d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1544,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4876ba520c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-71cdfc0399",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1992b5706b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f6b43beaa1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-60d3d4a9bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1590,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cc3dd26f2e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1614,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f44b978626",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-158759b9f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1649,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d3719f2f1a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1651,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-baace85db6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cedf3b371e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1665,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e2c4d98e07",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-00d2969b68",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1673,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4cc225ba6b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3f329f940e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1697,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-85ecded261",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1701,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-941b77694c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1708,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-dc43cd6eb0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-883c4299e1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1722,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f84d589c1a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1733,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-8122e1ca30",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-29f2ebe1c6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1742,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cda52e6a27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1779,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a03c7f11ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1789,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-04cf72c344",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1822,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-49d3d54a58",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1841,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1e1f79a31b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1859,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4aaee4cc9a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1873,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3c752e887b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1904,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-838bb6ad6f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1910,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e9914c8bfc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-113f5a364f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-db98865384",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1924,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5ab9720758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1948,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5fc1824811",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1953,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-aaf40f0de0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1991,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cb0ccdfa19",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1993,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Die_Back"
+   ],
+   "ann": {
+    "label": "Die_Back"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d4fdec0923",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2003,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-aa1c557697",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2009,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ec1154159d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3871c8e5b0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2040,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3702d91d1b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3a203624f6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2051,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a6cc3ae817",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2057,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-59fb5db9be",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2061,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3b0fdcf4fd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2062,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-001b3b0aaf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2070,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-35f0d6d1a2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2075,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-66f697ed65",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-54d7664775",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-36c1d16c2a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b0fb4fe862",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b6d138d9c2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-482d4bbae8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4063ebbdc6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-736355ba40",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-75b9de927e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b2d6ceb6d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-729a002d62",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c69f2bddd3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-edd8693830",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0ec9a8eac8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2216,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0badf26013",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6b67190017",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5d72d013af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2237,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-00301030bb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2242,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b2bfa82990",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2256,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-99085fd70f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ec9b7a8f78",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d3ad2237fb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-40192761b8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-46118261b5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0bea9b8d28",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-88adfca09d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2328,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a5ded1b3bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2347,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a2bc8d3104",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2349,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4ef796e92b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9613ff62d5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2386,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1699dd72b7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d376bb488b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2425,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-54268edbab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-13cdd910c6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2490,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e8360bc93d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5b42e9a488",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-bf972eaf90",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-162b164c50",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a1bfaa4b3d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2539,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3cb51058ae",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2543,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2e24c607f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2549,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-55a75d5a10",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5a46e2c335",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-14e2bcf619",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2581,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ce1e27337a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2590,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-8ca53a0962",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2591,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f65b2aa728",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2599,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9072e5da0a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cf770da00e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-3696ceb54f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2660,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cfe846f743",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2675,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-63ae932fa1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2678,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2ef6686508",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2682,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-63dd769adb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2695,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0e0120a804",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2743,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a418095c2b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2744,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f25c4846c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2747,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ade4bac52e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2760,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2bb0364cda",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2762,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-89f1a97f8b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f69219eac4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2796,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c9f929f9f3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2801,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-39b68d3ee4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2818,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-73b6f99127",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2821,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-47b4022b6f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2827,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a202d83ead",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2829,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f706f5ec13",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2837,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d424b4a56f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2846,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-280fc0d741",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-338aeff4a5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2873,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-94afb6452a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2887,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e3322f690c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2897,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-db7d860e2c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-99aac54d69",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2942,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0094d37c92",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2946,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a8eaf8e813",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f6a96c3243",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2972,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-647763d8c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2979,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-598e854945",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3014,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a7fbdf254c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5adc769dea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3025,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ec453d8f54",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3031,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cc70b261da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3080,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e2d6690b18",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3084,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6bcca2c4ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3089,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9c51afa4d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3096,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5eac95feb9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ab57ff58ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cfef5afe88",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-db8da21c4c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-38dfa62434",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1f658f25e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4b95b3bcb6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0fa62ec4f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a3fe612231",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-cbdbe7c7a5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-7f2f085205",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a50f589e73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-185e636927",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3240,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-36264c2fa4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3246,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2c26ed6d59",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3253,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-625e9b7cd1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-21961312c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3298,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-68ea1665f4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-1571f4ab6e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5d43fa6310",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3322,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ad89106603",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3338,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2b6e049625",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3341,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f275b79fc5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3360,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-aabb64e888",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3367,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c03a4f30cc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a7723e86c8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-db48e466b3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3398,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4059dbbc58",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a86c09c941",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3426,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-65b603ddf9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3450,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c49f6bacbd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-921fb4e276",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3461,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e8bfb776bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3474,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9c95cc8b7e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Cutting_Weevil"
+   ],
+   "ann": {
+    "label": "Cutting_Weevil"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d4bba6bb82",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2937a8dc93",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3532,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-06dd8ad612",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3533,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a51f157edb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-09ebef3901",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-f3410bbcdd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3576,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-048ee4c564",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3578,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6505778cfa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3601,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-fe191f6ed4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3613,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0406312e43",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3640,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-dbdf84d776",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3674,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-81b759409c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c4c5a75c47",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3678,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-badf40b1af",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5628ec2e84",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3710,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a5c0deba1c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3765,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-d5767d20bc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3767,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-a4167ad76b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3793,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-afa58da80d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3796,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5226b235ea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3804,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-2156ec85ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3810,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-38b104fc47",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3811,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-733a2d1dbe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3818,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-999a998b55",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3832,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e72f618bb3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3840,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e941a869d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3842,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-5dd5b78159",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3851,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-0ddebc3a1d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3859,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c6c9d27cbc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3864,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-dc619e6b3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3865,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-c6a331a350",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3872,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4d84423e79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3877,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-b52eaa1297",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3887,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e0f850e9a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3899,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-e5869a4d21",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3903,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-6112883ceb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-4658f3b4ba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3974,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-ac36df9567",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3982,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-41c472b940",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "mango_leaf_disease_classification-9c2c5de5a6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Gall_Midge"
+   ],
+   "ann": {
+    "label": "Gall_Midge"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "mango_leaf_disease_classification-2af107cada",
+    "mango_leaf_disease_classification-8f40bbbcba",
+    "mango_leaf_disease_classification-dade6f4866",
+    "mango_leaf_disease_classification-39445759f0",
+    "mango_leaf_disease_classification-d2af9a2c21",
+    "mango_leaf_disease_classification-69f4ea13bd",
+    "mango_leaf_disease_classification-822dd261d0",
+    "mango_leaf_disease_classification-3c56085ebc",
+    "mango_leaf_disease_classification-74615b32d4",
+    "mango_leaf_disease_classification-da6c92f062",
+    "mango_leaf_disease_classification-59d74bac26",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-94cc1e7c20",
+    "mango_leaf_disease_classification-1ee599521b",
+    "mango_leaf_disease_classification-b11453622b",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-883c4299e1",
+    "mango_leaf_disease_classification-f84d589c1a",
+    "mango_leaf_disease_classification-cb0ccdfa19",
+    "mango_leaf_disease_classification-3a203624f6",
+    "mango_leaf_disease_classification-59fb5db9be",
+    "mango_leaf_disease_classification-0ec9a8eac8",
+    "mango_leaf_disease_classification-0badf26013",
+    "mango_leaf_disease_classification-b2bfa82990",
+    "mango_leaf_disease_classification-e8360bc93d",
+    "mango_leaf_disease_classification-ade4bac52e",
+    "mango_leaf_disease_classification-89f1a97f8b",
+    "mango_leaf_disease_classification-f69219eac4",
+    "mango_leaf_disease_classification-a8eaf8e813",
+    "mango_leaf_disease_classification-ab57ff58ee",
+    "mango_leaf_disease_classification-cbdbe7c7a5",
+    "mango_leaf_disease_classification-a50f589e73",
+    "mango_leaf_disease_classification-5d43fa6310",
+    "mango_leaf_disease_classification-65b603ddf9",
+    "mango_leaf_disease_classification-2937a8dc93",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-999a998b55",
+    "mango_leaf_disease_classification-4d84423e79",
+    "mango_leaf_disease_classification-e5869a4d21"
+   ],
+   "10": [
+    "mango_leaf_disease_classification-7f3f07c631",
+    "mango_leaf_disease_classification-2af107cada",
+    "mango_leaf_disease_classification-8f40bbbcba",
+    "mango_leaf_disease_classification-dade6f4866",
+    "mango_leaf_disease_classification-cf64017790",
+    "mango_leaf_disease_classification-ffe46826f0",
+    "mango_leaf_disease_classification-cfddce8ad8",
+    "mango_leaf_disease_classification-39445759f0",
+    "mango_leaf_disease_classification-d2af9a2c21",
+    "mango_leaf_disease_classification-f888481f78",
+    "mango_leaf_disease_classification-69f4ea13bd",
+    "mango_leaf_disease_classification-b0b5ec0bfe",
+    "mango_leaf_disease_classification-822dd261d0",
+    "mango_leaf_disease_classification-3c56085ebc",
+    "mango_leaf_disease_classification-6bfd4f4c40",
+    "mango_leaf_disease_classification-6c57bc5467",
+    "mango_leaf_disease_classification-74615b32d4",
+    "mango_leaf_disease_classification-00aa385c63",
+    "mango_leaf_disease_classification-67c869bc43",
+    "mango_leaf_disease_classification-da6c92f062",
+    "mango_leaf_disease_classification-59d74bac26",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-94cc1e7c20",
+    "mango_leaf_disease_classification-1ee599521b",
+    "mango_leaf_disease_classification-21d3019887",
+    "mango_leaf_disease_classification-fe0333b247",
+    "mango_leaf_disease_classification-e0a558cf03",
+    "mango_leaf_disease_classification-b11453622b",
+    "mango_leaf_disease_classification-899343cc69",
+    "mango_leaf_disease_classification-66faca0f40",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-85ecded261",
+    "mango_leaf_disease_classification-883c4299e1",
+    "mango_leaf_disease_classification-f84d589c1a",
+    "mango_leaf_disease_classification-8122e1ca30",
+    "mango_leaf_disease_classification-1e1f79a31b",
+    "mango_leaf_disease_classification-3c752e887b",
+    "mango_leaf_disease_classification-e9914c8bfc",
+    "mango_leaf_disease_classification-cb0ccdfa19",
+    "mango_leaf_disease_classification-3a203624f6",
+    "mango_leaf_disease_classification-59fb5db9be",
+    "mango_leaf_disease_classification-001b3b0aaf",
+    "mango_leaf_disease_classification-4063ebbdc6",
+    "mango_leaf_disease_classification-c69f2bddd3",
+    "mango_leaf_disease_classification-0ec9a8eac8",
+    "mango_leaf_disease_classification-0badf26013",
+    "mango_leaf_disease_classification-b2bfa82990",
+    "mango_leaf_disease_classification-a2bc8d3104",
+    "mango_leaf_disease_classification-13cdd910c6",
+    "mango_leaf_disease_classification-e8360bc93d",
+    "mango_leaf_disease_classification-ade4bac52e",
+    "mango_leaf_disease_classification-2bb0364cda",
+    "mango_leaf_disease_classification-89f1a97f8b",
+    "mango_leaf_disease_classification-f69219eac4",
+    "mango_leaf_disease_classification-39b68d3ee4",
+    "mango_leaf_disease_classification-47b4022b6f",
+    "mango_leaf_disease_classification-a202d83ead",
+    "mango_leaf_disease_classification-d424b4a56f",
+    "mango_leaf_disease_classification-a8eaf8e813",
+    "mango_leaf_disease_classification-ab57ff58ee",
+    "mango_leaf_disease_classification-0fa62ec4f0",
+    "mango_leaf_disease_classification-cbdbe7c7a5",
+    "mango_leaf_disease_classification-a50f589e73",
+    "mango_leaf_disease_classification-185e636927",
+    "mango_leaf_disease_classification-5d43fa6310",
+    "mango_leaf_disease_classification-a7723e86c8",
+    "mango_leaf_disease_classification-db48e466b3",
+    "mango_leaf_disease_classification-a86c09c941",
+    "mango_leaf_disease_classification-65b603ddf9",
+    "mango_leaf_disease_classification-2937a8dc93",
+    "mango_leaf_disease_classification-a51f157edb",
+    "mango_leaf_disease_classification-048ee4c564",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-dbdf84d776",
+    "mango_leaf_disease_classification-a5c0deba1c",
+    "mango_leaf_disease_classification-999a998b55",
+    "mango_leaf_disease_classification-5dd5b78159",
+    "mango_leaf_disease_classification-4d84423e79",
+    "mango_leaf_disease_classification-e5869a4d21"
+   ],
+   "15": [
+    "mango_leaf_disease_classification-7f3f07c631",
+    "mango_leaf_disease_classification-2af107cada",
+    "mango_leaf_disease_classification-8f40bbbcba",
+    "mango_leaf_disease_classification-dade6f4866",
+    "mango_leaf_disease_classification-78f630ce8a",
+    "mango_leaf_disease_classification-44bfde11d7",
+    "mango_leaf_disease_classification-cf64017790",
+    "mango_leaf_disease_classification-d0327f2800",
+    "mango_leaf_disease_classification-47fba9145a",
+    "mango_leaf_disease_classification-ffe46826f0",
+    "mango_leaf_disease_classification-cfddce8ad8",
+    "mango_leaf_disease_classification-9ecf728223",
+    "mango_leaf_disease_classification-39445759f0",
+    "mango_leaf_disease_classification-d2af9a2c21",
+    "mango_leaf_disease_classification-f888481f78",
+    "mango_leaf_disease_classification-9c5570e09f",
+    "mango_leaf_disease_classification-9fcecc113a",
+    "mango_leaf_disease_classification-a3c0f44940",
+    "mango_leaf_disease_classification-f437d46a52",
+    "mango_leaf_disease_classification-69f4ea13bd",
+    "mango_leaf_disease_classification-b0b5ec0bfe",
+    "mango_leaf_disease_classification-822dd261d0",
+    "mango_leaf_disease_classification-89c1afa835",
+    "mango_leaf_disease_classification-3c56085ebc",
+    "mango_leaf_disease_classification-6bfd4f4c40",
+    "mango_leaf_disease_classification-6c57bc5467",
+    "mango_leaf_disease_classification-74615b32d4",
+    "mango_leaf_disease_classification-00aa385c63",
+    "mango_leaf_disease_classification-67c869bc43",
+    "mango_leaf_disease_classification-da6c92f062",
+    "mango_leaf_disease_classification-59d74bac26",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-affe37cc22",
+    "mango_leaf_disease_classification-94cc1e7c20",
+    "mango_leaf_disease_classification-87dfd99175",
+    "mango_leaf_disease_classification-1ee599521b",
+    "mango_leaf_disease_classification-4616a082d0",
+    "mango_leaf_disease_classification-21d3019887",
+    "mango_leaf_disease_classification-fe0333b247",
+    "mango_leaf_disease_classification-e0a558cf03",
+    "mango_leaf_disease_classification-b11453622b",
+    "mango_leaf_disease_classification-18de253c31",
+    "mango_leaf_disease_classification-899343cc69",
+    "mango_leaf_disease_classification-66faca0f40",
+    "mango_leaf_disease_classification-3ac26f4bcb",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-ba17a534cb",
+    "mango_leaf_disease_classification-71cdfc0399",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-f44b978626",
+    "mango_leaf_disease_classification-baace85db6",
+    "mango_leaf_disease_classification-cedf3b371e",
+    "mango_leaf_disease_classification-85ecded261",
+    "mango_leaf_disease_classification-883c4299e1",
+    "mango_leaf_disease_classification-f84d589c1a",
+    "mango_leaf_disease_classification-8122e1ca30",
+    "mango_leaf_disease_classification-1e1f79a31b",
+    "mango_leaf_disease_classification-3c752e887b",
+    "mango_leaf_disease_classification-e9914c8bfc",
+    "mango_leaf_disease_classification-cb0ccdfa19",
+    "mango_leaf_disease_classification-d4fdec0923",
+    "mango_leaf_disease_classification-3a203624f6",
+    "mango_leaf_disease_classification-59fb5db9be",
+    "mango_leaf_disease_classification-001b3b0aaf",
+    "mango_leaf_disease_classification-b6d138d9c2",
+    "mango_leaf_disease_classification-4063ebbdc6",
+    "mango_leaf_disease_classification-c69f2bddd3",
+    "mango_leaf_disease_classification-0ec9a8eac8",
+    "mango_leaf_disease_classification-0badf26013",
+    "mango_leaf_disease_classification-b2bfa82990",
+    "mango_leaf_disease_classification-46118261b5",
+    "mango_leaf_disease_classification-a2bc8d3104",
+    "mango_leaf_disease_classification-9613ff62d5",
+    "mango_leaf_disease_classification-54268edbab",
+    "mango_leaf_disease_classification-13cdd910c6",
+    "mango_leaf_disease_classification-e8360bc93d",
+    "mango_leaf_disease_classification-f65b2aa728",
+    "mango_leaf_disease_classification-3696ceb54f",
+    "mango_leaf_disease_classification-63ae932fa1",
+    "mango_leaf_disease_classification-ade4bac52e",
+    "mango_leaf_disease_classification-2bb0364cda",
+    "mango_leaf_disease_classification-89f1a97f8b",
+    "mango_leaf_disease_classification-f69219eac4",
+    "mango_leaf_disease_classification-39b68d3ee4",
+    "mango_leaf_disease_classification-47b4022b6f",
+    "mango_leaf_disease_classification-a202d83ead",
+    "mango_leaf_disease_classification-d424b4a56f",
+    "mango_leaf_disease_classification-94afb6452a",
+    "mango_leaf_disease_classification-0094d37c92",
+    "mango_leaf_disease_classification-a8eaf8e813",
+    "mango_leaf_disease_classification-a7fbdf254c",
+    "mango_leaf_disease_classification-e2d6690b18",
+    "mango_leaf_disease_classification-ab57ff58ee",
+    "mango_leaf_disease_classification-1f658f25e7",
+    "mango_leaf_disease_classification-0fa62ec4f0",
+    "mango_leaf_disease_classification-cbdbe7c7a5",
+    "mango_leaf_disease_classification-a50f589e73",
+    "mango_leaf_disease_classification-185e636927",
+    "mango_leaf_disease_classification-5d43fa6310",
+    "mango_leaf_disease_classification-a7723e86c8",
+    "mango_leaf_disease_classification-db48e466b3",
+    "mango_leaf_disease_classification-4059dbbc58",
+    "mango_leaf_disease_classification-a86c09c941",
+    "mango_leaf_disease_classification-65b603ddf9",
+    "mango_leaf_disease_classification-921fb4e276",
+    "mango_leaf_disease_classification-2937a8dc93",
+    "mango_leaf_disease_classification-a51f157edb",
+    "mango_leaf_disease_classification-048ee4c564",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-0406312e43",
+    "mango_leaf_disease_classification-dbdf84d776",
+    "mango_leaf_disease_classification-c4c5a75c47",
+    "mango_leaf_disease_classification-a5c0deba1c",
+    "mango_leaf_disease_classification-999a998b55",
+    "mango_leaf_disease_classification-5dd5b78159",
+    "mango_leaf_disease_classification-c6c9d27cbc",
+    "mango_leaf_disease_classification-4d84423e79",
+    "mango_leaf_disease_classification-b52eaa1297",
+    "mango_leaf_disease_classification-e5869a4d21",
+    "mango_leaf_disease_classification-4658f3b4ba"
+   ]
+  },
+  "s1": {
+   "5": [
+    "mango_leaf_disease_classification-7d2df735d3",
+    "mango_leaf_disease_classification-0047cf281e",
+    "mango_leaf_disease_classification-fe45e0b834",
+    "mango_leaf_disease_classification-cb6c6ff413",
+    "mango_leaf_disease_classification-948d411ec3",
+    "mango_leaf_disease_classification-254b2a2abf",
+    "mango_leaf_disease_classification-633b2ddf84",
+    "mango_leaf_disease_classification-a22ddb9711",
+    "mango_leaf_disease_classification-a8d777f0cd",
+    "mango_leaf_disease_classification-ebea3c08d3",
+    "mango_leaf_disease_classification-28108e4671",
+    "mango_leaf_disease_classification-3e1e670c60",
+    "mango_leaf_disease_classification-46d7456dec",
+    "mango_leaf_disease_classification-980f5847a4",
+    "mango_leaf_disease_classification-819c5dd283",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-fb39784d6d",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-838bb6ad6f",
+    "mango_leaf_disease_classification-113f5a364f",
+    "mango_leaf_disease_classification-3871c8e5b0",
+    "mango_leaf_disease_classification-3702d91d1b",
+    "mango_leaf_disease_classification-729a002d62",
+    "mango_leaf_disease_classification-edd8693830",
+    "mango_leaf_disease_classification-00301030bb",
+    "mango_leaf_disease_classification-5b42e9a488",
+    "mango_leaf_disease_classification-162b164c50",
+    "mango_leaf_disease_classification-2e24c607f9",
+    "mango_leaf_disease_classification-a418095c2b",
+    "mango_leaf_disease_classification-280fc0d741",
+    "mango_leaf_disease_classification-9c51afa4d4",
+    "mango_leaf_disease_classification-5eac95feb9",
+    "mango_leaf_disease_classification-db8da21c4c",
+    "mango_leaf_disease_classification-2c26ed6d59",
+    "mango_leaf_disease_classification-e8bfb776bf",
+    "mango_leaf_disease_classification-d4bba6bb82",
+    "mango_leaf_disease_classification-048ee4c564",
+    "mango_leaf_disease_classification-6505778cfa",
+    "mango_leaf_disease_classification-5628ec2e84",
+    "mango_leaf_disease_classification-2156ec85ce"
+   ],
+   "10": [
+    "mango_leaf_disease_classification-a699768346",
+    "mango_leaf_disease_classification-7d2df735d3",
+    "mango_leaf_disease_classification-0047cf281e",
+    "mango_leaf_disease_classification-44bfde11d7",
+    "mango_leaf_disease_classification-fe45e0b834",
+    "mango_leaf_disease_classification-cb6c6ff413",
+    "mango_leaf_disease_classification-948d411ec3",
+    "mango_leaf_disease_classification-9e0c98041b",
+    "mango_leaf_disease_classification-4d3ede3e8e",
+    "mango_leaf_disease_classification-e0d5c25757",
+    "mango_leaf_disease_classification-e8b8556137",
+    "mango_leaf_disease_classification-254b2a2abf",
+    "mango_leaf_disease_classification-fb12cdd602",
+    "mango_leaf_disease_classification-633b2ddf84",
+    "mango_leaf_disease_classification-a22ddb9711",
+    "mango_leaf_disease_classification-0513adce42",
+    "mango_leaf_disease_classification-a8d777f0cd",
+    "mango_leaf_disease_classification-267b78349c",
+    "mango_leaf_disease_classification-2d3a39a481",
+    "mango_leaf_disease_classification-ebea3c08d3",
+    "mango_leaf_disease_classification-28108e4671",
+    "mango_leaf_disease_classification-3e1e670c60",
+    "mango_leaf_disease_classification-fab573a556",
+    "mango_leaf_disease_classification-46d7456dec",
+    "mango_leaf_disease_classification-b47318f1ec",
+    "mango_leaf_disease_classification-0826bb7879",
+    "mango_leaf_disease_classification-980f5847a4",
+    "mango_leaf_disease_classification-2db57300c5",
+    "mango_leaf_disease_classification-1c22777795",
+    "mango_leaf_disease_classification-819c5dd283",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-fb39784d6d",
+    "mango_leaf_disease_classification-4876ba520c",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-f6b43beaa1",
+    "mango_leaf_disease_classification-158759b9f2",
+    "mango_leaf_disease_classification-d3719f2f1a",
+    "mango_leaf_disease_classification-a03c7f11ee",
+    "mango_leaf_disease_classification-838bb6ad6f",
+    "mango_leaf_disease_classification-113f5a364f",
+    "mango_leaf_disease_classification-ec1154159d",
+    "mango_leaf_disease_classification-3871c8e5b0",
+    "mango_leaf_disease_classification-3702d91d1b",
+    "mango_leaf_disease_classification-a6cc3ae817",
+    "mango_leaf_disease_classification-66f697ed65",
+    "mango_leaf_disease_classification-729a002d62",
+    "mango_leaf_disease_classification-edd8693830",
+    "mango_leaf_disease_classification-6b67190017",
+    "mango_leaf_disease_classification-00301030bb",
+    "mango_leaf_disease_classification-0bea9b8d28",
+    "mango_leaf_disease_classification-5b42e9a488",
+    "mango_leaf_disease_classification-162b164c50",
+    "mango_leaf_disease_classification-2e24c607f9",
+    "mango_leaf_disease_classification-55a75d5a10",
+    "mango_leaf_disease_classification-cfe846f743",
+    "mango_leaf_disease_classification-a418095c2b",
+    "mango_leaf_disease_classification-f25c4846c5",
+    "mango_leaf_disease_classification-280fc0d741",
+    "mango_leaf_disease_classification-338aeff4a5",
+    "mango_leaf_disease_classification-db7d860e2c",
+    "mango_leaf_disease_classification-9c51afa4d4",
+    "mango_leaf_disease_classification-5eac95feb9",
+    "mango_leaf_disease_classification-db8da21c4c",
+    "mango_leaf_disease_classification-38dfa62434",
+    "mango_leaf_disease_classification-2c26ed6d59",
+    "mango_leaf_disease_classification-1571f4ab6e",
+    "mango_leaf_disease_classification-ad89106603",
+    "mango_leaf_disease_classification-c49f6bacbd",
+    "mango_leaf_disease_classification-e8bfb776bf",
+    "mango_leaf_disease_classification-9c95cc8b7e",
+    "mango_leaf_disease_classification-d4bba6bb82",
+    "mango_leaf_disease_classification-09ebef3901",
+    "mango_leaf_disease_classification-048ee4c564",
+    "mango_leaf_disease_classification-6505778cfa",
+    "mango_leaf_disease_classification-81b759409c",
+    "mango_leaf_disease_classification-5628ec2e84",
+    "mango_leaf_disease_classification-2156ec85ce",
+    "mango_leaf_disease_classification-e72f618bb3",
+    "mango_leaf_disease_classification-dc619e6b3c",
+    "mango_leaf_disease_classification-41c472b940"
+   ],
+   "15": [
+    "mango_leaf_disease_classification-3064c3b6e3",
+    "mango_leaf_disease_classification-295bde46ae",
+    "mango_leaf_disease_classification-a699768346",
+    "mango_leaf_disease_classification-7d2df735d3",
+    "mango_leaf_disease_classification-0047cf281e",
+    "mango_leaf_disease_classification-44bfde11d7",
+    "mango_leaf_disease_classification-fe45e0b834",
+    "mango_leaf_disease_classification-cb6c6ff413",
+    "mango_leaf_disease_classification-948d411ec3",
+    "mango_leaf_disease_classification-f36d54d3d7",
+    "mango_leaf_disease_classification-9e0c98041b",
+    "mango_leaf_disease_classification-aef5b9aa55",
+    "mango_leaf_disease_classification-4d3ede3e8e",
+    "mango_leaf_disease_classification-ff24fc42e7",
+    "mango_leaf_disease_classification-e0d5c25757",
+    "mango_leaf_disease_classification-e8b8556137",
+    "mango_leaf_disease_classification-254b2a2abf",
+    "mango_leaf_disease_classification-14e35820d0",
+    "mango_leaf_disease_classification-fb12cdd602",
+    "mango_leaf_disease_classification-633b2ddf84",
+    "mango_leaf_disease_classification-a22ddb9711",
+    "mango_leaf_disease_classification-9780434d23",
+    "mango_leaf_disease_classification-85e6a8309e",
+    "mango_leaf_disease_classification-e400e56606",
+    "mango_leaf_disease_classification-0513adce42",
+    "mango_leaf_disease_classification-a8d777f0cd",
+    "mango_leaf_disease_classification-267b78349c",
+    "mango_leaf_disease_classification-9b276d5bb9",
+    "mango_leaf_disease_classification-2d3a39a481",
+    "mango_leaf_disease_classification-ebea3c08d3",
+    "mango_leaf_disease_classification-2c9932f633",
+    "mango_leaf_disease_classification-16584622ee",
+    "mango_leaf_disease_classification-28108e4671",
+    "mango_leaf_disease_classification-3e1e670c60",
+    "mango_leaf_disease_classification-28744ffe79",
+    "mango_leaf_disease_classification-fab573a556",
+    "mango_leaf_disease_classification-46d7456dec",
+    "mango_leaf_disease_classification-b47318f1ec",
+    "mango_leaf_disease_classification-0826bb7879",
+    "mango_leaf_disease_classification-980f5847a4",
+    "mango_leaf_disease_classification-630d8b787d",
+    "mango_leaf_disease_classification-fb1afd86aa",
+    "mango_leaf_disease_classification-2db57300c5",
+    "mango_leaf_disease_classification-1c22777795",
+    "mango_leaf_disease_classification-819c5dd283",
+    "mango_leaf_disease_classification-0cba30a755",
+    "mango_leaf_disease_classification-f0c06925f2",
+    "mango_leaf_disease_classification-b6d7eec2dc",
+    "mango_leaf_disease_classification-fb39784d6d",
+    "mango_leaf_disease_classification-4876ba520c",
+    "mango_leaf_disease_classification-1992b5706b",
+    "mango_leaf_disease_classification-f6b43beaa1",
+    "mango_leaf_disease_classification-60d3d4a9bc",
+    "mango_leaf_disease_classification-158759b9f2",
+    "mango_leaf_disease_classification-d3719f2f1a",
+    "mango_leaf_disease_classification-00d2969b68",
+    "mango_leaf_disease_classification-a03c7f11ee",
+    "mango_leaf_disease_classification-838bb6ad6f",
+    "mango_leaf_disease_classification-113f5a364f",
+    "mango_leaf_disease_classification-5ab9720758",
+    "mango_leaf_disease_classification-ec1154159d",
+    "mango_leaf_disease_classification-3871c8e5b0",
+    "mango_leaf_disease_classification-3702d91d1b",
+    "mango_leaf_disease_classification-a6cc3ae817",
+    "mango_leaf_disease_classification-35f0d6d1a2",
+    "mango_leaf_disease_classification-66f697ed65",
+    "mango_leaf_disease_classification-482d4bbae8",
+    "mango_leaf_disease_classification-75b9de927e",
+    "mango_leaf_disease_classification-729a002d62",
+    "mango_leaf_disease_classification-edd8693830",
+    "mango_leaf_disease_classification-6b67190017",
+    "mango_leaf_disease_classification-00301030bb",
+    "mango_leaf_disease_classification-ec9b7a8f78",
+    "mango_leaf_disease_classification-0bea9b8d28",
+    "mango_leaf_disease_classification-1699dd72b7",
+    "mango_leaf_disease_classification-5b42e9a488",
+    "mango_leaf_disease_classification-162b164c50",
+    "mango_leaf_disease_classification-2e24c607f9",
+    "mango_leaf_disease_classification-55a75d5a10",
+    "mango_leaf_disease_classification-14e2bcf619",
+    "mango_leaf_disease_classification-8ca53a0962",
+    "mango_leaf_disease_classification-9072e5da0a",
+    "mango_leaf_disease_classification-cfe846f743",
+    "mango_leaf_disease_classification-a418095c2b",
+    "mango_leaf_disease_classification-f25c4846c5",
+    "mango_leaf_disease_classification-73b6f99127",
+    "mango_leaf_disease_classification-280fc0d741",
+    "mango_leaf_disease_classification-338aeff4a5",
+    "mango_leaf_disease_classification-db7d860e2c",
+    "mango_leaf_disease_classification-f6a96c3243",
+    "mango_leaf_disease_classification-598e854945",
+    "mango_leaf_disease_classification-5adc769dea",
+    "mango_leaf_disease_classification-cc70b261da",
+    "mango_leaf_disease_classification-9c51afa4d4",
+    "mango_leaf_disease_classification-5eac95feb9",
+    "mango_leaf_disease_classification-db8da21c4c",
+    "mango_leaf_disease_classification-38dfa62434",
+    "mango_leaf_disease_classification-2c26ed6d59",
+    "mango_leaf_disease_classification-68ea1665f4",
+    "mango_leaf_disease_classification-1571f4ab6e",
+    "mango_leaf_disease_classification-ad89106603",
+    "mango_leaf_disease_classification-aabb64e888",
+    "mango_leaf_disease_classification-c49f6bacbd",
+    "mango_leaf_disease_classification-e8bfb776bf",
+    "mango_leaf_disease_classification-9c95cc8b7e",
+    "mango_leaf_disease_classification-d4bba6bb82",
+    "mango_leaf_disease_classification-09ebef3901",
+    "mango_leaf_disease_classification-048ee4c564",
+    "mango_leaf_disease_classification-6505778cfa",
+    "mango_leaf_disease_classification-81b759409c",
+    "mango_leaf_disease_classification-c4c5a75c47",
+    "mango_leaf_disease_classification-5628ec2e84",
+    "mango_leaf_disease_classification-afa58da80d",
+    "mango_leaf_disease_classification-2156ec85ce",
+    "mango_leaf_disease_classification-e72f618bb3",
+    "mango_leaf_disease_classification-dc619e6b3c",
+    "mango_leaf_disease_classification-c6a331a350",
+    "mango_leaf_disease_classification-6112883ceb",
+    "mango_leaf_disease_classification-ac36df9567",
+    "mango_leaf_disease_classification-41c472b940"
+   ]
+  },
+  "s2": {
+   "5": [
+    "mango_leaf_disease_classification-9308cfee73",
+    "mango_leaf_disease_classification-4b285e0a31",
+    "mango_leaf_disease_classification-34d65df928",
+    "mango_leaf_disease_classification-b206224276",
+    "mango_leaf_disease_classification-a537ef7528",
+    "mango_leaf_disease_classification-78a991166b",
+    "mango_leaf_disease_classification-25c336fc14",
+    "mango_leaf_disease_classification-92dcb190e1",
+    "mango_leaf_disease_classification-fca65c1a8d",
+    "mango_leaf_disease_classification-911fdd2831",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-5d4b37ff0c",
+    "mango_leaf_disease_classification-269c5df284",
+    "mango_leaf_disease_classification-e6944bc725",
+    "mango_leaf_disease_classification-76016d0827",
+    "mango_leaf_disease_classification-e2c4d98e07",
+    "mango_leaf_disease_classification-dc43cd6eb0",
+    "mango_leaf_disease_classification-29f2ebe1c6",
+    "mango_leaf_disease_classification-04cf72c344",
+    "mango_leaf_disease_classification-5fc1824811",
+    "mango_leaf_disease_classification-54d7664775",
+    "mango_leaf_disease_classification-b0fb4fe862",
+    "mango_leaf_disease_classification-d3ad2237fb",
+    "mango_leaf_disease_classification-88adfca09d",
+    "mango_leaf_disease_classification-d376bb488b",
+    "mango_leaf_disease_classification-bf972eaf90",
+    "mango_leaf_disease_classification-ce1e27337a",
+    "mango_leaf_disease_classification-f65b2aa728",
+    "mango_leaf_disease_classification-f706f5ec13",
+    "mango_leaf_disease_classification-647763d8c1",
+    "mango_leaf_disease_classification-ec453d8f54",
+    "mango_leaf_disease_classification-cc70b261da",
+    "mango_leaf_disease_classification-6bcca2c4ce",
+    "mango_leaf_disease_classification-cfef5afe88",
+    "mango_leaf_disease_classification-4b95b3bcb6",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-d5767d20bc",
+    "mango_leaf_disease_classification-733a2d1dbe",
+    "mango_leaf_disease_classification-ac36df9567",
+    "mango_leaf_disease_classification-9c2c5de5a6"
+   ],
+   "10": [
+    "mango_leaf_disease_classification-9308cfee73",
+    "mango_leaf_disease_classification-4b285e0a31",
+    "mango_leaf_disease_classification-1435b161fc",
+    "mango_leaf_disease_classification-0f7a5c8f13",
+    "mango_leaf_disease_classification-a1c7d2f6d2",
+    "mango_leaf_disease_classification-34d65df928",
+    "mango_leaf_disease_classification-f7e5ee9891",
+    "mango_leaf_disease_classification-b206224276",
+    "mango_leaf_disease_classification-a537ef7528",
+    "mango_leaf_disease_classification-34fc4ba3f3",
+    "mango_leaf_disease_classification-da18baeb14",
+    "mango_leaf_disease_classification-5dd55caf5c",
+    "mango_leaf_disease_classification-78a991166b",
+    "mango_leaf_disease_classification-25c336fc14",
+    "mango_leaf_disease_classification-92dcb190e1",
+    "mango_leaf_disease_classification-1bd55940f9",
+    "mango_leaf_disease_classification-77abe562c5",
+    "mango_leaf_disease_classification-fca65c1a8d",
+    "mango_leaf_disease_classification-79e301674f",
+    "mango_leaf_disease_classification-911fdd2831",
+    "mango_leaf_disease_classification-2981e09e4f",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-5d4b37ff0c",
+    "mango_leaf_disease_classification-1cca5dfab0",
+    "mango_leaf_disease_classification-269c5df284",
+    "mango_leaf_disease_classification-b92f878684",
+    "mango_leaf_disease_classification-f7c70084a3",
+    "mango_leaf_disease_classification-e6944bc725",
+    "mango_leaf_disease_classification-2abe36685d",
+    "mango_leaf_disease_classification-76016d0827",
+    "mango_leaf_disease_classification-f6d8fa05bf",
+    "mango_leaf_disease_classification-cc3dd26f2e",
+    "mango_leaf_disease_classification-e2c4d98e07",
+    "mango_leaf_disease_classification-941b77694c",
+    "mango_leaf_disease_classification-dc43cd6eb0",
+    "mango_leaf_disease_classification-29f2ebe1c6",
+    "mango_leaf_disease_classification-04cf72c344",
+    "mango_leaf_disease_classification-4aaee4cc9a",
+    "mango_leaf_disease_classification-db98865384",
+    "mango_leaf_disease_classification-5fc1824811",
+    "mango_leaf_disease_classification-3b0fdcf4fd",
+    "mango_leaf_disease_classification-54d7664775",
+    "mango_leaf_disease_classification-36c1d16c2a",
+    "mango_leaf_disease_classification-b0fb4fe862",
+    "mango_leaf_disease_classification-736355ba40",
+    "mango_leaf_disease_classification-d3ad2237fb",
+    "mango_leaf_disease_classification-40192761b8",
+    "mango_leaf_disease_classification-88adfca09d",
+    "mango_leaf_disease_classification-a5ded1b3bd",
+    "mango_leaf_disease_classification-d376bb488b",
+    "mango_leaf_disease_classification-bf972eaf90",
+    "mango_leaf_disease_classification-5a46e2c335",
+    "mango_leaf_disease_classification-ce1e27337a",
+    "mango_leaf_disease_classification-f65b2aa728",
+    "mango_leaf_disease_classification-2ef6686508",
+    "mango_leaf_disease_classification-63dd769adb",
+    "mango_leaf_disease_classification-c9f929f9f3",
+    "mango_leaf_disease_classification-f706f5ec13",
+    "mango_leaf_disease_classification-e3322f690c",
+    "mango_leaf_disease_classification-647763d8c1",
+    "mango_leaf_disease_classification-ec453d8f54",
+    "mango_leaf_disease_classification-cc70b261da",
+    "mango_leaf_disease_classification-6bcca2c4ce",
+    "mango_leaf_disease_classification-cfef5afe88",
+    "mango_leaf_disease_classification-4b95b3bcb6",
+    "mango_leaf_disease_classification-7f2f085205",
+    "mango_leaf_disease_classification-21961312c9",
+    "mango_leaf_disease_classification-2b6e049625",
+    "mango_leaf_disease_classification-f275b79fc5",
+    "mango_leaf_disease_classification-c49f6bacbd",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-0406312e43",
+    "mango_leaf_disease_classification-badf40b1af",
+    "mango_leaf_disease_classification-d5767d20bc",
+    "mango_leaf_disease_classification-a4167ad76b",
+    "mango_leaf_disease_classification-5226b235ea",
+    "mango_leaf_disease_classification-733a2d1dbe",
+    "mango_leaf_disease_classification-e0f850e9a3",
+    "mango_leaf_disease_classification-ac36df9567",
+    "mango_leaf_disease_classification-9c2c5de5a6"
+   ],
+   "15": [
+    "mango_leaf_disease_classification-5fd0e457f9",
+    "mango_leaf_disease_classification-9308cfee73",
+    "mango_leaf_disease_classification-4b285e0a31",
+    "mango_leaf_disease_classification-1435b161fc",
+    "mango_leaf_disease_classification-7339b13d69",
+    "mango_leaf_disease_classification-0f7a5c8f13",
+    "mango_leaf_disease_classification-a1c7d2f6d2",
+    "mango_leaf_disease_classification-b7dd558426",
+    "mango_leaf_disease_classification-6879ead0fa",
+    "mango_leaf_disease_classification-34d65df928",
+    "mango_leaf_disease_classification-f7e5ee9891",
+    "mango_leaf_disease_classification-b206224276",
+    "mango_leaf_disease_classification-a537ef7528",
+    "mango_leaf_disease_classification-34fc4ba3f3",
+    "mango_leaf_disease_classification-31e4a2848d",
+    "mango_leaf_disease_classification-da18baeb14",
+    "mango_leaf_disease_classification-5dd55caf5c",
+    "mango_leaf_disease_classification-3bd63d6021",
+    "mango_leaf_disease_classification-78a991166b",
+    "mango_leaf_disease_classification-d8f4239c64",
+    "mango_leaf_disease_classification-25c336fc14",
+    "mango_leaf_disease_classification-92dcb190e1",
+    "mango_leaf_disease_classification-1bd55940f9",
+    "mango_leaf_disease_classification-77abe562c5",
+    "mango_leaf_disease_classification-6bfd4f4c40",
+    "mango_leaf_disease_classification-fca65c1a8d",
+    "mango_leaf_disease_classification-79e301674f",
+    "mango_leaf_disease_classification-911fdd2831",
+    "mango_leaf_disease_classification-f510b8ef82",
+    "mango_leaf_disease_classification-ef5a28422a",
+    "mango_leaf_disease_classification-a45418f42e",
+    "mango_leaf_disease_classification-2981e09e4f",
+    "mango_leaf_disease_classification-01c729cbc6",
+    "mango_leaf_disease_classification-5d4b37ff0c",
+    "mango_leaf_disease_classification-1cca5dfab0",
+    "mango_leaf_disease_classification-ab9510bf74",
+    "mango_leaf_disease_classification-269c5df284",
+    "mango_leaf_disease_classification-02d1fa1b11",
+    "mango_leaf_disease_classification-b92f878684",
+    "mango_leaf_disease_classification-f7c70084a3",
+    "mango_leaf_disease_classification-e6944bc725",
+    "mango_leaf_disease_classification-2abe36685d",
+    "mango_leaf_disease_classification-76016d0827",
+    "mango_leaf_disease_classification-31bafe6f41",
+    "mango_leaf_disease_classification-26d70fb951",
+    "mango_leaf_disease_classification-f6d8fa05bf",
+    "mango_leaf_disease_classification-cc3dd26f2e",
+    "mango_leaf_disease_classification-e2c4d98e07",
+    "mango_leaf_disease_classification-4cc225ba6b",
+    "mango_leaf_disease_classification-3f329f940e",
+    "mango_leaf_disease_classification-941b77694c",
+    "mango_leaf_disease_classification-dc43cd6eb0",
+    "mango_leaf_disease_classification-29f2ebe1c6",
+    "mango_leaf_disease_classification-cda52e6a27",
+    "mango_leaf_disease_classification-04cf72c344",
+    "mango_leaf_disease_classification-49d3d54a58",
+    "mango_leaf_disease_classification-4aaee4cc9a",
+    "mango_leaf_disease_classification-db98865384",
+    "mango_leaf_disease_classification-5fc1824811",
+    "mango_leaf_disease_classification-aaf40f0de0",
+    "mango_leaf_disease_classification-aa1c557697",
+    "mango_leaf_disease_classification-3b0fdcf4fd",
+    "mango_leaf_disease_classification-54d7664775",
+    "mango_leaf_disease_classification-36c1d16c2a",
+    "mango_leaf_disease_classification-b0fb4fe862",
+    "mango_leaf_disease_classification-736355ba40",
+    "mango_leaf_disease_classification-b2d6ceb6d7",
+    "mango_leaf_disease_classification-5d72d013af",
+    "mango_leaf_disease_classification-99085fd70f",
+    "mango_leaf_disease_classification-d3ad2237fb",
+    "mango_leaf_disease_classification-40192761b8",
+    "mango_leaf_disease_classification-88adfca09d",
+    "mango_leaf_disease_classification-a5ded1b3bd",
+    "mango_leaf_disease_classification-4ef796e92b",
+    "mango_leaf_disease_classification-d376bb488b",
+    "mango_leaf_disease_classification-bf972eaf90",
+    "mango_leaf_disease_classification-a1bfaa4b3d",
+    "mango_leaf_disease_classification-3cb51058ae",
+    "mango_leaf_disease_classification-5a46e2c335",
+    "mango_leaf_disease_classification-ce1e27337a",
+    "mango_leaf_disease_classification-f65b2aa728",
+    "mango_leaf_disease_classification-cf770da00e",
+    "mango_leaf_disease_classification-2ef6686508",
+    "mango_leaf_disease_classification-63dd769adb",
+    "mango_leaf_disease_classification-0e0120a804",
+    "mango_leaf_disease_classification-c9f929f9f3",
+    "mango_leaf_disease_classification-f706f5ec13",
+    "mango_leaf_disease_classification-e3322f690c",
+    "mango_leaf_disease_classification-99aac54d69",
+    "mango_leaf_disease_classification-647763d8c1",
+    "mango_leaf_disease_classification-ec453d8f54",
+    "mango_leaf_disease_classification-cc70b261da",
+    "mango_leaf_disease_classification-e2d6690b18",
+    "mango_leaf_disease_classification-6bcca2c4ce",
+    "mango_leaf_disease_classification-cfef5afe88",
+    "mango_leaf_disease_classification-4b95b3bcb6",
+    "mango_leaf_disease_classification-a3fe612231",
+    "mango_leaf_disease_classification-7f2f085205",
+    "mango_leaf_disease_classification-36264c2fa4",
+    "mango_leaf_disease_classification-625e9b7cd1",
+    "mango_leaf_disease_classification-21961312c9",
+    "mango_leaf_disease_classification-2b6e049625",
+    "mango_leaf_disease_classification-f275b79fc5",
+    "mango_leaf_disease_classification-c03a4f30cc",
+    "mango_leaf_disease_classification-c49f6bacbd",
+    "mango_leaf_disease_classification-06dd8ad612",
+    "mango_leaf_disease_classification-f3410bbcdd",
+    "mango_leaf_disease_classification-fe191f6ed4",
+    "mango_leaf_disease_classification-0406312e43",
+    "mango_leaf_disease_classification-badf40b1af",
+    "mango_leaf_disease_classification-d5767d20bc",
+    "mango_leaf_disease_classification-a4167ad76b",
+    "mango_leaf_disease_classification-5226b235ea",
+    "mango_leaf_disease_classification-38b104fc47",
+    "mango_leaf_disease_classification-733a2d1dbe",
+    "mango_leaf_disease_classification-e941a869d3",
+    "mango_leaf_disease_classification-0ddebc3a1d",
+    "mango_leaf_disease_classification-e0f850e9a3",
+    "mango_leaf_disease_classification-ac36df9567",
+    "mango_leaf_disease_classification-9c2c5de5a6"
+   ]
+  }
+ }
+}

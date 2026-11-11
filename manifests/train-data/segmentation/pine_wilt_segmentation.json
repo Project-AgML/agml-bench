@@ -1,0 +1,1739 @@
+{
+ "name": "pine_wilt_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/pine_wilt_segmentation",
+ "hf_sha": "1b6da9bf7c84fb0cc656e5195341d94d9d34ef82",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T16:21:06+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "50": "value_50"
+  },
+  "indexed_rows": 2238
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "pine_wilt_segmentation-abfecb4c2b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-77e83ca05e",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b9803d30c6",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 201,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-fb176ed027",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-29417701f6",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-0e72ab0b26",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 263,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-d0eca01524",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-00e5a8a0e4",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-1e46fb473e",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 348,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-ad0930142f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-da670da5df",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-7eb28857aa",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-ae7596d407",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-406ee9bb80",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 558,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-646277b468",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-f38b2245b7",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-14ed7e8618",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-cbba3c7d4f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-9e68e6df5c",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 388,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b702ddb7a0",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 393,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-78b9aac069",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 407,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-a0e2de18f4",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 423,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-15d67f4f9b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 440,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-d640ccaa59",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-3cf39c181a",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-18dc29f639",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-5865d1d7fa",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-2e396f946e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-1c23e89c64",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-c9a1b01916",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 511,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-f67f492f7b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-dc2158ff99",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 523,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-3450b3b54e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 527,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b3b6a56f0d",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 538,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-849ee4b82b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 240,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-db0f6fdb9e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 244,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-a0e037d3fa",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-e596a87b6b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-454d6e88bf",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-076d737037",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-e44e692166",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-36c02d220c",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-3af8177d0c",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 396,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-f52429da5f",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-fb8ee088d3",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 412,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-3f672d8625",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 432,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-91a9c48917",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-f22a672644",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-bc1149b221",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-ca38a25f1a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b115ef49cf",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-258684abeb",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b26ffd2cc9",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-af9f5a44c5",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-6f0c60366b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-deaac40ea5",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-40c7f38c5a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-5a3d6c4b0d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-396b8bb2e1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-fcba80eea8",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-0af0181a70",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-9fd14a2cad",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 260,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-30c6b58c25",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-715ecd95ac",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-78bea0403f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-02b8b823fd",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-10ce9a3d83",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-fdac7c4a5a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-b97a45c3d8",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 398,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-05b6b755b0",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 410,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-d0b9aebee5",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-000760212a",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 468,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-957da52965",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-1a8bae2ca8",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 505,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-2bc695b370",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 506,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-7a89fd5e61",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 521,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-0ee4184cc9",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 524,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-77465e892e",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-e7f363d0f1",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-8481b8e0c8",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-368f4a41ce",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-60e2a751b4",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-22d49ee948",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-8ee329f52a",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 403,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-0e6c94769d",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 426,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-bf9185f55b",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 453,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-751ecc01a9",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-14764b94ab",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_50"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_50"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "pine_wilt_segmentation-87d4f302ff",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "pine_wilt_segmentation-77e83ca05e",
+    "pine_wilt_segmentation-29417701f6",
+    "pine_wilt_segmentation-1e46fb473e",
+    "pine_wilt_segmentation-454d6e88bf",
+    "pine_wilt_segmentation-deaac40ea5",
+    "pine_wilt_segmentation-957da52965",
+    "pine_wilt_segmentation-7a89fd5e61",
+    "pine_wilt_segmentation-22d49ee948",
+    "pine_wilt_segmentation-751ecc01a9",
+    "pine_wilt_segmentation-d0b9aebee5"
+   ],
+   "10": [
+    "pine_wilt_segmentation-77e83ca05e",
+    "pine_wilt_segmentation-fb176ed027",
+    "pine_wilt_segmentation-29417701f6",
+    "pine_wilt_segmentation-1e46fb473e",
+    "pine_wilt_segmentation-c9a1b01916",
+    "pine_wilt_segmentation-dc2158ff99",
+    "pine_wilt_segmentation-454d6e88bf",
+    "pine_wilt_segmentation-deaac40ea5",
+    "pine_wilt_segmentation-957da52965",
+    "pine_wilt_segmentation-1a8bae2ca8",
+    "pine_wilt_segmentation-7a89fd5e61",
+    "pine_wilt_segmentation-77465e892e",
+    "pine_wilt_segmentation-22d49ee948",
+    "pine_wilt_segmentation-751ecc01a9",
+    "pine_wilt_segmentation-cbba3c7d4f",
+    "pine_wilt_segmentation-b702ddb7a0",
+    "pine_wilt_segmentation-d640ccaa59",
+    "pine_wilt_segmentation-fdac7c4a5a",
+    "pine_wilt_segmentation-d0b9aebee5",
+    "pine_wilt_segmentation-36c02d220c"
+   ],
+   "15": [
+    "pine_wilt_segmentation-77e83ca05e",
+    "pine_wilt_segmentation-fb176ed027",
+    "pine_wilt_segmentation-29417701f6",
+    "pine_wilt_segmentation-1e46fb473e",
+    "pine_wilt_segmentation-c9a1b01916",
+    "pine_wilt_segmentation-dc2158ff99",
+    "pine_wilt_segmentation-454d6e88bf",
+    "pine_wilt_segmentation-f22a672644",
+    "pine_wilt_segmentation-ca38a25f1a",
+    "pine_wilt_segmentation-b26ffd2cc9",
+    "pine_wilt_segmentation-deaac40ea5",
+    "pine_wilt_segmentation-396b8bb2e1",
+    "pine_wilt_segmentation-9fd14a2cad",
+    "pine_wilt_segmentation-957da52965",
+    "pine_wilt_segmentation-1a8bae2ca8",
+    "pine_wilt_segmentation-7a89fd5e61",
+    "pine_wilt_segmentation-77465e892e",
+    "pine_wilt_segmentation-e7f363d0f1",
+    "pine_wilt_segmentation-22d49ee948",
+    "pine_wilt_segmentation-751ecc01a9",
+    "pine_wilt_segmentation-cbba3c7d4f",
+    "pine_wilt_segmentation-b702ddb7a0",
+    "pine_wilt_segmentation-d640ccaa59",
+    "pine_wilt_segmentation-715ecd95ac",
+    "pine_wilt_segmentation-fdac7c4a5a",
+    "pine_wilt_segmentation-b97a45c3d8",
+    "pine_wilt_segmentation-05b6b755b0",
+    "pine_wilt_segmentation-d0b9aebee5",
+    "pine_wilt_segmentation-36c02d220c",
+    "pine_wilt_segmentation-f52429da5f"
+   ]
+  },
+  "s1": {
+   "5": [
+    "pine_wilt_segmentation-f67f492f7b",
+    "pine_wilt_segmentation-b3b6a56f0d",
+    "pine_wilt_segmentation-076d737037",
+    "pine_wilt_segmentation-b115ef49cf",
+    "pine_wilt_segmentation-30c6b58c25",
+    "pine_wilt_segmentation-da670da5df",
+    "pine_wilt_segmentation-8481b8e0c8",
+    "pine_wilt_segmentation-60e2a751b4",
+    "pine_wilt_segmentation-646277b468",
+    "pine_wilt_segmentation-15d67f4f9b"
+   ],
+   "10": [
+    "pine_wilt_segmentation-d0eca01524",
+    "pine_wilt_segmentation-5865d1d7fa",
+    "pine_wilt_segmentation-2e396f946e",
+    "pine_wilt_segmentation-f67f492f7b",
+    "pine_wilt_segmentation-b3b6a56f0d",
+    "pine_wilt_segmentation-db0f6fdb9e",
+    "pine_wilt_segmentation-076d737037",
+    "pine_wilt_segmentation-b115ef49cf",
+    "pine_wilt_segmentation-30c6b58c25",
+    "pine_wilt_segmentation-da670da5df",
+    "pine_wilt_segmentation-7eb28857aa",
+    "pine_wilt_segmentation-8481b8e0c8",
+    "pine_wilt_segmentation-368f4a41ce",
+    "pine_wilt_segmentation-60e2a751b4",
+    "pine_wilt_segmentation-646277b468",
+    "pine_wilt_segmentation-f38b2245b7",
+    "pine_wilt_segmentation-15d67f4f9b",
+    "pine_wilt_segmentation-3af8177d0c",
+    "pine_wilt_segmentation-fb8ee088d3",
+    "pine_wilt_segmentation-14764b94ab"
+   ],
+   "15": [
+    "pine_wilt_segmentation-d0eca01524",
+    "pine_wilt_segmentation-5865d1d7fa",
+    "pine_wilt_segmentation-2e396f946e",
+    "pine_wilt_segmentation-1c23e89c64",
+    "pine_wilt_segmentation-f67f492f7b",
+    "pine_wilt_segmentation-3450b3b54e",
+    "pine_wilt_segmentation-b3b6a56f0d",
+    "pine_wilt_segmentation-db0f6fdb9e",
+    "pine_wilt_segmentation-a0e037d3fa",
+    "pine_wilt_segmentation-076d737037",
+    "pine_wilt_segmentation-b115ef49cf",
+    "pine_wilt_segmentation-30c6b58c25",
+    "pine_wilt_segmentation-da670da5df",
+    "pine_wilt_segmentation-7eb28857aa",
+    "pine_wilt_segmentation-000760212a",
+    "pine_wilt_segmentation-2bc695b370",
+    "pine_wilt_segmentation-0ee4184cc9",
+    "pine_wilt_segmentation-8481b8e0c8",
+    "pine_wilt_segmentation-368f4a41ce",
+    "pine_wilt_segmentation-60e2a751b4",
+    "pine_wilt_segmentation-646277b468",
+    "pine_wilt_segmentation-f38b2245b7",
+    "pine_wilt_segmentation-14ed7e8618",
+    "pine_wilt_segmentation-0e6c94769d",
+    "pine_wilt_segmentation-bf9185f55b",
+    "pine_wilt_segmentation-78b9aac069",
+    "pine_wilt_segmentation-15d67f4f9b",
+    "pine_wilt_segmentation-3af8177d0c",
+    "pine_wilt_segmentation-fb8ee088d3",
+    "pine_wilt_segmentation-14764b94ab"
+   ]
+  },
+  "s2": {
+   "5": [
+    "pine_wilt_segmentation-3cf39c181a",
+    "pine_wilt_segmentation-18dc29f639",
+    "pine_wilt_segmentation-dc2158ff99",
+    "pine_wilt_segmentation-849ee4b82b",
+    "pine_wilt_segmentation-bc1149b221",
+    "pine_wilt_segmentation-258684abeb",
+    "pine_wilt_segmentation-6f0c60366b",
+    "pine_wilt_segmentation-0af0181a70",
+    "pine_wilt_segmentation-ad0930142f",
+    "pine_wilt_segmentation-02b8b823fd"
+   ],
+   "10": [
+    "pine_wilt_segmentation-abfecb4c2b",
+    "pine_wilt_segmentation-0e72ab0b26",
+    "pine_wilt_segmentation-00e5a8a0e4",
+    "pine_wilt_segmentation-3cf39c181a",
+    "pine_wilt_segmentation-18dc29f639",
+    "pine_wilt_segmentation-dc2158ff99",
+    "pine_wilt_segmentation-849ee4b82b",
+    "pine_wilt_segmentation-e44e692166",
+    "pine_wilt_segmentation-91a9c48917",
+    "pine_wilt_segmentation-bc1149b221",
+    "pine_wilt_segmentation-258684abeb",
+    "pine_wilt_segmentation-6f0c60366b",
+    "pine_wilt_segmentation-5a3d6c4b0d",
+    "pine_wilt_segmentation-0af0181a70",
+    "pine_wilt_segmentation-ad0930142f",
+    "pine_wilt_segmentation-406ee9bb80",
+    "pine_wilt_segmentation-78bea0403f",
+    "pine_wilt_segmentation-02b8b823fd",
+    "pine_wilt_segmentation-10ce9a3d83",
+    "pine_wilt_segmentation-87d4f302ff"
+   ],
+   "15": [
+    "pine_wilt_segmentation-abfecb4c2b",
+    "pine_wilt_segmentation-b9803d30c6",
+    "pine_wilt_segmentation-0e72ab0b26",
+    "pine_wilt_segmentation-00e5a8a0e4",
+    "pine_wilt_segmentation-3cf39c181a",
+    "pine_wilt_segmentation-18dc29f639",
+    "pine_wilt_segmentation-dc2158ff99",
+    "pine_wilt_segmentation-849ee4b82b",
+    "pine_wilt_segmentation-e596a87b6b",
+    "pine_wilt_segmentation-e44e692166",
+    "pine_wilt_segmentation-91a9c48917",
+    "pine_wilt_segmentation-bc1149b221",
+    "pine_wilt_segmentation-258684abeb",
+    "pine_wilt_segmentation-af9f5a44c5",
+    "pine_wilt_segmentation-6f0c60366b",
+    "pine_wilt_segmentation-40c7f38c5a",
+    "pine_wilt_segmentation-5a3d6c4b0d",
+    "pine_wilt_segmentation-fcba80eea8",
+    "pine_wilt_segmentation-0af0181a70",
+    "pine_wilt_segmentation-ad0930142f",
+    "pine_wilt_segmentation-ae7596d407",
+    "pine_wilt_segmentation-406ee9bb80",
+    "pine_wilt_segmentation-8ee329f52a",
+    "pine_wilt_segmentation-9e68e6df5c",
+    "pine_wilt_segmentation-a0e2de18f4",
+    "pine_wilt_segmentation-78bea0403f",
+    "pine_wilt_segmentation-02b8b823fd",
+    "pine_wilt_segmentation-10ce9a3d83",
+    "pine_wilt_segmentation-3f672d8625",
+    "pine_wilt_segmentation-87d4f302ff"
+   ]
+  }
+ }
+}

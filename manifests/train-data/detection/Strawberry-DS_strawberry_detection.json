@@ -1,0 +1,4068 @@
+{
+ "name": "Strawberry-DS_strawberry_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/Strawberry-DS_strawberry_detection",
+ "hf_sha": "291e1cd9eec4ae452c13555ca74b2e36ccc6923c",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T20:23:41+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Early-Turning",
+   "Green",
+   "Late-Turning",
+   "Red",
+   "Turning",
+   "White"
+  ],
+  "indexed_rows": 247
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-bb164b9db2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Green",
+      "bbox_raw": [
+       417.86499999999995,
+       849.9950000000001,
+       206.37,
+       136.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2600.44,
+       956.67,
+       320.76,
+       390.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-0a60695a53",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1760.6350000000002,
+       920.0,
+       573.89,
+       730.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       914.1650000000002,
+       549.9999999999999,
+       537.03,
+       550.0
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1064.1349999999998,
+       1226.665,
+       423.73,
+       596.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2853.71,
+       549.9999999999999,
+       360.82,
+       290.00000000000006
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fa79a5ef9a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2133.88,
+       670.0049999999999,
+       213.98,
+       173.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2137.215,
+       1036.665,
+       170.65,
+       123.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-5d0a4ff927",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2413.815,
+       359.995,
+       264.05,
+       226.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2393.82,
+       846.6650000000001,
+       224.04,
+       133.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-c99dd03519",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       807.525,
+       1489.9950000000001,
+       223.67,
+       236.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-234cce6d9c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1270.7500000000002,
+       1323.335,
+       203.78,
+       216.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-11fad819a1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2207.195,
+       796.67,
+       217.33,
+       190.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2183.8650000000002,
+       1166.6699999999998,
+       187.33,
+       120.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-721a8fa832",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2450.47,
+       599.995,
+       184.06,
+       156.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2420.48,
+       903.3349999999999,
+       157.38,
+       96.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-a6847cb4db",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2510.465,
+       1333.3350000000003,
+       194.07,
+       216.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2760.4,
+       173.335,
+       250.80000000000004,
+       183.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2960.35,
+       449.995,
+       254.18,
+       186.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2047.2350000000006,
+       1840.0,
+       150.63,
+       230.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2353.83,
+       1526.665,
+       140.7,
+       163.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2777.0650000000005,
+       936.665,
+       157.47,
+       126.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2653.755,
+       1259.995,
+       150.77,
+       126.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-901d801167",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2907.035,
+       1133.335,
+       290.83,
+       193.33000000000004
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2763.735,
+       970.005,
+       164.13,
+       113.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2767.06,
+       1323.33,
+       160.8,
+       160.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3665.595,
+       951.6700000000001,
+       121.16999999999999,
+       80.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-9308cfee73",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3060.3250000000007,
+       1330.005,
+       350.87,
+       223.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2860.38,
+       1543.3349999999998,
+       200.82,
+       176.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2883.705,
+       1116.67,
+       230.83,
+       130.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-992f3d6e79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1077.465,
+       193.335,
+       163.73,
+       153.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2503.79,
+       1156.6699999999998,
+       150.74,
+       140.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-101f28f859",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1910.605,
+       1963.33,
+       173.93,
+       190.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1580.685,
+       1413.335,
+       153.85,
+       213.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2887.0350000000003,
+       883.3349999999999,
+       197.49,
+       146.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       3080.3250000000003,
+       1163.3349999999998,
+       100.87,
+       96.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1340.7350000000001,
+       1483.335,
+       133.79,
+       213.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       414.28999999999996,
+       1450.0050000000003,
+       310.24,
+       293.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       350.96999999999997,
+       580.005,
+       243.55999999999997,
+       173.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2357.16,
+       650.0049999999999,
+       134.04,
+       113.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2647.0899999999997,
+       376.66499999999996,
+       177.44,
+       186.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1600.68,
+       1899.9950000000001,
+       80.52,
+       116.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-2462f2bce1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2997.0150000000003,
+       1023.3350000000002,
+       140.85,
+       116.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1534.02,
+       1753.335,
+       123.84,
+       173.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1897.275,
+       1800.0049999999999,
+       140.59,
+       153.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       940.8349999999999,
+       576.67,
+       187.03,
+       120.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1050.805,
+       253.33500000000004,
+       133.73,
+       123.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1567.3500000000001,
+       203.32999999999998,
+       107.18,
+       160.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1464.195,
+       213.75,
+       84.85,
+       107.5
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1070.41,
+       913.755,
+       90.04,
+       58.75
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-0cfc388d27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       734.22,
+       1539.9999999999998,
+       186.98,
+       170.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       757.5400000000001,
+       1029.995,
+       183.66,
+       166.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       574.2549999999999,
+       1296.665,
+       163.61,
+       96.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       940.8349999999998,
+       1503.335,
+       177.03,
+       176.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1254.095,
+       6.670000000000006,
+       93.77,
+       110.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-dff7f8e1e9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1297.415,
+       1233.335,
+       380.45,
+       293.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1673.995,
+       1676.665,
+       253.87,
+       326.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-5164fd6785",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1607.345,
+       1443.33,
+       187.19,
+       210.0
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       934.17,
+       1550.0,
+       203.7,
+       210.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-78c95ebb79",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       707.56,
+       1300.0,
+       223.64,
+       220.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1450.7099999999998,
+       110.00499999999997,
+       223.82,
+       163.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2393.8199999999997,
+       199.99499999999995,
+       157.38,
+       156.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       587.5799999999999,
+       1113.3349999999998,
+       110.28,
+       96.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1047.4749999999997,
+       630.0,
+       93.73,
+       100.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3320.265,
+       1346.665,
+       210.93,
+       156.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1770.64,
+       1343.33,
+       110.56,
+       140.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1820.6200000000001,
+       1249.9949999999997,
+       150.58,
+       96.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1460.705,
+       1360.0,
+       140.49,
+       190.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       814.19,
+       1750.005,
+       90.34,
+       93.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2933.695,
+       1813.335,
+       114.17,
+       106.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3300.27,
+       1606.665,
+       104.26,
+       106.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-784689fda9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3146.9700000000003,
+       1363.3299999999997,
+       237.56,
+       170.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2693.7499999999995,
+       1866.665,
+       144.12,
+       143.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1430.7200000000003,
+       1246.67,
+       170.48,
+       120.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1370.73,
+       1353.3350000000003,
+       123.80000000000001,
+       166.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1014.1499999999997,
+       1379.9950000000001,
+       160.38,
+       216.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       3133.6450000000004,
+       1646.6650000000002,
+       117.55,
+       116.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       191.00500000000002,
+       1740.0,
+       100.19,
+       100.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1434.0500000000002,
+       1183.335,
+       73.82,
+       103.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-78bc489a3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       1000.815,
+       1016.6700000000001,
+       317.05,
+       210.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1164.105,
+       1740.0,
+       187.09,
+       130.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1080.795,
+       1593.3349999999998,
+       177.07,
+       103.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       564.26,
+       1976.665,
+       376.94,
+       183.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1190.7749999999999,
+       1433.3349999999998,
+       207.09,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1194.1000000000001,
+       619.9950000000001,
+       183.76,
+       136.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1144.5249999999999,
+       1206.67,
+       329.51,
+       230.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-3b5917c312",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       890.8450000000001,
+       1266.6699999999998,
+       273.69,
+       310.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       514.2650000000001,
+       1376.6699999999998,
+       176.93,
+       140.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       467.6100000000001,
+       1000.005,
+       106.92,
+       123.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2443.81,
+       1803.335,
+       174.06,
+       213.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2647.09,
+       1813.3349999999998,
+       137.44,
+       153.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2830.385,
+       1820.0,
+       104.15,
+       160.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       3230.29,
+       1666.665,
+       127.57999999999998,
+       136.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1614.535,
+       1550.0049999999999,
+       206.09,
+       233.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-5db43bc630",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Green",
+      "bbox_raw": [
+       430.94499999999994,
+       1116.665,
+       110.25,
+       73.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1933.9299999999998,
+       310.005,
+       110.6,
+       93.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1610.6699999999998,
+       183.33499999999998,
+       243.86,
+       153.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1690.655,
+       356.665,
+       207.21,
+       183.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-52f72c68a3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2513.7849999999994,
+       1630.005,
+       277.41,
+       293.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       697.5550000000001,
+       1413.335,
+       180.31,
+       133.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2537.125,
+       1419.995,
+       207.41,
+       146.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-851a0c8143",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2343.8299999999995,
+       1769.995,
+       200.7,
+       286.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       3126.975,
+       1520.005,
+       260.89,
+       263.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1114.1200000000001,
+       986.6700000000001,
+       173.74,
+       120.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1207.43,
+       846.6650000000001,
+       157.1,
+       136.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-a44cdeee41",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1014.15,
+       886.6650000000001,
+       180.38,
+       153.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       927.4999999999999,
+       1049.995,
+       183.7,
+       126.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2270.5200000000004,
+       1803.3349999999998,
+       190.68,
+       273.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       3017.005,
+       1506.67,
+       247.52999999999997,
+       250.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2183.8650000000002,
+       1816.6699999999998,
+       87.33,
+       120.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-c2a14d5758",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2423.815,
+       1153.335,
+       224.05,
+       136.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1437.385,
+       596.67,
+       197.15,
+       130.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1554.0199999999998,
+       416.665,
+       147.18,
+       193.33000000000004
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       777.5350000000001,
+       1640.0,
+       100.33,
+       150.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       477.605,
+       1583.3300000000002,
+       93.59,
+       80.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       74.375,
+       386.66499999999996,
+       143.49,
+       123.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2263.8500000000004,
+       1413.3349999999998,
+       80.68,
+       103.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2867.04,
+       1536.665,
+       84.16,
+       76.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1737.3099999999997,
+       660.0,
+       100.56,
+       90.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2267.185,
+       123.335,
+       84.01,
+       86.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2433.8100000000004,
+       20.005000000000006,
+       80.72,
+       63.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-571a1f1ca6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1081.2,
+       1240.005,
+       242.88,
+       353.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       3184.5299999999997,
+       1350.005,
+       365.68,
+       243.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1404.06,
+       1330.0049999999999,
+       237.14,
+       283.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3380.255,
+       116.665,
+       220.95,
+       226.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1214.105,
+       1703.335,
+       100.43,
+       116.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2477.1400000000003,
+       1593.335,
+       144.06,
+       206.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2270.52,
+       1656.665,
+       170.68,
+       233.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       117.86000000000001,
+       103.335,
+       166.46,
+       113.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       820.8599999999999,
+       173.335,
+       270.34,
+       176.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-118082ffdc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1307.41,
+       1376.6650000000002,
+       227.12,
+       256.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1427.3799999999999,
+       1780.005,
+       280.48,
+       273.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2163.875,
+       1910.0,
+       173.99,
+       120.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       554.255,
+       1336.67,
+       133.61,
+       120.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2773.73,
+       733.33,
+       170.8,
+       110.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1710.6499999999999,
+       1886.6700000000003,
+       113.88,
+       160.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1817.29,
+       1900.005,
+       77.24,
+       123.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2750.4,
+       1719.995,
+       90.8,
+       106.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2987.015,
+       679.9950000000001,
+       120.85,
+       86.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2603.775,
+       36.665,
+       184.09,
+       186.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-d241cb298f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1893.9350000000002,
+       1686.67,
+       270.59,
+       390.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2153.875,
+       1626.67,
+       250.65,
+       380.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2390.4900000000002,
+       1673.33,
+       204.04,
+       270.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2610.43,
+       1610.0000000000002,
+       174.1,
+       160.0
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2860.375,
+       1476.6649999999997,
+       237.49,
+       223.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3296.945,
+       890.0049999999999,
+       157.59,
+       83.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-957ae9ae61",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       377.865,
+       1113.3300000000002,
+       489.65,
+       480.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       131.01999999999998,
+       599.995,
+       356.84,
+       176.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       747.545,
+       1310.0,
+       366.99,
+       370.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1117.8600000000001,
+       1486.665,
+       202.88,
+       296.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2341.195,
+       936.6650000000001,
+       175.93,
+       186.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3084.53,
+       1283.335,
+       145.76,
+       133.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-4ca2747376",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1567.8650000000002,
+       1359.9999999999998,
+       292.75,
+       430.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1867.865,
+       1410.005,
+       259.35,
+       393.33
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1267.8600000000001,
+       1203.335,
+       276.16,
+       276.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2127.87,
+       1429.9999999999998,
+       145.98,
+       240.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2134.5299999999997,
+       1270.0049999999999,
+       172.64,
+       183.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2624.535,
+       406.665,
+       169.19,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3024.5350000000003,
+       1096.6649999999997,
+       162.43,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3221.2,
+       1063.33,
+       145.72,
+       170.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2210.525,
+       913.3349999999999,
+       100.67,
+       116.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2397.155,
+       523.3299999999999,
+       90.71,
+       90.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-c4b0f80cfd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1524.0249999999999,
+       1206.67,
+       307.17,
+       450.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1820.62,
+       1266.665,
+       287.24,
+       403.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2083.89,
+       1283.33,
+       190.64,
+       270.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2103.8849999999998,
+       1126.6700000000003,
+       197.31,
+       180.0
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1200.7700000000002,
+       1063.335,
+       303.76,
+       286.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2603.77,
+       243.33499999999998,
+       170.76,
+       123.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2137.215,
+       609.995,
+       110.65,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3040.335,
+       893.335,
+       177.53,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3240.29,
+       920.005,
+       187.58,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2340.495,
+       276.665,
+       97.37,
+       133.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1407.3899999999999,
+       1743.3349999999998,
+       117.14,
+       133.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2153.8799999999997,
+       1690.0049999999999,
+       97.32,
+       103.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-1a8ab2470b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       954.16,
+       483.33499999999987,
+       383.7,
+       386.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2330.5,
+       789.9999999999999,
+       190.7,
+       300.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       807.53,
+       783.3299999999999,
+       237.0,
+       280.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2663.755,
+       623.335,
+       164.11,
+       163.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1230.765,
+       836.665,
+       163.77,
+       166.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2777.0600000000004,
+       533.335,
+       300.8,
+       386.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1514.0249999999999,
+       1456.665,
+       217.17,
+       366.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1753.9750000000001,
+       1300.0,
+       413.89,
+       520.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1903.94,
+       1553.335,
+       147.26,
+       146.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       1504.0249999999996,
+       1433.3349999999998,
+       247.16999999999996,
+       333.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1897.2700000000002,
+       1460.005,
+       147.26,
+       143.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1760.635,
+       1263.3349999999998,
+       417.23,
+       493.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2670.425,
+       476.6650000000001,
+       274.11,
+       363.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-face577cf3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1204.525,
+       1186.665,
+       322.83,
+       403.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1474.035,
+       1380.005,
+       353.83,
+       463.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1910.6000000000001,
+       1483.3349999999998,
+       237.26,
+       323.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2310.505,
+       1026.6650000000002,
+       320.69,
+       416.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-aac8525412",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2237.205,
+       1633.3299999999997,
+       317.33,
+       360.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1460.72,
+       1629.9950000000001,
+       210.48,
+       286.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fd6e55facc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2800.385,
+       1200.0,
+       360.81,
+       430.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2967.015,
+       1016.6700000000001,
+       310.85,
+       310.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-f23e666bd0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2240.52,
+       1239.995,
+       317.34,
+       296.67
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2093.8900000000003,
+       1436.6650000000002,
+       290.64,
+       273.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       380.965,
+       1433.335,
+       323.57,
+       443.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2210.525,
+       1746.665,
+       140.67,
+       136.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-3fc1a15934",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1127.4550000000002,
+       1273.335,
+       480.4100000000001,
+       733.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2433.805,
+       1370.005,
+       327.39,
+       463.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1977.2499999999995,
+       619.9950000000001,
+       157.28,
+       196.67
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       960.8249999999999,
+       709.9950000000001,
+       290.37,
+       306.67
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2503.795,
+       936.6700000000001,
+       374.07,
+       410.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       727.55,
+       1013.3299999999999,
+       590.32,
+       390.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-3204bc8c7d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1587.34,
+       116.67,
+       280.52,
+       410.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       887.5150000000001,
+       366.665,
+       220.35,
+       273.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1320.7450000000001,
+       600.0,
+       133.79,
+       170.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1060.8,
+       566.665,
+       140.4,
+       173.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1883.945,
+       453.3300000000001,
+       110.59,
+       160.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2577.1100000000006,
+       606.6650000000001,
+       157.42,
+       173.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2950.35,
+       880.005,
+       244.18,
+       203.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2930.36,
+       1086.665,
+       210.84,
+       136.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       3070.3250000000003,
+       1083.335,
+       230.87,
+       176.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-44bfde11d7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       1810.62,
+       1286.665,
+       177.24,
+       246.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2277.1800000000003,
+       690.005,
+       430.68,
+       313.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1663.9950000000001,
+       1620.0050000000003,
+       323.87,
+       393.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-ea5f3792e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       401.9555555555556,
+       942.1875,
+       721.2444444444444,
+       168.75
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1104.0088888888888,
+       753.75,
+       383.62666666666667,
+       118.125
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1406.16,
+       646.875,
+       321.47555555555556,
+       118.125
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-d20b896876",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1024.145,
+       1163.335,
+       340.39,
+       286.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2520.455,
+       1113.3349999999998,
+       287.41,
+       353.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2837.0499999999997,
+       1013.3349999999999,
+       177.48,
+       233.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1450.715,
+       1343.335,
+       127.15,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1077.46,
+       1016.6700000000001,
+       180.4,
+       110.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1703.985,
+       389.995,
+       137.21,
+       116.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2240.525,
+       1300.005,
+       220.67,
+       203.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-e5cdd9994d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2770.3949999999995,
+       1133.335,
+       384.13,
+       513.33
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1467.3700000000001,
+       1099.9999999999998,
+       287.16,
+       360.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1030.8049999999998,
+       1290.005,
+       270.39,
+       223.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1280.745,
+       1346.665,
+       150.45,
+       163.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-41662cc332",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1280.75,
+       930.0050000000001,
+       293.78,
+       333.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       510.94000000000005,
+       1006.6649999999998,
+       340.26,
+       326.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1434.0449999999996,
+       396.66999999999996,
+       197.15,
+       120.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3490.2300000000005,
+       613.3349999999999,
+       174.3,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3743.5,
+       1183.335,
+       96.5,
+       106.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       854.1850000000001,
+       940.0,
+       247.01,
+       260.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-82f21a60f9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1267.4199999999998,
+       1176.6700000000003,
+       393.78,
+       300.0
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2003.915,
+       1813.33,
+       273.95,
+       240.0
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       1650.665,
+       1273.33,
+       273.87,
+       220.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1623.9999999999998,
+       846.6650000000001,
+       197.2,
+       153.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1697.32,
+       1056.665,
+       173.88,
+       133.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2173.87,
+       1123.33,
+       130.66,
+       140.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-227651e190",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       1060.8,
+       990.0000000000001,
+       250.40000000000003,
+       300.0
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2187.205,
+       523.3349999999999,
+       317.33,
+       216.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       654.235,
+       759.995,
+       116.97,
+       106.67
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2623.7700000000004,
+       933.3299999999999,
+       334.1,
+       260.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3493.5550000000003,
+       1126.67,
+       184.31,
+       170.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-02d8e374c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1550.6850000000002,
+       1606.67,
+       440.51,
+       310.0
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1237.43,
+       1363.335,
+       337.1,
+       313.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2743.735,
+       743.335,
+       284.13,
+       263.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3386.915,
+       256.67,
+       160.95,
+       110.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       944.1600000000001,
+       10.005000000000003,
+       193.7,
+       113.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-683c3d1c10",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 172,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White",
+      "bbox_raw": [
+       2453.8100000000004,
+       1266.665,
+       324.06,
+       276.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       2067.23,
+       1376.67,
+       347.3,
+       440.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       607.575,
+       790.005,
+       260.29,
+       193.33000000000004
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2207.1950000000006,
+       20.0,
+       110.67,
+       100.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-fe45e0b834",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Red",
+    "White"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2310.505,
+       243.335,
+       290.69,
+       223.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2017.2399999999998,
+       1323.335,
+       323.96,
+       206.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1467.3799999999999,
+       1046.67,
+       183.82,
+       210.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       714.22,
+       723.335,
+       136.98,
+       163.33
+      ]
+     },
+     {
+      "label": "White",
+      "bbox_raw": [
+       2977.0099999999998,
+       546.665,
+       177.52,
+       163.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2007.245,
+       1783.335,
+       167.29,
+       123.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1927.2649999999999,
+       1316.67,
+       93.93,
+       240.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1920.5949999999998,
+       1636.67,
+       137.27,
+       130.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       3723.5,
+       480.00499999999994,
+       116.5,
+       143.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-b53408eb7f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 178,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2210.53,
+       1120.005,
+       334.0,
+       243.33
+      ]
+     },
+     {
+      "label": "Red",
+      "bbox_raw": [
+       2430.475,
+       983.3299999999998,
+       454.05,
+       290.00000000000006
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       564.26,
+       1293.335,
+       156.94,
+       126.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-4b285e0a31",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Red",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1820.6200000000001,
+       676.6650000000001,
+       297.24,
+       413.3299999999999
+      ]
+     },
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1800.625,
+       1076.665,
+       400.57,
+       303.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       897.5099999999999,
+       1130.005,
+       137.02,
+       113.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-02488f2365",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       1554.0149999999999,
+       1656.665,
+       263.85,
+       413.3299999999999
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2057.2400000000002,
+       1506.67,
+       193.96,
+       240.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2393.82,
+       1450.0,
+       164.04,
+       140.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1550.69,
+       1413.335,
+       133.84,
+       176.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1090.8,
+       789.995,
+       160.4,
+       116.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1517.3600000000001,
+       763.33,
+       103.84,
+       80.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2820.385,
+       89.99500000000002,
+       150.81,
+       96.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-1f13fb486e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Turning",
+      "bbox_raw": [
+       2403.815,
+       1486.6650000000002,
+       340.71,
+       286.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2317.175,
+       1129.995,
+       230.69,
+       146.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2307.1800000000003,
+       853.3349999999999,
+       144.02,
+       126.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1570.6800000000003,
+       1880.0,
+       120.52,
+       150.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1057.465,
+       169.995,
+       113.73,
+       136.67
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2157.21,
+       1563.335,
+       170.66,
+       133.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-f2f559d1bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early-Turning",
+    "Green",
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       920.8300000000002,
+       1233.33,
+       343.7,
+       490.0
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       1360.735,
+       1413.3349999999998,
+       357.13,
+       436.67
+      ]
+     },
+     {
+      "label": "Early-Turning",
+      "bbox_raw": [
+       1843.9449999999997,
+       1103.335,
+       287.25,
+       393.33
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       2447.145,
+       1433.335,
+       167.39,
+       226.67
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-7b434c91a2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Green",
+    "Late-Turning"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2253.855,
+       776.6699999999998,
+       484.01,
+       300.0
+      ]
+     },
+     {
+      "label": "Green",
+      "bbox_raw": [
+       1873.9449999999997,
+       1146.6649999999997,
+       167.25,
+       153.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "Strawberry-DS_strawberry_detection-6d23d21dac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late-Turning",
+    "Red"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red",
+      "bbox_raw": [
+       1007.485,
+       1133.335,
+       307.05,
+       353.33
+      ]
+     },
+     {
+      "label": "Late-Turning",
+      "bbox_raw": [
+       2060.5699999999997,
+       1126.665,
+       217.3,
+       343.33
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-a6847cb4db",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-957ae9ae61",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-d20b896876",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-7b434c91a2"
+   ],
+   "10": [
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-721a8fa832",
+    "Strawberry-DS_strawberry_detection-a6847cb4db",
+    "Strawberry-DS_strawberry_detection-901d801167",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-0cfc388d27",
+    "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+    "Strawberry-DS_strawberry_detection-784689fda9",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-118082ffdc",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-957ae9ae61",
+    "Strawberry-DS_strawberry_detection-4ca2747376",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-face577cf3",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-d20b896876",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-fe45e0b834",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-7b434c91a2",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ],
+   "15": [
+    "Strawberry-DS_strawberry_detection-0a60695a53",
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-721a8fa832",
+    "Strawberry-DS_strawberry_detection-a6847cb4db",
+    "Strawberry-DS_strawberry_detection-901d801167",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-0cfc388d27",
+    "Strawberry-DS_strawberry_detection-dff7f8e1e9",
+    "Strawberry-DS_strawberry_detection-5164fd6785",
+    "Strawberry-DS_strawberry_detection-78c95ebb79",
+    "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+    "Strawberry-DS_strawberry_detection-784689fda9",
+    "Strawberry-DS_strawberry_detection-3b5917c312",
+    "Strawberry-DS_strawberry_detection-52f72c68a3",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-571a1f1ca6",
+    "Strawberry-DS_strawberry_detection-118082ffdc",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-957ae9ae61",
+    "Strawberry-DS_strawberry_detection-4ca2747376",
+    "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-face577cf3",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-d20b896876",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-02d8e374c9",
+    "Strawberry-DS_strawberry_detection-683c3d1c10",
+    "Strawberry-DS_strawberry_detection-fe45e0b834",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-4b285e0a31",
+    "Strawberry-DS_strawberry_detection-f2f559d1bf",
+    "Strawberry-DS_strawberry_detection-7b434c91a2",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ]
+  },
+  "s1": {
+   "5": [
+    "Strawberry-DS_strawberry_detection-c99dd03519",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-992f3d6e79",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-78bc489a3c",
+    "Strawberry-DS_strawberry_detection-5db43bc630",
+    "Strawberry-DS_strawberry_detection-851a0c8143",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+    "Strawberry-DS_strawberry_detection-fd6e55facc",
+    "Strawberry-DS_strawberry_detection-d20b896876"
+   ],
+   "10": [
+    "Strawberry-DS_strawberry_detection-0a60695a53",
+    "Strawberry-DS_strawberry_detection-c99dd03519",
+    "Strawberry-DS_strawberry_detection-11fad819a1",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-992f3d6e79",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-dff7f8e1e9",
+    "Strawberry-DS_strawberry_detection-78bc489a3c",
+    "Strawberry-DS_strawberry_detection-5db43bc630",
+    "Strawberry-DS_strawberry_detection-851a0c8143",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-c4b0f80cfd",
+    "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+    "Strawberry-DS_strawberry_detection-fd6e55facc",
+    "Strawberry-DS_strawberry_detection-f23e666bd0",
+    "Strawberry-DS_strawberry_detection-3204bc8c7d",
+    "Strawberry-DS_strawberry_detection-d20b896876",
+    "Strawberry-DS_strawberry_detection-e5cdd9994d",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-227651e190",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-1f13fb486e",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ],
+   "15": [
+    "Strawberry-DS_strawberry_detection-bb164b9db2",
+    "Strawberry-DS_strawberry_detection-0a60695a53",
+    "Strawberry-DS_strawberry_detection-fa79a5ef9a",
+    "Strawberry-DS_strawberry_detection-c99dd03519",
+    "Strawberry-DS_strawberry_detection-11fad819a1",
+    "Strawberry-DS_strawberry_detection-a6847cb4db",
+    "Strawberry-DS_strawberry_detection-901d801167",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-992f3d6e79",
+    "Strawberry-DS_strawberry_detection-101f28f859",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-dff7f8e1e9",
+    "Strawberry-DS_strawberry_detection-78c95ebb79",
+    "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+    "Strawberry-DS_strawberry_detection-78bc489a3c",
+    "Strawberry-DS_strawberry_detection-5db43bc630",
+    "Strawberry-DS_strawberry_detection-851a0c8143",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-571a1f1ca6",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-c4b0f80cfd",
+    "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-fd6e55facc",
+    "Strawberry-DS_strawberry_detection-f23e666bd0",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-3204bc8c7d",
+    "Strawberry-DS_strawberry_detection-d20b896876",
+    "Strawberry-DS_strawberry_detection-e5cdd9994d",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-227651e190",
+    "Strawberry-DS_strawberry_detection-683c3d1c10",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-02488f2365",
+    "Strawberry-DS_strawberry_detection-1f13fb486e",
+    "Strawberry-DS_strawberry_detection-f2f559d1bf",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ]
+  },
+  "s2": {
+   "5": [
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-234cce6d9c",
+    "Strawberry-DS_strawberry_detection-11fad819a1",
+    "Strawberry-DS_strawberry_detection-3b5917c312",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-1a8ab2470b",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-44bfde11d7",
+    "Strawberry-DS_strawberry_detection-41662cc332",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-227651e190",
+    "Strawberry-DS_strawberry_detection-02488f2365",
+    "Strawberry-DS_strawberry_detection-1f13fb486e",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ],
+   "10": [
+    "Strawberry-DS_strawberry_detection-fa79a5ef9a",
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-c99dd03519",
+    "Strawberry-DS_strawberry_detection-234cce6d9c",
+    "Strawberry-DS_strawberry_detection-11fad819a1",
+    "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+    "Strawberry-DS_strawberry_detection-3b5917c312",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-571a1f1ca6",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-4ca2747376",
+    "Strawberry-DS_strawberry_detection-1a8ab2470b",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-face577cf3",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-44bfde11d7",
+    "Strawberry-DS_strawberry_detection-ea5f3792e2",
+    "Strawberry-DS_strawberry_detection-e5cdd9994d",
+    "Strawberry-DS_strawberry_detection-41662cc332",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-227651e190",
+    "Strawberry-DS_strawberry_detection-02488f2365",
+    "Strawberry-DS_strawberry_detection-1f13fb486e",
+    "Strawberry-DS_strawberry_detection-f2f559d1bf",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ],
+   "15": [
+    "Strawberry-DS_strawberry_detection-fa79a5ef9a",
+    "Strawberry-DS_strawberry_detection-5d0a4ff927",
+    "Strawberry-DS_strawberry_detection-c99dd03519",
+    "Strawberry-DS_strawberry_detection-234cce6d9c",
+    "Strawberry-DS_strawberry_detection-11fad819a1",
+    "Strawberry-DS_strawberry_detection-a6847cb4db",
+    "Strawberry-DS_strawberry_detection-9308cfee73",
+    "Strawberry-DS_strawberry_detection-c23d6e2e1d",
+    "Strawberry-DS_strawberry_detection-2462f2bce1",
+    "Strawberry-DS_strawberry_detection-dff7f8e1e9",
+    "Strawberry-DS_strawberry_detection-5164fd6785",
+    "Strawberry-DS_strawberry_detection-78c95ebb79",
+    "Strawberry-DS_strawberry_detection-eb98fc5ca5",
+    "Strawberry-DS_strawberry_detection-784689fda9",
+    "Strawberry-DS_strawberry_detection-3b5917c312",
+    "Strawberry-DS_strawberry_detection-a44cdeee41",
+    "Strawberry-DS_strawberry_detection-c2a14d5758",
+    "Strawberry-DS_strawberry_detection-571a1f1ca6",
+    "Strawberry-DS_strawberry_detection-d241cb298f",
+    "Strawberry-DS_strawberry_detection-4ca2747376",
+    "Strawberry-DS_strawberry_detection-1a8ab2470b",
+    "Strawberry-DS_strawberry_detection-e6ddfcecc9",
+    "Strawberry-DS_strawberry_detection-fffbd5b5aa",
+    "Strawberry-DS_strawberry_detection-face577cf3",
+    "Strawberry-DS_strawberry_detection-aac8525412",
+    "Strawberry-DS_strawberry_detection-f23e666bd0",
+    "Strawberry-DS_strawberry_detection-3fc1a15934",
+    "Strawberry-DS_strawberry_detection-44bfde11d7",
+    "Strawberry-DS_strawberry_detection-ea5f3792e2",
+    "Strawberry-DS_strawberry_detection-e5cdd9994d",
+    "Strawberry-DS_strawberry_detection-41662cc332",
+    "Strawberry-DS_strawberry_detection-82f21a60f9",
+    "Strawberry-DS_strawberry_detection-227651e190",
+    "Strawberry-DS_strawberry_detection-fe45e0b834",
+    "Strawberry-DS_strawberry_detection-b53408eb7f",
+    "Strawberry-DS_strawberry_detection-02488f2365",
+    "Strawberry-DS_strawberry_detection-1f13fb486e",
+    "Strawberry-DS_strawberry_detection-f2f559d1bf",
+    "Strawberry-DS_strawberry_detection-6d23d21dac"
+   ]
+  }
+ }
+}

@@ -1,0 +1,932 @@
+{
+ "name": "spittlebug_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/spittlebug_segmentation",
+ "hf_sha": "b6e66d5ef5fd46369e3a3b77ebc389396ff48380",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T20:23:26+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "255": "value_255"
+  },
+  "indexed_rows": 347
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "spittlebug_segmentation-129eb5bbda",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-2d28552102",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-724aa4f471",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-e90c4155f7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-35f93ea28b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-ca84c3a907",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-90ee5bbe7f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-b104fa0ac4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-038697692a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-0665b474da",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-0f445a9ba3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-4560cc2baf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-d33ce56c13",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-f4c3f9f120",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-f58db6e65d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-11fbfe8aca",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-b5e4c8c772",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-0d0ca8dd6e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-aed9de74ef",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-196fdda0bc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-2c748e6e08",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-d08b34ba80",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-d25f96395f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-0efeb4a74a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-d9895df98f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-e02cb2842b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-b4b9946fef",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-4229624a4e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-afb8929988",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-b3d3ff9a08",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-38370d3ac2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-e969fb2759",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-e757b9fbdd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-17958ea041",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-4c90ee80ee",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-2abf3c3c31",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-491fd39a72",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-a2185440d0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-5111db42d6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-71239eee5d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-a319542edc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-d9499b67c2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "spittlebug_segmentation-39c26b5219",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_255"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_255"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-71239eee5d",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-d33ce56c13",
+    "spittlebug_segmentation-2c748e6e08",
+    "spittlebug_segmentation-d08b34ba80"
+   ],
+   "10": [
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-0665b474da",
+    "spittlebug_segmentation-0f445a9ba3",
+    "spittlebug_segmentation-71239eee5d",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-d9499b67c2",
+    "spittlebug_segmentation-d33ce56c13",
+    "spittlebug_segmentation-f4c3f9f120",
+    "spittlebug_segmentation-2c748e6e08",
+    "spittlebug_segmentation-d08b34ba80",
+    "spittlebug_segmentation-4c90ee80ee"
+   ],
+   "15": [
+    "spittlebug_segmentation-129eb5bbda",
+    "spittlebug_segmentation-724aa4f471",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-0665b474da",
+    "spittlebug_segmentation-0f445a9ba3",
+    "spittlebug_segmentation-71239eee5d",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-d9499b67c2",
+    "spittlebug_segmentation-d33ce56c13",
+    "spittlebug_segmentation-f4c3f9f120",
+    "spittlebug_segmentation-b5e4c8c772",
+    "spittlebug_segmentation-2c748e6e08",
+    "spittlebug_segmentation-d08b34ba80",
+    "spittlebug_segmentation-b3d3ff9a08",
+    "spittlebug_segmentation-4c90ee80ee",
+    "spittlebug_segmentation-491fd39a72"
+   ]
+  },
+  "s1": {
+   "5": [
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-39c26b5219",
+    "spittlebug_segmentation-4560cc2baf",
+    "spittlebug_segmentation-f58db6e65d",
+    "spittlebug_segmentation-d9895df98f"
+   ],
+   "10": [
+    "spittlebug_segmentation-2d28552102",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-39c26b5219",
+    "spittlebug_segmentation-4560cc2baf",
+    "spittlebug_segmentation-f58db6e65d",
+    "spittlebug_segmentation-aed9de74ef",
+    "spittlebug_segmentation-d25f96395f",
+    "spittlebug_segmentation-d9895df98f",
+    "spittlebug_segmentation-b4b9946fef",
+    "spittlebug_segmentation-4c90ee80ee"
+   ],
+   "15": [
+    "spittlebug_segmentation-2d28552102",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-35f93ea28b",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-b104fa0ac4",
+    "spittlebug_segmentation-038697692a",
+    "spittlebug_segmentation-0665b474da",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-39c26b5219",
+    "spittlebug_segmentation-4560cc2baf",
+    "spittlebug_segmentation-f58db6e65d",
+    "spittlebug_segmentation-aed9de74ef",
+    "spittlebug_segmentation-d25f96395f",
+    "spittlebug_segmentation-d9895df98f",
+    "spittlebug_segmentation-b4b9946fef",
+    "spittlebug_segmentation-4229624a4e",
+    "spittlebug_segmentation-e757b9fbdd",
+    "spittlebug_segmentation-4c90ee80ee"
+   ]
+  },
+  "s2": {
+   "5": [
+    "spittlebug_segmentation-129eb5bbda",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-35f93ea28b",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-5111db42d6",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-196fdda0bc",
+    "spittlebug_segmentation-e02cb2842b"
+   ],
+   "10": [
+    "spittlebug_segmentation-129eb5bbda",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-35f93ea28b",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-5111db42d6",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-11fbfe8aca",
+    "spittlebug_segmentation-0d0ca8dd6e",
+    "spittlebug_segmentation-196fdda0bc",
+    "spittlebug_segmentation-e02cb2842b",
+    "spittlebug_segmentation-17958ea041",
+    "spittlebug_segmentation-2abf3c3c31",
+    "spittlebug_segmentation-a2185440d0"
+   ],
+   "15": [
+    "spittlebug_segmentation-129eb5bbda",
+    "spittlebug_segmentation-e90c4155f7",
+    "spittlebug_segmentation-35f93ea28b",
+    "spittlebug_segmentation-ca84c3a907",
+    "spittlebug_segmentation-90ee5bbe7f",
+    "spittlebug_segmentation-5111db42d6",
+    "spittlebug_segmentation-a319542edc",
+    "spittlebug_segmentation-11fbfe8aca",
+    "spittlebug_segmentation-0d0ca8dd6e",
+    "spittlebug_segmentation-196fdda0bc",
+    "spittlebug_segmentation-0efeb4a74a",
+    "spittlebug_segmentation-e02cb2842b",
+    "spittlebug_segmentation-afb8929988",
+    "spittlebug_segmentation-38370d3ac2",
+    "spittlebug_segmentation-e969fb2759",
+    "spittlebug_segmentation-17958ea041",
+    "spittlebug_segmentation-2abf3c3c31",
+    "spittlebug_segmentation-a2185440d0"
+   ]
+  }
+ }
+}

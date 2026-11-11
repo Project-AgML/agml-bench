@@ -1,0 +1,1960 @@
+{
+ "name": "barley_disease_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/barley_disease_segmentation",
+ "hf_sha": "e8461e4eff64cbbc79c0e5176bb6eed556074809",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T18:10:42+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2"
+  },
+  "indexed_rows": 3050
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "barley_disease_segmentation-12a42a01e3",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 288,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-d8252268d2",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 372,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-fd445a44c1",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-02503ad3bd",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2a6a9c6550",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2035a53488",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-77f3df4e84",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7df42704a0",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-06c22b3791",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-386e374b8d",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-4b4399f3a1",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-e20db1e659",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2449d976a6",
+   "ref": {
+    "file": "data/train-00007-of-00010.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-d7bb3c8bbe",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7e279c4193",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 300,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-3a2220e9b1",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-decdf29237",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 322,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-736ba3f6db",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 328,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-1da83a0c87",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 367,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5b0bcdb40a",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2d1099e770",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 204,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-cbf5faac57",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 256,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-a070e2d397",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 260,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-50f557f9a0",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 281,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-4432727671",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 388,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7c59b01c66",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 392,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7f18c86a4f",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 397,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-3cdf6b9f74",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 442,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-20ca1c3752",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 457,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-ae7673cdb4",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-06d53fe3dc",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-80d4adfbe8",
+   "ref": {
+    "file": "data/train-00002-of-00010.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-8a6403606f",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7f9071e1d7",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-25bb7eb1fc",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-abd6267cb6",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-b5a7d1fb24",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c1cf021f25",
+   "ref": {
+    "file": "data/train-00004-of-00010.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-073a8582be",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5f7afdcd71",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-ff9502061a",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 261,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-bc1e1d67e7",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 298,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c5dc1d7d6d",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-096959b768",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 341,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-450e582fd9",
+   "ref": {
+    "file": "data/train-00001-of-00010.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c396bae550",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-eae85c3281",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 189,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-b93fcd4a1f",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-6246d89dc7",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 395,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c04ef7df4e",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 398,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-d95b70825f",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2bfc699878",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 324,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-6c7b37fbee",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 354,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-4103709141",
+   "ref": {
+    "file": "data/train-00009-of-00010.parquet",
+    "row": 362,
+    "config": "default",
+    "split": "Test_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-a2f089b761",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-8906482c02",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7c250aa4fa",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5a33f88c0f",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 395,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-8df1719275",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 444,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-87fbad8c10",
+   "ref": {
+    "file": "data/train-00005-of-00010.parquet",
+    "row": 474,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-cf99a86720",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2bbe86d0de",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5379b79a3c",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-a33f174c73",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 292,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-0b81b6076a",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 298,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-1e5f4ec48c",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 333,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c2fd613ea7",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 335,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-5e9e32c0e9",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 357,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c57e349c6d",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 364,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-4c75bba2dd",
+   "ref": {
+    "file": "data/train-00000-of-00010.parquet",
+    "row": 388,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-ed1f9c327d",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-38b4a03465",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-d353130586",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-bc2205ff5f",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-d760f93750",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2b0df0370b",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 305,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-dc71eca920",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 308,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-0dff548549",
+   "ref": {
+    "file": "data/train-00003-of-00010.parquet",
+    "row": 315,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-17f86bcd30",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 408,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-dcdbb6bdc7",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 430,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-7bdb8f1818",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-a4a2327ed9",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-03e4f2f5ec",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-147725d2a7",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-860c8e959b",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 327,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-cee498957e",
+   "ref": {
+    "file": "data/train-00006-of-00010.parquet",
+    "row": 350,
+    "config": "default",
+    "split": "Train_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-2bc298dac9",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 232,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c23297086c",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 388,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-fd6d503c93",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 394,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-9af86bb925",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 433,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-ae93732097",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 446,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-c6a3126157",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 453,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-4077d756c3",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 458,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "background"
+   ],
+   "ann": {
+    "classes_present": []
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-167cb76d24",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-3f8f57977d",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "barley_disease_segmentation-3bd0b834c1",
+   "ref": {
+    "file": "data/train-00008-of-00010.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "Validation_data"
+   },
+   "keys": [
+    "value_1"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "barley_disease_segmentation-cf99a86720",
+    "barley_disease_segmentation-4103709141",
+    "barley_disease_segmentation-bc2205ff5f",
+    "barley_disease_segmentation-147725d2a7",
+    "barley_disease_segmentation-ae93732097",
+    "barley_disease_segmentation-c6a3126157",
+    "barley_disease_segmentation-fd445a44c1",
+    "barley_disease_segmentation-2a6a9c6550",
+    "barley_disease_segmentation-77f3df4e84",
+    "barley_disease_segmentation-c1cf021f25"
+   ],
+   "10": [
+    "barley_disease_segmentation-decdf29237",
+    "barley_disease_segmentation-5b0bcdb40a",
+    "barley_disease_segmentation-096959b768",
+    "barley_disease_segmentation-a070e2d397",
+    "barley_disease_segmentation-a2f089b761",
+    "barley_disease_segmentation-cf99a86720",
+    "barley_disease_segmentation-2bbe86d0de",
+    "barley_disease_segmentation-4103709141",
+    "barley_disease_segmentation-bc2205ff5f",
+    "barley_disease_segmentation-5379b79a3c",
+    "barley_disease_segmentation-c2fd613ea7",
+    "barley_disease_segmentation-c57e349c6d",
+    "barley_disease_segmentation-8df1719275",
+    "barley_disease_segmentation-03e4f2f5ec",
+    "barley_disease_segmentation-147725d2a7",
+    "barley_disease_segmentation-fd6d503c93",
+    "barley_disease_segmentation-ae93732097",
+    "barley_disease_segmentation-c6a3126157",
+    "barley_disease_segmentation-fd445a44c1",
+    "barley_disease_segmentation-2a6a9c6550",
+    "barley_disease_segmentation-77f3df4e84",
+    "barley_disease_segmentation-c1cf021f25",
+    "barley_disease_segmentation-3bd0b834c1"
+   ],
+   "15": [
+    "barley_disease_segmentation-12a42a01e3",
+    "barley_disease_segmentation-3a2220e9b1",
+    "barley_disease_segmentation-decdf29237",
+    "barley_disease_segmentation-1da83a0c87",
+    "barley_disease_segmentation-5b0bcdb40a",
+    "barley_disease_segmentation-073a8582be",
+    "barley_disease_segmentation-c5dc1d7d6d",
+    "barley_disease_segmentation-096959b768",
+    "barley_disease_segmentation-a070e2d397",
+    "barley_disease_segmentation-c396bae550",
+    "barley_disease_segmentation-a2f089b761",
+    "barley_disease_segmentation-cf99a86720",
+    "barley_disease_segmentation-2bbe86d0de",
+    "barley_disease_segmentation-4103709141",
+    "barley_disease_segmentation-bc2205ff5f",
+    "barley_disease_segmentation-5379b79a3c",
+    "barley_disease_segmentation-c2fd613ea7",
+    "barley_disease_segmentation-5e9e32c0e9",
+    "barley_disease_segmentation-c57e349c6d",
+    "barley_disease_segmentation-8df1719275",
+    "barley_disease_segmentation-7f18c86a4f",
+    "barley_disease_segmentation-03e4f2f5ec",
+    "barley_disease_segmentation-147725d2a7",
+    "barley_disease_segmentation-cee498957e",
+    "barley_disease_segmentation-fd6d503c93",
+    "barley_disease_segmentation-ae93732097",
+    "barley_disease_segmentation-c6a3126157",
+    "barley_disease_segmentation-fd445a44c1",
+    "barley_disease_segmentation-2a6a9c6550",
+    "barley_disease_segmentation-77f3df4e84",
+    "barley_disease_segmentation-c1cf021f25",
+    "barley_disease_segmentation-3bd0b834c1",
+    "barley_disease_segmentation-80d4adfbe8"
+   ]
+  },
+  "s1": {
+   "5": [
+    "barley_disease_segmentation-d8252268d2",
+    "barley_disease_segmentation-8906482c02",
+    "barley_disease_segmentation-6c7b37fbee",
+    "barley_disease_segmentation-1e5f4ec48c",
+    "barley_disease_segmentation-7c250aa4fa",
+    "barley_disease_segmentation-2bc298dac9",
+    "barley_disease_segmentation-5a33f88c0f",
+    "barley_disease_segmentation-3cdf6b9f74",
+    "barley_disease_segmentation-ae7673cdb4",
+    "barley_disease_segmentation-860c8e959b",
+    "barley_disease_segmentation-9af86bb925",
+    "barley_disease_segmentation-3f8f57977d"
+   ],
+   "10": [
+    "barley_disease_segmentation-d8252268d2",
+    "barley_disease_segmentation-7e279c4193",
+    "barley_disease_segmentation-5f7afdcd71",
+    "barley_disease_segmentation-ff9502061a",
+    "barley_disease_segmentation-450e582fd9",
+    "barley_disease_segmentation-eae85c3281",
+    "barley_disease_segmentation-8906482c02",
+    "barley_disease_segmentation-d95b70825f",
+    "barley_disease_segmentation-6c7b37fbee",
+    "barley_disease_segmentation-1e5f4ec48c",
+    "barley_disease_segmentation-7c250aa4fa",
+    "barley_disease_segmentation-2bc298dac9",
+    "barley_disease_segmentation-5a33f88c0f",
+    "barley_disease_segmentation-3cdf6b9f74",
+    "barley_disease_segmentation-20ca1c3752",
+    "barley_disease_segmentation-ae7673cdb4",
+    "barley_disease_segmentation-860c8e959b",
+    "barley_disease_segmentation-9af86bb925",
+    "barley_disease_segmentation-4077d756c3",
+    "barley_disease_segmentation-7df42704a0",
+    "barley_disease_segmentation-386e374b8d",
+    "barley_disease_segmentation-3f8f57977d"
+   ],
+   "15": [
+    "barley_disease_segmentation-d8252268d2",
+    "barley_disease_segmentation-7e279c4193",
+    "barley_disease_segmentation-736ba3f6db",
+    "barley_disease_segmentation-8a6403606f",
+    "barley_disease_segmentation-5f7afdcd71",
+    "barley_disease_segmentation-ff9502061a",
+    "barley_disease_segmentation-450e582fd9",
+    "barley_disease_segmentation-eae85c3281",
+    "barley_disease_segmentation-8906482c02",
+    "barley_disease_segmentation-c04ef7df4e",
+    "barley_disease_segmentation-d95b70825f",
+    "barley_disease_segmentation-2bfc699878",
+    "barley_disease_segmentation-6c7b37fbee",
+    "barley_disease_segmentation-0b81b6076a",
+    "barley_disease_segmentation-1e5f4ec48c",
+    "barley_disease_segmentation-7c250aa4fa",
+    "barley_disease_segmentation-2bc298dac9",
+    "barley_disease_segmentation-5a33f88c0f",
+    "barley_disease_segmentation-4432727671",
+    "barley_disease_segmentation-7c59b01c66",
+    "barley_disease_segmentation-3cdf6b9f74",
+    "barley_disease_segmentation-20ca1c3752",
+    "barley_disease_segmentation-0dff548549",
+    "barley_disease_segmentation-a4a2327ed9",
+    "barley_disease_segmentation-ae7673cdb4",
+    "barley_disease_segmentation-860c8e959b",
+    "barley_disease_segmentation-9af86bb925",
+    "barley_disease_segmentation-4077d756c3",
+    "barley_disease_segmentation-2035a53488",
+    "barley_disease_segmentation-7df42704a0",
+    "barley_disease_segmentation-abd6267cb6",
+    "barley_disease_segmentation-386e374b8d",
+    "barley_disease_segmentation-3f8f57977d"
+   ]
+  },
+  "s2": {
+   "5": [
+    "barley_disease_segmentation-2d1099e770",
+    "barley_disease_segmentation-cbf5faac57",
+    "barley_disease_segmentation-50f557f9a0",
+    "barley_disease_segmentation-ed1f9c327d",
+    "barley_disease_segmentation-38b4a03465",
+    "barley_disease_segmentation-d760f93750",
+    "barley_disease_segmentation-06d53fe3dc",
+    "barley_disease_segmentation-b5a7d1fb24",
+    "barley_disease_segmentation-06c22b3791",
+    "barley_disease_segmentation-e20db1e659"
+   ],
+   "10": [
+    "barley_disease_segmentation-bc1e1d67e7",
+    "barley_disease_segmentation-2d1099e770",
+    "barley_disease_segmentation-cbf5faac57",
+    "barley_disease_segmentation-50f557f9a0",
+    "barley_disease_segmentation-b93fcd4a1f",
+    "barley_disease_segmentation-6246d89dc7",
+    "barley_disease_segmentation-ed1f9c327d",
+    "barley_disease_segmentation-38b4a03465",
+    "barley_disease_segmentation-d760f93750",
+    "barley_disease_segmentation-17f86bcd30",
+    "barley_disease_segmentation-4c75bba2dd",
+    "barley_disease_segmentation-2b0df0370b",
+    "barley_disease_segmentation-dc71eca920",
+    "barley_disease_segmentation-7bdb8f1818",
+    "barley_disease_segmentation-06d53fe3dc",
+    "barley_disease_segmentation-7f9071e1d7",
+    "barley_disease_segmentation-25bb7eb1fc",
+    "barley_disease_segmentation-b5a7d1fb24",
+    "barley_disease_segmentation-06c22b3791",
+    "barley_disease_segmentation-e20db1e659"
+   ],
+   "15": [
+    "barley_disease_segmentation-d7bb3c8bbe",
+    "barley_disease_segmentation-bc1e1d67e7",
+    "barley_disease_segmentation-2d1099e770",
+    "barley_disease_segmentation-cbf5faac57",
+    "barley_disease_segmentation-50f557f9a0",
+    "barley_disease_segmentation-b93fcd4a1f",
+    "barley_disease_segmentation-6246d89dc7",
+    "barley_disease_segmentation-ed1f9c327d",
+    "barley_disease_segmentation-38b4a03465",
+    "barley_disease_segmentation-d353130586",
+    "barley_disease_segmentation-bc2205ff5f",
+    "barley_disease_segmentation-d760f93750",
+    "barley_disease_segmentation-a33f174c73",
+    "barley_disease_segmentation-17f86bcd30",
+    "barley_disease_segmentation-dcdbb6bdc7",
+    "barley_disease_segmentation-87fbad8c10",
+    "barley_disease_segmentation-4c75bba2dd",
+    "barley_disease_segmentation-2b0df0370b",
+    "barley_disease_segmentation-dc71eca920",
+    "barley_disease_segmentation-7bdb8f1818",
+    "barley_disease_segmentation-06d53fe3dc",
+    "barley_disease_segmentation-c23297086c",
+    "barley_disease_segmentation-02503ad3bd",
+    "barley_disease_segmentation-7f9071e1d7",
+    "barley_disease_segmentation-25bb7eb1fc",
+    "barley_disease_segmentation-b5a7d1fb24",
+    "barley_disease_segmentation-06c22b3791",
+    "barley_disease_segmentation-4b4399f3a1",
+    "barley_disease_segmentation-e20db1e659",
+    "barley_disease_segmentation-2449d976a6",
+    "barley_disease_segmentation-167cb76d24"
+   ]
+  }
+ }
+}

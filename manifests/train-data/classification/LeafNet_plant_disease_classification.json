@@ -1,0 +1,1667 @@
+{
+ "name": "LeafNet_plant_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/LeafNet_plant_disease_classification",
+ "hf_sha": "c602a7a699a0199bf8f035e50b9e51013a973594",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T13:46:35+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "diseased",
+   "healthy"
+  ],
+  "indexed_rows": 4502
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "LeafNet_plant_disease_classification-26d173989c",
+   "ref": {
+    "file": "data/train-00000-of-00015.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-06297b0ca5",
+   "ref": {
+    "file": "data/train-00000-of-00015.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-18b85077c7",
+   "ref": {
+    "file": "data/train-00000-of-00015.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-370a435443",
+   "ref": {
+    "file": "data/train-00000-of-00015.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-445a536e80",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2c4bfd15ac",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-f3e4c39eb3",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-9347130708",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-98eacb02ab",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-8627aecb81",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-5e077cd0be",
+   "ref": {
+    "file": "data/train-00001-of-00015.parquet",
+    "row": 224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-a7ec6e1cad",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-4738fe7568",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-91375ddc1c",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-726fba4536",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-9e2e5af3f9",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-46155fbd46",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c2062e91cf",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c1a359fc1a",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2d44b2ff40",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 197,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-b403c9713c",
+   "ref": {
+    "file": "data/train-00002-of-00015.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c71e69f076",
+   "ref": {
+    "file": "data/train-00003-of-00015.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-74527dfaad",
+   "ref": {
+    "file": "data/train-00003-of-00015.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-7567afdadb",
+   "ref": {
+    "file": "data/train-00003-of-00015.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-22408c9ef7",
+   "ref": {
+    "file": "data/train-00003-of-00015.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-0e964bc401",
+   "ref": {
+    "file": "data/train-00003-of-00015.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d5e7385736",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d0ae6f329e",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-73b95496f8",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-b3697a4e42",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-8bb6cef878",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-348cf3e600",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-a646451e7f",
+   "ref": {
+    "file": "data/train-00004-of-00015.parquet",
+    "row": 286,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d80b01a9bc",
+   "ref": {
+    "file": "data/train-00005-of-00015.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-70f92fa81b",
+   "ref": {
+    "file": "data/train-00005-of-00015.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-4e9edeed9b",
+   "ref": {
+    "file": "data/train-00005-of-00015.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-b0c45b7c1d",
+   "ref": {
+    "file": "data/train-00005-of-00015.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-02b82e7cc4",
+   "ref": {
+    "file": "data/train-00005-of-00015.parquet",
+    "row": 293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c29f19433f",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-7311ab742a",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-cfc6e74948",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 165,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-32be2e33a1",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 216,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c8a01cc2d9",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d50e940ee8",
+   "ref": {
+    "file": "data/train-00006-of-00015.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-112088c0b3",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d654bb232d",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-62fe62baa6",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-96d70e96cc",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 168,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-18a104998c",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-39bfae1c54",
+   "ref": {
+    "file": "data/train-00007-of-00015.parquet",
+    "row": 290,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-692263549b",
+   "ref": {
+    "file": "data/train-00008-of-00015.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-a7bd250fea",
+   "ref": {
+    "file": "data/train-00008-of-00015.parquet",
+    "row": 154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-f936bcf5ae",
+   "ref": {
+    "file": "data/train-00008-of-00015.parquet",
+    "row": 262,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-5bb8c49aa6",
+   "ref": {
+    "file": "data/train-00008-of-00015.parquet",
+    "row": 270,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2d83ed2d3e",
+   "ref": {
+    "file": "data/train-00008-of-00015.parquet",
+    "row": 280,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-7106f9a320",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-bda5329463",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2b9f3ca486",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-9b9d86c65a",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-e66275dd7c",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-8e3d5d934d",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-937a1a42ba",
+   "ref": {
+    "file": "data/train-00009-of-00015.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-0102c43e64",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-320d23b7db",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-f7a6bc342b",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c88d863706",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-ffcd60836f",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-4ac90a670f",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-cc117c7ffd",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-5f3b627e8d",
+   "ref": {
+    "file": "data/train-00010-of-00015.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-7971604673",
+   "ref": {
+    "file": "data/train-00011-of-00015.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-812e682a87",
+   "ref": {
+    "file": "data/train-00011-of-00015.parquet",
+    "row": 238,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-efa0860432",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-02efc41a25",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-c42dfba6e3",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-b08707996c",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-166d4984eb",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-85f56499b8",
+   "ref": {
+    "file": "data/train-00012-of-00015.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-28dcc954f3",
+   "ref": {
+    "file": "data/train-00013-of-00015.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-8fd6d9a1d4",
+   "ref": {
+    "file": "data/train-00013-of-00015.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d7f4e91203",
+   "ref": {
+    "file": "data/train-00013-of-00015.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2f37a8407d",
+   "ref": {
+    "file": "data/train-00013-of-00015.parquet",
+    "row": 193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-66432ee802",
+   "ref": {
+    "file": "data/train-00013-of-00015.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-d377707166",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-b987bff758",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-580d845b5d",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-6d8a41a46e",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-2e977b08ac",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "diseased"
+   ],
+   "ann": {
+    "label": "diseased"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-6e0581f013",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "LeafNet_plant_disease_classification-e2483ebf00",
+   "ref": {
+    "file": "data/train-00014-of-00015.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "label": "healthy"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "LeafNet_plant_disease_classification-46155fbd46",
+    "LeafNet_plant_disease_classification-c2062e91cf",
+    "LeafNet_plant_disease_classification-c29f19433f",
+    "LeafNet_plant_disease_classification-112088c0b3",
+    "LeafNet_plant_disease_classification-39bfae1c54",
+    "LeafNet_plant_disease_classification-5bb8c49aa6",
+    "LeafNet_plant_disease_classification-7106f9a320",
+    "LeafNet_plant_disease_classification-937a1a42ba",
+    "LeafNet_plant_disease_classification-6d8a41a46e",
+    "LeafNet_plant_disease_classification-6e0581f013"
+   ],
+   "10": [
+    "LeafNet_plant_disease_classification-8627aecb81",
+    "LeafNet_plant_disease_classification-91375ddc1c",
+    "LeafNet_plant_disease_classification-46155fbd46",
+    "LeafNet_plant_disease_classification-c2062e91cf",
+    "LeafNet_plant_disease_classification-74527dfaad",
+    "LeafNet_plant_disease_classification-7567afdadb",
+    "LeafNet_plant_disease_classification-c29f19433f",
+    "LeafNet_plant_disease_classification-112088c0b3",
+    "LeafNet_plant_disease_classification-39bfae1c54",
+    "LeafNet_plant_disease_classification-692263549b",
+    "LeafNet_plant_disease_classification-5bb8c49aa6",
+    "LeafNet_plant_disease_classification-7106f9a320",
+    "LeafNet_plant_disease_classification-9b9d86c65a",
+    "LeafNet_plant_disease_classification-937a1a42ba",
+    "LeafNet_plant_disease_classification-5f3b627e8d",
+    "LeafNet_plant_disease_classification-8fd6d9a1d4",
+    "LeafNet_plant_disease_classification-b987bff758",
+    "LeafNet_plant_disease_classification-580d845b5d",
+    "LeafNet_plant_disease_classification-6d8a41a46e",
+    "LeafNet_plant_disease_classification-6e0581f013"
+   ],
+   "15": [
+    "LeafNet_plant_disease_classification-18b85077c7",
+    "LeafNet_plant_disease_classification-445a536e80",
+    "LeafNet_plant_disease_classification-8627aecb81",
+    "LeafNet_plant_disease_classification-91375ddc1c",
+    "LeafNet_plant_disease_classification-46155fbd46",
+    "LeafNet_plant_disease_classification-c2062e91cf",
+    "LeafNet_plant_disease_classification-c1a359fc1a",
+    "LeafNet_plant_disease_classification-74527dfaad",
+    "LeafNet_plant_disease_classification-7567afdadb",
+    "LeafNet_plant_disease_classification-d0ae6f329e",
+    "LeafNet_plant_disease_classification-4e9edeed9b",
+    "LeafNet_plant_disease_classification-c29f19433f",
+    "LeafNet_plant_disease_classification-112088c0b3",
+    "LeafNet_plant_disease_classification-d654bb232d",
+    "LeafNet_plant_disease_classification-39bfae1c54",
+    "LeafNet_plant_disease_classification-692263549b",
+    "LeafNet_plant_disease_classification-a7bd250fea",
+    "LeafNet_plant_disease_classification-5bb8c49aa6",
+    "LeafNet_plant_disease_classification-7106f9a320",
+    "LeafNet_plant_disease_classification-9b9d86c65a",
+    "LeafNet_plant_disease_classification-937a1a42ba",
+    "LeafNet_plant_disease_classification-0102c43e64",
+    "LeafNet_plant_disease_classification-5f3b627e8d",
+    "LeafNet_plant_disease_classification-b08707996c",
+    "LeafNet_plant_disease_classification-8fd6d9a1d4",
+    "LeafNet_plant_disease_classification-b987bff758",
+    "LeafNet_plant_disease_classification-580d845b5d",
+    "LeafNet_plant_disease_classification-6d8a41a46e",
+    "LeafNet_plant_disease_classification-2e977b08ac",
+    "LeafNet_plant_disease_classification-6e0581f013"
+   ]
+  },
+  "s1": {
+   "5": [
+    "LeafNet_plant_disease_classification-4738fe7568",
+    "LeafNet_plant_disease_classification-a646451e7f",
+    "LeafNet_plant_disease_classification-d80b01a9bc",
+    "LeafNet_plant_disease_classification-e66275dd7c",
+    "LeafNet_plant_disease_classification-320d23b7db",
+    "LeafNet_plant_disease_classification-ffcd60836f",
+    "LeafNet_plant_disease_classification-4ac90a670f",
+    "LeafNet_plant_disease_classification-85f56499b8",
+    "LeafNet_plant_disease_classification-66432ee802",
+    "LeafNet_plant_disease_classification-e2483ebf00"
+   ],
+   "10": [
+    "LeafNet_plant_disease_classification-26d173989c",
+    "LeafNet_plant_disease_classification-f3e4c39eb3",
+    "LeafNet_plant_disease_classification-9347130708",
+    "LeafNet_plant_disease_classification-4738fe7568",
+    "LeafNet_plant_disease_classification-d5e7385736",
+    "LeafNet_plant_disease_classification-a646451e7f",
+    "LeafNet_plant_disease_classification-d80b01a9bc",
+    "LeafNet_plant_disease_classification-70f92fa81b",
+    "LeafNet_plant_disease_classification-f936bcf5ae",
+    "LeafNet_plant_disease_classification-e66275dd7c",
+    "LeafNet_plant_disease_classification-320d23b7db",
+    "LeafNet_plant_disease_classification-ffcd60836f",
+    "LeafNet_plant_disease_classification-4ac90a670f",
+    "LeafNet_plant_disease_classification-efa0860432",
+    "LeafNet_plant_disease_classification-c42dfba6e3",
+    "LeafNet_plant_disease_classification-85f56499b8",
+    "LeafNet_plant_disease_classification-28dcc954f3",
+    "LeafNet_plant_disease_classification-d7f4e91203",
+    "LeafNet_plant_disease_classification-66432ee802",
+    "LeafNet_plant_disease_classification-e2483ebf00"
+   ],
+   "15": [
+    "LeafNet_plant_disease_classification-26d173989c",
+    "LeafNet_plant_disease_classification-f3e4c39eb3",
+    "LeafNet_plant_disease_classification-9347130708",
+    "LeafNet_plant_disease_classification-98eacb02ab",
+    "LeafNet_plant_disease_classification-5e077cd0be",
+    "LeafNet_plant_disease_classification-a7ec6e1cad",
+    "LeafNet_plant_disease_classification-4738fe7568",
+    "LeafNet_plant_disease_classification-9e2e5af3f9",
+    "LeafNet_plant_disease_classification-d5e7385736",
+    "LeafNet_plant_disease_classification-a646451e7f",
+    "LeafNet_plant_disease_classification-d80b01a9bc",
+    "LeafNet_plant_disease_classification-70f92fa81b",
+    "LeafNet_plant_disease_classification-d50e940ee8",
+    "LeafNet_plant_disease_classification-62fe62baa6",
+    "LeafNet_plant_disease_classification-18a104998c",
+    "LeafNet_plant_disease_classification-f936bcf5ae",
+    "LeafNet_plant_disease_classification-2b9f3ca486",
+    "LeafNet_plant_disease_classification-e66275dd7c",
+    "LeafNet_plant_disease_classification-320d23b7db",
+    "LeafNet_plant_disease_classification-ffcd60836f",
+    "LeafNet_plant_disease_classification-4ac90a670f",
+    "LeafNet_plant_disease_classification-7971604673",
+    "LeafNet_plant_disease_classification-812e682a87",
+    "LeafNet_plant_disease_classification-efa0860432",
+    "LeafNet_plant_disease_classification-c42dfba6e3",
+    "LeafNet_plant_disease_classification-85f56499b8",
+    "LeafNet_plant_disease_classification-28dcc954f3",
+    "LeafNet_plant_disease_classification-d7f4e91203",
+    "LeafNet_plant_disease_classification-66432ee802",
+    "LeafNet_plant_disease_classification-e2483ebf00"
+   ]
+  },
+  "s2": {
+   "5": [
+    "LeafNet_plant_disease_classification-2c4bfd15ac",
+    "LeafNet_plant_disease_classification-2d44b2ff40",
+    "LeafNet_plant_disease_classification-73b95496f8",
+    "LeafNet_plant_disease_classification-8bb6cef878",
+    "LeafNet_plant_disease_classification-b0c45b7c1d",
+    "LeafNet_plant_disease_classification-cfc6e74948",
+    "LeafNet_plant_disease_classification-32be2e33a1",
+    "LeafNet_plant_disease_classification-c8a01cc2d9",
+    "LeafNet_plant_disease_classification-bda5329463",
+    "LeafNet_plant_disease_classification-2f37a8407d"
+   ],
+   "10": [
+    "LeafNet_plant_disease_classification-2c4bfd15ac",
+    "LeafNet_plant_disease_classification-726fba4536",
+    "LeafNet_plant_disease_classification-2d44b2ff40",
+    "LeafNet_plant_disease_classification-b403c9713c",
+    "LeafNet_plant_disease_classification-22408c9ef7",
+    "LeafNet_plant_disease_classification-73b95496f8",
+    "LeafNet_plant_disease_classification-b3697a4e42",
+    "LeafNet_plant_disease_classification-8bb6cef878",
+    "LeafNet_plant_disease_classification-348cf3e600",
+    "LeafNet_plant_disease_classification-b0c45b7c1d",
+    "LeafNet_plant_disease_classification-cfc6e74948",
+    "LeafNet_plant_disease_classification-32be2e33a1",
+    "LeafNet_plant_disease_classification-c8a01cc2d9",
+    "LeafNet_plant_disease_classification-96d70e96cc",
+    "LeafNet_plant_disease_classification-bda5329463",
+    "LeafNet_plant_disease_classification-f7a6bc342b",
+    "LeafNet_plant_disease_classification-c88d863706",
+    "LeafNet_plant_disease_classification-02efc41a25",
+    "LeafNet_plant_disease_classification-2f37a8407d",
+    "LeafNet_plant_disease_classification-d377707166"
+   ],
+   "15": [
+    "LeafNet_plant_disease_classification-06297b0ca5",
+    "LeafNet_plant_disease_classification-370a435443",
+    "LeafNet_plant_disease_classification-2c4bfd15ac",
+    "LeafNet_plant_disease_classification-726fba4536",
+    "LeafNet_plant_disease_classification-2d44b2ff40",
+    "LeafNet_plant_disease_classification-b403c9713c",
+    "LeafNet_plant_disease_classification-c71e69f076",
+    "LeafNet_plant_disease_classification-22408c9ef7",
+    "LeafNet_plant_disease_classification-0e964bc401",
+    "LeafNet_plant_disease_classification-73b95496f8",
+    "LeafNet_plant_disease_classification-b3697a4e42",
+    "LeafNet_plant_disease_classification-8bb6cef878",
+    "LeafNet_plant_disease_classification-348cf3e600",
+    "LeafNet_plant_disease_classification-b0c45b7c1d",
+    "LeafNet_plant_disease_classification-02b82e7cc4",
+    "LeafNet_plant_disease_classification-7311ab742a",
+    "LeafNet_plant_disease_classification-cfc6e74948",
+    "LeafNet_plant_disease_classification-32be2e33a1",
+    "LeafNet_plant_disease_classification-c8a01cc2d9",
+    "LeafNet_plant_disease_classification-96d70e96cc",
+    "LeafNet_plant_disease_classification-2d83ed2d3e",
+    "LeafNet_plant_disease_classification-bda5329463",
+    "LeafNet_plant_disease_classification-8e3d5d934d",
+    "LeafNet_plant_disease_classification-f7a6bc342b",
+    "LeafNet_plant_disease_classification-c88d863706",
+    "LeafNet_plant_disease_classification-cc117c7ffd",
+    "LeafNet_plant_disease_classification-02efc41a25",
+    "LeafNet_plant_disease_classification-166d4984eb",
+    "LeafNet_plant_disease_classification-2f37a8407d",
+    "LeafNet_plant_disease_classification-d377707166"
+   ]
+  }
+ }
+}

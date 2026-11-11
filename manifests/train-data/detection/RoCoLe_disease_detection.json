@@ -1,0 +1,6440 @@
+{
+ "name": "RoCoLe_disease_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/RoCoLe_disease_detection",
+ "hf_sha": "c33f4617504d1b2ed75b7037dc4860ddc6e4b1f8",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T19:45:41+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "healthy",
+   "red_spider_mite",
+   "rust_level_1",
+   "rust_level_2",
+   "rust_level_3",
+   "rust_level_4"
+  ],
+  "indexed_rows": 1560
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "RoCoLe_disease_detection-ac8b39f948",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       292.0,
+       154.0,
+       1355.0,
+       790.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-fbf1d9d7ed",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       0.0,
+       230.0,
+       2020.0,
+       551.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0cd3409ab2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       0.0,
+       44.0,
+       1682.0,
+       854.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3297012dac",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       85.0,
+       108.0,
+       1680.0,
+       838.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4a42d3316a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       23.0,
+       11.0,
+       2018.0,
+       903.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b4b9946fef",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       106.0,
+       276.0,
+       1663.0,
+       553.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-94559a97e7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       184.0,
+       214.0,
+       1544.0,
+       643.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4229624a4e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       9.0,
+       174.0,
+       1935.0,
+       751.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f3184e08b0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       32.0,
+       250.0,
+       1953.0,
+       391.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e90c4155f7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       401.0,
+       152.0,
+       1320.0,
+       630.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ca84c3a907",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       222.0,
+       94.0,
+       1525.0,
+       910.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-90ee5bbe7f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       180.0,
+       272.0,
+       1659.0,
+       643.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b59d925451",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       0.0,
+       92.0,
+       1961.0,
+       915.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-9699537738",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       163.0,
+       218.0,
+       1831.0,
+       706.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b104fa0ac4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       131.0,
+       126.0,
+       1700.0,
+       781.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bed81df6b8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       4.0,
+       152.0,
+       1922.0,
+       866.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8e98223591",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       111.0,
+       191.0,
+       1602.0,
+       724.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-92f4c13ad3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       89.0,
+       307.0,
+       1854.0,
+       702.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-22bd347f99",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       313.0,
+       129.0,
+       1338.0,
+       761.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bfbf9037e6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       339.0,
+       144.0,
+       1344.0,
+       703.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e03f747ba1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       89.0,
+       242.0,
+       1482.0,
+       541.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f4c3f9f120",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       220.0,
+       112.0,
+       1635.0,
+       603.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-2a3a323989",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       24.0,
+       153.0,
+       1220.0,
+       370.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-67dca8a282",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       15.0,
+       322.0,
+       1790.0,
+       493.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f0e3d938f4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       279.0,
+       107.0,
+       1509.0,
+       729.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-666c3ef41e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       270.0,
+       206.0,
+       1393.0,
+       594.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5271d4df53",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       149.0,
+       312.0,
+       1800.0,
+       662.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ae16cd2312",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       161.0,
+       30.0,
+       1880.0,
+       827.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-2ef19dfc17",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 151,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       358.0,
+       319.0,
+       1378.0,
+       573.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0bfe27197a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       637.0,
+       180.0,
+       941.0,
+       682.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3f5ca7a83d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       224.0,
+       51.0,
+       1563.0,
+       829.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5e0cf96af7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       283.0,
+       160.0,
+       1667.0,
+       767.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3e57cb636a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       372.0,
+       148.0,
+       1275.0,
+       793.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a436df07f3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 213,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       463.0,
+       120.0,
+       1275.0,
+       742.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-390b42d17b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 214,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       114.0,
+       119.0,
+       1552.0,
+       752.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-2dbe53829d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       377.0,
+       146.0,
+       1327.0,
+       636.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-61026cd714",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 218,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       448.0,
+       189.0,
+       1248.0,
+       608.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0773624f48",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       314.0,
+       350.0,
+       1406.0,
+       438.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bb79f8acfa",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       315.0,
+       272.0,
+       1655.0,
+       594.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-75e1870a53",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       296.0,
+       176.0,
+       1665.0,
+       686.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e9cb62b96b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 247,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       190.0,
+       248.0,
+       1431.0,
+       559.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e6fb403273",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       214.0,
+       96.0,
+       1612.0,
+       729.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ee6f891061",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       216.0,
+       289.0,
+       1793.0,
+       498.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ebbebff460",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 259,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       502.0,
+       51.0,
+       1350.0,
+       911.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ccf4722f30",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 268,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       16.0,
+       131.0,
+       1668.0,
+       800.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d887227e96",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 280,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       86.0,
+       146.0,
+       1882.0,
+       806.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-53d51fe66f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       427.0,
+       98.0,
+       1499.0,
+       805.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-99ded319f9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       103.0,
+       66.0,
+       1781.0,
+       770.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4c39b7bfc0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       0.0,
+       284.0,
+       1943.0,
+       756.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bbf823fd43",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 293,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       99.0,
+       116.0,
+       1764.0,
+       750.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b9746ff657",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       0.0,
+       210.0,
+       2034.0,
+       575.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a11fb69dd7",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       335.0,
+       164.0,
+       1338.0,
+       659.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5de00a84cf",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 306,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       251.0,
+       356.0,
+       1705.0,
+       594.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-9484ef4ec9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       295.0,
+       272.0,
+       1539.0,
+       671.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-fed5f08659",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       89.0,
+       84.0,
+       1874.0,
+       887.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5c0555343f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       269.0,
+       56.0,
+       1678.0,
+       906.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-9a594cacb1",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 353,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       0.0,
+       96.0,
+       1773.0,
+       935.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bf30b69a32",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 354,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       253.0,
+       188.0,
+       1499.0,
+       697.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8834fb9c25",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 357,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       118.0,
+       99.0,
+       1921.0,
+       936.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-78fb71d858",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       34.0,
+       73.0,
+       2009.0,
+       699.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-dde50665e8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       190.0,
+       160.0,
+       1497.0,
+       800.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-769e8ad56a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 379,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       159.0,
+       85.0,
+       1889.0,
+       851.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c9b18806b3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 388,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       174.0,
+       197.0,
+       1524.0,
+       725.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-55bd483fa0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 389,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       96.0,
+       232.0,
+       1857.0,
+       531.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-9a36e5e356",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 391,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       128.0,
+       169.0,
+       1680.0,
+       695.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-154663be04",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 401,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       0.0,
+       160.0,
+       1928.0,
+       670.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5e725a0872",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 402,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       154.0,
+       277.0,
+       1694.0,
+       480.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bf3751432e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       407.0,
+       165.0,
+       1259.0,
+       767.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4dd47cf6be",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       94.0,
+       103.0,
+       1799.0,
+       988.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d1881b49dc",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       371.0,
+       161.0,
+       1333.0,
+       737.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-cbf106a2dd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 440,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       186.0,
+       285.0,
+       1182.0,
+       534.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a7c8e2f237",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       226.0,
+       79.0,
+       1023.0,
+       461.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-55df8745c6",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       162.0,
+       61.0,
+       904.0,
+       463.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-65183fde7e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       273.0,
+       102.0,
+       819.0,
+       418.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d96aca99b3",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       264.0,
+       178.0,
+       767.0,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-996fd34265",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       141.0,
+       0.0,
+       903.0,
+       680.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f99e1abe63",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       167.0,
+       108.0,
+       1093.0,
+       464.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-09595a332a",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 470,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       0.0,
+       146.0,
+       1182.0,
+       410.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-58caa8f844",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       55.0,
+       180.0,
+       1037.0,
+       405.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1fc8613394",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 473,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       4.0,
+       130.0,
+       1208.0,
+       367.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-355533c0af",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 474,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       284.0,
+       38.0,
+       653.0,
+       583.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-52937c2a03",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       99.0,
+       9.0,
+       1032.0,
+       688.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e0aa09197b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 479,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       77.0,
+       152.0,
+       992.0,
+       293.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4ebb6dc2e4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 480,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       217.0,
+       201.0,
+       901.0,
+       321.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3355911d8b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 481,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       154.0,
+       107.0,
+       696.0,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-34cb54a3dd",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 485,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       101.0,
+       134.0,
+       964.0,
+       370.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-66d4868cac",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 488,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       288.0,
+       77.0,
+       882.0,
+       438.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-499b575f9e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       157.0,
+       109.0,
+       904.0,
+       400.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-37f5be809e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       311.0,
+       58.0,
+       969.0,
+       651.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-738852ca22",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 510,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       313.0,
+       156.0,
+       435.0,
+       293.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d0918ecfa2",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       0.0,
+       198.0,
+       1140.0,
+       343.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e4a8435063",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 533,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       205.0,
+       168.0,
+       1011.0,
+       281.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ffb9bd0741",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       123.0,
+       230.0,
+       881.0,
+       407.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1a6e0c32ae",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 549,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       130.0,
+       192.0,
+       1150.0,
+       285.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7039bb9ef9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 559,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       7.0,
+       84.0,
+       1215.0,
+       446.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-af1d485c3c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       103.0,
+       111.0,
+       1081.0,
+       373.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5ee8d011a9",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       226.0,
+       164.0,
+       1017.0,
+       257.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-2fb9ef697e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 574,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       0.0,
+       172.0,
+       1075.0,
+       316.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0f4a2fc35f",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 580,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       310.0,
+       110.0,
+       970.0,
+       361.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3d1744c936",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 582,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       44.0,
+       169.0,
+       1236.0,
+       317.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-baed05828d",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 583,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       0.0,
+       28.0,
+       1215.0,
+       583.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-dc53a291e0",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 613,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       0.0,
+       75.0,
+       1251.0,
+       539.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6760d5cd2e",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 620,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       55.0,
+       119.0,
+       1225.0,
+       373.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0325ab1f78",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 665,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       161.0,
+       178.0,
+       934.0,
+       228.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-480394100c",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 676,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       235.0,
+       107.0,
+       896.0,
+       478.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-61929f0913",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 686,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       0.0,
+       110.0,
+       982.0,
+       493.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7112437c11",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 690,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       532.0,
+       240.0,
+       728.0,
+       227.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e750922e14",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 698,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       207.0,
+       205.0,
+       998.0,
+       354.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-48f0b567f8",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 699,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       63.0,
+       115.0,
+       1167.0,
+       414.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-63c50dab28",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 714,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       0.0,
+       125.0,
+       1077.0,
+       365.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ee7856a911",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 724,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       0.0,
+       164.0,
+       1272.0,
+       425.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-36d97e8363",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       218.0,
+       129.0,
+       814.0,
+       338.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d8db8a31b4",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       206.0,
+       79.0,
+       933.0,
+       358.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-946126743b",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 764,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       48.0,
+       156.0,
+       1186.0,
+       282.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-27668196da",
+   "ref": {
+    "file": "data/train-00000-of-00002.parquet",
+    "row": 774,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       320.0,
+       126.0,
+       812.0,
+       421.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c431c2fb42",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       76.0,
+       317.0,
+       1494.0,
+       523.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bc98bab317",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       260.0,
+       276.0,
+       1776.0,
+       434.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7d3b3e276c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       5.0,
+       246.0,
+       1606.0,
+       684.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-47f13e8c4c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       122.0,
+       188.0,
+       946.0,
+       322.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ed46a57f2f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       327.0,
+       202.0,
+       901.0,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7a027342b9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       7.0,
+       96.0,
+       1238.0,
+       441.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-55d9f5be2a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       449.0,
+       152.0,
+       749.0,
+       381.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-fd30433241",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       55.0,
+       202.0,
+       1140.0,
+       320.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8f5c9c9e56",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       410.0,
+       226.0,
+       825.0,
+       270.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-45ed7cbb79",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       238.0,
+       204.0,
+       921.0,
+       453.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-2dea97e4fe",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       0.0,
+       230.0,
+       962.0,
+       287.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1233a0b4ab",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       474.0,
+       452.0,
+       1429.0,
+       407.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-31b0a1b00d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       111.0,
+       322.0,
+       1739.0,
+       437.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e364cf3818",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       0.0,
+       122.0,
+       1818.0,
+       845.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-595ef29b88",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       2.0,
+       265.0,
+       1819.0,
+       549.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-42fca7eb11",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       324.0,
+       420.0,
+       1583.0,
+       340.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-72b620b1a0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       28.0,
+       237.0,
+       1682.0,
+       530.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-708fbcdbd1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       171.0,
+       232.0,
+       1683.0,
+       610.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ea6e33aba1",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       92.0,
+       285.0,
+       1820.0,
+       512.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c537c6702d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 203,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       110.0,
+       211.0,
+       1361.0,
+       540.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0473c6c686",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       278.0,
+       344.0,
+       1659.0,
+       508.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1437dc1ee4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 210,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       87.0,
+       303.0,
+       1800.0,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-85f6d46655",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 226,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       156.0,
+       354.0,
+       1659.0,
+       578.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f7f6a14e86",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       124.0,
+       542.0,
+       1855.0,
+       416.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c04b14cac4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 239,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       12.0,
+       400.0,
+       1753.0,
+       491.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a613ab7f76",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 242,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       297.0,
+       471.0,
+       1371.0,
+       473.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1ee5f88f39",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 248,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       0.0,
+       216.0,
+       1645.0,
+       652.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a120139df2",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 252,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       3.0,
+       434.0,
+       1919.0,
+       399.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b9a39168f8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 254,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       2.0,
+       76.0,
+       1786.0,
+       1047.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6dac1b23e8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 255,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       224.0,
+       185.0,
+       875.0,
+       310.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-40a42f9689",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 280,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       81.0,
+       64.0,
+       1822.0,
+       905.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8d7f05cc64",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 282,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       223.0,
+       250.0,
+       1802.0,
+       630.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6bb7c7ca08",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 287,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       100.0,
+       115.0,
+       923.0,
+       385.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f6855c02b0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 288,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       198.0,
+       285.0,
+       1435.0,
+       660.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-34eccfd3f0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 296,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       117.0,
+       101.0,
+       1508.0,
+       808.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3c228f70cb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       51.0,
+       101.0,
+       1947.0,
+       684.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c74b1b0226",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       21.0,
+       158.0,
+       1645.0,
+       869.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3ab6d2d039",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       425.0,
+       363.0,
+       1464.0,
+       549.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c14700a18f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       337.0,
+       279.0,
+       1324.0,
+       585.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-74e77c8e39",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       680.0,
+       319.0,
+       1161.0,
+       542.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-dee7f04808",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       255.0,
+       340.0,
+       1544.0,
+       471.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c02014794b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 337,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       53.0,
+       248.0,
+       1799.0,
+       719.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a8bcc1bf31",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 346,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       182.0,
+       394.0,
+       1777.0,
+       487.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-83709bb886",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 347,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       322.0,
+       191.0,
+       1459.0,
+       735.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c2f106e376",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 357,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       32.0,
+       201.0,
+       1578.0,
+       851.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-62cf91f75e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       88.0,
+       414.0,
+       1880.0,
+       386.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-50fdc77034",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       178.0,
+       219.0,
+       1451.0,
+       716.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c7efb8bf47",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 367,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       379.0,
+       309.0,
+       1272.0,
+       482.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-465c8507d8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       266.0,
+       238.0,
+       1361.0,
+       555.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b28ae79d6b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       0.0,
+       225.0,
+       1638.0,
+       772.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-5b3ac10cb6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 371,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       229.0,
+       225.0,
+       1819.0,
+       797.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8b00039505",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 376,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       193.0,
+       339.0,
+       1743.0,
+       471.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a82c488ca5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 387,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       399.0,
+       197.0,
+       1352.0,
+       588.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-e9043b324c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       446.0,
+       1042.0,
+       3387.0,
+       986.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-b3e477c1bb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 401,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       1033.0,
+       647.0,
+       2817.0,
+       1359.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-92c96ca175",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 404,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       776.0,
+       412.0,
+       2898.0,
+       1187.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a5d08f2cd6",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 405,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       356.0,
+       437.0,
+       3490.0,
+       1346.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8d163b95e8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 425,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       703.0,
+       630.0,
+       1865.0,
+       1059.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-478fa763fb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 426,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       634.0,
+       557.0,
+       2513.0,
+       1201.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3595bdb940",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 427,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       197.0,
+       815.0,
+       2813.0,
+       1071.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-868238657f",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       725.0,
+       682.0,
+       2327.0,
+       1119.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-9537fabe31",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 458,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       347.0,
+       802.0,
+       3001.0,
+       531.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6a3bda2a5b",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 464,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       1093.0,
+       776.0,
+       1874.0,
+       613.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ae2e956304",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 469,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       17.0,
+       729.0,
+       3035.0,
+       1050.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7145caee88",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       669.0,
+       969.0,
+       2251.0,
+       776.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-44b07c695d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 475,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       360.0,
+       982.0,
+       2791.0,
+       883.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-db377ee616",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 477,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       579.0,
+       977.0,
+       2366.0,
+       764.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-11a9391ad0",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 483,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       772.0,
+       776.0,
+       2319.0,
+       827.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ba4c55e345",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 487,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       1025.0,
+       845.0,
+       2409.0,
+       977.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1ccae21c30",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       1097.0,
+       815.0,
+       2521.0,
+       883.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c9c9c5316d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 503,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       47.0,
+       1007.0,
+       3383.0,
+       879.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a72b766e4e",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 504,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       630.0,
+       952.0,
+       2495.0,
+       669.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-532c1af668",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       1260.0,
+       189.0,
+       1398.0,
+       1817.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bdf847e361",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 516,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       600.0,
+       669.0,
+       2838.0,
+       819.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a863f45ef4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 535,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       1303.0,
+       1162.0,
+       2410.0,
+       883.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-15422162b5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       523.0,
+       1059.0,
+       2521.0,
+       604.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-171a19e3fc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 544,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       544.0,
+       467.0,
+       2796.0,
+       1063.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0b6ebe2323",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 547,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       450.0,
+       849.0,
+       1972.0,
+       977.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ab0fb0a483",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 548,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       276.0,
+       850.0,
+       2743.0,
+       542.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-729fc3e480",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       206.0,
+       767.0,
+       3481.0,
+       1025.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-8ea0a03944",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 562,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       1290.0,
+       622.0,
+       2015.0,
+       960.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-1540916301",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       244.0,
+       840.0,
+       2693.0,
+       961.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d64aeddb75",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 579,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       776.0,
+       703.0,
+       2812.0,
+       1003.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3790eb51b4",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 585,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       883.0,
+       540.0,
+       2409.0,
+       1158.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ff2058f0ca",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       527.0,
+       429.0,
+       2753.0,
+       1522.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-10e8268e3d",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       193.0,
+       189.0,
+       3395.0,
+       1440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-72821e6726",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       334.0,
+       716.0,
+       2650.0,
+       1007.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6f81c4ec14",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 615,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       176.0,
+       643.0,
+       2551.0,
+       797.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-4fbf2183aa",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       476.0,
+       806.0,
+       2791.0,
+       1162.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f53b5eab41",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 632,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       214.0,
+       583.0,
+       2796.0,
+       1359.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ab9d363ecc",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 639,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       810.0,
+       480.0,
+       2641.0,
+       1209.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-bfe8b12f28",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       1591.0,
+       1140.0,
+       1611.0,
+       879.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a293852ded",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       600.0,
+       785.0,
+       2392.0,
+       806.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-aa015c92a9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 663,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       120.0,
+       442.0,
+       3245.0,
+       1504.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-d63c9a0efb",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "red_spider_mite"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "red_spider_mite",
+      "bbox_raw": [
+       750.0,
+       369.0,
+       2778.0,
+       1324.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-6ed809a0f5",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 683,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       922.0,
+       510.0,
+       2465.0,
+       1196.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ab06ce2765",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 686,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       257.0,
+       484.0,
+       3018.0,
+       896.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-3dc77a0753",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       1110.0,
+       592.0,
+       2277.0,
+       784.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-acb0b44dca",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 695,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_4"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_4",
+      "bbox_raw": [
+       849.0,
+       806.0,
+       2028.0,
+       1110.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-43aa291684",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 701,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       317.0,
+       257.0,
+       1391.0,
+       508.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-a61e9fb369",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 711,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       240.0,
+       251.0,
+       1396.0,
+       551.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-ed2e9b2a02",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 712,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_1"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_1",
+      "bbox_raw": [
+       431.0,
+       317.0,
+       1442.0,
+       431.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-f2f4f95c20",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 715,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       219.0,
+       347.0,
+       1447.0,
+       549.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-58734f3a95",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 720,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       6.0,
+       277.0,
+       1814.0,
+       475.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-7459c314e9",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 735,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       313.0,
+       367.0,
+       1526.0,
+       366.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-0d7827037c",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 741,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       298.0,
+       337.0,
+       1513.0,
+       471.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-23133e098a",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 755,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       348.0,
+       331.0,
+       1431.0,
+       439.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-69d27f1ab8",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 766,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "healthy"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "healthy",
+      "bbox_raw": [
+       192.0,
+       397.0,
+       1434.0,
+       392.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-c65cf49987",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 773,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_3"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_3",
+      "bbox_raw": [
+       265.0,
+       288.0,
+       1459.0,
+       534.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "RoCoLe_disease_detection-74a8fc8bab",
+   "ref": {
+    "file": "data/train-00001-of-00002.parquet",
+    "row": 775,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "rust_level_2"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "rust_level_2",
+      "bbox_raw": [
+       333.0,
+       286.0,
+       1387.0,
+       523.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "RoCoLe_disease_detection-0cd3409ab2",
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-8e98223591",
+    "RoCoLe_disease_detection-bfbf9037e6",
+    "RoCoLe_disease_detection-e03f747ba1",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-2ef19dfc17",
+    "RoCoLe_disease_detection-3f5ca7a83d",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-e6fb403273",
+    "RoCoLe_disease_detection-5de00a84cf",
+    "RoCoLe_disease_detection-9484ef4ec9",
+    "RoCoLe_disease_detection-9a594cacb1",
+    "RoCoLe_disease_detection-c9b18806b3",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-e0aa09197b",
+    "RoCoLe_disease_detection-7112437c11",
+    "RoCoLe_disease_detection-e750922e14",
+    "RoCoLe_disease_detection-63c50dab28",
+    "RoCoLe_disease_detection-8f5c9c9e56",
+    "RoCoLe_disease_detection-0473c6c686",
+    "RoCoLe_disease_detection-1ee5f88f39",
+    "RoCoLe_disease_detection-f6855c02b0",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-92c96ca175",
+    "RoCoLe_disease_detection-868238657f",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-a72b766e4e",
+    "RoCoLe_disease_detection-10e8268e3d"
+   ],
+   "10": [
+    "RoCoLe_disease_detection-0cd3409ab2",
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-f3184e08b0",
+    "RoCoLe_disease_detection-8e98223591",
+    "RoCoLe_disease_detection-bfbf9037e6",
+    "RoCoLe_disease_detection-e03f747ba1",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-2ef19dfc17",
+    "RoCoLe_disease_detection-3f5ca7a83d",
+    "RoCoLe_disease_detection-5e0cf96af7",
+    "RoCoLe_disease_detection-a436df07f3",
+    "RoCoLe_disease_detection-0773624f48",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-e6fb403273",
+    "RoCoLe_disease_detection-ee6f891061",
+    "RoCoLe_disease_detection-ccf4722f30",
+    "RoCoLe_disease_detection-5de00a84cf",
+    "RoCoLe_disease_detection-9484ef4ec9",
+    "RoCoLe_disease_detection-fed5f08659",
+    "RoCoLe_disease_detection-9a594cacb1",
+    "RoCoLe_disease_detection-c9b18806b3",
+    "RoCoLe_disease_detection-154663be04",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-65183fde7e",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-e0aa09197b",
+    "RoCoLe_disease_detection-e4a8435063",
+    "RoCoLe_disease_detection-ffb9bd0741",
+    "RoCoLe_disease_detection-7112437c11",
+    "RoCoLe_disease_detection-e750922e14",
+    "RoCoLe_disease_detection-63c50dab28",
+    "RoCoLe_disease_detection-ee7856a911",
+    "RoCoLe_disease_detection-ed46a57f2f",
+    "RoCoLe_disease_detection-8f5c9c9e56",
+    "RoCoLe_disease_detection-e364cf3818",
+    "RoCoLe_disease_detection-42fca7eb11",
+    "RoCoLe_disease_detection-0473c6c686",
+    "RoCoLe_disease_detection-1ee5f88f39",
+    "RoCoLe_disease_detection-b9a39168f8",
+    "RoCoLe_disease_detection-f6855c02b0",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-c74b1b0226",
+    "RoCoLe_disease_detection-3ab6d2d039",
+    "RoCoLe_disease_detection-465c8507d8",
+    "RoCoLe_disease_detection-92c96ca175",
+    "RoCoLe_disease_detection-868238657f",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-ba4c55e345",
+    "RoCoLe_disease_detection-a72b766e4e",
+    "RoCoLe_disease_detection-ab0fb0a483",
+    "RoCoLe_disease_detection-8ea0a03944",
+    "RoCoLe_disease_detection-1540916301",
+    "RoCoLe_disease_detection-10e8268e3d",
+    "RoCoLe_disease_detection-72821e6726",
+    "RoCoLe_disease_detection-bfe8b12f28",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-3dc77a0753",
+    "RoCoLe_disease_detection-43aa291684"
+   ],
+   "15": [
+    "RoCoLe_disease_detection-0cd3409ab2",
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-f3184e08b0",
+    "RoCoLe_disease_detection-e90c4155f7",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-8e98223591",
+    "RoCoLe_disease_detection-bfbf9037e6",
+    "RoCoLe_disease_detection-e03f747ba1",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-2a3a323989",
+    "RoCoLe_disease_detection-f0e3d938f4",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-2ef19dfc17",
+    "RoCoLe_disease_detection-3f5ca7a83d",
+    "RoCoLe_disease_detection-5e0cf96af7",
+    "RoCoLe_disease_detection-a436df07f3",
+    "RoCoLe_disease_detection-0773624f48",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-e6fb403273",
+    "RoCoLe_disease_detection-ee6f891061",
+    "RoCoLe_disease_detection-ccf4722f30",
+    "RoCoLe_disease_detection-bbf823fd43",
+    "RoCoLe_disease_detection-b9746ff657",
+    "RoCoLe_disease_detection-5de00a84cf",
+    "RoCoLe_disease_detection-9484ef4ec9",
+    "RoCoLe_disease_detection-fed5f08659",
+    "RoCoLe_disease_detection-9a594cacb1",
+    "RoCoLe_disease_detection-c9b18806b3",
+    "RoCoLe_disease_detection-9a36e5e356",
+    "RoCoLe_disease_detection-154663be04",
+    "RoCoLe_disease_detection-d1881b49dc",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-65183fde7e",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-e0aa09197b",
+    "RoCoLe_disease_detection-66d4868cac",
+    "RoCoLe_disease_detection-499b575f9e",
+    "RoCoLe_disease_detection-738852ca22",
+    "RoCoLe_disease_detection-e4a8435063",
+    "RoCoLe_disease_detection-ffb9bd0741",
+    "RoCoLe_disease_detection-7039bb9ef9",
+    "RoCoLe_disease_detection-480394100c",
+    "RoCoLe_disease_detection-7112437c11",
+    "RoCoLe_disease_detection-e750922e14",
+    "RoCoLe_disease_detection-48f0b567f8",
+    "RoCoLe_disease_detection-63c50dab28",
+    "RoCoLe_disease_detection-ee7856a911",
+    "RoCoLe_disease_detection-47f13e8c4c",
+    "RoCoLe_disease_detection-ed46a57f2f",
+    "RoCoLe_disease_detection-7a027342b9",
+    "RoCoLe_disease_detection-8f5c9c9e56",
+    "RoCoLe_disease_detection-1233a0b4ab",
+    "RoCoLe_disease_detection-e364cf3818",
+    "RoCoLe_disease_detection-42fca7eb11",
+    "RoCoLe_disease_detection-0473c6c686",
+    "RoCoLe_disease_detection-f7f6a14e86",
+    "RoCoLe_disease_detection-1ee5f88f39",
+    "RoCoLe_disease_detection-b9a39168f8",
+    "RoCoLe_disease_detection-40a42f9689",
+    "RoCoLe_disease_detection-6bb7c7ca08",
+    "RoCoLe_disease_detection-f6855c02b0",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-c74b1b0226",
+    "RoCoLe_disease_detection-3ab6d2d039",
+    "RoCoLe_disease_detection-83709bb886",
+    "RoCoLe_disease_detection-62cf91f75e",
+    "RoCoLe_disease_detection-465c8507d8",
+    "RoCoLe_disease_detection-8b00039505",
+    "RoCoLe_disease_detection-a82c488ca5",
+    "RoCoLe_disease_detection-b3e477c1bb",
+    "RoCoLe_disease_detection-92c96ca175",
+    "RoCoLe_disease_detection-868238657f",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-11a9391ad0",
+    "RoCoLe_disease_detection-ba4c55e345",
+    "RoCoLe_disease_detection-a72b766e4e",
+    "RoCoLe_disease_detection-ab0fb0a483",
+    "RoCoLe_disease_detection-8ea0a03944",
+    "RoCoLe_disease_detection-1540916301",
+    "RoCoLe_disease_detection-10e8268e3d",
+    "RoCoLe_disease_detection-72821e6726",
+    "RoCoLe_disease_detection-f53b5eab41",
+    "RoCoLe_disease_detection-bfe8b12f28",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-3dc77a0753",
+    "RoCoLe_disease_detection-acb0b44dca",
+    "RoCoLe_disease_detection-43aa291684",
+    "RoCoLe_disease_detection-58734f3a95",
+    "RoCoLe_disease_detection-23133e098a"
+   ]
+  },
+  "s1": {
+   "5": [
+    "RoCoLe_disease_detection-fbf1d9d7ed",
+    "RoCoLe_disease_detection-4a42d3316a",
+    "RoCoLe_disease_detection-f0e3d938f4",
+    "RoCoLe_disease_detection-390b42d17b",
+    "RoCoLe_disease_detection-53d51fe66f",
+    "RoCoLe_disease_detection-a11fb69dd7",
+    "RoCoLe_disease_detection-8834fb9c25",
+    "RoCoLe_disease_detection-78fb71d858",
+    "RoCoLe_disease_detection-769e8ad56a",
+    "RoCoLe_disease_detection-154663be04",
+    "RoCoLe_disease_detection-4dd47cf6be",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-3355911d8b",
+    "RoCoLe_disease_detection-2fb9ef697e",
+    "RoCoLe_disease_detection-dc53a291e0",
+    "RoCoLe_disease_detection-946126743b",
+    "RoCoLe_disease_detection-72b620b1a0",
+    "RoCoLe_disease_detection-c04b14cac4",
+    "RoCoLe_disease_detection-a613ab7f76",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-74e77c8e39",
+    "RoCoLe_disease_detection-a8bcc1bf31",
+    "RoCoLe_disease_detection-50fdc77034",
+    "RoCoLe_disease_detection-a5d08f2cd6",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-bdf847e361",
+    "RoCoLe_disease_detection-8ea0a03944",
+    "RoCoLe_disease_detection-ab9d363ecc",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-acb0b44dca"
+   ],
+   "10": [
+    "RoCoLe_disease_detection-ac8b39f948",
+    "RoCoLe_disease_detection-fbf1d9d7ed",
+    "RoCoLe_disease_detection-4a42d3316a",
+    "RoCoLe_disease_detection-b59d925451",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-2a3a323989",
+    "RoCoLe_disease_detection-f0e3d938f4",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-ae16cd2312",
+    "RoCoLe_disease_detection-390b42d17b",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-ebbebff460",
+    "RoCoLe_disease_detection-53d51fe66f",
+    "RoCoLe_disease_detection-a11fb69dd7",
+    "RoCoLe_disease_detection-bf30b69a32",
+    "RoCoLe_disease_detection-8834fb9c25",
+    "RoCoLe_disease_detection-78fb71d858",
+    "RoCoLe_disease_detection-769e8ad56a",
+    "RoCoLe_disease_detection-154663be04",
+    "RoCoLe_disease_detection-5e725a0872",
+    "RoCoLe_disease_detection-4dd47cf6be",
+    "RoCoLe_disease_detection-cbf106a2dd",
+    "RoCoLe_disease_detection-58caa8f844",
+    "RoCoLe_disease_detection-1fc8613394",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-3355911d8b",
+    "RoCoLe_disease_detection-738852ca22",
+    "RoCoLe_disease_detection-af1d485c3c",
+    "RoCoLe_disease_detection-2fb9ef697e",
+    "RoCoLe_disease_detection-0f4a2fc35f",
+    "RoCoLe_disease_detection-dc53a291e0",
+    "RoCoLe_disease_detection-61929f0913",
+    "RoCoLe_disease_detection-d8db8a31b4",
+    "RoCoLe_disease_detection-946126743b",
+    "RoCoLe_disease_detection-55d9f5be2a",
+    "RoCoLe_disease_detection-e364cf3818",
+    "RoCoLe_disease_detection-72b620b1a0",
+    "RoCoLe_disease_detection-c04b14cac4",
+    "RoCoLe_disease_detection-a613ab7f76",
+    "RoCoLe_disease_detection-a120139df2",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-74e77c8e39",
+    "RoCoLe_disease_detection-a8bcc1bf31",
+    "RoCoLe_disease_detection-62cf91f75e",
+    "RoCoLe_disease_detection-50fdc77034",
+    "RoCoLe_disease_detection-c7efb8bf47",
+    "RoCoLe_disease_detection-b3e477c1bb",
+    "RoCoLe_disease_detection-a5d08f2cd6",
+    "RoCoLe_disease_detection-8d163b95e8",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-532c1af668",
+    "RoCoLe_disease_detection-bdf847e361",
+    "RoCoLe_disease_detection-8ea0a03944",
+    "RoCoLe_disease_detection-ff2058f0ca",
+    "RoCoLe_disease_detection-4fbf2183aa",
+    "RoCoLe_disease_detection-ab9d363ecc",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-acb0b44dca",
+    "RoCoLe_disease_detection-43aa291684",
+    "RoCoLe_disease_detection-7459c314e9"
+   ],
+   "15": [
+    "RoCoLe_disease_detection-ac8b39f948",
+    "RoCoLe_disease_detection-fbf1d9d7ed",
+    "RoCoLe_disease_detection-3297012dac",
+    "RoCoLe_disease_detection-4a42d3316a",
+    "RoCoLe_disease_detection-b4b9946fef",
+    "RoCoLe_disease_detection-b59d925451",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-22bd347f99",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-2a3a323989",
+    "RoCoLe_disease_detection-f0e3d938f4",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-ae16cd2312",
+    "RoCoLe_disease_detection-0bfe27197a",
+    "RoCoLe_disease_detection-5e0cf96af7",
+    "RoCoLe_disease_detection-a436df07f3",
+    "RoCoLe_disease_detection-390b42d17b",
+    "RoCoLe_disease_detection-2dbe53829d",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-ebbebff460",
+    "RoCoLe_disease_detection-53d51fe66f",
+    "RoCoLe_disease_detection-a11fb69dd7",
+    "RoCoLe_disease_detection-bf30b69a32",
+    "RoCoLe_disease_detection-8834fb9c25",
+    "RoCoLe_disease_detection-78fb71d858",
+    "RoCoLe_disease_detection-769e8ad56a",
+    "RoCoLe_disease_detection-154663be04",
+    "RoCoLe_disease_detection-5e725a0872",
+    "RoCoLe_disease_detection-4dd47cf6be",
+    "RoCoLe_disease_detection-cbf106a2dd",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-996fd34265",
+    "RoCoLe_disease_detection-09595a332a",
+    "RoCoLe_disease_detection-58caa8f844",
+    "RoCoLe_disease_detection-1fc8613394",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-52937c2a03",
+    "RoCoLe_disease_detection-3355911d8b",
+    "RoCoLe_disease_detection-37f5be809e",
+    "RoCoLe_disease_detection-738852ca22",
+    "RoCoLe_disease_detection-1a6e0c32ae",
+    "RoCoLe_disease_detection-af1d485c3c",
+    "RoCoLe_disease_detection-2fb9ef697e",
+    "RoCoLe_disease_detection-0f4a2fc35f",
+    "RoCoLe_disease_detection-baed05828d",
+    "RoCoLe_disease_detection-dc53a291e0",
+    "RoCoLe_disease_detection-61929f0913",
+    "RoCoLe_disease_detection-e750922e14",
+    "RoCoLe_disease_detection-d8db8a31b4",
+    "RoCoLe_disease_detection-946126743b",
+    "RoCoLe_disease_detection-c431c2fb42",
+    "RoCoLe_disease_detection-55d9f5be2a",
+    "RoCoLe_disease_detection-45ed7cbb79",
+    "RoCoLe_disease_detection-e364cf3818",
+    "RoCoLe_disease_detection-72b620b1a0",
+    "RoCoLe_disease_detection-c04b14cac4",
+    "RoCoLe_disease_detection-a613ab7f76",
+    "RoCoLe_disease_detection-a120139df2",
+    "RoCoLe_disease_detection-34eccfd3f0",
+    "RoCoLe_disease_detection-74e77c8e39",
+    "RoCoLe_disease_detection-a8bcc1bf31",
+    "RoCoLe_disease_detection-62cf91f75e",
+    "RoCoLe_disease_detection-50fdc77034",
+    "RoCoLe_disease_detection-c7efb8bf47",
+    "RoCoLe_disease_detection-5b3ac10cb6",
+    "RoCoLe_disease_detection-b3e477c1bb",
+    "RoCoLe_disease_detection-a5d08f2cd6",
+    "RoCoLe_disease_detection-8d163b95e8",
+    "RoCoLe_disease_detection-3595bdb940",
+    "RoCoLe_disease_detection-ae2e956304",
+    "RoCoLe_disease_detection-7145caee88",
+    "RoCoLe_disease_detection-db377ee616",
+    "RoCoLe_disease_detection-532c1af668",
+    "RoCoLe_disease_detection-bdf847e361",
+    "RoCoLe_disease_detection-171a19e3fc",
+    "RoCoLe_disease_detection-0b6ebe2323",
+    "RoCoLe_disease_detection-8ea0a03944",
+    "RoCoLe_disease_detection-d64aeddb75",
+    "RoCoLe_disease_detection-3790eb51b4",
+    "RoCoLe_disease_detection-ff2058f0ca",
+    "RoCoLe_disease_detection-4fbf2183aa",
+    "RoCoLe_disease_detection-ab9d363ecc",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-acb0b44dca",
+    "RoCoLe_disease_detection-43aa291684",
+    "RoCoLe_disease_detection-a61e9fb369",
+    "RoCoLe_disease_detection-f2f4f95c20",
+    "RoCoLe_disease_detection-7459c314e9",
+    "RoCoLe_disease_detection-0d7827037c",
+    "RoCoLe_disease_detection-c65cf49987"
+   ]
+  },
+  "s2": {
+   "5": [
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-bed81df6b8",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-3e57cb636a",
+    "RoCoLe_disease_detection-61026cd714",
+    "RoCoLe_disease_detection-e9cb62b96b",
+    "RoCoLe_disease_detection-99ded319f9",
+    "RoCoLe_disease_detection-4c39b7bfc0",
+    "RoCoLe_disease_detection-5c0555343f",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-d96aca99b3",
+    "RoCoLe_disease_detection-d0918ecfa2",
+    "RoCoLe_disease_detection-0f4a2fc35f",
+    "RoCoLe_disease_detection-6760d5cd2e",
+    "RoCoLe_disease_detection-36d97e8363",
+    "RoCoLe_disease_detection-7d3b3e276c",
+    "RoCoLe_disease_detection-2dea97e4fe",
+    "RoCoLe_disease_detection-595ef29b88",
+    "RoCoLe_disease_detection-1437dc1ee4",
+    "RoCoLe_disease_detection-3c228f70cb",
+    "RoCoLe_disease_detection-dee7f04808",
+    "RoCoLe_disease_detection-c2f106e376",
+    "RoCoLe_disease_detection-b28ae79d6b",
+    "RoCoLe_disease_detection-a82c488ca5",
+    "RoCoLe_disease_detection-8d163b95e8",
+    "RoCoLe_disease_detection-478fa763fb",
+    "RoCoLe_disease_detection-6f81c4ec14",
+    "RoCoLe_disease_detection-d63c9a0efb",
+    "RoCoLe_disease_detection-ab06ce2765"
+   ],
+   "10": [
+    "RoCoLe_disease_detection-3297012dac",
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-4229624a4e",
+    "RoCoLe_disease_detection-ca84c3a907",
+    "RoCoLe_disease_detection-90ee5bbe7f",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-bed81df6b8",
+    "RoCoLe_disease_detection-92f4c13ad3",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-5e0cf96af7",
+    "RoCoLe_disease_detection-3e57cb636a",
+    "RoCoLe_disease_detection-390b42d17b",
+    "RoCoLe_disease_detection-61026cd714",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-e9cb62b96b",
+    "RoCoLe_disease_detection-d887227e96",
+    "RoCoLe_disease_detection-99ded319f9",
+    "RoCoLe_disease_detection-4c39b7bfc0",
+    "RoCoLe_disease_detection-5c0555343f",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-d96aca99b3",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-34cb54a3dd",
+    "RoCoLe_disease_detection-d0918ecfa2",
+    "RoCoLe_disease_detection-0f4a2fc35f",
+    "RoCoLe_disease_detection-3d1744c936",
+    "RoCoLe_disease_detection-6760d5cd2e",
+    "RoCoLe_disease_detection-0325ab1f78",
+    "RoCoLe_disease_detection-36d97e8363",
+    "RoCoLe_disease_detection-bc98bab317",
+    "RoCoLe_disease_detection-7d3b3e276c",
+    "RoCoLe_disease_detection-fd30433241",
+    "RoCoLe_disease_detection-2dea97e4fe",
+    "RoCoLe_disease_detection-31b0a1b00d",
+    "RoCoLe_disease_detection-595ef29b88",
+    "RoCoLe_disease_detection-708fbcdbd1",
+    "RoCoLe_disease_detection-c537c6702d",
+    "RoCoLe_disease_detection-1437dc1ee4",
+    "RoCoLe_disease_detection-85f6d46655",
+    "RoCoLe_disease_detection-3c228f70cb",
+    "RoCoLe_disease_detection-dee7f04808",
+    "RoCoLe_disease_detection-c02014794b",
+    "RoCoLe_disease_detection-c2f106e376",
+    "RoCoLe_disease_detection-b28ae79d6b",
+    "RoCoLe_disease_detection-a82c488ca5",
+    "RoCoLe_disease_detection-e9043b324c",
+    "RoCoLe_disease_detection-8d163b95e8",
+    "RoCoLe_disease_detection-478fa763fb",
+    "RoCoLe_disease_detection-9537fabe31",
+    "RoCoLe_disease_detection-6a3bda2a5b",
+    "RoCoLe_disease_detection-44b07c695d",
+    "RoCoLe_disease_detection-c9c9c5316d",
+    "RoCoLe_disease_detection-3790eb51b4",
+    "RoCoLe_disease_detection-6f81c4ec14",
+    "RoCoLe_disease_detection-f53b5eab41",
+    "RoCoLe_disease_detection-a293852ded",
+    "RoCoLe_disease_detection-d63c9a0efb",
+    "RoCoLe_disease_detection-ab06ce2765",
+    "RoCoLe_disease_detection-74a8fc8bab"
+   ],
+   "15": [
+    "RoCoLe_disease_detection-3297012dac",
+    "RoCoLe_disease_detection-94559a97e7",
+    "RoCoLe_disease_detection-4229624a4e",
+    "RoCoLe_disease_detection-ca84c3a907",
+    "RoCoLe_disease_detection-90ee5bbe7f",
+    "RoCoLe_disease_detection-9699537738",
+    "RoCoLe_disease_detection-b104fa0ac4",
+    "RoCoLe_disease_detection-bed81df6b8",
+    "RoCoLe_disease_detection-92f4c13ad3",
+    "RoCoLe_disease_detection-e03f747ba1",
+    "RoCoLe_disease_detection-f4c3f9f120",
+    "RoCoLe_disease_detection-67dca8a282",
+    "RoCoLe_disease_detection-666c3ef41e",
+    "RoCoLe_disease_detection-5271d4df53",
+    "RoCoLe_disease_detection-5e0cf96af7",
+    "RoCoLe_disease_detection-3e57cb636a",
+    "RoCoLe_disease_detection-a436df07f3",
+    "RoCoLe_disease_detection-390b42d17b",
+    "RoCoLe_disease_detection-61026cd714",
+    "RoCoLe_disease_detection-bb79f8acfa",
+    "RoCoLe_disease_detection-75e1870a53",
+    "RoCoLe_disease_detection-e9cb62b96b",
+    "RoCoLe_disease_detection-d887227e96",
+    "RoCoLe_disease_detection-99ded319f9",
+    "RoCoLe_disease_detection-4c39b7bfc0",
+    "RoCoLe_disease_detection-5c0555343f",
+    "RoCoLe_disease_detection-dde50665e8",
+    "RoCoLe_disease_detection-55bd483fa0",
+    "RoCoLe_disease_detection-bf3751432e",
+    "RoCoLe_disease_detection-a7c8e2f237",
+    "RoCoLe_disease_detection-55df8745c6",
+    "RoCoLe_disease_detection-d96aca99b3",
+    "RoCoLe_disease_detection-f99e1abe63",
+    "RoCoLe_disease_detection-355533c0af",
+    "RoCoLe_disease_detection-4ebb6dc2e4",
+    "RoCoLe_disease_detection-34cb54a3dd",
+    "RoCoLe_disease_detection-d0918ecfa2",
+    "RoCoLe_disease_detection-5ee8d011a9",
+    "RoCoLe_disease_detection-0f4a2fc35f",
+    "RoCoLe_disease_detection-3d1744c936",
+    "RoCoLe_disease_detection-6760d5cd2e",
+    "RoCoLe_disease_detection-0325ab1f78",
+    "RoCoLe_disease_detection-61929f0913",
+    "RoCoLe_disease_detection-36d97e8363",
+    "RoCoLe_disease_detection-27668196da",
+    "RoCoLe_disease_detection-bc98bab317",
+    "RoCoLe_disease_detection-7d3b3e276c",
+    "RoCoLe_disease_detection-fd30433241",
+    "RoCoLe_disease_detection-2dea97e4fe",
+    "RoCoLe_disease_detection-31b0a1b00d",
+    "RoCoLe_disease_detection-595ef29b88",
+    "RoCoLe_disease_detection-708fbcdbd1",
+    "RoCoLe_disease_detection-ea6e33aba1",
+    "RoCoLe_disease_detection-c537c6702d",
+    "RoCoLe_disease_detection-1437dc1ee4",
+    "RoCoLe_disease_detection-85f6d46655",
+    "RoCoLe_disease_detection-6dac1b23e8",
+    "RoCoLe_disease_detection-8d7f05cc64",
+    "RoCoLe_disease_detection-f6855c02b0",
+    "RoCoLe_disease_detection-3c228f70cb",
+    "RoCoLe_disease_detection-c14700a18f",
+    "RoCoLe_disease_detection-dee7f04808",
+    "RoCoLe_disease_detection-c02014794b",
+    "RoCoLe_disease_detection-c2f106e376",
+    "RoCoLe_disease_detection-b28ae79d6b",
+    "RoCoLe_disease_detection-a82c488ca5",
+    "RoCoLe_disease_detection-e9043b324c",
+    "RoCoLe_disease_detection-8d163b95e8",
+    "RoCoLe_disease_detection-478fa763fb",
+    "RoCoLe_disease_detection-9537fabe31",
+    "RoCoLe_disease_detection-6a3bda2a5b",
+    "RoCoLe_disease_detection-44b07c695d",
+    "RoCoLe_disease_detection-1ccae21c30",
+    "RoCoLe_disease_detection-c9c9c5316d",
+    "RoCoLe_disease_detection-a863f45ef4",
+    "RoCoLe_disease_detection-15422162b5",
+    "RoCoLe_disease_detection-729fc3e480",
+    "RoCoLe_disease_detection-3790eb51b4",
+    "RoCoLe_disease_detection-6f81c4ec14",
+    "RoCoLe_disease_detection-f53b5eab41",
+    "RoCoLe_disease_detection-a293852ded",
+    "RoCoLe_disease_detection-aa015c92a9",
+    "RoCoLe_disease_detection-d63c9a0efb",
+    "RoCoLe_disease_detection-6ed809a0f5",
+    "RoCoLe_disease_detection-ab06ce2765",
+    "RoCoLe_disease_detection-acb0b44dca",
+    "RoCoLe_disease_detection-43aa291684",
+    "RoCoLe_disease_detection-ed2e9b2a02",
+    "RoCoLe_disease_detection-69d27f1ab8",
+    "RoCoLe_disease_detection-74a8fc8bab"
+   ]
+  }
+ }
+}

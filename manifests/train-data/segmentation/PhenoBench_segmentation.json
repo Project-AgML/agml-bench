@@ -1,0 +1,1392 @@
+{
+ "name": "PhenoBench_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/PhenoBench_segmentation",
+ "hf_sha": "038032e381012b3a66ca29383102c3727b034613",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T16:19:39+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3",
+   "4": "value_4"
+  },
+  "indexed_rows": 2179
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "PhenoBench_segmentation-8e7819fea9",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-9cd4851b20",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-06cb8304bc",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-c5a770aea2",
+   "ref": {
+    "file": "data/train-00000-of-00013.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-b6abfd7e6a",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-9904249aba",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-c2c7f0f30e",
+   "ref": {
+    "file": "data/train-00003-of-00013.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-fdd37fd716",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-d646b278d4",
+   "ref": {
+    "file": "data/train-00004-of-00013.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-2470af54d8",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-5390410b0f",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-1da9a6aad6",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-952dff0ed9",
+   "ref": {
+    "file": "data/train-00002-of-00013.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-05233ff4ab",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-82e08c1642",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-02f3aef8b0",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-47dd56e509",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-8de8f9387f",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-728d36805a",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-c7eaa07a21",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-5c5890ba74",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-fc780d9699",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-fbbc718d53",
+   "ref": {
+    "file": "data/train-00012-of-00013.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-9e2fed5539",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-653cfe60ae",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-c72e02b56f",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-b56ad60f0c",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-b649d1b764",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-ebbb528929",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-041222bcdf",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-a0bcfcfeb0",
+   "ref": {
+    "file": "data/train-00011-of-00013.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-9427ca47cb",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-73c28154b8",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-64c537a05a",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-80b4c91248",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-a211aab10f",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-a096413f2b",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-5f1e885bc4",
+   "ref": {
+    "file": "data/train-00006-of-00013.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-745a6643f3",
+   "ref": {
+    "file": "data/train-00005-of-00013.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-f5937f4152",
+   "ref": {
+    "file": "data/train-00005-of-00013.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-fbd06f03b4",
+   "ref": {
+    "file": "data/train-00005-of-00013.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-add8cddd32",
+   "ref": {
+    "file": "data/train-00009-of-00013.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-982e5b8ee3",
+   "ref": {
+    "file": "data/train-00001-of-00013.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-1058cfceba",
+   "ref": {
+    "file": "data/train-00001-of-00013.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-811695de47",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-0a588e97b0",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-0e621d25f0",
+   "ref": {
+    "file": "data/train-00007-of-00013.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-b033ebf575",
+   "ref": {
+    "file": "data/train-00010-of-00013.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-c6bf02ad8d",
+   "ref": {
+    "file": "data/train-00010-of-00013.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-a35292ef4a",
+   "ref": {
+    "file": "data/train-00010-of-00013.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-ffef4e6f88",
+   "ref": {
+    "file": "data/train-00008-of-00013.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-b73b568ef7",
+   "ref": {
+    "file": "data/train-00008-of-00013.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "PhenoBench_segmentation-28fd807668",
+   "ref": {
+    "file": "data/train-00008-of-00013.parquet",
+    "row": 141,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3",
+     "value_4"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "PhenoBench_segmentation-c2c7f0f30e",
+    "PhenoBench_segmentation-05233ff4ab",
+    "PhenoBench_segmentation-ffef4e6f88",
+    "PhenoBench_segmentation-728d36805a",
+    "PhenoBench_segmentation-28fd807668",
+    "PhenoBench_segmentation-1058cfceba"
+   ],
+   "10": [
+    "PhenoBench_segmentation-c2c7f0f30e",
+    "PhenoBench_segmentation-05233ff4ab",
+    "PhenoBench_segmentation-9427ca47cb",
+    "PhenoBench_segmentation-b033ebf575",
+    "PhenoBench_segmentation-ffef4e6f88",
+    "PhenoBench_segmentation-c72e02b56f",
+    "PhenoBench_segmentation-d646b278d4",
+    "PhenoBench_segmentation-728d36805a",
+    "PhenoBench_segmentation-b73b568ef7",
+    "PhenoBench_segmentation-28fd807668",
+    "PhenoBench_segmentation-c5a770aea2",
+    "PhenoBench_segmentation-1058cfceba"
+   ],
+   "15": [
+    "PhenoBench_segmentation-8e7819fea9",
+    "PhenoBench_segmentation-c2c7f0f30e",
+    "PhenoBench_segmentation-05233ff4ab",
+    "PhenoBench_segmentation-9427ca47cb",
+    "PhenoBench_segmentation-5390410b0f",
+    "PhenoBench_segmentation-b033ebf575",
+    "PhenoBench_segmentation-ffef4e6f88",
+    "PhenoBench_segmentation-c72e02b56f",
+    "PhenoBench_segmentation-d646b278d4",
+    "PhenoBench_segmentation-728d36805a",
+    "PhenoBench_segmentation-b649d1b764",
+    "PhenoBench_segmentation-b73b568ef7",
+    "PhenoBench_segmentation-28fd807668",
+    "PhenoBench_segmentation-c5a770aea2",
+    "PhenoBench_segmentation-1da9a6aad6",
+    "PhenoBench_segmentation-fc780d9699",
+    "PhenoBench_segmentation-fbbc718d53",
+    "PhenoBench_segmentation-1058cfceba"
+   ]
+  },
+  "s1": {
+   "5": [
+    "PhenoBench_segmentation-9e2fed5539",
+    "PhenoBench_segmentation-f5937f4152",
+    "PhenoBench_segmentation-add8cddd32",
+    "PhenoBench_segmentation-982e5b8ee3",
+    "PhenoBench_segmentation-b56ad60f0c",
+    "PhenoBench_segmentation-a0bcfcfeb0"
+   ],
+   "10": [
+    "PhenoBench_segmentation-2470af54d8",
+    "PhenoBench_segmentation-9e2fed5539",
+    "PhenoBench_segmentation-f5937f4152",
+    "PhenoBench_segmentation-add8cddd32",
+    "PhenoBench_segmentation-982e5b8ee3",
+    "PhenoBench_segmentation-47dd56e509",
+    "PhenoBench_segmentation-8de8f9387f",
+    "PhenoBench_segmentation-c7eaa07a21",
+    "PhenoBench_segmentation-b56ad60f0c",
+    "PhenoBench_segmentation-a0bcfcfeb0",
+    "PhenoBench_segmentation-a211aab10f"
+   ],
+   "15": [
+    "PhenoBench_segmentation-b6abfd7e6a",
+    "PhenoBench_segmentation-9904249aba",
+    "PhenoBench_segmentation-2470af54d8",
+    "PhenoBench_segmentation-9e2fed5539",
+    "PhenoBench_segmentation-f5937f4152",
+    "PhenoBench_segmentation-add8cddd32",
+    "PhenoBench_segmentation-982e5b8ee3",
+    "PhenoBench_segmentation-47dd56e509",
+    "PhenoBench_segmentation-8de8f9387f",
+    "PhenoBench_segmentation-c7eaa07a21",
+    "PhenoBench_segmentation-b56ad60f0c",
+    "PhenoBench_segmentation-041222bcdf",
+    "PhenoBench_segmentation-a0bcfcfeb0",
+    "PhenoBench_segmentation-0e621d25f0",
+    "PhenoBench_segmentation-a35292ef4a",
+    "PhenoBench_segmentation-952dff0ed9",
+    "PhenoBench_segmentation-a211aab10f",
+    "PhenoBench_segmentation-5f1e885bc4"
+   ]
+  },
+  "s2": {
+   "5": [
+    "PhenoBench_segmentation-811695de47",
+    "PhenoBench_segmentation-653cfe60ae",
+    "PhenoBench_segmentation-02f3aef8b0",
+    "PhenoBench_segmentation-c6bf02ad8d",
+    "PhenoBench_segmentation-5c5890ba74"
+   ],
+   "10": [
+    "PhenoBench_segmentation-fdd37fd716",
+    "PhenoBench_segmentation-811695de47",
+    "PhenoBench_segmentation-fbd06f03b4",
+    "PhenoBench_segmentation-653cfe60ae",
+    "PhenoBench_segmentation-02f3aef8b0",
+    "PhenoBench_segmentation-9cd4851b20",
+    "PhenoBench_segmentation-ebbb528929",
+    "PhenoBench_segmentation-73c28154b8",
+    "PhenoBench_segmentation-64c537a05a",
+    "PhenoBench_segmentation-c6bf02ad8d",
+    "PhenoBench_segmentation-5c5890ba74"
+   ],
+   "15": [
+    "PhenoBench_segmentation-fdd37fd716",
+    "PhenoBench_segmentation-745a6643f3",
+    "PhenoBench_segmentation-811695de47",
+    "PhenoBench_segmentation-fbd06f03b4",
+    "PhenoBench_segmentation-653cfe60ae",
+    "PhenoBench_segmentation-82e08c1642",
+    "PhenoBench_segmentation-02f3aef8b0",
+    "PhenoBench_segmentation-9cd4851b20",
+    "PhenoBench_segmentation-0a588e97b0",
+    "PhenoBench_segmentation-ebbb528929",
+    "PhenoBench_segmentation-06cb8304bc",
+    "PhenoBench_segmentation-73c28154b8",
+    "PhenoBench_segmentation-64c537a05a",
+    "PhenoBench_segmentation-80b4c91248",
+    "PhenoBench_segmentation-c6bf02ad8d",
+    "PhenoBench_segmentation-5c5890ba74",
+    "PhenoBench_segmentation-a096413f2b"
+   ]
+  }
+ }
+}

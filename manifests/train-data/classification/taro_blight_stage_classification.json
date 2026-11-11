@@ -1,0 +1,3273 @@
+{
+ "name": "taro_blight_stage_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/taro_blight_stage_classification",
+ "hf_sha": "d327162131e0764d7e2f622ebf661645a208eb2a",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T20:45:26+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Early_Blight",
+   "Healthy",
+   "Late_Blight",
+   "Mid_Blight"
+  ],
+  "indexed_rows": 18248
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "taro_blight_stage_classification-3ce29d2a7a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-763177e5f0",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 283,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5c13380404",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-d145414773",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-52051e048d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f5da9a3640",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-2ccc80703e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 531,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-461e597bdd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-1a17d8d0f5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 897,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-af5ec58ab2",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 926,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-145f195553",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 965,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e6857597c4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-329ba9e384",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1040,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ca41f11ff9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-28d5967fc6",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-71ada38e50",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1491,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4f83645b1f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1498,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-dbe7c2bc69",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1620,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4e993df97f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1683,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-eaa8265a64",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1724,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-62b2b9e7a3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1726,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-bd57a7cb63",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-eba7b1af34",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1842,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b9a662a1fd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1881,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-d88ec7ae61",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1901,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-145000f92c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1930,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9be901e3e5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1960,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f5f88d0754",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-a97f5b1a0c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2015,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-6e6434253b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2059,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b6c8627be8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-41647393ff",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2241,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8131038b72",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-a7ed91d7ec",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e59d28d464",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2499,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8b3c822d4e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2505,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-242359c731",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2761,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-1f16d9f4a1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2847,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-6567356174",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-84de55c432",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2891,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-dfaf77e99e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2950,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c70f4b0a7a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3039,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-0585982c1b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-50e94038fc",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c7c3cd5e85",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3285,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mid_Blight"
+   ],
+   "ann": {
+    "label": "Mid_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5be57aa8c7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3381,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ae3999b4cd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-be9e2fc303",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3452,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e453e94335",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-49534d561f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3470,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-63d338097f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-cec4966f14",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3505,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-67aafbc7e3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3509,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-3c7475bc79",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3514,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-cd9cf03455",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3517,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-cb19f37aca",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3557,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-aac95cdd54",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3570,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b6cc7b80c8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-664d41400b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3623,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ca4211ae15",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3628,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f94c5c5270",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3635,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-d1f75ce6a7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3663,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-fe376d2d01",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3688,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7ad5450ee3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3751,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f4c2951307",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3752,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4be0d93f2f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3765,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-85d5efece1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3800,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-bf0f0f513b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3833,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-64178df653",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3840,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9e24d7b2c8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3922,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e7e3d54226",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3924,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-88da864a09",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3951,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-3f028b2166",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4004,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b1bcb7379e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4dc6bb6fe6",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4053,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5c5a1dc1db",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4211,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8f4307266a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4271,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-483ef6340a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4306,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b2068a46a1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4353,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-75c4a9129e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4ddd6cb01d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4376,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-665021e4a9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4395,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-0b5c9d8729",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ca9b7a6c12",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4468,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-217b16d6c9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4501,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-2730243037",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7f855c6c40",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4552,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b61beefd55",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4556,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8613a29947",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4611,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Late_Blight"
+   ],
+   "ann": {
+    "label": "Late_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4945a9bcd6",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4746,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f8d7b6f21e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c0712d437b",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 4945,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-cd08475903",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 5033,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5fcf04ede0",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 5364,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e92afd7179",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 5772,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8cc4c03337",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 5878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-a96d5050fb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 6065,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f9a292f51b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-6a65731fa4",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 902,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f8c1a55d27",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1051,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8ea3f1449c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-792a1bf8aa",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1264,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f35d5dae0c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9b996bc648",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1537,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-29c9e01288",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1636,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-acef8bbff1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1935,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-0440fbc1d0",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1939,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8f10e2662a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1955,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7d99bb85ba",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4351207cf2",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2305,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9b6e494949",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2683,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-de6a774276",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2863,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-73590f3ccb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2914,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-dea5a59d5d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b09cf2be4d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2987,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-d61f9d0bfc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-1537e5a0c5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-80a1ca9c38",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 3796,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f85b41f010",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 4562,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ac16c1e2e9",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 5070,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8a517fc59c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 5085,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e59a5c6f08",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 5205,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c0d03c3800",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 6007,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ac3a222ed1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 6010,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-de947327a4",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 6026,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e45c7a033a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-2bf0b14297",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 215,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f422b568d7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7537bc2bd8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f4c8225920",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 558,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9fe7620c12",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 578,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-bcaf57c33c",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 631,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-551bbbd48e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 934,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-96f419a082",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1083,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-3da39755ec",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4db56fc55f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1660,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-4e7f5a2b95",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1670,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-63701c053e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1677,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-6b49eb0b3f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1853,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-1298144ea8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1907,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-458653ce2a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2048,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9daa7c6f59",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c4c2a6b667",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2690,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-51020b4729",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2733,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e02c2aa751",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2771,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-b5490ada42",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2862,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-eba0f9aad2",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-8a1f845e13",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3013,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-f3b5a17710",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3048,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5fad11d289",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3061,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-93e06e1b44",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-201265b7cc",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3327,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-0318744b87",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3419,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-1627888254",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3605,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-6310cd8820",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3692,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-21781acf5a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3823,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-da2912786b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 3857,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-33d00d1ed9",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4080,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c96dd9e8f1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4196,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-9aba67d439",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-a925694bce",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-903700ab60",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7897442dca",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4642,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-593975af83",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4792,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5e145340b7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4867,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-3571a92215",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 4885,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-aa46d83612",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5173,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-75d1d592c1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-3cdb6fa9df",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5206,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5ec16954ab",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-719f19f70d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5453,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-a0ccbe89cf",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5454,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-82e7d19283",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5519,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-7aea1f89b5",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5600,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-e1e2557fa6",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5661,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-5dec15cced",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5811,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-d893c46326",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-ae5855712b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 5925,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "taro_blight_stage_classification-c5b9d69d87",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 6071,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Early_Blight"
+   ],
+   "ann": {
+    "label": "Early_Blight"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "taro_blight_stage_classification-d145414773",
+    "taro_blight_stage_classification-4e993df97f",
+    "taro_blight_stage_classification-d88ec7ae61",
+    "taro_blight_stage_classification-8b3c822d4e",
+    "taro_blight_stage_classification-1f16d9f4a1",
+    "taro_blight_stage_classification-5be57aa8c7",
+    "taro_blight_stage_classification-b6cc7b80c8",
+    "taro_blight_stage_classification-b1bcb7379e",
+    "taro_blight_stage_classification-217b16d6c9",
+    "taro_blight_stage_classification-7f855c6c40",
+    "taro_blight_stage_classification-e92afd7179",
+    "taro_blight_stage_classification-792a1bf8aa",
+    "taro_blight_stage_classification-7d99bb85ba",
+    "taro_blight_stage_classification-dea5a59d5d",
+    "taro_blight_stage_classification-96f419a082",
+    "taro_blight_stage_classification-6b49eb0b3f",
+    "taro_blight_stage_classification-5fad11d289",
+    "taro_blight_stage_classification-903700ab60",
+    "taro_blight_stage_classification-5e145340b7",
+    "taro_blight_stage_classification-7aea1f89b5"
+   ],
+   "10": [
+    "taro_blight_stage_classification-3ce29d2a7a",
+    "taro_blight_stage_classification-d145414773",
+    "taro_blight_stage_classification-f5da9a3640",
+    "taro_blight_stage_classification-af5ec58ab2",
+    "taro_blight_stage_classification-4e993df97f",
+    "taro_blight_stage_classification-d88ec7ae61",
+    "taro_blight_stage_classification-f5f88d0754",
+    "taro_blight_stage_classification-8b3c822d4e",
+    "taro_blight_stage_classification-1f16d9f4a1",
+    "taro_blight_stage_classification-50e94038fc",
+    "taro_blight_stage_classification-5be57aa8c7",
+    "taro_blight_stage_classification-ae3999b4cd",
+    "taro_blight_stage_classification-b6cc7b80c8",
+    "taro_blight_stage_classification-ca4211ae15",
+    "taro_blight_stage_classification-4be0d93f2f",
+    "taro_blight_stage_classification-b1bcb7379e",
+    "taro_blight_stage_classification-483ef6340a",
+    "taro_blight_stage_classification-665021e4a9",
+    "taro_blight_stage_classification-217b16d6c9",
+    "taro_blight_stage_classification-7f855c6c40",
+    "taro_blight_stage_classification-e92afd7179",
+    "taro_blight_stage_classification-a96d5050fb",
+    "taro_blight_stage_classification-792a1bf8aa",
+    "taro_blight_stage_classification-29c9e01288",
+    "taro_blight_stage_classification-8f10e2662a",
+    "taro_blight_stage_classification-7d99bb85ba",
+    "taro_blight_stage_classification-9b6e494949",
+    "taro_blight_stage_classification-dea5a59d5d",
+    "taro_blight_stage_classification-bcaf57c33c",
+    "taro_blight_stage_classification-96f419a082",
+    "taro_blight_stage_classification-63701c053e",
+    "taro_blight_stage_classification-6b49eb0b3f",
+    "taro_blight_stage_classification-1298144ea8",
+    "taro_blight_stage_classification-5fad11d289",
+    "taro_blight_stage_classification-903700ab60",
+    "taro_blight_stage_classification-5e145340b7",
+    "taro_blight_stage_classification-5ec16954ab",
+    "taro_blight_stage_classification-a0ccbe89cf",
+    "taro_blight_stage_classification-82e7d19283",
+    "taro_blight_stage_classification-7aea1f89b5"
+   ],
+   "15": [
+    "taro_blight_stage_classification-3ce29d2a7a",
+    "taro_blight_stage_classification-d145414773",
+    "taro_blight_stage_classification-f5da9a3640",
+    "taro_blight_stage_classification-af5ec58ab2",
+    "taro_blight_stage_classification-4e993df97f",
+    "taro_blight_stage_classification-bd57a7cb63",
+    "taro_blight_stage_classification-eba7b1af34",
+    "taro_blight_stage_classification-d88ec7ae61",
+    "taro_blight_stage_classification-145000f92c",
+    "taro_blight_stage_classification-f5f88d0754",
+    "taro_blight_stage_classification-b6c8627be8",
+    "taro_blight_stage_classification-8b3c822d4e",
+    "taro_blight_stage_classification-1f16d9f4a1",
+    "taro_blight_stage_classification-50e94038fc",
+    "taro_blight_stage_classification-c7c3cd5e85",
+    "taro_blight_stage_classification-5be57aa8c7",
+    "taro_blight_stage_classification-ae3999b4cd",
+    "taro_blight_stage_classification-67aafbc7e3",
+    "taro_blight_stage_classification-b6cc7b80c8",
+    "taro_blight_stage_classification-ca4211ae15",
+    "taro_blight_stage_classification-fe376d2d01",
+    "taro_blight_stage_classification-f4c2951307",
+    "taro_blight_stage_classification-4be0d93f2f",
+    "taro_blight_stage_classification-3f028b2166",
+    "taro_blight_stage_classification-b1bcb7379e",
+    "taro_blight_stage_classification-483ef6340a",
+    "taro_blight_stage_classification-4ddd6cb01d",
+    "taro_blight_stage_classification-665021e4a9",
+    "taro_blight_stage_classification-217b16d6c9",
+    "taro_blight_stage_classification-7f855c6c40",
+    "taro_blight_stage_classification-e92afd7179",
+    "taro_blight_stage_classification-a96d5050fb",
+    "taro_blight_stage_classification-8ea3f1449c",
+    "taro_blight_stage_classification-792a1bf8aa",
+    "taro_blight_stage_classification-29c9e01288",
+    "taro_blight_stage_classification-8f10e2662a",
+    "taro_blight_stage_classification-7d99bb85ba",
+    "taro_blight_stage_classification-9b6e494949",
+    "taro_blight_stage_classification-73590f3ccb",
+    "taro_blight_stage_classification-dea5a59d5d",
+    "taro_blight_stage_classification-de947327a4",
+    "taro_blight_stage_classification-2bf0b14297",
+    "taro_blight_stage_classification-7537bc2bd8",
+    "taro_blight_stage_classification-bcaf57c33c",
+    "taro_blight_stage_classification-96f419a082",
+    "taro_blight_stage_classification-4db56fc55f",
+    "taro_blight_stage_classification-63701c053e",
+    "taro_blight_stage_classification-6b49eb0b3f",
+    "taro_blight_stage_classification-1298144ea8",
+    "taro_blight_stage_classification-b5490ada42",
+    "taro_blight_stage_classification-f3b5a17710",
+    "taro_blight_stage_classification-5fad11d289",
+    "taro_blight_stage_classification-6310cd8820",
+    "taro_blight_stage_classification-903700ab60",
+    "taro_blight_stage_classification-5e145340b7",
+    "taro_blight_stage_classification-5ec16954ab",
+    "taro_blight_stage_classification-a0ccbe89cf",
+    "taro_blight_stage_classification-82e7d19283",
+    "taro_blight_stage_classification-7aea1f89b5",
+    "taro_blight_stage_classification-ae5855712b"
+   ]
+  },
+  "s1": {
+   "5": [
+    "taro_blight_stage_classification-2ccc80703e",
+    "taro_blight_stage_classification-ca41f11ff9",
+    "taro_blight_stage_classification-71ada38e50",
+    "taro_blight_stage_classification-8131038b72",
+    "taro_blight_stage_classification-a7ed91d7ec",
+    "taro_blight_stage_classification-cec4966f14",
+    "taro_blight_stage_classification-cd9cf03455",
+    "taro_blight_stage_classification-5c5a1dc1db",
+    "taro_blight_stage_classification-0b5c9d8729",
+    "taro_blight_stage_classification-2730243037",
+    "taro_blight_stage_classification-c0712d437b",
+    "taro_blight_stage_classification-cd08475903",
+    "taro_blight_stage_classification-f9a292f51b",
+    "taro_blight_stage_classification-f8c1a55d27",
+    "taro_blight_stage_classification-f85b41f010",
+    "taro_blight_stage_classification-4e7f5a2b95",
+    "taro_blight_stage_classification-c96dd9e8f1",
+    "taro_blight_stage_classification-593975af83",
+    "taro_blight_stage_classification-3cdb6fa9df",
+    "taro_blight_stage_classification-d893c46326"
+   ],
+   "10": [
+    "taro_blight_stage_classification-763177e5f0",
+    "taro_blight_stage_classification-2ccc80703e",
+    "taro_blight_stage_classification-461e597bdd",
+    "taro_blight_stage_classification-ca41f11ff9",
+    "taro_blight_stage_classification-71ada38e50",
+    "taro_blight_stage_classification-9be901e3e5",
+    "taro_blight_stage_classification-8131038b72",
+    "taro_blight_stage_classification-a7ed91d7ec",
+    "taro_blight_stage_classification-242359c731",
+    "taro_blight_stage_classification-c70f4b0a7a",
+    "taro_blight_stage_classification-49534d561f",
+    "taro_blight_stage_classification-cec4966f14",
+    "taro_blight_stage_classification-3c7475bc79",
+    "taro_blight_stage_classification-cd9cf03455",
+    "taro_blight_stage_classification-cb19f37aca",
+    "taro_blight_stage_classification-664d41400b",
+    "taro_blight_stage_classification-d1f75ce6a7",
+    "taro_blight_stage_classification-5c5a1dc1db",
+    "taro_blight_stage_classification-0b5c9d8729",
+    "taro_blight_stage_classification-2730243037",
+    "taro_blight_stage_classification-c0712d437b",
+    "taro_blight_stage_classification-cd08475903",
+    "taro_blight_stage_classification-f9a292f51b",
+    "taro_blight_stage_classification-6a65731fa4",
+    "taro_blight_stage_classification-f8c1a55d27",
+    "taro_blight_stage_classification-80a1ca9c38",
+    "taro_blight_stage_classification-f85b41f010",
+    "taro_blight_stage_classification-ac16c1e2e9",
+    "taro_blight_stage_classification-ac3a222ed1",
+    "taro_blight_stage_classification-551bbbd48e",
+    "taro_blight_stage_classification-4e7f5a2b95",
+    "taro_blight_stage_classification-51020b4729",
+    "taro_blight_stage_classification-e02c2aa751",
+    "taro_blight_stage_classification-da2912786b",
+    "taro_blight_stage_classification-c96dd9e8f1",
+    "taro_blight_stage_classification-593975af83",
+    "taro_blight_stage_classification-3571a92215",
+    "taro_blight_stage_classification-aa46d83612",
+    "taro_blight_stage_classification-3cdb6fa9df",
+    "taro_blight_stage_classification-d893c46326"
+   ],
+   "15": [
+    "taro_blight_stage_classification-763177e5f0",
+    "taro_blight_stage_classification-52051e048d",
+    "taro_blight_stage_classification-2ccc80703e",
+    "taro_blight_stage_classification-461e597bdd",
+    "taro_blight_stage_classification-145f195553",
+    "taro_blight_stage_classification-ca41f11ff9",
+    "taro_blight_stage_classification-71ada38e50",
+    "taro_blight_stage_classification-62b2b9e7a3",
+    "taro_blight_stage_classification-9be901e3e5",
+    "taro_blight_stage_classification-8131038b72",
+    "taro_blight_stage_classification-a7ed91d7ec",
+    "taro_blight_stage_classification-242359c731",
+    "taro_blight_stage_classification-6567356174",
+    "taro_blight_stage_classification-c70f4b0a7a",
+    "taro_blight_stage_classification-0585982c1b",
+    "taro_blight_stage_classification-49534d561f",
+    "taro_blight_stage_classification-63d338097f",
+    "taro_blight_stage_classification-cec4966f14",
+    "taro_blight_stage_classification-3c7475bc79",
+    "taro_blight_stage_classification-cd9cf03455",
+    "taro_blight_stage_classification-cb19f37aca",
+    "taro_blight_stage_classification-664d41400b",
+    "taro_blight_stage_classification-f94c5c5270",
+    "taro_blight_stage_classification-d1f75ce6a7",
+    "taro_blight_stage_classification-9e24d7b2c8",
+    "taro_blight_stage_classification-5c5a1dc1db",
+    "taro_blight_stage_classification-b2068a46a1",
+    "taro_blight_stage_classification-0b5c9d8729",
+    "taro_blight_stage_classification-2730243037",
+    "taro_blight_stage_classification-b61beefd55",
+    "taro_blight_stage_classification-4945a9bcd6",
+    "taro_blight_stage_classification-c0712d437b",
+    "taro_blight_stage_classification-cd08475903",
+    "taro_blight_stage_classification-f9a292f51b",
+    "taro_blight_stage_classification-6a65731fa4",
+    "taro_blight_stage_classification-f8c1a55d27",
+    "taro_blight_stage_classification-9b996bc648",
+    "taro_blight_stage_classification-4351207cf2",
+    "taro_blight_stage_classification-de6a774276",
+    "taro_blight_stage_classification-80a1ca9c38",
+    "taro_blight_stage_classification-f85b41f010",
+    "taro_blight_stage_classification-ac16c1e2e9",
+    "taro_blight_stage_classification-ac3a222ed1",
+    "taro_blight_stage_classification-e45c7a033a",
+    "taro_blight_stage_classification-551bbbd48e",
+    "taro_blight_stage_classification-4e7f5a2b95",
+    "taro_blight_stage_classification-51020b4729",
+    "taro_blight_stage_classification-e02c2aa751",
+    "taro_blight_stage_classification-1627888254",
+    "taro_blight_stage_classification-21781acf5a",
+    "taro_blight_stage_classification-da2912786b",
+    "taro_blight_stage_classification-33d00d1ed9",
+    "taro_blight_stage_classification-c96dd9e8f1",
+    "taro_blight_stage_classification-a925694bce",
+    "taro_blight_stage_classification-593975af83",
+    "taro_blight_stage_classification-3571a92215",
+    "taro_blight_stage_classification-aa46d83612",
+    "taro_blight_stage_classification-3cdb6fa9df",
+    "taro_blight_stage_classification-719f19f70d",
+    "taro_blight_stage_classification-d893c46326"
+   ]
+  },
+  "s2": {
+   "5": [
+    "taro_blight_stage_classification-e6857597c4",
+    "taro_blight_stage_classification-4f83645b1f",
+    "taro_blight_stage_classification-b9a662a1fd",
+    "taro_blight_stage_classification-6e6434253b",
+    "taro_blight_stage_classification-e59d28d464",
+    "taro_blight_stage_classification-85d5efece1",
+    "taro_blight_stage_classification-64178df653",
+    "taro_blight_stage_classification-e7e3d54226",
+    "taro_blight_stage_classification-ca9b7a6c12",
+    "taro_blight_stage_classification-8613a29947",
+    "taro_blight_stage_classification-5fcf04ede0",
+    "taro_blight_stage_classification-0440fbc1d0",
+    "taro_blight_stage_classification-1537e5a0c5",
+    "taro_blight_stage_classification-f422b568d7",
+    "taro_blight_stage_classification-f4c8225920",
+    "taro_blight_stage_classification-3da39755ec",
+    "taro_blight_stage_classification-9daa7c6f59",
+    "taro_blight_stage_classification-eba0f9aad2",
+    "taro_blight_stage_classification-0318744b87",
+    "taro_blight_stage_classification-9aba67d439"
+   ],
+   "10": [
+    "taro_blight_stage_classification-1a17d8d0f5",
+    "taro_blight_stage_classification-e6857597c4",
+    "taro_blight_stage_classification-329ba9e384",
+    "taro_blight_stage_classification-28d5967fc6",
+    "taro_blight_stage_classification-4f83645b1f",
+    "taro_blight_stage_classification-eaa8265a64",
+    "taro_blight_stage_classification-b9a662a1fd",
+    "taro_blight_stage_classification-6e6434253b",
+    "taro_blight_stage_classification-e59d28d464",
+    "taro_blight_stage_classification-84de55c432",
+    "taro_blight_stage_classification-be9e2fc303",
+    "taro_blight_stage_classification-7ad5450ee3",
+    "taro_blight_stage_classification-f4c2951307",
+    "taro_blight_stage_classification-85d5efece1",
+    "taro_blight_stage_classification-64178df653",
+    "taro_blight_stage_classification-e7e3d54226",
+    "taro_blight_stage_classification-8f4307266a",
+    "taro_blight_stage_classification-75c4a9129e",
+    "taro_blight_stage_classification-ca9b7a6c12",
+    "taro_blight_stage_classification-8613a29947",
+    "taro_blight_stage_classification-f8d7b6f21e",
+    "taro_blight_stage_classification-5fcf04ede0",
+    "taro_blight_stage_classification-8cc4c03337",
+    "taro_blight_stage_classification-acef8bbff1",
+    "taro_blight_stage_classification-0440fbc1d0",
+    "taro_blight_stage_classification-1537e5a0c5",
+    "taro_blight_stage_classification-c0d03c3800",
+    "taro_blight_stage_classification-f422b568d7",
+    "taro_blight_stage_classification-f4c8225920",
+    "taro_blight_stage_classification-9fe7620c12",
+    "taro_blight_stage_classification-3da39755ec",
+    "taro_blight_stage_classification-9daa7c6f59",
+    "taro_blight_stage_classification-c4c2a6b667",
+    "taro_blight_stage_classification-eba0f9aad2",
+    "taro_blight_stage_classification-8a1f845e13",
+    "taro_blight_stage_classification-201265b7cc",
+    "taro_blight_stage_classification-0318744b87",
+    "taro_blight_stage_classification-9aba67d439",
+    "taro_blight_stage_classification-7897442dca",
+    "taro_blight_stage_classification-5dec15cced"
+   ],
+   "15": [
+    "taro_blight_stage_classification-5c13380404",
+    "taro_blight_stage_classification-1a17d8d0f5",
+    "taro_blight_stage_classification-e6857597c4",
+    "taro_blight_stage_classification-329ba9e384",
+    "taro_blight_stage_classification-28d5967fc6",
+    "taro_blight_stage_classification-4f83645b1f",
+    "taro_blight_stage_classification-dbe7c2bc69",
+    "taro_blight_stage_classification-eaa8265a64",
+    "taro_blight_stage_classification-b9a662a1fd",
+    "taro_blight_stage_classification-a97f5b1a0c",
+    "taro_blight_stage_classification-6e6434253b",
+    "taro_blight_stage_classification-41647393ff",
+    "taro_blight_stage_classification-e59d28d464",
+    "taro_blight_stage_classification-84de55c432",
+    "taro_blight_stage_classification-dfaf77e99e",
+    "taro_blight_stage_classification-be9e2fc303",
+    "taro_blight_stage_classification-e453e94335",
+    "taro_blight_stage_classification-aac95cdd54",
+    "taro_blight_stage_classification-7ad5450ee3",
+    "taro_blight_stage_classification-f4c2951307",
+    "taro_blight_stage_classification-85d5efece1",
+    "taro_blight_stage_classification-bf0f0f513b",
+    "taro_blight_stage_classification-64178df653",
+    "taro_blight_stage_classification-e7e3d54226",
+    "taro_blight_stage_classification-88da864a09",
+    "taro_blight_stage_classification-4dc6bb6fe6",
+    "taro_blight_stage_classification-8f4307266a",
+    "taro_blight_stage_classification-75c4a9129e",
+    "taro_blight_stage_classification-ca9b7a6c12",
+    "taro_blight_stage_classification-8613a29947",
+    "taro_blight_stage_classification-f8d7b6f21e",
+    "taro_blight_stage_classification-5fcf04ede0",
+    "taro_blight_stage_classification-8cc4c03337",
+    "taro_blight_stage_classification-f35d5dae0c",
+    "taro_blight_stage_classification-acef8bbff1",
+    "taro_blight_stage_classification-0440fbc1d0",
+    "taro_blight_stage_classification-b09cf2be4d",
+    "taro_blight_stage_classification-d61f9d0bfc",
+    "taro_blight_stage_classification-1537e5a0c5",
+    "taro_blight_stage_classification-8a517fc59c",
+    "taro_blight_stage_classification-e59a5c6f08",
+    "taro_blight_stage_classification-c0d03c3800",
+    "taro_blight_stage_classification-f422b568d7",
+    "taro_blight_stage_classification-f4c8225920",
+    "taro_blight_stage_classification-9fe7620c12",
+    "taro_blight_stage_classification-3da39755ec",
+    "taro_blight_stage_classification-458653ce2a",
+    "taro_blight_stage_classification-9daa7c6f59",
+    "taro_blight_stage_classification-c4c2a6b667",
+    "taro_blight_stage_classification-eba0f9aad2",
+    "taro_blight_stage_classification-8a1f845e13",
+    "taro_blight_stage_classification-93e06e1b44",
+    "taro_blight_stage_classification-201265b7cc",
+    "taro_blight_stage_classification-0318744b87",
+    "taro_blight_stage_classification-9aba67d439",
+    "taro_blight_stage_classification-7897442dca",
+    "taro_blight_stage_classification-75d1d592c1",
+    "taro_blight_stage_classification-e1e2557fa6",
+    "taro_blight_stage_classification-5dec15cced",
+    "taro_blight_stage_classification-c5b9d69d87"
+   ]
+  }
+ }
+}

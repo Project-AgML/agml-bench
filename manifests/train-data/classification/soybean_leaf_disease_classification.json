@@ -1,0 +1,3986 @@
+{
+ "name": "soybean_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/soybean_leaf_disease_classification",
+ "hf_sha": "254a490245a7a7c706a55804231ba26547750517",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T20:15:44+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial leaf Blight",
+   "Dry_leaf",
+   "Healthy",
+   "Root_images",
+   "Septoria_Brown_Spot",
+   "Vein Necrosis"
+  ],
+  "indexed_rows": 1176
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "soybean_leaf_disease_classification-d95e6cb542",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-be1ca4b773",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cb54f34554",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8d5e3241da",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ec25a0c127",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Root_images"
+   ],
+   "ann": {
+    "label": "Root_images"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-06a69da51b",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-eeceea31e6",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d1d71eecc5",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b731df9a90",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-29c81de88a",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-07f1d4edd4",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-7e31b3a4d6",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-384c26c363",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-18efe59601",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f84e163ee1",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-669209226d",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2faa8a6832",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-6d00efe8ae",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-50d31ddf3b",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e41152b420",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-bdd671ee2c",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-42b5a998ee",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-66a0420d95",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e78ce4e155",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ea2325c064",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-55cb8ab050",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-435c4a569e",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-be645cbc2a",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d922c44e4e",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f5cb119fa0",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-daf1aa4b4b",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-997c804472",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cded8ebbaf",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 138,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-08945405ae",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 140,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ffde3ed5ce",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2c30a31260",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cc646abec2",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-16d6440ad1",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0a2b3a4501",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f97dd3ca76",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-c822eb49ba",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-7444643f73",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 175,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-93af17cd66",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a59cd7a015",
+   "ref": {
+    "file": "data/train-00000-of-00006.parquet",
+    "row": 185,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-71ec956316",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-5b8f956ef7",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-6118000814",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-1ebf46b5fe",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial leaf Blight"
+   ],
+   "ann": {
+    "label": "Bacterial leaf Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-66507b13ab",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b7b25241ce",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2a5f69c674",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-034a976c35",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-87af17d426",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0a41f106b5",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9b2abfa98f",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-52248b43da",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0284449b5a",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-afb663c28a",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a30a0cf216",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-15204939d3",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ab5eee05ed",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-68edd666e1",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8548e6a1d2",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-98779680da",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b0ed808275",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8bed6aa1fc",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-efbd198f5a",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8b1a44dcf4",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4a47f339c8",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e7369ac67c",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a60796e7d3",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-c0d64688d3",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 153,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4dfb0475c2",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-efefcda1d0",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b4a9e6a718",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b8f8bbb3d4",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-24a928c5d3",
+   "ref": {
+    "file": "data/train-00001-of-00006.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-765a52b59c",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-33686072d6",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-5e67873d1f",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-346f28d48d",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2609ca9493",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-85c7283a43",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d348d31ebd",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-42879a555a",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d3f4088242",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e824d3f6f6",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2e659bfb01",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ca410684de",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e3389df234",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d625cc7c20",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Septoria_Brown_Spot"
+   ],
+   "ann": {
+    "label": "Septoria_Brown_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-fe61d6a0b2",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3ed8dc23ac",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-75bb149206",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-03b96efe58",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-c003c181c7",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 160,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2593d37453",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 163,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9b9dd51b76",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 167,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-95c75128b3",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 170,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-751195661c",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-457c650876",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f79a44ac13",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-6b8679fe24",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-af27d7b4e8",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 187,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-09075d1442",
+   "ref": {
+    "file": "data/train-00002-of-00006.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f7f303f096",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ecc80591b5",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-39eabed340",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-35df9fbbd9",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ebdb8aa8ba",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a337b228ff",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-892ef7eae9",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-051a781cb4",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d94a774f69",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a1c033ce90",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b2498b8d68",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-356d489088",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e3ed1ee39f",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b8b657ba74",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0e75c539f8",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-889f129ae0",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-24edcb9aed",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ed644f44cb",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-580abb82c7",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f7dd86e8e2",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-223851cf56",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-fc7484bcb1",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Vein Necrosis"
+   ],
+   "ann": {
+    "label": "Vein Necrosis"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a93f52dcde",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f67fd6af41",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d5c7c8fc0e",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cb1a3fa62b",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4f13b52a47",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4f246f5db9",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4534faad74",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a90a96c3f3",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-06ffbe4b4c",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d7835c187b",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d3eb2d69cf",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 149,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0465473508",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d223fbd369",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-c84197485d",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-94c9ff7d30",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-ccb0a5ca48",
+   "ref": {
+    "file": "data/train-00003-of-00006.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9cf62af436",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-8196ccd631",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0968a85fc1",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d5f2981145",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cf1b295ceb",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-61fd83decf",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f26aac9875",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a7fc95f916",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f6fa570314",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-99aeb46d5a",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-97a15799af",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-c84867e7aa",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-90033426d4",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 80,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3a56302f9f",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e3828a39f8",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e86d8adc9a",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0cd348ba48",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-960f2bd3be",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f18221add3",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3667c8bbd8",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3191080c45",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4433a715c1",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-92b4525330",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 127,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a178bde5e9",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f4f745b58d",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f462d5e401",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-759e852e39",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-722bd16a3c",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 150,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3f7731d85f",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 161,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-d714b68a57",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-1dc9bd7545",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 174,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-b6d16b8d1a",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 177,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-bb3a5ae90c",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 191,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e60fc8ee26",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-3779ad64c0",
+   "ref": {
+    "file": "data/train-00004-of-00006.parquet",
+    "row": 195,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0a3ec42e13",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0180660efb",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-238073e845",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-960f943ec4",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-7ccb7ce190",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2adab0bbdc",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9de10f3dcf",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-809b9af11a",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-244a03ae72",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-00e1e9e7ee",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-e401c68a25",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-13452c4ff2",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-838224a269",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9dec50614c",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-cacd976258",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-20ca1f2813",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a5c617c23a",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a6b1c34a57",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 96,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0d6213f89c",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-290065329a",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f0f616e630",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4d1659a34c",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-fd32abd7f5",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-4593ce1d6e",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-566b67a942",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2c048b7ab6",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-fd727e85d6",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 139,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0ae1fb93cd",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-2a98cb24dd",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 147,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-be32d015e4",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-218ef5baa6",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 159,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-6a96498884",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-f7cfa406b3",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-9dca79794b",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-1878ee8e26",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 186,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-a84583b1f5",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 188,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "soybean_leaf_disease_classification-0cd3c645f0",
+   "ref": {
+    "file": "data/train-00005-of-00006.parquet",
+    "row": 193,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry_leaf"
+   ],
+   "ann": {
+    "label": "Dry_leaf"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-d1d71eecc5",
+    "soybean_leaf_disease_classification-07f1d4edd4",
+    "soybean_leaf_disease_classification-384c26c363",
+    "soybean_leaf_disease_classification-f84e163ee1",
+    "soybean_leaf_disease_classification-ea2325c064",
+    "soybean_leaf_disease_classification-4a47f339c8",
+    "soybean_leaf_disease_classification-b4a9e6a718",
+    "soybean_leaf_disease_classification-33686072d6",
+    "soybean_leaf_disease_classification-42879a555a",
+    "soybean_leaf_disease_classification-d625cc7c20",
+    "soybean_leaf_disease_classification-2593d37453",
+    "soybean_leaf_disease_classification-ecc80591b5",
+    "soybean_leaf_disease_classification-0e75c539f8",
+    "soybean_leaf_disease_classification-889f129ae0",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-cb1a3fa62b",
+    "soybean_leaf_disease_classification-d223fbd369",
+    "soybean_leaf_disease_classification-8196ccd631",
+    "soybean_leaf_disease_classification-d5f2981145",
+    "soybean_leaf_disease_classification-3191080c45",
+    "soybean_leaf_disease_classification-2adab0bbdc",
+    "soybean_leaf_disease_classification-838224a269",
+    "soybean_leaf_disease_classification-9dec50614c",
+    "soybean_leaf_disease_classification-fd32abd7f5",
+    "soybean_leaf_disease_classification-be32d015e4"
+   ],
+   "10": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-eeceea31e6",
+    "soybean_leaf_disease_classification-d1d71eecc5",
+    "soybean_leaf_disease_classification-07f1d4edd4",
+    "soybean_leaf_disease_classification-384c26c363",
+    "soybean_leaf_disease_classification-f84e163ee1",
+    "soybean_leaf_disease_classification-2faa8a6832",
+    "soybean_leaf_disease_classification-50d31ddf3b",
+    "soybean_leaf_disease_classification-ea2325c064",
+    "soybean_leaf_disease_classification-c822eb49ba",
+    "soybean_leaf_disease_classification-93af17cd66",
+    "soybean_leaf_disease_classification-b7b25241ce",
+    "soybean_leaf_disease_classification-52248b43da",
+    "soybean_leaf_disease_classification-0284449b5a",
+    "soybean_leaf_disease_classification-afb663c28a",
+    "soybean_leaf_disease_classification-4a47f339c8",
+    "soybean_leaf_disease_classification-b4a9e6a718",
+    "soybean_leaf_disease_classification-33686072d6",
+    "soybean_leaf_disease_classification-85c7283a43",
+    "soybean_leaf_disease_classification-42879a555a",
+    "soybean_leaf_disease_classification-d625cc7c20",
+    "soybean_leaf_disease_classification-2593d37453",
+    "soybean_leaf_disease_classification-09075d1442",
+    "soybean_leaf_disease_classification-f7f303f096",
+    "soybean_leaf_disease_classification-ecc80591b5",
+    "soybean_leaf_disease_classification-ebdb8aa8ba",
+    "soybean_leaf_disease_classification-d94a774f69",
+    "soybean_leaf_disease_classification-b8b657ba74",
+    "soybean_leaf_disease_classification-0e75c539f8",
+    "soybean_leaf_disease_classification-889f129ae0",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-cb1a3fa62b",
+    "soybean_leaf_disease_classification-a90a96c3f3",
+    "soybean_leaf_disease_classification-d223fbd369",
+    "soybean_leaf_disease_classification-8196ccd631",
+    "soybean_leaf_disease_classification-d5f2981145",
+    "soybean_leaf_disease_classification-61fd83decf",
+    "soybean_leaf_disease_classification-c84867e7aa",
+    "soybean_leaf_disease_classification-f18221add3",
+    "soybean_leaf_disease_classification-3191080c45",
+    "soybean_leaf_disease_classification-92b4525330",
+    "soybean_leaf_disease_classification-2adab0bbdc",
+    "soybean_leaf_disease_classification-9de10f3dcf",
+    "soybean_leaf_disease_classification-838224a269",
+    "soybean_leaf_disease_classification-9dec50614c",
+    "soybean_leaf_disease_classification-fd32abd7f5",
+    "soybean_leaf_disease_classification-4593ce1d6e",
+    "soybean_leaf_disease_classification-566b67a942",
+    "soybean_leaf_disease_classification-be32d015e4",
+    "soybean_leaf_disease_classification-6a96498884",
+    "soybean_leaf_disease_classification-1878ee8e26"
+   ],
+   "15": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-eeceea31e6",
+    "soybean_leaf_disease_classification-d1d71eecc5",
+    "soybean_leaf_disease_classification-07f1d4edd4",
+    "soybean_leaf_disease_classification-384c26c363",
+    "soybean_leaf_disease_classification-f84e163ee1",
+    "soybean_leaf_disease_classification-669209226d",
+    "soybean_leaf_disease_classification-2faa8a6832",
+    "soybean_leaf_disease_classification-50d31ddf3b",
+    "soybean_leaf_disease_classification-ea2325c064",
+    "soybean_leaf_disease_classification-435c4a569e",
+    "soybean_leaf_disease_classification-be645cbc2a",
+    "soybean_leaf_disease_classification-c822eb49ba",
+    "soybean_leaf_disease_classification-7444643f73",
+    "soybean_leaf_disease_classification-93af17cd66",
+    "soybean_leaf_disease_classification-a59cd7a015",
+    "soybean_leaf_disease_classification-66507b13ab",
+    "soybean_leaf_disease_classification-b7b25241ce",
+    "soybean_leaf_disease_classification-0a41f106b5",
+    "soybean_leaf_disease_classification-52248b43da",
+    "soybean_leaf_disease_classification-0284449b5a",
+    "soybean_leaf_disease_classification-afb663c28a",
+    "soybean_leaf_disease_classification-8bed6aa1fc",
+    "soybean_leaf_disease_classification-8b1a44dcf4",
+    "soybean_leaf_disease_classification-4a47f339c8",
+    "soybean_leaf_disease_classification-e7369ac67c",
+    "soybean_leaf_disease_classification-b4a9e6a718",
+    "soybean_leaf_disease_classification-33686072d6",
+    "soybean_leaf_disease_classification-85c7283a43",
+    "soybean_leaf_disease_classification-42879a555a",
+    "soybean_leaf_disease_classification-d625cc7c20",
+    "soybean_leaf_disease_classification-3ed8dc23ac",
+    "soybean_leaf_disease_classification-75bb149206",
+    "soybean_leaf_disease_classification-2593d37453",
+    "soybean_leaf_disease_classification-457c650876",
+    "soybean_leaf_disease_classification-f79a44ac13",
+    "soybean_leaf_disease_classification-09075d1442",
+    "soybean_leaf_disease_classification-f7f303f096",
+    "soybean_leaf_disease_classification-ecc80591b5",
+    "soybean_leaf_disease_classification-ebdb8aa8ba",
+    "soybean_leaf_disease_classification-d94a774f69",
+    "soybean_leaf_disease_classification-b8b657ba74",
+    "soybean_leaf_disease_classification-0e75c539f8",
+    "soybean_leaf_disease_classification-889f129ae0",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-f7dd86e8e2",
+    "soybean_leaf_disease_classification-cb1a3fa62b",
+    "soybean_leaf_disease_classification-a90a96c3f3",
+    "soybean_leaf_disease_classification-0465473508",
+    "soybean_leaf_disease_classification-d223fbd369",
+    "soybean_leaf_disease_classification-8196ccd631",
+    "soybean_leaf_disease_classification-d5f2981145",
+    "soybean_leaf_disease_classification-61fd83decf",
+    "soybean_leaf_disease_classification-97a15799af",
+    "soybean_leaf_disease_classification-c84867e7aa",
+    "soybean_leaf_disease_classification-0cd348ba48",
+    "soybean_leaf_disease_classification-960f2bd3be",
+    "soybean_leaf_disease_classification-f18221add3",
+    "soybean_leaf_disease_classification-3191080c45",
+    "soybean_leaf_disease_classification-92b4525330",
+    "soybean_leaf_disease_classification-722bd16a3c",
+    "soybean_leaf_disease_classification-b6d16b8d1a",
+    "soybean_leaf_disease_classification-2adab0bbdc",
+    "soybean_leaf_disease_classification-9de10f3dcf",
+    "soybean_leaf_disease_classification-838224a269",
+    "soybean_leaf_disease_classification-9dec50614c",
+    "soybean_leaf_disease_classification-cacd976258",
+    "soybean_leaf_disease_classification-0d6213f89c",
+    "soybean_leaf_disease_classification-fd32abd7f5",
+    "soybean_leaf_disease_classification-4593ce1d6e",
+    "soybean_leaf_disease_classification-566b67a942",
+    "soybean_leaf_disease_classification-be32d015e4",
+    "soybean_leaf_disease_classification-6a96498884",
+    "soybean_leaf_disease_classification-9dca79794b",
+    "soybean_leaf_disease_classification-1878ee8e26",
+    "soybean_leaf_disease_classification-a84583b1f5"
+   ]
+  },
+  "s1": {
+   "5": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-6d00efe8ae",
+    "soybean_leaf_disease_classification-e41152b420",
+    "soybean_leaf_disease_classification-2c30a31260",
+    "soybean_leaf_disease_classification-a59cd7a015",
+    "soybean_leaf_disease_classification-1ebf46b5fe",
+    "soybean_leaf_disease_classification-efbd198f5a",
+    "soybean_leaf_disease_classification-efefcda1d0",
+    "soybean_leaf_disease_classification-d3f4088242",
+    "soybean_leaf_disease_classification-ca410684de",
+    "soybean_leaf_disease_classification-e3389df234",
+    "soybean_leaf_disease_classification-03b96efe58",
+    "soybean_leaf_disease_classification-95c75128b3",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-a1c033ce90",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-4f246f5db9",
+    "soybean_leaf_disease_classification-cf1b295ceb",
+    "soybean_leaf_disease_classification-a7fc95f916",
+    "soybean_leaf_disease_classification-e86d8adc9a",
+    "soybean_leaf_disease_classification-f4f745b58d",
+    "soybean_leaf_disease_classification-0180660efb",
+    "soybean_leaf_disease_classification-13452c4ff2",
+    "soybean_leaf_disease_classification-20ca1f2813",
+    "soybean_leaf_disease_classification-a5c617c23a",
+    "soybean_leaf_disease_classification-2a98cb24dd"
+   ],
+   "10": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-7e31b3a4d6",
+    "soybean_leaf_disease_classification-6d00efe8ae",
+    "soybean_leaf_disease_classification-e41152b420",
+    "soybean_leaf_disease_classification-997c804472",
+    "soybean_leaf_disease_classification-ffde3ed5ce",
+    "soybean_leaf_disease_classification-2c30a31260",
+    "soybean_leaf_disease_classification-0a2b3a4501",
+    "soybean_leaf_disease_classification-f97dd3ca76",
+    "soybean_leaf_disease_classification-a59cd7a015",
+    "soybean_leaf_disease_classification-1ebf46b5fe",
+    "soybean_leaf_disease_classification-2a5f69c674",
+    "soybean_leaf_disease_classification-034a976c35",
+    "soybean_leaf_disease_classification-efbd198f5a",
+    "soybean_leaf_disease_classification-c0d64688d3",
+    "soybean_leaf_disease_classification-efefcda1d0",
+    "soybean_leaf_disease_classification-346f28d48d",
+    "soybean_leaf_disease_classification-85c7283a43",
+    "soybean_leaf_disease_classification-d3f4088242",
+    "soybean_leaf_disease_classification-ca410684de",
+    "soybean_leaf_disease_classification-e3389df234",
+    "soybean_leaf_disease_classification-03b96efe58",
+    "soybean_leaf_disease_classification-95c75128b3",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-af27d7b4e8",
+    "soybean_leaf_disease_classification-35df9fbbd9",
+    "soybean_leaf_disease_classification-a1c033ce90",
+    "soybean_leaf_disease_classification-24edcb9aed",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-580abb82c7",
+    "soybean_leaf_disease_classification-f7dd86e8e2",
+    "soybean_leaf_disease_classification-a93f52dcde",
+    "soybean_leaf_disease_classification-4f246f5db9",
+    "soybean_leaf_disease_classification-d7835c187b",
+    "soybean_leaf_disease_classification-c84197485d",
+    "soybean_leaf_disease_classification-9cf62af436",
+    "soybean_leaf_disease_classification-cf1b295ceb",
+    "soybean_leaf_disease_classification-a7fc95f916",
+    "soybean_leaf_disease_classification-e3828a39f8",
+    "soybean_leaf_disease_classification-e86d8adc9a",
+    "soybean_leaf_disease_classification-f4f745b58d",
+    "soybean_leaf_disease_classification-bb3a5ae90c",
+    "soybean_leaf_disease_classification-0180660efb",
+    "soybean_leaf_disease_classification-960f943ec4",
+    "soybean_leaf_disease_classification-7ccb7ce190",
+    "soybean_leaf_disease_classification-809b9af11a",
+    "soybean_leaf_disease_classification-13452c4ff2",
+    "soybean_leaf_disease_classification-20ca1f2813",
+    "soybean_leaf_disease_classification-a5c617c23a",
+    "soybean_leaf_disease_classification-2c048b7ab6",
+    "soybean_leaf_disease_classification-2a98cb24dd"
+   ],
+   "15": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-06a69da51b",
+    "soybean_leaf_disease_classification-7e31b3a4d6",
+    "soybean_leaf_disease_classification-18efe59601",
+    "soybean_leaf_disease_classification-6d00efe8ae",
+    "soybean_leaf_disease_classification-e41152b420",
+    "soybean_leaf_disease_classification-e78ce4e155",
+    "soybean_leaf_disease_classification-55cb8ab050",
+    "soybean_leaf_disease_classification-997c804472",
+    "soybean_leaf_disease_classification-08945405ae",
+    "soybean_leaf_disease_classification-ffde3ed5ce",
+    "soybean_leaf_disease_classification-2c30a31260",
+    "soybean_leaf_disease_classification-0a2b3a4501",
+    "soybean_leaf_disease_classification-f97dd3ca76",
+    "soybean_leaf_disease_classification-a59cd7a015",
+    "soybean_leaf_disease_classification-1ebf46b5fe",
+    "soybean_leaf_disease_classification-2a5f69c674",
+    "soybean_leaf_disease_classification-034a976c35",
+    "soybean_leaf_disease_classification-52248b43da",
+    "soybean_leaf_disease_classification-15204939d3",
+    "soybean_leaf_disease_classification-68edd666e1",
+    "soybean_leaf_disease_classification-efbd198f5a",
+    "soybean_leaf_disease_classification-c0d64688d3",
+    "soybean_leaf_disease_classification-4dfb0475c2",
+    "soybean_leaf_disease_classification-efefcda1d0",
+    "soybean_leaf_disease_classification-5e67873d1f",
+    "soybean_leaf_disease_classification-346f28d48d",
+    "soybean_leaf_disease_classification-85c7283a43",
+    "soybean_leaf_disease_classification-d3f4088242",
+    "soybean_leaf_disease_classification-ca410684de",
+    "soybean_leaf_disease_classification-e3389df234",
+    "soybean_leaf_disease_classification-fe61d6a0b2",
+    "soybean_leaf_disease_classification-03b96efe58",
+    "soybean_leaf_disease_classification-95c75128b3",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-6b8679fe24",
+    "soybean_leaf_disease_classification-af27d7b4e8",
+    "soybean_leaf_disease_classification-39eabed340",
+    "soybean_leaf_disease_classification-35df9fbbd9",
+    "soybean_leaf_disease_classification-a1c033ce90",
+    "soybean_leaf_disease_classification-b2498b8d68",
+    "soybean_leaf_disease_classification-0e75c539f8",
+    "soybean_leaf_disease_classification-24edcb9aed",
+    "soybean_leaf_disease_classification-ed644f44cb",
+    "soybean_leaf_disease_classification-580abb82c7",
+    "soybean_leaf_disease_classification-f7dd86e8e2",
+    "soybean_leaf_disease_classification-a93f52dcde",
+    "soybean_leaf_disease_classification-4f246f5db9",
+    "soybean_leaf_disease_classification-4534faad74",
+    "soybean_leaf_disease_classification-d7835c187b",
+    "soybean_leaf_disease_classification-c84197485d",
+    "soybean_leaf_disease_classification-9cf62af436",
+    "soybean_leaf_disease_classification-cf1b295ceb",
+    "soybean_leaf_disease_classification-a7fc95f916",
+    "soybean_leaf_disease_classification-99aeb46d5a",
+    "soybean_leaf_disease_classification-90033426d4",
+    "soybean_leaf_disease_classification-3a56302f9f",
+    "soybean_leaf_disease_classification-e3828a39f8",
+    "soybean_leaf_disease_classification-e86d8adc9a",
+    "soybean_leaf_disease_classification-a178bde5e9",
+    "soybean_leaf_disease_classification-f4f745b58d",
+    "soybean_leaf_disease_classification-bb3a5ae90c",
+    "soybean_leaf_disease_classification-e60fc8ee26",
+    "soybean_leaf_disease_classification-3779ad64c0",
+    "soybean_leaf_disease_classification-0180660efb",
+    "soybean_leaf_disease_classification-960f943ec4",
+    "soybean_leaf_disease_classification-7ccb7ce190",
+    "soybean_leaf_disease_classification-809b9af11a",
+    "soybean_leaf_disease_classification-00e1e9e7ee",
+    "soybean_leaf_disease_classification-13452c4ff2",
+    "soybean_leaf_disease_classification-20ca1f2813",
+    "soybean_leaf_disease_classification-a5c617c23a",
+    "soybean_leaf_disease_classification-2c048b7ab6",
+    "soybean_leaf_disease_classification-2a98cb24dd",
+    "soybean_leaf_disease_classification-be32d015e4",
+    "soybean_leaf_disease_classification-0cd3c645f0"
+   ]
+  },
+  "s2": {
+   "5": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-42b5a998ee",
+    "soybean_leaf_disease_classification-d922c44e4e",
+    "soybean_leaf_disease_classification-daf1aa4b4b",
+    "soybean_leaf_disease_classification-cded8ebbaf",
+    "soybean_leaf_disease_classification-7444643f73",
+    "soybean_leaf_disease_classification-87af17d426",
+    "soybean_leaf_disease_classification-9b2abfa98f",
+    "soybean_leaf_disease_classification-8548e6a1d2",
+    "soybean_leaf_disease_classification-765a52b59c",
+    "soybean_leaf_disease_classification-d348d31ebd",
+    "soybean_leaf_disease_classification-c003c181c7",
+    "soybean_leaf_disease_classification-9b9dd51b76",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-356d489088",
+    "soybean_leaf_disease_classification-fc7484bcb1",
+    "soybean_leaf_disease_classification-f67fd6af41",
+    "soybean_leaf_disease_classification-06ffbe4b4c",
+    "soybean_leaf_disease_classification-d3eb2d69cf",
+    "soybean_leaf_disease_classification-0968a85fc1",
+    "soybean_leaf_disease_classification-f26aac9875",
+    "soybean_leaf_disease_classification-a6b1c34a57",
+    "soybean_leaf_disease_classification-290065329a",
+    "soybean_leaf_disease_classification-f0f616e630",
+    "soybean_leaf_disease_classification-4d1659a34c",
+    "soybean_leaf_disease_classification-fd727e85d6"
+   ],
+   "10": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-b731df9a90",
+    "soybean_leaf_disease_classification-bdd671ee2c",
+    "soybean_leaf_disease_classification-42b5a998ee",
+    "soybean_leaf_disease_classification-d922c44e4e",
+    "soybean_leaf_disease_classification-daf1aa4b4b",
+    "soybean_leaf_disease_classification-cded8ebbaf",
+    "soybean_leaf_disease_classification-cc646abec2",
+    "soybean_leaf_disease_classification-16d6440ad1",
+    "soybean_leaf_disease_classification-7444643f73",
+    "soybean_leaf_disease_classification-71ec956316",
+    "soybean_leaf_disease_classification-87af17d426",
+    "soybean_leaf_disease_classification-9b2abfa98f",
+    "soybean_leaf_disease_classification-a30a0cf216",
+    "soybean_leaf_disease_classification-8548e6a1d2",
+    "soybean_leaf_disease_classification-b0ed808275",
+    "soybean_leaf_disease_classification-a60796e7d3",
+    "soybean_leaf_disease_classification-b8f8bbb3d4",
+    "soybean_leaf_disease_classification-24a928c5d3",
+    "soybean_leaf_disease_classification-765a52b59c",
+    "soybean_leaf_disease_classification-d348d31ebd",
+    "soybean_leaf_disease_classification-c003c181c7",
+    "soybean_leaf_disease_classification-9b9dd51b76",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-09075d1442",
+    "soybean_leaf_disease_classification-892ef7eae9",
+    "soybean_leaf_disease_classification-d94a774f69",
+    "soybean_leaf_disease_classification-356d489088",
+    "soybean_leaf_disease_classification-e3ed1ee39f",
+    "soybean_leaf_disease_classification-f7dd86e8e2",
+    "soybean_leaf_disease_classification-fc7484bcb1",
+    "soybean_leaf_disease_classification-f67fd6af41",
+    "soybean_leaf_disease_classification-d5c7c8fc0e",
+    "soybean_leaf_disease_classification-4f13b52a47",
+    "soybean_leaf_disease_classification-06ffbe4b4c",
+    "soybean_leaf_disease_classification-d3eb2d69cf",
+    "soybean_leaf_disease_classification-94c9ff7d30",
+    "soybean_leaf_disease_classification-0968a85fc1",
+    "soybean_leaf_disease_classification-f26aac9875",
+    "soybean_leaf_disease_classification-f6fa570314",
+    "soybean_leaf_disease_classification-759e852e39",
+    "soybean_leaf_disease_classification-238073e845",
+    "soybean_leaf_disease_classification-e401c68a25",
+    "soybean_leaf_disease_classification-a6b1c34a57",
+    "soybean_leaf_disease_classification-290065329a",
+    "soybean_leaf_disease_classification-f0f616e630",
+    "soybean_leaf_disease_classification-4d1659a34c",
+    "soybean_leaf_disease_classification-fd727e85d6",
+    "soybean_leaf_disease_classification-0ae1fb93cd",
+    "soybean_leaf_disease_classification-218ef5baa6",
+    "soybean_leaf_disease_classification-1878ee8e26"
+   ],
+   "15": [
+    "soybean_leaf_disease_classification-d95e6cb542",
+    "soybean_leaf_disease_classification-be1ca4b773",
+    "soybean_leaf_disease_classification-cb54f34554",
+    "soybean_leaf_disease_classification-8d5e3241da",
+    "soybean_leaf_disease_classification-ec25a0c127",
+    "soybean_leaf_disease_classification-b731df9a90",
+    "soybean_leaf_disease_classification-29c81de88a",
+    "soybean_leaf_disease_classification-bdd671ee2c",
+    "soybean_leaf_disease_classification-42b5a998ee",
+    "soybean_leaf_disease_classification-66a0420d95",
+    "soybean_leaf_disease_classification-d922c44e4e",
+    "soybean_leaf_disease_classification-f5cb119fa0",
+    "soybean_leaf_disease_classification-daf1aa4b4b",
+    "soybean_leaf_disease_classification-cded8ebbaf",
+    "soybean_leaf_disease_classification-cc646abec2",
+    "soybean_leaf_disease_classification-16d6440ad1",
+    "soybean_leaf_disease_classification-7444643f73",
+    "soybean_leaf_disease_classification-71ec956316",
+    "soybean_leaf_disease_classification-5b8f956ef7",
+    "soybean_leaf_disease_classification-6118000814",
+    "soybean_leaf_disease_classification-87af17d426",
+    "soybean_leaf_disease_classification-9b2abfa98f",
+    "soybean_leaf_disease_classification-a30a0cf216",
+    "soybean_leaf_disease_classification-ab5eee05ed",
+    "soybean_leaf_disease_classification-8548e6a1d2",
+    "soybean_leaf_disease_classification-98779680da",
+    "soybean_leaf_disease_classification-b0ed808275",
+    "soybean_leaf_disease_classification-a60796e7d3",
+    "soybean_leaf_disease_classification-b8f8bbb3d4",
+    "soybean_leaf_disease_classification-24a928c5d3",
+    "soybean_leaf_disease_classification-765a52b59c",
+    "soybean_leaf_disease_classification-2609ca9493",
+    "soybean_leaf_disease_classification-d348d31ebd",
+    "soybean_leaf_disease_classification-e824d3f6f6",
+    "soybean_leaf_disease_classification-2e659bfb01",
+    "soybean_leaf_disease_classification-75bb149206",
+    "soybean_leaf_disease_classification-c003c181c7",
+    "soybean_leaf_disease_classification-9b9dd51b76",
+    "soybean_leaf_disease_classification-751195661c",
+    "soybean_leaf_disease_classification-09075d1442",
+    "soybean_leaf_disease_classification-39eabed340",
+    "soybean_leaf_disease_classification-a337b228ff",
+    "soybean_leaf_disease_classification-892ef7eae9",
+    "soybean_leaf_disease_classification-051a781cb4",
+    "soybean_leaf_disease_classification-d94a774f69",
+    "soybean_leaf_disease_classification-356d489088",
+    "soybean_leaf_disease_classification-e3ed1ee39f",
+    "soybean_leaf_disease_classification-f7dd86e8e2",
+    "soybean_leaf_disease_classification-223851cf56",
+    "soybean_leaf_disease_classification-fc7484bcb1",
+    "soybean_leaf_disease_classification-f67fd6af41",
+    "soybean_leaf_disease_classification-d5c7c8fc0e",
+    "soybean_leaf_disease_classification-4f13b52a47",
+    "soybean_leaf_disease_classification-06ffbe4b4c",
+    "soybean_leaf_disease_classification-d3eb2d69cf",
+    "soybean_leaf_disease_classification-94c9ff7d30",
+    "soybean_leaf_disease_classification-ccb0a5ca48",
+    "soybean_leaf_disease_classification-0968a85fc1",
+    "soybean_leaf_disease_classification-f26aac9875",
+    "soybean_leaf_disease_classification-f6fa570314",
+    "soybean_leaf_disease_classification-3667c8bbd8",
+    "soybean_leaf_disease_classification-4433a715c1",
+    "soybean_leaf_disease_classification-f462d5e401",
+    "soybean_leaf_disease_classification-759e852e39",
+    "soybean_leaf_disease_classification-3f7731d85f",
+    "soybean_leaf_disease_classification-d714b68a57",
+    "soybean_leaf_disease_classification-1dc9bd7545",
+    "soybean_leaf_disease_classification-0a3ec42e13",
+    "soybean_leaf_disease_classification-238073e845",
+    "soybean_leaf_disease_classification-244a03ae72",
+    "soybean_leaf_disease_classification-e401c68a25",
+    "soybean_leaf_disease_classification-a6b1c34a57",
+    "soybean_leaf_disease_classification-290065329a",
+    "soybean_leaf_disease_classification-f0f616e630",
+    "soybean_leaf_disease_classification-4d1659a34c",
+    "soybean_leaf_disease_classification-fd727e85d6",
+    "soybean_leaf_disease_classification-0ae1fb93cd",
+    "soybean_leaf_disease_classification-218ef5baa6",
+    "soybean_leaf_disease_classification-f7cfa406b3",
+    "soybean_leaf_disease_classification-1878ee8e26"
+   ]
+  }
+ }
+}

@@ -1,0 +1,5815 @@
+{
+ "name": "gran_canaria_vegetation_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/gran_canaria_vegetation_segmentation",
+ "hf_sha": "c8a6dd0d78d5d8b0edfe8f496727d1e07b633b99",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T12:55:10+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0,150,1": "0,150,1",
+   "1,0,253": "1,0,253",
+   "147,16,239": "147,16,239",
+   "159,203,96": "159,203,96",
+   "172,249,6": "172,249,6",
+   "176,136,136": "176,136,136",
+   "200,250,200": "200,250,200",
+   "226,222,223": "226,222,223",
+   "249,223,6": "249,223,6",
+   "249,9,235": "249,9,235",
+   "250,145,9": "250,145,9",
+   "251,250,0": "251,250,0",
+   "253,1,1": "253,1,1",
+   "254,167,255": "254,167,255",
+   "255,255,255": "255,255,255",
+   "26,249,3": "26,249,3",
+   "6,248,108": "6,248,108",
+   "6,250,241": "6,250,241",
+   "77,88,232": "77,88,232",
+   "91,167,205": "91,167,205"
+  },
+  "indexed_rows": 555
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-32019db17b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108",
+    "6,250,241",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108",
+     "6,250,241",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-dea6dc4271",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d41079c3a9",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a5ef6103c0",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "26,249,3",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "26,249,3",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e50483dcf6",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-5ad5155c0f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f38b2245b7",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-1d38dae4a7",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-673c6a6ee8",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e1616c35dd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-dfbde26791",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4d5844df36",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b9f2ebed9b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-9bbb47e1cc",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-db41bd647e",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2f36efafa1",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-33db88c1dd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7f6180765e",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 110,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-60c67030ef",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "176,136,136",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "176,136,136",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-0738ab7b0f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a86a7235e3",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-c8518d2c39",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 125,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ad24c24423",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "249,9,235",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "249,9,235",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4b5093d04a",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4401f82bbe",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "172,249,6",
+    "249,223,6",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "172,249,6",
+     "249,223,6",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-12adcf3cad",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-499db8b2a3",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7da9d5f523",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-af5fbd59ff",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4a067b888b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-cbc0d44f00",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-80eb998e51",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "176,136,136"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "176,136,136"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f4403db5bf",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "249,9,235"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "249,9,235"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7a4da9b08b",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "200,250,200",
+    "249,223,6",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "200,250,200",
+     "249,223,6",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-34a473f6ab",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 75,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fb709f4e29",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,9,235",
+    "250,145,9",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,9,235",
+     "250,145,9",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fd5cc32056",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4798604a46",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "249,223,6"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "249,223,6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-43f848c264",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ff2e1d2af8",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fc31d2c227",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "254,167,255",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "254,167,255",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d5deba123d",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 92,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "249,9,235",
+    "250,145,9",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "249,9,235",
+     "250,145,9",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-058fccd8ed",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 94,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-5813b67254",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ca58acbf46",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "250,145,9",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "250,145,9",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-efced45f0a",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-bd25d42806",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fb1930527e",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-646277b468",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a39f1ee74f",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f0e0513c45",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-6f2a377ac7",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-106e6482cc",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "250,145,9",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "250,145,9",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-c57712a2bb",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-1b8e992746",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f55a62e0a4",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-09ac792dcd",
+   "ref": {
+    "file": "data/train-00001-of-00004.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-189f9a6495",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "200,250,200",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "200,250,200",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a9f5817963",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-c986a3e086",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-052928f4b5",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "249,223,6"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "249,223,6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a17b2b7d02",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 77,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "172,249,6",
+    "176,136,136",
+    "249,223,6",
+    "249,9,235",
+    "250,145,9",
+    "255,255,255",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "172,249,6",
+     "176,136,136",
+     "249,223,6",
+     "249,9,235",
+     "250,145,9",
+     "255,255,255",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-8481b8e0c8",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d8c1ac192d",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 82,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "249,9,235",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "249,9,235",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-09eb0f825a",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 83,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-98d2072d36",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-368f4a41ce",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-aef94bf443",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-60e2a751b4",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 91,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-aca3ed2276",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f7876ab3b6",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-52af8a8bf0",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b284687896",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "250,145,9",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "250,145,9",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-02e173c38e",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-9e76cc64b7",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 108,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-3dc0525283",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a370b22350",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 112,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-62b57ea0fb",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-88c3eb7bbd",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-233c39c4b5",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-66b7241b82",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 120,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-dce29e8ce2",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 121,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-5229b663b7",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-df328cd59a",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "249,223,6"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "249,223,6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b2095e4f67",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-de7805c8fa",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-cf1b7b702b",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b1c873b4ba",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-3201973a6d",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2b28293db5",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-31ae0eb67f",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-238ea19b2e",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 132,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-04ae00a111",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-3a34ab24cd",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 7,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7c3b98b10a",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-3a004328b5",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2218ca2e24",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-aeb4b22b55",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2e28550d9d",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-1aa1a46bcd",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-30ddbd4829",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fe58b9d34f",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "249,9,235"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "249,9,235"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-77a3411480",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-595700b681",
+   "ref": {
+    "file": "data/train-00000-of-00004.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-43d125a69b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-35562805be",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-172b59f75e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 105,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a24eb80bdf",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d6a3a63def",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e091b6ae87",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 117,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d3e23d6016",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-cc03449f7a",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "249,223,6",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "249,223,6",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4c80305d1a",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4c5383ebd5",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 128,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-82ce1f2c70",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-572fa0e4d7",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-0a7f010371",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f10329ad5e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-3b24f8f6b3",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a9a871372d",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2de897e981",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7a9ab1a0a8",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "200,250,200",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "200,250,200",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-c1bfa24560",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "6,248,108",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "6,248,108",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-25070376b5",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "226,222,223",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "226,222,223",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f7961c5c09",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "249,223,6"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "249,223,6"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-0244c892f8",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-038d4e7ee4",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-317e25ce34",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 135,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "176,136,136",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "176,136,136",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-76dbac6a99",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a2e0974204",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e2dcd2b0fb",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-60d6e396a9",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-0608d608e7",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-5865d1d7fa",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-0f05107b1a",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 87,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "255,255,255",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "255,255,255",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-48f4d2b644",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2e396f946e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e8965e79c2",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 93,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7ebef90d7a",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 95,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-834e5b5568",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 97,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-44002810fd",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4050b6e0af",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-68604582aa",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-9cac997f66",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e4acbc6020",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-fd661e3d28",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "200,250,200",
+    "226,222,223",
+    "249,223,6",
+    "255,255,255",
+    "26,249,3",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "200,250,200",
+     "226,222,223",
+     "249,223,6",
+     "255,255,255",
+     "26,249,3",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-6904386307",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-9f7de023d4",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7b5511447b",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e560a88bc0",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-73c0c7d469",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-31175e420e",
+   "ref": {
+    "file": "data/train-00003-of-00004.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-da38678b6f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-27a1521cb1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 102,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "176,136,136",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "176,136,136",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b1e28dff06",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 106,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-288870c96c",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 107,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-51805ccccb",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-afe9088dce",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 114,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-527454d180",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 115,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "176,136,136"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "176,136,136"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a3198ab42b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-401c8bde9f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-e7bc0044e1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 124,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-581cbbd65c",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 131,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-dcffee294d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "159,203,96",
+    "176,136,136",
+    "200,250,200",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "159,203,96",
+     "176,136,136",
+     "200,250,200",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ce68f9844a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-1d99ad5246",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-8e931bbdcb",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "250,145,9",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "250,145,9",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a6ef3821e6",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2d488381d4",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-8fb06833ad",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2c06ff247b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-8c538c5352",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-7b5fe97378",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-129b9a01ec",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-643c94f391",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "251,250,0",
+    "255,255,255",
+    "6,248,108",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "251,250,0",
+     "255,255,255",
+     "6,248,108",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-15435c398f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "200,250,200",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "200,250,200",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-52bb638b04",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 76,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ca38a25f1a",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 78,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a4366c5518",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 79,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "226,222,223",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108",
+    "6,250,241",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "226,222,223",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108",
+     "6,250,241",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a2bdc3800b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 81,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "250,145,9",
+    "253,1,1"
+   ],
+   "ann": {
+    "classes_present": [
+     "250,145,9",
+     "253,1,1"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-696da7a834",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 85,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "249,223,6",
+    "26,249,3",
+    "6,248,108",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "249,223,6",
+     "26,249,3",
+     "6,248,108",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-9f149f472f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 86,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "200,250,200",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "200,250,200",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-b115ef49cf",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "176,136,136",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "176,136,136",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-547ec3e0ed",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 89,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "176,136,136",
+    "200,250,200",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "176,136,136",
+     "200,250,200",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-175052267d",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 90,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-01ec70ddd1",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "254,167,255",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "254,167,255",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d888eb49a7",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-ca28667f13",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "253,1,1",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "253,1,1",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d49c228f3f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "147,16,239",
+    "172,249,6",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "147,16,239",
+     "172,249,6",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-203616657c",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "200,250,200",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "200,250,200",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-cdcdf05124",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "159,203,96",
+    "226,222,223",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "159,203,96",
+     "226,222,223",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-1158decf43",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,223,6",
+    "249,9,235",
+    "255,255,255",
+    "26,249,3",
+    "6,248,108"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,223,6",
+     "249,9,235",
+     "255,255,255",
+     "26,249,3",
+     "6,248,108"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-2b46d5cc92",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "251,250,0",
+    "255,255,255",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "251,250,0",
+     "255,255,255",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-652c92cba9",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "226,222,223",
+    "249,9,235",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "226,222,223",
+     "249,9,235",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-4ab3ed411f",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,223,6",
+    "26,249,3"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,223,6",
+     "26,249,3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "1,0,253",
+    "147,16,239",
+    "159,203,96",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241",
+    "77,88,232"
+   ],
+   "ann": {
+    "classes_present": [
+     "1,0,253",
+     "147,16,239",
+     "159,203,96",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241",
+     "77,88,232"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-926244f9ea",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "172,249,6",
+    "250,145,9"
+   ],
+   "ann": {
+    "classes_present": [
+     "172,249,6",
+     "250,145,9"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-a788aa4294",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "226,222,223",
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255",
+    "91,167,205"
+   ],
+   "ann": {
+    "classes_present": [
+     "226,222,223",
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255",
+     "91,167,205"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-d6070db45b",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "0,150,1",
+    "159,203,96",
+    "200,250,200",
+    "226,222,223",
+    "251,250,0",
+    "255,255,255",
+    "6,250,241"
+   ],
+   "ann": {
+    "classes_present": [
+     "0,150,1",
+     "159,203,96",
+     "200,250,200",
+     "226,222,223",
+     "251,250,0",
+     "255,255,255",
+     "6,250,241"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "gran_canaria_vegetation_segmentation-f22a672644",
+   "ref": {
+    "file": "data/train-00002-of-00004.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "249,9,235",
+    "250,145,9",
+    "253,1,1",
+    "255,255,255"
+   ],
+   "ann": {
+    "classes_present": [
+     "249,9,235",
+     "250,145,9",
+     "253,1,1",
+     "255,255,255"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "gran_canaria_vegetation_segmentation-673c6a6ee8",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-189f9a6495",
+    "gran_canaria_vegetation_segmentation-c986a3e086",
+    "gran_canaria_vegetation_segmentation-8481b8e0c8",
+    "gran_canaria_vegetation_segmentation-aca3ed2276",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-d3e23d6016",
+    "gran_canaria_vegetation_segmentation-4c80305d1a",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-da38678b6f",
+    "gran_canaria_vegetation_segmentation-b1e28dff06",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-a9a871372d",
+    "gran_canaria_vegetation_segmentation-2de897e981",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-33db88c1dd",
+    "gran_canaria_vegetation_segmentation-0738ab7b0f",
+    "gran_canaria_vegetation_segmentation-8e931bbdcb",
+    "gran_canaria_vegetation_segmentation-2c06ff247b",
+    "gran_canaria_vegetation_segmentation-f4403db5bf",
+    "gran_canaria_vegetation_segmentation-4798604a46",
+    "gran_canaria_vegetation_segmentation-ff2e1d2af8",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-cf1b7b702b",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-f55a62e0a4",
+    "gran_canaria_vegetation_segmentation-038d4e7ee4",
+    "gran_canaria_vegetation_segmentation-04ae00a111",
+    "gran_canaria_vegetation_segmentation-3a34ab24cd",
+    "gran_canaria_vegetation_segmentation-77a3411480",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ],
+   "10": [
+    "gran_canaria_vegetation_segmentation-5ad5155c0f",
+    "gran_canaria_vegetation_segmentation-673c6a6ee8",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-189f9a6495",
+    "gran_canaria_vegetation_segmentation-c986a3e086",
+    "gran_canaria_vegetation_segmentation-8481b8e0c8",
+    "gran_canaria_vegetation_segmentation-98d2072d36",
+    "gran_canaria_vegetation_segmentation-60e2a751b4",
+    "gran_canaria_vegetation_segmentation-aca3ed2276",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-d6a3a63def",
+    "gran_canaria_vegetation_segmentation-d3e23d6016",
+    "gran_canaria_vegetation_segmentation-4c80305d1a",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-da38678b6f",
+    "gran_canaria_vegetation_segmentation-27a1521cb1",
+    "gran_canaria_vegetation_segmentation-b1e28dff06",
+    "gran_canaria_vegetation_segmentation-581cbbd65c",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-3b24f8f6b3",
+    "gran_canaria_vegetation_segmentation-a9a871372d",
+    "gran_canaria_vegetation_segmentation-25070376b5",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-33db88c1dd",
+    "gran_canaria_vegetation_segmentation-0738ab7b0f",
+    "gran_canaria_vegetation_segmentation-a86a7235e3",
+    "gran_canaria_vegetation_segmentation-c8518d2c39",
+    "gran_canaria_vegetation_segmentation-8e931bbdcb",
+    "gran_canaria_vegetation_segmentation-2d488381d4",
+    "gran_canaria_vegetation_segmentation-2c06ff247b",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-12adcf3cad",
+    "gran_canaria_vegetation_segmentation-f4403db5bf",
+    "gran_canaria_vegetation_segmentation-4798604a46",
+    "gran_canaria_vegetation_segmentation-ff2e1d2af8",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-cf1b7b702b",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-643c94f391",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-52bb638b04",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-5813b67254",
+    "gran_canaria_vegetation_segmentation-efced45f0a",
+    "gran_canaria_vegetation_segmentation-bd25d42806",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-f55a62e0a4",
+    "gran_canaria_vegetation_segmentation-038d4e7ee4",
+    "gran_canaria_vegetation_segmentation-04ae00a111",
+    "gran_canaria_vegetation_segmentation-3a34ab24cd",
+    "gran_canaria_vegetation_segmentation-3a004328b5",
+    "gran_canaria_vegetation_segmentation-aeb4b22b55",
+    "gran_canaria_vegetation_segmentation-77a3411480",
+    "gran_canaria_vegetation_segmentation-595700b681",
+    "gran_canaria_vegetation_segmentation-ca28667f13",
+    "gran_canaria_vegetation_segmentation-203616657c",
+    "gran_canaria_vegetation_segmentation-cdcdf05124",
+    "gran_canaria_vegetation_segmentation-4ab3ed411f",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-926244f9ea",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-9cac997f66",
+    "gran_canaria_vegetation_segmentation-fd661e3d28",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ],
+   "15": [
+    "gran_canaria_vegetation_segmentation-e50483dcf6",
+    "gran_canaria_vegetation_segmentation-5ad5155c0f",
+    "gran_canaria_vegetation_segmentation-673c6a6ee8",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-b9f2ebed9b",
+    "gran_canaria_vegetation_segmentation-189f9a6495",
+    "gran_canaria_vegetation_segmentation-a9f5817963",
+    "gran_canaria_vegetation_segmentation-c986a3e086",
+    "gran_canaria_vegetation_segmentation-8481b8e0c8",
+    "gran_canaria_vegetation_segmentation-98d2072d36",
+    "gran_canaria_vegetation_segmentation-60e2a751b4",
+    "gran_canaria_vegetation_segmentation-aca3ed2276",
+    "gran_canaria_vegetation_segmentation-43d125a69b",
+    "gran_canaria_vegetation_segmentation-35562805be",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-d6a3a63def",
+    "gran_canaria_vegetation_segmentation-d3e23d6016",
+    "gran_canaria_vegetation_segmentation-cc03449f7a",
+    "gran_canaria_vegetation_segmentation-4c80305d1a",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-da38678b6f",
+    "gran_canaria_vegetation_segmentation-27a1521cb1",
+    "gran_canaria_vegetation_segmentation-b1e28dff06",
+    "gran_canaria_vegetation_segmentation-afe9088dce",
+    "gran_canaria_vegetation_segmentation-527454d180",
+    "gran_canaria_vegetation_segmentation-581cbbd65c",
+    "gran_canaria_vegetation_segmentation-82ce1f2c70",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-3b24f8f6b3",
+    "gran_canaria_vegetation_segmentation-a9a871372d",
+    "gran_canaria_vegetation_segmentation-25070376b5",
+    "gran_canaria_vegetation_segmentation-0244c892f8",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-33db88c1dd",
+    "gran_canaria_vegetation_segmentation-0738ab7b0f",
+    "gran_canaria_vegetation_segmentation-a86a7235e3",
+    "gran_canaria_vegetation_segmentation-c8518d2c39",
+    "gran_canaria_vegetation_segmentation-4b5093d04a",
+    "gran_canaria_vegetation_segmentation-8e931bbdcb",
+    "gran_canaria_vegetation_segmentation-2d488381d4",
+    "gran_canaria_vegetation_segmentation-8fb06833ad",
+    "gran_canaria_vegetation_segmentation-2c06ff247b",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-12adcf3cad",
+    "gran_canaria_vegetation_segmentation-f7876ab3b6",
+    "gran_canaria_vegetation_segmentation-a370b22350",
+    "gran_canaria_vegetation_segmentation-f4403db5bf",
+    "gran_canaria_vegetation_segmentation-7a4da9b08b",
+    "gran_canaria_vegetation_segmentation-fb709f4e29",
+    "gran_canaria_vegetation_segmentation-fd5cc32056",
+    "gran_canaria_vegetation_segmentation-4798604a46",
+    "gran_canaria_vegetation_segmentation-ff2e1d2af8",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-b2095e4f67",
+    "gran_canaria_vegetation_segmentation-cf1b7b702b",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-3201973a6d",
+    "gran_canaria_vegetation_segmentation-31ae0eb67f",
+    "gran_canaria_vegetation_segmentation-643c94f391",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-52bb638b04",
+    "gran_canaria_vegetation_segmentation-a4366c5518",
+    "gran_canaria_vegetation_segmentation-b115ef49cf",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-5813b67254",
+    "gran_canaria_vegetation_segmentation-efced45f0a",
+    "gran_canaria_vegetation_segmentation-bd25d42806",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-106e6482cc",
+    "gran_canaria_vegetation_segmentation-c57712a2bb",
+    "gran_canaria_vegetation_segmentation-f55a62e0a4",
+    "gran_canaria_vegetation_segmentation-038d4e7ee4",
+    "gran_canaria_vegetation_segmentation-a2e0974204",
+    "gran_canaria_vegetation_segmentation-5865d1d7fa",
+    "gran_canaria_vegetation_segmentation-7ebef90d7a",
+    "gran_canaria_vegetation_segmentation-04ae00a111",
+    "gran_canaria_vegetation_segmentation-3a34ab24cd",
+    "gran_canaria_vegetation_segmentation-3a004328b5",
+    "gran_canaria_vegetation_segmentation-aeb4b22b55",
+    "gran_canaria_vegetation_segmentation-2e28550d9d",
+    "gran_canaria_vegetation_segmentation-77a3411480",
+    "gran_canaria_vegetation_segmentation-595700b681",
+    "gran_canaria_vegetation_segmentation-ca28667f13",
+    "gran_canaria_vegetation_segmentation-203616657c",
+    "gran_canaria_vegetation_segmentation-cdcdf05124",
+    "gran_canaria_vegetation_segmentation-4ab3ed411f",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-926244f9ea",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-44002810fd",
+    "gran_canaria_vegetation_segmentation-9cac997f66",
+    "gran_canaria_vegetation_segmentation-fd661e3d28",
+    "gran_canaria_vegetation_segmentation-7b5511447b",
+    "gran_canaria_vegetation_segmentation-e560a88bc0",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ]
+  },
+  "s1": {
+   "5": [
+    "gran_canaria_vegetation_segmentation-dea6dc4271",
+    "gran_canaria_vegetation_segmentation-5ad5155c0f",
+    "gran_canaria_vegetation_segmentation-e1616c35dd",
+    "gran_canaria_vegetation_segmentation-60e2a751b4",
+    "gran_canaria_vegetation_segmentation-43d125a69b",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-f10329ad5e",
+    "gran_canaria_vegetation_segmentation-25070376b5",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-1d99ad5246",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-02e173c38e",
+    "gran_canaria_vegetation_segmentation-88c3eb7bbd",
+    "gran_canaria_vegetation_segmentation-5229b663b7",
+    "gran_canaria_vegetation_segmentation-7a4da9b08b",
+    "gran_canaria_vegetation_segmentation-43f848c264",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-df328cd59a",
+    "gran_canaria_vegetation_segmentation-547ec3e0ed",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-317e25ce34",
+    "gran_canaria_vegetation_segmentation-2e396f946e",
+    "gran_canaria_vegetation_segmentation-834e5b5568",
+    "gran_canaria_vegetation_segmentation-2218ca2e24",
+    "gran_canaria_vegetation_segmentation-2e28550d9d",
+    "gran_canaria_vegetation_segmentation-595700b681",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-e4acbc6020"
+   ],
+   "10": [
+    "gran_canaria_vegetation_segmentation-dea6dc4271",
+    "gran_canaria_vegetation_segmentation-d41079c3a9",
+    "gran_canaria_vegetation_segmentation-5ad5155c0f",
+    "gran_canaria_vegetation_segmentation-e1616c35dd",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-60e2a751b4",
+    "gran_canaria_vegetation_segmentation-43d125a69b",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-cc03449f7a",
+    "gran_canaria_vegetation_segmentation-4c80305d1a",
+    "gran_canaria_vegetation_segmentation-da38678b6f",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-f10329ad5e",
+    "gran_canaria_vegetation_segmentation-a9a871372d",
+    "gran_canaria_vegetation_segmentation-7a9ab1a0a8",
+    "gran_canaria_vegetation_segmentation-25070376b5",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-33db88c1dd",
+    "gran_canaria_vegetation_segmentation-ad24c24423",
+    "gran_canaria_vegetation_segmentation-1d99ad5246",
+    "gran_canaria_vegetation_segmentation-a6ef3821e6",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-7b5fe97378",
+    "gran_canaria_vegetation_segmentation-7da9d5f523",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-02e173c38e",
+    "gran_canaria_vegetation_segmentation-62b57ea0fb",
+    "gran_canaria_vegetation_segmentation-88c3eb7bbd",
+    "gran_canaria_vegetation_segmentation-5229b663b7",
+    "gran_canaria_vegetation_segmentation-7a4da9b08b",
+    "gran_canaria_vegetation_segmentation-34a473f6ab",
+    "gran_canaria_vegetation_segmentation-43f848c264",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-df328cd59a",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-b115ef49cf",
+    "gran_canaria_vegetation_segmentation-547ec3e0ed",
+    "gran_canaria_vegetation_segmentation-175052267d",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-ca58acbf46",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-646277b468",
+    "gran_canaria_vegetation_segmentation-a39f1ee74f",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-317e25ce34",
+    "gran_canaria_vegetation_segmentation-60d6e396a9",
+    "gran_canaria_vegetation_segmentation-5865d1d7fa",
+    "gran_canaria_vegetation_segmentation-2e396f946e",
+    "gran_canaria_vegetation_segmentation-834e5b5568",
+    "gran_canaria_vegetation_segmentation-2218ca2e24",
+    "gran_canaria_vegetation_segmentation-2e28550d9d",
+    "gran_canaria_vegetation_segmentation-30ddbd4829",
+    "gran_canaria_vegetation_segmentation-fe58b9d34f",
+    "gran_canaria_vegetation_segmentation-595700b681",
+    "gran_canaria_vegetation_segmentation-2b46d5cc92",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-d6070db45b",
+    "gran_canaria_vegetation_segmentation-68604582aa",
+    "gran_canaria_vegetation_segmentation-e4acbc6020"
+   ],
+   "15": [
+    "gran_canaria_vegetation_segmentation-32019db17b",
+    "gran_canaria_vegetation_segmentation-dea6dc4271",
+    "gran_canaria_vegetation_segmentation-d41079c3a9",
+    "gran_canaria_vegetation_segmentation-5ad5155c0f",
+    "gran_canaria_vegetation_segmentation-f38b2245b7",
+    "gran_canaria_vegetation_segmentation-e1616c35dd",
+    "gran_canaria_vegetation_segmentation-dfbde26791",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-9bbb47e1cc",
+    "gran_canaria_vegetation_segmentation-a17b2b7d02",
+    "gran_canaria_vegetation_segmentation-d8c1ac192d",
+    "gran_canaria_vegetation_segmentation-98d2072d36",
+    "gran_canaria_vegetation_segmentation-368f4a41ce",
+    "gran_canaria_vegetation_segmentation-60e2a751b4",
+    "gran_canaria_vegetation_segmentation-43d125a69b",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-cc03449f7a",
+    "gran_canaria_vegetation_segmentation-4c80305d1a",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-da38678b6f",
+    "gran_canaria_vegetation_segmentation-581cbbd65c",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-f10329ad5e",
+    "gran_canaria_vegetation_segmentation-a9a871372d",
+    "gran_canaria_vegetation_segmentation-7a9ab1a0a8",
+    "gran_canaria_vegetation_segmentation-25070376b5",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-33db88c1dd",
+    "gran_canaria_vegetation_segmentation-7f6180765e",
+    "gran_canaria_vegetation_segmentation-ad24c24423",
+    "gran_canaria_vegetation_segmentation-1d99ad5246",
+    "gran_canaria_vegetation_segmentation-a6ef3821e6",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-7b5fe97378",
+    "gran_canaria_vegetation_segmentation-499db8b2a3",
+    "gran_canaria_vegetation_segmentation-7da9d5f523",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-02e173c38e",
+    "gran_canaria_vegetation_segmentation-9e76cc64b7",
+    "gran_canaria_vegetation_segmentation-3dc0525283",
+    "gran_canaria_vegetation_segmentation-a370b22350",
+    "gran_canaria_vegetation_segmentation-62b57ea0fb",
+    "gran_canaria_vegetation_segmentation-88c3eb7bbd",
+    "gran_canaria_vegetation_segmentation-233c39c4b5",
+    "gran_canaria_vegetation_segmentation-5229b663b7",
+    "gran_canaria_vegetation_segmentation-7a4da9b08b",
+    "gran_canaria_vegetation_segmentation-34a473f6ab",
+    "gran_canaria_vegetation_segmentation-43f848c264",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-058fccd8ed",
+    "gran_canaria_vegetation_segmentation-df328cd59a",
+    "gran_canaria_vegetation_segmentation-b2095e4f67",
+    "gran_canaria_vegetation_segmentation-de7805c8fa",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-129b9a01ec",
+    "gran_canaria_vegetation_segmentation-696da7a834",
+    "gran_canaria_vegetation_segmentation-b115ef49cf",
+    "gran_canaria_vegetation_segmentation-547ec3e0ed",
+    "gran_canaria_vegetation_segmentation-175052267d",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-ca58acbf46",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-646277b468",
+    "gran_canaria_vegetation_segmentation-a39f1ee74f",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-1b8e992746",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-317e25ce34",
+    "gran_canaria_vegetation_segmentation-e2dcd2b0fb",
+    "gran_canaria_vegetation_segmentation-60d6e396a9",
+    "gran_canaria_vegetation_segmentation-5865d1d7fa",
+    "gran_canaria_vegetation_segmentation-48f4d2b644",
+    "gran_canaria_vegetation_segmentation-2e396f946e",
+    "gran_canaria_vegetation_segmentation-834e5b5568",
+    "gran_canaria_vegetation_segmentation-04ae00a111",
+    "gran_canaria_vegetation_segmentation-2218ca2e24",
+    "gran_canaria_vegetation_segmentation-2e28550d9d",
+    "gran_canaria_vegetation_segmentation-1aa1a46bcd",
+    "gran_canaria_vegetation_segmentation-30ddbd4829",
+    "gran_canaria_vegetation_segmentation-fe58b9d34f",
+    "gran_canaria_vegetation_segmentation-595700b681",
+    "gran_canaria_vegetation_segmentation-2b46d5cc92",
+    "gran_canaria_vegetation_segmentation-5cf4fcaaeb",
+    "gran_canaria_vegetation_segmentation-d6070db45b",
+    "gran_canaria_vegetation_segmentation-f22a672644",
+    "gran_canaria_vegetation_segmentation-44002810fd",
+    "gran_canaria_vegetation_segmentation-68604582aa",
+    "gran_canaria_vegetation_segmentation-e4acbc6020",
+    "gran_canaria_vegetation_segmentation-7b5511447b",
+    "gran_canaria_vegetation_segmentation-73c0c7d469"
+   ]
+  },
+  "s2": {
+   "5": [
+    "gran_canaria_vegetation_segmentation-32019db17b",
+    "gran_canaria_vegetation_segmentation-dfbde26791",
+    "gran_canaria_vegetation_segmentation-052928f4b5",
+    "gran_canaria_vegetation_segmentation-368f4a41ce",
+    "gran_canaria_vegetation_segmentation-aef94bf443",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-e091b6ae87",
+    "gran_canaria_vegetation_segmentation-51805ccccb",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-f7961c5c09",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-60c67030ef",
+    "gran_canaria_vegetation_segmentation-4401f82bbe",
+    "gran_canaria_vegetation_segmentation-ce68f9844a",
+    "gran_canaria_vegetation_segmentation-8fb06833ad",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-4a067b888b",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-9f149f472f",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-76dbac6a99",
+    "gran_canaria_vegetation_segmentation-0f05107b1a",
+    "gran_canaria_vegetation_segmentation-d888eb49a7",
+    "gran_canaria_vegetation_segmentation-652c92cba9",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ],
+   "10": [
+    "gran_canaria_vegetation_segmentation-32019db17b",
+    "gran_canaria_vegetation_segmentation-dea6dc4271",
+    "gran_canaria_vegetation_segmentation-d41079c3a9",
+    "gran_canaria_vegetation_segmentation-dfbde26791",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-052928f4b5",
+    "gran_canaria_vegetation_segmentation-98d2072d36",
+    "gran_canaria_vegetation_segmentation-368f4a41ce",
+    "gran_canaria_vegetation_segmentation-aef94bf443",
+    "gran_canaria_vegetation_segmentation-aca3ed2276",
+    "gran_canaria_vegetation_segmentation-35562805be",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-d6a3a63def",
+    "gran_canaria_vegetation_segmentation-e091b6ae87",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-b1e28dff06",
+    "gran_canaria_vegetation_segmentation-51805ccccb",
+    "gran_canaria_vegetation_segmentation-e7bc0044e1",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-f7961c5c09",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-60c67030ef",
+    "gran_canaria_vegetation_segmentation-4401f82bbe",
+    "gran_canaria_vegetation_segmentation-ce68f9844a",
+    "gran_canaria_vegetation_segmentation-8fb06833ad",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-7da9d5f523",
+    "gran_canaria_vegetation_segmentation-af5fbd59ff",
+    "gran_canaria_vegetation_segmentation-f7876ab3b6",
+    "gran_canaria_vegetation_segmentation-52af8a8bf0",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-66b7241b82",
+    "gran_canaria_vegetation_segmentation-dce29e8ce2",
+    "gran_canaria_vegetation_segmentation-4a067b888b",
+    "gran_canaria_vegetation_segmentation-cbc0d44f00",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-52bb638b04",
+    "gran_canaria_vegetation_segmentation-696da7a834",
+    "gran_canaria_vegetation_segmentation-9f149f472f",
+    "gran_canaria_vegetation_segmentation-b115ef49cf",
+    "gran_canaria_vegetation_segmentation-175052267d",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-106e6482cc",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-76dbac6a99",
+    "gran_canaria_vegetation_segmentation-0608d608e7",
+    "gran_canaria_vegetation_segmentation-0f05107b1a",
+    "gran_canaria_vegetation_segmentation-e8965e79c2",
+    "gran_canaria_vegetation_segmentation-7c3b98b10a",
+    "gran_canaria_vegetation_segmentation-d888eb49a7",
+    "gran_canaria_vegetation_segmentation-1158decf43",
+    "gran_canaria_vegetation_segmentation-652c92cba9",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-9f7de023d4",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ],
+   "15": [
+    "gran_canaria_vegetation_segmentation-32019db17b",
+    "gran_canaria_vegetation_segmentation-dea6dc4271",
+    "gran_canaria_vegetation_segmentation-d41079c3a9",
+    "gran_canaria_vegetation_segmentation-a5ef6103c0",
+    "gran_canaria_vegetation_segmentation-f38b2245b7",
+    "gran_canaria_vegetation_segmentation-1d38dae4a7",
+    "gran_canaria_vegetation_segmentation-dfbde26791",
+    "gran_canaria_vegetation_segmentation-4d5844df36",
+    "gran_canaria_vegetation_segmentation-052928f4b5",
+    "gran_canaria_vegetation_segmentation-8481b8e0c8",
+    "gran_canaria_vegetation_segmentation-09eb0f825a",
+    "gran_canaria_vegetation_segmentation-98d2072d36",
+    "gran_canaria_vegetation_segmentation-368f4a41ce",
+    "gran_canaria_vegetation_segmentation-aef94bf443",
+    "gran_canaria_vegetation_segmentation-aca3ed2276",
+    "gran_canaria_vegetation_segmentation-35562805be",
+    "gran_canaria_vegetation_segmentation-172b59f75e",
+    "gran_canaria_vegetation_segmentation-a24eb80bdf",
+    "gran_canaria_vegetation_segmentation-d6a3a63def",
+    "gran_canaria_vegetation_segmentation-e091b6ae87",
+    "gran_canaria_vegetation_segmentation-4c5383ebd5",
+    "gran_canaria_vegetation_segmentation-b1e28dff06",
+    "gran_canaria_vegetation_segmentation-288870c96c",
+    "gran_canaria_vegetation_segmentation-51805ccccb",
+    "gran_canaria_vegetation_segmentation-a3198ab42b",
+    "gran_canaria_vegetation_segmentation-401c8bde9f",
+    "gran_canaria_vegetation_segmentation-e7bc0044e1",
+    "gran_canaria_vegetation_segmentation-572fa0e4d7",
+    "gran_canaria_vegetation_segmentation-0a7f010371",
+    "gran_canaria_vegetation_segmentation-3b24f8f6b3",
+    "gran_canaria_vegetation_segmentation-c1bfa24560",
+    "gran_canaria_vegetation_segmentation-f7961c5c09",
+    "gran_canaria_vegetation_segmentation-db41bd647e",
+    "gran_canaria_vegetation_segmentation-2f36efafa1",
+    "gran_canaria_vegetation_segmentation-60c67030ef",
+    "gran_canaria_vegetation_segmentation-4401f82bbe",
+    "gran_canaria_vegetation_segmentation-dcffee294d",
+    "gran_canaria_vegetation_segmentation-ce68f9844a",
+    "gran_canaria_vegetation_segmentation-8fb06833ad",
+    "gran_canaria_vegetation_segmentation-8c538c5352",
+    "gran_canaria_vegetation_segmentation-7b5fe97378",
+    "gran_canaria_vegetation_segmentation-7da9d5f523",
+    "gran_canaria_vegetation_segmentation-af5fbd59ff",
+    "gran_canaria_vegetation_segmentation-f7876ab3b6",
+    "gran_canaria_vegetation_segmentation-52af8a8bf0",
+    "gran_canaria_vegetation_segmentation-b284687896",
+    "gran_canaria_vegetation_segmentation-02e173c38e",
+    "gran_canaria_vegetation_segmentation-66b7241b82",
+    "gran_canaria_vegetation_segmentation-dce29e8ce2",
+    "gran_canaria_vegetation_segmentation-5229b663b7",
+    "gran_canaria_vegetation_segmentation-4a067b888b",
+    "gran_canaria_vegetation_segmentation-cbc0d44f00",
+    "gran_canaria_vegetation_segmentation-80eb998e51",
+    "gran_canaria_vegetation_segmentation-7a4da9b08b",
+    "gran_canaria_vegetation_segmentation-fc31d2c227",
+    "gran_canaria_vegetation_segmentation-51c0cd1d3f",
+    "gran_canaria_vegetation_segmentation-d5deba123d",
+    "gran_canaria_vegetation_segmentation-cf1b7b702b",
+    "gran_canaria_vegetation_segmentation-b1c873b4ba",
+    "gran_canaria_vegetation_segmentation-2b28293db5",
+    "gran_canaria_vegetation_segmentation-643c94f391",
+    "gran_canaria_vegetation_segmentation-15435c398f",
+    "gran_canaria_vegetation_segmentation-52bb638b04",
+    "gran_canaria_vegetation_segmentation-ca38a25f1a",
+    "gran_canaria_vegetation_segmentation-a2bdc3800b",
+    "gran_canaria_vegetation_segmentation-696da7a834",
+    "gran_canaria_vegetation_segmentation-9f149f472f",
+    "gran_canaria_vegetation_segmentation-b115ef49cf",
+    "gran_canaria_vegetation_segmentation-175052267d",
+    "gran_canaria_vegetation_segmentation-01ec70ddd1",
+    "gran_canaria_vegetation_segmentation-2ae5fbe82c",
+    "gran_canaria_vegetation_segmentation-fb1930527e",
+    "gran_canaria_vegetation_segmentation-f0e0513c45",
+    "gran_canaria_vegetation_segmentation-6f2a377ac7",
+    "gran_canaria_vegetation_segmentation-106e6482cc",
+    "gran_canaria_vegetation_segmentation-c57712a2bb",
+    "gran_canaria_vegetation_segmentation-09ac792dcd",
+    "gran_canaria_vegetation_segmentation-76dbac6a99",
+    "gran_canaria_vegetation_segmentation-0608d608e7",
+    "gran_canaria_vegetation_segmentation-0f05107b1a",
+    "gran_canaria_vegetation_segmentation-e8965e79c2",
+    "gran_canaria_vegetation_segmentation-238ea19b2e",
+    "gran_canaria_vegetation_segmentation-7c3b98b10a",
+    "gran_canaria_vegetation_segmentation-d888eb49a7",
+    "gran_canaria_vegetation_segmentation-d49c228f3f",
+    "gran_canaria_vegetation_segmentation-1158decf43",
+    "gran_canaria_vegetation_segmentation-652c92cba9",
+    "gran_canaria_vegetation_segmentation-926244f9ea",
+    "gran_canaria_vegetation_segmentation-a788aa4294",
+    "gran_canaria_vegetation_segmentation-4050b6e0af",
+    "gran_canaria_vegetation_segmentation-68604582aa",
+    "gran_canaria_vegetation_segmentation-fd661e3d28",
+    "gran_canaria_vegetation_segmentation-6904386307",
+    "gran_canaria_vegetation_segmentation-9f7de023d4",
+    "gran_canaria_vegetation_segmentation-31175e420e"
+   ]
+  }
+ }
+}

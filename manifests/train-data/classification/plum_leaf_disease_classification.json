@@ -1,0 +1,4751 @@
+{
+ "name": "plum_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/plum_leaf_disease_classification",
+ "hf_sha": "b7950578a967b0925ccf52ba43c9505c054c79e6",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T19:33:47+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Bacterial_Spot",
+   "Brown_Blight",
+   "Dry",
+   "Healthy",
+   "Powdery_Mildew",
+   "Sooty_Mold"
+  ],
+  "indexed_rows": 2400
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "plum_leaf_disease_classification-9379b46629",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-181944028c",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b8bfeabeed",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f0911edfd4",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-bdd76c37aa",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8ae0c6d360",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0efe331bca",
+   "ref": {
+    "file": "data/train-00000-of-00032.parquet",
+    "row": 64,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ee4a62c2f8",
+   "ref": {
+    "file": "data/train-00001-of-00032.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8c85cca60d",
+   "ref": {
+    "file": "data/train-00001-of-00032.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6e22112e4c",
+   "ref": {
+    "file": "data/train-00001-of-00032.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8e5fbf95e0",
+   "ref": {
+    "file": "data/train-00001-of-00032.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6b2a891094",
+   "ref": {
+    "file": "data/train-00001-of-00032.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-7e56b670b8",
+   "ref": {
+    "file": "data/train-00002-of-00032.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9f639afd91",
+   "ref": {
+    "file": "data/train-00002-of-00032.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5b570e01d2",
+   "ref": {
+    "file": "data/train-00002-of-00032.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6524c4934f",
+   "ref": {
+    "file": "data/train-00002-of-00032.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-09a2fd5cc9",
+   "ref": {
+    "file": "data/train-00002-of-00032.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0271e05267",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c05abaa31e",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a058314921",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4a25f7527e",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-29c3cafc5d",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-21bb0d6f80",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-72896e9019",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-384457a848",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a4f8c9e171",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-208ee54000",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-53c9ffa767",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4b5aa31db7",
+   "ref": {
+    "file": "data/train-00003-of-00032.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c9cf31435f",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-1b789bb74a",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-21dd7f3f19",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-37ac858549",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8f72fff22c",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-7af303dc8f",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8cad4e4c0f",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6f657c7489",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3928f12615",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8be3f16791",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ca9fcd26be",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-cc9f39f4e8",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d6d1719a3f",
+   "ref": {
+    "file": "data/train-00004-of-00032.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0cdb159f55",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d91fe1870e",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-7a54ece743",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5d7e957638",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-aebb901c46",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-aa2d100391",
+   "ref": {
+    "file": "data/train-00005-of-00032.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b2c285f3bd",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a6ac932964",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-14b87b0f29",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4e63711f6c",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3c43ce5514",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8a9c398092",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-22ec803987",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-56ec33ca59",
+   "ref": {
+    "file": "data/train-00006-of-00032.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-68b1b32bbf",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a689d609ac",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5ecc23c20a",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b5539a27d6",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-afc7105ec3",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-484b5702a5",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5d77ce83d8",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-765c835552",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 53,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2475ab89e3",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-670029f614",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b57be29a4c",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d45767c05e",
+   "ref": {
+    "file": "data/train-00007-of-00032.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-fe89135b99",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2cf8e11b12",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-971bbd772e",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f0debda5f4",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5aae3a3160",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-1f735b6f36",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c056db6898",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-08f32013e8",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d801659ea0",
+   "ref": {
+    "file": "data/train-00008-of-00032.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-43aff71869",
+   "ref": {
+    "file": "data/train-00009-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3e35731bbd",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f3e9c01f9d",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f73e05f97c",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b732541644",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-cddb7ad1a5",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0a1183f650",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6208d02723",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c3f9d5f3eb",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 44,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2e0d032b36",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown_Blight"
+   ],
+   "ann": {
+    "label": "Brown_Blight"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-75e9b81aca",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f2c3b98460",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-098157ba8c",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0b16565b4d",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5b378122d9",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3f9b741efa",
+   "ref": {
+    "file": "data/train-00010-of-00032.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8057dd2de8",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-934c2ba38e",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b712cbed1e",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c04d5b0c96",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-7b892591cc",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-105fbe7a20",
+   "ref": {
+    "file": "data/train-00011-of-00032.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-266067d65e",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c1cafd8c2c",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 19,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-54a9817eff",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d0831b1252",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-25263e2648",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f06fa5161c",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5530fc29d1",
+   "ref": {
+    "file": "data/train-00012-of-00032.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d3c04b55b3",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c1f76bd565",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-db38270da0",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-754a220eba",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8c75e482e3",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e9404e977e",
+   "ref": {
+    "file": "data/train-00013-of-00032.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-bc24465364",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9f55c77dac",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-881da08206",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3a7dd5260e",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3d3081031e",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-50034612c7",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9748b908f3",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 31,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-fc0bd4e7bd",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d9f126ae41",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-977484bd40",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a023eb99d8",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2f8c65fc95",
+   "ref": {
+    "file": "data/train-00014-of-00032.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8cc6f566f3",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c16a1da0c6",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 21,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c6f17f42d9",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 23,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-32ffee910f",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8463317ea7",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f7cb7c90eb",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 57,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-728036166a",
+   "ref": {
+    "file": "data/train-00015-of-00032.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Sooty_Mold"
+   ],
+   "ann": {
+    "label": "Sooty_Mold"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a6efbc641d",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8491954976",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a2dc915f98",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 10,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0b2048e555",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e56e1bad02",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-07681268c4",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9acb5bf720",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a3f9894f4b",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5c1494714e",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-795ca967b9",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5cea45a3ef",
+   "ref": {
+    "file": "data/train-00016-of-00032.parquet",
+    "row": 65,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-fee88b4ce8",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9dd9f2f9c4",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 13,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-80fe89c500",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c517458ad5",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8affb5540e",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9dde00ba26",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6fdc2ab547",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-561349cce7",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2c1a7b9c4d",
+   "ref": {
+    "file": "data/train-00017-of-00032.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-50923e56b9",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-94bfc9d412",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4a00d05d9b",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-73ac539c69",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-fa282983d3",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2c0c8181bf",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a6968d9ef1",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3e559b3641",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 58,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-150fb36db8",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-74fe4c4cb3",
+   "ref": {
+    "file": "data/train-00018-of-00032.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-20bbf3a42d",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-591e250d89",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5e18eb1c4b",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-527d9c8ae9",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3f2ce39596",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 48,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d0c6ba5676",
+   "ref": {
+    "file": "data/train-00019-of-00032.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-bb93a39945",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 4,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-52da88bf8f",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6768b97d7b",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5d254884ad",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8421e95151",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-08e34760bd",
+   "ref": {
+    "file": "data/train-00020-of-00032.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-cc73a25459",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Bacterial_Spot"
+   ],
+   "ann": {
+    "label": "Bacterial_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-58bdd924e3",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e0e5205c19",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-692a2e626d",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4a28439a4e",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f224b3d032",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9b92462c10",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f71e881c22",
+   "ref": {
+    "file": "data/train-00021-of-00032.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-eddb2c6c22",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 15,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-dbd48536a4",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 26,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2cc99a056a",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ecdc83c330",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-657220ce6a",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 35,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a636b665ba",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 51,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a8bcdfa0e8",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-584f0fcfb6",
+   "ref": {
+    "file": "data/train-00022-of-00032.parquet",
+    "row": 63,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e5799ca3a0",
+   "ref": {
+    "file": "data/train-00023-of-00032.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2b19989db5",
+   "ref": {
+    "file": "data/train-00023-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e0fdd188a8",
+   "ref": {
+    "file": "data/train-00023-of-00032.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b1bedb4339",
+   "ref": {
+    "file": "data/train-00023-of-00032.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-59fc12d43b",
+   "ref": {
+    "file": "data/train-00023-of-00032.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b6b4e70c87",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 2,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c16ce51a64",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-39966484c4",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-93d94d6326",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 32,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-879bd2358e",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 41,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-df52563d0b",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9272d02b23",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 46,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-3d0659b888",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 54,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c4da28c295",
+   "ref": {
+    "file": "data/train-00024-of-00032.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-2615cc1f47",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 1,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ebb4ac2cbf",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 18,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-36aa178463",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-807f6ee579",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ba6739b10b",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-881768ca98",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 52,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8badafcf95",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 67,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-b360430703",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 70,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0c19100012",
+   "ref": {
+    "file": "data/train-00025-of-00032.parquet",
+    "row": 71,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-fb506b8961",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 28,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c6ac9e74e7",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-9869c6851a",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8f5f5c6758",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 39,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e892e39d57",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 42,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e9b2e0a58c",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 45,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Powdery_Mildew"
+   ],
+   "ann": {
+    "label": "Powdery_Mildew"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f0d7d4178e",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-5f4ad82185",
+   "ref": {
+    "file": "data/train-00026-of-00032.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-6e288769e8",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 25,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e20da9a529",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-34ba0682a1",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 37,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-ac0101e4a1",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 43,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8267c5c128",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 50,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e0b0982189",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 59,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0be5dc1f5c",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 66,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4a6c0cf490",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-edf36eeb08",
+   "ref": {
+    "file": "data/train-00027-of-00032.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f576d6eee9",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d482302ff0",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-581abbc1e2",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 29,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-065a29931b",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-e6e07d6daf",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-972283df5c",
+   "ref": {
+    "file": "data/train-00028-of-00032.parquet",
+    "row": 56,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-7bbdcebde5",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-82dbdf7d49",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 8,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c4ccca9033",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 12,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-338b8c4194",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-4a8040310a",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 16,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c0cf0960aa",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 17,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-471578b277",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 40,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-09275212da",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 73,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a226815133",
+   "ref": {
+    "file": "data/train-00029-of-00032.parquet",
+    "row": 74,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-8dac2e7be3",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 0,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-d79a66af30",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 6,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-180b3e531b",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 9,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-1795d8baa5",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0f8b4234e4",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 30,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a517c2cdc0",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 33,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-c1415c67dc",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 49,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a28ea3e9c0",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 55,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-feafe2d149",
+   "ref": {
+    "file": "data/train-00030-of-00032.parquet",
+    "row": 61,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-33280df557",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-34244b26e8",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 11,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f6d8514dd6",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-a722abe8c9",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 20,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-f6a83119b1",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-0edd74ef09",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 38,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "plum_leaf_disease_classification-562def71a8",
+   "ref": {
+    "file": "data/train-00031-of-00032.parquet",
+    "row": 68,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Dry"
+   ],
+   "ann": {
+    "label": "Dry"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "plum_leaf_disease_classification-bdd76c37aa",
+    "plum_leaf_disease_classification-8e5fbf95e0",
+    "plum_leaf_disease_classification-6b2a891094",
+    "plum_leaf_disease_classification-72896e9019",
+    "plum_leaf_disease_classification-3928f12615",
+    "plum_leaf_disease_classification-56ec33ca59",
+    "plum_leaf_disease_classification-a689d609ac",
+    "plum_leaf_disease_classification-b5539a27d6",
+    "plum_leaf_disease_classification-43aff71869",
+    "plum_leaf_disease_classification-3e35731bbd",
+    "plum_leaf_disease_classification-098157ba8c",
+    "plum_leaf_disease_classification-b712cbed1e",
+    "plum_leaf_disease_classification-7b892591cc",
+    "plum_leaf_disease_classification-c1f76bd565",
+    "plum_leaf_disease_classification-3a7dd5260e",
+    "plum_leaf_disease_classification-a2dc915f98",
+    "plum_leaf_disease_classification-561349cce7",
+    "plum_leaf_disease_classification-50923e56b9",
+    "plum_leaf_disease_classification-a6968d9ef1",
+    "plum_leaf_disease_classification-20bbf3a42d",
+    "plum_leaf_disease_classification-692a2e626d",
+    "plum_leaf_disease_classification-b1bedb4339",
+    "plum_leaf_disease_classification-c16ce51a64",
+    "plum_leaf_disease_classification-93d94d6326",
+    "plum_leaf_disease_classification-3d0659b888",
+    "plum_leaf_disease_classification-5f4ad82185",
+    "plum_leaf_disease_classification-471578b277",
+    "plum_leaf_disease_classification-a226815133",
+    "plum_leaf_disease_classification-feafe2d149",
+    "plum_leaf_disease_classification-f6a83119b1"
+   ],
+   "10": [
+    "plum_leaf_disease_classification-bdd76c37aa",
+    "plum_leaf_disease_classification-6e22112e4c",
+    "plum_leaf_disease_classification-8e5fbf95e0",
+    "plum_leaf_disease_classification-6b2a891094",
+    "plum_leaf_disease_classification-72896e9019",
+    "plum_leaf_disease_classification-384457a848",
+    "plum_leaf_disease_classification-4b5aa31db7",
+    "plum_leaf_disease_classification-c9cf31435f",
+    "plum_leaf_disease_classification-1b789bb74a",
+    "plum_leaf_disease_classification-3928f12615",
+    "plum_leaf_disease_classification-aa2d100391",
+    "plum_leaf_disease_classification-56ec33ca59",
+    "plum_leaf_disease_classification-a689d609ac",
+    "plum_leaf_disease_classification-b5539a27d6",
+    "plum_leaf_disease_classification-afc7105ec3",
+    "plum_leaf_disease_classification-b57be29a4c",
+    "plum_leaf_disease_classification-2cf8e11b12",
+    "plum_leaf_disease_classification-08f32013e8",
+    "plum_leaf_disease_classification-43aff71869",
+    "plum_leaf_disease_classification-3e35731bbd",
+    "plum_leaf_disease_classification-098157ba8c",
+    "plum_leaf_disease_classification-5b378122d9",
+    "plum_leaf_disease_classification-b712cbed1e",
+    "plum_leaf_disease_classification-7b892591cc",
+    "plum_leaf_disease_classification-25263e2648",
+    "plum_leaf_disease_classification-5530fc29d1",
+    "plum_leaf_disease_classification-c1f76bd565",
+    "plum_leaf_disease_classification-e9404e977e",
+    "plum_leaf_disease_classification-881da08206",
+    "plum_leaf_disease_classification-3a7dd5260e",
+    "plum_leaf_disease_classification-a2dc915f98",
+    "plum_leaf_disease_classification-0b2048e555",
+    "plum_leaf_disease_classification-561349cce7",
+    "plum_leaf_disease_classification-50923e56b9",
+    "plum_leaf_disease_classification-4a00d05d9b",
+    "plum_leaf_disease_classification-a6968d9ef1",
+    "plum_leaf_disease_classification-150fb36db8",
+    "plum_leaf_disease_classification-20bbf3a42d",
+    "plum_leaf_disease_classification-6768b97d7b",
+    "plum_leaf_disease_classification-8421e95151",
+    "plum_leaf_disease_classification-692a2e626d",
+    "plum_leaf_disease_classification-f71e881c22",
+    "plum_leaf_disease_classification-eddb2c6c22",
+    "plum_leaf_disease_classification-a8bcdfa0e8",
+    "plum_leaf_disease_classification-b1bedb4339",
+    "plum_leaf_disease_classification-c16ce51a64",
+    "plum_leaf_disease_classification-93d94d6326",
+    "plum_leaf_disease_classification-3d0659b888",
+    "plum_leaf_disease_classification-ebb4ac2cbf",
+    "plum_leaf_disease_classification-ba6739b10b",
+    "plum_leaf_disease_classification-5f4ad82185",
+    "plum_leaf_disease_classification-e20da9a529",
+    "plum_leaf_disease_classification-c0cf0960aa",
+    "plum_leaf_disease_classification-471578b277",
+    "plum_leaf_disease_classification-a226815133",
+    "plum_leaf_disease_classification-a517c2cdc0",
+    "plum_leaf_disease_classification-feafe2d149",
+    "plum_leaf_disease_classification-33280df557",
+    "plum_leaf_disease_classification-a722abe8c9",
+    "plum_leaf_disease_classification-f6a83119b1"
+   ],
+   "15": [
+    "plum_leaf_disease_classification-bdd76c37aa",
+    "plum_leaf_disease_classification-6e22112e4c",
+    "plum_leaf_disease_classification-8e5fbf95e0",
+    "plum_leaf_disease_classification-6b2a891094",
+    "plum_leaf_disease_classification-7e56b670b8",
+    "plum_leaf_disease_classification-9f639afd91",
+    "plum_leaf_disease_classification-09a2fd5cc9",
+    "plum_leaf_disease_classification-72896e9019",
+    "plum_leaf_disease_classification-384457a848",
+    "plum_leaf_disease_classification-4b5aa31db7",
+    "plum_leaf_disease_classification-c9cf31435f",
+    "plum_leaf_disease_classification-1b789bb74a",
+    "plum_leaf_disease_classification-6f657c7489",
+    "plum_leaf_disease_classification-3928f12615",
+    "plum_leaf_disease_classification-0cdb159f55",
+    "plum_leaf_disease_classification-5d7e957638",
+    "plum_leaf_disease_classification-aa2d100391",
+    "plum_leaf_disease_classification-4e63711f6c",
+    "plum_leaf_disease_classification-56ec33ca59",
+    "plum_leaf_disease_classification-a689d609ac",
+    "plum_leaf_disease_classification-5ecc23c20a",
+    "plum_leaf_disease_classification-b5539a27d6",
+    "plum_leaf_disease_classification-afc7105ec3",
+    "plum_leaf_disease_classification-765c835552",
+    "plum_leaf_disease_classification-b57be29a4c",
+    "plum_leaf_disease_classification-2cf8e11b12",
+    "plum_leaf_disease_classification-08f32013e8",
+    "plum_leaf_disease_classification-43aff71869",
+    "plum_leaf_disease_classification-3e35731bbd",
+    "plum_leaf_disease_classification-cddb7ad1a5",
+    "plum_leaf_disease_classification-098157ba8c",
+    "plum_leaf_disease_classification-5b378122d9",
+    "plum_leaf_disease_classification-b712cbed1e",
+    "plum_leaf_disease_classification-7b892591cc",
+    "plum_leaf_disease_classification-105fbe7a20",
+    "plum_leaf_disease_classification-25263e2648",
+    "plum_leaf_disease_classification-5530fc29d1",
+    "plum_leaf_disease_classification-c1f76bd565",
+    "plum_leaf_disease_classification-e9404e977e",
+    "plum_leaf_disease_classification-bc24465364",
+    "plum_leaf_disease_classification-881da08206",
+    "plum_leaf_disease_classification-3a7dd5260e",
+    "plum_leaf_disease_classification-fc0bd4e7bd",
+    "plum_leaf_disease_classification-d9f126ae41",
+    "plum_leaf_disease_classification-c6f17f42d9",
+    "plum_leaf_disease_classification-a2dc915f98",
+    "plum_leaf_disease_classification-0b2048e555",
+    "plum_leaf_disease_classification-07681268c4",
+    "plum_leaf_disease_classification-795ca967b9",
+    "plum_leaf_disease_classification-561349cce7",
+    "plum_leaf_disease_classification-50923e56b9",
+    "plum_leaf_disease_classification-4a00d05d9b",
+    "plum_leaf_disease_classification-fa282983d3",
+    "plum_leaf_disease_classification-a6968d9ef1",
+    "plum_leaf_disease_classification-150fb36db8",
+    "plum_leaf_disease_classification-20bbf3a42d",
+    "plum_leaf_disease_classification-bb93a39945",
+    "plum_leaf_disease_classification-6768b97d7b",
+    "plum_leaf_disease_classification-8421e95151",
+    "plum_leaf_disease_classification-cc73a25459",
+    "plum_leaf_disease_classification-692a2e626d",
+    "plum_leaf_disease_classification-f71e881c22",
+    "plum_leaf_disease_classification-eddb2c6c22",
+    "plum_leaf_disease_classification-a8bcdfa0e8",
+    "plum_leaf_disease_classification-e5799ca3a0",
+    "plum_leaf_disease_classification-e0fdd188a8",
+    "plum_leaf_disease_classification-b1bedb4339",
+    "plum_leaf_disease_classification-c16ce51a64",
+    "plum_leaf_disease_classification-93d94d6326",
+    "plum_leaf_disease_classification-9272d02b23",
+    "plum_leaf_disease_classification-3d0659b888",
+    "plum_leaf_disease_classification-c4da28c295",
+    "plum_leaf_disease_classification-ebb4ac2cbf",
+    "plum_leaf_disease_classification-807f6ee579",
+    "plum_leaf_disease_classification-ba6739b10b",
+    "plum_leaf_disease_classification-5f4ad82185",
+    "plum_leaf_disease_classification-6e288769e8",
+    "plum_leaf_disease_classification-e20da9a529",
+    "plum_leaf_disease_classification-c4ccca9033",
+    "plum_leaf_disease_classification-c0cf0960aa",
+    "plum_leaf_disease_classification-471578b277",
+    "plum_leaf_disease_classification-a226815133",
+    "plum_leaf_disease_classification-180b3e531b",
+    "plum_leaf_disease_classification-1795d8baa5",
+    "plum_leaf_disease_classification-a517c2cdc0",
+    "plum_leaf_disease_classification-c1415c67dc",
+    "plum_leaf_disease_classification-feafe2d149",
+    "plum_leaf_disease_classification-33280df557",
+    "plum_leaf_disease_classification-a722abe8c9",
+    "plum_leaf_disease_classification-f6a83119b1"
+   ]
+  },
+  "s1": {
+   "5": [
+    "plum_leaf_disease_classification-181944028c",
+    "plum_leaf_disease_classification-b8bfeabeed",
+    "plum_leaf_disease_classification-f0911edfd4",
+    "plum_leaf_disease_classification-0efe331bca",
+    "plum_leaf_disease_classification-0271e05267",
+    "plum_leaf_disease_classification-8a9c398092",
+    "plum_leaf_disease_classification-5d77ce83d8",
+    "plum_leaf_disease_classification-670029f614",
+    "plum_leaf_disease_classification-5aae3a3160",
+    "plum_leaf_disease_classification-c3f9d5f3eb",
+    "plum_leaf_disease_classification-54a9817eff",
+    "plum_leaf_disease_classification-9f55c77dac",
+    "plum_leaf_disease_classification-2f8c65fc95",
+    "plum_leaf_disease_classification-8cc6f566f3",
+    "plum_leaf_disease_classification-32ffee910f",
+    "plum_leaf_disease_classification-9dd9f2f9c4",
+    "plum_leaf_disease_classification-9dde00ba26",
+    "plum_leaf_disease_classification-2c0c8181bf",
+    "plum_leaf_disease_classification-5d254884ad",
+    "plum_leaf_disease_classification-08e34760bd",
+    "plum_leaf_disease_classification-2cc99a056a",
+    "plum_leaf_disease_classification-879bd2358e",
+    "plum_leaf_disease_classification-8badafcf95",
+    "plum_leaf_disease_classification-c6ac9e74e7",
+    "plum_leaf_disease_classification-e9b2e0a58c",
+    "plum_leaf_disease_classification-e0b0982189",
+    "plum_leaf_disease_classification-0be5dc1f5c",
+    "plum_leaf_disease_classification-e6e07d6daf",
+    "plum_leaf_disease_classification-0f8b4234e4",
+    "plum_leaf_disease_classification-0edd74ef09"
+   ],
+   "10": [
+    "plum_leaf_disease_classification-181944028c",
+    "plum_leaf_disease_classification-b8bfeabeed",
+    "plum_leaf_disease_classification-f0911edfd4",
+    "plum_leaf_disease_classification-0efe331bca",
+    "plum_leaf_disease_classification-8c85cca60d",
+    "plum_leaf_disease_classification-0271e05267",
+    "plum_leaf_disease_classification-c05abaa31e",
+    "plum_leaf_disease_classification-a058314921",
+    "plum_leaf_disease_classification-208ee54000",
+    "plum_leaf_disease_classification-7af303dc8f",
+    "plum_leaf_disease_classification-7a54ece743",
+    "plum_leaf_disease_classification-5d7e957638",
+    "plum_leaf_disease_classification-3c43ce5514",
+    "plum_leaf_disease_classification-8a9c398092",
+    "plum_leaf_disease_classification-5d77ce83d8",
+    "plum_leaf_disease_classification-670029f614",
+    "plum_leaf_disease_classification-fe89135b99",
+    "plum_leaf_disease_classification-5aae3a3160",
+    "plum_leaf_disease_classification-0a1183f650",
+    "plum_leaf_disease_classification-c3f9d5f3eb",
+    "plum_leaf_disease_classification-75e9b81aca",
+    "plum_leaf_disease_classification-8057dd2de8",
+    "plum_leaf_disease_classification-934c2ba38e",
+    "plum_leaf_disease_classification-266067d65e",
+    "plum_leaf_disease_classification-54a9817eff",
+    "plum_leaf_disease_classification-9f55c77dac",
+    "plum_leaf_disease_classification-2f8c65fc95",
+    "plum_leaf_disease_classification-8cc6f566f3",
+    "plum_leaf_disease_classification-32ffee910f",
+    "plum_leaf_disease_classification-8463317ea7",
+    "plum_leaf_disease_classification-a3f9894f4b",
+    "plum_leaf_disease_classification-9dd9f2f9c4",
+    "plum_leaf_disease_classification-8affb5540e",
+    "plum_leaf_disease_classification-9dde00ba26",
+    "plum_leaf_disease_classification-6fdc2ab547",
+    "plum_leaf_disease_classification-2c0c8181bf",
+    "plum_leaf_disease_classification-74fe4c4cb3",
+    "plum_leaf_disease_classification-5e18eb1c4b",
+    "plum_leaf_disease_classification-5d254884ad",
+    "plum_leaf_disease_classification-08e34760bd",
+    "plum_leaf_disease_classification-2cc99a056a",
+    "plum_leaf_disease_classification-584f0fcfb6",
+    "plum_leaf_disease_classification-879bd2358e",
+    "plum_leaf_disease_classification-ebb4ac2cbf",
+    "plum_leaf_disease_classification-8badafcf95",
+    "plum_leaf_disease_classification-0c19100012",
+    "plum_leaf_disease_classification-c6ac9e74e7",
+    "plum_leaf_disease_classification-9869c6851a",
+    "plum_leaf_disease_classification-e892e39d57",
+    "plum_leaf_disease_classification-e9b2e0a58c",
+    "plum_leaf_disease_classification-34ba0682a1",
+    "plum_leaf_disease_classification-e0b0982189",
+    "plum_leaf_disease_classification-0be5dc1f5c",
+    "plum_leaf_disease_classification-581abbc1e2",
+    "plum_leaf_disease_classification-065a29931b",
+    "plum_leaf_disease_classification-e6e07d6daf",
+    "plum_leaf_disease_classification-4a8040310a",
+    "plum_leaf_disease_classification-d79a66af30",
+    "plum_leaf_disease_classification-0f8b4234e4",
+    "plum_leaf_disease_classification-0edd74ef09"
+   ],
+   "15": [
+    "plum_leaf_disease_classification-181944028c",
+    "plum_leaf_disease_classification-b8bfeabeed",
+    "plum_leaf_disease_classification-f0911edfd4",
+    "plum_leaf_disease_classification-0efe331bca",
+    "plum_leaf_disease_classification-8c85cca60d",
+    "plum_leaf_disease_classification-5b570e01d2",
+    "plum_leaf_disease_classification-0271e05267",
+    "plum_leaf_disease_classification-c05abaa31e",
+    "plum_leaf_disease_classification-a058314921",
+    "plum_leaf_disease_classification-208ee54000",
+    "plum_leaf_disease_classification-21dd7f3f19",
+    "plum_leaf_disease_classification-7af303dc8f",
+    "plum_leaf_disease_classification-8cad4e4c0f",
+    "plum_leaf_disease_classification-8be3f16791",
+    "plum_leaf_disease_classification-d91fe1870e",
+    "plum_leaf_disease_classification-7a54ece743",
+    "plum_leaf_disease_classification-5d7e957638",
+    "plum_leaf_disease_classification-b2c285f3bd",
+    "plum_leaf_disease_classification-3c43ce5514",
+    "plum_leaf_disease_classification-8a9c398092",
+    "plum_leaf_disease_classification-5d77ce83d8",
+    "plum_leaf_disease_classification-670029f614",
+    "plum_leaf_disease_classification-fe89135b99",
+    "plum_leaf_disease_classification-5aae3a3160",
+    "plum_leaf_disease_classification-d801659ea0",
+    "plum_leaf_disease_classification-f3e9c01f9d",
+    "plum_leaf_disease_classification-f73e05f97c",
+    "plum_leaf_disease_classification-b732541644",
+    "plum_leaf_disease_classification-0a1183f650",
+    "plum_leaf_disease_classification-c3f9d5f3eb",
+    "plum_leaf_disease_classification-75e9b81aca",
+    "plum_leaf_disease_classification-f2c3b98460",
+    "plum_leaf_disease_classification-0b16565b4d",
+    "plum_leaf_disease_classification-8057dd2de8",
+    "plum_leaf_disease_classification-934c2ba38e",
+    "plum_leaf_disease_classification-266067d65e",
+    "plum_leaf_disease_classification-54a9817eff",
+    "plum_leaf_disease_classification-d3c04b55b3",
+    "plum_leaf_disease_classification-8c75e482e3",
+    "plum_leaf_disease_classification-9f55c77dac",
+    "plum_leaf_disease_classification-a023eb99d8",
+    "plum_leaf_disease_classification-2f8c65fc95",
+    "plum_leaf_disease_classification-8cc6f566f3",
+    "plum_leaf_disease_classification-32ffee910f",
+    "plum_leaf_disease_classification-8463317ea7",
+    "plum_leaf_disease_classification-9acb5bf720",
+    "plum_leaf_disease_classification-a3f9894f4b",
+    "plum_leaf_disease_classification-9dd9f2f9c4",
+    "plum_leaf_disease_classification-8affb5540e",
+    "plum_leaf_disease_classification-9dde00ba26",
+    "plum_leaf_disease_classification-6fdc2ab547",
+    "plum_leaf_disease_classification-2c1a7b9c4d",
+    "plum_leaf_disease_classification-2c0c8181bf",
+    "plum_leaf_disease_classification-150fb36db8",
+    "plum_leaf_disease_classification-74fe4c4cb3",
+    "plum_leaf_disease_classification-5e18eb1c4b",
+    "plum_leaf_disease_classification-527d9c8ae9",
+    "plum_leaf_disease_classification-3f2ce39596",
+    "plum_leaf_disease_classification-5d254884ad",
+    "plum_leaf_disease_classification-08e34760bd",
+    "plum_leaf_disease_classification-e0e5205c19",
+    "plum_leaf_disease_classification-9b92462c10",
+    "plum_leaf_disease_classification-dbd48536a4",
+    "plum_leaf_disease_classification-2cc99a056a",
+    "plum_leaf_disease_classification-584f0fcfb6",
+    "plum_leaf_disease_classification-879bd2358e",
+    "plum_leaf_disease_classification-ebb4ac2cbf",
+    "plum_leaf_disease_classification-8badafcf95",
+    "plum_leaf_disease_classification-0c19100012",
+    "plum_leaf_disease_classification-fb506b8961",
+    "plum_leaf_disease_classification-c6ac9e74e7",
+    "plum_leaf_disease_classification-9869c6851a",
+    "plum_leaf_disease_classification-8f5f5c6758",
+    "plum_leaf_disease_classification-e892e39d57",
+    "plum_leaf_disease_classification-e9b2e0a58c",
+    "plum_leaf_disease_classification-34ba0682a1",
+    "plum_leaf_disease_classification-ac0101e4a1",
+    "plum_leaf_disease_classification-e0b0982189",
+    "plum_leaf_disease_classification-0be5dc1f5c",
+    "plum_leaf_disease_classification-4a6c0cf490",
+    "plum_leaf_disease_classification-581abbc1e2",
+    "plum_leaf_disease_classification-065a29931b",
+    "plum_leaf_disease_classification-e6e07d6daf",
+    "plum_leaf_disease_classification-4a8040310a",
+    "plum_leaf_disease_classification-8dac2e7be3",
+    "plum_leaf_disease_classification-d79a66af30",
+    "plum_leaf_disease_classification-0f8b4234e4",
+    "plum_leaf_disease_classification-f6d8514dd6",
+    "plum_leaf_disease_classification-0edd74ef09",
+    "plum_leaf_disease_classification-562def71a8"
+   ]
+  },
+  "s2": {
+   "5": [
+    "plum_leaf_disease_classification-9f639afd91",
+    "plum_leaf_disease_classification-6524c4934f",
+    "plum_leaf_disease_classification-29c3cafc5d",
+    "plum_leaf_disease_classification-a4f8c9e171",
+    "plum_leaf_disease_classification-53c9ffa767",
+    "plum_leaf_disease_classification-484b5702a5",
+    "plum_leaf_disease_classification-2475ab89e3",
+    "plum_leaf_disease_classification-d45767c05e",
+    "plum_leaf_disease_classification-1f735b6f36",
+    "plum_leaf_disease_classification-6208d02723",
+    "plum_leaf_disease_classification-3f9b741efa",
+    "plum_leaf_disease_classification-c1cafd8c2c",
+    "plum_leaf_disease_classification-db38270da0",
+    "plum_leaf_disease_classification-50034612c7",
+    "plum_leaf_disease_classification-c16a1da0c6",
+    "plum_leaf_disease_classification-07681268c4",
+    "plum_leaf_disease_classification-fee88b4ce8",
+    "plum_leaf_disease_classification-c517458ad5",
+    "plum_leaf_disease_classification-591e250d89",
+    "plum_leaf_disease_classification-d0c6ba5676",
+    "plum_leaf_disease_classification-ecdc83c330",
+    "plum_leaf_disease_classification-b6b4e70c87",
+    "plum_leaf_disease_classification-36aa178463",
+    "plum_leaf_disease_classification-881768ca98",
+    "plum_leaf_disease_classification-b360430703",
+    "plum_leaf_disease_classification-edf36eeb08",
+    "plum_leaf_disease_classification-d482302ff0",
+    "plum_leaf_disease_classification-972283df5c",
+    "plum_leaf_disease_classification-a28ea3e9c0",
+    "plum_leaf_disease_classification-0edd74ef09"
+   ],
+   "10": [
+    "plum_leaf_disease_classification-9379b46629",
+    "plum_leaf_disease_classification-9f639afd91",
+    "plum_leaf_disease_classification-6524c4934f",
+    "plum_leaf_disease_classification-4a25f7527e",
+    "plum_leaf_disease_classification-29c3cafc5d",
+    "plum_leaf_disease_classification-a4f8c9e171",
+    "plum_leaf_disease_classification-53c9ffa767",
+    "plum_leaf_disease_classification-37ac858549",
+    "plum_leaf_disease_classification-8f72fff22c",
+    "plum_leaf_disease_classification-d6d1719a3f",
+    "plum_leaf_disease_classification-aebb901c46",
+    "plum_leaf_disease_classification-22ec803987",
+    "plum_leaf_disease_classification-484b5702a5",
+    "plum_leaf_disease_classification-2475ab89e3",
+    "plum_leaf_disease_classification-d45767c05e",
+    "plum_leaf_disease_classification-f0debda5f4",
+    "plum_leaf_disease_classification-1f735b6f36",
+    "plum_leaf_disease_classification-3e35731bbd",
+    "plum_leaf_disease_classification-6208d02723",
+    "plum_leaf_disease_classification-2e0d032b36",
+    "plum_leaf_disease_classification-3f9b741efa",
+    "plum_leaf_disease_classification-c04d5b0c96",
+    "plum_leaf_disease_classification-c1cafd8c2c",
+    "plum_leaf_disease_classification-f06fa5161c",
+    "plum_leaf_disease_classification-db38270da0",
+    "plum_leaf_disease_classification-754a220eba",
+    "plum_leaf_disease_classification-50034612c7",
+    "plum_leaf_disease_classification-9748b908f3",
+    "plum_leaf_disease_classification-c16a1da0c6",
+    "plum_leaf_disease_classification-728036166a",
+    "plum_leaf_disease_classification-e56e1bad02",
+    "plum_leaf_disease_classification-07681268c4",
+    "plum_leaf_disease_classification-5c1494714e",
+    "plum_leaf_disease_classification-5cea45a3ef",
+    "plum_leaf_disease_classification-fee88b4ce8",
+    "plum_leaf_disease_classification-80fe89c500",
+    "plum_leaf_disease_classification-c517458ad5",
+    "plum_leaf_disease_classification-3e559b3641",
+    "plum_leaf_disease_classification-591e250d89",
+    "plum_leaf_disease_classification-d0c6ba5676",
+    "plum_leaf_disease_classification-f224b3d032",
+    "plum_leaf_disease_classification-ecdc83c330",
+    "plum_leaf_disease_classification-2b19989db5",
+    "plum_leaf_disease_classification-59fc12d43b",
+    "plum_leaf_disease_classification-b6b4e70c87",
+    "plum_leaf_disease_classification-39966484c4",
+    "plum_leaf_disease_classification-2615cc1f47",
+    "plum_leaf_disease_classification-36aa178463",
+    "plum_leaf_disease_classification-881768ca98",
+    "plum_leaf_disease_classification-b360430703",
+    "plum_leaf_disease_classification-f0d7d4178e",
+    "plum_leaf_disease_classification-edf36eeb08",
+    "plum_leaf_disease_classification-f576d6eee9",
+    "plum_leaf_disease_classification-d482302ff0",
+    "plum_leaf_disease_classification-972283df5c",
+    "plum_leaf_disease_classification-c4ccca9033",
+    "plum_leaf_disease_classification-09275212da",
+    "plum_leaf_disease_classification-a28ea3e9c0",
+    "plum_leaf_disease_classification-34244b26e8",
+    "plum_leaf_disease_classification-0edd74ef09"
+   ],
+   "15": [
+    "plum_leaf_disease_classification-9379b46629",
+    "plum_leaf_disease_classification-8ae0c6d360",
+    "plum_leaf_disease_classification-ee4a62c2f8",
+    "plum_leaf_disease_classification-9f639afd91",
+    "plum_leaf_disease_classification-6524c4934f",
+    "plum_leaf_disease_classification-4a25f7527e",
+    "plum_leaf_disease_classification-29c3cafc5d",
+    "plum_leaf_disease_classification-21bb0d6f80",
+    "plum_leaf_disease_classification-a4f8c9e171",
+    "plum_leaf_disease_classification-53c9ffa767",
+    "plum_leaf_disease_classification-37ac858549",
+    "plum_leaf_disease_classification-8f72fff22c",
+    "plum_leaf_disease_classification-ca9fcd26be",
+    "plum_leaf_disease_classification-cc9f39f4e8",
+    "plum_leaf_disease_classification-d6d1719a3f",
+    "plum_leaf_disease_classification-aebb901c46",
+    "plum_leaf_disease_classification-a6ac932964",
+    "plum_leaf_disease_classification-14b87b0f29",
+    "plum_leaf_disease_classification-22ec803987",
+    "plum_leaf_disease_classification-68b1b32bbf",
+    "plum_leaf_disease_classification-484b5702a5",
+    "plum_leaf_disease_classification-2475ab89e3",
+    "plum_leaf_disease_classification-d45767c05e",
+    "plum_leaf_disease_classification-971bbd772e",
+    "plum_leaf_disease_classification-f0debda5f4",
+    "plum_leaf_disease_classification-1f735b6f36",
+    "plum_leaf_disease_classification-c056db6898",
+    "plum_leaf_disease_classification-3e35731bbd",
+    "plum_leaf_disease_classification-6208d02723",
+    "plum_leaf_disease_classification-2e0d032b36",
+    "plum_leaf_disease_classification-0b16565b4d",
+    "plum_leaf_disease_classification-3f9b741efa",
+    "plum_leaf_disease_classification-c04d5b0c96",
+    "plum_leaf_disease_classification-c1cafd8c2c",
+    "plum_leaf_disease_classification-d0831b1252",
+    "plum_leaf_disease_classification-f06fa5161c",
+    "plum_leaf_disease_classification-db38270da0",
+    "plum_leaf_disease_classification-754a220eba",
+    "plum_leaf_disease_classification-3d3081031e",
+    "plum_leaf_disease_classification-50034612c7",
+    "plum_leaf_disease_classification-9748b908f3",
+    "plum_leaf_disease_classification-977484bd40",
+    "plum_leaf_disease_classification-c16a1da0c6",
+    "plum_leaf_disease_classification-f7cb7c90eb",
+    "plum_leaf_disease_classification-728036166a",
+    "plum_leaf_disease_classification-a6efbc641d",
+    "plum_leaf_disease_classification-8491954976",
+    "plum_leaf_disease_classification-e56e1bad02",
+    "plum_leaf_disease_classification-07681268c4",
+    "plum_leaf_disease_classification-5c1494714e",
+    "plum_leaf_disease_classification-5cea45a3ef",
+    "plum_leaf_disease_classification-fee88b4ce8",
+    "plum_leaf_disease_classification-80fe89c500",
+    "plum_leaf_disease_classification-c517458ad5",
+    "plum_leaf_disease_classification-94bfc9d412",
+    "plum_leaf_disease_classification-73ac539c69",
+    "plum_leaf_disease_classification-3e559b3641",
+    "plum_leaf_disease_classification-591e250d89",
+    "plum_leaf_disease_classification-d0c6ba5676",
+    "plum_leaf_disease_classification-52da88bf8f",
+    "plum_leaf_disease_classification-58bdd924e3",
+    "plum_leaf_disease_classification-4a28439a4e",
+    "plum_leaf_disease_classification-f224b3d032",
+    "plum_leaf_disease_classification-ecdc83c330",
+    "plum_leaf_disease_classification-657220ce6a",
+    "plum_leaf_disease_classification-a636b665ba",
+    "plum_leaf_disease_classification-2b19989db5",
+    "plum_leaf_disease_classification-59fc12d43b",
+    "plum_leaf_disease_classification-b6b4e70c87",
+    "plum_leaf_disease_classification-39966484c4",
+    "plum_leaf_disease_classification-df52563d0b",
+    "plum_leaf_disease_classification-2615cc1f47",
+    "plum_leaf_disease_classification-36aa178463",
+    "plum_leaf_disease_classification-881768ca98",
+    "plum_leaf_disease_classification-b360430703",
+    "plum_leaf_disease_classification-f0d7d4178e",
+    "plum_leaf_disease_classification-8267c5c128",
+    "plum_leaf_disease_classification-0be5dc1f5c",
+    "plum_leaf_disease_classification-edf36eeb08",
+    "plum_leaf_disease_classification-f576d6eee9",
+    "plum_leaf_disease_classification-d482302ff0",
+    "plum_leaf_disease_classification-972283df5c",
+    "plum_leaf_disease_classification-7bbdcebde5",
+    "plum_leaf_disease_classification-82dbdf7d49",
+    "plum_leaf_disease_classification-c4ccca9033",
+    "plum_leaf_disease_classification-338b8c4194",
+    "plum_leaf_disease_classification-09275212da",
+    "plum_leaf_disease_classification-a28ea3e9c0",
+    "plum_leaf_disease_classification-34244b26e8",
+    "plum_leaf_disease_classification-0edd74ef09"
+   ]
+  }
+ }
+}

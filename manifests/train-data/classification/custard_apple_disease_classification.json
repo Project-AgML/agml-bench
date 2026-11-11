@@ -1,0 +1,4831 @@
+{
+ "name": "custard_apple_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/custard_apple_disease_classification",
+ "hf_sha": "80e710823ae0fd0fa5c6c0ba2a4d68299a6f99cf",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T10:20:29+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Athracnose",
+   "Blank Canker",
+   "Diplodia Rot",
+   "Leaf spot on Leaves",
+   "Leaf spot on fruit",
+   "Mealy Bug"
+  ],
+  "indexed_rows": 8226
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "custard_apple_disease_classification-4d395e4a98",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 3,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-376b329b02",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 5,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a879833eea",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 27,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b5911ef87e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 34,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-12f47dc240",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3ce29d2a7a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 99,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c99bfcd71c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 103,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-80cd50a50c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-bca5bc0bd5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-bca9fae9fa",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 217,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d85fcf6627",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 304,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f77347e7f8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 323,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-605a9c3016",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 365,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d06e73c1e8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d2dd00e0ae",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1281a62bb1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 395,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-23d5c98c85",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0e9d82bb1a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 439,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8495c478dd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-bd3b8c77dc",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 462,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-de63ca1f37",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 469,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-aa7ba52471",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 482,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-32ba7ae9b9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 492,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-da3a27100d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-6c1683cfe3",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 526,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e1eaf7db0c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b88df4c6b0",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 566,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ab11ea9a67",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 596,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b7506577a8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 598,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b79c7fe93e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 619,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2acf6b229d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 626,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2db607f3c8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 681,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0e9975cf4e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 694,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-265b177b70",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-76a13b8234",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 721,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-7b71a76707",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 731,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b7117683db",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a4e783ebdc",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 761,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2f3bab105e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 792,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fef778933f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 802,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3b6eb063b5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 819,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d34029cf2f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 849,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on fruit"
+   ],
+   "ann": {
+    "label": "Leaf spot on fruit"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-90e2433a78",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 867,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1a17d8d0f5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 897,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2c732fbaa9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 903,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f42bb547d8",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d3aab6404d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 982,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1f02eb04af",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 983,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f17e39fa05",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 985,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ecfb42ff54",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 986,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2253e43dd6",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1023,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b151106e66",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5fe759283c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1069,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c0567d3684",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1072,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-247621cf4d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1082,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-52cf0b75ac",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1092,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e7141294ca",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1144,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-792c67f7bb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1156,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2c40d7191a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1261,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e8f1540eff",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1306,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f275f6f583",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f5dbb22dfb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1352,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-63f1a2b987",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1393,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e50a31b19e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f33cde8e11",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1443,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f86271d58c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1457,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0e9200837a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1458,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-42177a5468",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1493,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-284e5f5889",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1e5c7c3ba4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1563,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e80f895e65",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1572,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b3f9ff3e3f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1618,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3baceb2ebb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-99381686e7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1702,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cf15d0a4fd",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1709,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a7607f685e",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1719,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d639c004bb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1728,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c0506946e7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1732,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3dcce4e258",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1741,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-63d884335f",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1766,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-bbee278996",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1771,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-54793b7657",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1806,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b02a7f7fa9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1809,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2f02768cc9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1855,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1d4a54bf70",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1861,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-123414b4e7",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1909,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1a139419da",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1919,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Athracnose"
+   ],
+   "ann": {
+    "label": "Athracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-73c97fccf4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 1945,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0b56b2dce4",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2017,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0680a1351c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2095,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-af753b7a92",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2099,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f626cfb8cb",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2122,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ce47e2b522",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2206,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-12336cd48d",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2235,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d4e3899fa1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2265,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e14ba09ea1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8131038b72",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2841cd5370",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-adf78ff80c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2368,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ff7737374c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2415,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-533753522a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2437,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-21c299fb58",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1cedbfe674",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2536,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9f4ba86249",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2567,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9d13b3bf86",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2602,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ee41872bdc",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2603,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-be513e13c1",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2624,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ece2f74938",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2630,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-12cfb378c5",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-752dac6380",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2652,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3a0be6bfa9",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0aa3a3751c",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2665,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5be7fb966a",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c66c7bd857",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2679,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e95c16c410",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2685,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cc8aae3275",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2687,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8ffaa1aa57",
+   "ref": {
+    "file": "data/train-00000-of-00003.parquet",
+    "row": 2739,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-182fadf0c8",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 22,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-aaf16bcc29",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 60,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-78dbc4bbae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-340d971794",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-00751615ae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8a651a242c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 212,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2580fd9e34",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 221,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-4e0f5e3868",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-6f1d78eb43",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cc910e8995",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 274,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1420976e7e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-456fd794e1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f2572d15ec",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 400,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2159deef31",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c5628d832a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 429,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf spot on Leaves"
+   ],
+   "ann": {
+    "label": "Leaf spot on Leaves"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e8a83b7c9f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 479,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-540d00f179",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 507,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5973f01566",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 516,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a1749f0f86",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 530,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-628360c2a1",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 549,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9833df5cb9",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 608,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-37f4755cf9",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a65deac84e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 667,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3debd86f90",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e4731b77e7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 695,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a1be77de9b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 744,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2de92f07fb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 750,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5446240ec5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 763,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-eb1803a04e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 784,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3742374588",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 850,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-67bdf7dfcb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 867,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9cc258e27d",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 907,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a6d5d32c78",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 910,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-73fd4c29ae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 942,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-028065dd3f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-6777c3591c",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 980,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-80e7102406",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1037,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3711e88df5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1044,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-87e7905057",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1058,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a152c9c9b5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1070,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-755b79d5d6",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1086,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-18049cce74",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-228cc72c15",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1158,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fbc47b33a6",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a931845fa9",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1228,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-aeb4e65138",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f80946ad5b",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1363,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ac8fe7a42f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ccb03c8131",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1463,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2fb270f998",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1902a0f4ae",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1560,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-4991cab5ac",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1594,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d973d80e04",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1639,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-12040037dc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1659,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f90fd284f5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1752,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8f3902896a",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1828,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ab60b0462f",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 1898,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f419926fd7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-71c21082cb",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2034,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f0e4deb9e8",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2045,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Diplodia Rot"
+   ],
+   "ann": {
+    "label": "Diplodia Rot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f4a98f9dec",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f69a0f4606",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2183,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-3549fb9481",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cbfc66db09",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2208,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1764a3c2f7",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fc2b7ecca5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d2adef4965",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2245,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b0ab9ccccc",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8626dbca70",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2335,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fc5026556e",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2362,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5d0d05e4a2",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2421,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-356a9bfc20",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2442,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-edaec281fa",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5b25fcc866",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ce04edbba5",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2575,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-8f08edbbde",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2629,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9cdd745981",
+   "ref": {
+    "file": "data/train-00001-of-00003.parquet",
+    "row": 2651,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-23f557aef0",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e8ddb1ca8a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 36,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d76de60f1e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 88,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e45c7a033a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 98,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2c39826e2e",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-e692d1f053",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 176,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-219220915f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c8f0f661ba",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 194,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-94c0c54d61",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 200,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-54a22e07ab",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-eba507b439",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-da2ded6d56",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1f18952722",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 497,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5ab4f2c41f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 519,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-93946e0936",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 521,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f2f4b25fac",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 542,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-02f8262a29",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 571,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b86dc0f3b9",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 588,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-dd0779aeca",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d65872ac77",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 677,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-49d7cc6e9a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 732,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fa830db890",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-ff9f664c28",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 847,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-22bfdecd67",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 893,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-6571aa4fd9",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 903,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-18653fd08f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-aa41ecf266",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 933,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Mealy Bug"
+   ],
+   "ann": {
+    "label": "Mealy Bug"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a572cf09e9",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1072,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1ba4ede918",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1084,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-be557803b7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1092,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2bda61e4c1",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1098,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-bc36e67387",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1100,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-794b6caf93",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-98a3be0b23",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-7ae6c00c8d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1316,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cd5a7f06a7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1340,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-7fed6ddf76",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1418,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f98f04daa5",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1459,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c349341901",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1506,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-1824fe0067",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-10b84a691b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1607,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-18ec13476d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1648,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0e878d433b",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1653,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-da559f7a52",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1691,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-12125f6cb2",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-f87e720954",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1743,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-806a185df5",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1801,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d93e27c804",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1865,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-c65f214b1d",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1866,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9f46c69fc4",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1868,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5e477f73b7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 1874,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-2f309afec7",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5621ef7ccd",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-cc68d97303",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-7e3f1358c0",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2146,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-618d3dcde6",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-5958d95eca",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-d8212720af",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2250,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-7914b7f7be",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2303,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-838bd47774",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9f91aa4439",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2378,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-446b5f611a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2449,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-62c9e4ac4f",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2472,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-eefc873bee",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2502,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-9d4abf13db",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-0dd0e8cb79",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2627,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-498f1e73c3",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2658,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-6ff7563842",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-a9e44b7f7a",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2704,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-fe89bf3638",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2705,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "custard_apple_disease_classification-b33c40f1b8",
+   "ref": {
+    "file": "data/train-00002-of-00003.parquet",
+    "row": 2722,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Blank Canker"
+   ],
+   "ann": {
+    "label": "Blank Canker"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "custard_apple_disease_classification-4d395e4a98",
+    "custard_apple_disease_classification-bd3b8c77dc",
+    "custard_apple_disease_classification-b79c7fe93e",
+    "custard_apple_disease_classification-76a13b8234",
+    "custard_apple_disease_classification-2f3bab105e",
+    "custard_apple_disease_classification-f5dbb22dfb",
+    "custard_apple_disease_classification-f33cde8e11",
+    "custard_apple_disease_classification-e80f895e65",
+    "custard_apple_disease_classification-d639c004bb",
+    "custard_apple_disease_classification-54793b7657",
+    "custard_apple_disease_classification-0b56b2dce4",
+    "custard_apple_disease_classification-12336cd48d",
+    "custard_apple_disease_classification-be513e13c1",
+    "custard_apple_disease_classification-c66c7bd857",
+    "custard_apple_disease_classification-1420976e7e",
+    "custard_apple_disease_classification-67bdf7dfcb",
+    "custard_apple_disease_classification-9cc258e27d",
+    "custard_apple_disease_classification-a6d5d32c78",
+    "custard_apple_disease_classification-87e7905057",
+    "custard_apple_disease_classification-228cc72c15",
+    "custard_apple_disease_classification-f4a98f9dec",
+    "custard_apple_disease_classification-edaec281fa",
+    "custard_apple_disease_classification-e45c7a033a",
+    "custard_apple_disease_classification-18653fd08f",
+    "custard_apple_disease_classification-aa41ecf266",
+    "custard_apple_disease_classification-1ba4ede918",
+    "custard_apple_disease_classification-806a185df5",
+    "custard_apple_disease_classification-c65f214b1d",
+    "custard_apple_disease_classification-9f46c69fc4",
+    "custard_apple_disease_classification-838bd47774"
+   ],
+   "10": [
+    "custard_apple_disease_classification-4d395e4a98",
+    "custard_apple_disease_classification-376b329b02",
+    "custard_apple_disease_classification-605a9c3016",
+    "custard_apple_disease_classification-bd3b8c77dc",
+    "custard_apple_disease_classification-32ba7ae9b9",
+    "custard_apple_disease_classification-b88df4c6b0",
+    "custard_apple_disease_classification-b79c7fe93e",
+    "custard_apple_disease_classification-76a13b8234",
+    "custard_apple_disease_classification-2f3bab105e",
+    "custard_apple_disease_classification-3b6eb063b5",
+    "custard_apple_disease_classification-f42bb547d8",
+    "custard_apple_disease_classification-e8f1540eff",
+    "custard_apple_disease_classification-f5dbb22dfb",
+    "custard_apple_disease_classification-f33cde8e11",
+    "custard_apple_disease_classification-1e5c7c3ba4",
+    "custard_apple_disease_classification-e80f895e65",
+    "custard_apple_disease_classification-d639c004bb",
+    "custard_apple_disease_classification-bbee278996",
+    "custard_apple_disease_classification-54793b7657",
+    "custard_apple_disease_classification-b02a7f7fa9",
+    "custard_apple_disease_classification-0b56b2dce4",
+    "custard_apple_disease_classification-12336cd48d",
+    "custard_apple_disease_classification-2841cd5370",
+    "custard_apple_disease_classification-533753522a",
+    "custard_apple_disease_classification-9f4ba86249",
+    "custard_apple_disease_classification-be513e13c1",
+    "custard_apple_disease_classification-c66c7bd857",
+    "custard_apple_disease_classification-182fadf0c8",
+    "custard_apple_disease_classification-1420976e7e",
+    "custard_apple_disease_classification-2159deef31",
+    "custard_apple_disease_classification-5973f01566",
+    "custard_apple_disease_classification-67bdf7dfcb",
+    "custard_apple_disease_classification-9cc258e27d",
+    "custard_apple_disease_classification-a6d5d32c78",
+    "custard_apple_disease_classification-73fd4c29ae",
+    "custard_apple_disease_classification-028065dd3f",
+    "custard_apple_disease_classification-87e7905057",
+    "custard_apple_disease_classification-755b79d5d6",
+    "custard_apple_disease_classification-228cc72c15",
+    "custard_apple_disease_classification-ac8fe7a42f",
+    "custard_apple_disease_classification-f4a98f9dec",
+    "custard_apple_disease_classification-f69a0f4606",
+    "custard_apple_disease_classification-fc2b7ecca5",
+    "custard_apple_disease_classification-d2adef4965",
+    "custard_apple_disease_classification-fc5026556e",
+    "custard_apple_disease_classification-edaec281fa",
+    "custard_apple_disease_classification-d76de60f1e",
+    "custard_apple_disease_classification-e45c7a033a",
+    "custard_apple_disease_classification-18653fd08f",
+    "custard_apple_disease_classification-aa41ecf266",
+    "custard_apple_disease_classification-a572cf09e9",
+    "custard_apple_disease_classification-1ba4ede918",
+    "custard_apple_disease_classification-f98f04daa5",
+    "custard_apple_disease_classification-806a185df5",
+    "custard_apple_disease_classification-c65f214b1d",
+    "custard_apple_disease_classification-9f46c69fc4",
+    "custard_apple_disease_classification-5e477f73b7",
+    "custard_apple_disease_classification-cc68d97303",
+    "custard_apple_disease_classification-838bd47774",
+    "custard_apple_disease_classification-a9e44b7f7a"
+   ],
+   "15": [
+    "custard_apple_disease_classification-4d395e4a98",
+    "custard_apple_disease_classification-376b329b02",
+    "custard_apple_disease_classification-b5911ef87e",
+    "custard_apple_disease_classification-c99bfcd71c",
+    "custard_apple_disease_classification-605a9c3016",
+    "custard_apple_disease_classification-bd3b8c77dc",
+    "custard_apple_disease_classification-32ba7ae9b9",
+    "custard_apple_disease_classification-6c1683cfe3",
+    "custard_apple_disease_classification-b88df4c6b0",
+    "custard_apple_disease_classification-b79c7fe93e",
+    "custard_apple_disease_classification-2acf6b229d",
+    "custard_apple_disease_classification-2db607f3c8",
+    "custard_apple_disease_classification-76a13b8234",
+    "custard_apple_disease_classification-2f3bab105e",
+    "custard_apple_disease_classification-3b6eb063b5",
+    "custard_apple_disease_classification-1a17d8d0f5",
+    "custard_apple_disease_classification-2c732fbaa9",
+    "custard_apple_disease_classification-f42bb547d8",
+    "custard_apple_disease_classification-5fe759283c",
+    "custard_apple_disease_classification-e8f1540eff",
+    "custard_apple_disease_classification-f5dbb22dfb",
+    "custard_apple_disease_classification-e50a31b19e",
+    "custard_apple_disease_classification-f33cde8e11",
+    "custard_apple_disease_classification-1e5c7c3ba4",
+    "custard_apple_disease_classification-e80f895e65",
+    "custard_apple_disease_classification-cf15d0a4fd",
+    "custard_apple_disease_classification-d639c004bb",
+    "custard_apple_disease_classification-bbee278996",
+    "custard_apple_disease_classification-54793b7657",
+    "custard_apple_disease_classification-b02a7f7fa9",
+    "custard_apple_disease_classification-0b56b2dce4",
+    "custard_apple_disease_classification-af753b7a92",
+    "custard_apple_disease_classification-f626cfb8cb",
+    "custard_apple_disease_classification-12336cd48d",
+    "custard_apple_disease_classification-e14ba09ea1",
+    "custard_apple_disease_classification-2841cd5370",
+    "custard_apple_disease_classification-533753522a",
+    "custard_apple_disease_classification-1cedbfe674",
+    "custard_apple_disease_classification-9f4ba86249",
+    "custard_apple_disease_classification-be513e13c1",
+    "custard_apple_disease_classification-ece2f74938",
+    "custard_apple_disease_classification-c66c7bd857",
+    "custard_apple_disease_classification-182fadf0c8",
+    "custard_apple_disease_classification-1420976e7e",
+    "custard_apple_disease_classification-2159deef31",
+    "custard_apple_disease_classification-540d00f179",
+    "custard_apple_disease_classification-5973f01566",
+    "custard_apple_disease_classification-2de92f07fb",
+    "custard_apple_disease_classification-eb1803a04e",
+    "custard_apple_disease_classification-67bdf7dfcb",
+    "custard_apple_disease_classification-9cc258e27d",
+    "custard_apple_disease_classification-a6d5d32c78",
+    "custard_apple_disease_classification-73fd4c29ae",
+    "custard_apple_disease_classification-028065dd3f",
+    "custard_apple_disease_classification-80e7102406",
+    "custard_apple_disease_classification-3711e88df5",
+    "custard_apple_disease_classification-87e7905057",
+    "custard_apple_disease_classification-755b79d5d6",
+    "custard_apple_disease_classification-228cc72c15",
+    "custard_apple_disease_classification-ac8fe7a42f",
+    "custard_apple_disease_classification-f4a98f9dec",
+    "custard_apple_disease_classification-f69a0f4606",
+    "custard_apple_disease_classification-fc2b7ecca5",
+    "custard_apple_disease_classification-d2adef4965",
+    "custard_apple_disease_classification-fc5026556e",
+    "custard_apple_disease_classification-edaec281fa",
+    "custard_apple_disease_classification-d76de60f1e",
+    "custard_apple_disease_classification-e45c7a033a",
+    "custard_apple_disease_classification-54a22e07ab",
+    "custard_apple_disease_classification-b86dc0f3b9",
+    "custard_apple_disease_classification-49d7cc6e9a",
+    "custard_apple_disease_classification-ff9f664c28",
+    "custard_apple_disease_classification-6571aa4fd9",
+    "custard_apple_disease_classification-18653fd08f",
+    "custard_apple_disease_classification-aa41ecf266",
+    "custard_apple_disease_classification-a572cf09e9",
+    "custard_apple_disease_classification-1ba4ede918",
+    "custard_apple_disease_classification-cd5a7f06a7",
+    "custard_apple_disease_classification-f98f04daa5",
+    "custard_apple_disease_classification-1824fe0067",
+    "custard_apple_disease_classification-806a185df5",
+    "custard_apple_disease_classification-c65f214b1d",
+    "custard_apple_disease_classification-9f46c69fc4",
+    "custard_apple_disease_classification-5e477f73b7",
+    "custard_apple_disease_classification-cc68d97303",
+    "custard_apple_disease_classification-5958d95eca",
+    "custard_apple_disease_classification-838bd47774",
+    "custard_apple_disease_classification-9d4abf13db",
+    "custard_apple_disease_classification-6ff7563842",
+    "custard_apple_disease_classification-a9e44b7f7a"
+   ]
+  },
+  "s1": {
+   "5": [
+    "custard_apple_disease_classification-bca9fae9fa",
+    "custard_apple_disease_classification-1281a62bb1",
+    "custard_apple_disease_classification-0e9975cf4e",
+    "custard_apple_disease_classification-b7117683db",
+    "custard_apple_disease_classification-fef778933f",
+    "custard_apple_disease_classification-2c40d7191a",
+    "custard_apple_disease_classification-f275f6f583",
+    "custard_apple_disease_classification-42177a5468",
+    "custard_apple_disease_classification-284e5f5889",
+    "custard_apple_disease_classification-3dcce4e258",
+    "custard_apple_disease_classification-aaf16bcc29",
+    "custard_apple_disease_classification-2580fd9e34",
+    "custard_apple_disease_classification-4e0f5e3868",
+    "custard_apple_disease_classification-cc910e8995",
+    "custard_apple_disease_classification-c5628d832a",
+    "custard_apple_disease_classification-e8a83b7c9f",
+    "custard_apple_disease_classification-37f4755cf9",
+    "custard_apple_disease_classification-a931845fa9",
+    "custard_apple_disease_classification-2fb270f998",
+    "custard_apple_disease_classification-f0e4deb9e8",
+    "custard_apple_disease_classification-8f08edbbde",
+    "custard_apple_disease_classification-c8f0f661ba",
+    "custard_apple_disease_classification-94c0c54d61",
+    "custard_apple_disease_classification-93946e0936",
+    "custard_apple_disease_classification-02f8262a29",
+    "custard_apple_disease_classification-2bda61e4c1",
+    "custard_apple_disease_classification-10b84a691b",
+    "custard_apple_disease_classification-0e878d433b",
+    "custard_apple_disease_classification-7914b7f7be",
+    "custard_apple_disease_classification-498f1e73c3"
+   ],
+   "10": [
+    "custard_apple_disease_classification-80cd50a50c",
+    "custard_apple_disease_classification-bca9fae9fa",
+    "custard_apple_disease_classification-d85fcf6627",
+    "custard_apple_disease_classification-1281a62bb1",
+    "custard_apple_disease_classification-23d5c98c85",
+    "custard_apple_disease_classification-e1eaf7db0c",
+    "custard_apple_disease_classification-b7506577a8",
+    "custard_apple_disease_classification-0e9975cf4e",
+    "custard_apple_disease_classification-b7117683db",
+    "custard_apple_disease_classification-fef778933f",
+    "custard_apple_disease_classification-ecfb42ff54",
+    "custard_apple_disease_classification-e7141294ca",
+    "custard_apple_disease_classification-2c40d7191a",
+    "custard_apple_disease_classification-f275f6f583",
+    "custard_apple_disease_classification-42177a5468",
+    "custard_apple_disease_classification-284e5f5889",
+    "custard_apple_disease_classification-99381686e7",
+    "custard_apple_disease_classification-c0506946e7",
+    "custard_apple_disease_classification-3dcce4e258",
+    "custard_apple_disease_classification-2f02768cc9",
+    "custard_apple_disease_classification-21c299fb58",
+    "custard_apple_disease_classification-ee41872bdc",
+    "custard_apple_disease_classification-12cfb378c5",
+    "custard_apple_disease_classification-8ffaa1aa57",
+    "custard_apple_disease_classification-aaf16bcc29",
+    "custard_apple_disease_classification-00751615ae",
+    "custard_apple_disease_classification-2580fd9e34",
+    "custard_apple_disease_classification-4e0f5e3868",
+    "custard_apple_disease_classification-cc910e8995",
+    "custard_apple_disease_classification-c5628d832a",
+    "custard_apple_disease_classification-e8a83b7c9f",
+    "custard_apple_disease_classification-a1749f0f86",
+    "custard_apple_disease_classification-9833df5cb9",
+    "custard_apple_disease_classification-37f4755cf9",
+    "custard_apple_disease_classification-a931845fa9",
+    "custard_apple_disease_classification-f80946ad5b",
+    "custard_apple_disease_classification-ccb03c8131",
+    "custard_apple_disease_classification-2fb270f998",
+    "custard_apple_disease_classification-4991cab5ac",
+    "custard_apple_disease_classification-f0e4deb9e8",
+    "custard_apple_disease_classification-8626dbca70",
+    "custard_apple_disease_classification-5b25fcc866",
+    "custard_apple_disease_classification-8f08edbbde",
+    "custard_apple_disease_classification-e692d1f053",
+    "custard_apple_disease_classification-219220915f",
+    "custard_apple_disease_classification-c8f0f661ba",
+    "custard_apple_disease_classification-94c0c54d61",
+    "custard_apple_disease_classification-93946e0936",
+    "custard_apple_disease_classification-f2f4b25fac",
+    "custard_apple_disease_classification-02f8262a29",
+    "custard_apple_disease_classification-be557803b7",
+    "custard_apple_disease_classification-2bda61e4c1",
+    "custard_apple_disease_classification-7fed6ddf76",
+    "custard_apple_disease_classification-10b84a691b",
+    "custard_apple_disease_classification-0e878d433b",
+    "custard_apple_disease_classification-f87e720954",
+    "custard_apple_disease_classification-d93e27c804",
+    "custard_apple_disease_classification-7914b7f7be",
+    "custard_apple_disease_classification-0dd0e8cb79",
+    "custard_apple_disease_classification-498f1e73c3"
+   ],
+   "15": [
+    "custard_apple_disease_classification-3ce29d2a7a",
+    "custard_apple_disease_classification-80cd50a50c",
+    "custard_apple_disease_classification-bca9fae9fa",
+    "custard_apple_disease_classification-d85fcf6627",
+    "custard_apple_disease_classification-1281a62bb1",
+    "custard_apple_disease_classification-23d5c98c85",
+    "custard_apple_disease_classification-0e9d82bb1a",
+    "custard_apple_disease_classification-8495c478dd",
+    "custard_apple_disease_classification-de63ca1f37",
+    "custard_apple_disease_classification-e1eaf7db0c",
+    "custard_apple_disease_classification-b7506577a8",
+    "custard_apple_disease_classification-0e9975cf4e",
+    "custard_apple_disease_classification-b7117683db",
+    "custard_apple_disease_classification-fef778933f",
+    "custard_apple_disease_classification-d34029cf2f",
+    "custard_apple_disease_classification-ecfb42ff54",
+    "custard_apple_disease_classification-2253e43dd6",
+    "custard_apple_disease_classification-247621cf4d",
+    "custard_apple_disease_classification-e7141294ca",
+    "custard_apple_disease_classification-2c40d7191a",
+    "custard_apple_disease_classification-f275f6f583",
+    "custard_apple_disease_classification-42177a5468",
+    "custard_apple_disease_classification-284e5f5889",
+    "custard_apple_disease_classification-99381686e7",
+    "custard_apple_disease_classification-a7607f685e",
+    "custard_apple_disease_classification-c0506946e7",
+    "custard_apple_disease_classification-3dcce4e258",
+    "custard_apple_disease_classification-2f02768cc9",
+    "custard_apple_disease_classification-1d4a54bf70",
+    "custard_apple_disease_classification-123414b4e7",
+    "custard_apple_disease_classification-ce47e2b522",
+    "custard_apple_disease_classification-d4e3899fa1",
+    "custard_apple_disease_classification-ff7737374c",
+    "custard_apple_disease_classification-21c299fb58",
+    "custard_apple_disease_classification-ee41872bdc",
+    "custard_apple_disease_classification-12cfb378c5",
+    "custard_apple_disease_classification-8ffaa1aa57",
+    "custard_apple_disease_classification-aaf16bcc29",
+    "custard_apple_disease_classification-00751615ae",
+    "custard_apple_disease_classification-2580fd9e34",
+    "custard_apple_disease_classification-4e0f5e3868",
+    "custard_apple_disease_classification-cc910e8995",
+    "custard_apple_disease_classification-456fd794e1",
+    "custard_apple_disease_classification-f2572d15ec",
+    "custard_apple_disease_classification-c5628d832a",
+    "custard_apple_disease_classification-e8a83b7c9f",
+    "custard_apple_disease_classification-a1749f0f86",
+    "custard_apple_disease_classification-9833df5cb9",
+    "custard_apple_disease_classification-37f4755cf9",
+    "custard_apple_disease_classification-5446240ec5",
+    "custard_apple_disease_classification-18049cce74",
+    "custard_apple_disease_classification-a931845fa9",
+    "custard_apple_disease_classification-f80946ad5b",
+    "custard_apple_disease_classification-ccb03c8131",
+    "custard_apple_disease_classification-2fb270f998",
+    "custard_apple_disease_classification-4991cab5ac",
+    "custard_apple_disease_classification-8f3902896a",
+    "custard_apple_disease_classification-f419926fd7",
+    "custard_apple_disease_classification-71c21082cb",
+    "custard_apple_disease_classification-f0e4deb9e8",
+    "custard_apple_disease_classification-3549fb9481",
+    "custard_apple_disease_classification-8626dbca70",
+    "custard_apple_disease_classification-5b25fcc866",
+    "custard_apple_disease_classification-8f08edbbde",
+    "custard_apple_disease_classification-23f557aef0",
+    "custard_apple_disease_classification-2c39826e2e",
+    "custard_apple_disease_classification-e692d1f053",
+    "custard_apple_disease_classification-219220915f",
+    "custard_apple_disease_classification-c8f0f661ba",
+    "custard_apple_disease_classification-94c0c54d61",
+    "custard_apple_disease_classification-eba507b439",
+    "custard_apple_disease_classification-93946e0936",
+    "custard_apple_disease_classification-f2f4b25fac",
+    "custard_apple_disease_classification-02f8262a29",
+    "custard_apple_disease_classification-22bfdecd67",
+    "custard_apple_disease_classification-be557803b7",
+    "custard_apple_disease_classification-2bda61e4c1",
+    "custard_apple_disease_classification-bc36e67387",
+    "custard_apple_disease_classification-7ae6c00c8d",
+    "custard_apple_disease_classification-7fed6ddf76",
+    "custard_apple_disease_classification-10b84a691b",
+    "custard_apple_disease_classification-0e878d433b",
+    "custard_apple_disease_classification-12125f6cb2",
+    "custard_apple_disease_classification-f87e720954",
+    "custard_apple_disease_classification-d93e27c804",
+    "custard_apple_disease_classification-5621ef7ccd",
+    "custard_apple_disease_classification-7914b7f7be",
+    "custard_apple_disease_classification-eefc873bee",
+    "custard_apple_disease_classification-0dd0e8cb79",
+    "custard_apple_disease_classification-498f1e73c3"
+   ]
+  },
+  "s2": {
+   "5": [
+    "custard_apple_disease_classification-a879833eea",
+    "custard_apple_disease_classification-f77347e7f8",
+    "custard_apple_disease_classification-d2dd00e0ae",
+    "custard_apple_disease_classification-ab11ea9a67",
+    "custard_apple_disease_classification-a4e783ebdc",
+    "custard_apple_disease_classification-90e2433a78",
+    "custard_apple_disease_classification-f17e39fa05",
+    "custard_apple_disease_classification-63f1a2b987",
+    "custard_apple_disease_classification-0e9200837a",
+    "custard_apple_disease_classification-b3f9ff3e3f",
+    "custard_apple_disease_classification-adf78ff80c",
+    "custard_apple_disease_classification-9d13b3bf86",
+    "custard_apple_disease_classification-752dac6380",
+    "custard_apple_disease_classification-3a0be6bfa9",
+    "custard_apple_disease_classification-cc8aae3275",
+    "custard_apple_disease_classification-628360c2a1",
+    "custard_apple_disease_classification-a1be77de9b",
+    "custard_apple_disease_classification-aeb4e65138",
+    "custard_apple_disease_classification-12040037dc",
+    "custard_apple_disease_classification-ab60b0462f",
+    "custard_apple_disease_classification-1764a3c2f7",
+    "custard_apple_disease_classification-b0ab9ccccc",
+    "custard_apple_disease_classification-5d0d05e4a2",
+    "custard_apple_disease_classification-ce04edbba5",
+    "custard_apple_disease_classification-dd0779aeca",
+    "custard_apple_disease_classification-98a3be0b23",
+    "custard_apple_disease_classification-c349341901",
+    "custard_apple_disease_classification-18ec13476d",
+    "custard_apple_disease_classification-da559f7a52",
+    "custard_apple_disease_classification-618d3dcde6"
+   ],
+   "10": [
+    "custard_apple_disease_classification-a879833eea",
+    "custard_apple_disease_classification-f77347e7f8",
+    "custard_apple_disease_classification-d06e73c1e8",
+    "custard_apple_disease_classification-d2dd00e0ae",
+    "custard_apple_disease_classification-aa7ba52471",
+    "custard_apple_disease_classification-32ba7ae9b9",
+    "custard_apple_disease_classification-ab11ea9a67",
+    "custard_apple_disease_classification-265b177b70",
+    "custard_apple_disease_classification-a4e783ebdc",
+    "custard_apple_disease_classification-2f3bab105e",
+    "custard_apple_disease_classification-90e2433a78",
+    "custard_apple_disease_classification-f17e39fa05",
+    "custard_apple_disease_classification-b151106e66",
+    "custard_apple_disease_classification-63f1a2b987",
+    "custard_apple_disease_classification-f86271d58c",
+    "custard_apple_disease_classification-0e9200837a",
+    "custard_apple_disease_classification-b3f9ff3e3f",
+    "custard_apple_disease_classification-3baceb2ebb",
+    "custard_apple_disease_classification-63d884335f",
+    "custard_apple_disease_classification-1a139419da",
+    "custard_apple_disease_classification-0680a1351c",
+    "custard_apple_disease_classification-8131038b72",
+    "custard_apple_disease_classification-adf78ff80c",
+    "custard_apple_disease_classification-9d13b3bf86",
+    "custard_apple_disease_classification-752dac6380",
+    "custard_apple_disease_classification-3a0be6bfa9",
+    "custard_apple_disease_classification-0aa3a3751c",
+    "custard_apple_disease_classification-5be7fb966a",
+    "custard_apple_disease_classification-cc8aae3275",
+    "custard_apple_disease_classification-340d971794",
+    "custard_apple_disease_classification-628360c2a1",
+    "custard_apple_disease_classification-a65deac84e",
+    "custard_apple_disease_classification-a1be77de9b",
+    "custard_apple_disease_classification-a152c9c9b5",
+    "custard_apple_disease_classification-fbc47b33a6",
+    "custard_apple_disease_classification-aeb4e65138",
+    "custard_apple_disease_classification-d973d80e04",
+    "custard_apple_disease_classification-12040037dc",
+    "custard_apple_disease_classification-f90fd284f5",
+    "custard_apple_disease_classification-ab60b0462f",
+    "custard_apple_disease_classification-1764a3c2f7",
+    "custard_apple_disease_classification-b0ab9ccccc",
+    "custard_apple_disease_classification-5d0d05e4a2",
+    "custard_apple_disease_classification-356a9bfc20",
+    "custard_apple_disease_classification-ce04edbba5",
+    "custard_apple_disease_classification-9cdd745981",
+    "custard_apple_disease_classification-e8ddb1ca8a",
+    "custard_apple_disease_classification-da2ded6d56",
+    "custard_apple_disease_classification-dd0779aeca",
+    "custard_apple_disease_classification-d65872ac77",
+    "custard_apple_disease_classification-794b6caf93",
+    "custard_apple_disease_classification-98a3be0b23",
+    "custard_apple_disease_classification-c349341901",
+    "custard_apple_disease_classification-18ec13476d",
+    "custard_apple_disease_classification-da559f7a52",
+    "custard_apple_disease_classification-7e3f1358c0",
+    "custard_apple_disease_classification-618d3dcde6",
+    "custard_apple_disease_classification-9f91aa4439",
+    "custard_apple_disease_classification-62c9e4ac4f",
+    "custard_apple_disease_classification-fe89bf3638"
+   ],
+   "15": [
+    "custard_apple_disease_classification-a879833eea",
+    "custard_apple_disease_classification-12f47dc240",
+    "custard_apple_disease_classification-bca5bc0bd5",
+    "custard_apple_disease_classification-d85fcf6627",
+    "custard_apple_disease_classification-f77347e7f8",
+    "custard_apple_disease_classification-d06e73c1e8",
+    "custard_apple_disease_classification-d2dd00e0ae",
+    "custard_apple_disease_classification-aa7ba52471",
+    "custard_apple_disease_classification-32ba7ae9b9",
+    "custard_apple_disease_classification-da3a27100d",
+    "custard_apple_disease_classification-ab11ea9a67",
+    "custard_apple_disease_classification-265b177b70",
+    "custard_apple_disease_classification-7b71a76707",
+    "custard_apple_disease_classification-a4e783ebdc",
+    "custard_apple_disease_classification-2f3bab105e",
+    "custard_apple_disease_classification-90e2433a78",
+    "custard_apple_disease_classification-d3aab6404d",
+    "custard_apple_disease_classification-1f02eb04af",
+    "custard_apple_disease_classification-f17e39fa05",
+    "custard_apple_disease_classification-b151106e66",
+    "custard_apple_disease_classification-c0567d3684",
+    "custard_apple_disease_classification-52cf0b75ac",
+    "custard_apple_disease_classification-792c67f7bb",
+    "custard_apple_disease_classification-63f1a2b987",
+    "custard_apple_disease_classification-f86271d58c",
+    "custard_apple_disease_classification-0e9200837a",
+    "custard_apple_disease_classification-b3f9ff3e3f",
+    "custard_apple_disease_classification-3baceb2ebb",
+    "custard_apple_disease_classification-63d884335f",
+    "custard_apple_disease_classification-1a139419da",
+    "custard_apple_disease_classification-73c97fccf4",
+    "custard_apple_disease_classification-0680a1351c",
+    "custard_apple_disease_classification-8131038b72",
+    "custard_apple_disease_classification-adf78ff80c",
+    "custard_apple_disease_classification-9d13b3bf86",
+    "custard_apple_disease_classification-752dac6380",
+    "custard_apple_disease_classification-3a0be6bfa9",
+    "custard_apple_disease_classification-0aa3a3751c",
+    "custard_apple_disease_classification-5be7fb966a",
+    "custard_apple_disease_classification-e95c16c410",
+    "custard_apple_disease_classification-cc8aae3275",
+    "custard_apple_disease_classification-78dbc4bbae",
+    "custard_apple_disease_classification-340d971794",
+    "custard_apple_disease_classification-8a651a242c",
+    "custard_apple_disease_classification-6f1d78eb43",
+    "custard_apple_disease_classification-628360c2a1",
+    "custard_apple_disease_classification-a65deac84e",
+    "custard_apple_disease_classification-3debd86f90",
+    "custard_apple_disease_classification-e4731b77e7",
+    "custard_apple_disease_classification-a1be77de9b",
+    "custard_apple_disease_classification-3742374588",
+    "custard_apple_disease_classification-6777c3591c",
+    "custard_apple_disease_classification-a152c9c9b5",
+    "custard_apple_disease_classification-fbc47b33a6",
+    "custard_apple_disease_classification-aeb4e65138",
+    "custard_apple_disease_classification-1902a0f4ae",
+    "custard_apple_disease_classification-d973d80e04",
+    "custard_apple_disease_classification-12040037dc",
+    "custard_apple_disease_classification-f90fd284f5",
+    "custard_apple_disease_classification-ab60b0462f",
+    "custard_apple_disease_classification-cbfc66db09",
+    "custard_apple_disease_classification-1764a3c2f7",
+    "custard_apple_disease_classification-b0ab9ccccc",
+    "custard_apple_disease_classification-5d0d05e4a2",
+    "custard_apple_disease_classification-356a9bfc20",
+    "custard_apple_disease_classification-ce04edbba5",
+    "custard_apple_disease_classification-9cdd745981",
+    "custard_apple_disease_classification-e8ddb1ca8a",
+    "custard_apple_disease_classification-e692d1f053",
+    "custard_apple_disease_classification-da2ded6d56",
+    "custard_apple_disease_classification-1f18952722",
+    "custard_apple_disease_classification-5ab4f2c41f",
+    "custard_apple_disease_classification-dd0779aeca",
+    "custard_apple_disease_classification-d65872ac77",
+    "custard_apple_disease_classification-fa830db890",
+    "custard_apple_disease_classification-794b6caf93",
+    "custard_apple_disease_classification-98a3be0b23",
+    "custard_apple_disease_classification-c349341901",
+    "custard_apple_disease_classification-18ec13476d",
+    "custard_apple_disease_classification-da559f7a52",
+    "custard_apple_disease_classification-2f309afec7",
+    "custard_apple_disease_classification-7e3f1358c0",
+    "custard_apple_disease_classification-618d3dcde6",
+    "custard_apple_disease_classification-d8212720af",
+    "custard_apple_disease_classification-838bd47774",
+    "custard_apple_disease_classification-9f91aa4439",
+    "custard_apple_disease_classification-446b5f611a",
+    "custard_apple_disease_classification-62c9e4ac4f",
+    "custard_apple_disease_classification-fe89bf3638",
+    "custard_apple_disease_classification-b33c40f1b8"
+   ]
+  }
+ }
+}

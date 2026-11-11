@@ -1,0 +1,7874 @@
+{
+ "name": "tea_leaf_disease_pest_detection",
+ "task": "object_detection",
+ "hf_repo": "Project-AgML/tea_leaf_disease_pest_detection",
+ "hf_sha": "00021fed3a668761a1eeb8eaa8e081ca1d51989b",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T20:47:00+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "class_names": [
+   "Black rot of tea",
+   "Brown blight of tea",
+   "Leaf rust of tea",
+   "Red Spider infested tea leaf",
+   "Tea Mosquito bug infested leaf",
+   "Tea leaf",
+   "White spot of tea",
+   "disease"
+  ],
+  "indexed_rows": 9591
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-89c4ae02bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 14,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       237.00000000000003,
+       101.74999999999997,
+       200.0,
+       524.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0cfc388d27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 62,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.24999999999997,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-af1bbdf39e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 72,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       75.24999999999999,
+       181.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       291.0,
+       223.00000000000006,
+       283.0,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-eb98fc5ca5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 84,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       201.75,
+       142.75,
+       167.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       543.0,
+       267.75,
+       97.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5351b29bd7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       298.75,
+       204.5,
+       164.5,
+       329.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       95.5,
+       2.9999999999999716,
+       231.0,
+       477.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0828729a3c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       263.25,
+       187.75,
+       167.5,
+       255.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-985528a643",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 313,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown blight of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Brown blight of tea",
+      "bbox_raw": [
+       249.25000000000006,
+       160.00000000000003,
+       155.5,
+       409.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cf88c04b66",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 409,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       196.75,
+       110.75,
+       218.5,
+       404.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-25025184a4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 461,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       183.0,
+       100.00000000000003,
+       260.0,
+       474.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-31e4a2848d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 471,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       206.25,
+       113.75,
+       218.5,
+       404.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f57f1f476b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 496,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       183.0,
+       100.00000000000003,
+       260.0,
+       474.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1a58799c99",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 503,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       164.5,
+       73.75,
+       386.0,
+       512.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-363dd1ccd7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 518,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       161.5,
+       192.49999999999997,
+       343.0,
+       286.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d208637663",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 614,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       218.25,
+       204.5,
+       421.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       213.75,
+       27.5,
+       127.5,
+       420.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       480.0,
+       213.75000000000003,
+       160.0,
+       281.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 627,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       108.99999999999999,
+       140.25,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-173159c527",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 635,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       298.75,
+       204.5,
+       164.5,
+       329.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       95.5,
+       2.9999999999999716,
+       231.0,
+       477.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-be41dbd162",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 736,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       238.75,
+       197.00000000000003,
+       167.5,
+       320.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c85e804dfb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 749,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       238.75,
+       197.00000000000003,
+       167.5,
+       320.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a358e741c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 753,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       75.24999999999999,
+       181.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       294.0,
+       260.0,
+       283.0,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f55899f5f1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 757,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       261.5,
+       51.99999999999999,
+       143.0,
+       514.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ae7040f07d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 815,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       143.25,
+       215.25,
+       244.5,
+       244.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-be017b3f16",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 829,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       228.0,
+       67.5,
+       166.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-49e04da2c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 876,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       240.00000000000003,
+       201.5,
+       214.0,
+       320.0
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       57.25,
+       41.49999999999999,
+       167.5,
+       131.0
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       363.0,
+       69.25,
+       277.0,
+       104.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e77ba8edfd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 929,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       230.75,
+       146.50000000000003,
+       158.5,
+       369.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5fe980e0bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 953,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       227.75000000000003,
+       42.99999999999997,
+       161.5,
+       517.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-911fdd2831",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 963,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       261.5,
+       12.249999999999979,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3db908f40d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 997,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       249.5,
+       103.25000000000001,
+       126.0,
+       215.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ac76a67e26",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1017,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       233.75,
+       203.0,
+       172.5,
+       286.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9da22a90b3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1021,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       263.0,
+       16.74999999999997,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2bfd6aa00b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1075,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       283.00000000000006,
+       189.24999999999997,
+       103.0,
+       347.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       227.5,
+       18.499999999999996,
+       103.0,
+       143.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3c1acce6e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1081,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       215.50000000000006,
+       239.75,
+       323.0,
+       255.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d1ff2696ac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1109,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       229.0,
+       103.0,
+       300.0,
+       371.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-affe37cc22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       218.25,
+       36.75000000000001,
+       141.5,
+       561.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3c50822d4b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1142,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       204.5,
+       120.0,
+       266.0,
+       351.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-750bc846bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       101.50000000000003,
+       36.99999999999999,
+       309.0,
+       566.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       481.50000000000006,
+       388.0,
+       146.0,
+       246.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-56e7d0a801",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1231,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       250.75000000000003,
+       211.0,
+       135.5,
+       240.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-23e5ec90e3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1232,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       283.0,
+       116.74999999999997,
+       97.0,
+       384.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a2130d1289",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1291,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.25000000000003,
+       223.0,
+       321.5,
+       211.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b92f878684",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1301,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       18.500000000000014,
+       272.25,
+       363.0,
+       192.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       190.99999999999997,
+       459.75,
+       269.0,
+       92.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       332.24999999999994,
+       306.24999999999994,
+       178.5,
+       198.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       142.75,
+       124.75000000000001,
+       272.5,
+       107.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c827aea68a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1326,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       267.75,
+       197.0,
+       118.5,
+       231.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b0175159c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1344,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       215.49999999999997,
+       239.99999999999997,
+       320.0,
+       231.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-684fa6adc4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       90.5,
+       129.0,
+       391.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-956cd3418d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1374,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       246.25,
+       89.5,
+       132.5,
+       446.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ec8c7067e5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1382,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       133.49999999999997,
+       169.24999999999997,
+       271.0,
+       344.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-267c5c77ec",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1438,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       243.0,
+       169.24999999999997,
+       146.0,
+       307.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       446.5,
+       220.25000000000003,
+       89.0,
+       181.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2dc98141a5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1455,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       140.25000000000003,
+       421.25,
+       241.5,
+       215.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       114.00000000000003,
+       75.5,
+       289.0,
+       506.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-44b4bfcb27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1504,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       152.25,
+       152.5,
+       347.5,
+       337.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c3a771c357",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1549,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       246.50000000000003,
+       12.249999999999979,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f44b978626",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.25000000000003,
+       247.75,
+       321.5,
+       212.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d92fbff39a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1623,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       146.24999999999997,
+       210.75000000000003,
+       378.5,
+       427.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       0.25000000000000355,
+       397.0,
+       184.5,
+       243.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-39b39dd467",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1637,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       204.5,
+       48.999999999999986,
+       160.0,
+       517.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-368745c36d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1654,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       75.24999999999999,
+       181.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       266.25,
+       209.50000000000003,
+       284.5,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-62df1445cd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1684,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       270.75,
+       30.749999999999993,
+       115.5,
+       558.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       378.75,
+       16.999999999999993,
+       107.5,
+       314.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b9c3234aaa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1748,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       152.50000000000003,
+       107.5,
+       389.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-754a9cd789",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1769,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown blight of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Brown blight of tea",
+      "bbox_raw": [
+       249.25000000000006,
+       160.00000000000003,
+       155.5,
+       409.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cda52e6a27",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1779,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       237.0,
+       243.25,
+       266.0,
+       158.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       111.0,
+       378.75,
+       123.0,
+       184.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-76860bc29a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1790,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Brown blight of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Brown blight of tea",
+      "bbox_raw": [
+       249.25000000000006,
+       160.00000000000003,
+       155.5,
+       409.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-602d66801a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1808,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       215.49999999999997,
+       239.99999999999997,
+       320.0,
+       231.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cee8f5f135",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1827,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       263.0,
+       16.74999999999997,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b568525eb7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1834,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       221.75,
+       61.50000000000002,
+       158.5,
+       454.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cd7d9ec73b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1849,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       252.5,
+       100.0,
+       120.0,
+       497.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-fb4cc22a03",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1902,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       108.0,
+       149.5,
+       366.0,
+       326.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-aa4e95cda8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.25000000000003,
+       247.75,
+       321.5,
+       212.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b3a7f50cba",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1916,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       224.75,
+       0.0,
+       187.5,
+       569.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-02d4846049",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1988,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       147.5,
+       74.00000000000003,
+       314.0,
+       506.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5161a08ff1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 1996,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       0.0,
+       58.24999999999999,
+       640.0,
+       421.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-bb7934d1b1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2042,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       107.74999999999999,
+       59.74999999999998,
+       447.5,
+       498.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ae7339bef6",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2050,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       135.49999999999997,
+       183.0,
+       417.0,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-89953b54f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2079,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       212.0,
+       10.500000000000007,
+       114.0,
+       431.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cbdbbb1b10",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2082,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       255.5,
+       21.50000000000002,
+       131.0,
+       574.0
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       63.24999999999999,
+       255.25,
+       178.5,
+       184.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       429.25,
+       235.25,
+       107.5,
+       144.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-bf31d8190a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2089,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       112.24999999999997,
+       167.75000000000003,
+       418.5,
+       398.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-40885ac2e8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2093,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       108.0,
+       152.25,
+       389.0,
+       292.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d8ec7e1793",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2137,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       263.0,
+       239.75,
+       126.0,
+       312.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f92b343376",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2157,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       253.75000000000003,
+       0.0,
+       161.5,
+       517.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0e30525ccc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2220,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       58.500000000000014,
+       312.25,
+       363.0,
+       192.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       269.0,
+       418.25,
+       271.0,
+       92.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       363.25,
+       309.0,
+       178.5,
+       200.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       196.74999999999997,
+       141.75,
+       272.5,
+       107.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-691df19a8c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2302,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       254.00000000000003,
+       206.25,
+       146.0,
+       204.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8544e23ea4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2311,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       117.0,
+       169.25,
+       391.0,
+       292.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-fae8746d1e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2333,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       246.25,
+       89.5,
+       132.5,
+       446.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-74dc750ea7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2336,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       194.0,
+       182.99999999999997,
+       280.0,
+       257.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4c79ec1694",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2366,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       200.25000000000003,
+       138.25000000000003,
+       261.5,
+       392.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ca6dae2669",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2461,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       264.5,
+       155.50000000000006,
+       89.0,
+       343.0
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       395.25,
+       366.25,
+       72.5,
+       204.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8f50df434f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2512,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       267.75,
+       190.5,
+       161.5,
+       211.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       143.25,
+       0.25000000000000355,
+       67.5,
+       201.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4cf593f2fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2523,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       261.5,
+       51.99999999999999,
+       143.0,
+       514.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ad34a65326",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2525,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       184.50000000000003,
+       91.00000000000001,
+       323.0,
+       483.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8e9822e05a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2530,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.25000000000003,
+       247.75,
+       321.5,
+       212.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-55a75d5a10",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2564,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       309.25,
+       175.25,
+       107.5,
+       352.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9808089ffb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2568,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       263.0,
+       16.74999999999997,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2f5780bac9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2571,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       275.25,
+       121.75,
+       118.5,
+       367.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       143.0,
+       343.25,
+       109.0,
+       98.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c6a9c9cdf8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2606,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       241.25,
+       196.75,
+       135.5,
+       298.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a2d0622443",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2646,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       224.75,
+       56.75000000000001,
+       161.5,
+       515.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9072e5da0a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2650,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.7499999999999982,
+       229.00000000000003,
+       138.5,
+       411.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       138.75,
+       35.50000000000001,
+       127.5,
+       420.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       395.25,
+       190.75,
+       244.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-656fc98b42",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2661,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       213.75,
+       238.5,
+       267.5,
+       177.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       89.25,
+       378.75,
+       121.5,
+       184.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9cccf98ac4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2666,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       144.74999999999997,
+       190.5,
+       344.5,
+       274.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3877894f76",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2785,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       183.0,
+       100.00000000000003,
+       260.0,
+       474.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2ac20bc17a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2851,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       323.00000000000006,
+       118.49999999999997,
+       123.0,
+       377.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       148.0,
+       12.249999999999996,
+       146.0,
+       215.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-dac0ddc686",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2852,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       174.0,
+       150.75000000000003,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-03d650480d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2868,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       220.25000000000003,
+       62.99999999999997,
+       161.5,
+       517.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-fe0215931a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2914,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       263.0,
+       16.74999999999997,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-44ce0f4036",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2917,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       270.75,
+       62.749999999999986,
+       347.5,
+       432.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4992520805",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2947,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       232.25,
+       103.0,
+       167.5,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-647763d8c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2979,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       109.25,
+       183.0,
+       461.5,
+       429.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       0.0,
+       374.0,
+       149.0,
+       243.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3390ac4891",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 2998,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       247.75,
+       103.0,
+       167.5,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b33e87c2f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3010,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       135.49999999999997,
+       212.50000000000003,
+       417.0,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-76803b3646",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3024,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       174.0,
+       150.75000000000003,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-829bf4b209",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3049,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       207.75,
+       143.0,
+       244.5,
+       351.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-724328d6a8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3055,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       236.74999999999997,
+       178.5,
+       184.5,
+       214.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c878f7ea59",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3088,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       75.24999999999999,
+       181.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       287.5,
+       204.50000000000003,
+       283.0,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-47f9444ee2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3118,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       246.25,
+       89.5,
+       132.5,
+       446.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-38dfa62434",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       249.00000000000003,
+       69.25,
+       134.0,
+       501.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1f658f25e7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3136,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.750000000000007,
+       75.24999999999999,
+       181.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       291.0,
+       223.00000000000006,
+       283.0,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d4aacd9082",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3171,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       201.75,
+       8.000000000000007,
+       187.5,
+       569.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8cbb3018c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3249,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       260.25,
+       166.0,
+       167.5,
+       214.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       161.75,
+       346.25,
+       178.5,
+       41.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b04361a1c5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3318,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       181.50000000000003,
+       77.0,
+       386.0,
+       511.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4e9cafea2b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3324,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.24999999999997,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0c3fbad0a7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3346,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea",
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       158.25,
+       193.75000000000003,
+       378.5,
+       261.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       358.49999999999994,
+       358.25,
+       194.0,
+       201.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-91d167dcf7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3445,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       144.74999999999997,
+       190.5,
+       344.5,
+       274.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1dcf4616d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3460,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       164.5,
+       73.75,
+       386.0,
+       512.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-98d1331b01",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3545,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       232.25,
+       117.0,
+       167.5,
+       411.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       543.0,
+       267.75,
+       97.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2e28d21daa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       224.75,
+       29.250000000000007,
+       187.5,
+       567.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b0d8c84e54",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3632,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       157.0,
+       21.499999999999986,
+       386.0,
+       511.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5873929bf4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3704,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       243.0,
+       0.2499999999999858,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-14cca9f805",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3745,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       304.75,
+       144.50000000000003,
+       161.5,
+       480.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-02b85bcfd5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3759,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.7499999999999982,
+       229.00000000000003,
+       138.5,
+       411.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       138.75,
+       35.50000000000001,
+       127.5,
+       420.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       395.25,
+       204.49999999999994,
+       244.5,
+       317.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-52b2500298",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3794,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       233.75,
+       32.250000000000014,
+       135.5,
+       555.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       29.50000000000001,
+       221.5,
+       189.0,
+       200.0
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       415.5,
+       213.75,
+       120.0,
+       161.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a7f2306997",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3812,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       152.50000000000003,
+       107.5,
+       389.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-501f9a8acf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3855,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.24999999999997,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9ec02799dc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3898,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       263.0,
+       16.74999999999997,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-63fea5a28f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3907,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       164.50000000000003,
+       169.00000000000003,
+       243.0,
+       351.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5405cad680",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       261.75,
+       45.99999999999998,
+       184.5,
+       511.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f198f684ea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3946,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       243.0,
+       123.0,
+       154.0,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a7ca137d07",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 3960,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       253.75000000000003,
+       145.99999999999997,
+       221.5,
+       474.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-98e07fb7ab",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4022,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       169.24999999999997,
+       74.00000000000003,
+       312.5,
+       506.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-19bc8c388a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4071,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       223.25,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-81804d0781",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4089,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       253.75,
+       152.5,
+       104.5,
+       363.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a1a93f3a71",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4101,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       56.99999999999999,
+       44.49999999999999,
+       489.0,
+       426.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e8b8f1a656",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4104,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       15.500000000000007,
+       310.75,
+       389.0,
+       147.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       404.5,
+       322.75,
+       151.0,
+       172.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       137.25,
+       109.50000000000001,
+       327.5,
+       163.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3be9396ed9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4123,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       230.75,
+       29.250000000000007,
+       127.5,
+       501.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5d01172151",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4148,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       281.5,
+       7.749999999999986,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4e9aefcfd2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4162,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       167.5,
+       198.5,
+       343.0,
+       223.0
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       401.5,
+       389.00000000000006,
+       149.0,
+       171.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ae01831ef0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4180,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       234.0,
+       141.5,
+       217.0,
+       300.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c369872c52",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4190,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       173.75,
+       166.0,
+       315.5,
+       360.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5964dd8c0f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4234,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       218.5,
+       195.25000000000003,
+       137.0,
+       298.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e917b90527",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4251,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       174.0,
+       150.75000000000003,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0a5dbbc8bd",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4295,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       255.49999999999997,
+       281.75,
+       157.0,
+       267.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       70.75000000000001,
+       52.250000000000014,
+       195.5,
+       415.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-118fc22579",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4320,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       255.5,
+       152.5,
+       89.0,
+       266.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-fac6c7c0d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4332,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       215.49999999999997,
+       98.25,
+       123.0,
+       421.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5f97807ae8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4349,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       197.00000000000003,
+       301.75,
+       223.0,
+       141.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       81.5,
+       349.0,
+       97.0,
+       77.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ea3d36b0c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4356,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.24999999999997,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ed3931a0b5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4403,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       203.25000000000003,
+       161.74999999999997,
+       335.5,
+       344.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-eb9a730885",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4435,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       244.75,
+       131.0,
+       187.5,
+       340.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a1bbde4850",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4441,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       254.00000000000003,
+       206.25,
+       146.0,
+       204.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d945ae8bfb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4473,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       172.25,
+       127.5,
+       255.5,
+       463.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c07baee341",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4534,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       186.24999999999997,
+       112.5,
+       298.5,
+       363.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1abd06a1c9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4541,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.0,
+       223.25000000000003,
+       323.0,
+       255.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-23b4d37aef",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4593,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       90.5,
+       129.0,
+       391.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a1a3ba10e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4624,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       215.50000000000006,
+       239.75,
+       323.0,
+       255.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c73bbc3bbf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4642,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       271.0,
+       195.49999999999997,
+       109.0,
+       357.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-051dc98240",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4645,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       141.74999999999997,
+       209.25,
+       344.5,
+       361.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-7f5dba31d3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       207.75,
+       143.0,
+       244.5,
+       351.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4ddb5cf878",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4700,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       184.50000000000003,
+       91.00000000000001,
+       323.0,
+       483.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9b2609f8d2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4770,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.7499999999999982,
+       229.00000000000003,
+       138.5,
+       411.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       138.75,
+       35.50000000000001,
+       127.5,
+       420.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       395.25,
+       190.75,
+       244.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-338f40222b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4807,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       237.0,
+       240.0,
+       226.0,
+       183.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9ca447bfda",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4826,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       238.75,
+       195.49999999999997,
+       184.5,
+       317.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-824fd7edf2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4878,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.24999999999997,
+       29.00000000000002,
+       258.5,
+       554.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3bf7964b3b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4891,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       246.25,
+       89.5,
+       132.5,
+       446.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-87612d846a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 4961,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       204.75,
+       249.0,
+       247.5,
+       180.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       55.25,
+       300.00000000000006,
+       147.5,
+       129.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c4d40af98a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5008,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       230.75,
+       29.250000000000007,
+       127.5,
+       501.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-81b58cb8f2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5034,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       250.75000000000003,
+       213.75,
+       147.5,
+       204.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       169.0,
+       389.25,
+       171.0,
+       41.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-eda49977da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5043,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       276.99999999999994,
+       100.25000000000003,
+       137.0,
+       381.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       159.99999999999997,
+       405.99999999999994,
+       83.0,
+       174.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c26478b417",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5065,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       167.5,
+       169.0,
+       211.0,
+       300.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0a587b5f76",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5069,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       166.0,
+       280.00000000000006,
+       337.0,
+       234.0
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       0.0,
+       10.749999999999993,
+       111.0,
+       152.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ecd9b66e05",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5111,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       218.75,
+       141.25,
+       167.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       543.0,
+       267.75,
+       97.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b20f253020",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5119,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       192.24999999999997,
+       161.5,
+       278.5,
+       317.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e176bb08c1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5133,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       131.0,
+       144.5,
+       460.0,
+       369.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-19471d286d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5164,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       189.0,
+       79.74999999999997,
+       380.0,
+       458.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-945eeadaa3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5182,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       209.24999999999997,
+       233.75,
+       267.5,
+       244.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       360.99999999999994,
+       0.0,
+       154.0,
+       295.0
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       479.75,
+       215.5,
+       132.5,
+       131.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cfa3bc9ffe",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5219,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       199.75,
+       166.24999999999997,
+       195.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-42e9c904bf",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5227,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       246.50000000000003,
+       12.249999999999979,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f4a0d34eea",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5229,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       181.50000000000003,
+       77.0,
+       386.0,
+       511.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-bd4fe35919",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5258,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       243.0,
+       0.2499999999999858,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-086365fac1",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5275,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       247.75,
+       103.0,
+       167.5,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a0b6db3efc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5310,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea",
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       158.25,
+       193.75000000000003,
+       378.5,
+       261.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       358.49999999999994,
+       358.25,
+       194.0,
+       201.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a48b843a01",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       193.75000000000003,
+       202.99999999999997,
+       281.5,
+       257.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f27212ad71",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5351,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       177.00000000000003,
+       190.5,
+       300.0,
+       271.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-51f692e3ad",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5352,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       227.75,
+       178.49999999999997,
+       158.5,
+       386.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5527a8d908",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5361,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       230.75000000000003,
+       156.75,
+       195.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9594b73cc5",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5377,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       140.25,
+       144.75,
+       264.5,
+       447.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-dbdc85a49b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5384,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       223.25,
+       118.75,
+       218.5,
+       404.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8520934c0d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5399,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       170.75000000000003,
+       187.5,
+       244.5,
+       243.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d6fc874b9d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       231.0,
+       15.500000000000007,
+       169.0,
+       563.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-ae25d54b7f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5456,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       161.25,
+       204.5,
+       355.5,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9020a1deb7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5509,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       172.25,
+       127.5,
+       255.5,
+       463.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-55ccba463c",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5515,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       298.75,
+       204.5,
+       164.5,
+       329.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       95.5,
+       2.9999999999999716,
+       231.0,
+       477.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-7052c136ce",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5521,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       257.0,
+       155.25,
+       109.0,
+       372.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4ce992bc97",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5528,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       158.5,
+       153.75,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-af838565f0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5531,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       215.25,
+       161.25,
+       195.5,
+       352.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       495.50000000000006,
+       212.5,
+       103.0,
+       197.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-00f7cc6196",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5534,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       140.25000000000003,
+       421.25,
+       241.5,
+       215.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       106.25000000000001,
+       86.25,
+       304.5,
+       495.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1ba789cd8b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5537,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       253.75,
+       21.750000000000007,
+       118.5,
+       501.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       78.5,
+       212.5,
+       154.0,
+       163.0
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       421.75000000000006,
+       226.25,
+       78.5,
+       124.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-042911dd03",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5550,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       212.5,
+       146.25,
+       203.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-144cc50350",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5572,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       223.0,
+       247.5,
+       189.0,
+       123.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cad23610cb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5621,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       229.25000000000006,
+       163.25,
+       195.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9891adbdac",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5634,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       164.5,
+       123.0,
+       271.0,
+       346.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-dcc96d4854",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5655,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       135.49999999999997,
+       212.50000000000003,
+       417.0,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5a5bfb0e7b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5669,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       184.50000000000003,
+       91.00000000000001,
+       323.0,
+       483.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5ec980a246",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5673,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       232.25,
+       103.0,
+       167.5,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-0b140ca973",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5708,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.7499999999999982,
+       229.00000000000003,
+       138.5,
+       411.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       138.75,
+       35.50000000000001,
+       127.5,
+       420.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       395.25,
+       190.75,
+       244.5,
+       318.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-80431dfa32",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5786,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       161.25,
+       204.5,
+       355.5,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e15d65fcd0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5830,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       226.25,
+       121.25,
+       167.5,
+       412.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9197eb3a60",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5843,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       107.74999999999999,
+       59.74999999999998,
+       447.5,
+       498.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-7a6a8a2d0a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5854,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       237.0,
+       243.25,
+       266.0,
+       158.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       111.0,
+       378.75,
+       123.0,
+       184.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-c5155ae2da",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5880,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       90.99999999999997,
+       149.25000000000006,
+       446.0,
+       415.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3ccf17d80a",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5882,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       263.0,
+       89.24999999999997,
+       149.0,
+       444.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e7169d99ee",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5957,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       97.25000000000001,
+       152.5,
+       347.5,
+       337.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-923029219d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5966,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       255.5,
+       21.50000000000002,
+       131.0,
+       574.0
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       63.24999999999999,
+       255.25,
+       178.5,
+       184.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       429.25,
+       235.25,
+       107.5,
+       144.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-22b51d3e90",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 5968,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       224.74999999999997,
+       215.25,
+       321.5,
+       252.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8efa5a2184",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6129,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       161.25,
+       163.0,
+       355.5,
+       269.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-a689b096e4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6154,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       252.0,
+       127.5,
+       134.0,
+       323.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f0e9ee25dc",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6169,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       212.25,
+       263.25,
+       267.5,
+       178.5
+      ]
+     },
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       80.0,
+       300.25,
+       123.0,
+       184.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5523fbb4bb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6223,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       152.5,
+       52.5,
+       480.0,
+       577.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2ec5aa09d9",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6243,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       186.25,
+       210.74999999999994,
+       267.5,
+       244.5
+      ]
+     },
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       334.0,
+       0.0,
+       154.0,
+       295.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8ddb570038",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6260,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       199.74999999999997,
+       113.75,
+       218.5,
+       404.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-13ae4d131d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6278,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       207.75,
+       121.75,
+       395.5,
+       347.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-4b940899e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6279,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       108.99999999999999,
+       140.25,
+       380.0,
+       387.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-e4f92b1cc0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       183.0,
+       100.00000000000003,
+       260.0,
+       474.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5a89223225",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6314,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       112.24999999999997,
+       167.75000000000003,
+       418.5,
+       398.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-b4aecc9fcb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6315,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       311.0,
+       169.24999999999997,
+       126.0,
+       215.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-6ddc9be889",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6402,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       203.0,
+       12.5,
+       169.0,
+       563.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-059b90371b",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       193.75000000000003,
+       202.99999999999997,
+       281.5,
+       257.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-86a8e4f3e8",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6424,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       5.999999999999979,
+       58.500000000000014,
+       634.0,
+       340.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-fee62b7819",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6451,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       164.5,
+       73.75,
+       386.0,
+       512.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-8039898824",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6517,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       152.50000000000003,
+       107.5,
+       389.0,
+       440.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-63ac2762fa",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6553,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       58.500000000000014,
+       312.25,
+       363.0,
+       192.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       281.5,
+       467.75,
+       271.0,
+       92.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       416.75,
+       310.75,
+       178.5,
+       198.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       209.24999999999997,
+       123.25,
+       272.5,
+       107.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-1ffe413a22",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6617,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       232.25,
+       103.0,
+       167.5,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-f59c5e762f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6656,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       117.0,
+       169.25,
+       391.0,
+       292.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-3a819cbc08",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6665,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       172.25,
+       127.5,
+       255.5,
+       463.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-6507a33b68",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6690,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       243.0,
+       123.0,
+       154.0,
+       411.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-02a758c9c0",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6709,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       255.5,
+       21.50000000000002,
+       131.0,
+       574.0
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       63.24999999999999,
+       255.25,
+       178.5,
+       184.5
+      ]
+     },
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       429.25,
+       235.25,
+       107.5,
+       144.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-48812f3874",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6728,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "White spot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "White spot of tea",
+      "bbox_raw": [
+       131.0,
+       144.5,
+       460.0,
+       369.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-752ec9132d",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6729,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       144.74999999999997,
+       190.5,
+       344.5,
+       274.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-5c75847411",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       194.0,
+       182.99999999999997,
+       280.0,
+       257.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-65134ed5cb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6806,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       252.24999999999997,
+       174.0,
+       278.5,
+       317.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-425297060e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6840,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       200.25000000000003,
+       138.25000000000003,
+       261.5,
+       392.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d7b940a9d4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6940,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf rust of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Leaf rust of tea",
+      "bbox_raw": [
+       212.5,
+       146.25,
+       203.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-561b26a5e3",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6952,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       246.50000000000003,
+       12.249999999999979,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-2602d7d795",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 6999,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       1.5000000000000036,
+       75.5,
+       174.0,
+       354.0
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       313.75,
+       191.0,
+       284.5,
+       283.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-07f9b83feb",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7000,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       218.75,
+       141.25,
+       167.5,
+       412.5
+      ]
+     },
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       543.0,
+       267.75,
+       97.0,
+       367.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-9ef5aa4bc7",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       155.25,
+       156.74999999999997,
+       267.5,
+       352.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-55850abe01",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7071,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea leaf",
+      "bbox_raw": [
+       243.0,
+       0.2499999999999858,
+       169.0,
+       564.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-d9a2908a95",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7152,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       206.25000000000003,
+       223.0,
+       321.5,
+       211.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-6c50963f6f",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7179,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       56.99999999999999,
+       44.49999999999999,
+       489.0,
+       426.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-6f8da395b4",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7198,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Black rot of tea"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Black rot of tea",
+      "bbox_raw": [
+       224.74999999999997,
+       215.25,
+       321.5,
+       252.5
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-dcc13a26e2",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7199,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Red Spider infested tea leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Red Spider infested tea leaf",
+      "bbox_raw": [
+       204.5,
+       48.999999999999986,
+       160.0,
+       517.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "tea_leaf_disease_pest_detection-cf39fee34e",
+   "ref": {
+    "file": "data/train-00000-of-00001.parquet",
+    "row": 7222,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "Tea Mosquito bug infested leaf"
+   ],
+   "ann": {
+    "objects": [
+     {
+      "label": "Tea Mosquito bug infested leaf",
+      "bbox_raw": [
+       141.5,
+       204.5,
+       320.0,
+       200.0
+      ]
+     }
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-d1ff2696ac",
+    "tea_leaf_disease_pest_detection-39b39dd467",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-602d66801a",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-02d4846049",
+    "tea_leaf_disease_pest_detection-f92b343376",
+    "tea_leaf_disease_pest_detection-ad34a65326",
+    "tea_leaf_disease_pest_detection-2f5780bac9",
+    "tea_leaf_disease_pest_detection-dac0ddc686",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-5405cad680",
+    "tea_leaf_disease_pest_detection-e8b8f1a656",
+    "tea_leaf_disease_pest_detection-4ddb5cf878",
+    "tea_leaf_disease_pest_detection-3bf7964b3b",
+    "tea_leaf_disease_pest_detection-c4d40af98a",
+    "tea_leaf_disease_pest_detection-eda49977da",
+    "tea_leaf_disease_pest_detection-f27212ad71",
+    "tea_leaf_disease_pest_detection-55ccba463c",
+    "tea_leaf_disease_pest_detection-dcc96d4854",
+    "tea_leaf_disease_pest_detection-0b140ca973",
+    "tea_leaf_disease_pest_detection-80431dfa32",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-a689b096e4",
+    "tea_leaf_disease_pest_detection-b4aecc9fcb",
+    "tea_leaf_disease_pest_detection-fee62b7819",
+    "tea_leaf_disease_pest_detection-d7b940a9d4",
+    "tea_leaf_disease_pest_detection-d9a2908a95",
+    "tea_leaf_disease_pest_detection-6f8da395b4",
+    "tea_leaf_disease_pest_detection-dcc13a26e2"
+   ],
+   "10": [
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-5fe980e0bd",
+    "tea_leaf_disease_pest_detection-ac76a67e26",
+    "tea_leaf_disease_pest_detection-d1ff2696ac",
+    "tea_leaf_disease_pest_detection-44b4bfcb27",
+    "tea_leaf_disease_pest_detection-d92fbff39a",
+    "tea_leaf_disease_pest_detection-39b39dd467",
+    "tea_leaf_disease_pest_detection-b9c3234aaa",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-602d66801a",
+    "tea_leaf_disease_pest_detection-b568525eb7",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-02d4846049",
+    "tea_leaf_disease_pest_detection-ae7339bef6",
+    "tea_leaf_disease_pest_detection-cbdbbb1b10",
+    "tea_leaf_disease_pest_detection-f92b343376",
+    "tea_leaf_disease_pest_detection-4cf593f2fa",
+    "tea_leaf_disease_pest_detection-ad34a65326",
+    "tea_leaf_disease_pest_detection-2f5780bac9",
+    "tea_leaf_disease_pest_detection-dac0ddc686",
+    "tea_leaf_disease_pest_detection-44ce0f4036",
+    "tea_leaf_disease_pest_detection-3390ac4891",
+    "tea_leaf_disease_pest_detection-c878f7ea59",
+    "tea_leaf_disease_pest_detection-d4aacd9082",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-501f9a8acf",
+    "tea_leaf_disease_pest_detection-5405cad680",
+    "tea_leaf_disease_pest_detection-98e07fb7ab",
+    "tea_leaf_disease_pest_detection-e8b8f1a656",
+    "tea_leaf_disease_pest_detection-c369872c52",
+    "tea_leaf_disease_pest_detection-e917b90527",
+    "tea_leaf_disease_pest_detection-ea3d36b0c0",
+    "tea_leaf_disease_pest_detection-eb9a730885",
+    "tea_leaf_disease_pest_detection-7f5dba31d3",
+    "tea_leaf_disease_pest_detection-4ddb5cf878",
+    "tea_leaf_disease_pest_detection-3bf7964b3b",
+    "tea_leaf_disease_pest_detection-c4d40af98a",
+    "tea_leaf_disease_pest_detection-81b58cb8f2",
+    "tea_leaf_disease_pest_detection-eda49977da",
+    "tea_leaf_disease_pest_detection-945eeadaa3",
+    "tea_leaf_disease_pest_detection-a0b6db3efc",
+    "tea_leaf_disease_pest_detection-f27212ad71",
+    "tea_leaf_disease_pest_detection-55ccba463c",
+    "tea_leaf_disease_pest_detection-144cc50350",
+    "tea_leaf_disease_pest_detection-dcc96d4854",
+    "tea_leaf_disease_pest_detection-0b140ca973",
+    "tea_leaf_disease_pest_detection-80431dfa32",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-a689b096e4",
+    "tea_leaf_disease_pest_detection-f0e9ee25dc",
+    "tea_leaf_disease_pest_detection-2ec5aa09d9",
+    "tea_leaf_disease_pest_detection-b4aecc9fcb",
+    "tea_leaf_disease_pest_detection-059b90371b",
+    "tea_leaf_disease_pest_detection-fee62b7819",
+    "tea_leaf_disease_pest_detection-48812f3874",
+    "tea_leaf_disease_pest_detection-d7b940a9d4",
+    "tea_leaf_disease_pest_detection-d9a2908a95",
+    "tea_leaf_disease_pest_detection-6c50963f6f",
+    "tea_leaf_disease_pest_detection-6f8da395b4",
+    "tea_leaf_disease_pest_detection-dcc13a26e2"
+   ],
+   "15": [
+    "tea_leaf_disease_pest_detection-0828729a3c",
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-d208637663",
+    "tea_leaf_disease_pest_detection-173159c527",
+    "tea_leaf_disease_pest_detection-c85e804dfb",
+    "tea_leaf_disease_pest_detection-a358e741c1",
+    "tea_leaf_disease_pest_detection-49e04da2c9",
+    "tea_leaf_disease_pest_detection-5fe980e0bd",
+    "tea_leaf_disease_pest_detection-3db908f40d",
+    "tea_leaf_disease_pest_detection-ac76a67e26",
+    "tea_leaf_disease_pest_detection-3c1acce6e7",
+    "tea_leaf_disease_pest_detection-d1ff2696ac",
+    "tea_leaf_disease_pest_detection-ec8c7067e5",
+    "tea_leaf_disease_pest_detection-44b4bfcb27",
+    "tea_leaf_disease_pest_detection-f44b978626",
+    "tea_leaf_disease_pest_detection-d92fbff39a",
+    "tea_leaf_disease_pest_detection-39b39dd467",
+    "tea_leaf_disease_pest_detection-b9c3234aaa",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-602d66801a",
+    "tea_leaf_disease_pest_detection-b568525eb7",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-02d4846049",
+    "tea_leaf_disease_pest_detection-bb7934d1b1",
+    "tea_leaf_disease_pest_detection-ae7339bef6",
+    "tea_leaf_disease_pest_detection-cbdbbb1b10",
+    "tea_leaf_disease_pest_detection-d8ec7e1793",
+    "tea_leaf_disease_pest_detection-f92b343376",
+    "tea_leaf_disease_pest_detection-4cf593f2fa",
+    "tea_leaf_disease_pest_detection-ad34a65326",
+    "tea_leaf_disease_pest_detection-2f5780bac9",
+    "tea_leaf_disease_pest_detection-3877894f76",
+    "tea_leaf_disease_pest_detection-2ac20bc17a",
+    "tea_leaf_disease_pest_detection-dac0ddc686",
+    "tea_leaf_disease_pest_detection-fe0215931a",
+    "tea_leaf_disease_pest_detection-44ce0f4036",
+    "tea_leaf_disease_pest_detection-647763d8c1",
+    "tea_leaf_disease_pest_detection-3390ac4891",
+    "tea_leaf_disease_pest_detection-76803b3646",
+    "tea_leaf_disease_pest_detection-c878f7ea59",
+    "tea_leaf_disease_pest_detection-d4aacd9082",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-501f9a8acf",
+    "tea_leaf_disease_pest_detection-63fea5a28f",
+    "tea_leaf_disease_pest_detection-5405cad680",
+    "tea_leaf_disease_pest_detection-98e07fb7ab",
+    "tea_leaf_disease_pest_detection-e8b8f1a656",
+    "tea_leaf_disease_pest_detection-ae01831ef0",
+    "tea_leaf_disease_pest_detection-c369872c52",
+    "tea_leaf_disease_pest_detection-e917b90527",
+    "tea_leaf_disease_pest_detection-118fc22579",
+    "tea_leaf_disease_pest_detection-ea3d36b0c0",
+    "tea_leaf_disease_pest_detection-eb9a730885",
+    "tea_leaf_disease_pest_detection-c73bbc3bbf",
+    "tea_leaf_disease_pest_detection-7f5dba31d3",
+    "tea_leaf_disease_pest_detection-4ddb5cf878",
+    "tea_leaf_disease_pest_detection-3bf7964b3b",
+    "tea_leaf_disease_pest_detection-c4d40af98a",
+    "tea_leaf_disease_pest_detection-81b58cb8f2",
+    "tea_leaf_disease_pest_detection-eda49977da",
+    "tea_leaf_disease_pest_detection-c26478b417",
+    "tea_leaf_disease_pest_detection-945eeadaa3",
+    "tea_leaf_disease_pest_detection-a0b6db3efc",
+    "tea_leaf_disease_pest_detection-f27212ad71",
+    "tea_leaf_disease_pest_detection-9594b73cc5",
+    "tea_leaf_disease_pest_detection-55ccba463c",
+    "tea_leaf_disease_pest_detection-7052c136ce",
+    "tea_leaf_disease_pest_detection-1ba789cd8b",
+    "tea_leaf_disease_pest_detection-144cc50350",
+    "tea_leaf_disease_pest_detection-dcc96d4854",
+    "tea_leaf_disease_pest_detection-0b140ca973",
+    "tea_leaf_disease_pest_detection-80431dfa32",
+    "tea_leaf_disease_pest_detection-923029219d",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-a689b096e4",
+    "tea_leaf_disease_pest_detection-f0e9ee25dc",
+    "tea_leaf_disease_pest_detection-5523fbb4bb",
+    "tea_leaf_disease_pest_detection-2ec5aa09d9",
+    "tea_leaf_disease_pest_detection-b4aecc9fcb",
+    "tea_leaf_disease_pest_detection-6ddc9be889",
+    "tea_leaf_disease_pest_detection-059b90371b",
+    "tea_leaf_disease_pest_detection-fee62b7819",
+    "tea_leaf_disease_pest_detection-48812f3874",
+    "tea_leaf_disease_pest_detection-425297060e",
+    "tea_leaf_disease_pest_detection-d7b940a9d4",
+    "tea_leaf_disease_pest_detection-55850abe01",
+    "tea_leaf_disease_pest_detection-d9a2908a95",
+    "tea_leaf_disease_pest_detection-6c50963f6f",
+    "tea_leaf_disease_pest_detection-6f8da395b4",
+    "tea_leaf_disease_pest_detection-dcc13a26e2"
+   ]
+  },
+  "s1": {
+   "5": [
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-31e4a2848d",
+    "tea_leaf_disease_pest_detection-363dd1ccd7",
+    "tea_leaf_disease_pest_detection-be41dbd162",
+    "tea_leaf_disease_pest_detection-3c1acce6e7",
+    "tea_leaf_disease_pest_detection-b92f878684",
+    "tea_leaf_disease_pest_detection-267c5c77ec",
+    "tea_leaf_disease_pest_detection-62df1445cd",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-40885ac2e8",
+    "tea_leaf_disease_pest_detection-74dc750ea7",
+    "tea_leaf_disease_pest_detection-9072e5da0a",
+    "tea_leaf_disease_pest_detection-b33e87c2f0",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-91d167dcf7",
+    "tea_leaf_disease_pest_detection-19bc8c388a",
+    "tea_leaf_disease_pest_detection-a1a93f3a71",
+    "tea_leaf_disease_pest_detection-5964dd8c0f",
+    "tea_leaf_disease_pest_detection-ed3931a0b5",
+    "tea_leaf_disease_pest_detection-d945ae8bfb",
+    "tea_leaf_disease_pest_detection-c07baee341",
+    "tea_leaf_disease_pest_detection-1abd06a1c9",
+    "tea_leaf_disease_pest_detection-23b4d37aef",
+    "tea_leaf_disease_pest_detection-9b2609f8d2",
+    "tea_leaf_disease_pest_detection-338f40222b",
+    "tea_leaf_disease_pest_detection-ecd9b66e05",
+    "tea_leaf_disease_pest_detection-cfa3bc9ffe",
+    "tea_leaf_disease_pest_detection-bd4fe35919",
+    "tea_leaf_disease_pest_detection-cad23610cb",
+    "tea_leaf_disease_pest_detection-e7169d99ee",
+    "tea_leaf_disease_pest_detection-e4f92b1cc0",
+    "tea_leaf_disease_pest_detection-561b26a5e3"
+   ],
+   "10": [
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-cf88c04b66",
+    "tea_leaf_disease_pest_detection-31e4a2848d",
+    "tea_leaf_disease_pest_detection-1a58799c99",
+    "tea_leaf_disease_pest_detection-363dd1ccd7",
+    "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+    "tea_leaf_disease_pest_detection-be41dbd162",
+    "tea_leaf_disease_pest_detection-2bfd6aa00b",
+    "tea_leaf_disease_pest_detection-3c1acce6e7",
+    "tea_leaf_disease_pest_detection-affe37cc22",
+    "tea_leaf_disease_pest_detection-3c50822d4b",
+    "tea_leaf_disease_pest_detection-23e5ec90e3",
+    "tea_leaf_disease_pest_detection-b92f878684",
+    "tea_leaf_disease_pest_detection-267c5c77ec",
+    "tea_leaf_disease_pest_detection-f44b978626",
+    "tea_leaf_disease_pest_detection-62df1445cd",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-40885ac2e8",
+    "tea_leaf_disease_pest_detection-74dc750ea7",
+    "tea_leaf_disease_pest_detection-4c79ec1694",
+    "tea_leaf_disease_pest_detection-ca6dae2669",
+    "tea_leaf_disease_pest_detection-a2d0622443",
+    "tea_leaf_disease_pest_detection-9072e5da0a",
+    "tea_leaf_disease_pest_detection-03d650480d",
+    "tea_leaf_disease_pest_detection-b33e87c2f0",
+    "tea_leaf_disease_pest_detection-1f658f25e7",
+    "tea_leaf_disease_pest_detection-8cbb3018c0",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-91d167dcf7",
+    "tea_leaf_disease_pest_detection-2e28d21daa",
+    "tea_leaf_disease_pest_detection-5873929bf4",
+    "tea_leaf_disease_pest_detection-9ec02799dc",
+    "tea_leaf_disease_pest_detection-19bc8c388a",
+    "tea_leaf_disease_pest_detection-a1a93f3a71",
+    "tea_leaf_disease_pest_detection-5964dd8c0f",
+    "tea_leaf_disease_pest_detection-ed3931a0b5",
+    "tea_leaf_disease_pest_detection-d945ae8bfb",
+    "tea_leaf_disease_pest_detection-c07baee341",
+    "tea_leaf_disease_pest_detection-1abd06a1c9",
+    "tea_leaf_disease_pest_detection-23b4d37aef",
+    "tea_leaf_disease_pest_detection-a1a3ba10e2",
+    "tea_leaf_disease_pest_detection-9b2609f8d2",
+    "tea_leaf_disease_pest_detection-338f40222b",
+    "tea_leaf_disease_pest_detection-824fd7edf2",
+    "tea_leaf_disease_pest_detection-87612d846a",
+    "tea_leaf_disease_pest_detection-ecd9b66e05",
+    "tea_leaf_disease_pest_detection-19471d286d",
+    "tea_leaf_disease_pest_detection-cfa3bc9ffe",
+    "tea_leaf_disease_pest_detection-f4a0d34eea",
+    "tea_leaf_disease_pest_detection-bd4fe35919",
+    "tea_leaf_disease_pest_detection-d6fc874b9d",
+    "tea_leaf_disease_pest_detection-9020a1deb7",
+    "tea_leaf_disease_pest_detection-042911dd03",
+    "tea_leaf_disease_pest_detection-cad23610cb",
+    "tea_leaf_disease_pest_detection-7a6a8a2d0a",
+    "tea_leaf_disease_pest_detection-3ccf17d80a",
+    "tea_leaf_disease_pest_detection-e7169d99ee",
+    "tea_leaf_disease_pest_detection-13ae4d131d",
+    "tea_leaf_disease_pest_detection-e4f92b1cc0",
+    "tea_leaf_disease_pest_detection-5a89223225",
+    "tea_leaf_disease_pest_detection-1ffe413a22",
+    "tea_leaf_disease_pest_detection-561b26a5e3"
+   ],
+   "15": [
+    "tea_leaf_disease_pest_detection-eb98fc5ca5",
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-cf88c04b66",
+    "tea_leaf_disease_pest_detection-31e4a2848d",
+    "tea_leaf_disease_pest_detection-1a58799c99",
+    "tea_leaf_disease_pest_detection-363dd1ccd7",
+    "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+    "tea_leaf_disease_pest_detection-be41dbd162",
+    "tea_leaf_disease_pest_detection-f55899f5f1",
+    "tea_leaf_disease_pest_detection-ae7040f07d",
+    "tea_leaf_disease_pest_detection-2bfd6aa00b",
+    "tea_leaf_disease_pest_detection-3c1acce6e7",
+    "tea_leaf_disease_pest_detection-affe37cc22",
+    "tea_leaf_disease_pest_detection-3c50822d4b",
+    "tea_leaf_disease_pest_detection-23e5ec90e3",
+    "tea_leaf_disease_pest_detection-a2130d1289",
+    "tea_leaf_disease_pest_detection-b92f878684",
+    "tea_leaf_disease_pest_detection-b0175159c0",
+    "tea_leaf_disease_pest_detection-684fa6adc4",
+    "tea_leaf_disease_pest_detection-267c5c77ec",
+    "tea_leaf_disease_pest_detection-f44b978626",
+    "tea_leaf_disease_pest_detection-368745c36d",
+    "tea_leaf_disease_pest_detection-62df1445cd",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-cd7d9ec73b",
+    "tea_leaf_disease_pest_detection-fb4cc22a03",
+    "tea_leaf_disease_pest_detection-bf31d8190a",
+    "tea_leaf_disease_pest_detection-40885ac2e8",
+    "tea_leaf_disease_pest_detection-691df19a8c",
+    "tea_leaf_disease_pest_detection-74dc750ea7",
+    "tea_leaf_disease_pest_detection-4c79ec1694",
+    "tea_leaf_disease_pest_detection-ca6dae2669",
+    "tea_leaf_disease_pest_detection-a2d0622443",
+    "tea_leaf_disease_pest_detection-9072e5da0a",
+    "tea_leaf_disease_pest_detection-9cccf98ac4",
+    "tea_leaf_disease_pest_detection-03d650480d",
+    "tea_leaf_disease_pest_detection-b33e87c2f0",
+    "tea_leaf_disease_pest_detection-829bf4b209",
+    "tea_leaf_disease_pest_detection-724328d6a8",
+    "tea_leaf_disease_pest_detection-1f658f25e7",
+    "tea_leaf_disease_pest_detection-8cbb3018c0",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-4e9cafea2b",
+    "tea_leaf_disease_pest_detection-91d167dcf7",
+    "tea_leaf_disease_pest_detection-2e28d21daa",
+    "tea_leaf_disease_pest_detection-5873929bf4",
+    "tea_leaf_disease_pest_detection-14cca9f805",
+    "tea_leaf_disease_pest_detection-9ec02799dc",
+    "tea_leaf_disease_pest_detection-19bc8c388a",
+    "tea_leaf_disease_pest_detection-a1a93f3a71",
+    "tea_leaf_disease_pest_detection-3be9396ed9",
+    "tea_leaf_disease_pest_detection-5964dd8c0f",
+    "tea_leaf_disease_pest_detection-fac6c7c0d3",
+    "tea_leaf_disease_pest_detection-ed3931a0b5",
+    "tea_leaf_disease_pest_detection-d945ae8bfb",
+    "tea_leaf_disease_pest_detection-c07baee341",
+    "tea_leaf_disease_pest_detection-1abd06a1c9",
+    "tea_leaf_disease_pest_detection-23b4d37aef",
+    "tea_leaf_disease_pest_detection-a1a3ba10e2",
+    "tea_leaf_disease_pest_detection-9b2609f8d2",
+    "tea_leaf_disease_pest_detection-338f40222b",
+    "tea_leaf_disease_pest_detection-824fd7edf2",
+    "tea_leaf_disease_pest_detection-87612d846a",
+    "tea_leaf_disease_pest_detection-ecd9b66e05",
+    "tea_leaf_disease_pest_detection-e176bb08c1",
+    "tea_leaf_disease_pest_detection-19471d286d",
+    "tea_leaf_disease_pest_detection-cfa3bc9ffe",
+    "tea_leaf_disease_pest_detection-f4a0d34eea",
+    "tea_leaf_disease_pest_detection-bd4fe35919",
+    "tea_leaf_disease_pest_detection-51f692e3ad",
+    "tea_leaf_disease_pest_detection-d6fc874b9d",
+    "tea_leaf_disease_pest_detection-9020a1deb7",
+    "tea_leaf_disease_pest_detection-af838565f0",
+    "tea_leaf_disease_pest_detection-00f7cc6196",
+    "tea_leaf_disease_pest_detection-042911dd03",
+    "tea_leaf_disease_pest_detection-cad23610cb",
+    "tea_leaf_disease_pest_detection-5ec980a246",
+    "tea_leaf_disease_pest_detection-e15d65fcd0",
+    "tea_leaf_disease_pest_detection-7a6a8a2d0a",
+    "tea_leaf_disease_pest_detection-3ccf17d80a",
+    "tea_leaf_disease_pest_detection-e7169d99ee",
+    "tea_leaf_disease_pest_detection-22b51d3e90",
+    "tea_leaf_disease_pest_detection-13ae4d131d",
+    "tea_leaf_disease_pest_detection-4b940899e2",
+    "tea_leaf_disease_pest_detection-e4f92b1cc0",
+    "tea_leaf_disease_pest_detection-5a89223225",
+    "tea_leaf_disease_pest_detection-1ffe413a22",
+    "tea_leaf_disease_pest_detection-f59c5e762f",
+    "tea_leaf_disease_pest_detection-6507a33b68",
+    "tea_leaf_disease_pest_detection-561b26a5e3",
+    "tea_leaf_disease_pest_detection-d9a2908a95",
+    "tea_leaf_disease_pest_detection-cf39fee34e"
+   ]
+  },
+  "s2": {
+   "5": [
+    "tea_leaf_disease_pest_detection-0cfc388d27",
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-f57f1f476b",
+    "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+    "tea_leaf_disease_pest_detection-e77ba8edfd",
+    "tea_leaf_disease_pest_detection-750bc846bf",
+    "tea_leaf_disease_pest_detection-56e7d0a801",
+    "tea_leaf_disease_pest_detection-956cd3418d",
+    "tea_leaf_disease_pest_detection-2dc98141a5",
+    "tea_leaf_disease_pest_detection-c3a771c357",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-5161a08ff1",
+    "tea_leaf_disease_pest_detection-c6a9c9cdf8",
+    "tea_leaf_disease_pest_detection-4992520805",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-b0d8c84e54",
+    "tea_leaf_disease_pest_detection-81804d0781",
+    "tea_leaf_disease_pest_detection-9ca447bfda",
+    "tea_leaf_disease_pest_detection-b20f253020",
+    "tea_leaf_disease_pest_detection-dbdc85a49b",
+    "tea_leaf_disease_pest_detection-ae25d54b7f",
+    "tea_leaf_disease_pest_detection-1ba789cd8b",
+    "tea_leaf_disease_pest_detection-9891adbdac",
+    "tea_leaf_disease_pest_detection-9197eb3a60",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-3a819cbc08",
+    "tea_leaf_disease_pest_detection-752ec9132d",
+    "tea_leaf_disease_pest_detection-65134ed5cb",
+    "tea_leaf_disease_pest_detection-07f9b83feb"
+   ],
+   "10": [
+    "tea_leaf_disease_pest_detection-89c4ae02bd",
+    "tea_leaf_disease_pest_detection-0cfc388d27",
+    "tea_leaf_disease_pest_detection-af1bbdf39e",
+    "tea_leaf_disease_pest_detection-5351b29bd7",
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-f57f1f476b",
+    "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+    "tea_leaf_disease_pest_detection-e77ba8edfd",
+    "tea_leaf_disease_pest_detection-911fdd2831",
+    "tea_leaf_disease_pest_detection-9da22a90b3",
+    "tea_leaf_disease_pest_detection-750bc846bf",
+    "tea_leaf_disease_pest_detection-56e7d0a801",
+    "tea_leaf_disease_pest_detection-956cd3418d",
+    "tea_leaf_disease_pest_detection-2dc98141a5",
+    "tea_leaf_disease_pest_detection-c3a771c357",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-5161a08ff1",
+    "tea_leaf_disease_pest_detection-8544e23ea4",
+    "tea_leaf_disease_pest_detection-fae8746d1e",
+    "tea_leaf_disease_pest_detection-8f50df434f",
+    "tea_leaf_disease_pest_detection-9808089ffb",
+    "tea_leaf_disease_pest_detection-c6a9c9cdf8",
+    "tea_leaf_disease_pest_detection-656fc98b42",
+    "tea_leaf_disease_pest_detection-4992520805",
+    "tea_leaf_disease_pest_detection-38dfa62434",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-1dcf4616d2",
+    "tea_leaf_disease_pest_detection-b0d8c84e54",
+    "tea_leaf_disease_pest_detection-a7ca137d07",
+    "tea_leaf_disease_pest_detection-81804d0781",
+    "tea_leaf_disease_pest_detection-4e9aefcfd2",
+    "tea_leaf_disease_pest_detection-0a5dbbc8bd",
+    "tea_leaf_disease_pest_detection-ea3d36b0c0",
+    "tea_leaf_disease_pest_detection-a1bbde4850",
+    "tea_leaf_disease_pest_detection-051dc98240",
+    "tea_leaf_disease_pest_detection-9ca447bfda",
+    "tea_leaf_disease_pest_detection-0a587b5f76",
+    "tea_leaf_disease_pest_detection-b20f253020",
+    "tea_leaf_disease_pest_detection-42e9c904bf",
+    "tea_leaf_disease_pest_detection-086365fac1",
+    "tea_leaf_disease_pest_detection-5527a8d908",
+    "tea_leaf_disease_pest_detection-dbdc85a49b",
+    "tea_leaf_disease_pest_detection-ae25d54b7f",
+    "tea_leaf_disease_pest_detection-9020a1deb7",
+    "tea_leaf_disease_pest_detection-4ce992bc97",
+    "tea_leaf_disease_pest_detection-1ba789cd8b",
+    "tea_leaf_disease_pest_detection-9891adbdac",
+    "tea_leaf_disease_pest_detection-9197eb3a60",
+    "tea_leaf_disease_pest_detection-c5155ae2da",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-86a8e4f3e8",
+    "tea_leaf_disease_pest_detection-8039898824",
+    "tea_leaf_disease_pest_detection-3a819cbc08",
+    "tea_leaf_disease_pest_detection-02a758c9c0",
+    "tea_leaf_disease_pest_detection-752ec9132d",
+    "tea_leaf_disease_pest_detection-5c75847411",
+    "tea_leaf_disease_pest_detection-65134ed5cb",
+    "tea_leaf_disease_pest_detection-07f9b83feb",
+    "tea_leaf_disease_pest_detection-d9a2908a95"
+   ],
+   "15": [
+    "tea_leaf_disease_pest_detection-89c4ae02bd",
+    "tea_leaf_disease_pest_detection-0cfc388d27",
+    "tea_leaf_disease_pest_detection-af1bbdf39e",
+    "tea_leaf_disease_pest_detection-5351b29bd7",
+    "tea_leaf_disease_pest_detection-985528a643",
+    "tea_leaf_disease_pest_detection-25025184a4",
+    "tea_leaf_disease_pest_detection-f57f1f476b",
+    "tea_leaf_disease_pest_detection-3a5ec9ddd1",
+    "tea_leaf_disease_pest_detection-be017b3f16",
+    "tea_leaf_disease_pest_detection-e77ba8edfd",
+    "tea_leaf_disease_pest_detection-911fdd2831",
+    "tea_leaf_disease_pest_detection-9da22a90b3",
+    "tea_leaf_disease_pest_detection-750bc846bf",
+    "tea_leaf_disease_pest_detection-56e7d0a801",
+    "tea_leaf_disease_pest_detection-c827aea68a",
+    "tea_leaf_disease_pest_detection-956cd3418d",
+    "tea_leaf_disease_pest_detection-2dc98141a5",
+    "tea_leaf_disease_pest_detection-c3a771c357",
+    "tea_leaf_disease_pest_detection-754a9cd789",
+    "tea_leaf_disease_pest_detection-cda52e6a27",
+    "tea_leaf_disease_pest_detection-76860bc29a",
+    "tea_leaf_disease_pest_detection-cee8f5f135",
+    "tea_leaf_disease_pest_detection-aa4e95cda8",
+    "tea_leaf_disease_pest_detection-b3a7f50cba",
+    "tea_leaf_disease_pest_detection-5161a08ff1",
+    "tea_leaf_disease_pest_detection-89953b54f2",
+    "tea_leaf_disease_pest_detection-0e30525ccc",
+    "tea_leaf_disease_pest_detection-8544e23ea4",
+    "tea_leaf_disease_pest_detection-fae8746d1e",
+    "tea_leaf_disease_pest_detection-8f50df434f",
+    "tea_leaf_disease_pest_detection-8e9822e05a",
+    "tea_leaf_disease_pest_detection-55a75d5a10",
+    "tea_leaf_disease_pest_detection-9808089ffb",
+    "tea_leaf_disease_pest_detection-c6a9c9cdf8",
+    "tea_leaf_disease_pest_detection-656fc98b42",
+    "tea_leaf_disease_pest_detection-4992520805",
+    "tea_leaf_disease_pest_detection-47f9444ee2",
+    "tea_leaf_disease_pest_detection-38dfa62434",
+    "tea_leaf_disease_pest_detection-b04361a1c5",
+    "tea_leaf_disease_pest_detection-0c3fbad0a7",
+    "tea_leaf_disease_pest_detection-91d167dcf7",
+    "tea_leaf_disease_pest_detection-1dcf4616d2",
+    "tea_leaf_disease_pest_detection-98d1331b01",
+    "tea_leaf_disease_pest_detection-b0d8c84e54",
+    "tea_leaf_disease_pest_detection-02b85bcfd5",
+    "tea_leaf_disease_pest_detection-52b2500298",
+    "tea_leaf_disease_pest_detection-a7f2306997",
+    "tea_leaf_disease_pest_detection-f198f684ea",
+    "tea_leaf_disease_pest_detection-a7ca137d07",
+    "tea_leaf_disease_pest_detection-81804d0781",
+    "tea_leaf_disease_pest_detection-5d01172151",
+    "tea_leaf_disease_pest_detection-4e9aefcfd2",
+    "tea_leaf_disease_pest_detection-0a5dbbc8bd",
+    "tea_leaf_disease_pest_detection-5f97807ae8",
+    "tea_leaf_disease_pest_detection-ea3d36b0c0",
+    "tea_leaf_disease_pest_detection-a1bbde4850",
+    "tea_leaf_disease_pest_detection-051dc98240",
+    "tea_leaf_disease_pest_detection-9ca447bfda",
+    "tea_leaf_disease_pest_detection-0a587b5f76",
+    "tea_leaf_disease_pest_detection-b20f253020",
+    "tea_leaf_disease_pest_detection-42e9c904bf",
+    "tea_leaf_disease_pest_detection-086365fac1",
+    "tea_leaf_disease_pest_detection-a0b6db3efc",
+    "tea_leaf_disease_pest_detection-a48b843a01",
+    "tea_leaf_disease_pest_detection-5527a8d908",
+    "tea_leaf_disease_pest_detection-dbdc85a49b",
+    "tea_leaf_disease_pest_detection-8520934c0d",
+    "tea_leaf_disease_pest_detection-ae25d54b7f",
+    "tea_leaf_disease_pest_detection-9020a1deb7",
+    "tea_leaf_disease_pest_detection-4ce992bc97",
+    "tea_leaf_disease_pest_detection-1ba789cd8b",
+    "tea_leaf_disease_pest_detection-9891adbdac",
+    "tea_leaf_disease_pest_detection-5a5bfb0e7b",
+    "tea_leaf_disease_pest_detection-9197eb3a60",
+    "tea_leaf_disease_pest_detection-c5155ae2da",
+    "tea_leaf_disease_pest_detection-22b51d3e90",
+    "tea_leaf_disease_pest_detection-8efa5a2184",
+    "tea_leaf_disease_pest_detection-8ddb570038",
+    "tea_leaf_disease_pest_detection-86a8e4f3e8",
+    "tea_leaf_disease_pest_detection-fee62b7819",
+    "tea_leaf_disease_pest_detection-8039898824",
+    "tea_leaf_disease_pest_detection-63ac2762fa",
+    "tea_leaf_disease_pest_detection-3a819cbc08",
+    "tea_leaf_disease_pest_detection-02a758c9c0",
+    "tea_leaf_disease_pest_detection-752ec9132d",
+    "tea_leaf_disease_pest_detection-5c75847411",
+    "tea_leaf_disease_pest_detection-65134ed5cb",
+    "tea_leaf_disease_pest_detection-2602d7d795",
+    "tea_leaf_disease_pest_detection-07f9b83feb",
+    "tea_leaf_disease_pest_detection-9ef5aa4bc7",
+    "tea_leaf_disease_pest_detection-d9a2908a95"
+   ]
+  }
+ }
+}

@@ -1,0 +1,5434 @@
+{
+ "name": "guava_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/guava_disease_classification",
+ "hf_sha": "da9d107d521baef02f5e377f123e5329a487628a",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T13:13:13+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Anthracnose",
+   "Canker",
+   "Dot",
+   "Healthy",
+   "Rust",
+   "Scab",
+   "Styler end root"
+  ],
+  "indexed_rows": 3049
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "guava_disease_classification-6e64570d99",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-cf9e78e0f7",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 15,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4e8ef4edd1",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 21,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7152ada9d4",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 24,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c5759b05d1",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1609bb8bc7",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 43,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c2e40ddb70",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 45,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0a25fb39b2",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 68,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-90a737171b",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-43ce4443cb",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 83,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c305589033",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 93,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-67b7b19075",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5bbbdc8087",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7fe29ba4f1",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 121,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0a1c60a981",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 146,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d20a6da640",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 149,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-92f49b2873",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 151,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-87561f045f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 184,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0069c2c78a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 186,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e8443ecb3b",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 213,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1811602b1a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 224,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f9a36813d3",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 225,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-24b1f1cf8e",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 233,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a20ae3d9ef",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 253,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-cf113ebed5",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 286,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-63698efac6",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 291,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-41e22387c6",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 318,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4bbe2d99dc",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 399,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8dffda09ec",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 404,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-60c14d8317",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 429,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-80e38be1a8",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 440,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-52044b2429",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 503,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0da383d34f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 519,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a6ee3d6e4f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 588,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ae3a311c38",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 607,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0ccb87df1f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 611,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-89447bea46",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 613,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a859232316",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 621,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1677b1a873",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 622,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-19be3dfea0",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 628,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7073b6cc0e",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 638,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d11b5cd91d",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 640,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7a8913c4aa",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 641,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a7c7331857",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 651,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9133c3ae91",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 653,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2fc14459bb",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 655,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-316c86253a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 656,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5c8f0078d9",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 657,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-67b0aad2dd",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 658,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3b97345dd4",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 661,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d418c53d53",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 663,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-360d9676cc",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 664,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-cdba1e66f3",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 666,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-98146bbc2a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 670,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6529e131ea",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 672,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-87a6eb7bc3",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 675,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-95fe1a0fd3",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 679,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b227a52f72",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 682,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-79fe880a41",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 684,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d82155fa17",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 692,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a48125a509",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 693,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ebd8f8b8f9",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 696,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-845d0fef86",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 698,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-60c7385a8e",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 703,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-fb7a429851",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 705,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c370a89f15",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 709,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1343d8d05f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 710,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2a796ca1ee",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 711,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bb7ae7f3e6",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 715,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bb89a88d7c",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 717,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e66d90a9e8",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 720,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-88b9e8035f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 722,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Scab"
+   ],
+   "ann": {
+    "label": "Scab"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-55d251c86a",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 748,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-94450b39a3",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 749,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6e9e17026f",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 751,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-fd33e4f172",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 752,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-80d1e01ddb",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 757,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9e9f348fdd",
+   "ref": {
+    "file": "raw/train-00000-of-00004.parquet",
+    "row": 762,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-73d1bf4e26",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-77453bc777",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 16,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-89e52d366c",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 21,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f058ad6a91",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-eb26b1cc3b",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 68,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-dc2858b141",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 74,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-03d7fe1158",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 78,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-de538e2706",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 79,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f650ba2c09",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 81,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2b79fe4371",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 84,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9a6c284d37",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 85,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0080f679aa",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 88,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2582fbe7f8",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 90,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bd18699255",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 97,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-adf2030932",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 107,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-647a6e3785",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 109,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-56de155ad0",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 112,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1a8976f84f",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 114,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0437872933",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 115,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-34f2e19152",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 119,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-afe28697e2",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 125,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-35cd6c1024",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 135,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-775df47651",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 137,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8ccd06d809",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 144,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d41a1109dc",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 147,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4f94e72971",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 149,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4e99228782",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 168,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4cb7ddb006",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 169,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c26d03e06e",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 170,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-588be4dda1",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 181,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5c78dffa8e",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 201,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-44dcb9c464",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 202,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-04db18490d",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 203,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5cb413a262",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 205,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5fc19a82e4",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 207,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2c5963a573",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 209,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-de067eab06",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 212,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-649ad12bde",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 216,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Styler end root"
+   ],
+   "ann": {
+    "label": "Styler end root"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ba2b7465f5",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 223,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-be6a03dcce",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 225,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-16ff642576",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 237,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-74fc28fdfd",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 268,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-76620aa114",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 279,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bd5d2569de",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 280,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7eb37cc690",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 285,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b383df9664",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 289,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-82d4ddac97",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 317,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f7bba1cd4e",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 321,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-185898fc30",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 334,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4a431e4344",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 342,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bd499fcef8",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 364,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2a04efeb6b",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 377,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ccb57bcc42",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 378,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-21b57eac2b",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 400,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c35263b8f2",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 404,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-74d4553440",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 423,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e20341abe9",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 426,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bbcb494562",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 428,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Anthracnose"
+   ],
+   "ann": {
+    "label": "Anthracnose"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-825e509321",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 460,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-26a2d16792",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 463,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2d574de5b9",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 472,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4ca5f97c8a",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 481,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0d70bd4d1d",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 482,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c341653397",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 502,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-584a9a909e",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 505,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-733021aecf",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 514,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-34a15d83e7",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 519,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b9418b6aca",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 525,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ddaade2bf9",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 526,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-16e17a14cf",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 530,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6a681c26eb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 533,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b0c53f6d53",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 540,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b3057bc2ac",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 544,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f7d02c69c6",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 545,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1d2c0275eb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 552,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-05796f0792",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 556,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6f4ce13a80",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 558,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7d10b7beb4",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 565,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4018dea785",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 566,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2873ea0656",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 575,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-dbb786b861",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 583,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8766709c82",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 587,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6a014ee120",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 588,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1041bf4e27",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 589,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3019673ef7",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 595,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-064b5b89cb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 599,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-24a7ef78fb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 603,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-cefe63235b",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 604,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-16727af177",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 606,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-48166b6c90",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 608,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1527f14e9f",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 611,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-af89fe7055",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 613,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ce8131afad",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 614,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-25aeffdf69",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 617,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-119ba7cd4c",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 621,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9fbdd6a676",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 629,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e4d5873dea",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 630,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-aad8228224",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 632,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-cd4f9820f7",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 639,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e713e6b606",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 642,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-389f508008",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 646,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Canker"
+   ],
+   "ann": {
+    "label": "Canker"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1b897c4286",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 656,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c236e0f90e",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 658,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c5a6ee8205",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 659,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-15fc47bcd9",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 668,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3157607ffb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 671,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9889718bed",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 675,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7c2d61c1bb",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 683,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a6a2b5a4f0",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 693,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b78d7d45d0",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 705,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-75e42adc07",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 715,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9a125859ab",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 716,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c73bcf8dda",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 717,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8b4cd82f53",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 727,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9e3d93387c",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 730,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-dcb91415f4",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 739,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c4ef4098a3",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 745,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ac01d48778",
+   "ref": {
+    "file": "raw/train-00001-of-00004.parquet",
+    "row": 761,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-28f8c086eb",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-35da7e6ef4",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 11,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4655eef19f",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 14,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ee8771ffce",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 17,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6114914957",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 22,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c44b73690f",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 27,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9769735db3",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 30,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3e55ac570d",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5f731ad535",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 43,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0ee721c141",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 45,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-953fa506bf",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-63611cba7a",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 58,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-1f45ef8e16",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 61,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9827607bce",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ed365c07dc",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 75,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-799dbfcb1a",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 79,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4cb2955ac9",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 80,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e4a3d09a9d",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 82,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-4b3f2ff388",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 83,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5b117011fd",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 84,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c03c23b7bc",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 89,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d73bd54a04",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 99,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ddb9efa877",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c4cfb8500e",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 106,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Dot"
+   ],
+   "ann": {
+    "label": "Dot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-020b10445e",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 126,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0ee8bbc8cb",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 157,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8808987725",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 172,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5fc260c933",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 191,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-283988cb40",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 245,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-bc2e3e223f",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 299,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3bdacba674",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 314,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b77272c73e",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 343,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2c7ff40406",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 361,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2928f6d1b7",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 431,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8db6df98ed",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 445,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2f71265436",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 472,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-695367ce5d",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 476,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6c7ae05864",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 526,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5d54e8c530",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 572,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e4d5d98e77",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 618,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-53ac02bf66",
+   "ref": {
+    "file": "raw/train-00002-of-00004.parquet",
+    "row": 724,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-80d4453aec",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 55,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-417e2ba088",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 86,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-db78ee6b40",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 128,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c7c003ca75",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 132,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3bcf5071f3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 165,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-02df44f42b",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 268,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-eb8e58f8d6",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 326,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-55fa06f0c6",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 329,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ef64d5146c",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 363,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d3d8b0a92b",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 395,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-5764cf87e3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 401,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f2d4b76b88",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 402,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a5d4626a8d",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 427,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-0dc04eef39",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 454,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c410542376",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 476,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2fe3e1149b",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 480,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6179f72200",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 568,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8d95ad3023",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 593,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy"
+   ],
+   "ann": {
+    "label": "Healthy"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f88fd359f1",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 595,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-79755912c6",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 602,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-78b6c6080f",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 605,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-dafc5c17e6",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 613,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-dce3d1c443",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 620,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-81fc32ca4a",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 625,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7bba591f13",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 626,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-430981cc29",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 632,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-10bf77ae35",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 633,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f0de953502",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 635,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-591b3d7665",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 642,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-a36db2a386",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 644,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e3748db22e",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 653,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e593bbed08",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 654,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-fef0c3f74a",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 657,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-99a13cded3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 659,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ba72fbcc3f",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 661,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-d2bd2b839a",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 662,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-06104c108c",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 664,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-261e0a5756",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 666,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e7f47c49a0",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 667,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-859ccf74a3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 674,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-2019c9dd53",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 675,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-fe168d4a38",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 679,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-e0185d5568",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 686,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-90313c1833",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 691,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-b61aba815b",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 693,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-87cc17bce0",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 696,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-f5ddc50ed0",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 699,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-faefb3e556",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 703,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-ad8ff60e04",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 705,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-9ef7129d4c",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 709,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-3d11f0cc73",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 710,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-445614a5a9",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 714,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6ac23ce493",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 723,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-c508730c8b",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 724,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-25dabb7bde",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 725,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-6433b127a3",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 734,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-406ee3264e",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 736,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-21d7f28603",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 743,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-7dc10755e9",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 745,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "guava_disease_classification-8cf2deaa14",
+   "ref": {
+    "file": "raw/train-00003-of-00004.parquet",
+    "row": 757,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Rust"
+   ],
+   "ann": {
+    "label": "Rust"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "guava_disease_classification-4e8ef4edd1",
+    "guava_disease_classification-c305589033",
+    "guava_disease_classification-63698efac6",
+    "guava_disease_classification-60c14d8317",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-7073b6cc0e",
+    "guava_disease_classification-a7c7331857",
+    "guava_disease_classification-316c86253a",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-9e9f348fdd",
+    "guava_disease_classification-de538e2706",
+    "guava_disease_classification-f650ba2c09",
+    "guava_disease_classification-1a8976f84f",
+    "guava_disease_classification-44dcb9c464",
+    "guava_disease_classification-bd499fcef8",
+    "guava_disease_classification-ccb57bcc42",
+    "guava_disease_classification-c35263b8f2",
+    "guava_disease_classification-05796f0792",
+    "guava_disease_classification-8766709c82",
+    "guava_disease_classification-1041bf4e27",
+    "guava_disease_classification-cefe63235b",
+    "guava_disease_classification-e4d5873dea",
+    "guava_disease_classification-15fc47bcd9",
+    "guava_disease_classification-a6a2b5a4f0",
+    "guava_disease_classification-c4ef4098a3",
+    "guava_disease_classification-3e55ac570d",
+    "guava_disease_classification-9827607bce",
+    "guava_disease_classification-2928f6d1b7",
+    "guava_disease_classification-db78ee6b40",
+    "guava_disease_classification-0dc04eef39",
+    "guava_disease_classification-430981cc29",
+    "guava_disease_classification-fe168d4a38",
+    "guava_disease_classification-87cc17bce0",
+    "guava_disease_classification-6433b127a3",
+    "guava_disease_classification-406ee3264e"
+   ],
+   "10": [
+    "guava_disease_classification-6e64570d99",
+    "guava_disease_classification-4e8ef4edd1",
+    "guava_disease_classification-90a737171b",
+    "guava_disease_classification-c305589033",
+    "guava_disease_classification-92f49b2873",
+    "guava_disease_classification-63698efac6",
+    "guava_disease_classification-60c14d8317",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-7073b6cc0e",
+    "guava_disease_classification-d11b5cd91d",
+    "guava_disease_classification-7a8913c4aa",
+    "guava_disease_classification-a7c7331857",
+    "guava_disease_classification-316c86253a",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-79fe880a41",
+    "guava_disease_classification-60c7385a8e",
+    "guava_disease_classification-bb7ae7f3e6",
+    "guava_disease_classification-9e9f348fdd",
+    "guava_disease_classification-dc2858b141",
+    "guava_disease_classification-03d7fe1158",
+    "guava_disease_classification-de538e2706",
+    "guava_disease_classification-f650ba2c09",
+    "guava_disease_classification-1a8976f84f",
+    "guava_disease_classification-0437872933",
+    "guava_disease_classification-775df47651",
+    "guava_disease_classification-44dcb9c464",
+    "guava_disease_classification-649ad12bde",
+    "guava_disease_classification-74fc28fdfd",
+    "guava_disease_classification-7eb37cc690",
+    "guava_disease_classification-bd499fcef8",
+    "guava_disease_classification-ccb57bcc42",
+    "guava_disease_classification-c35263b8f2",
+    "guava_disease_classification-26a2d16792",
+    "guava_disease_classification-0d70bd4d1d",
+    "guava_disease_classification-34a15d83e7",
+    "guava_disease_classification-b9418b6aca",
+    "guava_disease_classification-05796f0792",
+    "guava_disease_classification-8766709c82",
+    "guava_disease_classification-1041bf4e27",
+    "guava_disease_classification-cefe63235b",
+    "guava_disease_classification-af89fe7055",
+    "guava_disease_classification-e4d5873dea",
+    "guava_disease_classification-c5a6ee8205",
+    "guava_disease_classification-15fc47bcd9",
+    "guava_disease_classification-a6a2b5a4f0",
+    "guava_disease_classification-c4ef4098a3",
+    "guava_disease_classification-ee8771ffce",
+    "guava_disease_classification-3e55ac570d",
+    "guava_disease_classification-9827607bce",
+    "guava_disease_classification-ed365c07dc",
+    "guava_disease_classification-5b117011fd",
+    "guava_disease_classification-c4cfb8500e",
+    "guava_disease_classification-283988cb40",
+    "guava_disease_classification-b77272c73e",
+    "guava_disease_classification-2928f6d1b7",
+    "guava_disease_classification-2f71265436",
+    "guava_disease_classification-db78ee6b40",
+    "guava_disease_classification-55fa06f0c6",
+    "guava_disease_classification-0dc04eef39",
+    "guava_disease_classification-6179f72200",
+    "guava_disease_classification-f88fd359f1",
+    "guava_disease_classification-dce3d1c443",
+    "guava_disease_classification-430981cc29",
+    "guava_disease_classification-06104c108c",
+    "guava_disease_classification-261e0a5756",
+    "guava_disease_classification-fe168d4a38",
+    "guava_disease_classification-b61aba815b",
+    "guava_disease_classification-87cc17bce0",
+    "guava_disease_classification-6433b127a3",
+    "guava_disease_classification-406ee3264e"
+   ],
+   "15": [
+    "guava_disease_classification-6e64570d99",
+    "guava_disease_classification-4e8ef4edd1",
+    "guava_disease_classification-90a737171b",
+    "guava_disease_classification-c305589033",
+    "guava_disease_classification-92f49b2873",
+    "guava_disease_classification-0069c2c78a",
+    "guava_disease_classification-e8443ecb3b",
+    "guava_disease_classification-24b1f1cf8e",
+    "guava_disease_classification-63698efac6",
+    "guava_disease_classification-60c14d8317",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-89447bea46",
+    "guava_disease_classification-1677b1a873",
+    "guava_disease_classification-7073b6cc0e",
+    "guava_disease_classification-d11b5cd91d",
+    "guava_disease_classification-7a8913c4aa",
+    "guava_disease_classification-a7c7331857",
+    "guava_disease_classification-9133c3ae91",
+    "guava_disease_classification-316c86253a",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-b227a52f72",
+    "guava_disease_classification-79fe880a41",
+    "guava_disease_classification-60c7385a8e",
+    "guava_disease_classification-bb7ae7f3e6",
+    "guava_disease_classification-bb89a88d7c",
+    "guava_disease_classification-9e9f348fdd",
+    "guava_disease_classification-77453bc777",
+    "guava_disease_classification-f058ad6a91",
+    "guava_disease_classification-dc2858b141",
+    "guava_disease_classification-03d7fe1158",
+    "guava_disease_classification-de538e2706",
+    "guava_disease_classification-f650ba2c09",
+    "guava_disease_classification-56de155ad0",
+    "guava_disease_classification-1a8976f84f",
+    "guava_disease_classification-0437872933",
+    "guava_disease_classification-35cd6c1024",
+    "guava_disease_classification-775df47651",
+    "guava_disease_classification-4e99228782",
+    "guava_disease_classification-44dcb9c464",
+    "guava_disease_classification-649ad12bde",
+    "guava_disease_classification-16ff642576",
+    "guava_disease_classification-74fc28fdfd",
+    "guava_disease_classification-7eb37cc690",
+    "guava_disease_classification-bd499fcef8",
+    "guava_disease_classification-2a04efeb6b",
+    "guava_disease_classification-ccb57bcc42",
+    "guava_disease_classification-c35263b8f2",
+    "guava_disease_classification-26a2d16792",
+    "guava_disease_classification-4ca5f97c8a",
+    "guava_disease_classification-0d70bd4d1d",
+    "guava_disease_classification-34a15d83e7",
+    "guava_disease_classification-b9418b6aca",
+    "guava_disease_classification-16e17a14cf",
+    "guava_disease_classification-b3057bc2ac",
+    "guava_disease_classification-05796f0792",
+    "guava_disease_classification-2873ea0656",
+    "guava_disease_classification-8766709c82",
+    "guava_disease_classification-1041bf4e27",
+    "guava_disease_classification-cefe63235b",
+    "guava_disease_classification-af89fe7055",
+    "guava_disease_classification-e4d5873dea",
+    "guava_disease_classification-aad8228224",
+    "guava_disease_classification-c5a6ee8205",
+    "guava_disease_classification-15fc47bcd9",
+    "guava_disease_classification-a6a2b5a4f0",
+    "guava_disease_classification-9a125859ab",
+    "guava_disease_classification-c4ef4098a3",
+    "guava_disease_classification-28f8c086eb",
+    "guava_disease_classification-ee8771ffce",
+    "guava_disease_classification-3e55ac570d",
+    "guava_disease_classification-0ee721c141",
+    "guava_disease_classification-9827607bce",
+    "guava_disease_classification-ed365c07dc",
+    "guava_disease_classification-5b117011fd",
+    "guava_disease_classification-c03c23b7bc",
+    "guava_disease_classification-ddb9efa877",
+    "guava_disease_classification-c4cfb8500e",
+    "guava_disease_classification-0ee8bbc8cb",
+    "guava_disease_classification-8808987725",
+    "guava_disease_classification-283988cb40",
+    "guava_disease_classification-b77272c73e",
+    "guava_disease_classification-2928f6d1b7",
+    "guava_disease_classification-2f71265436",
+    "guava_disease_classification-417e2ba088",
+    "guava_disease_classification-db78ee6b40",
+    "guava_disease_classification-3bcf5071f3",
+    "guava_disease_classification-55fa06f0c6",
+    "guava_disease_classification-5764cf87e3",
+    "guava_disease_classification-0dc04eef39",
+    "guava_disease_classification-6179f72200",
+    "guava_disease_classification-f88fd359f1",
+    "guava_disease_classification-dce3d1c443",
+    "guava_disease_classification-430981cc29",
+    "guava_disease_classification-ba72fbcc3f",
+    "guava_disease_classification-06104c108c",
+    "guava_disease_classification-261e0a5756",
+    "guava_disease_classification-fe168d4a38",
+    "guava_disease_classification-90313c1833",
+    "guava_disease_classification-b61aba815b",
+    "guava_disease_classification-87cc17bce0",
+    "guava_disease_classification-faefb3e556",
+    "guava_disease_classification-c508730c8b",
+    "guava_disease_classification-6433b127a3",
+    "guava_disease_classification-406ee3264e",
+    "guava_disease_classification-8cf2deaa14"
+   ]
+  },
+  "s1": {
+   "5": [
+    "guava_disease_classification-7152ada9d4",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-4bbe2d99dc",
+    "guava_disease_classification-52044b2429",
+    "guava_disease_classification-2fc14459bb",
+    "guava_disease_classification-6529e131ea",
+    "guava_disease_classification-a48125a509",
+    "guava_disease_classification-60c7385a8e",
+    "guava_disease_classification-fb7a429851",
+    "guava_disease_classification-94450b39a3",
+    "guava_disease_classification-2b79fe4371",
+    "guava_disease_classification-8ccd06d809",
+    "guava_disease_classification-588be4dda1",
+    "guava_disease_classification-04db18490d",
+    "guava_disease_classification-185898fc30",
+    "guava_disease_classification-21b57eac2b",
+    "guava_disease_classification-bbcb494562",
+    "guava_disease_classification-ddaade2bf9",
+    "guava_disease_classification-b0c53f6d53",
+    "guava_disease_classification-1d2c0275eb",
+    "guava_disease_classification-dbb786b861",
+    "guava_disease_classification-6a014ee120",
+    "guava_disease_classification-7c2d61c1bb",
+    "guava_disease_classification-c44b73690f",
+    "guava_disease_classification-9769735db3",
+    "guava_disease_classification-953fa506bf",
+    "guava_disease_classification-799dbfcb1a",
+    "guava_disease_classification-2c7ff40406",
+    "guava_disease_classification-8db6df98ed",
+    "guava_disease_classification-c7c003ca75",
+    "guava_disease_classification-78b6c6080f",
+    "guava_disease_classification-d2bd2b839a",
+    "guava_disease_classification-e7f47c49a0",
+    "guava_disease_classification-f5ddc50ed0",
+    "guava_disease_classification-25dabb7bde"
+   ],
+   "10": [
+    "guava_disease_classification-7152ada9d4",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-67b7b19075",
+    "guava_disease_classification-cf113ebed5",
+    "guava_disease_classification-4bbe2d99dc",
+    "guava_disease_classification-52044b2429",
+    "guava_disease_classification-2fc14459bb",
+    "guava_disease_classification-67b0aad2dd",
+    "guava_disease_classification-3b97345dd4",
+    "guava_disease_classification-6529e131ea",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-95fe1a0fd3",
+    "guava_disease_classification-a48125a509",
+    "guava_disease_classification-60c7385a8e",
+    "guava_disease_classification-fb7a429851",
+    "guava_disease_classification-2a796ca1ee",
+    "guava_disease_classification-94450b39a3",
+    "guava_disease_classification-fd33e4f172",
+    "guava_disease_classification-80d1e01ddb",
+    "guava_disease_classification-73d1bf4e26",
+    "guava_disease_classification-2b79fe4371",
+    "guava_disease_classification-8ccd06d809",
+    "guava_disease_classification-c26d03e06e",
+    "guava_disease_classification-588be4dda1",
+    "guava_disease_classification-04db18490d",
+    "guava_disease_classification-de067eab06",
+    "guava_disease_classification-ba2b7465f5",
+    "guava_disease_classification-76620aa114",
+    "guava_disease_classification-bd5d2569de",
+    "guava_disease_classification-185898fc30",
+    "guava_disease_classification-4a431e4344",
+    "guava_disease_classification-21b57eac2b",
+    "guava_disease_classification-bbcb494562",
+    "guava_disease_classification-ddaade2bf9",
+    "guava_disease_classification-b0c53f6d53",
+    "guava_disease_classification-1d2c0275eb",
+    "guava_disease_classification-4018dea785",
+    "guava_disease_classification-dbb786b861",
+    "guava_disease_classification-6a014ee120",
+    "guava_disease_classification-24a7ef78fb",
+    "guava_disease_classification-16727af177",
+    "guava_disease_classification-ce8131afad",
+    "guava_disease_classification-119ba7cd4c",
+    "guava_disease_classification-c236e0f90e",
+    "guava_disease_classification-7c2d61c1bb",
+    "guava_disease_classification-35da7e6ef4",
+    "guava_disease_classification-4655eef19f",
+    "guava_disease_classification-c44b73690f",
+    "guava_disease_classification-9769735db3",
+    "guava_disease_classification-3e55ac570d",
+    "guava_disease_classification-953fa506bf",
+    "guava_disease_classification-1f45ef8e16",
+    "guava_disease_classification-799dbfcb1a",
+    "guava_disease_classification-5fc260c933",
+    "guava_disease_classification-bc2e3e223f",
+    "guava_disease_classification-2c7ff40406",
+    "guava_disease_classification-8db6df98ed",
+    "guava_disease_classification-c7c003ca75",
+    "guava_disease_classification-ef64d5146c",
+    "guava_disease_classification-f2d4b76b88",
+    "guava_disease_classification-78b6c6080f",
+    "guava_disease_classification-dafc5c17e6",
+    "guava_disease_classification-430981cc29",
+    "guava_disease_classification-10bf77ae35",
+    "guava_disease_classification-591b3d7665",
+    "guava_disease_classification-d2bd2b839a",
+    "guava_disease_classification-e7f47c49a0",
+    "guava_disease_classification-f5ddc50ed0",
+    "guava_disease_classification-faefb3e556",
+    "guava_disease_classification-25dabb7bde"
+   ],
+   "15": [
+    "guava_disease_classification-cf9e78e0f7",
+    "guava_disease_classification-7152ada9d4",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-43ce4443cb",
+    "guava_disease_classification-67b7b19075",
+    "guava_disease_classification-0a1c60a981",
+    "guava_disease_classification-1811602b1a",
+    "guava_disease_classification-cf113ebed5",
+    "guava_disease_classification-4bbe2d99dc",
+    "guava_disease_classification-52044b2429",
+    "guava_disease_classification-19be3dfea0",
+    "guava_disease_classification-2fc14459bb",
+    "guava_disease_classification-5c8f0078d9",
+    "guava_disease_classification-67b0aad2dd",
+    "guava_disease_classification-3b97345dd4",
+    "guava_disease_classification-d418c53d53",
+    "guava_disease_classification-cdba1e66f3",
+    "guava_disease_classification-6529e131ea",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-95fe1a0fd3",
+    "guava_disease_classification-a48125a509",
+    "guava_disease_classification-60c7385a8e",
+    "guava_disease_classification-fb7a429851",
+    "guava_disease_classification-2a796ca1ee",
+    "guava_disease_classification-e66d90a9e8",
+    "guava_disease_classification-94450b39a3",
+    "guava_disease_classification-6e9e17026f",
+    "guava_disease_classification-fd33e4f172",
+    "guava_disease_classification-80d1e01ddb",
+    "guava_disease_classification-73d1bf4e26",
+    "guava_disease_classification-2b79fe4371",
+    "guava_disease_classification-0080f679aa",
+    "guava_disease_classification-647a6e3785",
+    "guava_disease_classification-afe28697e2",
+    "guava_disease_classification-8ccd06d809",
+    "guava_disease_classification-c26d03e06e",
+    "guava_disease_classification-588be4dda1",
+    "guava_disease_classification-04db18490d",
+    "guava_disease_classification-2c5963a573",
+    "guava_disease_classification-de067eab06",
+    "guava_disease_classification-ba2b7465f5",
+    "guava_disease_classification-be6a03dcce",
+    "guava_disease_classification-76620aa114",
+    "guava_disease_classification-bd5d2569de",
+    "guava_disease_classification-185898fc30",
+    "guava_disease_classification-4a431e4344",
+    "guava_disease_classification-21b57eac2b",
+    "guava_disease_classification-bbcb494562",
+    "guava_disease_classification-ddaade2bf9",
+    "guava_disease_classification-b0c53f6d53",
+    "guava_disease_classification-1d2c0275eb",
+    "guava_disease_classification-4018dea785",
+    "guava_disease_classification-dbb786b861",
+    "guava_disease_classification-6a014ee120",
+    "guava_disease_classification-064b5b89cb",
+    "guava_disease_classification-24a7ef78fb",
+    "guava_disease_classification-16727af177",
+    "guava_disease_classification-ce8131afad",
+    "guava_disease_classification-25aeffdf69",
+    "guava_disease_classification-119ba7cd4c",
+    "guava_disease_classification-9fbdd6a676",
+    "guava_disease_classification-cd4f9820f7",
+    "guava_disease_classification-e713e6b606",
+    "guava_disease_classification-c236e0f90e",
+    "guava_disease_classification-3157607ffb",
+    "guava_disease_classification-7c2d61c1bb",
+    "guava_disease_classification-35da7e6ef4",
+    "guava_disease_classification-4655eef19f",
+    "guava_disease_classification-6114914957",
+    "guava_disease_classification-c44b73690f",
+    "guava_disease_classification-9769735db3",
+    "guava_disease_classification-3e55ac570d",
+    "guava_disease_classification-953fa506bf",
+    "guava_disease_classification-1f45ef8e16",
+    "guava_disease_classification-799dbfcb1a",
+    "guava_disease_classification-4cb2955ac9",
+    "guava_disease_classification-4b3f2ff388",
+    "guava_disease_classification-d73bd54a04",
+    "guava_disease_classification-020b10445e",
+    "guava_disease_classification-5fc260c933",
+    "guava_disease_classification-bc2e3e223f",
+    "guava_disease_classification-2c7ff40406",
+    "guava_disease_classification-8db6df98ed",
+    "guava_disease_classification-e4d5d98e77",
+    "guava_disease_classification-c7c003ca75",
+    "guava_disease_classification-ef64d5146c",
+    "guava_disease_classification-d3d8b0a92b",
+    "guava_disease_classification-f2d4b76b88",
+    "guava_disease_classification-a5d4626a8d",
+    "guava_disease_classification-2fe3e1149b",
+    "guava_disease_classification-78b6c6080f",
+    "guava_disease_classification-dafc5c17e6",
+    "guava_disease_classification-81fc32ca4a",
+    "guava_disease_classification-430981cc29",
+    "guava_disease_classification-10bf77ae35",
+    "guava_disease_classification-591b3d7665",
+    "guava_disease_classification-fef0c3f74a",
+    "guava_disease_classification-d2bd2b839a",
+    "guava_disease_classification-e7f47c49a0",
+    "guava_disease_classification-f5ddc50ed0",
+    "guava_disease_classification-faefb3e556",
+    "guava_disease_classification-ad8ff60e04",
+    "guava_disease_classification-3d11f0cc73",
+    "guava_disease_classification-445614a5a9",
+    "guava_disease_classification-25dabb7bde"
+   ]
+  },
+  "s2": {
+   "5": [
+    "guava_disease_classification-c5759b05d1",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-87561f045f",
+    "guava_disease_classification-f9a36813d3",
+    "guava_disease_classification-a20ae3d9ef",
+    "guava_disease_classification-80e38be1a8",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-0ccb87df1f",
+    "guava_disease_classification-a859232316",
+    "guava_disease_classification-360d9676cc",
+    "guava_disease_classification-c370a89f15",
+    "guava_disease_classification-eb26b1cc3b",
+    "guava_disease_classification-9a6c284d37",
+    "guava_disease_classification-bd18699255",
+    "guava_disease_classification-34f2e19152",
+    "guava_disease_classification-4f94e72971",
+    "guava_disease_classification-825e509321",
+    "guava_disease_classification-584a9a909e",
+    "guava_disease_classification-733021aecf",
+    "guava_disease_classification-6a681c26eb",
+    "guava_disease_classification-6f4ce13a80",
+    "guava_disease_classification-b78d7d45d0",
+    "guava_disease_classification-8b4cd82f53",
+    "guava_disease_classification-ac01d48778",
+    "guava_disease_classification-63611cba7a",
+    "guava_disease_classification-e4a3d09a9d",
+    "guava_disease_classification-3bdacba674",
+    "guava_disease_classification-6c7ae05864",
+    "guava_disease_classification-53ac02bf66",
+    "guava_disease_classification-8d95ad3023",
+    "guava_disease_classification-f0de953502",
+    "guava_disease_classification-e3748db22e",
+    "guava_disease_classification-99a13cded3",
+    "guava_disease_classification-6ac23ce493",
+    "guava_disease_classification-21d7f28603"
+   ],
+   "10": [
+    "guava_disease_classification-c5759b05d1",
+    "guava_disease_classification-1609bb8bc7",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-7fe29ba4f1",
+    "guava_disease_classification-d20a6da640",
+    "guava_disease_classification-87561f045f",
+    "guava_disease_classification-f9a36813d3",
+    "guava_disease_classification-a20ae3d9ef",
+    "guava_disease_classification-41e22387c6",
+    "guava_disease_classification-8dffda09ec",
+    "guava_disease_classification-80e38be1a8",
+    "guava_disease_classification-a6ee3d6e4f",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-0ccb87df1f",
+    "guava_disease_classification-a859232316",
+    "guava_disease_classification-5c8f0078d9",
+    "guava_disease_classification-d418c53d53",
+    "guava_disease_classification-360d9676cc",
+    "guava_disease_classification-98146bbc2a",
+    "guava_disease_classification-d82155fa17",
+    "guava_disease_classification-c370a89f15",
+    "guava_disease_classification-88b9e8035f",
+    "guava_disease_classification-55d251c86a",
+    "guava_disease_classification-eb26b1cc3b",
+    "guava_disease_classification-9a6c284d37",
+    "guava_disease_classification-2582fbe7f8",
+    "guava_disease_classification-bd18699255",
+    "guava_disease_classification-34f2e19152",
+    "guava_disease_classification-4f94e72971",
+    "guava_disease_classification-4cb7ddb006",
+    "guava_disease_classification-5c78dffa8e",
+    "guava_disease_classification-5cb413a262",
+    "guava_disease_classification-82d4ddac97",
+    "guava_disease_classification-e20341abe9",
+    "guava_disease_classification-825e509321",
+    "guava_disease_classification-2d574de5b9",
+    "guava_disease_classification-584a9a909e",
+    "guava_disease_classification-733021aecf",
+    "guava_disease_classification-6a681c26eb",
+    "guava_disease_classification-f7d02c69c6",
+    "guava_disease_classification-6f4ce13a80",
+    "guava_disease_classification-7d10b7beb4",
+    "guava_disease_classification-3019673ef7",
+    "guava_disease_classification-1527f14e9f",
+    "guava_disease_classification-c5a6ee8205",
+    "guava_disease_classification-9889718bed",
+    "guava_disease_classification-b78d7d45d0",
+    "guava_disease_classification-75e42adc07",
+    "guava_disease_classification-8b4cd82f53",
+    "guava_disease_classification-9e3d93387c",
+    "guava_disease_classification-ac01d48778",
+    "guava_disease_classification-4655eef19f",
+    "guava_disease_classification-63611cba7a",
+    "guava_disease_classification-e4a3d09a9d",
+    "guava_disease_classification-3bdacba674",
+    "guava_disease_classification-6c7ae05864",
+    "guava_disease_classification-53ac02bf66",
+    "guava_disease_classification-02df44f42b",
+    "guava_disease_classification-eb8e58f8d6",
+    "guava_disease_classification-8d95ad3023",
+    "guava_disease_classification-f0de953502",
+    "guava_disease_classification-a36db2a386",
+    "guava_disease_classification-e3748db22e",
+    "guava_disease_classification-e593bbed08",
+    "guava_disease_classification-99a13cded3",
+    "guava_disease_classification-e0185d5568",
+    "guava_disease_classification-6ac23ce493",
+    "guava_disease_classification-25dabb7bde",
+    "guava_disease_classification-21d7f28603",
+    "guava_disease_classification-7dc10755e9"
+   ],
+   "15": [
+    "guava_disease_classification-c5759b05d1",
+    "guava_disease_classification-1609bb8bc7",
+    "guava_disease_classification-c2e40ddb70",
+    "guava_disease_classification-0a25fb39b2",
+    "guava_disease_classification-5bbbdc8087",
+    "guava_disease_classification-7fe29ba4f1",
+    "guava_disease_classification-d20a6da640",
+    "guava_disease_classification-87561f045f",
+    "guava_disease_classification-f9a36813d3",
+    "guava_disease_classification-a20ae3d9ef",
+    "guava_disease_classification-41e22387c6",
+    "guava_disease_classification-8dffda09ec",
+    "guava_disease_classification-80e38be1a8",
+    "guava_disease_classification-0da383d34f",
+    "guava_disease_classification-a6ee3d6e4f",
+    "guava_disease_classification-ae3a311c38",
+    "guava_disease_classification-0ccb87df1f",
+    "guava_disease_classification-a859232316",
+    "guava_disease_classification-a7c7331857",
+    "guava_disease_classification-5c8f0078d9",
+    "guava_disease_classification-d418c53d53",
+    "guava_disease_classification-360d9676cc",
+    "guava_disease_classification-98146bbc2a",
+    "guava_disease_classification-87a6eb7bc3",
+    "guava_disease_classification-d82155fa17",
+    "guava_disease_classification-ebd8f8b8f9",
+    "guava_disease_classification-845d0fef86",
+    "guava_disease_classification-c370a89f15",
+    "guava_disease_classification-1343d8d05f",
+    "guava_disease_classification-88b9e8035f",
+    "guava_disease_classification-55d251c86a",
+    "guava_disease_classification-89e52d366c",
+    "guava_disease_classification-eb26b1cc3b",
+    "guava_disease_classification-9a6c284d37",
+    "guava_disease_classification-2582fbe7f8",
+    "guava_disease_classification-bd18699255",
+    "guava_disease_classification-adf2030932",
+    "guava_disease_classification-34f2e19152",
+    "guava_disease_classification-d41a1109dc",
+    "guava_disease_classification-4f94e72971",
+    "guava_disease_classification-4cb7ddb006",
+    "guava_disease_classification-5c78dffa8e",
+    "guava_disease_classification-5cb413a262",
+    "guava_disease_classification-5fc19a82e4",
+    "guava_disease_classification-649ad12bde",
+    "guava_disease_classification-b383df9664",
+    "guava_disease_classification-82d4ddac97",
+    "guava_disease_classification-f7bba1cd4e",
+    "guava_disease_classification-74d4553440",
+    "guava_disease_classification-e20341abe9",
+    "guava_disease_classification-825e509321",
+    "guava_disease_classification-2d574de5b9",
+    "guava_disease_classification-c341653397",
+    "guava_disease_classification-584a9a909e",
+    "guava_disease_classification-733021aecf",
+    "guava_disease_classification-6a681c26eb",
+    "guava_disease_classification-f7d02c69c6",
+    "guava_disease_classification-05796f0792",
+    "guava_disease_classification-6f4ce13a80",
+    "guava_disease_classification-7d10b7beb4",
+    "guava_disease_classification-3019673ef7",
+    "guava_disease_classification-48166b6c90",
+    "guava_disease_classification-1527f14e9f",
+    "guava_disease_classification-25aeffdf69",
+    "guava_disease_classification-389f508008",
+    "guava_disease_classification-1b897c4286",
+    "guava_disease_classification-c5a6ee8205",
+    "guava_disease_classification-3157607ffb",
+    "guava_disease_classification-9889718bed",
+    "guava_disease_classification-b78d7d45d0",
+    "guava_disease_classification-75e42adc07",
+    "guava_disease_classification-c73bcf8dda",
+    "guava_disease_classification-8b4cd82f53",
+    "guava_disease_classification-9e3d93387c",
+    "guava_disease_classification-dcb91415f4",
+    "guava_disease_classification-ac01d48778",
+    "guava_disease_classification-4655eef19f",
+    "guava_disease_classification-5f731ad535",
+    "guava_disease_classification-63611cba7a",
+    "guava_disease_classification-e4a3d09a9d",
+    "guava_disease_classification-3bdacba674",
+    "guava_disease_classification-695367ce5d",
+    "guava_disease_classification-6c7ae05864",
+    "guava_disease_classification-5d54e8c530",
+    "guava_disease_classification-53ac02bf66",
+    "guava_disease_classification-80d4453aec",
+    "guava_disease_classification-02df44f42b",
+    "guava_disease_classification-eb8e58f8d6",
+    "guava_disease_classification-c410542376",
+    "guava_disease_classification-8d95ad3023",
+    "guava_disease_classification-79755912c6",
+    "guava_disease_classification-7bba591f13",
+    "guava_disease_classification-f0de953502",
+    "guava_disease_classification-a36db2a386",
+    "guava_disease_classification-e3748db22e",
+    "guava_disease_classification-e593bbed08",
+    "guava_disease_classification-99a13cded3",
+    "guava_disease_classification-859ccf74a3",
+    "guava_disease_classification-2019c9dd53",
+    "guava_disease_classification-e0185d5568",
+    "guava_disease_classification-9ef7129d4c",
+    "guava_disease_classification-6ac23ce493",
+    "guava_disease_classification-25dabb7bde",
+    "guava_disease_classification-21d7f28603",
+    "guava_disease_classification-7dc10755e9"
+   ]
+  }
+ }
+}

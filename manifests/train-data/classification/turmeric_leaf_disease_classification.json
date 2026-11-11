@@ -1,0 +1,2985 @@
+{
+ "name": "turmeric_leaf_disease_classification",
+ "task": "image_classification",
+ "hf_repo": "Project-AgML/turmeric_leaf_disease_classification",
+ "hf_sha": "0a15123ddba5a684084a80d96653e1558e71b68b",
+ "sampling_hash": "1ebca15d2c61",
+ "created": "2026-11-11T21:18:18+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "image",
+  "label_col": "label",
+  "class_names": [
+   "Aphids_Disease",
+   "Blotch",
+   "Healthy_Leaf",
+   "Leaf_Spot"
+  ],
+  "indexed_rows": 865
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2753c0ea83",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 2,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e8450e4d2e",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 15,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a331dd09b1",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 17,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2d30deb710",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 18,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-664e972743",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 26,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a51698c59b",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 30,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-f626188672",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 31,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5c4af7fec7",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 32,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-76c663a6b6",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 45,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-711326ad57",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 48,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-55d68acfa9",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 50,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-915b06c5ed",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 56,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cb87c73eed",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 59,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2e5e1e117e",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 62,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2213a89025",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 66,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-842deb3966",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 67,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-094d91f8ff",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-38324cbbd0",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 79,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-f6c500b3f7",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 88,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-8e533cb21d",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 90,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-b0a0d81706",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1b579f1cad",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 116,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2a3345a7be",
+   "ref": {
+    "file": "raw/train-00000-of-00007.parquet",
+    "row": 117,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-28b8765d63",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 8,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-528e9872ea",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 17,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-6e0e5afa0f",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 36,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a469f5f380",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-3b12dab197",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a1fb90f1b1",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 42,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-8cf93fe74c",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 43,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-9f40c81e40",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 44,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-f36268000f",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 53,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-161d1084a1",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 55,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ed1b8b0a49",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 67,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-7543c7e0cf",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 68,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cd0ef2577f",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 82,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-fcf7820987",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 89,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-fb514828a5",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 91,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-43beca60dd",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 99,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-252e26a903",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 106,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-07e594f151",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 108,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Blotch"
+   ],
+   "ann": {
+    "label": "Blotch"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-9d807a1e9d",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 115,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-9ab243489a",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 120,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-3e56e7743b",
+   "ref": {
+    "file": "raw/train-00001-of-00007.parquet",
+    "row": 121,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1c7864e845",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 0,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e9e86514cc",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 10,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-59bb969b2c",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 20,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-673be6263f",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 26,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-b0804ebfac",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 34,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-175fa1691f",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 38,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-614b25a803",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 45,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5b22aea76b",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 48,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a392679944",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-32e5e064f1",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 53,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-d42a526f69",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 65,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-6e3cbe9ea9",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 66,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-75cae2e47c",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 68,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-81092a7130",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-112b13d056",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 73,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-4536a7c49a",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 80,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-70db616310",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 95,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-087562d1c0",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 99,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-38dbea3c57",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 115,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cca6a2d554",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 117,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-0603b07b00",
+   "ref": {
+    "file": "raw/train-00002-of-00007.parquet",
+    "row": 123,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-62081b447e",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cdc3451cdb",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 6,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-6fac323d26",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 9,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-6bb8226c2a",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 10,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-20f6473de9",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 16,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-771bf510da",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 20,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-17b5709526",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 27,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5e5803aae9",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 28,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1b0db9af9f",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 30,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-203b71ffb7",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 33,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-64a6c3be2a",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 39,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5e9cad475d",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-20c041ae45",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5263cf98b1",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 43,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ba71262464",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 46,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-7d3c44e1ec",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 47,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cd236cbe75",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 49,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Leaf_Spot"
+   ],
+   "ann": {
+    "label": "Leaf_Spot"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-688ae63311",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 60,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-c8ae8481d7",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 76,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cc5183214d",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 81,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-aeb0a13a90",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 84,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-70938a139b",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 93,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1d5d0aecad",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 95,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-52b58811a9",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 101,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-13838976b3",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-45c8d7cfa0",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 105,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-4a5e4098ab",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 121,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-d7bf368121",
+   "ref": {
+    "file": "raw/train-00003-of-00007.parquet",
+    "row": 122,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-be7c392696",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-7fffb6fee6",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 13,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-26c9462d52",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 33,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e6fba9e7b7",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-330ca72ffe",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a2232d65d0",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 54,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ad6d9d972a",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 56,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-97b32cf011",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 60,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-b66a60db6c",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 62,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-6b6118cac1",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 65,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ae09e47527",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-74a1922d09",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 78,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-69e12c7727",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 83,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1ca0374f8b",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 85,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-719c3dc0e3",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 99,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-9232d6cb80",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 102,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-819c6c9bc8",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 104,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-92e6a04bbb",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 105,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-322f24bc25",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 110,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-998423c151",
+   "ref": {
+    "file": "raw/train-00004-of-00007.parquet",
+    "row": 122,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-54a6738ff5",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-21836a406d",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 2,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-c24a4d5e22",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 3,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-3a3538ee90",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 8,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-baf7b51d58",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 9,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e1f78c9460",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 12,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-52128fba1a",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 20,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-f8d44eed20",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 22,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Aphids_Disease"
+   ],
+   "ann": {
+    "label": "Aphids_Disease"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-fdeab10c27",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 34,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-266f519dde",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 39,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-2cab4cdf79",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 40,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1724b59a67",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 41,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-96fa54e499",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 65,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-cb2dbaa1ac",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 70,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-84e8f63c38",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 75,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-d2a1eb6726",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 78,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e2dffa83dc",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 80,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-11e01a4adb",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 82,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-46559bce26",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 91,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e0fa412b5c",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 104,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-8b23031d26",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 105,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e17b69d590",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 108,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ee3f71be6f",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 116,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-74c6e57c43",
+   "ref": {
+    "file": "raw/train-00005-of-00007.parquet",
+    "row": 118,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-7f309d8a9d",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 0,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-120cb30631",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 1,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-5680449908",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 4,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e4777a85ad",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 10,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-8b1c9dc3a6",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 12,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-c2c2c2dae7",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 24,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-606c1142c9",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 34,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-752a2db3fb",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 37,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-b3c3b7de64",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 42,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-a77f66f82c",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 43,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-83343f7fc0",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 48,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-16df328df8",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 51,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-e91085282c",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 52,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-b888e077d6",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 59,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-12c0bdeaef",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 61,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-c9fd207e4f",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 76,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-17a7477070",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 77,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-7cb34e32ce",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 83,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-767a8016c3",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 94,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-1bcfd6fd37",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 108,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-09fa9d9cba",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 114,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-74df27b278",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 116,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-3c8d3f4bba",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 118,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "turmeric_leaf_disease_classification-ff982507ea",
+   "ref": {
+    "file": "raw/train-00006-of-00007.parquet",
+    "row": 122,
+    "config": "raw",
+    "split": "train"
+   },
+   "keys": [
+    "Healthy_Leaf"
+   ],
+   "ann": {
+    "label": "Healthy_Leaf"
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "turmeric_leaf_disease_classification-cb87c73eed",
+    "turmeric_leaf_disease_classification-2213a89025",
+    "turmeric_leaf_disease_classification-38324cbbd0",
+    "turmeric_leaf_disease_classification-f36268000f",
+    "turmeric_leaf_disease_classification-161d1084a1",
+    "turmeric_leaf_disease_classification-673be6263f",
+    "turmeric_leaf_disease_classification-5e5803aae9",
+    "turmeric_leaf_disease_classification-5e9cad475d",
+    "turmeric_leaf_disease_classification-5263cf98b1",
+    "turmeric_leaf_disease_classification-ba71262464",
+    "turmeric_leaf_disease_classification-b66a60db6c",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-21836a406d",
+    "turmeric_leaf_disease_classification-3a3538ee90",
+    "turmeric_leaf_disease_classification-f8d44eed20",
+    "turmeric_leaf_disease_classification-96fa54e499",
+    "turmeric_leaf_disease_classification-46559bce26",
+    "turmeric_leaf_disease_classification-ee3f71be6f",
+    "turmeric_leaf_disease_classification-b3c3b7de64",
+    "turmeric_leaf_disease_classification-b888e077d6"
+   ],
+   "10": [
+    "turmeric_leaf_disease_classification-915b06c5ed",
+    "turmeric_leaf_disease_classification-cb87c73eed",
+    "turmeric_leaf_disease_classification-2213a89025",
+    "turmeric_leaf_disease_classification-094d91f8ff",
+    "turmeric_leaf_disease_classification-38324cbbd0",
+    "turmeric_leaf_disease_classification-b0a0d81706",
+    "turmeric_leaf_disease_classification-528e9872ea",
+    "turmeric_leaf_disease_classification-f36268000f",
+    "turmeric_leaf_disease_classification-161d1084a1",
+    "turmeric_leaf_disease_classification-07e594f151",
+    "turmeric_leaf_disease_classification-673be6263f",
+    "turmeric_leaf_disease_classification-b0804ebfac",
+    "turmeric_leaf_disease_classification-6e3cbe9ea9",
+    "turmeric_leaf_disease_classification-cca6a2d554",
+    "turmeric_leaf_disease_classification-5e5803aae9",
+    "turmeric_leaf_disease_classification-1b0db9af9f",
+    "turmeric_leaf_disease_classification-203b71ffb7",
+    "turmeric_leaf_disease_classification-5e9cad475d",
+    "turmeric_leaf_disease_classification-5263cf98b1",
+    "turmeric_leaf_disease_classification-ba71262464",
+    "turmeric_leaf_disease_classification-c8ae8481d7",
+    "turmeric_leaf_disease_classification-70938a139b",
+    "turmeric_leaf_disease_classification-b66a60db6c",
+    "turmeric_leaf_disease_classification-69e12c7727",
+    "turmeric_leaf_disease_classification-719c3dc0e3",
+    "turmeric_leaf_disease_classification-819c6c9bc8",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-21836a406d",
+    "turmeric_leaf_disease_classification-3a3538ee90",
+    "turmeric_leaf_disease_classification-f8d44eed20",
+    "turmeric_leaf_disease_classification-fdeab10c27",
+    "turmeric_leaf_disease_classification-96fa54e499",
+    "turmeric_leaf_disease_classification-cb2dbaa1ac",
+    "turmeric_leaf_disease_classification-46559bce26",
+    "turmeric_leaf_disease_classification-ee3f71be6f",
+    "turmeric_leaf_disease_classification-120cb30631",
+    "turmeric_leaf_disease_classification-b3c3b7de64",
+    "turmeric_leaf_disease_classification-b888e077d6",
+    "turmeric_leaf_disease_classification-7cb34e32ce",
+    "turmeric_leaf_disease_classification-09fa9d9cba"
+   ],
+   "15": [
+    "turmeric_leaf_disease_classification-e8450e4d2e",
+    "turmeric_leaf_disease_classification-a331dd09b1",
+    "turmeric_leaf_disease_classification-5c4af7fec7",
+    "turmeric_leaf_disease_classification-915b06c5ed",
+    "turmeric_leaf_disease_classification-cb87c73eed",
+    "turmeric_leaf_disease_classification-2213a89025",
+    "turmeric_leaf_disease_classification-094d91f8ff",
+    "turmeric_leaf_disease_classification-38324cbbd0",
+    "turmeric_leaf_disease_classification-f6c500b3f7",
+    "turmeric_leaf_disease_classification-b0a0d81706",
+    "turmeric_leaf_disease_classification-528e9872ea",
+    "turmeric_leaf_disease_classification-f36268000f",
+    "turmeric_leaf_disease_classification-161d1084a1",
+    "turmeric_leaf_disease_classification-cd0ef2577f",
+    "turmeric_leaf_disease_classification-07e594f151",
+    "turmeric_leaf_disease_classification-3e56e7743b",
+    "turmeric_leaf_disease_classification-673be6263f",
+    "turmeric_leaf_disease_classification-b0804ebfac",
+    "turmeric_leaf_disease_classification-6e3cbe9ea9",
+    "turmeric_leaf_disease_classification-75cae2e47c",
+    "turmeric_leaf_disease_classification-112b13d056",
+    "turmeric_leaf_disease_classification-cca6a2d554",
+    "turmeric_leaf_disease_classification-62081b447e",
+    "turmeric_leaf_disease_classification-5e5803aae9",
+    "turmeric_leaf_disease_classification-1b0db9af9f",
+    "turmeric_leaf_disease_classification-203b71ffb7",
+    "turmeric_leaf_disease_classification-5e9cad475d",
+    "turmeric_leaf_disease_classification-5263cf98b1",
+    "turmeric_leaf_disease_classification-ba71262464",
+    "turmeric_leaf_disease_classification-cd236cbe75",
+    "turmeric_leaf_disease_classification-c8ae8481d7",
+    "turmeric_leaf_disease_classification-70938a139b",
+    "turmeric_leaf_disease_classification-13838976b3",
+    "turmeric_leaf_disease_classification-be7c392696",
+    "turmeric_leaf_disease_classification-e6fba9e7b7",
+    "turmeric_leaf_disease_classification-ad6d9d972a",
+    "turmeric_leaf_disease_classification-97b32cf011",
+    "turmeric_leaf_disease_classification-b66a60db6c",
+    "turmeric_leaf_disease_classification-69e12c7727",
+    "turmeric_leaf_disease_classification-719c3dc0e3",
+    "turmeric_leaf_disease_classification-819c6c9bc8",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-21836a406d",
+    "turmeric_leaf_disease_classification-3a3538ee90",
+    "turmeric_leaf_disease_classification-f8d44eed20",
+    "turmeric_leaf_disease_classification-fdeab10c27",
+    "turmeric_leaf_disease_classification-266f519dde",
+    "turmeric_leaf_disease_classification-96fa54e499",
+    "turmeric_leaf_disease_classification-cb2dbaa1ac",
+    "turmeric_leaf_disease_classification-e2dffa83dc",
+    "turmeric_leaf_disease_classification-46559bce26",
+    "turmeric_leaf_disease_classification-e17b69d590",
+    "turmeric_leaf_disease_classification-ee3f71be6f",
+    "turmeric_leaf_disease_classification-120cb30631",
+    "turmeric_leaf_disease_classification-c2c2c2dae7",
+    "turmeric_leaf_disease_classification-752a2db3fb",
+    "turmeric_leaf_disease_classification-b3c3b7de64",
+    "turmeric_leaf_disease_classification-b888e077d6",
+    "turmeric_leaf_disease_classification-7cb34e32ce",
+    "turmeric_leaf_disease_classification-09fa9d9cba"
+   ]
+  },
+  "s1": {
+   "5": [
+    "turmeric_leaf_disease_classification-2753c0ea83",
+    "turmeric_leaf_disease_classification-f6c500b3f7",
+    "turmeric_leaf_disease_classification-6e0e5afa0f",
+    "turmeric_leaf_disease_classification-a469f5f380",
+    "turmeric_leaf_disease_classification-3b12dab197",
+    "turmeric_leaf_disease_classification-9d807a1e9d",
+    "turmeric_leaf_disease_classification-614b25a803",
+    "turmeric_leaf_disease_classification-087562d1c0",
+    "turmeric_leaf_disease_classification-6fac323d26",
+    "turmeric_leaf_disease_classification-771bf510da",
+    "turmeric_leaf_disease_classification-cc5183214d",
+    "turmeric_leaf_disease_classification-d7bf368121",
+    "turmeric_leaf_disease_classification-ae09e47527",
+    "turmeric_leaf_disease_classification-69e12c7727",
+    "turmeric_leaf_disease_classification-e1f78c9460",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-8b1c9dc3a6",
+    "turmeric_leaf_disease_classification-a77f66f82c",
+    "turmeric_leaf_disease_classification-e91085282c",
+    "turmeric_leaf_disease_classification-74df27b278"
+   ],
+   "10": [
+    "turmeric_leaf_disease_classification-2753c0ea83",
+    "turmeric_leaf_disease_classification-cb87c73eed",
+    "turmeric_leaf_disease_classification-f6c500b3f7",
+    "turmeric_leaf_disease_classification-8e533cb21d",
+    "turmeric_leaf_disease_classification-1b579f1cad",
+    "turmeric_leaf_disease_classification-6e0e5afa0f",
+    "turmeric_leaf_disease_classification-a469f5f380",
+    "turmeric_leaf_disease_classification-3b12dab197",
+    "turmeric_leaf_disease_classification-9f40c81e40",
+    "turmeric_leaf_disease_classification-252e26a903",
+    "turmeric_leaf_disease_classification-9d807a1e9d",
+    "turmeric_leaf_disease_classification-614b25a803",
+    "turmeric_leaf_disease_classification-32e5e064f1",
+    "turmeric_leaf_disease_classification-81092a7130",
+    "turmeric_leaf_disease_classification-4536a7c49a",
+    "turmeric_leaf_disease_classification-087562d1c0",
+    "turmeric_leaf_disease_classification-cdc3451cdb",
+    "turmeric_leaf_disease_classification-6fac323d26",
+    "turmeric_leaf_disease_classification-771bf510da",
+    "turmeric_leaf_disease_classification-20c041ae45",
+    "turmeric_leaf_disease_classification-cc5183214d",
+    "turmeric_leaf_disease_classification-aeb0a13a90",
+    "turmeric_leaf_disease_classification-52b58811a9",
+    "turmeric_leaf_disease_classification-4a5e4098ab",
+    "turmeric_leaf_disease_classification-d7bf368121",
+    "turmeric_leaf_disease_classification-ae09e47527",
+    "turmeric_leaf_disease_classification-74a1922d09",
+    "turmeric_leaf_disease_classification-69e12c7727",
+    "turmeric_leaf_disease_classification-9232d6cb80",
+    "turmeric_leaf_disease_classification-e1f78c9460",
+    "turmeric_leaf_disease_classification-d2a1eb6726",
+    "turmeric_leaf_disease_classification-e2dffa83dc",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-8b1c9dc3a6",
+    "turmeric_leaf_disease_classification-b3c3b7de64",
+    "turmeric_leaf_disease_classification-a77f66f82c",
+    "turmeric_leaf_disease_classification-e91085282c",
+    "turmeric_leaf_disease_classification-17a7477070",
+    "turmeric_leaf_disease_classification-1bcfd6fd37",
+    "turmeric_leaf_disease_classification-74df27b278"
+   ],
+   "15": [
+    "turmeric_leaf_disease_classification-2753c0ea83",
+    "turmeric_leaf_disease_classification-2d30deb710",
+    "turmeric_leaf_disease_classification-cb87c73eed",
+    "turmeric_leaf_disease_classification-2e5e1e117e",
+    "turmeric_leaf_disease_classification-f6c500b3f7",
+    "turmeric_leaf_disease_classification-8e533cb21d",
+    "turmeric_leaf_disease_classification-1b579f1cad",
+    "turmeric_leaf_disease_classification-2a3345a7be",
+    "turmeric_leaf_disease_classification-28b8765d63",
+    "turmeric_leaf_disease_classification-6e0e5afa0f",
+    "turmeric_leaf_disease_classification-a469f5f380",
+    "turmeric_leaf_disease_classification-3b12dab197",
+    "turmeric_leaf_disease_classification-9f40c81e40",
+    "turmeric_leaf_disease_classification-fb514828a5",
+    "turmeric_leaf_disease_classification-252e26a903",
+    "turmeric_leaf_disease_classification-9d807a1e9d",
+    "turmeric_leaf_disease_classification-9ab243489a",
+    "turmeric_leaf_disease_classification-614b25a803",
+    "turmeric_leaf_disease_classification-5b22aea76b",
+    "turmeric_leaf_disease_classification-32e5e064f1",
+    "turmeric_leaf_disease_classification-d42a526f69",
+    "turmeric_leaf_disease_classification-81092a7130",
+    "turmeric_leaf_disease_classification-4536a7c49a",
+    "turmeric_leaf_disease_classification-087562d1c0",
+    "turmeric_leaf_disease_classification-cdc3451cdb",
+    "turmeric_leaf_disease_classification-6fac323d26",
+    "turmeric_leaf_disease_classification-6bb8226c2a",
+    "turmeric_leaf_disease_classification-771bf510da",
+    "turmeric_leaf_disease_classification-203b71ffb7",
+    "turmeric_leaf_disease_classification-20c041ae45",
+    "turmeric_leaf_disease_classification-cc5183214d",
+    "turmeric_leaf_disease_classification-aeb0a13a90",
+    "turmeric_leaf_disease_classification-1d5d0aecad",
+    "turmeric_leaf_disease_classification-52b58811a9",
+    "turmeric_leaf_disease_classification-4a5e4098ab",
+    "turmeric_leaf_disease_classification-d7bf368121",
+    "turmeric_leaf_disease_classification-6b6118cac1",
+    "turmeric_leaf_disease_classification-ae09e47527",
+    "turmeric_leaf_disease_classification-74a1922d09",
+    "turmeric_leaf_disease_classification-69e12c7727",
+    "turmeric_leaf_disease_classification-9232d6cb80",
+    "turmeric_leaf_disease_classification-92e6a04bbb",
+    "turmeric_leaf_disease_classification-322f24bc25",
+    "turmeric_leaf_disease_classification-3a3538ee90",
+    "turmeric_leaf_disease_classification-e1f78c9460",
+    "turmeric_leaf_disease_classification-266f519dde",
+    "turmeric_leaf_disease_classification-d2a1eb6726",
+    "turmeric_leaf_disease_classification-e2dffa83dc",
+    "turmeric_leaf_disease_classification-ee3f71be6f",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-e4777a85ad",
+    "turmeric_leaf_disease_classification-8b1c9dc3a6",
+    "turmeric_leaf_disease_classification-606c1142c9",
+    "turmeric_leaf_disease_classification-b3c3b7de64",
+    "turmeric_leaf_disease_classification-a77f66f82c",
+    "turmeric_leaf_disease_classification-16df328df8",
+    "turmeric_leaf_disease_classification-e91085282c",
+    "turmeric_leaf_disease_classification-17a7477070",
+    "turmeric_leaf_disease_classification-1bcfd6fd37",
+    "turmeric_leaf_disease_classification-74df27b278"
+   ]
+  },
+  "s2": {
+   "5": [
+    "turmeric_leaf_disease_classification-55d68acfa9",
+    "turmeric_leaf_disease_classification-528e9872ea",
+    "turmeric_leaf_disease_classification-a1fb90f1b1",
+    "turmeric_leaf_disease_classification-8cf93fe74c",
+    "turmeric_leaf_disease_classification-fcf7820987",
+    "turmeric_leaf_disease_classification-9ab243489a",
+    "turmeric_leaf_disease_classification-70db616310",
+    "turmeric_leaf_disease_classification-17b5709526",
+    "turmeric_leaf_disease_classification-64a6c3be2a",
+    "turmeric_leaf_disease_classification-7d3c44e1ec",
+    "turmeric_leaf_disease_classification-70938a139b",
+    "turmeric_leaf_disease_classification-a2232d65d0",
+    "turmeric_leaf_disease_classification-6b6118cac1",
+    "turmeric_leaf_disease_classification-998423c151",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-84e8f63c38",
+    "turmeric_leaf_disease_classification-74c6e57c43",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-83343f7fc0",
+    "turmeric_leaf_disease_classification-c9fd207e4f"
+   ],
+   "10": [
+    "turmeric_leaf_disease_classification-a51698c59b",
+    "turmeric_leaf_disease_classification-f626188672",
+    "turmeric_leaf_disease_classification-55d68acfa9",
+    "turmeric_leaf_disease_classification-528e9872ea",
+    "turmeric_leaf_disease_classification-a1fb90f1b1",
+    "turmeric_leaf_disease_classification-8cf93fe74c",
+    "turmeric_leaf_disease_classification-ed1b8b0a49",
+    "turmeric_leaf_disease_classification-7543c7e0cf",
+    "turmeric_leaf_disease_classification-fcf7820987",
+    "turmeric_leaf_disease_classification-43beca60dd",
+    "turmeric_leaf_disease_classification-9ab243489a",
+    "turmeric_leaf_disease_classification-1c7864e845",
+    "turmeric_leaf_disease_classification-e9e86514cc",
+    "turmeric_leaf_disease_classification-a392679944",
+    "turmeric_leaf_disease_classification-75cae2e47c",
+    "turmeric_leaf_disease_classification-70db616310",
+    "turmeric_leaf_disease_classification-38dbea3c57",
+    "turmeric_leaf_disease_classification-17b5709526",
+    "turmeric_leaf_disease_classification-64a6c3be2a",
+    "turmeric_leaf_disease_classification-7d3c44e1ec",
+    "turmeric_leaf_disease_classification-688ae63311",
+    "turmeric_leaf_disease_classification-70938a139b",
+    "turmeric_leaf_disease_classification-7fffb6fee6",
+    "turmeric_leaf_disease_classification-330ca72ffe",
+    "turmeric_leaf_disease_classification-a2232d65d0",
+    "turmeric_leaf_disease_classification-6b6118cac1",
+    "turmeric_leaf_disease_classification-1ca0374f8b",
+    "turmeric_leaf_disease_classification-998423c151",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-52128fba1a",
+    "turmeric_leaf_disease_classification-84e8f63c38",
+    "turmeric_leaf_disease_classification-8b23031d26",
+    "turmeric_leaf_disease_classification-74c6e57c43",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-83343f7fc0",
+    "turmeric_leaf_disease_classification-12c0bdeaef",
+    "turmeric_leaf_disease_classification-c9fd207e4f",
+    "turmeric_leaf_disease_classification-767a8016c3",
+    "turmeric_leaf_disease_classification-3c8d3f4bba",
+    "turmeric_leaf_disease_classification-ff982507ea"
+   ],
+   "15": [
+    "turmeric_leaf_disease_classification-664e972743",
+    "turmeric_leaf_disease_classification-a51698c59b",
+    "turmeric_leaf_disease_classification-f626188672",
+    "turmeric_leaf_disease_classification-76c663a6b6",
+    "turmeric_leaf_disease_classification-711326ad57",
+    "turmeric_leaf_disease_classification-55d68acfa9",
+    "turmeric_leaf_disease_classification-842deb3966",
+    "turmeric_leaf_disease_classification-528e9872ea",
+    "turmeric_leaf_disease_classification-6e0e5afa0f",
+    "turmeric_leaf_disease_classification-a1fb90f1b1",
+    "turmeric_leaf_disease_classification-8cf93fe74c",
+    "turmeric_leaf_disease_classification-ed1b8b0a49",
+    "turmeric_leaf_disease_classification-7543c7e0cf",
+    "turmeric_leaf_disease_classification-fcf7820987",
+    "turmeric_leaf_disease_classification-43beca60dd",
+    "turmeric_leaf_disease_classification-9ab243489a",
+    "turmeric_leaf_disease_classification-1c7864e845",
+    "turmeric_leaf_disease_classification-e9e86514cc",
+    "turmeric_leaf_disease_classification-59bb969b2c",
+    "turmeric_leaf_disease_classification-175fa1691f",
+    "turmeric_leaf_disease_classification-614b25a803",
+    "turmeric_leaf_disease_classification-a392679944",
+    "turmeric_leaf_disease_classification-75cae2e47c",
+    "turmeric_leaf_disease_classification-70db616310",
+    "turmeric_leaf_disease_classification-38dbea3c57",
+    "turmeric_leaf_disease_classification-0603b07b00",
+    "turmeric_leaf_disease_classification-20f6473de9",
+    "turmeric_leaf_disease_classification-17b5709526",
+    "turmeric_leaf_disease_classification-64a6c3be2a",
+    "turmeric_leaf_disease_classification-7d3c44e1ec",
+    "turmeric_leaf_disease_classification-688ae63311",
+    "turmeric_leaf_disease_classification-70938a139b",
+    "turmeric_leaf_disease_classification-13838976b3",
+    "turmeric_leaf_disease_classification-45c8d7cfa0",
+    "turmeric_leaf_disease_classification-7fffb6fee6",
+    "turmeric_leaf_disease_classification-26c9462d52",
+    "turmeric_leaf_disease_classification-330ca72ffe",
+    "turmeric_leaf_disease_classification-a2232d65d0",
+    "turmeric_leaf_disease_classification-6b6118cac1",
+    "turmeric_leaf_disease_classification-1ca0374f8b",
+    "turmeric_leaf_disease_classification-998423c151",
+    "turmeric_leaf_disease_classification-54a6738ff5",
+    "turmeric_leaf_disease_classification-c24a4d5e22",
+    "turmeric_leaf_disease_classification-baf7b51d58",
+    "turmeric_leaf_disease_classification-52128fba1a",
+    "turmeric_leaf_disease_classification-2cab4cdf79",
+    "turmeric_leaf_disease_classification-1724b59a67",
+    "turmeric_leaf_disease_classification-84e8f63c38",
+    "turmeric_leaf_disease_classification-11e01a4adb",
+    "turmeric_leaf_disease_classification-e0fa412b5c",
+    "turmeric_leaf_disease_classification-8b23031d26",
+    "turmeric_leaf_disease_classification-74c6e57c43",
+    "turmeric_leaf_disease_classification-7f309d8a9d",
+    "turmeric_leaf_disease_classification-5680449908",
+    "turmeric_leaf_disease_classification-83343f7fc0",
+    "turmeric_leaf_disease_classification-12c0bdeaef",
+    "turmeric_leaf_disease_classification-c9fd207e4f",
+    "turmeric_leaf_disease_classification-767a8016c3",
+    "turmeric_leaf_disease_classification-3c8d3f4bba",
+    "turmeric_leaf_disease_classification-ff982507ea"
+   ]
+  }
+ }
+}

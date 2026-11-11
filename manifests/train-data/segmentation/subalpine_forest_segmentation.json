@@ -1,0 +1,1411 @@
+{
+ "name": "subalpine_forest_segmentation",
+ "task": "semantic_segmentation",
+ "hf_repo": "Project-AgML/subalpine_forest_segmentation",
+ "hf_sha": "b7385c351b724fad09909708808998aa7889d342",
+ "sampling_hash": "0b098eda9593",
+ "created": "2026-11-11T20:33:43+00:00",
+ "info": {
+  "layout": "parquet",
+  "image_col": "bands",
+  "mask_col": "mask",
+  "mask_classes": {
+   "0": "background",
+   "1": "value_1",
+   "2": "value_2",
+   "3": "value_3"
+  },
+  "indexed_rows": 3370
+ },
+ "strata_keys": null,
+ "samples": [
+  {
+   "sample_id": "subalpine_forest_segmentation-68761567f5",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 1518,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e99593d8d5",
+   "ref": {
+    "file": "data/train-00004-of-00007.parquet",
+    "row": 1565,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-b84d7b4082",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1522,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-7a5a4e8e63",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1547,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-060fdf39b8",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1569,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-16809dc8ca",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1607,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-86834f73b3",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 489,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-4d847d9a49",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 540,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-56f5e8b5f9",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 625,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-1b898f7d7d",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 672,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-ff642a71fa",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 776,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-2d16d573ae",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 811,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e4e14717b1",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 875,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-f1ff72356b",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 913,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-30c85b0206",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 915,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-cc8ffa3e54",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 957,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-26be0a4801",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1011,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-97d4d9ced7",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1046,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e45c90bd7c",
+   "ref": {
+    "file": "data/train-00003-of-00007.parquet",
+    "row": 1047,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-9feb6c8b4e",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 1592,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-1b19c8b938",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 1616,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e43fe7e76a",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 411,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-d5f2dc79b0",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 513,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-fc8d5a680b",
+   "ref": {
+    "file": "data/train-00002-of-00007.parquet",
+    "row": 526,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-7838618e33",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 69,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-938690ff9d",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 113,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-79ee69227f",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 143,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-4ff24cf5c7",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 155,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-5ed73716dc",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 289,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-45c4a7ac6c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 292,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-d536c93c2c",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 319,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-0a4ca979c6",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 339,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-32aaac8504",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 359,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-d5d269de75",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 370,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-9515385ab2",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 465,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-71c3ee5518",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 503,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-a583b63105",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 586,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e0ac3bef9a",
+   "ref": {
+    "file": "data/train-00006-of-00007.parquet",
+    "row": 738,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-f24c3e53e6",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 24,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-344a228a79",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 47,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-26d366aca0",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 134,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-c4ccffefda",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 145,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-c4e7fd18c6",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 166,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-0fe188c7c4",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 312,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-5ae309855e",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 321,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-f346fe42ac",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 416,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-02154444b4",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 466,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-a199f8d7c9",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 505,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-1b410a2d7e",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 617,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-7f8c7174b3",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 689,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-57eb034568",
+   "ref": {
+    "file": "data/train-00000-of-00007.parquet",
+    "row": 740,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-9a230125ce",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1116,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e5ade07565",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1126,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-131ccf1c88",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1130,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-1f896a7088",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1181,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-3232dcf95a",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1224,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-e7cdaf65f3",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1273,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-ef15633389",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1453,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  },
+  {
+   "sample_id": "subalpine_forest_segmentation-2771d29afe",
+   "ref": {
+    "file": "data/train-00001-of-00007.parquet",
+    "row": 1474,
+    "config": "default",
+    "split": "train"
+   },
+   "keys": [
+    "value_1",
+    "value_2",
+    "value_3"
+   ],
+   "ann": {
+    "classes_present": [
+     "value_1",
+     "value_2",
+     "value_3"
+    ]
+   },
+   "strata": {}
+  }
+ ],
+ "subsets": {
+  "s0": {
+   "5": [
+    "subalpine_forest_segmentation-7a5a4e8e63",
+    "subalpine_forest_segmentation-d536c93c2c",
+    "subalpine_forest_segmentation-d5d269de75",
+    "subalpine_forest_segmentation-c4ccffefda",
+    "subalpine_forest_segmentation-1f896a7088",
+    "subalpine_forest_segmentation-02154444b4",
+    "subalpine_forest_segmentation-d5f2dc79b0"
+   ],
+   "10": [
+    "subalpine_forest_segmentation-7a5a4e8e63",
+    "subalpine_forest_segmentation-16809dc8ca",
+    "subalpine_forest_segmentation-5ed73716dc",
+    "subalpine_forest_segmentation-d536c93c2c",
+    "subalpine_forest_segmentation-d5d269de75",
+    "subalpine_forest_segmentation-71c3ee5518",
+    "subalpine_forest_segmentation-344a228a79",
+    "subalpine_forest_segmentation-26d366aca0",
+    "subalpine_forest_segmentation-c4ccffefda",
+    "subalpine_forest_segmentation-0fe188c7c4",
+    "subalpine_forest_segmentation-1f896a7088",
+    "subalpine_forest_segmentation-02154444b4",
+    "subalpine_forest_segmentation-d5f2dc79b0"
+   ],
+   "15": [
+    "subalpine_forest_segmentation-7a5a4e8e63",
+    "subalpine_forest_segmentation-16809dc8ca",
+    "subalpine_forest_segmentation-9feb6c8b4e",
+    "subalpine_forest_segmentation-1b19c8b938",
+    "subalpine_forest_segmentation-5ed73716dc",
+    "subalpine_forest_segmentation-d536c93c2c",
+    "subalpine_forest_segmentation-0a4ca979c6",
+    "subalpine_forest_segmentation-32aaac8504",
+    "subalpine_forest_segmentation-d5d269de75",
+    "subalpine_forest_segmentation-71c3ee5518",
+    "subalpine_forest_segmentation-344a228a79",
+    "subalpine_forest_segmentation-26d366aca0",
+    "subalpine_forest_segmentation-c4ccffefda",
+    "subalpine_forest_segmentation-0fe188c7c4",
+    "subalpine_forest_segmentation-9a230125ce",
+    "subalpine_forest_segmentation-1f896a7088",
+    "subalpine_forest_segmentation-02154444b4",
+    "subalpine_forest_segmentation-86834f73b3",
+    "subalpine_forest_segmentation-4d847d9a49",
+    "subalpine_forest_segmentation-f1ff72356b",
+    "subalpine_forest_segmentation-d5f2dc79b0"
+   ]
+  },
+  "s1": {
+   "5": [
+    "subalpine_forest_segmentation-938690ff9d",
+    "subalpine_forest_segmentation-e0ac3bef9a",
+    "subalpine_forest_segmentation-ef15633389",
+    "subalpine_forest_segmentation-56f5e8b5f9",
+    "subalpine_forest_segmentation-2d16d573ae",
+    "subalpine_forest_segmentation-97d4d9ced7"
+   ],
+   "10": [
+    "subalpine_forest_segmentation-68761567f5",
+    "subalpine_forest_segmentation-938690ff9d",
+    "subalpine_forest_segmentation-e0ac3bef9a",
+    "subalpine_forest_segmentation-c4e7fd18c6",
+    "subalpine_forest_segmentation-ef15633389",
+    "subalpine_forest_segmentation-2771d29afe",
+    "subalpine_forest_segmentation-57eb034568",
+    "subalpine_forest_segmentation-56f5e8b5f9",
+    "subalpine_forest_segmentation-1b898f7d7d",
+    "subalpine_forest_segmentation-2d16d573ae",
+    "subalpine_forest_segmentation-30c85b0206",
+    "subalpine_forest_segmentation-26be0a4801",
+    "subalpine_forest_segmentation-97d4d9ced7"
+   ],
+   "15": [
+    "subalpine_forest_segmentation-68761567f5",
+    "subalpine_forest_segmentation-b84d7b4082",
+    "subalpine_forest_segmentation-938690ff9d",
+    "subalpine_forest_segmentation-e0ac3bef9a",
+    "subalpine_forest_segmentation-f24c3e53e6",
+    "subalpine_forest_segmentation-c4e7fd18c6",
+    "subalpine_forest_segmentation-e5ade07565",
+    "subalpine_forest_segmentation-ef15633389",
+    "subalpine_forest_segmentation-2771d29afe",
+    "subalpine_forest_segmentation-1b410a2d7e",
+    "subalpine_forest_segmentation-57eb034568",
+    "subalpine_forest_segmentation-4d847d9a49",
+    "subalpine_forest_segmentation-56f5e8b5f9",
+    "subalpine_forest_segmentation-1b898f7d7d",
+    "subalpine_forest_segmentation-2d16d573ae",
+    "subalpine_forest_segmentation-30c85b0206",
+    "subalpine_forest_segmentation-26be0a4801",
+    "subalpine_forest_segmentation-97d4d9ced7",
+    "subalpine_forest_segmentation-e45c90bd7c",
+    "subalpine_forest_segmentation-e43fe7e76a"
+   ]
+  },
+  "s2": {
+   "5": [
+    "subalpine_forest_segmentation-060fdf39b8",
+    "subalpine_forest_segmentation-7838618e33",
+    "subalpine_forest_segmentation-9515385ab2",
+    "subalpine_forest_segmentation-a583b63105",
+    "subalpine_forest_segmentation-7f8c7174b3",
+    "subalpine_forest_segmentation-e4e14717b1",
+    "subalpine_forest_segmentation-30c85b0206",
+    "subalpine_forest_segmentation-cc8ffa3e54"
+   ],
+   "10": [
+    "subalpine_forest_segmentation-060fdf39b8",
+    "subalpine_forest_segmentation-7838618e33",
+    "subalpine_forest_segmentation-79ee69227f",
+    "subalpine_forest_segmentation-4ff24cf5c7",
+    "subalpine_forest_segmentation-9515385ab2",
+    "subalpine_forest_segmentation-a583b63105",
+    "subalpine_forest_segmentation-131ccf1c88",
+    "subalpine_forest_segmentation-e7cdaf65f3",
+    "subalpine_forest_segmentation-f346fe42ac",
+    "subalpine_forest_segmentation-7f8c7174b3",
+    "subalpine_forest_segmentation-ff642a71fa",
+    "subalpine_forest_segmentation-e4e14717b1",
+    "subalpine_forest_segmentation-30c85b0206",
+    "subalpine_forest_segmentation-cc8ffa3e54"
+   ],
+   "15": [
+    "subalpine_forest_segmentation-e99593d8d5",
+    "subalpine_forest_segmentation-060fdf39b8",
+    "subalpine_forest_segmentation-7838618e33",
+    "subalpine_forest_segmentation-79ee69227f",
+    "subalpine_forest_segmentation-4ff24cf5c7",
+    "subalpine_forest_segmentation-45c4a7ac6c",
+    "subalpine_forest_segmentation-9515385ab2",
+    "subalpine_forest_segmentation-a583b63105",
+    "subalpine_forest_segmentation-5ae309855e",
+    "subalpine_forest_segmentation-131ccf1c88",
+    "subalpine_forest_segmentation-3232dcf95a",
+    "subalpine_forest_segmentation-e7cdaf65f3",
+    "subalpine_forest_segmentation-f346fe42ac",
+    "subalpine_forest_segmentation-a199f8d7c9",
+    "subalpine_forest_segmentation-7f8c7174b3",
+    "subalpine_forest_segmentation-ff642a71fa",
+    "subalpine_forest_segmentation-e4e14717b1",
+    "subalpine_forest_segmentation-30c85b0206",
+    "subalpine_forest_segmentation-cc8ffa3e54",
+    "subalpine_forest_segmentation-fc8d5a680b"
+   ]
+  }
+ }
+}
