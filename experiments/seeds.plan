@@ -1,0 +1,29 @@
+# Experiment 1 (generation seeds): every task and format, judged, low reasoning effort.
+# One line per run: <out dir> <model> [agbench eval run args]; run with: scripts/run_plan.sh experiments/seeds.plan
+# Original runs: UC Davis farm cluster, one RTX 6000 Ada per run, agbench commit 9352706, judge prompt v3.
+# The verdicts in the paper were then re-judged with the v4 judge prompt (commit 524ee35, now the default in
+# src/agbench/eval/prompts.yaml) into runs/rejudge_v4/exp/seeds; running this plan with the current code judges with v4 directly.
+runs/exp/seeds/s0 mistralai/Ministral-3-14B-Instruct-2512 --judge --gen-seed 0
+runs/exp/seeds/s0 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --judge --gen-seed 0
+runs/exp/seeds/s0 google/gemma-4-12B-it --judge --gen-seed 0
+runs/exp/seeds/s0 Qwen/Qwen3.6-35B-A3B-FP8 --judge --gen-seed 0
+runs/exp/seeds/s0 RedHatAI/Muse-Glimmer-30B-FP8-block --judge --gen-seed 0
+runs/exp/seeds/s0 Qwen/Qwen3.8-27B-FP8 --judge --gen-seed 0
+runs/exp/seeds/s0 RedHatAI/gemma-4-31B-it-FP8-dynamic --judge --gen-seed 0
+runs/exp/seeds/s0 nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF --judge --gen-seed 0
+runs/exp/seeds/s1 mistralai/Ministral-3-14B-Instruct-2512 --judge --gen-seed 1
+runs/exp/seeds/s1 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --judge --gen-seed 1
+runs/exp/seeds/s1 google/gemma-4-12B-it --judge --gen-seed 1
+runs/exp/seeds/s1 Qwen/Qwen3.6-35B-A3B-FP8 --judge --gen-seed 1
+runs/exp/seeds/s1 RedHatAI/Muse-Glimmer-30B-FP8-block --judge --gen-seed 1
+runs/exp/seeds/s1 Qwen/Qwen3.8-27B-FP8 --judge --gen-seed 1
+runs/exp/seeds/s1 RedHatAI/gemma-4-31B-it-FP8-dynamic --judge --gen-seed 1
+runs/exp/seeds/s1 nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF --judge --gen-seed 1
+runs/exp/seeds/s2 mistralai/Ministral-3-14B-Instruct-2512 --judge --gen-seed 2
+# moved to seeds_b.plan: runs/exp/seeds/s2 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --judge --gen-seed 2
+# moved to seeds_b.plan: runs/exp/seeds/s2 google/gemma-4-12B-it --judge --gen-seed 2
+runs/exp/seeds/s2 Qwen/Qwen3.6-35B-A3B-FP8 --judge --gen-seed 2
+runs/exp/seeds/s2 RedHatAI/Muse-Glimmer-30B-FP8-block --judge --gen-seed 2
+runs/exp/seeds/s2 Qwen/Qwen3.8-27B-FP8 --judge --gen-seed 2
+runs/exp/seeds/s2 RedHatAI/gemma-4-31B-it-FP8-dynamic --judge --gen-seed 2
+# moved to seeds_b.plan: runs/exp/seeds/s2 nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF --judge --gen-seed 2

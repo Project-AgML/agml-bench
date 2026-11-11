@@ -198,3 +198,40 @@ runs/<model>_<time>/                        items.jsonl, predictions.jsonl, metr
 reports/profile/                            report.md, report.html, profile.json
 $DATA/base-data/<task>/<dataset>/           images/, masks/, samples.jsonl, meta.json
 ```
+
+## Naive baselines
+
+```bash
+uv run agbench eval baseline --data-dir $DATA --kind prior --out runs/baselines/prior
+for s in 0 1 2; do uv run agbench eval baseline --data-dir $DATA --kind chance --gen-seed $s --out runs/baselines/chance/s$s; done
+```
+
+## Few-shot YOLO11 baselines
+
+Training images (`train_sampling` in [configs/base_data.yaml](configs/base_data.yaml); never an evaluated sample):
+
+```bash
+uv run agbench sample-train --data-dir $DATA
+uv run agbench sample-train --data-dir $DATA --from-manifest     # re-download exact samples in manifests/train-data/
+```
+
+```bash
+uv sync --extra yolo
+uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 5 --subset 0 --out runs/yolo
+uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 5 --subset 0 --size n --epochs 2 --only '^bean_disease_uganda$'
+```
+
+Farm (Slurm):
+
+```bash
+J=$(sbatch --parsable scripts/farm_sample_train.sh)
+sbatch --dependency=afterok:$J scripts/farm_yolo.sh experiments/yolo.plan
+```
+
+## Paper experiments
+
+```bash
+DATA=$DATA scripts/run_plan.sh experiments/seeds.plan     # Experiment 1
+DATA=$DATA scripts/run_plan.sh experiments/exp24.plan     # Experiments 2-4
+bash paper/scripts/reproduce.sh                            # stats, tables, figures, number audit, PDF
+```

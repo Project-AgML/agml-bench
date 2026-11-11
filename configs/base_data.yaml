@@ -65,3 +65,12 @@ overrides:
   soybean_harvest_damage_segmentation:
     include: false
     reason: mask values are noise / inconsistent between images
+
+# Few-shot training images for the supervised baselines (agbench sample-train): disjoint from the evaluated
+# samples above. Each subset is drawn with its own seed; within a subset the smaller shot counts use the same
+# image order, so for classification the 5-shot set is contained in the 10-shot set, and so on.
+train_sampling:
+  seed: 100
+  subsets: 3
+  shots: [5, 10, 15]
+  split_priority: [train, validation, val, dev, test]

@@ -10,7 +10,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agbench.config import MANIFEST_DIR, sampling_hash
+from agbench.config import MANIFEST_DIR, TRAIN_MANIFEST_DIR, sampling_hash, train_sampling_hash
 
 TASK_DIRS = {
     "image_classification": "classification",
@@ -32,8 +32,32 @@ def scratch_dir(data_dir: Path, name: str) -> Path:
     return Path(data_dir) / ".scratch" / name
 
 
-def failure_path(data_dir: Path, name: str) -> Path:
-    return base_dir(data_dir) / "_failures" / f"{name}.json"
+def failure_path(data_dir: Path, name: str, train: bool = False) -> Path:
+    return (train_root(data_dir) if train else base_dir(data_dir)) / "_failures" / f"{name}.json"
+
+
+def train_root(data_dir: Path) -> Path:
+    return Path(data_dir) / "train-data"
+
+
+def train_dir(data_dir: Path, entry: dict) -> Path:
+    return train_root(data_dir) / TASK_DIRS[entry["task"]] / entry["name"]
+
+
+def train_manifest_path(entry: dict) -> Path:
+    return TRAIN_MANIFEST_DIR / TASK_DIRS[entry["task"]] / f"{entry['name']}.json"
+
+
+def train_status_of(cfg: dict, data_dir: Path, entry: dict) -> str:
+    if not entry["eligible"] or entry["task"] == "image_text_to_text":
+        return "excluded"
+    if not manifest_path(entry).exists():
+        return "no_eval_samples"
+    p = train_dir(data_dir, entry) / "meta.json"
+    if p.exists():
+        meta = json.loads(p.read_text())
+        return "done" if meta.get("sampling_hash") == train_sampling_hash(cfg, entry["name"], entry["task"]) else "stale_config"
+    return "failed" if failure_path(data_dir, entry["name"], train=True).exists() else "new"
 
 
 def manifest_path(entry: dict) -> Path:
@@ -88,30 +112,7 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> 
                 for s in manifest["samples"]]
         strata_keys = manifest.get("strata_keys")
     else:
-        layout = repo.layout()
-        log(f"layout: {layout}, revision {repo.revision[:7]}")
-        is_itt = task == "image_text_to_text"
-        if layout == "parquet":
-            files = repo.data_files(".parquet", all_configs=is_itt, skip_keywords=s_cfg["skip_config_keywords"],
-                                    prefer=ov.get("config"))
-            if not files:
-                raise build.Unsupported("no parquet files for chosen config")
-            configs = sorted({f.config for f in files})
-            log(f"{len(files)} parquet file(s), config(s): {', '.join(configs)}")
-            if is_itt:
-                keep = list(dict.fromkeys(s_cfg["itt"]["primary_keys"] + s_cfg["itt"].get("secondary_keys", []) + ov.get("strata", [])))
-                recs, info = build.index_itt(repo, files, keep)
-            else:
-                recs, info = build.index_parquet(repo, files, task, entry["classes"], s_cfg["seg_max_index_rows"], rng)
-        elif layout == "metadata_jsonl" and task != "image_text_to_text":
-            recs, info = build.index_metadata_jsonl(repo, task, entry["classes"], s_cfg["skip_config_keywords"],
-                                                    s_cfg["seg_max_index_rows"], rng)
-        else:
-            raise build.Unsupported(f"layout:{layout}")
-        if not recs:
-            raise build.Unsupported("no labelled rows")
-        info["indexed_rows"] = len(recs)
-        log(f"indexed {len(recs):,} rows")
+        recs, info = index_dataset(cfg, entry, repo, rng)
 
         n, sp = s_cfg["samples_per_class"], s_cfg["split_priority"]
         strata_keys = None
@@ -152,6 +153,111 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> 
     return meta
 
 
+def index_dataset(cfg: dict, entry: dict, repo, rng) -> tuple[list[dict], dict]:
+    """Every labelled row of a dataset as a selection record ({ref, keys, ann, strata}), plus layout info."""
+    from agbench import build
+    from agbench.progress import log
+
+    name, task = entry["name"], entry["task"]
+    s_cfg = cfg["sampling"]
+    ov = cfg.get("overrides", {}).get(name, {})
+    layout = repo.layout()
+    log(f"layout: {layout}, revision {repo.revision[:7]}")
+    is_itt = task == "image_text_to_text"
+    if layout == "parquet":
+        files = repo.data_files(".parquet", all_configs=is_itt, skip_keywords=s_cfg["skip_config_keywords"],
+                                prefer=ov.get("config"))
+        if not files:
+            raise build.Unsupported("no parquet files for chosen config")
+        configs = sorted({f.config for f in files})
+        log(f"{len(files)} parquet file(s), config(s): {', '.join(configs)}")
+        if is_itt:
+            keep = list(dict.fromkeys(s_cfg["itt"]["primary_keys"] + s_cfg["itt"].get("secondary_keys", []) + ov.get("strata", [])))
+            recs, info = build.index_itt(repo, files, keep)
+        else:
+            recs, info = build.index_parquet(repo, files, task, entry["classes"], s_cfg["seg_max_index_rows"], rng)
+    elif layout == "metadata_jsonl" and task != "image_text_to_text":
+        recs, info = build.index_metadata_jsonl(repo, task, entry["classes"], s_cfg["skip_config_keywords"],
+                                                s_cfg["seg_max_index_rows"], rng)
+    else:
+        raise build.Unsupported(f"layout:{layout}")
+    if not recs:
+        raise build.Unsupported("no labelled rows")
+    info["indexed_rows"] = len(recs)
+    log(f"indexed {len(recs):,} rows")
+    return recs, info
+
+
+def _ref_key(ref: dict) -> str:
+    return json.dumps(ref, sort_keys=True, default=str)
+
+
+def run_train_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> dict:
+    """Few-shot training samples: `subsets` seeded draws of each shot count, never an evaluated sample."""
+    from agbench import build
+    from agbench.hub import Repo
+    from agbench.progress import log
+    from agbench.sampling import rng_for, select_greedy_cover, select_per_class
+
+    name, task = entry["name"], entry["task"]
+    t_cfg = cfg["train_sampling"]
+    ov = cfg.get("overrides", {}).get(name, {})
+    t0 = time.time()
+    if task == "image_text_to_text":
+        raise build.Unsupported("no training samples for image-text-to-text")
+    evaluated = json.loads(manifest_path(entry).read_text())
+    manifest = json.loads(train_manifest_path(entry).read_text()) if from_manifest else None
+    # Same revision as the evaluated samples, so their rows can be recognised and excluded.
+    repo = Repo(entry["hf_repo"], revision=evaluated["hf_sha"])
+
+    if manifest:
+        log(f"using manifest ({len(manifest['samples'])} samples, revision {manifest['hf_sha'][:7]})")
+        info = manifest["info"]
+        recs = [{"ref": s["ref"], "keys": s.get("keys", []), "ann": s.get("ann", {}), "strata": {}} for s in manifest["samples"]]
+        subsets = manifest["subsets"]
+    else:
+        recs, info = index_dataset(cfg, entry, repo, rng_for(t_cfg["seed"], name))
+        excluded = {_ref_key(s["ref"]) for s in evaluated["samples"]}
+        recs = [r for r in recs if _ref_key(r["ref"]) not in excluded]
+        log(f"{len(recs):,} rows left after excluding {len(excluded)} evaluated samples")
+        if not recs:
+            raise build.Unsupported("no rows outside the evaluated samples")
+        select = select_per_class if task == "image_classification" else select_greedy_cover
+        picks = {}
+        for s in range(t_cfg["subsets"]):
+            for k in t_cfg["shots"]:
+                # a fresh generator per shot count: the same image order, so smaller sets nest in larger ones
+                picks[(s, k)] = select(recs, k, rng_for(t_cfg["seed"] + s, name), t_cfg["split_priority"])
+        used = sorted(set().union(*picks.values()))
+        ids = {i: build.sample_id(name, recs[i]["ref"]) for i in used}
+        subsets = {f"s{s}": {str(k): [ids[i] for i in picks[(s, k)]] for k in t_cfg["shots"]} for s in range(t_cfg["subsets"])}
+        recs = [recs[i] for i in used]
+        log(f"selected {len(recs)} training samples over {t_cfg['subsets']} subsets x shots {t_cfg['shots']}")
+
+    out = train_dir(data_dir, entry)
+    tmp = out.with_name(out.name + ".partial")
+    shutil.rmtree(tmp, ignore_errors=True)
+    tmp.mkdir(parents=True)
+    samples = build.extract(repo, name, task, info, recs, tmp, ov.get("bbox_format"))
+    have = {s["sample_id"] for s in samples}
+    subsets = {s: {k: [i for i in v if i in have] for k, v in ks.items()} for s, ks in subsets.items()}
+    with open(tmp / "samples.jsonl", "w") as f:
+        for s in samples:
+            f.write(json.dumps(s, ensure_ascii=False, default=str) + "\n")
+    (tmp / "subsets.json").write_text(json.dumps(subsets, indent=1))
+    meta = {
+        "name": name, "task": task, "hf_repo": entry["hf_repo"], "hf_sha": repo.revision,
+        "sampling_hash": train_sampling_hash(cfg, name, task), "created": now(), "seconds": round(time.time() - t0, 1),
+        "n_samples": len(samples), "info": info, "strata_keys": None, "catalog": entry, "train_sampling": t_cfg,
+    }
+    (tmp / "meta.json").write_text(json.dumps(meta, indent=1, ensure_ascii=False, default=str))
+    write_manifest(entry, meta, samples, path=train_manifest_path(entry), extra={"subsets": subsets})
+    shutil.rmtree(out, ignore_errors=True)
+    tmp.rename(out)
+    failure_path(data_dir, name, train=True).unlink(missing_ok=True)
+    return meta
+
+
 def _strata_counts(recs: list[dict], keys: list[str]) -> dict:
     counts: dict[str, int] = {}
     for r in recs:
@@ -160,8 +266,8 @@ def _strata_counts(recs: list[dict], keys: list[str]) -> dict:
     return counts
 
 
-def write_manifest(entry: dict, meta: dict, samples: list[dict]) -> None:
-    p = manifest_path(entry)
+def write_manifest(entry: dict, meta: dict, samples: list[dict], path: Path | None = None, extra: dict | None = None) -> None:
+    p = path or manifest_path(entry)
     p.parent.mkdir(parents=True, exist_ok=True)
     slim = []
     for s in samples:
@@ -173,7 +279,7 @@ def write_manifest(entry: dict, meta: dict, samples: list[dict]) -> None:
     p.write_text(json.dumps({
         "name": meta["name"], "task": meta["task"], "hf_repo": meta["hf_repo"], "hf_sha": meta["hf_sha"],
         "sampling_hash": meta["sampling_hash"], "created": meta["created"], "info": meta["info"],
-        "strata_keys": meta["strata_keys"], "samples": slim,
+        "strata_keys": meta["strata_keys"], "samples": slim, **(extra or {}),
     }, indent=1, ensure_ascii=False, default=str))
 
 
@@ -184,28 +290,30 @@ def worker_main(argv: list[str]) -> int:
 
     name, data_dir, config_path = argv[:3]
     from_manifest = "--from-manifest" in argv
+    train = "--train" in argv
     cfg = load_config(config_path)
     entry = load_catalog()["datasets"][name]
     data_dir = Path(data_dir)
     try:
-        meta = run_dataset(cfg, entry, data_dir, from_manifest)
+        meta = (run_train_dataset if train else run_dataset)(cfg, entry, data_dir, from_manifest)
         print(f"  ok: {meta['n_samples']} samples in {meta['seconds']}s")
         return 0
     except Exception as e:
-        record_failure(data_dir, name, f"{type(e).__name__}: {e}", traceback.format_exc())
+        record_failure(data_dir, name, f"{type(e).__name__}: {e}", traceback.format_exc(), train=train)
         print(f"  failed: {type(e).__name__}: {e}")
         return 1
 
 
-def record_failure(data_dir: Path, name: str, reason: str, tb: str = "") -> None:
-    p = failure_path(data_dir, name)
+def record_failure(data_dir: Path, name: str, reason: str, tb: str = "", train: bool = False) -> None:
+    p = failure_path(data_dir, name, train)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps({"name": name, "reason": reason, "time": now(), "traceback": tb}, indent=1))
 
 
 # ---------------------------------------------------------------- orchestrator
 
-def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, timeout: int, from_manifest: bool) -> dict:
+def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, timeout: int, from_manifest: bool,
+             train: bool = False) -> dict:
     from agbench.progress import fmt_duration
 
     results = {"ok": [], "failed": []}
@@ -225,17 +333,22 @@ def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, t
         cmd = [sys.executable, "-m", "agbench.pipeline", name, str(data_dir), config_path]
         if from_manifest:
             cmd.append("--from-manifest")
+        if train:
+            cmd.append("--train")
         try:
             rc = subprocess.run(cmd, env=env, timeout=timeout).returncode
         except subprocess.TimeoutExpired:
-            record_failure(data_dir, name, f"timeout after {timeout}s")
+            record_failure(data_dir, name, f"timeout after {timeout}s", train=train)
             print(f"  failed: timeout after {timeout}s")
             rc = 1
         finally:
             shutil.rmtree(scratch, ignore_errors=True)
-            shutil.rmtree(dataset_dir(data_dir, e).with_name(name + ".partial"), ignore_errors=True)
+            shutil.rmtree((train_dir if train else dataset_dir)(data_dir, e).with_name(name + ".partial"), ignore_errors=True)
         results["ok" if rc == 0 else "failed"].append(name)
-    shutil.rmtree(Path(data_dir) / ".scratch", ignore_errors=True)
+    try:  # only if empty: another run may be downloading into its own subfolder (each dataset's is removed above)
+        (Path(data_dir) / ".scratch").rmdir()
+    except OSError:
+        pass
     results["seconds"] = time.time() - t_start
     return results
 

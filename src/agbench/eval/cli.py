@@ -1,5 +1,7 @@
 import importlib
 import json
+import re
+import shutil
 import subprocess
 import sys
 import time
@@ -113,6 +115,208 @@ def run(
         _judge([rd], judge_endpoint, None)
     _print_summary(rd)
 
+
+@app.command()
+def baseline(
+    data_dir: Path = DataDirOpt,
+    kind: str = typer.Option(..., "--kind", help="chance | prior (see agbench/eval/baselines.py)"),
+    task: list[str] = TaskOpt,
+    fmt: list[str] = FormatOpt,
+    only: str = typer.Option(None, "--only", help="Regex on dataset name."),
+    seed: int = typer.Option(0, "--seed", help="Item seed: which images, distractors and NOTA items."),
+    gen_seed: int = typer.Option(0, "--gen-seed", help="chance: random-answer seed; replicate runs use different values."),
+    out: Path = typer.Option(Path("runs"), "--out"),
+):
+    """Naive baselines (no image used), scored like a model run; no GPU or judge needed."""
+    from agbench.eval.baselines import KINDS, NaiveBaseline, exact_oeq_verdicts, priors
+    from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
+
+    if kind not in KINDS:
+        raise typer.BadParameter(f"--kind: {' | '.join(KINDS)}")
+    bench = Benchmark(data_dir, task or None, fmt or None, only, None, seed)
+    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    m = NaiveBaseline(kind, priors(bench.items), gen_seed)
+    rd = _run_dir(out, f"{m.name}_s{gen_seed}" if kind == "chance" else m.name)
+    bench.run(m, rd, concurrency=64, resume=False)
+    recs = exact_oeq_verdicts(read_jsonl(rd / "predictions.jsonl"))
+    write_jsonl(rd / "predictions.jsonl", recs)
+    finalize(rd, recs)
+    _print_summary(rd)
+
+
+@app.command()
+def yolo(
+    data_dir: Path = DataDirOpt,
+    shots: int = typer.Option(..., "--shots", help="Training images per class (a shot count in train_sampling)."),
+    subset: int = typer.Option(0, "--subset", help="Training subset (0, 1, 2): which seeded draw of training images."),
+    train_dir: Path = typer.Option(None, "--train-dir", help="Few-shot training data (default <data-dir>/train-data)."),
+    task: list[str] = typer.Option(None, "--task", help="classification | detection | segmentation (default all three)"),
+    only: str = typer.Option(None, "--only", help="Regex on dataset name."),
+    size: str = typer.Option("x", "--size", help="YOLO11 size: n | s | m | l | x"),
+    epochs: int = typer.Option(100, "--epochs"),
+    out: Path = typer.Option(Path("runs/yolo"), "--out"),
+    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agbench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
+):
+    """Few-shot YOLO11 baseline: per dataset, train on k images per class, score the evaluation items, delete the model.
+
+    Several processes (on several GPUs or jobs) can work on the same run at once: each dataset is claimed with a lock
+    file, its results go to their own file under parts/, and the process that finds every dataset done merges them.
+    Exit code 0 when the run is complete, 3 when other processes still hold datasets of it."""
+    import fcntl
+    import os
+    import socket
+    import time
+
+    from agbench.eval import yolo as Y
+    from agbench.eval.baselines import exact_oeq_verdicts
+    from agbench.eval.gpu import sampler
+    from agbench.eval.grade import grade
+    from agbench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
+
+    dev = Y.device()  # fails fast if CUDA is unavailable, instead of every dataset silently training on the CPU
+    typer.echo(f"YOLO device: {dev}")
+    tasks = task or ["classification", "detection", "segmentation"]
+    train_root = Path(train_dir or Path(data_dir) / "train-data")
+    bench = Benchmark(data_dir, tasks, None, only, None, 0)
+    names = Y.dataset_names(bench.items)
+    label = f"yolo11{size}/{shots}shot"
+    rd = out / f"{shots}shot" / f"s{subset}"
+    parts, claims = rd / "parts", rd / "claims"
+    for d in (rd, parts, claims):
+        d.mkdir(parents=True, exist_ok=True)
+    me = f"job:{os.environ['SLURM_JOB_ID']}" if os.environ.get("SLURM_JOB_ID") else f"pid:{socket.gethostname()}:{os.getpid()}"
+
+    def write_once(path: Path, text: str):  # identical for every process; atomic, never half-written
+        if not path.exists():
+            tmp = path.with_name(f".{path.name}.{os.getpid()}")
+            tmp.write_text(text)
+            tmp.replace(path)
+
+    write_once(rd / "run.json", json.dumps({
+        "method": {"name": label, "baseline": "yolo", "size": size, "epochs": epochs, "shots": shots, "gen_seed": subset},
+        "benchmark": bench.args, "n_items": len(bench.items), "agbench_git": _git_sha(),
+        "started": datetime.now().astimezone().isoformat(timespec="seconds")}, indent=2))
+    write_once(rd / "items.jsonl", "".join(json.dumps(it.to_dict()) + "\n" for it in bench.items))
+    write_once(rd / "crops.json", json.dumps(crop_table(bench.items), indent=2))
+    write_once(rd / "ag_task_coverage.md", coverage_md(bench.items))
+
+    def alive(owner: str) -> bool:
+        kind, _, rest = owner.partition(":")
+        if kind == "job":
+            try:
+                r = subprocess.run(["squeue", "-h", "-j", rest, "-o", "%T"], capture_output=True, text=True, timeout=30)
+                return r.returncode != 0 or bool(r.stdout.strip())  # if squeue fails, assume the job is alive
+            except Exception:
+                return True
+        host, _, pid = rest.partition(":")
+        if host != socket.gethostname():
+            return True
+        try:
+            os.kill(int(pid), 0)
+            return True
+        except (OSError, ValueError):
+            return False
+
+    def claim(key: str) -> bool:
+        p = claims / key
+        for _ in range(2):
+            try:
+                fd = os.open(p, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                os.write(fd, me.encode()); os.close(fd)
+                return True
+            except FileExistsError:
+                try:
+                    owner = p.read_text().strip()
+                except FileNotFoundError:
+                    continue
+                if owner and alive(owner):
+                    return False
+                p.unlink(missing_ok=True)  # stale claim from a job or process that died
+        return False
+
+    by_ds: dict = {}
+    for it in bench.items:
+        by_ds.setdefault((it.task, it.dataset), []).append(it)
+    key_of = lambda t, ds: f"{t}__{ds}"  # noqa: E731
+
+    def finished() -> tuple[set, set]:
+        done = {r["item_id"] for r in read_jsonl(rd / "predictions.jsonl")}
+        for f in parts.glob("*.jsonl"):
+            done |= {r["item_id"] for r in read_jsonl(f)}
+        skipped = {f.name[: -len(".skipped.json")] for f in parts.glob("*.skipped.json")}
+        return done, skipped
+
+    done, skipped = finished()
+    for i, ((t, ds), its) in enumerate(sorted(by_ds.items()), 1):
+        key = key_of(t, ds)
+        if key in skipped or all(it.item_id in done for it in its) or not claim(key):
+            continue
+        try:
+            done, skipped = finished()  # another process may have finished it between the scan and the claim
+            if key in skipped or all(it.item_id in done for it in its):
+                continue
+            typer.echo(f"[{i}/{len(by_ds)}] {t}/{ds}: {len(its)} items")
+            ids = Y.subset_ids(train_root, t, ds, subset, shots)
+            tr = Y.train_items(train_root, t, f"^{re.escape(ds)}$", ids) if ids else []
+            if not tr:
+                (parts / f"{key}.skipped.json").write_text(json.dumps({"dataset": ds, "task": t, "reason": "no training images"}))
+                continue
+            work = rd / "_work" / f"{ds}.{os.getpid()}"
+            try:
+                with sampler() as g:
+                    t0 = time.time()
+                    data = Y.prepare(t, tr, names[ds], work / "data", train_root / t / ds)
+                    w = Y.train(t, data, work / "model", size, epochs, weights_dir, seed=subset)
+                    t1 = time.time()
+                    m = Y.YOLOMethod({ds: w}, names, label, subset)
+                    recs = [grade(it, m.predict(it), {"bbox": "xyxy_px"}) for it in its]
+                    t2 = time.time()
+                end_t = datetime.now().astimezone().isoformat(timespec="seconds")
+                comp = [{"ended": end_t, "phase": "train", "model": label, "dataset": ds, "train_images": len(tr), "wall_s": round(t1 - t0, 1),
+                         **(g.summary(t0, t1) if g else {})},
+                        {"ended": end_t, "phase": "generate", "model": label, "dataset": ds, "items": len(its), "wall_s": round(t2 - t1, 1),
+                         **(g.summary(t1, t2) if g else {})}]
+                tmp = parts / f".{key}.{os.getpid()}"
+                tmp.write_text("".join(json.dumps(r) + "\n" for r in exact_oeq_verdicts(recs)))
+                (parts / f"{key}.compute.json").write_text(json.dumps(comp))
+                tmp.replace(parts / f"{key}.jsonl")  # results appear only once complete
+            except Exception as e:  # one dataset failing must not end the run; after 2 failures it is skipped
+                typer.echo(f"  failed: {type(e).__name__}: {e}")
+                with open(rd / "failures.jsonl", "a") as f:
+                    f.write(json.dumps({"dataset": ds, "task": t, "time": datetime.now().isoformat(timespec="seconds"),
+                                        "error": f"{type(e).__name__}: {e}"[:500]}) + "\n")
+                fails = sum(1 for r in read_jsonl(rd / "failures.jsonl") if r["dataset"] == ds and r["task"] == t)
+                if fails >= 2:
+                    (parts / f"{key}.skipped.json").write_text(json.dumps({"dataset": ds, "task": t, "reason": f"failed twice: {type(e).__name__}"}))
+            finally:
+                shutil.rmtree(work, ignore_errors=True)  # the trained model is not kept: thousands of them would not fit
+        finally:
+            (claims / key).unlink(missing_ok=True)
+
+    # Complete only when every dataset is scored or skipped; the process that sees this merges the parts.
+    done, skipped = finished()
+    left = [key_of(t, ds) for (t, ds), its in by_ds.items() if key_of(t, ds) not in skipped and not all(it.item_id in done for it in its)]
+    if left:
+        typer.echo(f"{len(left)} datasets still in progress elsewhere or failed once; run again to continue")
+        raise typer.Exit(3)
+    with open(rd / ".merge.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        ids = {it.item_id for it in bench.items}
+        recs = {r["item_id"]: r for r in read_jsonl(rd / "predictions.jsonl")}
+        for f in sorted(parts.glob("*.jsonl")):
+            recs.update({r["item_id"]: r for r in read_jsonl(f)})
+        merged = [recs[i] for i in (it.item_id for it in bench.items) if i in recs]
+        tmp = rd / f".predictions.{os.getpid()}"
+        tmp.write_text("".join(json.dumps(r) + "\n" for r in merged))
+        tmp.replace(rd / "predictions.jsonl")
+        comp = json.loads((rd / "compute.json").read_text()) if (rd / "compute.json").exists() else []
+        seen = {(c.get("dataset"), c.get("phase"), c.get("ended")) for c in comp}
+        for f in sorted(parts.glob("*.compute.json")):
+            comp += [c for c in json.loads(f.read_text()) if (c.get("dataset"), c.get("phase"), c.get("ended")) not in seen]
+        (rd / "compute.json").write_text(json.dumps(comp, indent=2))
+        (rd / "skipped.json").write_text(json.dumps([json.loads(f.read_text()) for f in sorted(parts.glob("*.skipped.json"))], indent=2))
+        finalize(rd, [r for r in merged if r["item_id"] in ids])
+    _print_summary(rd)
 
 @contextmanager
 def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load", max_model_len: int | None = None):

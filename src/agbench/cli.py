@@ -167,6 +167,46 @@ def sample(
         typer.echo(f"  failed: {n}")
 
 
+@app.command("sample-train")
+def sample_train(
+    data_dir: Path = DataDirOpt,
+    config: Path = ConfigOpt,
+    task: list[str] = typer.Option(None, "--task", help="classification | detection | segmentation"),
+    only: str = typer.Option(None, "--only", help="Regex on dataset name."),
+    refresh: bool = typer.Option(False, "--refresh", help="Resample datasets that are already done."),
+    retry_failed: bool = typer.Option(True, "--retry-failed/--skip-failed"),
+    from_manifest: bool = typer.Option(False, "--from-manifest", help="Re-download the exact samples in manifests/train-data/."),
+    timeout: int = typer.Option(None, "--timeout", help="Seconds per dataset."),
+):
+    """Few-shot training images for the supervised baselines, never an evaluated sample (train_sampling in the config)."""
+    cfg = load_config(config)
+    c = _require_catalog()
+    todo = []
+    for e in _filter(c["datasets"], task, only):
+        s = pipeline.train_status_of(cfg, data_dir, e)
+        if s in ("excluded", "no_eval_samples"):
+            continue
+        if from_manifest:
+            if pipeline.train_manifest_path(e).exists():
+                todo.append(e)
+            continue
+        if s == "done" and not refresh:
+            continue
+        if s == "failed" and not retry_failed:
+            continue
+        todo.append(e)
+    if not todo:
+        typer.echo("Nothing to do.")
+        return
+    res = pipeline.run_many(cfg, str(Path(config).resolve()), todo, Path(data_dir).resolve(),
+                            timeout or cfg["download"]["timeout_s"], from_manifest, train=True)
+    from agbench.progress import fmt_duration
+
+    typer.echo(f"\n{len(res['ok'])} succeeded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
+    for n in res["failed"]:
+        typer.echo(f"  failed: {n}")
+
+
 @app.command()
 def view(data_dir: Path = DataDirOpt, port: int = typer.Option(8501, "--port")):
     """Open the dataset viewer."""

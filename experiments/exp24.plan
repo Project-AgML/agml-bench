@@ -1,0 +1,61 @@
+# Run with: scripts/run_plan.sh experiments/exp24.plan
+# Original runs: Runpod pods with RTX 6000 Ada GPUs (vllm/vllm-openai:v0.32.0), one GPU per run, seed 0;
+# stored as runs/runpod_exp/runs/{order/o1-o5,nota/n0.1,nota/n0.5,noidk} (the original plan wrote to runs/exp/...;
+# only the output dir differs here). Multiple-choice only, so no judging.
+# Experiments 2-4 on Runpod (no Nemotron): <out dir> <model> [eval run args]
+runs/exp24/order/o1 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o1 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 1 --nota-position random
+runs/exp24/order/o2 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o2 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 2 --nota-position random
+runs/exp24/order/o3 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o3 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 3 --nota-position random
+runs/exp24/order/o4 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o4 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 4 --nota-position random
+runs/exp24/order/o5 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/order/o5 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --order-seed 5 --nota-position random
+runs/exp24/nota/n0.1 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.1 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.1
+runs/exp24/nota/n0.5 mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/nota/n0.5 RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --nota-rate 0.5
+runs/exp24/noidk mistralai/Ministral-3-14B-Instruct-2512 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk google/gemma-4-12B-it --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk Qwen/Qwen3.6-35B-A3B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk RedHatAI/Muse-Glimmer-30B-FP8-block --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk Qwen/Qwen3.8-27B-FP8 --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
+runs/exp24/noidk RedHatAI/gemma-4-31B-it-FP8-dynamic --task classification --task image_text_to_text --format mcqa_within --format mcqa_across --format multiple_choice --gen-seed 0 --no-idk
