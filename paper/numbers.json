@@ -1,0 +1,4111 @@
+{
+ "baselines": {
+  "chance": {
+   "mcqa_across": 16.94,
+   "mcqa_within": 17.75,
+   "oeq": 20.79,
+   "itt": 9.36,
+   "detection": 2.02,
+   "segmentation": 5.84,
+   "itt_fmt": {
+    "open_ended": 0.0,
+    "multiple_choice": 15.8,
+    "yes_no": 51.63,
+    "numeric": 8.19
+   },
+   "runs": 3
+  },
+  "prior": {
+   "mcqa_across": 29.95,
+   "mcqa_within": 30.8,
+   "oeq": 21.27,
+   "itt": 15.19,
+   "detection": 2.14,
+   "segmentation": 6.0,
+   "itt_fmt": {
+    "open_ended": 0.0,
+    "multiple_choice": 30.58,
+    "yes_no": 66.67,
+    "numeric": 6.36
+   },
+   "runs": 1
+  }
+ },
+ "seeds_per_model": {
+  "Qwen3.6-35B-A3B": [
+   0,
+   1,
+   2
+  ],
+  "Qwen3.8-27B": [
+   0,
+   1,
+   2
+  ],
+  "Gemma-4-31B": [
+   0,
+   1,
+   2
+  ],
+  "Gemma-4-12B": [
+   0,
+   1,
+   2
+  ],
+  "Muse-Glimmer-30B": [
+   0,
+   1,
+   2
+  ],
+  "Nemotron-3.5-Bolt-74B-A9B": [
+   0,
+   1,
+   2
+  ],
+  "MiniCPM-V-4.7-35B-A3B": [
+   0,
+   1,
+   2
+  ],
+  "Ministral-3-14B": [
+   0,
+   1,
+   2
+  ]
+ },
+ "main": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_across": 54.67,
+   "mcqa_within": 47.61,
+   "oeq": 26.96,
+   "itt": 49.65,
+   "detection": 22.97,
+   "segmentation": 29.96
+  },
+  "Qwen3.8-27B": {
+   "mcqa_across": 52.13,
+   "mcqa_within": 46.43,
+   "oeq": 28.06,
+   "itt": 53.91,
+   "detection": 24.68,
+   "segmentation": 28.57
+  },
+  "Gemma-4-31B": {
+   "mcqa_across": 54.9,
+   "mcqa_within": 48.19,
+   "oeq": 29.1,
+   "itt": 52.22,
+   "detection": 23.4,
+   "segmentation": 30.48
+  },
+  "Gemma-4-12B": {
+   "mcqa_across": 49.44,
+   "mcqa_within": 43.94,
+   "oeq": 25.04,
+   "itt": 45.39,
+   "detection": 21.29,
+   "segmentation": 30.56
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_across": 54.43,
+   "mcqa_within": 49.74,
+   "oeq": 35.6,
+   "itt": 59.67,
+   "detection": 15.9,
+   "segmentation": 24.24
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "mcqa_across": 47.72,
+   "mcqa_within": 40.84,
+   "oeq": 25.66,
+   "itt": 46.11,
+   "detection": 20.96,
+   "segmentation": 29.81
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_across": 37.31,
+   "mcqa_within": 41.43,
+   "oeq": 25.33,
+   "itt": 46.24,
+   "detection": 17.5,
+   "segmentation": 25.36
+  },
+  "Ministral-3-14B": {
+   "mcqa_across": 41.24,
+   "mcqa_within": 37.63,
+   "oeq": 14.39,
+   "itt": 36.85,
+   "detection": 8.5,
+   "segmentation": 12.54
+  }
+ },
+ "agtask": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_across/disease": 57.74,
+   "mcqa_across/pest_damage": 55.11,
+   "mcqa_across/species_id": 57.99,
+   "mcqa_across/quality_maturity": 37.98,
+   "mcqa_within/disease": 51.39,
+   "mcqa_within/pest_damage": 47.51,
+   "mcqa_within/species_id": 45.0,
+   "mcqa_within/quality_maturity": 42.02,
+   "oeq/disease": 30.06,
+   "oeq/pest_damage": 30.04,
+   "oeq/species_id": 16.92,
+   "oeq/quality_maturity": 39.55
+  },
+  "Qwen3.8-27B": {
+   "mcqa_across/disease": 54.9,
+   "mcqa_across/pest_damage": 53.7,
+   "mcqa_across/species_id": 54.59,
+   "mcqa_across/quality_maturity": 37.06,
+   "mcqa_within/disease": 51.14,
+   "mcqa_within/pest_damage": 43.6,
+   "mcqa_within/species_id": 42.14,
+   "mcqa_within/quality_maturity": 42.95,
+   "oeq/disease": 32.69,
+   "oeq/pest_damage": 30.81,
+   "oeq/species_id": 14.37,
+   "oeq/quality_maturity": 42.82
+  },
+  "Gemma-4-31B": {
+   "mcqa_across/disease": 58.19,
+   "mcqa_across/pest_damage": 55.94,
+   "mcqa_across/species_id": 57.4,
+   "mcqa_across/quality_maturity": 38.57,
+   "mcqa_within/disease": 54.26,
+   "mcqa_within/pest_damage": 50.35,
+   "mcqa_within/species_id": 41.5,
+   "mcqa_within/quality_maturity": 41.07,
+   "oeq/disease": 35.8,
+   "oeq/pest_damage": 26.73,
+   "oeq/species_id": 14.27,
+   "oeq/quality_maturity": 41.08
+  },
+  "Gemma-4-12B": {
+   "mcqa_across/disease": 54.23,
+   "mcqa_across/pest_damage": 47.1,
+   "mcqa_across/species_id": 48.51,
+   "mcqa_across/quality_maturity": 37.9,
+   "mcqa_within/disease": 50.13,
+   "mcqa_within/pest_damage": 38.92,
+   "mcqa_within/species_id": 38.02,
+   "mcqa_within/quality_maturity": 39.89,
+   "oeq/disease": 30.94,
+   "oeq/pest_damage": 22.74,
+   "oeq/species_id": 10.49,
+   "oeq/quality_maturity": 38.93
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_across/disease": 55.75,
+   "mcqa_across/pest_damage": 57.59,
+   "mcqa_across/species_id": 58.6,
+   "mcqa_across/quality_maturity": 38.48,
+   "mcqa_within/disease": 52.79,
+   "mcqa_within/pest_damage": 55.71,
+   "mcqa_within/species_id": 48.81,
+   "mcqa_within/quality_maturity": 42.2,
+   "oeq/disease": 39.35,
+   "oeq/pest_damage": 38.26,
+   "oeq/species_id": 27.24,
+   "oeq/quality_maturity": 42.09
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "mcqa_across/disease": 52.74,
+   "mcqa_across/pest_damage": 48.14,
+   "mcqa_across/species_id": 45.03,
+   "mcqa_across/quality_maturity": 36.17,
+   "mcqa_within/disease": 45.15,
+   "mcqa_within/pest_damage": 39.36,
+   "mcqa_within/species_id": 36.12,
+   "mcqa_within/quality_maturity": 37.16,
+   "oeq/disease": 31.9,
+   "oeq/pest_damage": 25.09,
+   "oeq/species_id": 10.63,
+   "oeq/quality_maturity": 37.19
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_across/disease": 38.02,
+   "mcqa_across/pest_damage": 35.78,
+   "mcqa_across/species_id": 40.06,
+   "mcqa_across/quality_maturity": 36.11,
+   "mcqa_within/disease": 45.21,
+   "mcqa_within/pest_damage": 44.0,
+   "mcqa_within/species_id": 36.01,
+   "mcqa_within/quality_maturity": 40.27,
+   "oeq/disease": 28.9,
+   "oeq/pest_damage": 24.66,
+   "oeq/species_id": 15.33,
+   "oeq/quality_maturity": 39.94
+  },
+  "Ministral-3-14B": {
+   "mcqa_across/disease": 44.6,
+   "mcqa_across/pest_damage": 39.19,
+   "mcqa_across/species_id": 38.18,
+   "mcqa_across/quality_maturity": 34.27,
+   "mcqa_within/disease": 41.68,
+   "mcqa_within/pest_damage": 28.7,
+   "mcqa_within/species_id": 32.73,
+   "mcqa_within/quality_maturity": 38.55,
+   "oeq/disease": 14.1,
+   "oeq/pest_damage": 11.28,
+   "oeq/species_id": 7.71,
+   "oeq/quality_maturity": 34.09
+  }
+ },
+ "agtask_mean": {
+  "mcqa_across/disease": 52.02,
+  "mcqa_across/pest_damage": 49.07,
+  "mcqa_across/species_id": 50.04,
+  "mcqa_across/quality_maturity": 37.07,
+  "mcqa_within/disease": 48.97,
+  "mcqa_within/pest_damage": 43.52,
+  "mcqa_within/species_id": 40.04,
+  "mcqa_within/quality_maturity": 40.51,
+  "oeq/disease": 30.47,
+  "oeq/pest_damage": 26.2,
+  "oeq/species_id": 14.62,
+  "oeq/quality_maturity": 39.46
+ },
+ "judge": {
+  "Qwen3.6-35B-A3B": {
+   "all": [
+    41.91,
+    27.71,
+    76.12
+   ],
+   "disease": [
+    50.85,
+    30.45,
+    70.46
+   ],
+   "pest_damage": [
+    41.12,
+    28.63,
+    78.57
+   ],
+   "species_id": [
+    28.27,
+    16.95,
+    81.19
+   ],
+   "quality_maturity": [
+    33.42,
+    38.13,
+    72.58
+   ]
+  },
+  "Qwen3.8-27B": {
+   "all": [
+    40.6,
+    29.7,
+    76.77
+   ],
+   "disease": [
+    51.93,
+    33.12,
+    69.38
+   ],
+   "pest_damage": [
+    36.5,
+    32.43,
+    81.46
+   ],
+   "species_id": [
+    24.03,
+    14.03,
+    83.72
+   ],
+   "quality_maturity": [
+    35.36,
+    44.16,
+    65.15
+   ]
+  },
+  "Gemma-4-31B": {
+   "all": [
+    34.19,
+    29.53,
+    80.41
+   ],
+   "disease": [
+    41.37,
+    36.5,
+    72.51
+   ],
+   "pest_damage": [
+    33.31,
+    25.65,
+    85.4
+   ],
+   "species_id": [
+    21.9,
+    13.91,
+    87.3
+   ],
+   "quality_maturity": [
+    31.07,
+    42.33,
+    72.58
+   ]
+  },
+  "Gemma-4-12B": {
+   "all": [
+    31.84,
+    24.97,
+    78.8
+   ],
+   "disease": [
+    38.28,
+    30.68,
+    69.15
+   ],
+   "pest_damage": [
+    31.23,
+    22.27,
+    84.68
+   ],
+   "species_id": [
+    19.98,
+    10.88,
+    87.13
+   ],
+   "quality_maturity": [
+    30.73,
+    37.57,
+    70.31
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "all": [
+    45.76,
+    36.41,
+    77.44
+   ],
+   "disease": [
+    55.39,
+    39.12,
+    71.26
+   ],
+   "pest_damage": [
+    42.75,
+    37.81,
+    77.71
+   ],
+   "species_id": [
+    31.99,
+    26.91,
+    85.34
+   ],
+   "quality_maturity": [
+    39.8,
+    42.23,
+    65.36
+   ]
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "all": [
+    39.76,
+    26.35,
+    79.33
+   ],
+   "disease": [
+    49.85,
+    31.83,
+    73.37
+   ],
+   "pest_damage": [
+    38.59,
+    26.65,
+    81.66
+   ],
+   "species_id": [
+    21.62,
+    10.74,
+    85.2
+   ],
+   "quality_maturity": [
+    37.05,
+    35.85,
+    72.99
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "all": [
+    43.59,
+    26.17,
+    74.15
+   ],
+   "disease": [
+    52.8,
+    29.13,
+    64.6
+   ],
+   "pest_damage": [
+    43.87,
+    25.61,
+    80.8
+   ],
+   "species_id": [
+    28.5,
+    15.1,
+    81.02
+   ],
+   "quality_maturity": [
+    34.54,
+    40.05,
+    72.78
+   ]
+  },
+  "Ministral-3-14B": {
+   "all": [
+    29.31,
+    13.76,
+    79.5
+   ],
+   "disease": [
+    35.77,
+    14.35,
+    71.82
+   ],
+   "pest_damage": [
+    26.83,
+    10.36,
+    85.47
+   ],
+   "species_id": [
+    16.93,
+    7.82,
+    85.85
+   ],
+   "quality_maturity": [
+    33.88,
+    33.61,
+    70.93
+   ]
+  }
+ },
+ "itt": {
+  "Qwen3.6-35B-A3B": {
+   "multiple_choice": 60.37,
+   "yes_no": 76.96,
+   "numeric": 17.8,
+   "open_ended": 44.37,
+   "rouge_l": 7.72
+  },
+  "Qwen3.8-27B": {
+   "multiple_choice": 60.62,
+   "yes_no": 73.37,
+   "numeric": 23.45,
+   "open_ended": 51.81,
+   "rouge_l": 6.24
+  },
+  "Gemma-4-31B": {
+   "multiple_choice": 58.31,
+   "yes_no": 78.43,
+   "numeric": 17.66,
+   "open_ended": 50.56,
+   "rouge_l": 8.87
+  },
+  "Gemma-4-12B": {
+   "multiple_choice": 52.52,
+   "yes_no": 75.65,
+   "numeric": 17.94,
+   "open_ended": 41.38,
+   "rouge_l": 7.7
+  },
+  "Muse-Glimmer-30B": {
+   "multiple_choice": 58.53,
+   "yes_no": 73.69,
+   "numeric": 22.18,
+   "open_ended": 64.73,
+   "rouge_l": 7.11
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "multiple_choice": 53.47,
+   "yes_no": 71.9,
+   "numeric": 18.93,
+   "open_ended": 42.08,
+   "rouge_l": 12.98
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "multiple_choice": 41.09,
+   "yes_no": 77.29,
+   "numeric": 10.88,
+   "open_ended": 51.62,
+   "rouge_l": 9.0
+  },
+  "Ministral-3-14B": {
+   "multiple_choice": 40.96,
+   "yes_no": 69.61,
+   "numeric": 16.67,
+   "open_ended": 33.37,
+   "rouge_l": 12.74
+  }
+ },
+ "seeds": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_across": [
+    0.32,
+    62.3,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.63,
+    55.7,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.5,
+    82.4,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    8.26,
+    64.3,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.52,
+    76.2,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.32,
+    85.0,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.56,
+    88.7,
+    "[0, 1, 2]"
+   ]
+  },
+  "Qwen3.8-27B": {
+   "mcqa_across": [
+    1.12,
+    68.3,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.41,
+    61.2,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.36,
+    84.1,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    0.45,
+    64.8,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.08,
+    75.2,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.24,
+    87.4,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.58,
+    91.1,
+    "[0, 1, 2]"
+   ]
+  },
+  "Gemma-4-31B": {
+   "mcqa_across": [
+    0.18,
+    77.9,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.08,
+    70.4,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.29,
+    89.6,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    0.79,
+    71.2,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.09,
+    80.3,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.7,
+    91.8,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.22,
+    91.9,
+    "[0, 1, 2]"
+   ]
+  },
+  "Gemma-4-12B": {
+   "mcqa_across": [
+    0.55,
+    64.3,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.19,
+    57.1,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.13,
+    86.8,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    8.2,
+    59.4,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.54,
+    74.5,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.49,
+    92.0,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.43,
+    94.8,
+    "[0, 1, 2]"
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_across": [
+    0.12,
+    83.7,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.33,
+    77.6,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.4,
+    88.4,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    0.42,
+    77.0,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.08,
+    85.1,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.28,
+    95.3,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.94,
+    94.4,
+    "[0, 1, 2]"
+   ]
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "mcqa_across": [
+    0.26,
+    50.3,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.43,
+    44.5,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.18,
+    85.1,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    1.54,
+    55.4,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.2,
+    71.8,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.21,
+    89.2,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.53,
+    84.7,
+    "[0, 1, 2]"
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_across": [
+    0.16,
+    73.1,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.3,
+    71.7,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.37,
+    91.5,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    0.63,
+    56.7,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    0.45,
+    87.0,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.44,
+    94.7,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.91,
+    94.4,
+    "[0, 1, 2]"
+   ]
+  },
+  "Ministral-3-14B": {
+   "mcqa_across": [
+    0.4,
+    67.8,
+    "[0, 1, 2]"
+   ],
+   "mcqa_within": [
+    0.24,
+    59.3,
+    "[0, 1, 2]"
+   ],
+   "oeq": [
+    0.24,
+    94.7,
+    "[0, 1, 2]"
+   ],
+   "itt_mc": [
+    8.91,
+    60.8,
+    "[0, 1, 2]"
+   ],
+   "itt_other": [
+    5.75,
+    81.3,
+    "[0, 1, 2]"
+   ],
+   "detection": [
+    0.53,
+    97.2,
+    "[0, 1, 2]"
+   ],
+   "segmentation": [
+    0.59,
+    93.1,
+    "[0, 1, 2]"
+   ]
+  }
+ },
+ "behaviour": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_within": [
+    47.0,
+    42.3,
+    57.7,
+    18.2,
+    0.0
+   ],
+   "mcqa_across": [
+    54.6,
+    57.1,
+    42.9,
+    25.5,
+    0.0
+   ]
+  },
+  "Qwen3.8-27B": {
+   "mcqa_within": [
+    46.3,
+    42.1,
+    56.4,
+    16.2,
+    1.8
+   ],
+   "mcqa_across": [
+    53.4,
+    57.2,
+    42.5,
+    25.8,
+    0.2
+   ]
+  },
+  "Gemma-4-31B": {
+   "mcqa_within": [
+    48.2,
+    45.5,
+    47.7,
+    15.4,
+    8.4
+   ],
+   "mcqa_across": [
+    54.8,
+    62.3,
+    35.6,
+    28.0,
+    2.2
+   ]
+  },
+  "Gemma-4-12B": {
+   "mcqa_within": [
+    43.7,
+    37.5,
+    60.2,
+    15.1,
+    2.6
+   ],
+   "mcqa_across": [
+    49.0,
+    54.3,
+    45.2,
+    28.1,
+    0.4
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_within": [
+    49.6,
+    62.4,
+    31.8,
+    29.5,
+    6.7
+   ],
+   "mcqa_across": [
+    54.4,
+    76.0,
+    22.8,
+    42.1,
+    1.4
+   ]
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "mcqa_within": [
+    41.3,
+    35.0,
+    58.5,
+    14.8,
+    6.3
+   ],
+   "mcqa_across": [
+    48.0,
+    48.7,
+    48.6,
+    25.0,
+    2.6
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_within": [
+    41.1,
+    49.6,
+    49.8,
+    25.3,
+    0.9
+   ],
+   "mcqa_across": [
+    37.2,
+    41.3,
+    58.4,
+    25.7,
+    0.2
+   ]
+  },
+  "Ministral-3-14B": {
+   "mcqa_within": [
+    37.6,
+    52.2,
+    39.9,
+    32.5,
+    6.6
+   ],
+   "mcqa_across": [
+    40.8,
+    66.5,
+    29.8,
+    49.4,
+    4.2
+   ]
+  }
+ },
+ "recall_vs_false_nota_spearman": {
+  "mcqa_within": 0.905,
+  "mcqa_across": 0.738
+ },
+ "within_minus_across": {
+  "Qwen3.6-35B-A3B": {
+   "accuracy": [
+    -7.6,
+    "-10.0, -5.2"
+   ],
+   "over_commit": [
+    14.83,
+    "+10.4, +19.2"
+   ],
+   "false_nota": [
+    -7.36,
+    "-9.6, -5.1"
+   ]
+  },
+  "Qwen3.8-27B": {
+   "accuracy": [
+    -7.12,
+    "-9.4, -4.8"
+   ],
+   "over_commit": [
+    14.29,
+    "+9.7, +18.8"
+   ],
+   "false_nota": [
+    -9.64,
+    "-11.9, -7.4"
+   ]
+  },
+  "Gemma-4-31B": {
+   "accuracy": [
+    -6.61,
+    "-9.1, -4.2"
+   ],
+   "over_commit": [
+    12.04,
+    "+7.7, +16.3"
+   ],
+   "false_nota": [
+    -12.63,
+    "-15.3, -10.1"
+   ]
+  },
+  "Gemma-4-12B": {
+   "accuracy": [
+    -5.24,
+    "-7.6, -2.8"
+   ],
+   "over_commit": [
+    15.18,
+    "+10.5, +19.8"
+   ],
+   "false_nota": [
+    -13.01,
+    "-15.6, -10.4"
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "accuracy": [
+    -4.77,
+    "-7.0, -2.4"
+   ],
+   "over_commit": [
+    9.11,
+    "+4.8, +13.3"
+   ],
+   "false_nota": [
+    -12.56,
+    "-15.5, -9.8"
+   ]
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "accuracy": [
+    -6.74,
+    "-9.0, -4.5"
+   ],
+   "over_commit": [
+    9.74,
+    "+5.4, +14.2"
+   ],
+   "false_nota": [
+    -10.23,
+    "-12.5, -8.1"
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "accuracy": [
+    3.96,
+    "+1.2, +6.7"
+   ],
+   "over_commit": [
+    -8.69,
+    "-13.9, -3.5"
+   ],
+   "false_nota": [
+    -0.39,
+    "-3.5, +2.6"
+   ]
+  },
+  "Ministral-3-14B": {
+   "accuracy": [
+    -3.21,
+    "-5.4, -1.1"
+   ],
+   "over_commit": [
+    10.23,
+    "+6.0, +14.4"
+   ],
+   "false_nota": [
+    -16.89,
+    "-19.8, -14.1"
+   ]
+  }
+ },
+ "pairs": {
+  "mcqa_within": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    0.79,
+    "[-0.6, +2.1]",
+    "0.5272"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    -2.56,
+    "[-4.0, -1.1]",
+    "0.0072"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -1.15,
+    "[-2.6, +0.3]",
+    "0.3888"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    3.3,
+    "[+1.7, +4.9]",
+    "0.002"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    9.47,
+    "[+7.6, +11.3]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    5.77,
+    "[+4.1, +7.4]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    5.91,
+    "[+4.0, +7.8]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    -3.35,
+    "[-4.8, -1.8]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    -1.94,
+    "[-3.4, -0.5]",
+    "0.05"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    2.51,
+    "[+1.0, +4.0]",
+    "0.0096"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    8.68,
+    "[+6.9, +10.5]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    4.98,
+    "[+3.5, +6.5]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    5.11,
+    "[+3.2, +7.1]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    1.41,
+    "[-0.1, +2.8]",
+    "0.2264"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    5.86,
+    "[+4.2, +7.5]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    12.03,
+    "[+10.1, +14.0]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    8.33,
+    "[+6.6, +10.0]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    8.46,
+    "[+6.4, +10.5]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    4.45,
+    "[+3.0, +5.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    10.63,
+    "[+8.4, +12.8]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    6.92,
+    "[+5.3, +8.6]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    7.06,
+    "[+4.9, +9.3]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    6.18,
+    "[+4.3, +8.1]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    2.47,
+    "[+1.0, +3.9]",
+    "0.0096"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    2.61,
+    "[+0.8, +4.4]",
+    "0.0252"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -3.7,
+    "[-5.5, -1.9]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -3.57,
+    "[-5.3, -1.8]",
+    "0"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    0.13,
+    "[-1.7, +2.0]",
+    "0.8916"
+   ]
+  ],
+  "mcqa_across": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    1.27,
+    "[-0.1, +2.6]",
+    "0.4092"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    0.28,
+    "[-1.0, +1.6]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -0.16,
+    "[-1.5, +1.2]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    5.66,
+    "[+4.2, +7.1]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    13.86,
+    "[+11.8, +15.9]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    6.63,
+    "[+4.9, +8.3]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    17.46,
+    "[+15.5, +19.5]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    -0.99,
+    "[-2.5, +0.6]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    -1.43,
+    "[-2.9, +0.1]",
+    "0.4046"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    4.39,
+    "[+2.8, +6.0]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    12.59,
+    "[+10.7, +14.4]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    5.36,
+    "[+3.6, +7.1]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    16.2,
+    "[+14.3, +18.2]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    -0.43,
+    "[-1.7, +0.9]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    5.39,
+    "[+3.9, +6.9]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    13.58,
+    "[+11.6, +15.6]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    6.36,
+    "[+4.5, +8.2]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    17.19,
+    "[+15.2, +19.2]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    5.82,
+    "[+4.5, +7.2]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    14.02,
+    "[+12.0, +16.0]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    6.79,
+    "[+5.2, +8.4]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    17.62,
+    "[+15.6, +19.8]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    8.2,
+    "[+6.3, +10.1]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    0.97,
+    "[-0.5, +2.5]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    11.8,
+    "[+9.9, +13.8]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -7.23,
+    "[-9.2, -5.3]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    3.61,
+    "[+1.3, +5.9]",
+    "0.0192"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    10.83,
+    "[+8.8, +12.9]",
+    "0"
+   ]
+  ],
+  "oeq": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    -1.49,
+    "[-2.9, -0.1]",
+    "0.2702"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    -8.47,
+    "[-10.3, -6.7]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -2.44,
+    "[-4.1, -0.9]",
+    "0.018"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    2.08,
+    "[+0.7, +3.4]",
+    "0.0304"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    12.56,
+    "[+10.8, +14.3]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    1.25,
+    "[-0.3, +2.8]",
+    "0.57"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    1.38,
+    "[+0.1, +2.7]",
+    "0.2702"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    -6.97,
+    "[-8.7, -5.2]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    -0.95,
+    "[-2.2, +0.3]",
+    "0.57"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    3.57,
+    "[+2.3, +4.8]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    14.05,
+    "[+12.2, +16.0]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    2.74,
+    "[+1.4, +4.1]",
+    "0.002"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    2.87,
+    "[+1.5, +4.2]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    6.02,
+    "[+4.2, +7.9]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    10.54,
+    "[+8.6, +12.5]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    21.03,
+    "[+18.6, +23.5]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    9.71,
+    "[+7.8, +11.8]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    9.85,
+    "[+8.1, +11.6]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    4.52,
+    "[+3.4, +5.7]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    15.0,
+    "[+12.9, +17.2]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    3.69,
+    "[+2.3, +5.2]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    3.82,
+    "[+2.4, +5.3]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    10.49,
+    "[+8.8, +12.3]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -0.83,
+    "[-2.1, +0.4]",
+    "0.6078"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -0.69,
+    "[-2.0, +0.6]",
+    "0.6078"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -11.32,
+    "[-13.3, -9.5]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -11.18,
+    "[-13.1, -9.4]",
+    "0"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    0.14,
+    "[-1.4, +1.6]",
+    "0.8706"
+   ]
+  ],
+  "itt_mc": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    -16.05,
+    "[-44.5, -0.5]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    1.21,
+    "[-2.0, +5.0]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -13.99,
+    "[-43.1, +2.1]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    -7.79,
+    "[-40.1, +11.5]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    1.14,
+    "[-33.4, +21.0]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    3.5,
+    "[+1.2, +6.0]",
+    "0.027"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    15.36,
+    "[+8.8, +21.9]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    17.26,
+    "[+0.9, +45.6]",
+    "0.1222"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    2.06,
+    "[-0.0, +4.0]",
+    "0.648"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    8.26,
+    "[+3.1, +14.2]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    17.19,
+    "[+10.5, +22.8]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    19.55,
+    "[+4.1, +47.2]",
+    "0.0032"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    31.41,
+    "[+16.6, +55.5]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    -15.21,
+    "[-44.3, +1.2]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    -9.0,
+    "[-40.7, +9.7]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    -0.07,
+    "[-34.5, +19.7]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    2.29,
+    "[-1.9, +6.0]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    14.15,
+    "[+7.4, +20.5]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    6.21,
+    "[+1.5, +11.5]",
+    "0.1092"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    15.13,
+    "[+9.4, +20.0]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    17.49,
+    "[+2.4, +45.5]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    29.35,
+    "[+14.4, +54.1]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    8.92,
+    "[+4.9, +13.4]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    11.29,
+    "[-6.6, +42.2]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    23.14,
+    "[+8.3, +49.5]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    2.36,
+    "[-15.5, +35.5]",
+    "1"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    14.22,
+    "[-1.6, +43.4]",
+    "1"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    11.86,
+    "[+7.0, +16.6]",
+    "0"
+   ]
+  ],
+  "itt_other": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    -5.07,
+    "[-9.0, -1.5]",
+    "0.0256"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    -11.31,
+    "[-22.5, -3.9]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -3.54,
+    "[-10.4, +2.2]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    3.0,
+    "[+0.3, +6.0]",
+    "0.3576"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    7.23,
+    "[+3.7, +11.0]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    2.1,
+    "[-1.6, +5.8]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -2.2,
+    "[-9.9, +3.1]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    -6.24,
+    "[-17.2, +1.9]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    1.53,
+    "[-4.1, +5.8]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    8.07,
+    "[+4.5, +12.0]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    12.3,
+    "[+8.0, +16.4]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    7.17,
+    "[+1.9, +13.2]",
+    "0.051"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    2.88,
+    "[-3.7, +7.3]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    7.77,
+    "[+1.7, +14.4]",
+    "0.1624"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    14.3,
+    "[+6.1, +25.5]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    18.54,
+    "[+9.4, +30.7]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    13.4,
+    "[+5.5, +23.9]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    9.11,
+    "[+4.8, +13.8]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    6.54,
+    "[+1.8, +12.8]",
+    "0.0102"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    10.77,
+    "[+5.7, +17.3]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    5.64,
+    "[-0.4, +12.4]",
+    "0.7502"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    1.34,
+    "[-2.5, +4.5]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    4.23,
+    "[+1.8, +6.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -0.9,
+    "[-4.3, +2.6]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -5.19,
+    "[-12.5, +0.6]",
+    "0.898"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -5.13,
+    "[-9.1, -0.9]",
+    "0.2106"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -9.43,
+    "[-17.4, -3.2]",
+    "0.0036"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -4.29,
+    "[-11.6, +2.0]",
+    "1"
+   ]
+  ],
+  "detection": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    -1.83,
+    "[-4.3, +0.6]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    6.76,
+    "[+3.1, +10.6]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -0.01,
+    "[-2.8, +2.7]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    0.78,
+    "[-2.1, +3.8]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    14.13,
+    "[+9.7, +18.7]",
+    "0"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    1.41,
+    "[-1.2, +4.1]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    5.57,
+    "[+2.4, +8.8]",
+    "0.0096"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    8.59,
+    "[+5.4, +12.0]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    1.83,
+    "[-0.9, +4.6]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    2.61,
+    "[-0.3, +5.5]",
+    "0.7218"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    15.97,
+    "[+12.2, +20.0]",
+    "0"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    3.24,
+    "[+0.7, +5.9]",
+    "0.1848"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    7.4,
+    "[+4.4, +10.6]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    -6.76,
+    "[-9.8, -4.1]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    -5.98,
+    "[-9.0, -3.3]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    7.37,
+    "[+5.2, +9.7]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -5.35,
+    "[-8.2, -2.8]",
+    "0"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -1.19,
+    "[-3.1, +0.7]",
+    "1"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    0.79,
+    "[-0.7, +2.3]",
+    "1"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    14.14,
+    "[+10.6, +17.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    1.42,
+    "[-0.1, +3.0]",
+    "0.69"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    5.57,
+    "[+3.4, +7.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    13.35,
+    "[+10.0, +16.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    0.63,
+    "[-0.9, +2.3]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    4.79,
+    "[+2.5, +7.3]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -12.72,
+    "[-16.1, -9.6]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -8.57,
+    "[-11.5, -5.9]",
+    "0"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    4.16,
+    "[+2.0, +6.5]",
+    "0"
+   ]
+  ],
+  "segmentation": [
+   [
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    0.77,
+    "[-3.7, +5.5]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Muse-Glimmer-30B",
+    4.34,
+    "[-2.4, +10.6]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-31B",
+    -1.11,
+    "[-6.7, +4.4]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-12B",
+    -1.09,
+    "[-9.3, +6.7]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Ministral-3-14B",
+    17.14,
+    "[+6.5, +27.8]",
+    "0.0352"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    0.16,
+    "[-6.1, +5.9]",
+    "1"
+   ],
+   [
+    "Qwen3.6-35B-A3B",
+    "MiniCPM-V-4.7-35B-A3B",
+    3.1,
+    "[-2.8, +9.0]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Muse-Glimmer-30B",
+    3.56,
+    "[-2.5, +9.3]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-31B",
+    -1.89,
+    "[-6.4, +2.4]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Gemma-4-12B",
+    -1.87,
+    "[-8.3, +4.0]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Ministral-3-14B",
+    16.37,
+    "[+6.6, +26.3]",
+    "0.0092"
+   ],
+   [
+    "Qwen3.8-27B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -0.61,
+    "[-6.2, +4.5]",
+    "1"
+   ],
+   [
+    "Qwen3.8-27B",
+    "MiniCPM-V-4.7-35B-A3B",
+    2.33,
+    "[-2.8, +7.4]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-31B",
+    -5.45,
+    "[-9.6, -1.6]",
+    "0.1596"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Gemma-4-12B",
+    -5.43,
+    "[-10.5, -0.3]",
+    "0.6878"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Ministral-3-14B",
+    12.81,
+    "[+5.7, +21.1]",
+    "0.0048"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -4.17,
+    "[-8.8, +0.7]",
+    "1"
+   ],
+   [
+    "Muse-Glimmer-30B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -1.24,
+    "[-4.3, +2.0]",
+    "1"
+   ],
+   [
+    "Gemma-4-31B",
+    "Gemma-4-12B",
+    0.02,
+    "[-4.4, +4.6]",
+    "1"
+   ],
+   [
+    "Gemma-4-31B",
+    "Ministral-3-14B",
+    18.26,
+    "[+9.8, +27.9]",
+    "0"
+   ],
+   [
+    "Gemma-4-31B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    1.28,
+    "[-2.5, +6.1]",
+    "1"
+   ],
+   [
+    "Gemma-4-31B",
+    "MiniCPM-V-4.7-35B-A3B",
+    4.21,
+    "[+0.9, +7.6]",
+    "0.304"
+   ],
+   [
+    "Gemma-4-12B",
+    "Ministral-3-14B",
+    18.24,
+    "[+11.2, +26.8]",
+    "0"
+   ],
+   [
+    "Gemma-4-12B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    1.25,
+    "[-3.0, +5.3]",
+    "1"
+   ],
+   [
+    "Gemma-4-12B",
+    "MiniCPM-V-4.7-35B-A3B",
+    4.19,
+    "[+0.2, +8.3]",
+    "0.6878"
+   ],
+   [
+    "Ministral-3-14B",
+    "Nemotron-3.5-Bolt-74B-A9B",
+    -16.98,
+    "[-26.0, -9.1]",
+    "0"
+   ],
+   [
+    "Ministral-3-14B",
+    "MiniCPM-V-4.7-35B-A3B",
+    -14.04,
+    "[-22.7, -6.7]",
+    "0"
+   ],
+   [
+    "Nemotron-3.5-Bolt-74B-A9B",
+    "MiniCPM-V-4.7-35B-A3B",
+    2.94,
+    "[-1.0, +6.6]",
+    "1"
+   ]
+  ]
+ },
+ "position": {
+  "Qwen3.6-35B-A3B/mcqa_within": {
+   "1": [
+    18.2,
+    17.5
+   ],
+   "2": [
+    17.3,
+    17.4
+   ],
+   "3": [
+    17.6,
+    17.3
+   ],
+   "4": [
+    16.7,
+    16.7
+   ],
+   "5": [
+    15.8,
+    16.3
+   ],
+   "6": [
+    14.4,
+    14.9
+   ]
+  },
+  "Qwen3.6-35B-A3B/mcqa_across": {
+   "1": [
+    16.7,
+    16.7
+   ],
+   "2": [
+    16.3,
+    16.8
+   ],
+   "3": [
+    16.8,
+    16.4
+   ],
+   "4": [
+    16.9,
+    17.0
+   ],
+   "5": [
+    16.4,
+    16.5
+   ],
+   "6": [
+    16.9,
+    16.6
+   ]
+  },
+  "Qwen3.6-35B-A3B/itt_mc": {
+   "1": [
+    16.5,
+    16.4
+   ],
+   "2": [
+    17.5,
+    17.0
+   ],
+   "3": [
+    18.4,
+    16.4
+   ],
+   "4": [
+    16.3,
+    16.6
+   ],
+   "5": [
+    14.4,
+    14.9
+   ],
+   "6": [
+    12.2,
+    13.2
+   ],
+   "7": [
+    3.8,
+    4.5
+   ],
+   "8": [
+    0.3,
+    0.3
+   ],
+   "9": [
+    0.3,
+    0.3
+   ],
+   "10": [
+    0.2,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.1,
+    0.0
+   ]
+  },
+  "Qwen3.8-27B/mcqa_within": {
+   "1": [
+    18.7,
+    17.5
+   ],
+   "2": [
+    18.2,
+    17.4
+   ],
+   "3": [
+    17.8,
+    17.3
+   ],
+   "4": [
+    16.3,
+    16.7
+   ],
+   "5": [
+    15.2,
+    16.3
+   ],
+   "6": [
+    13.8,
+    14.9
+   ]
+  },
+  "Qwen3.8-27B/mcqa_across": {
+   "1": [
+    17.3,
+    16.7
+   ],
+   "2": [
+    17.5,
+    16.8
+   ],
+   "3": [
+    17.1,
+    16.4
+   ],
+   "4": [
+    16.8,
+    17.0
+   ],
+   "5": [
+    15.2,
+    16.4
+   ],
+   "6": [
+    15.9,
+    16.6
+   ]
+  },
+  "Qwen3.8-27B/itt_mc": {
+   "1": [
+    15.1,
+    16.4
+   ],
+   "2": [
+    19.4,
+    16.9
+   ],
+   "3": [
+    17.4,
+    16.3
+   ],
+   "4": [
+    16.6,
+    16.6
+   ],
+   "5": [
+    13.8,
+    15.0
+   ],
+   "6": [
+    12.7,
+    13.3
+   ],
+   "7": [
+    4.3,
+    4.5
+   ],
+   "8": [
+    0.3,
+    0.3
+   ],
+   "9": [
+    0.2,
+    0.3
+   ],
+   "10": [
+    0.1,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.0,
+    0.0
+   ]
+  },
+  "Muse-Glimmer-30B/mcqa_within": {
+   "1": [
+    17.3,
+    17.5
+   ],
+   "2": [
+    19.3,
+    17.4
+   ],
+   "3": [
+    18.7,
+    17.3
+   ],
+   "4": [
+    16.6,
+    16.7
+   ],
+   "5": [
+    14.8,
+    16.3
+   ],
+   "6": [
+    13.2,
+    14.9
+   ]
+  },
+  "Muse-Glimmer-30B/mcqa_across": {
+   "1": [
+    16.1,
+    16.7
+   ],
+   "2": [
+    17.5,
+    16.8
+   ],
+   "3": [
+    17.7,
+    16.4
+   ],
+   "4": [
+    17.1,
+    17.0
+   ],
+   "5": [
+    15.3,
+    16.4
+   ],
+   "6": [
+    16.3,
+    16.6
+   ]
+  },
+  "Muse-Glimmer-30B/itt_mc": {
+   "1": [
+    15.4,
+    16.4
+   ],
+   "2": [
+    17.9,
+    16.9
+   ],
+   "3": [
+    18.0,
+    16.4
+   ],
+   "4": [
+    16.6,
+    16.6
+   ],
+   "5": [
+    14.1,
+    14.9
+   ],
+   "6": [
+    12.7,
+    13.2
+   ],
+   "7": [
+    4.4,
+    4.5
+   ],
+   "8": [
+    0.3,
+    0.3
+   ],
+   "9": [
+    0.4,
+    0.4
+   ],
+   "10": [
+    0.1,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.0,
+    0.0
+   ]
+  },
+  "Gemma-4-31B/mcqa_within": {
+   "1": [
+    18.1,
+    17.5
+   ],
+   "2": [
+    18.2,
+    17.4
+   ],
+   "3": [
+    17.7,
+    17.3
+   ],
+   "4": [
+    16.2,
+    16.7
+   ],
+   "5": [
+    15.3,
+    16.3
+   ],
+   "6": [
+    14.3,
+    14.9
+   ]
+  },
+  "Gemma-4-31B/mcqa_across": {
+   "1": [
+    16.6,
+    16.7
+   ],
+   "2": [
+    17.5,
+    16.8
+   ],
+   "3": [
+    16.9,
+    16.4
+   ],
+   "4": [
+    16.4,
+    17.0
+   ],
+   "5": [
+    15.8,
+    16.4
+   ],
+   "6": [
+    16.7,
+    16.6
+   ]
+  },
+  "Gemma-4-31B/itt_mc": {
+   "1": [
+    15.5,
+    16.3
+   ],
+   "2": [
+    18.0,
+    16.9
+   ],
+   "3": [
+    17.0,
+    16.4
+   ],
+   "4": [
+    17.1,
+    16.6
+   ],
+   "5": [
+    14.0,
+    15.0
+   ],
+   "6": [
+    13.2,
+    13.4
+   ],
+   "7": [
+    4.2,
+    4.5
+   ],
+   "8": [
+    0.3,
+    0.3
+   ],
+   "9": [
+    0.3,
+    0.3
+   ],
+   "10": [
+    0.2,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.1,
+    0.0
+   ]
+  },
+  "Gemma-4-12B/mcqa_within": {
+   "1": [
+    19.3,
+    17.5
+   ],
+   "2": [
+    17.8,
+    17.4
+   ],
+   "3": [
+    17.7,
+    17.3
+   ],
+   "4": [
+    16.3,
+    16.7
+   ],
+   "5": [
+    15.1,
+    16.3
+   ],
+   "6": [
+    13.7,
+    14.9
+   ]
+  },
+  "Gemma-4-12B/mcqa_across": {
+   "1": [
+    17.5,
+    16.7
+   ],
+   "2": [
+    17.1,
+    16.8
+   ],
+   "3": [
+    16.8,
+    16.4
+   ],
+   "4": [
+    16.8,
+    17.0
+   ],
+   "5": [
+    15.6,
+    16.4
+   ],
+   "6": [
+    16.1,
+    16.6
+   ]
+  },
+  "Gemma-4-12B/itt_mc": {
+   "1": [
+    17.1,
+    16.4
+   ],
+   "2": [
+    17.7,
+    16.8
+   ],
+   "3": [
+    17.4,
+    16.4
+   ],
+   "4": [
+    16.2,
+    16.5
+   ],
+   "5": [
+    14.2,
+    15.1
+   ],
+   "6": [
+    12.7,
+    13.4
+   ],
+   "7": [
+    3.9,
+    4.6
+   ],
+   "8": [
+    0.3,
+    0.3
+   ],
+   "9": [
+    0.2,
+    0.3
+   ],
+   "10": [
+    0.3,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.0,
+    0.0
+   ]
+  },
+  "Ministral-3-14B/mcqa_within": {
+   "1": [
+    12.7,
+    17.5
+   ],
+   "2": [
+    16.3,
+    17.4
+   ],
+   "3": [
+    18.5,
+    17.3
+   ],
+   "4": [
+    18.3,
+    16.7
+   ],
+   "5": [
+    18.2,
+    16.3
+   ],
+   "6": [
+    16.0,
+    14.9
+   ]
+  },
+  "Ministral-3-14B/mcqa_across": {
+   "1": [
+    10.7,
+    16.7
+   ],
+   "2": [
+    15.4,
+    16.8
+   ],
+   "3": [
+    17.4,
+    16.4
+   ],
+   "4": [
+    18.3,
+    17.0
+   ],
+   "5": [
+    18.5,
+    16.4
+   ],
+   "6": [
+    19.7,
+    16.6
+   ]
+  },
+  "Ministral-3-14B/itt_mc": {
+   "1": [
+    13.4,
+    16.4
+   ],
+   "2": [
+    18.0,
+    17.0
+   ],
+   "3": [
+    17.5,
+    16.5
+   ],
+   "4": [
+    17.4,
+    16.6
+   ],
+   "5": [
+    15.4,
+    14.9
+   ],
+   "6": [
+    13.7,
+    13.4
+   ],
+   "7": [
+    4.0,
+    4.3
+   ],
+   "8": [
+    0.2,
+    0.3
+   ],
+   "9": [
+    0.2,
+    0.3
+   ],
+   "10": [
+    0.1,
+    0.1
+   ],
+   "11": [
+    0.0,
+    0.1
+   ],
+   "12": [
+    0.1,
+    0.0
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B/mcqa_within": {
+   "1": [
+    17.4,
+    17.5
+   ],
+   "2": [
+    18.0,
+    17.3
+   ],
+   "3": [
+    18.0,
+    17.3
+   ],
+   "4": [
+    17.3,
+    16.7
+   ],
+   "5": [
+    15.6,
+    16.3
+   ],
+   "6": [
+    13.8,
+    14.9
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B/mcqa_across": {
+   "1": [
+    17.2,
+    16.7
+   ],
+   "2": [
+    17.4,
+    16.8
+   ],
+   "3": [
+    17.0,
+    16.4
+   ],
+   "4": [
+    16.8,
+    17.0
+   ],
+   "5": [
+    15.7,
+    16.4
+   ],
+   "6": [
+    15.8,
+    16.6
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B/itt_mc": {
+   "1": [
+    23.6,
+    16.4
+   ],
+   "2": [
+    19.2,
+    17.0
+   ],
+   "3": [
+    16.7,
+    16.4
+   ],
+   "4": [
+    15.1,
+    16.6
+   ],
+   "5": [
+    12.8,
+    15.0
+   ],
+   "6": [
+    9.1,
+    13.2
+   ],
+   "7": [
+    2.9,
+    4.5
+   ],
+   "8": [
+    0.2,
+    0.3
+   ],
+   "9": [
+    0.3,
+    0.3
+   ],
+   "10": [
+    0.1,
+    0.2
+   ],
+   "11": [
+    0.1,
+    0.2
+   ],
+   "12": [
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "order": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_within": [
+    47.18,
+    0.19,
+    44.2,
+    0.7,
+    1
+   ],
+   "mcqa_across": [
+    54.29,
+    0.55,
+    49.6,
+    -0.5,
+    2
+   ],
+   "itt_mc": [
+    56.73,
+    7.42,
+    52.4,
+    2.0,
+    3
+   ]
+  },
+  "Qwen3.8-27B": {
+   "mcqa_within": [
+    44.52,
+    0.28,
+    46.0,
+    1.2,
+    1
+   ],
+   "mcqa_across": [
+    51.46,
+    0.3,
+    52.9,
+    -1.2,
+    5
+   ],
+   "itt_mc": [
+    66.21,
+    0.58,
+    53.1,
+    2.5,
+    2
+   ]
+  },
+  "Gemma-4-31B": {
+   "mcqa_within": [
+    46.89,
+    0.34,
+    57.0,
+    -1.0,
+    5
+   ],
+   "mcqa_across": [
+    54.93,
+    0.19,
+    63.7,
+    0.7,
+    2
+   ],
+   "itt_mc": [
+    65.36,
+    0.65,
+    59.7,
+    1.1,
+    2
+   ]
+  },
+  "Gemma-4-12B": {
+   "mcqa_within": [
+    42.58,
+    0.29,
+    42.3,
+    1.8,
+    1
+   ],
+   "mcqa_across": [
+    49.57,
+    0.55,
+    49.8,
+    0.8,
+    1
+   ],
+   "itt_mc": [
+    53.66,
+    8.76,
+    50.0,
+    1.0,
+    3
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_within": [
+    46.86,
+    0.3,
+    55.5,
+    1.9,
+    2
+   ],
+   "mcqa_across": [
+    54.7,
+    0.41,
+    63.0,
+    1.3,
+    3
+   ],
+   "itt_mc": [
+    52.61,
+    6.89,
+    61.7,
+    1.6,
+    3
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_within": [
+    41.31,
+    0.61,
+    43.3,
+    -1.1,
+    6
+   ],
+   "mcqa_across": [
+    39.85,
+    0.39,
+    49.9,
+    -0.8,
+    6
+   ],
+   "itt_mc": [
+    35.77,
+    1.28,
+    28.5,
+    7.2,
+    1
+   ]
+  },
+  "Ministral-3-14B": {
+   "mcqa_within": [
+    34.38,
+    0.45,
+    26.7,
+    -4.8,
+    1
+   ],
+   "mcqa_across": [
+    38.92,
+    0.29,
+    29.6,
+    -6.0,
+    1
+   ],
+   "itt_mc": [
+    50.91,
+    0.67,
+    40.2,
+    -3.0,
+    1
+   ]
+  }
+ },
+ "nota_rate": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_within": {
+    "0.1": [
+     "49.4 [46.4, 52.3]",
+     "+2.3 [+0.9, +3.7] p=0.0018",
+     "41.1 [35.9, 46.3]",
+     "-0.3 [-4.2, +3.5] p=0.843"
+    ],
+    "0.5": [
+     "46.6 [44.1, 49.0]",
+     "-0.5 [-1.9, +1.0] p=0.519",
+     "43.6 [40.4, 46.7]",
+     "+1.2 [-0.9, +3.4] p=0.275"
+    ],
+    "default": [
+     "47.0 [44.5, 49.6]",
+     "nan",
+     "42.3 [38.8, 45.8]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "52.9 [49.8, 55.9]",
+     "-1.8 [-3.1, -0.5] p=0.0084",
+     "57.1 [52.3, 61.9]",
+     "-0.0 [-4.1, +4.2] p=0.999"
+    ],
+    "0.5": [
+     "55.2 [52.8, 57.4]",
+     "+0.5 [-0.9, +1.9] p=0.498",
+     "58.3 [55.7, 60.9]",
+     "+1.2 [-1.1, +3.5] p=0.31"
+    ],
+    "default": [
+     "54.6 [52.0, 57.2]",
+     "nan",
+     "57.1 [54.1, 60.2]",
+     "nan"
+    ]
+   }
+  },
+  "Qwen3.8-27B": {
+   "mcqa_within": {
+    "0.1": [
+     "46.9 [43.9, 49.9]",
+     "+0.7 [-0.7, +1.9] p=0.317",
+     "38.8 [33.9, 43.7]",
+     "-3.3 [-7.0, +0.5] p=0.0802"
+    ],
+    "0.5": [
+     "44.8 [42.2, 47.4]",
+     "-1.5 [-2.6, -0.4] p=0.0066",
+     "40.7 [37.5, 44.0]",
+     "-1.5 [-3.5, +0.5] p=0.147"
+    ],
+    "default": [
+     "46.3 [43.6, 49.0]",
+     "nan",
+     "42.1 [38.5, 45.9]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "51.1 [48.1, 54.0]",
+     "-2.3 [-3.6, -1.0] p=0",
+     "54.4 [49.5, 59.3]",
+     "-2.9 [-6.9, +1.2] p=0.161"
+    ],
+    "0.5": [
+     "53.6 [51.3, 55.9]",
+     "+0.2 [-1.1, +1.6] p=0.756",
+     "55.8 [52.9, 58.7]",
+     "-1.4 [-3.4, +0.6] p=0.18"
+    ],
+    "default": [
+     "53.4 [50.8, 55.9]",
+     "nan",
+     "57.2 [53.9, 60.5]",
+     "nan"
+    ]
+   }
+  },
+  "Gemma-4-31B": {
+   "mcqa_within": {
+    "0.1": [
+     "48.8 [45.5, 52.1]",
+     "+0.6 [-0.7, +1.9] p=0.369",
+     "43.5 [38.5, 48.5]",
+     "-1.6 [-5.3, +2.0] p=0.383"
+    ],
+    "0.5": [
+     "47.3 [44.5, 50.0]",
+     "-0.9 [-2.1, +0.3] p=0.117",
+     "44.9 [41.7, 48.0]",
+     "-0.7 [-2.5, +1.1] p=0.434"
+    ],
+    "default": [
+     "48.2 [45.2, 51.2]",
+     "nan",
+     "45.5 [41.9, 49.2]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "53.3 [50.0, 56.5]",
+     "-1.5 [-2.8, -0.2] p=0.026",
+     "60.6 [55.7, 65.4]",
+     "-2.0 [-5.5, +1.6] p=0.265"
+    ],
+    "0.5": [
+     "56.5 [54.0, 58.9]",
+     "+1.7 [+0.4, +3.0] p=0.014",
+     "62.1 [59.1, 64.9]",
+     "-0.2 [-2.1, +1.7] p=0.807"
+    ],
+    "default": [
+     "54.8 [52.0, 57.6]",
+     "nan",
+     "62.3 [58.9, 65.6]",
+     "nan"
+    ]
+   }
+  },
+  "Gemma-4-12B": {
+   "mcqa_within": {
+    "0.1": [
+     "45.4 [42.6, 48.4]",
+     "+1.7 [+0.3, +3.0] p=0.0146",
+     "37.5 [32.6, 42.6]",
+     "+0.6 [-3.0, +4.2] p=0.738"
+    ],
+    "0.5": [
+     "43.3 [40.8, 45.9]",
+     "-0.4 [-1.7, +0.9] p=0.521",
+     "38.8 [35.6, 42.1]",
+     "+1.7 [-0.4, +3.8] p=0.122"
+    ],
+    "default": [
+     "43.7 [41.1, 46.4]",
+     "nan",
+     "37.5 [34.0, 41.0]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "48.3 [45.4, 51.3]",
+     "-0.7 [-2.0, +0.7] p=0.313",
+     "53.8 [49.0, 58.6]",
+     "-0.2 [-4.2, +3.8] p=0.93"
+    ],
+    "0.5": [
+     "51.6 [49.4, 53.9]",
+     "+2.7 [+1.4, +3.9] p=0",
+     "55.5 [52.7, 58.2]",
+     "+1.2 [-1.0, +3.4] p=0.273"
+    ],
+    "default": [
+     "49.0 [46.4, 51.5]",
+     "nan",
+     "54.3 [51.0, 57.6]",
+     "nan"
+    ]
+   }
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_within": {
+    "0.1": [
+     "46.1 [42.7, 49.5]",
+     "-3.5 [-4.8, -2.2] p=0",
+     "61.7 [56.6, 66.7]",
+     "-0.1 [-3.7, +3.5] p=0.983"
+    ],
+    "0.5": [
+     "53.7 [51.0, 56.3]",
+     "+4.1 [+2.9, +5.3] p=0",
+     "62.2 [58.9, 65.5]",
+     "-0.3 [-2.0, +1.4] p=0.726"
+    ],
+    "default": [
+     "49.6 [46.7, 52.5]",
+     "nan",
+     "62.4 [58.9, 66.0]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "48.7 [45.6, 51.8]",
+     "-5.6 [-6.8, -4.4] p=0",
+     "76.4 [71.9, 80.9]",
+     "+0.3 [-3.3, +3.8] p=0.871"
+    ],
+    "0.5": [
+     "60.3 [58.0, 62.5]",
+     "+5.9 [+4.8, +7.1] p=0",
+     "75.6 [73.3, 77.8]",
+     "-0.4 [-2.1, +1.4] p=0.658"
+    ],
+    "default": [
+     "54.4 [51.7, 56.9]",
+     "nan",
+     "76.0 [73.1, 78.7]",
+     "nan"
+    ]
+   }
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_within": {
+    "0.1": [
+     "38.9 [36.2, 41.7]",
+     "-2.2 [-3.8, -0.6] p=0.0078",
+     "47.8 [42.3, 53.3]",
+     "-0.4 [-3.5, +2.8] p=0.827"
+    ],
+    "0.5": [
+     "44.1 [41.7, 46.7]",
+     "+3.0 [+1.5, +4.5] p=0",
+     "50.0 [45.7, 54.2]",
+     "+0.4 [-1.5, +2.3] p=0.629"
+    ],
+    "default": [
+     "41.1 [38.8, 43.5]",
+     "nan",
+     "49.6 [45.2, 53.8]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "35.8 [33.0, 38.7]",
+     "-1.4 [-2.5, -0.2] p=0.0194",
+     "43.0 [38.1, 47.7]",
+     "+1.9 [-2.0, +5.7] p=0.332"
+    ],
+    "0.5": [
+     "38.8 [36.5, 40.9]",
+     "+1.6 [+0.3, +2.9] p=0.017",
+     "42.5 [39.8, 45.2]",
+     "+1.2 [-1.1, +3.5] p=0.298"
+    ],
+    "default": [
+     "37.2 [34.7, 39.6]",
+     "nan",
+     "41.3 [38.2, 44.4]",
+     "nan"
+    ]
+   }
+  },
+  "Ministral-3-14B": {
+   "mcqa_within": {
+    "0.1": [
+     "33.4 [31.0, 35.8]",
+     "-4.2 [-5.6, -2.8] p=0",
+     "47.8 [42.7, 52.9]",
+     "-3.7 [-8.2, +0.9] p=0.112"
+    ],
+    "0.5": [
+     "41.8 [39.7, 44.0]",
+     "+4.3 [+2.8, +5.7] p=0",
+     "52.1 [48.8, 55.3]",
+     "-0.6 [-2.8, +1.5] p=0.599"
+    ],
+    "default": [
+     "37.6 [35.5, 39.8]",
+     "nan",
+     "52.2 [48.7, 55.7]",
+     "nan"
+    ]
+   },
+   "mcqa_across": {
+    "0.1": [
+     "33.6 [31.1, 36.2]",
+     "-7.2 [-8.6, -5.8] p=0",
+     "68.4 [63.7, 73.1]",
+     "+1.1 [-2.8, +5.1] p=0.558"
+    ],
+    "0.5": [
+     "48.5 [46.5, 50.5]",
+     "+7.7 [+6.2, +9.3] p=0",
+     "67.9 [65.1, 70.5]",
+     "+1.3 [-1.2, +3.9] p=0.298"
+    ],
+    "default": [
+     "40.8 [38.6, 42.9]",
+     "nan",
+     "66.5 [63.3, 69.7]",
+     "nan"
+    ]
+   }
+  }
+ },
+ "idk": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_within": [
+    "0.0 [0.0, 0.0]",
+    "+1.6 [+0.5, +2.6] p=0.0026",
+    "+1.8 [-0.1, +3.8] p=0.0652",
+    "+0.1 [-1.2, +1.3] p=0.918"
+   ],
+   "mcqa_across": [
+    "0.0 [0.0, 0.0]",
+    "+1.0 [-0.1, +2.1] p=0.0762",
+    "+2.0 [-0.6, +4.6] p=0.143",
+    "+1.0 [-0.4, +2.4] p=0.166"
+   ],
+   "itt_mc": [
+    "0.3 [0.1, 0.6]",
+    "+16.4 [+1.3, +44.7] p=0",
+    "nan",
+    "-13.3 [-42.7, +2.1] p=0.638"
+   ]
+  },
+  "Qwen3.8-27B": {
+   "mcqa_within": [
+    "1.8 [1.1, 2.7]",
+    "+0.5 [-0.5, +1.5] p=0.319",
+    "-0.6 [-2.6, +1.2] p=0.503",
+    "-0.7 [-1.9, +0.5] p=0.268"
+   ],
+   "mcqa_across": [
+    "0.2 [0.1, 0.3]",
+    "-0.9 [-2.0, +0.1] p=0.0864",
+    "-1.5 [-3.6, +0.6] p=0.154",
+    "+1.0 [-0.1, +2.0] p=0.0668"
+   ],
+   "itt_mc": [
+    "0.4 [0.0, 1.3]",
+    "-0.6 [-2.9, +1.4] p=0.649",
+    "nan",
+    "+0.6 [-1.7, +2.8] p=0.583"
+   ]
+  },
+  "Gemma-4-31B": {
+   "mcqa_within": [
+    "8.4 [6.0, 11.0]",
+    "+2.4 [+1.3, +3.5] p=0",
+    "+4.9 [+2.7, +7.3] p=0",
+    "+5.6 [+3.4, +8.0] p=0"
+   ],
+   "mcqa_across": [
+    "2.2 [1.3, 3.2]",
+    "+0.9 [+0.1, +1.7] p=0.0206",
+    "+2.5 [+0.7, +4.5] p=0.0066",
+    "+1.4 [+0.2, +2.6] p=0.018"
+   ],
+   "itt_mc": [
+    "0.6 [0.2, 1.1]",
+    "-0.4 [-2.4, +1.3] p=0.674",
+    "nan",
+    "+1.6 [+0.9, +2.4] p=0"
+   ]
+  },
+  "Gemma-4-12B": {
+   "mcqa_within": [
+    "2.6 [1.5, 3.9]",
+    "+0.2 [-0.8, +1.2] p=0.698",
+    "-0.6 [-2.7, +1.3] p=0.533",
+    "-0.3 [-1.3, +0.8] p=0.577"
+   ],
+   "mcqa_across": [
+    "0.4 [0.2, 0.8]",
+    "+0.6 [-0.4, +1.6] p=0.279",
+    "-0.4 [-2.6, +1.7] p=0.691",
+    "-0.5 [-1.8, +0.7] p=0.448"
+   ],
+   "itt_mc": [
+    "0.6 [0.1, 1.2]",
+    "+0.3 [-1.0, +1.7] p=0.682",
+    "nan",
+    "+0.2 [-1.0, +1.4] p=0.805"
+   ]
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_within": [
+    "6.7 [4.9, 8.7]",
+    "+1.6 [+0.6, +2.6] p=0.0022",
+    "+4.6 [+2.5, +6.8] p=0.0002",
+    "+6.1 [+4.1, +8.2] p=0"
+   ],
+   "mcqa_across": [
+    "1.4 [0.8, 2.2]",
+    "+0.7 [-0.1, +1.5] p=0.0866",
+    "+0.8 [-0.7, +2.4] p=0.324",
+    "+0.5 [-0.6, +1.6] p=0.35"
+   ],
+   "itt_mc": [
+    "1.6 [0.2, 3.7]",
+    "-0.7 [-1.6, +0.3] p=0.19",
+    "nan",
+    "+0.9 [-1.7, +4.5] p=0.67"
+   ]
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_within": [
+    "0.9 [0.5, 1.5]",
+    "-1.4 [-2.4, -0.4] p=0.006",
+    "+1.0 [-0.6, +2.5] p=0.245",
+    "+1.0 [+0.1, +2.1] p=0.0326"
+   ],
+   "mcqa_across": [
+    "0.2 [0.0, 0.3]",
+    "-2.7 [-3.6, -1.7] p=0",
+    "-3.8 [-5.8, -1.9] p=0",
+    "-1.6 [-2.6, -0.6] p=0.0016"
+   ],
+   "itt_mc": [
+    "0.1 [0.0, 0.4]",
+    "-2.0 [-3.8, -0.2] p=0.0296",
+    "nan",
+    "+1.5 [-0.1, +3.5] p=0.0602"
+   ]
+  },
+  "Ministral-3-14B": {
+   "mcqa_within": [
+    "6.6 [5.3, 8.0]",
+    "+1.5 [+0.4, +2.8] p=0.0068",
+    "+2.1 [-0.5, +4.7] p=0.113",
+    "+2.7 [+0.8, +4.7] p=0.0036"
+   ],
+   "mcqa_across": [
+    "4.2 [3.4, 5.2]",
+    "+1.2 [+0.1, +2.3] p=0.0398",
+    "+1.0 [-1.5, +3.5] p=0.456",
+    "-0.7 [-2.2, +0.7] p=0.32"
+   ],
+   "itt_mc": [
+    "3.2 [1.1, 5.7]",
+    "+0.6 [-1.7, +2.8] p=0.598",
+    "nan",
+    "+0.1 [-0.8, +1.3] p=0.846"
+   ]
+  }
+ },
+ "nota_mix": {
+  "rows": {
+   "Qwen3.6-35B-A3B/mcqa_within": {
+    "recall": 42.3,
+    "listed": 49.13,
+    "gap": -6.83,
+    "pred_0.1": 1.43,
+    "pred_0.5": -1.16,
+    "obs_0.1": 2.3,
+    "obs_0.5": -0.5
+   },
+   "Qwen3.6-35B-A3B/mcqa_across": {
+    "recall": 57.1,
+    "listed": 53.41,
+    "gap": 3.69,
+    "pred_0.1": -0.86,
+    "pred_0.5": 0.63,
+    "obs_0.1": -1.8,
+    "obs_0.5": 0.5
+   },
+   "Qwen3.8-27B/mcqa_within": {
+    "recall": 42.1,
+    "listed": 48.03,
+    "gap": -5.93,
+    "pred_0.1": 1.23,
+    "pred_0.5": -0.99,
+    "obs_0.1": 0.7,
+    "obs_0.5": -1.5
+   },
+   "Qwen3.8-27B/mcqa_across": {
+    "recall": 57.2,
+    "listed": 51.9,
+    "gap": 5.3,
+    "pred_0.1": -0.95,
+    "pred_0.5": 1.17,
+    "obs_0.1": -2.3,
+    "obs_0.5": 0.2
+   },
+   "Gemma-4-31B/mcqa_within": {
+    "recall": 45.5,
+    "listed": 49.41,
+    "gap": -3.91,
+    "pred_0.1": 0.86,
+    "pred_0.5": -0.57,
+    "obs_0.1": 0.6,
+    "obs_0.5": -0.9
+   },
+   "Gemma-4-31B/mcqa_across": {
+    "recall": 62.3,
+    "listed": 51.71,
+    "gap": 10.59,
+    "pred_0.1": -2.04,
+    "pred_0.5": 2.2,
+    "obs_0.1": -1.5,
+    "obs_0.5": 1.7
+   },
+   "Gemma-4-12B/mcqa_within": {
+    "recall": 37.5,
+    "listed": 46.46,
+    "gap": -8.96,
+    "pred_0.1": 1.84,
+    "pred_0.5": -1.63,
+    "obs_0.1": 1.7,
+    "obs_0.5": -0.4
+   },
+   "Gemma-4-12B/mcqa_across": {
+    "recall": 54.3,
+    "listed": 47.19,
+    "gap": 7.11,
+    "pred_0.1": -1.09,
+    "pred_0.5": 1.75,
+    "obs_0.1": -0.7,
+    "obs_0.5": 2.7
+   },
+   "Muse-Glimmer-30B/mcqa_within": {
+    "recall": 62.4,
+    "listed": 43.32,
+    "gap": 19.08,
+    "pred_0.1": -4.36,
+    "pred_0.5": 3.35,
+    "obs_0.1": -3.5,
+    "obs_0.5": 4.1
+   },
+   "Muse-Glimmer-30B/mcqa_across": {
+    "recall": 76.0,
+    "listed": 45.3,
+    "gap": 30.7,
+    "pred_0.1": -6.01,
+    "pred_0.5": 6.26,
+    "obs_0.1": -5.6,
+    "obs_0.5": 5.9
+   },
+   "MiniCPM-V-4.7-35B-A3B/mcqa_within": {
+    "recall": 49.6,
+    "listed": 37.13,
+    "gap": 12.47,
+    "pred_0.1": -2.75,
+    "pred_0.5": 2.31,
+    "obs_0.1": -2.2,
+    "obs_0.5": 3.0
+   },
+   "MiniCPM-V-4.7-35B-A3B/mcqa_across": {
+    "recall": 41.3,
+    "listed": 35.51,
+    "gap": 5.79,
+    "pred_0.1": -1.09,
+    "pred_0.5": 1.22,
+    "obs_0.1": -1.4,
+    "obs_0.5": 1.6
+   },
+   "Ministral-3-14B/mcqa_within": {
+    "recall": 52.2,
+    "listed": 31.42,
+    "gap": 20.78,
+    "pred_0.1": -4.09,
+    "pred_0.5": 4.19,
+    "obs_0.1": -4.2,
+    "obs_0.5": 4.3
+   },
+   "Ministral-3-14B/mcqa_across": {
+    "recall": 66.5,
+    "listed": 29.75,
+    "gap": 36.75,
+    "pred_0.1": -7.36,
+    "pred_0.5": 7.35,
+    "obs_0.1": -7.2,
+    "obs_0.5": 7.7
+   }
+  },
+  "max_abs_error": 1.35,
+  "mean_abs_error": 0.55,
+  "listed_range": [
+   29.8,
+   53.4
+  ]
+ },
+ "listed_accuracy": {
+  "Qwen3.6-35B-A3B": {
+   "mcqa_within": 49.13,
+   "mcqa_across": 53.41
+  },
+  "Qwen3.8-27B": {
+   "mcqa_within": 48.03,
+   "mcqa_across": 51.9
+  },
+  "Gemma-4-31B": {
+   "mcqa_within": 49.41,
+   "mcqa_across": 51.71
+  },
+  "Gemma-4-12B": {
+   "mcqa_within": 46.46,
+   "mcqa_across": 47.19
+  },
+  "Muse-Glimmer-30B": {
+   "mcqa_within": 43.32,
+   "mcqa_across": 45.3
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "mcqa_within": 43.73,
+   "mcqa_across": 47.56
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "mcqa_within": 37.13,
+   "mcqa_across": 35.51
+  },
+  "Ministral-3-14B": {
+   "mcqa_within": 31.42,
+   "mcqa_across": 29.75
+  }
+ },
+ "compute": {
+  "Qwen3.6-35B-A3B": [
+   5.73,
+   0.97,
+   49.0,
+   3
+  ],
+  "Qwen3.8-27B": [
+   8.42,
+   1.05,
+   47.4,
+   3
+  ],
+  "Gemma-4-31B": [
+   11.0,
+   0.98,
+   47.8,
+   3
+  ],
+  "Gemma-4-12B": [
+   4.5,
+   0.96,
+   47.7,
+   3
+  ],
+  "Muse-Glimmer-30B": [
+   7.14,
+   1.01,
+   50.3,
+   3
+  ],
+  "Nemotron-3.5-Bolt-74B-A9B": [
+   23.71,
+   0.92,
+   27.3,
+   3
+  ],
+  "MiniCPM-V-4.7-35B-A3B": [
+   2.34,
+   1.01,
+   50.9,
+   3
+  ],
+  "Ministral-3-14B": [
+   2.12,
+   0.9,
+   48.0,
+   3
+  ]
+ },
+ "compute_exp24": {
+  "Qwen3.6-35B-A3B": [
+   27.03,
+   8
+  ],
+  "Qwen3.8-27B": [
+   33.31,
+   8
+  ],
+  "Gemma-4-31B": [
+   48.34,
+   8
+  ],
+  "Gemma-4-12B": [
+   20.83,
+   8
+  ],
+  "Muse-Glimmer-30B": [
+   33.42,
+   8
+  ],
+  "Nemotron-3.5-Bolt-74B-A9B": [
+   0,
+   0
+  ],
+  "MiniCPM-V-4.7-35B-A3B": [
+   10.89,
+   8
+  ],
+  "Ministral-3-14B": [
+   10.34,
+   8
+  ]
+ },
+ "compute_total": {
+  "exp1": 218.3,
+  "exp24": 184.2
+ },
+ "datasets_per_task": {
+  "classification": 220,
+  "detection": 105,
+  "segmentation": 34,
+  "image_text_to_text": 13
+ },
+ "agtask_fuzzy": {
+  "Qwen3.6-35B-A3B": {
+   "disease": 51.92,
+   "pest_damage": 43.11,
+   "species_id": 28.35,
+   "quality_maturity": 34.31
+  },
+  "Qwen3.8-27B": {
+   "disease": 51.62,
+   "pest_damage": 37.28,
+   "species_id": 24.62,
+   "quality_maturity": 37.2
+  },
+  "Gemma-4-31B": {
+   "disease": 41.64,
+   "pest_damage": 33.33,
+   "species_id": 21.98,
+   "quality_maturity": 31.29
+  },
+  "Gemma-4-12B": {
+   "disease": 37.96,
+   "pest_damage": 31.6,
+   "species_id": 19.92,
+   "quality_maturity": 30.35
+  },
+  "Muse-Glimmer-30B": {
+   "disease": 55.35,
+   "pest_damage": 44.59,
+   "species_id": 32.22,
+   "quality_maturity": 39.12
+  },
+  "Nemotron-3.5-Bolt-74B-A9B": {
+   "disease": 49.35,
+   "pest_damage": 37.8,
+   "species_id": 21.68,
+   "quality_maturity": 35.0
+  },
+  "MiniCPM-V-4.7-35B-A3B": {
+   "disease": 52.89,
+   "pest_damage": 42.57,
+   "species_id": 28.12,
+   "quality_maturity": 34.45
+  },
+  "Ministral-3-14B": {
+   "disease": 35.91,
+   "pest_damage": 26.94,
+   "species_id": 16.72,
+   "quality_maturity": 34.0
+  }
+ }
+}

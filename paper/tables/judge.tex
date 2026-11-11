@@ -1,0 +1,17 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccccccccc}
+\toprule
+\multirow{2}{*}{\textbf{Model}} & \multicolumn{3}{c}{\textbf{All}} & \multicolumn{2}{c}{\textbf{Disease}} & \multicolumn{2}{c}{\textbf{Pest/Damage}} & \multicolumn{2}{c}{\textbf{Species}} & \multicolumn{2}{c}{\textbf{Quality}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8} \cmidrule(lr){9-10} \cmidrule(lr){11-12}
+ & Fuzzy & Judge & $\Delta$ & Fuzzy & Judge & Fuzzy & Judge & Fuzzy & Judge & Fuzzy & Judge \\
+\midrule
+Qwen3.6-35B-A3B & $41.9$ & $27.7$ & $-14.2$ & $50.9$ & $30.5$ & $41.1$ & $28.6$ & $28.3$ & $16.9$ & $33.4$ & $38.1$ \\
+Qwen3.8-27B & $40.6$ & $29.7$ & $-10.9$ & $51.9$ & $33.1$ & $36.5$ & $32.4$ & $24.0$ & $14.0$ & $35.4$ & $44.2$ \\
+Gemma-4-31B$^\dagger$ & $34.2$ & $29.5$ & $-4.7$ & $41.4$ & $36.5$ & $33.3$ & $25.6$ & $21.9$ & $13.9$ & $31.1$ & $42.3$ \\
+Gemma-4-12B & $31.8$ & $25.0$ & $-6.9$ & $38.3$ & $30.7$ & $31.2$ & $22.3$ & $20.0$ & $10.9$ & $30.7$ & $37.6$ \\
+Muse-Glimmer-30B & $45.8$ & $36.4$ & $-9.4$ & $55.4$ & $39.1$ & $42.7$ & $37.8$ & $32.0$ & $26.9$ & $39.8$ & $42.2$ \\
+Nemotron-3.5-Bolt-74B-A9B & $39.8$ & $26.3$ & $-13.4$ & $49.8$ & $31.8$ & $38.6$ & $26.6$ & $21.6$ & $10.7$ & $37.0$ & $35.9$ \\
+MiniCPM-V-4.7-35B-A3B & $43.6$ & $26.2$ & $-17.4$ & $52.8$ & $29.1$ & $43.9$ & $25.6$ & $28.5$ & $15.1$ & $34.5$ & $40.1$ \\
+Ministral-3-14B & $29.3$ & $13.8$ & $-15.6$ & $35.8$ & $14.3$ & $26.8$ & $10.4$ & $16.9$ & $7.8$ & $33.9$ & $33.6$ \\
+\bottomrule
+\end{tabular}

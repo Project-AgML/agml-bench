@@ -1,0 +1,259 @@
+[
+ {
+  "item_id": "rice_leaf_bacterial_fungal-22fe9e4077:mcqa_within",
+  "file": "rice_leaf_bacterial_fungal-22fe9e4077.jpg",
+  "task": "classification",
+  "format": "mcqa_within",
+  "qa_format": null,
+  "dataset": "rice_leaf_bacterial_fungal",
+  "crop": "rice",
+  "prompt": "Classify this image of a rice plant into one of the following categories: Leaf Blast, Rice Hispa, Sheath Blight, Leaf scald, None of the above, I don't know. Respond with ONLY the category name, nothing else.",
+  "choices": [
+   "Leaf Blast",
+   "Rice Hispa",
+   "Sheath Blight",
+   "Leaf scald",
+   "None of the above",
+   "I don't know"
+  ],
+  "answer": "Leaf Blast",
+  "gt_label": "Leaf Blast",
+  "is_nota": false,
+  "response": "Leaf scald",
+  "correct": false,
+  "judge_correct": null,
+  "tp": null,
+  "fp": null,
+  "fn": null,
+  "boxes": []
+ },
+ {
+  "item_id": "rice_leaf_bacterial_fungal-22fe9e4077:mcqa_across",
+  "file": "rice_leaf_bacterial_fungal-22fe9e4077.jpg",
+  "task": "classification",
+  "format": "mcqa_across",
+  "qa_format": null,
+  "dataset": "rice_leaf_bacterial_fungal",
+  "crop": "rice",
+  "prompt": "Classify this image of a rice plant into one of the following categories: Tomato Late blight, Healthy, Leaf Blast, Pepper, bell healthy, None of the above, I don't know. Respond with ONLY the category name, nothing else.",
+  "choices": [
+   "Tomato Late blight",
+   "Healthy",
+   "Leaf Blast",
+   "Pepper, bell healthy",
+   "None of the above",
+   "I don't know"
+  ],
+  "answer": "Leaf Blast",
+  "gt_label": "Leaf Blast",
+  "is_nota": false,
+  "response": "Leaf Blast",
+  "correct": true,
+  "judge_correct": null,
+  "tp": null,
+  "fp": null,
+  "fn": null,
+  "boxes": []
+ },
+ {
+  "item_id": "rice_leaf_bacterial_fungal-22fe9e4077:oeq",
+  "file": "rice_leaf_bacterial_fungal-22fe9e4077.jpg",
+  "task": "classification",
+  "format": "oeq",
+  "qa_format": null,
+  "dataset": "rice_leaf_bacterial_fungal",
+  "crop": "rice",
+  "prompt": "Respond in one sentence: What disease, pest, damage type, or other stress, if any, is exhibited in this image of a rice plant?",
+  "choices": null,
+  "answer": "Leaf Blast",
+  "gt_label": "Leaf Blast",
+  "is_nota": false,
+  "response": "The rice plant in the image exhibits symptoms of bacterial leaf blight, characterized by the elongated brown lesions running parallel to the leaf veins.",
+  "correct": true,
+  "judge_correct": false,
+  "tp": null,
+  "fp": null,
+  "fn": null,
+  "boxes": []
+ },
+ {
+  "item_id": "watermelon_disease_classification-a3ac92e593:mcqa_within",
+  "file": "watermelon_disease_classification-a3ac92e593.jpg",
+  "task": "classification",
+  "format": "mcqa_within",
+  "qa_format": null,
+  "dataset": "watermelon_disease_classification",
+  "crop": "watermelon",
+  "prompt": "Classify this image of a watermelon plant into one of the following categories: Healthy, Anthracnose, Mosaic Virus, None of the above, I don't know. Respond with ONLY the category name, nothing else.",
+  "choices": [
+   "Healthy",
+   "Anthracnose",
+   "Mosaic Virus",
+   "None of the above",
+   "I don't know"
+  ],
+  "answer": "None of the above",
+  "gt_label": "None of the above",
+  "is_nota": true,
+  "response": "Mosaic Virus",
+  "correct": false,
+  "judge_correct": null,
+  "tp": null,
+  "fp": null,
+  "fn": null,
+  "boxes": []
+ },
+ {
+  "item_id": "tomato_adaptive_yolov8_detection-d4e04ff27a:grounding",
+  "file": "tomato_adaptive_yolov8_detection-d4e04ff27a.jpg",
+  "task": "detection",
+  "format": "grounding",
+  "qa_format": null,
+  "dataset": "tomato_adaptive_yolov8_detection",
+  "crop": "tomato",
+  "prompt": "Identify and localize every full ripened, half ripened, green visible in this image of a tomato plant. Respond with\nONLY a JSON array, one object per instance found, each with exactly these\ntwo keys:\n\"box_2d\": [y_min, x_min, y_max, x_max] — coordinates on a 0-1000\nnormalized scale (top-left corner of the image is [0, 0]), in that exact\norder.\n\"label\": the class name for that instance, chosen from: full ripened, half ripened, green.\n\nIf none are visible, respond with exactly: []\n",
+  "choices": null,
+  "answer": null,
+  "gt_label": null,
+  "is_nota": false,
+  "response": "```json\n[\n  {\"box_2d\": [324, 400, 471, 657], \"label\": \"half ripened\"},\n  {\"box_2d\": [410, 605, 527, 797], \"label\": \"green\"},\n  {\"box_2d\": [524, 323, 711, 655], \"label\": \"full ripened\"},\n  {\"box_2d\": [534, 538, 627, 699], \"label\": \"half ripened\"},\n  {\"box_2d\": [623, 278, 735, 461], \"label\": \"green\"}\n]\n```",
+  "correct": 0.5714285714285714,
+  "judge_correct": null,
+  "tp": 4,
+  "fp": 1,
+  "fn": 2,
+  "boxes": [
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     239.66399999999996,
+     75.85977777777784,
+     387.6276,
+     234.29604444444448
+    ]
+   },
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     511.317,
+     239.2875111111111,
+     564.8586,
+     289.70137777777774
+    ]
+   },
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     197.928,
+     290.94511111111115,
+     392.72520000000003,
+     490.68164444444443
+    ]
+   },
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     329.97510000000005,
+     294.38991111111113,
+     421.10850000000005,
+     432.04537777777773
+    ]
+   },
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     362.8803,
+     167.37337777777782,
+     472.82489999999996,
+     293.24004444444455
+    ]
+   },
+   {
+    "kind": "gt",
+    "label": null,
+    "xyxy": [
+     169.59990000000002,
+     397.5179111111111,
+     296.4777,
+     529.8069777777778
+    ]
+   },
+   {
+    "kind": "pred",
+    "label": null,
+    "xyxy": [
+     240.0,
+     70.1930222222223,
+     394.19444444444446,
+     226.97080000000003
+    ]
+   },
+   {
+    "kind": "pred",
+    "label": null,
+    "xyxy": [
+     363.0,
+     161.91524444444454,
+     478.19444444444446,
+     286.72080000000005
+    ]
+   },
+   {
+    "kind": "pred",
+    "label": null,
+    "xyxy": [
+     193.80555555555557,
+     283.52635555555565,
+     393.0,
+     482.9708
+    ]
+   },
+   {
+    "kind": "pred",
+    "label": null,
+    "xyxy": [
+     322.80555555555554,
+     294.1930222222223,
+     419.3888888888889,
+     393.3874666666667
+    ]
+   },
+   {
+    "kind": "pred",
+    "label": null,
+    "xyxy": [
+     166.80555555555557,
+     389.109688888889,
+     276.6111111111111,
+     508.5819111111112
+    ]
+   }
+  ]
+ },
+ {
+  "item_id": "AgroMind-995c13c04c:native",
+  "file": "AgroMind-995c13c04c.jpg",
+  "task": "image_text_to_text",
+  "format": "native",
+  "qa_format": "numeric",
+  "dataset": "AgroMind",
+  "crop": "maize, oil palm, apple or almond",
+  "prompt": "What is the crown diameter of the tree in the red box in the image when each pixel is 0.08m?(Unit of measurement: meters)\n\nRespond with ONLY the number.",
+  "choices": null,
+  "answer": 9.0,
+  "gt_label": 9.0,
+  "is_nota": false,
+  "response": "8.8",
+  "correct": true,
+  "judge_correct": null,
+  "tp": null,
+  "fp": null,
+  "fn": null,
+  "boxes": []
+ }
+]
