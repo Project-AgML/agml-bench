@@ -1,12 +1,13 @@
-# Few-shot YOLO11x baselines: <shots> <subset>, one agbench eval yolo run per line (all classification, detection
+# Few-shot YOLO11s baselines: <shots> <subset>, one agbench eval yolo run per line (all classification, detection
 # and segmentation datasets). Training images: agbench sample-train (train_sampling in configs/base_data.yaml).
-# Run one line with: uv run --extra yolo agbench eval yolo --data-dir $DATA --shots <shots> --subset <subset> --out runs/yolo
+# Lines run in this order (5 shots first: enough for the main comparison).
+# Run one line with: uv run --extra yolo agbench eval yolo --data-dir $DATA --shots <shots> --subset <subset> --size s --out runs/yolo11s
 5 0
-10 0
-15 0
 5 1
-10 1
-15 1
 5 2
+10 0
+10 1
 10 2
+15 0
+15 1
 15 2

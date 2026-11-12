@@ -133,6 +133,7 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
     model.train(data=data, epochs=epochs, imgsz=IMGSZ[task], project=str(out.parent), name=out.name, exist_ok=True, device=device(),
                 seed=seed, deterministic=True, val=False, plots=False, verbose=False,
                 workers=int(os.environ.get("AGBENCH_YOLO_WORKERS", "2")),  # data-loading processes per training; few images, so 2 suffice
+                cache=os.environ.get("AGBENCH_YOLO_CACHE") or False,  # "ram": decode the few training images once, not every epoch
                 batch=16 if task == "classification" else 8)
     return Path(model.trainer.save_dir) / "weights" / "last.pt"
 

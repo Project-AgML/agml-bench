@@ -7,12 +7,13 @@
 #SBATCH --signal=B:USR1@900
 # usage (partition, GPUs and CPUs on the command line; several jobs can share one plan):
 #   sbatch --account=geminigrp --partition=gpu-a100-h --gpus-per-node=1 --cpus-per-task=32 --mem=120G \
-#          --export=ALL,YOLO_SIZE=s,PER_GPU=8 farm_yolo.sh experiments/yolo.plan
+#          --export=ALL,YOLO_SIZE=s,PER_GPU=8 scripts/farm_yolo.sh experiments/yolo.plan
 #   sbatch --account=jmearlesgrp --partition=gpum --qos=gpum-users-gpum-qos --gpus-per-node=2 --cpus-per-task=20 --mem=64G \
-#          --export=ALL,YOLO_SIZE=s,PER_GPU=2 farm_yolo.sh experiments/yolo.plan
-# Each worker (PER_GPU per GPU) works through all unfinished plan lines (<shots> <subset>), starting at a different
-# one; agbench eval yolo claims each dataset with a lock file, so any number of workers in any number of jobs can share
-# a line without duplicating work, and a dataset claimed by a job that died is picked up again. 15 min before the time limit the job resubmits
+#          --export=ALL,YOLO_SIZE=s,PER_GPU=2 scripts/farm_yolo.sh experiments/yolo.plan
+# Every worker (PER_GPU per GPU) works through the unfinished plan lines (<shots> <subset>) in plan order, so the lines
+# finish one after another (put the most important first). agbench eval yolo claims each dataset with a lock file, so any
+# number of workers in any number of jobs share a line without duplicating work, and a dataset claimed by a job that died
+# is picked up again. 15 min before the time limit the job resubmits
 # itself with the same settings if lines remain. Progress in <plan>.log; results in runs/yolo11<size>/.
 YOLO_SIZE=${YOLO_SIZE:-s}
 PER_GPU=${PER_GPU:-2}
@@ -26,7 +27,7 @@ resubmit() {
   log "time limit near: resubmitting"
   sbatch --account=$SLURM_JOB_ACCOUNT --partition=$SLURM_JOB_PARTITION --qos=$SLURM_JOB_QOS \
          --gpus-per-node=$SLURM_GPUS_PER_NODE --cpus-per-task=$SLURM_CPUS_PER_TASK --mem=${SLURM_MEM_PER_NODE}M \
-         --export=ALL,YOLO_SIZE=$YOLO_SIZE,PER_GPU=$PER_GPU farm_yolo.sh $PLAN >> $LOG
+         --export=ALL,YOLO_SIZE=$YOLO_SIZE,PER_GPU=$PER_GPU scripts/farm_yolo.sh $PLAN >> $LOG
   kill $(jobs -p) 2>/dev/null; exit 0
 }
 trap resubmit USR1
@@ -36,14 +37,14 @@ W=$HOME/.cache/agbench/yolo; mkdir -p $W
 ( flock 8; cd $W && uv run --project /group/jmearlesgrp/scratch/eranario/AGgentic-benchmarks --extra yolo python -c \
   "from ultralytics import YOLO; [YOLO(f'yolo11${YOLO_SIZE}{t}.pt') for t in ('-cls', '', '-seg')]" ) 8>$W/.download.lock
 
-worker() {  # works through every unfinished plan line, starting at a different one per worker; datasets are claimed
-  local gpu=$1 idx=$2 lines n j l rc progress   # inside agbench eval yolo, so many workers can share one line
+worker() {  # works through the unfinished plan lines in plan order; datasets are claimed inside agbench eval yolo,
+  local gpu=$1 idx=$2 lines n j l rc progress   # so all workers share the first unfinished line before moving on
   while true; do
     mapfile -t lines < <(todo); n=${#lines[@]}
     [ $n -eq 0 ] && break
     progress=0
     for ((j = 0; j < n; j++)); do
-      l=${lines[$(( (j + idx) % n ))]}
+      l=${lines[$j]}
       grep -qxF "$l" $DONE && continue
       read -r SHOTS SUBSET <<< "$l"
       CUDA_VISIBLE_DEVICES=$gpu uv run --extra yolo agbench eval yolo --data-dir $DATA --shots $SHOTS --subset $SUBSET \
