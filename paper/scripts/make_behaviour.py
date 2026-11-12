@@ -4,9 +4,11 @@
 (b) where each model's answers go on withheld-class items: NOTA / a listed class (over-commit) / IDK.
 
 Reads paper/numbers.json ("behaviour", written by make_assets.py); writes paper/fig_behaviour.png.
-usage: uv run --with matplotlib python paper/scripts/make_behaviour.py
+usage: uv run --with matplotlib python paper/scripts/make_behaviour.py [--horizontal]
+       panel (b) is drawn as upright bars; --horizontal draws the earlier horizontal version to fig_behaviour_horizontal.png.
 """
 import json
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -66,22 +68,52 @@ def stacked(ax, beh):
     ax.set_title("(b) Answers when the true class is withheld", fontsize=8, loc="right")
 
 
+def stacked_vertical(ax, beh):
+    names = list(beh)
+    x, ticks, tlabels, w = 0.0, [], [], 0.42
+    for m in names:
+        for k, (fmt, short) in enumerate((("mcqa_within", "W"), ("mcqa_across", "A"))):
+            rec, oc = beh[m][fmt][1], beh[m][fmt][2]
+            vals = [rec, oc, max(100 - rec - oc, 0)]
+            xx = x + (k - 0.5) * (w + 0.04)
+            bottom = 0
+            for v, (_, c) in zip(vals, OUT):
+                ax.bar(xx, v, bottom=bottom, width=w, color=c, edgecolor="white", lw=0.6)
+                bottom += v
+            ax.text(xx, -2.5, short, ha="center", va="top", fontsize=5.6, color="#555555")
+        ticks.append(x); tlabels.append(label(m))
+        x += 1.25
+    ax.set_xticks(ticks); ax.set_xticklabels(tlabels, fontsize=6.2, rotation=35, ha="right", rotation_mode="anchor")
+    ax.tick_params(axis="x", length=0, pad=11)
+    ax.set_xlim(-0.6, x - 0.65)
+    ax.set_ylim(0, 100)
+    ax.set_ylabel("Share of withheld-class items (%)", fontsize=7)
+    ax.set_title("(b) Answers when the true class is withheld", fontsize=8, loc="left")
+
+
 def main():
     beh = json.load(open(P / "numbers.json"))["behaviour"]  # model -> fmt -> [acc, nota_rec, over_commit, false_nota, idk]
-    fig, (a, b) = plt.subplots(1, 2, figsize=(7.2, 3.9), gridspec_kw={"width_ratios": [1, 0.85], "wspace": 0.78})
+    vertical = "--horizontal" not in sys.argv
+    fig, (a, b) = plt.subplots(1, 2, figsize=(7.2, 4.4 if vertical else 3.9),
+                               gridspec_kw={"width_ratios": [1, 1.15] if vertical else [1, 0.85], "wspace": 0.3 if vertical else 0.78})
     scatter(a, beh)
-    stacked(b, beh)
+    (stacked_vertical if vertical else stacked)(b, beh)
     for ax in (a, b):
         ax.tick_params(labelsize=7)
         for s in ("top", "right"):
             ax.spines[s].set_visible(False)
-    b.spines["left"].set_visible(False)
-    fig.subplots_adjust(left=0.08, right=0.985, top=0.93, bottom=0.30)
+    if not vertical:
+        b.spines["left"].set_visible(False)
+    fig.subplots_adjust(left=0.08, right=0.985, top=0.93, bottom=0.36 if vertical else 0.30)
     h, l = a.get_legend_handles_labels()
-    a.legend(h, l, loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=2, fontsize=6, frameon=False,
+    a.legend(h, l, loc="upper center", bbox_to_anchor=(0.5, -0.36 if vertical else -0.17), ncol=2, fontsize=6, frameon=False,
              handletextpad=0.3, columnspacing=0.8)
-    b.legend([Patch(color=c) for _, c in OUT], [n for n, _ in OUT], loc="upper center", bbox_to_anchor=(0.45, -0.17), ncol=1, fontsize=6.3, frameon=False, handlelength=1.2)
-    fig.savefig(P / "fig_behaviour.png", dpi=300)
+    if vertical:
+        b.legend([Patch(color=c) for _, c in OUT] + [Patch(color="none")], [n for n, _ in OUT] + ["W = MCQA within, A = MCQA across"],
+                 loc="upper center", bbox_to_anchor=(0.5, -0.36), ncol=2, fontsize=6.3, frameon=False, handlelength=1.2)
+    else:
+        b.legend([Patch(color=c) for _, c in OUT], [n for n, _ in OUT], loc="upper center", bbox_to_anchor=(0.45, -0.17), ncol=1, fontsize=6.3, frameon=False, handlelength=1.2)
+    fig.savefig(P / ("fig_behaviour.png" if vertical else "fig_behaviour_horizontal.png"), dpi=300)
 
 
 if __name__ == "__main__":
