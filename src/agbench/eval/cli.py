@@ -205,7 +205,9 @@ def yolo(
         if kind == "job":
             try:
                 r = subprocess.run(["squeue", "-h", "-j", rest, "-o", "%T"], capture_output=True, text=True, timeout=30)
-                return r.returncode != 0 or bool(r.stdout.strip())  # if squeue fails, assume the job is alive
+                if r.returncode != 0:  # a job Slurm has already purged is "Invalid job id": dead; any other error: assume alive
+                    return "invalid job id" not in (r.stderr + r.stdout).lower()
+                return bool(r.stdout.strip())
             except Exception:
                 return True
         host, _, pid = rest.partition(":")
