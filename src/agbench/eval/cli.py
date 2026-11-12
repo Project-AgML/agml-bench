@@ -416,23 +416,32 @@ def yolo_shared(
                 continue
             work = rd / "_work" / f"{t}.{os.getpid()}"
             try:
+                saved, saved_cls = rd / "models" / f"{t}.pt", rd / "models" / f"{t}.classes.json"
+                train_rec = parts / f"{t}.train.json"  # the training's compute record, kept if scoring fails
                 with sampler() as g:
                     t0 = time.time()
-                    data, classes = Y.prepare_shared(t, tr, t_names, train_root, work / "data")
-                    typer.echo(f"  {len(classes)} merged classes")
-                    w = Y.train(t, data, work / "model", size, epochs, weights_dir, seed=subset,
-                                batch=64 if t == "classification" else 16)
+                    if saved.exists() and saved_cls.exists():  # trained before, scoring failed: score again, do not retrain
+                        w, classes = saved, json.loads(saved_cls.read_text())
+                        typer.echo(f"  reusing the trained model {saved}")
+                    else:
+                        data, classes = Y.prepare_shared(t, tr, t_names, train_root, work / "data")
+                        typer.echo(f"  {len(classes)} merged classes")
+                        w = Y.train(t, data, work / "model", size, epochs, weights_dir, seed=subset,
+                                    batch=64 if t == "classification" else 16)
+                        shutil.copy(w, saved.with_suffix(".pt.tmp")); saved.with_suffix(".pt.tmp").replace(saved)
+                        saved_cls.write_text(json.dumps(classes, indent=0))
+                        t1 = time.time()
+                        train_rec.write_text(json.dumps([{"ended": datetime.now().astimezone().isoformat(timespec="seconds"), "phase": "train",
+                                                          "model": label, "task": t, "train_images": len(tr), "classes": len(classes),
+                                                          "wall_s": round(t1 - t0, 1), **(g.summary(t0, t1) if g else {})}]))
                     t1 = time.time()
-                    shutil.copy(w, rd / "models" / f"{t}.pt")
-                    (rd / "models" / f"{t}.classes.json").write_text(json.dumps(classes, indent=0))
                     m = Y.SharedYOLOMethod(w, classes, t_names, label, subset)
                     recs = [grade(it, m.predict(it), {"bbox": "xyxy_px"}) for it in its]
                     t2 = time.time()
                 end_t = datetime.now().astimezone().isoformat(timespec="seconds")
-                comp = [{"ended": end_t, "phase": "train", "model": label, "task": t, "train_images": len(tr), "classes": len(classes),
-                         "wall_s": round(t1 - t0, 1), **(g.summary(t0, t1) if g else {})},
-                        {"ended": end_t, "phase": "generate", "model": label, "task": t, "items": len(its), "wall_s": round(t2 - t1, 1),
-                         **(g.summary(t1, t2) if g else {})}]
+                comp = (json.loads(train_rec.read_text()) if train_rec.exists() else []) + [
+                    {"ended": end_t, "phase": "generate", "model": label, "task": t, "items": len(its), "wall_s": round(t2 - t1, 1),
+                     **(g.summary(t1, t2) if g else {})}]
                 tmp = parts / f".{t}.{os.getpid()}"
                 tmp.write_text("".join(json.dumps(r) + "\n" for r in exact_oeq_verdicts(recs)))
                 (parts / f"{t}.compute.json").write_text(json.dumps(comp))

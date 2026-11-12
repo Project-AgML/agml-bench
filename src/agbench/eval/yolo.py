@@ -138,6 +138,12 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
     return Path(model.trainer.save_dir) / "weights" / "last.pt"
 
 
+def _image(path: str):
+    """The image as PIL RGB: PIL reads slightly corrupt JPEGs that ultralytics' own reader rejects (returning no result)."""
+    with Image.open(path) as im:
+        return im.convert("RGB")
+
+
 class YOLOMethod(Method):
     """Predictions from per-dataset trained weights ({weights}/{dataset}/weights/last.pt)."""
 
@@ -159,7 +165,7 @@ class YOLOMethod(Method):
     def predict(self, item) -> str:
         m, names = self._model(item.dataset), self.names[item.dataset]
         if item.task == "classification":
-            raw = m.predict(item.images[0], imgsz=IMGSZ["classification"], device=device(), verbose=False)[0].probs.data.cpu().numpy()
+            raw = m.predict(_image(item.images[0]), imgsz=IMGSZ["classification"], device=device(), verbose=False)[0].probs.data.cpu().numpy()
             # model outputs follow its own (sorted) folder names "c<index>"; classes without training images are absent
             probs = np.full(len(names), -1.0)
             for j, folder in m.names.items():
@@ -170,7 +176,7 @@ class YOLOMethod(Method):
             index = {norm(n): i for i, n in enumerate(names)}
             listed = [c for c in item.choices if c not in (p["nota"], p["idk"]) and norm(c) in index]
             return max(listed, key=lambda c: probs[index[norm(c)]]) if listed else p["idk"]
-        r = m.predict(item.images[0], imgsz=IMGSZ[item.task], device=device(), verbose=False)[0]
+        r = m.predict(_image(item.images[0]), imgsz=IMGSZ[item.task], device=device(), verbose=False)[0]
         boxes = r.boxes.xyxy.cpu().numpy().tolist() if r.boxes is not None else []
         cls = r.boxes.cls.cpu().numpy().astype(int).tolist() if r.boxes is not None else []
         return json.dumps([{"bbox": [round(v, 1) for v in b], "label": names[c]} for b, c in zip(boxes, cls)])
@@ -263,7 +269,7 @@ class SharedYOLOMethod(Method):
         allowed = {label_key(item.dataset, n): n for n in self.names.get(item.dataset) or []}
         if item.task == "classification":
             if item.images[0] not in self._probs:
-                raw = self.model.predict(item.images[0], imgsz=IMGSZ["classification"], device=device(), verbose=False)[0].probs.data.cpu().numpy()
+                raw = self.model.predict(_image(item.images[0]), imgsz=IMGSZ["classification"], device=device(), verbose=False)[0].probs.data.cpu().numpy()
                 self._probs = {item.images[0]: {self.classes[int(f[1:])]: float(raw[j]) for j, f in self.model.names.items()}}
             probs = self._probs[item.images[0]]
             if item.format == "oeq":
@@ -275,7 +281,7 @@ class SharedYOLOMethod(Method):
         if not keep:
             return "[]"
         # only the item's own dataset's classes take part (before non-maximum suppression)
-        r = self.model.predict(item.images[0], imgsz=IMGSZ[item.task], device=device(), classes=keep, verbose=False)[0]
+        r = self.model.predict(_image(item.images[0]), imgsz=IMGSZ[item.task], device=device(), classes=keep, verbose=False)[0]
         out = []
         if r.boxes is not None:
             for b, c in zip(r.boxes.xyxy.cpu().numpy().tolist(), r.boxes.cls.cpu().numpy().astype(int).tolist()):
