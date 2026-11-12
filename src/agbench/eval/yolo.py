@@ -139,7 +139,11 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
 
 
 def _image(path: str):
-    """The image as PIL RGB: PIL reads slightly corrupt JPEGs that ultralytics' own reader rejects (returning no result)."""
+    """The image as PIL RGB, decoding truncated JPEGs as far as they go (as the VLM servers do); ultralytics' own reader
+    rejects them and returns no result."""
+    from PIL import ImageFile
+
+    ImageFile.LOAD_TRUNCATED_IMAGES = True
     with Image.open(path) as im:
         return im.convert("RGB")
 
