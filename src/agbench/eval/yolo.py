@@ -139,13 +139,18 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
 
 
 def _image(path: str):
-    """The image as PIL RGB, decoding truncated JPEGs as far as they go (as the VLM servers do); ultralytics' own reader
-    rejects them and returns no result."""
-    from PIL import ImageFile
+    """The image as a BGR array (what ultralytics expects of arrays), read with PIL so truncated JPEGs decode as far as
+    they go (as the VLM servers do; ultralytics' reader rejects them). EXIF orientation is applied as ultralytics' own
+    reader does in training; an unreadable EXIF block (which crashes ultralytics' handling of PIL images) is ignored."""
+    from PIL import ImageFile, ImageOps
 
     ImageFile.LOAD_TRUNCATED_IMAGES = True
     with Image.open(path) as im:
-        return im.convert("RGB")
+        try:
+            im = ImageOps.exif_transpose(im)
+        except Exception:
+            pass
+        return np.ascontiguousarray(np.asarray(im.convert("RGB"))[..., ::-1])
 
 
 class YOLOMethod(Method):
