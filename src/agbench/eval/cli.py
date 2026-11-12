@@ -144,6 +144,53 @@ def baseline(
     _print_summary(rd)
 
 
+def _claimer(claims: Path):
+    """claim(key) -> True if this process now owns claims/key. A claim whose owner (a Slurm job, or a process on this
+    host) is gone is stale and is taken over, so work held by a job that died is picked up again."""
+    import os
+    import socket
+
+    me = f"job:{os.environ['SLURM_JOB_ID']}" if os.environ.get("SLURM_JOB_ID") else f"pid:{socket.gethostname()}:{os.getpid()}"
+
+    def alive(owner: str) -> bool:
+        kind, _, rest = owner.partition(":")
+        if kind == "job":
+            try:
+                r = subprocess.run(["squeue", "-h", "-j", rest, "-o", "%T"], capture_output=True, text=True, timeout=30)
+                if r.returncode != 0:  # a job Slurm has already purged is "Invalid job id": dead; any other error: assume alive
+                    return "invalid job id" not in (r.stderr + r.stdout).lower()
+                return bool(r.stdout.strip())
+            except Exception:
+                return True
+        host, _, pid = rest.partition(":")
+        if host != socket.gethostname():
+            return True
+        try:
+            os.kill(int(pid), 0)
+            return True
+        except (OSError, ValueError):
+            return False
+
+    def claim(key: str) -> bool:
+        p = claims / key
+        for _ in range(2):
+            try:
+                fd = os.open(p, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                os.write(fd, me.encode()); os.close(fd)
+                return True
+            except FileExistsError:
+                try:
+                    owner = p.read_text().strip()
+                except FileNotFoundError:
+                    continue
+                if owner and alive(owner):
+                    return False
+                p.unlink(missing_ok=True)  # stale claim from a job or process that died
+        return False
+
+    return claim
+
+
 @app.command()
 def yolo(
     data_dir: Path = DataDirOpt,
@@ -184,8 +231,6 @@ def yolo(
     parts, claims = rd / "parts", rd / "claims"
     for d in (rd, parts, claims):
         d.mkdir(parents=True, exist_ok=True)
-    me = f"job:{os.environ['SLURM_JOB_ID']}" if os.environ.get("SLURM_JOB_ID") else f"pid:{socket.gethostname()}:{os.getpid()}"
-
     def write_once(path: Path, text: str):  # identical for every process; atomic, never half-written
         if not path.exists():
             tmp = path.with_name(f".{path.name}.{os.getpid()}")
@@ -200,41 +245,7 @@ def yolo(
     write_once(rd / "crops.json", json.dumps(crop_table(bench.items), indent=2))
     write_once(rd / "ag_task_coverage.md", coverage_md(bench.items))
 
-    def alive(owner: str) -> bool:
-        kind, _, rest = owner.partition(":")
-        if kind == "job":
-            try:
-                r = subprocess.run(["squeue", "-h", "-j", rest, "-o", "%T"], capture_output=True, text=True, timeout=30)
-                if r.returncode != 0:  # a job Slurm has already purged is "Invalid job id": dead; any other error: assume alive
-                    return "invalid job id" not in (r.stderr + r.stdout).lower()
-                return bool(r.stdout.strip())
-            except Exception:
-                return True
-        host, _, pid = rest.partition(":")
-        if host != socket.gethostname():
-            return True
-        try:
-            os.kill(int(pid), 0)
-            return True
-        except (OSError, ValueError):
-            return False
-
-    def claim(key: str) -> bool:
-        p = claims / key
-        for _ in range(2):
-            try:
-                fd = os.open(p, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
-                os.write(fd, me.encode()); os.close(fd)
-                return True
-            except FileExistsError:
-                try:
-                    owner = p.read_text().strip()
-                except FileNotFoundError:
-                    continue
-                if owner and alive(owner):
-                    return False
-                p.unlink(missing_ok=True)  # stale claim from a job or process that died
-        return False
+    claim = _claimer(claims)
 
     by_ds: dict = {}
     for it in bench.items:
@@ -319,6 +330,144 @@ def yolo(
         (rd / "skipped.json").write_text(json.dumps([json.loads(f.read_text()) for f in sorted(parts.glob("*.skipped.json"))], indent=2))
         finalize(rd, [r for r in merged if r["item_id"] in ids])
     _print_summary(rd)
+
+@app.command("yolo-shared")
+def yolo_shared(
+    data_dir: Path = DataDirOpt,
+    shots: int = typer.Option(..., "--shots", help="Training images per class (a shot count in train_sampling)."),
+    subset: int = typer.Option(0, "--subset", help="Training subset (0, 1, 2): which seeded draw of training images."),
+    train_dir: Path = typer.Option(None, "--train-dir", help="Few-shot training data (default <data-dir>/train-data)."),
+    task: list[str] = typer.Option(None, "--task", help="classification | detection | segmentation (default all three)"),
+    only: str = typer.Option(None, "--only", help="Regex on dataset name (for tests)."),
+    size: str = typer.Option("s", "--size", help="YOLO11 size: n | s | m | l | x"),
+    epochs: int = typer.Option(100, "--epochs"),
+    out: Path = typer.Option(Path("runs/yolo11s-shared"), "--out"),
+    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agbench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
+):
+    """Few-shot YOLO11 baseline with one model per task: train on the k-shot training images of every dataset of the
+    task together (classes merged by normalised name; names without letters stay per dataset), then score every
+    evaluation item with predictions limited to its own dataset's classes.
+
+    Each task is one unit of work, claimed with a lock file, so several processes (GPUs, jobs) can share a run.
+    Exit code 0 when the run is complete, 3 when other processes still hold tasks of it."""
+    import fcntl
+    import os
+
+    from agbench.eval import yolo as Y
+    from agbench.eval.baselines import exact_oeq_verdicts
+    from agbench.eval.gpu import sampler
+    from agbench.eval.grade import grade
+    from agbench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
+
+    dev = Y.device()
+    typer.echo(f"YOLO device: {dev}")
+    os.environ.setdefault("AGBENCH_YOLO_WORKERS", "8")  # one large training per GPU: more data-loading processes
+    tasks = task or ["classification", "detection", "segmentation"]
+    train_root = Path(train_dir or Path(data_dir) / "train-data")
+    bench = Benchmark(data_dir, tasks, None, only, None, 0)
+    names = Y.dataset_names(bench.items)
+    label = f"yolo11{size}-shared/{shots}shot"
+    rd = out / f"{shots}shot" / f"s{subset}"
+    parts, claims = rd / "parts", rd / "claims"
+    for d in (rd, parts, claims, rd / "models"):
+        d.mkdir(parents=True, exist_ok=True)
+
+    def write_once(path: Path, text: str):
+        if not path.exists():
+            tmp = path.with_name(f".{path.name}.{os.getpid()}")
+            tmp.write_text(text)
+            tmp.replace(path)
+
+    write_once(rd / "run.json", json.dumps({
+        "method": {"name": label, "baseline": "yolo-shared", "size": size, "epochs": epochs, "shots": shots, "gen_seed": subset,
+                   "labels": "classes merged by normalised name; names without letters kept per dataset; predictions limited to the item's dataset"},
+        "benchmark": bench.args, "n_items": len(bench.items), "agbench_git": _git_sha(),
+        "started": datetime.now().astimezone().isoformat(timespec="seconds")}, indent=2))
+    write_once(rd / "items.jsonl", "".join(json.dumps(it.to_dict()) + "\n" for it in bench.items))
+    write_once(rd / "crops.json", json.dumps(crop_table(bench.items), indent=2))
+    write_once(rd / "ag_task_coverage.md", coverage_md(bench.items))
+    claim = _claimer(claims)
+
+    by_task: dict = {}
+    for it in bench.items:
+        by_task.setdefault(it.task, []).append(it)
+
+    def finished() -> tuple[set, set]:
+        done = {r["item_id"] for r in read_jsonl(rd / "predictions.jsonl")}
+        for f in parts.glob("*.jsonl"):
+            done |= {r["item_id"] for r in read_jsonl(f)}
+        return done, {f.name[: -len(".skipped.json")] for f in parts.glob("*.skipped.json")}
+
+    for t in tasks:
+        its = by_task.get(t, [])
+        done, skipped = finished()
+        if not its or t in skipped or all(it.item_id in done for it in its) or not claim(t):
+            continue
+        try:
+            done, skipped = finished()
+            if t in skipped or all(it.item_id in done for it in its):
+                continue
+            t_names = {ds: n for ds, n in names.items() if any(i.dataset == ds for i in its)}
+            pairs = {(ds, sid) for ds in t_names for sid in Y.subset_ids(train_root, t, ds, subset, shots)}
+            tr = [it for it in Y.train_items(train_root, t, only, {sid for _, sid in pairs}) if (it.dataset, it.sample_id) in pairs]
+            typer.echo(f"{t}: {len(its)} items, {len(t_names)} datasets, {len(tr)} training images")
+            if not tr:
+                (parts / f"{t}.skipped.json").write_text(json.dumps({"task": t, "reason": "no training images"}))
+                continue
+            work = rd / "_work" / f"{t}.{os.getpid()}"
+            try:
+                with sampler() as g:
+                    t0 = time.time()
+                    data, classes = Y.prepare_shared(t, tr, t_names, train_root, work / "data")
+                    typer.echo(f"  {len(classes)} merged classes")
+                    w = Y.train(t, data, work / "model", size, epochs, weights_dir, seed=subset,
+                                batch=64 if t == "classification" else 16)
+                    t1 = time.time()
+                    shutil.copy(w, rd / "models" / f"{t}.pt")
+                    (rd / "models" / f"{t}.classes.json").write_text(json.dumps(classes, indent=0))
+                    m = Y.SharedYOLOMethod(w, classes, t_names, label, subset)
+                    recs = [grade(it, m.predict(it), {"bbox": "xyxy_px"}) for it in its]
+                    t2 = time.time()
+                end_t = datetime.now().astimezone().isoformat(timespec="seconds")
+                comp = [{"ended": end_t, "phase": "train", "model": label, "task": t, "train_images": len(tr), "classes": len(classes),
+                         "wall_s": round(t1 - t0, 1), **(g.summary(t0, t1) if g else {})},
+                        {"ended": end_t, "phase": "generate", "model": label, "task": t, "items": len(its), "wall_s": round(t2 - t1, 1),
+                         **(g.summary(t1, t2) if g else {})}]
+                tmp = parts / f".{t}.{os.getpid()}"
+                tmp.write_text("".join(json.dumps(r) + "\n" for r in exact_oeq_verdicts(recs)))
+                (parts / f"{t}.compute.json").write_text(json.dumps(comp))
+                tmp.replace(parts / f"{t}.jsonl")
+            except Exception as e:
+                typer.echo(f"  failed: {type(e).__name__}: {e}")
+                with open(rd / "failures.jsonl", "a") as f:
+                    f.write(json.dumps({"task": t, "time": datetime.now().isoformat(timespec="seconds"), "error": f"{type(e).__name__}: {e}"[:500]}) + "\n")
+                if sum(1 for r in read_jsonl(rd / "failures.jsonl") if r.get("task") == t) >= 2:
+                    (parts / f"{t}.skipped.json").write_text(json.dumps({"task": t, "reason": f"failed twice: {type(e).__name__}"}))
+            finally:
+                shutil.rmtree(work, ignore_errors=True)
+        finally:
+            (claims / t).unlink(missing_ok=True)
+
+    done, skipped = finished()
+    left = [t for t in tasks if by_task.get(t) and t not in skipped and not all(it.item_id in done for it in by_task[t])]
+    if left:
+        typer.echo(f"tasks still in progress elsewhere or failed once: {', '.join(left)}; run again to continue")
+        raise typer.Exit(3)
+    with open(rd / ".merge.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        recs = {}
+        for f in sorted(parts.glob("*.jsonl")):
+            recs.update({r["item_id"]: r for r in read_jsonl(f)})
+        merged = [recs[it.item_id] for it in bench.items if it.item_id in recs]
+        tmp = rd / f".predictions.{os.getpid()}"
+        tmp.write_text("".join(json.dumps(r) + "\n" for r in merged))
+        tmp.replace(rd / "predictions.jsonl")
+        comp = [c for f in sorted(parts.glob("*.compute.json")) for c in json.loads(f.read_text())]
+        (rd / "compute.json").write_text(json.dumps(comp, indent=2))
+        (rd / "skipped.json").write_text(json.dumps([json.loads(f.read_text()) for f in sorted(parts.glob("*.skipped.json"))], indent=2))
+        finalize(rd, merged)
+    _print_summary(rd)
+
 
 @contextmanager
 def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load", max_model_len: int | None = None):

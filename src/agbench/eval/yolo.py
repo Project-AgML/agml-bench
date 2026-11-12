@@ -121,7 +121,7 @@ def device() -> int | str:
                        "Set AGBENCH_YOLO_ALLOW_CPU=1 to allow it." % (torch.__version__, torch.version.cuda))
 
 
-def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: Path, seed: int) -> Path:
+def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: Path, seed: int, batch: int | None = None) -> Path:
     from ultralytics import YOLO
 
     base = weights_dir / f"yolo11{size}{TASK_YOLO[task]}.pt"
@@ -134,7 +134,7 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
                 seed=seed, deterministic=True, val=False, plots=False, verbose=False,
                 workers=int(os.environ.get("AGBENCH_YOLO_WORKERS", "2")),  # data-loading processes per training; few images, so 2 suffice
                 cache=os.environ.get("AGBENCH_YOLO_CACHE") or False,  # "ram": decode the few training images once, not every epoch
-                batch=16 if task == "classification" else 8)
+                batch=batch or (16 if task == "classification" else 8))
     return Path(model.trainer.save_dir) / "weights" / "last.pt"
 
 
@@ -186,3 +186,99 @@ def dataset_names(item_list) -> dict[str, list[str]]:
             continue
         out[it.dataset] = list(it.class_names)
     return out
+
+
+# ---------------------------------------------------------------- one shared model per task
+# Classes of all datasets of a task share one label space: names that are identical after normalisation (lowercase,
+# punctuation and underscores to spaces) are the same class, e.g. "healthy" or "powdery mildew" across crops. Names
+# without any letter ("0", "1", ...) are arbitrary per-dataset codes and stay separate. At test time a prediction is
+# limited to the item's own dataset's classes (and, for MCQA, to the listed options), as the VLMs are asked.
+
+def label_key(dataset: str, name) -> str:
+    k = norm(pretty(name))
+    return k if re.search(r"[a-z]", k) else f"{dataset}#{k}"
+
+
+def shared_classes(names: dict[str, list[str]]) -> list[str]:
+    """The merged label list of one task (sorted, so it is the same in every run)."""
+    return sorted({label_key(ds, n) for ds, ns in names.items() for n in ns})
+
+
+def prepare_shared(task: str, items, names: dict[str, list[str]], train_root: Path, root: Path) -> tuple[str, list[str]]:
+    """One ultralytics dataset with the training images of every dataset of the task; returns (path, class list)."""
+    shutil.rmtree(root, ignore_errors=True)
+    classes = shared_classes(names)
+    index = {k: i for i, k in enumerate(classes)}
+    if task == "classification":
+        for split in ("train", "val"):  # no held-out data in few-shot training: val mirrors train, used only for logging
+            for it in items:
+                if (c := index.get(label_key(it.dataset, it.gt_label))) is not None:
+                    _link(it.images[0], root / split / f"c{c}" / f"{it.dataset}__{it.sample_id}{Path(it.images[0]).suffix}")
+        return str(root), classes
+    by_ds: dict = {}
+    for it in items:
+        by_ds.setdefault(it.dataset, []).append(it)
+    for ds, its in by_ds.items():
+        ds_dir = Path(train_root) / task / ds
+        meta = json.loads((ds_dir / "meta.json").read_text())
+        samples = {json.loads(l)["sample_id"]: json.loads(l) for l in open(ds_dir / "samples.jsonl")}
+        ds_names = names.get(ds) or []
+        for it in its:
+            stem = f"{ds}__{it.sample_id}"
+            _link(it.images[0], root / "images" / (stem + Path(it.images[0]).suffix))
+            w, h = it.image_size or Image.open(it.images[0]).size
+            lines = []
+            if task == "detection":
+                for b in it.gt_boxes:
+                    if (c := index.get(label_key(ds, b["label"]))) is not None and b["label"] in ds_names:
+                        x1, y1, x2, y2 = b["bbox"]
+                        lines.append(f"{c} {(x1 + x2) / 2 / w:.6f} {(y1 + y2) / 2 / h:.6f} {(x2 - x1) / w:.6f} {(y2 - y1) / h:.6f}")
+            else:
+                mask = ds_dir / samples[it.sample_id]["mask"]
+                for ci, poly in _seg_polygons(str(mask), ds, meta.get("info") or {}, ds_names):
+                    lines.append(f"{index[label_key(ds, ds_names[ci])]} " + " ".join(f"{v:.6f}" for v in poly.flatten()))
+            lab = root / "labels" / (stem + ".txt")
+            lab.parent.mkdir(parents=True, exist_ok=True)
+            lab.write_text("\n".join(lines) + ("\n" if lines else ""))
+    yaml = root / "data.yaml"
+    yaml.write_text(json.dumps({"path": str(root), "train": "images", "val": "images", "names": {i: n for i, n in enumerate(classes)}}))
+    return str(yaml), classes
+
+
+class SharedYOLOMethod(Method):
+    """Predictions of one task-wide model, limited to the classes of each item's dataset."""
+
+    def __init__(self, weights: Path, classes: list[str], names: dict[str, list[str]], label: str, subset: int):
+        from ultralytics import YOLO
+
+        self.model, self.classes, self.names, self.subset = YOLO(str(weights)), classes, names, subset
+        self.index = {k: i for i, k in enumerate(classes)}
+        self.name = label
+        self._probs: dict = {}  # classification: one forward pass per image, shared by MCQA within/across and OEQ
+
+    def config(self) -> dict:
+        return {"name": self.name, "baseline": "yolo-shared", "gen_seed": self.subset}
+
+    def predict(self, item) -> str:
+        allowed = {label_key(item.dataset, n): n for n in self.names.get(item.dataset) or []}
+        if item.task == "classification":
+            if item.images[0] not in self._probs:
+                raw = self.model.predict(item.images[0], imgsz=IMGSZ["classification"], device=device(), verbose=False)[0].probs.data.cpu().numpy()
+                self._probs = {item.images[0]: {self.classes[int(f[1:])]: float(raw[j]) for j, f in self.model.names.items()}}
+            probs = self._probs[item.images[0]]
+            if item.format == "oeq":
+                return allowed[max(allowed, key=lambda k: probs.get(k, -1.0))] if allowed else ""
+            p = prompts()
+            listed = [c for c in item.choices if c not in (p["nota"], p["idk"])]
+            return max(listed, key=lambda c: probs.get(label_key(item.dataset, c), -1.0)) if listed else p["idk"]
+        keep = [self.index[k] for k in allowed if k in self.index]
+        if not keep:
+            return "[]"
+        # only the item's own dataset's classes take part (before non-maximum suppression)
+        r = self.model.predict(item.images[0], imgsz=IMGSZ[item.task], device=device(), classes=keep, verbose=False)[0]
+        out = []
+        if r.boxes is not None:
+            for b, c in zip(r.boxes.xyxy.cpu().numpy().tolist(), r.boxes.cls.cpu().numpy().astype(int).tolist()):
+                if (n := allowed.get(self.classes[c])) is not None:
+                    out.append({"bbox": [round(v, 1) for v in b], "label": n})
+        return json.dumps(out)
