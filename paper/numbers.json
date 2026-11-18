@@ -14,21 +14,71 @@
     "numeric": 8.19
    },
    "runs": 3
+  }
+ },
+ "yolo_train": {
+  "detection": {
+   "images": 3156.7,
+   "classes": 327,
+   "images_approx": 3150
   },
-  "prior": {
-   "mcqa_across": 29.95,
-   "mcqa_within": 30.8,
-   "oeq": 21.27,
-   "itt": 15.19,
-   "detection": 2.14,
-   "segmentation": 6.0,
-   "itt_fmt": {
-    "open_ended": 0.0,
-    "multiple_choice": 30.58,
-    "yes_no": 66.67,
-    "numeric": 6.36
-   },
-   "runs": 1
+  "segmentation": {
+   "images": 467.3,
+   "classes": 43,
+   "images_approx": 470
+  },
+  "classification": {
+   "images": 18254.0,
+   "classes": 1333,
+   "images_approx": 18250
+  }
+ },
+ "yolo": {
+  "shots": 10,
+  "subsets": 3,
+  "top1": [
+   77.26,
+   75.02,
+   79.49,
+   220
+  ],
+  "detection": [
+   37.5,
+   33.44,
+   41.53,
+   105
+  ],
+  "segmentation": [
+   51.38,
+   42.21,
+   60.53,
+   34
+  ],
+  "ag": {
+   "disease": [
+    77.96,
+    75.04,
+    80.79,
+    124
+   ],
+   "pest_damage": [
+    72.94,
+    67.33,
+    78.54,
+    62
+   ],
+   "species_id": [
+    79.53,
+    75.18,
+    83.53,
+    59
+   ],
+   "quality_maturity": [
+    73.92,
+    66.71,
+    80.73,
+    25
+   ]
   }
  },
  "seeds_per_model": {
@@ -4058,6 +4108,246 @@
   "segmentation": 34,
   "image_text_to_text": 13
  },
+ "flips": {
+  "acc_stable": [
+   40.7,
+   67.7
+  ],
+  "acc_flipping": [
+   26.2,
+   37.4
+  ],
+  "correct_to_wrong": [
+   380,
+   1018
+  ],
+  "wrong_to_correct": [
+   371,
+   975
+  ],
+  "items_per_format": [
+   9161
+  ],
+  "per_model": {
+   "Qwen3.6-35B-A3B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 60.1,
+    "acc_flipping": 31.2,
+    "correct_to_wrong": 869,
+    "wrong_to_correct": 849
+   },
+   "Qwen3.6-35B-A3B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 67.7,
+    "acc_flipping": 36.4,
+    "correct_to_wrong": 851,
+    "wrong_to_correct": 826
+   },
+   "Qwen3.8-27B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 56.8,
+    "acc_flipping": 27.7,
+    "correct_to_wrong": 651,
+    "wrong_to_correct": 683
+   },
+   "Qwen3.8-27B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 59.2,
+    "acc_flipping": 34.1,
+    "correct_to_wrong": 703,
+    "wrong_to_correct": 644
+   },
+   "Gemma-4-31B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 54.1,
+    "acc_flipping": 27.2,
+    "correct_to_wrong": 499,
+    "wrong_to_correct": 523
+   },
+   "Gemma-4-31B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 60.3,
+    "acc_flipping": 34.7,
+    "correct_to_wrong": 502,
+    "wrong_to_correct": 471
+   },
+   "Gemma-4-12B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 52.3,
+    "acc_flipping": 28.0,
+    "correct_to_wrong": 760,
+    "wrong_to_correct": 781
+   },
+   "Gemma-4-12B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 56.5,
+    "acc_flipping": 33.6,
+    "correct_to_wrong": 740,
+    "wrong_to_correct": 774
+   },
+   "Muse-Glimmer-30B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 54.4,
+    "acc_flipping": 29.7,
+    "correct_to_wrong": 384,
+    "wrong_to_correct": 434
+   },
+   "Muse-Glimmer-30B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 58.0,
+    "acc_flipping": 37.4,
+    "correct_to_wrong": 380,
+    "wrong_to_correct": 371
+   },
+   "Nemotron-3.5-Bolt-74B-A9B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 54.2,
+    "acc_flipping": 27.1,
+    "correct_to_wrong": 978,
+    "wrong_to_correct": 940
+   },
+   "Nemotron-3.5-Bolt-74B-A9B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 59.9,
+    "acc_flipping": 32.3,
+    "correct_to_wrong": 1018,
+    "wrong_to_correct": 975
+   },
+   "MiniCPM-V-4.7-35B-A3B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 40.7,
+    "acc_flipping": 28.0,
+    "correct_to_wrong": 493,
+    "wrong_to_correct": 504
+   },
+   "MiniCPM-V-4.7-35B-A3B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 41.5,
+    "acc_flipping": 28.7,
+    "correct_to_wrong": 463,
+    "wrong_to_correct": 479
+   },
+   "Ministral-3-14B mcqa_within": {
+    "items": 9161,
+    "acc_stable": 42.3,
+    "acc_flipping": 26.2,
+    "correct_to_wrong": 677,
+    "wrong_to_correct": 683
+   },
+   "Ministral-3-14B mcqa_across": {
+    "items": 9161,
+    "acc_stable": 43.4,
+    "acc_flipping": 29.7,
+    "correct_to_wrong": 548,
+    "wrong_to_correct": 641
+   }
+  }
+ },
+ "judge_validation": {
+  "earlier_run_answers": 8324,
+  "disagreement_total": 308,
+  "disagreement_labelled": 282,
+  "disagreement_match": [
+   138,
+   101,
+   210,
+   224
+  ],
+  "disagreement_pct": [
+   48.94,
+   35.82,
+   74.47,
+   79.43
+  ],
+  "by_task": {
+   "Disease": {
+    "answers": 65,
+    "match": [
+     31,
+     35,
+     37,
+     44
+    ],
+    "pct": [
+     47.69,
+     53.85,
+     56.92,
+     67.69
+    ]
+   },
+   "Pest/damage": {
+    "answers": 50,
+    "match": [
+     7,
+     41,
+     42,
+     41
+    ],
+    "pct": [
+     14.0,
+     82.0,
+     84.0,
+     82.0
+    ]
+   },
+   "Species": {
+    "answers": 81,
+    "match": [
+     58,
+     19,
+     61,
+     62
+    ],
+    "pct": [
+     71.6,
+     23.46,
+     75.31,
+     76.54
+    ]
+   },
+   "Quality/maturity": {
+    "answers": 86,
+    "match": [
+     42,
+     6,
+     70,
+     77
+    ],
+    "pct": [
+     48.84,
+     6.98,
+     81.4,
+     89.53
+    ]
+   }
+  },
+  "agreement_answers": 150,
+  "agreement_match": [
+   136,
+   136,
+   141,
+   142
+  ],
+  "agreement_pct": [
+   90.67,
+   90.67,
+   94.0,
+   94.67
+  ],
+  "false_credit": [
+   13,
+   13,
+   8,
+   7
+  ],
+  "false_reject": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "agreement_half": 75
+ },
  "agtask_fuzzy": {
   "Qwen3.6-35B-A3B": {
    "disease": 51.92,
@@ -4107,5 +4397,159 @@
    "species_id": 16.72,
    "quality_maturity": 34.0
   }
- }
+ },
+ "yolo_trend": {
+  "5": {
+   "top1": [
+    70.16,
+    69.86,
+    70.59
+   ],
+   "detection": [
+    32.36,
+    31.96,
+    32.85
+   ],
+   "segmentation": [
+    47.39,
+    46.09,
+    48.22
+   ]
+  },
+  "10": {
+   "top1": [
+    77.26,
+    76.69,
+    77.8
+   ],
+   "detection": [
+    37.5,
+    37.03,
+    37.87
+   ],
+   "segmentation": [
+    51.38,
+    50.4,
+    51.97
+   ]
+  },
+  "15": {
+   "top1": [
+    80.57,
+    80.11,
+    80.92
+   ],
+   "detection": [
+    40.91,
+    40.47,
+    41.3
+   ],
+   "segmentation": [
+    52.64,
+    50.75,
+    53.97
+   ]
+  }
+ },
+ "yolo_spread": {
+  "by_task": {
+   "top1": 1.11,
+   "detection": 0.9,
+   "segmentation": 3.21
+  },
+  "max_except_segmentation": 1.11
+ },
+ "yolo_tests": {
+  "mcqa_across": {
+   "closest": "Gemma-4-31B",
+   "diff": 22.35,
+   "lo": 19.56,
+   "hi": 25.19,
+   "max_p_holm": 0.0,
+   "n": 220,
+   "all_diffs": {
+    "Qwen3.6-35B-A3B": 22.58,
+    "Qwen3.8-27B": 25.12,
+    "Gemma-4-31B": 22.35,
+    "Gemma-4-12B": 27.81,
+    "Muse-Glimmer-30B": 22.83,
+    "Nemotron-3.5-Bolt-74B-A9B": 29.54,
+    "MiniCPM-V-4.7-35B-A3B": 39.95,
+    "Ministral-3-14B": 36.02
+   }
+  },
+  "mcqa_within": {
+   "closest": "Muse-Glimmer-30B",
+   "diff": 27.52,
+   "lo": 24.72,
+   "hi": 30.27,
+   "max_p_holm": 0.0,
+   "n": 220,
+   "all_diffs": {
+    "Qwen3.6-35B-A3B": 29.65,
+    "Qwen3.8-27B": 30.83,
+    "Gemma-4-31B": 29.06,
+    "Gemma-4-12B": 33.32,
+    "Muse-Glimmer-30B": 27.52,
+    "Nemotron-3.5-Bolt-74B-A9B": 36.42,
+    "MiniCPM-V-4.7-35B-A3B": 35.83,
+    "Ministral-3-14B": 39.63
+   }
+  },
+  "oeq": {
+   "closest": "Muse-Glimmer-30B",
+   "diff": 41.66,
+   "lo": 38.4,
+   "hi": 44.82,
+   "max_p_holm": 0.0,
+   "n": 220,
+   "all_diffs": {
+    "Qwen3.6-35B-A3B": 50.29,
+    "Qwen3.8-27B": 49.19,
+    "Gemma-4-31B": 48.15,
+    "Gemma-4-12B": 52.22,
+    "Muse-Glimmer-30B": 41.66,
+    "Nemotron-3.5-Bolt-74B-A9B": 51.59,
+    "MiniCPM-V-4.7-35B-A3B": 51.93,
+    "Ministral-3-14B": 62.87
+   }
+  },
+  "detection": {
+   "closest": "Qwen3.8-27B",
+   "diff": 12.82,
+   "lo": 9.03,
+   "hi": 16.52,
+   "max_p_holm": 0.0,
+   "n": 105,
+   "all_diffs": {
+    "Qwen3.6-35B-A3B": 14.53,
+    "Qwen3.8-27B": 12.82,
+    "Gemma-4-31B": 14.1,
+    "Gemma-4-12B": 16.21,
+    "Muse-Glimmer-30B": 21.6,
+    "Nemotron-3.5-Bolt-74B-A9B": 16.54,
+    "MiniCPM-V-4.7-35B-A3B": 20.01,
+    "Ministral-3-14B": 29.0
+   }
+  },
+  "segmentation": {
+   "closest": "Gemma-4-12B",
+   "diff": 20.82,
+   "lo": 13.78,
+   "hi": 28.62,
+   "max_p_holm": 0.0,
+   "n": 34,
+   "all_diffs": {
+    "Qwen3.6-35B-A3B": 21.42,
+    "Qwen3.8-27B": 22.81,
+    "Gemma-4-31B": 20.9,
+    "Gemma-4-12B": 20.82,
+    "Muse-Glimmer-30B": 27.14,
+    "Nemotron-3.5-Bolt-74B-A9B": 21.57,
+    "MiniCPM-V-4.7-35B-A3B": 26.02,
+    "Ministral-3-14B": 38.84
+   }
+  }
+ },
+ "yolo_tests_min_diff": 12.82
 }

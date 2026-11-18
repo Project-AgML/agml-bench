@@ -32,7 +32,11 @@ STATS = os.path.join(ROOT, os.environ.get("AGBENCH_STATS", "reports/stats"))
 EXP24 = os.path.join(ROOT, os.environ.get("AGBENCH_EXP24", "runs/runpod_exp/runs"))
 #   AGBENCH_BASELINES  naive baselines: prior/<run>, chance/s*/<run> (agbench eval baseline)   (default runs/baselines)
 BASELINES = os.path.join(ROOT, os.environ.get("AGBENCH_BASELINES", "runs/baselines"))
-BASE_KINDS = [("chance", "Chance (random answer)"), ("prior", "Prior (best constant answer)")]
+#   AGBENCH_YOLO  few-shot YOLO11 runs: <shots>shot/s<subset>/ (agbench eval yolo-shared)   (default runs/yolo11s-shared)
+YOLO = os.path.join(ROOT, os.environ.get("AGBENCH_YOLO", "runs/yolo11s-shared"))
+YOLO_SHOTS = 10  # training images per class of the YOLO baseline in the main results
+YOLO_LABEL = f"YOLO11s, {YOLO_SHOTS} images per class"
+BASE_KINDS = [("chance", "Chance (random answer)")]  # the prior (best constant answer) runs exist but are not reported
 PAPER = os.path.join(ROOT, "paper")
 TAB = os.path.join(PAPER, "tables")
 os.makedirs(TAB, exist_ok=True)
@@ -137,6 +141,45 @@ def baselines():
     return out
 
 
+def yolo_baseline(shots=YOLO_SHOTS):
+    """Few-shot YOLO11, scored as in Ranario & Earles (2025): it sees only the image. Classification is top-1 accuracy, the
+    top class among the dataset's classes against the true class (one value per image, whatever the question format;
+    it is the score of the "oeq" items, which hold exactly that prediction). Detection and segmentation are scored like
+    the VLMs. Aggregated like the models, with the training subsets in place of the seeds: per dataset mean over
+    subsets, then macro over datasets, 95% bootstrap CI over datasets.
+    {"top1" | "detection" | "segmentation": (mean, lo, hi, n), "ag": {ag task: (mean, lo, hi, n)}, "per_subset": {...}}"""
+    dirs = sorted(os.path.dirname(p) for p in glob.glob(os.path.join(YOLO, f"{shots}shot", "s*", "predictions.jsonl")))
+    if not dirs:
+        return {}
+    runs = [load_per_dataset(d) for d in dirs]
+    rec = {"per_subset": {}, "ag": {}}
+    for key, col in (("top1", "oeq"), ("detection", "detection"), ("segmentation", "segmentation")):
+        dsets = sorted({d for (k, d) in runs[0][0] if k == col})
+        vals = [100 * mean([mean(r[0][(col, d)]) for r in runs]) for d in dsets]
+        rec[key] = (mean(vals), *boot_ci(vals), len(dsets))
+        rec["per_subset"][key] = [100 * mean([mean(r[0][(col, d)]) for d in dsets]) for r in runs]
+    for a, _ in AG:
+        dsets = sorted({d for (k, ag, d) in runs[0][1] if k == "oeq" and ag == a})
+        vals = [100 * mean([mean(r[1][("oeq", a, d)]) for r in runs]) for d in dsets]
+        rec["ag"][a] = (mean(vals), *boot_ci(vals), len(dsets))
+    rec["subsets"] = len(dirs)
+    if shots != YOLO_SHOTS:
+        return rec
+    train = C.defaultdict(list)  # task -> [(training images, merged classes)] from the runs' compute records
+    for d in dirs:
+        for c in json.load(open(os.path.join(d, "compute.json"))):
+            if c.get("phase") == "train":
+                train[c["task"]].append((c["train_images"], c["classes"]))
+    # rounded as in the text ("about 18,250"): to 50 images, or 10 below 1,000
+    NUM["yolo_train"] = {t: {"images": round(mean([x[0] for x in v]), 1), "classes": v[0][1],
+                             "images_approx": round(mean([x[0] for x in v]) / (50 if mean([x[0] for x in v]) >= 1000 else 10)) * (50 if mean([x[0] for x in v]) >= 1000 else 10)}
+                         for t, v in train.items()}
+    NUM["yolo"] = {"shots": shots, "subsets": len(dirs),
+                   **{k: [round(x, 2) for x in rec[k][:3]] + [rec[k][3]] for k in ("top1", "detection", "segmentation")},
+                   "ag": {a: [round(x, 2) for x in v[:3]] + [v[3]] for a, v in rec["ag"].items()}}
+    return rec
+
+
 def boot_ci(vals, B=10000, seed=0):
     rnd = random.Random(seed)
     n = len(vals)
@@ -156,6 +199,75 @@ def collect():
         per_seed = [load_per_dataset(r) for r in runs]
         data[name] = {"seeds": [int(re.search(r"/s(\d+)/", r).group(1)) for r in runs], "runs": per_seed}
     return data
+
+
+def answer_flips():
+    """MCQA answers across the three generation seeds, per model and format: accuracy on items with the same answer in every
+    seed vs items whose answer changes, and the items that change from correct to incorrect (and back) between seeds 0 and 1.
+    Shows that answers flip on uncertain items and in both directions, so the flips cancel in the accuracy."""
+    out = {}
+    for _, name, _ in MODELS:
+        runs = []
+        for d in sorted(seed_dirs()[name], key=lambda d: int(re.search(r"/s(\d+)/", d).group(1))):
+            runs.append({p["item_id"]: p for p in map(json.loads, open(os.path.join(d, "predictions.jsonl")))})
+        for f in ("mcqa_within", "mcqa_across"):
+            ids = [i for i, p in runs[0].items() if p["task"] == "classification" and p["format"] == f and all(i in r for r in runs)]
+            st, fl, cw, wc = [], [], 0, 0
+            for i in ids:
+                cor = [bool(r[i]["correct"]) for r in runs]
+                if len({r[i].get("pred_label") for r in runs}) == 1:
+                    st.append(cor[0])
+                else:
+                    fl += cor
+                cw += cor[0] and not cor[1]
+                wc += cor[1] and not cor[0]
+            out[(PLAIN[name], f)] = {"items": len(ids), "acc_stable": 100 * mean(st), "acc_flipping": 100 * mean(fl),
+                                     "correct_to_wrong": cw, "wrong_to_correct": wc}
+    v = list(out.values())
+    rng = lambda k: [round(min(x[k] for x in v), 1), round(max(x[k] for x in v), 1)]  # noqa: E731
+    NUM["flips"] = {"acc_stable": rng("acc_stable"), "acc_flipping": rng("acc_flipping"), "correct_to_wrong": rng("correct_to_wrong"),
+                    "wrong_to_correct": rng("wrong_to_correct"), "items_per_format": sorted({x["items"] for x in v}),
+                    "per_model": {f"{m} {f}": {k: round(x, 1) for k, x in r.items()} for (m, f), r in out.items()}}
+    return out
+
+
+# Judge validation against human labels (Appendix A.5). Counts supplied by the annotator from their labelled subsample of
+# Gemma-4-31B's OEQ answers in an earlier run; the label file itself is not in this repository.
+#   disagreement set: answers on which prompts v1-v3 disagreed (308, of which 282 labelled); agreement sample: 150 answers
+#   on which v1 and v2 agreed, half credited and half rejected. Cells: answers where the judge matches the human label.
+JUDGE_VAL = {
+    "earlier_run_answers": 8324, "disagreement_total": 308,
+    "disagreement": {  # task: (answers, v1, v2, v3, v4)
+        "Disease": (65, 31, 35, 37, 44), "Pest/damage": (50, 7, 41, 42, 41),
+        "Species": (81, 58, 19, 61, 62), "Quality/maturity": (86, 42, 6, 70, 77)},
+    "agreement": {"answers": 150, "match": (136, 136, 141, 142), "false_credit": (13, 13, 8, 7), "false_reject": (1, 1, 1, 1)},
+}
+
+
+def judge_validation():
+    """Table of judge agreement with the human labels, by prompt version (tables/judge_validation.tex)."""
+    d, a = JUDGE_VAL["disagreement"], JUDGE_VAL["agreement"]
+    tot = [sum(v[i] for v in d.values()) for i in range(5)]
+    assert all(a["answers"] - m == fc + fr for m, fc, fr in zip(a["match"], a["false_credit"], a["false_reject"]))
+    cell = lambda k, n: f"${k}$ (${100 * k / n:.0f}$)"  # noqa: E731
+    rows = [f"Disagreement set & {t} & ${v[0]}$ & " if i == 0 else f" & {t} & ${v[0]}$ & " for i, (t, v) in enumerate(d.items())]
+    rows = [r + " & ".join(cell(k, v[0]) for k in v[1:]) + " \\\\" for r, v in zip(rows, d.values())]
+    rows.append(" & \\textbf{All} & $\\mathbf{" + str(tot[0]) + "}$ & " + " & ".join(f"$\\mathbf{{{k}}}$ ($\\mathbf{{{100 * k / tot[0]:.0f}}}$)" for k in tot[1:]) + " \\\\")
+    rows.append("\\midrule")
+    rows.append(f"Agreement sample & Matches human label & ${a['answers']}$ & " + " & ".join(cell(k, a["answers"]) for k in a["match"]) + " \\\\")
+    rows.append(" & False credits & & " + " & ".join(f"${k}$" for k in a["false_credit"]) + " \\\\")
+    rows.append(" & False rejections & & " + " & ".join(f"${k}$" for k in a["false_reject"]) + " \\\\")
+    tex = ("\\begin{tabular}{llrrrrr}\n\\toprule\n\\textbf{Set} & \\textbf{Task} & \\textbf{Answers} & \\textbf{v1} & \\textbf{v2} & \\textbf{v3} & \\textbf{v4 (final)} \\\\\n\\midrule\n"
+           + "\n".join(rows) + "\n\\bottomrule\n\\end{tabular}\n")
+    open(os.path.join(TAB, "judge_validation.tex"), "w").write(tex)
+    pct = lambda k, n: round(100 * k / n, 2)  # noqa: E731
+    NUM["judge_validation"] = {
+        "earlier_run_answers": JUDGE_VAL["earlier_run_answers"], "disagreement_total": JUDGE_VAL["disagreement_total"],
+        "disagreement_labelled": tot[0], "disagreement_match": tot[1:], "disagreement_pct": [pct(k, tot[0]) for k in tot[1:]],
+        "by_task": {t: {"answers": v[0], "match": list(v[1:]), "pct": [pct(k, v[0]) for k in v[1:]]} for t, v in d.items()},
+        "agreement_answers": a["answers"], "agreement_match": list(a["match"]), "agreement_pct": [pct(k, a["answers"]) for k in a["match"]],
+        "false_credit": list(a["false_credit"]), "false_reject": list(a["false_reject"]),
+        "agreement_half": a["answers"] // 2}
 
 
 def nota_parts():
@@ -212,6 +324,10 @@ def main_table(data):
         lines.append("\\midrule")
         lines += [f"\\textit{{{label}}} & " + " & ".join(f"${fmt(BASE[kind][k])}$" for k, _ in COLS) + " \\\\"
                   for kind, label in BASE_KINDS if kind in BASE]
+    if YB:  # top-1 accuracy is one value for all three classification formats
+        cell = lambda v: f"\\makecell{{${fmt(v[0])}$\\\\{{[{fmt(v[1])}, {fmt(v[2])}]}}}}"  # noqa: E731
+        lines.append(f"\\textit{{{YOLO_LABEL}}} & \\multicolumn{{3}}{{c}}{{\\makecell{{top-1 ${fmt(YB['top1'][0])}$\\\\{{[{fmt(YB['top1'][1])}, {fmt(YB['top1'][2])}]}}}}}} & --- & "
+                     + f"{cell(YB['detection'])} & {cell(YB['segmentation'])} \\\\")
     hdr = " & ".join(f"\\makecell{{\\textbf{{{h}}}\\\\($n={ndat[k]}$)}}" for k, h in COLS)
     tex = (
         "\\setlength{\\tabcolsep}{5pt}\n\\begin{tabular}{l" + "c" * len(COLS) + "}\n\\toprule\n"
@@ -264,7 +380,9 @@ def agtask_table(data):
         + "\n".join(lines)
         + "\n\\midrule\nMean of models & "
         + " & ".join(mean_row)
-        + " \\\\\n\\bottomrule\n\\end{tabular}\n"
+        + " \\\\\n"
+        + ((f"\\textit{{YOLO11s top-1}} & " + " & ".join(f"${fmt(YB['ag'][a][0])}$" for _ in fmts for a, _ in AG) + " \\\\\n") if YB else "")
+        + "\\bottomrule\n\\end{tabular}\n"
     )
     open(os.path.join(TAB, "agtask.tex"), "w").write(tex)
     return res
@@ -621,14 +739,23 @@ def compute_table(data):
 def figures(main, ag, fz):
     colors = ["#a6cee3", "#1f78b4", "#fdbf6f", "#ff7f00", "#b2df8a", "#33a02c", "#cab2d6", "#6a3d9a"]
     plt.rcParams.update({"font.size": 9, "font.family": "sans-serif"})
-    fig, ax = plt.subplots(figsize=(10, 4.2))
+    fig, ax = plt.subplots(figsize=(10, 4.6 if YB else 4.2))
     n = len(MODELS)
-    w = 0.8 / n
+    nb = n + (1 if YB else 0)  # bars per task: the models, then YOLO
+    w = 0.8 / nb
     for i, (_, name, _) in enumerate(MODELS):
-        xs = [j + (i - n / 2 + 0.5) * w for j in range(len(COLS))]
+        xs = [j + (i - nb / 2 + 0.5) * w for j in range(len(COLS))]
         ys = [main[name][k][0] / 100 for k, _ in COLS]
         err = [[(main[name][k][0] - main[name][k][1]) / 100 for k, _ in COLS], [(main[name][k][2] - main[name][k][0]) / 100 for k, _ in COLS]]
         ax.bar(xs, ys, w, label=PLAIN[name] + (" (self-judged)" if "gemma-4-31B" in name else ""), color=colors[i], yerr=err, error_kw={"elinewidth": 0.6, "capsize": 1.2, "ecolor": "#444"})
+    if YB:  # YOLO: top-1 accuracy in the three classification columns (it sees no question), detection, segmentation
+        ycol = {"mcqa_across": "top1", "mcqa_within": "top1", "oeq": "top1", "detection": "detection", "segmentation": "segmentation"}
+        js = [j for j, (k, _) in enumerate(COLS) if k in ycol]
+        v = [YB[ycol[COLS[j][0]]] for j in js]
+        xs = [j + (n - nb / 2 + 0.5) * w for j in js]
+        ax.bar(xs, [x[0] / 100 for x in v], w, facecolor="#d9d9d9", edgecolor="#555555", hatch="////", lw=0.6,
+               label=f"{YOLO_LABEL}\n(top-1 for classification)",
+               yerr=[[(x[0] - x[1]) / 100 for x in v], [(x[2] - x[0]) / 100 for x in v]], error_kw={"elinewidth": 0.6, "capsize": 1.2, "ecolor": "#444"})
     for kind, label, style in (("chance", "Chance (random answer)", (0, (3, 2))), ("prior", "Prior (best constant answer)", (0, (1, 1.5)))):
         if kind in BASE:  # reference lines across each task's group of bars
             for j, (k, _) in enumerate(COLS):
@@ -637,21 +764,30 @@ def figures(main, ag, fz):
     ax.set_xticks(range(len(COLS)))
     ax.set_xticklabels([f"{h}\n(n={main[MODELS[0][1]][k][3]})" for k, h in COLS])
     ax.set_ylabel("Accuracy (avg. across datasets)")
-    ax.set_ylim(0, 0.8)
+    ax.set_ylim(0, 0.9 if YB else 0.8)
     ax.yaxis.grid(True, color="#ddd")
     ax.set_axisbelow(True)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
     ax.set_xlabel("Task (n = number of datasets)")
-    fig.legend(*ax.get_legend_handles_labels(), loc="lower center", ncol=5, frameon=False, fontsize=8)
-    fig.tight_layout(rect=(0, 0.11, 1, 1))
+    fig.legend(*ax.get_legend_handles_labels(), loc="lower center", ncol=4, frameon=False, fontsize=8)
+    fig.tight_layout(rect=(0, 0.16 if YB else 0.11, 1, 1))
     fig.savefig(os.path.join(PAPER, "fig_main_results.png"), dpi=200)
     plt.close(fig)
 
-    fig, axes = plt.subplots(1, 3, figsize=(10, 4.0), sharey=True)
+    fig, axes = plt.subplots(1, 3, figsize=(10, 4.4), sharey=True)
+    nb = n + (1 if YB else 0)  # bars per agricultural task: the models, then YOLO
+    w = 0.8 / nb
     for ax, (f, title) in zip(axes, [("mcqa_across", "MCQA across"), ("mcqa_within", "MCQA within"), ("oeq", "OEQ (judged)")]):
+        if YB:  # YOLO top-1 accuracy: image only, so the same bar in every panel
+            xs = [j + (n - nb / 2 + 0.5) * w for j in range(len(AG))]
+            ys = [YB["ag"][a][0] / 100 for a, _ in AG]
+            err = [[ys[j] - YB["ag"][a][1] / 100 for j, (a, _) in enumerate(AG)], [YB["ag"][a][2] / 100 - ys[j] for j, (a, _) in enumerate(AG)]]
+            ax.bar(xs, ys, w, facecolor="#d9d9d9", edgecolor="#555555", hatch="////", lw=0.6, zorder=2,
+                   label=f"{YOLO_LABEL}, top-1 (same in every panel)")
+            ax.errorbar(xs, ys, yerr=err, fmt="none", elinewidth=0.6, capsize=1.0, ecolor="#444", zorder=4)
         for i, (_, name, _) in enumerate(MODELS):
-            xs = [j + (i - n / 2 + 0.5) * w for j in range(len(AG))]
+            xs = [j + (i - nb / 2 + 0.5) * w for j in range(len(AG))]
             ys = [ag[name][(f, a)] / 100 for a, _ in AG]
             err = [[ys[j] - AG_CI[(name, f, a)][0] / 100 for j, (a, _) in enumerate(AG)], [AG_CI[(name, f, a)][1] / 100 - ys[j] for j, (a, _) in enumerate(AG)]]
             ax.bar(xs, ys, w, color=colors[i], label=PLAIN[name], zorder=2)
@@ -672,17 +808,94 @@ def figures(main, ag, fz):
     from matplotlib.lines import Line2D
     from matplotlib.patches import Patch
     h, l = axes[0].get_legend_handles_labels()
+    if YB:  # YOLO's bar is drawn first; list it after the models
+        h, l = h[1:] + h[:1], l[1:] + l[:1]
     h += [Patch(facecolor="#888888"), (Patch(facecolor="none", edgecolor="#888888", hatch="//////", lw=0), Line2D([], [], color="#222222", lw=0.9))]
     l += ["OEQ: LLM judge", "OEQ: fuzzy match"]
-    fig.legend(h, l, loc="lower center", ncol=5, frameon=False, fontsize=8)
-    fig.tight_layout(rect=(0, 0.12, 1, 1))
+    fig.legend(h, l, loc="lower center", ncol=4, frameon=False, fontsize=7.5)
+    axes[0].set_ylim(0, 0.9 if YB else 0.75)
+    fig.tight_layout(rect=(0, 0.17, 1, 1))
     fig.savefig(os.path.join(PAPER, "fig_agtask.png"), dpi=200)
+    plt.close(fig)
+
+
+def yolo_tests(data):
+    """Paired bootstrap over datasets, YOLO11 (10 images per class) minus each VLM, per column, Holm-corrected over the
+    eight models (agbench.eval.stats.paired / holm, the tests used between models). YOLO's per-dataset value is the mean
+    over its training subsets (top-1 accuracy for the classification columns), each VLM's the mean over its seeds."""
+    if not YB:
+        return
+    from agbench.eval.stats import holm, paired
+
+    yruns = [load_per_dataset(os.path.dirname(p)) for p in sorted(glob.glob(os.path.join(YOLO, f"{YOLO_SHOTS}shot", "s*", "predictions.jsonl")))]
+    per_ds = lambda runs, col: {d: 100 * mean([mean(r[0][(col, d)]) for r in runs]) for d in {d for (k, d) in runs[0][0] if k == col}}  # noqa: E731
+    ycol = {"mcqa_across": "oeq", "mcqa_within": "oeq", "oeq": "oeq", "detection": "detection", "segmentation": "segmentation"}
+    out = {}
+    for col, yc in ycol.items():
+        y = per_ds(yruns, yc)
+        res = {PLAIN[name]: paired(y, per_ds(data[name]["runs"], col)) for _, name, _ in MODELS}
+        ph = dict(zip(res, holm([r["p_boot"] for r in res.values()])))
+        closest = min(res, key=lambda m: res[m]["diff"])
+        out[col] = {"closest": closest, "diff": round(res[closest]["diff"], 2), "lo": round(res[closest]["lo"], 2),
+                    "hi": round(res[closest]["hi"], 2), "max_p_holm": max(ph.values()), "n": res[closest]["n"],
+                    "all_diffs": {m: round(r["diff"], 2) for m, r in res.items()}}
+    NUM["yolo_tests"] = out
+    NUM["yolo_tests_min_diff"] = round(min(v["diff"] for v in out.values()), 2)
+
+
+def yolo_trend(main):
+    """Figure B1: YOLO11 accuracy against training images per class (classification top-1, detection, segmentation), mean
+    over the three training subsets with their range, with the VLMs and the naive baselines as horizontal lines. For
+    classification the lines are the best VLM under MCQA across and under OEQ, and the OEQ naive baselines, which like
+    top-1 accuracy name a class from the dataset's list and are scored by exact match."""
+    shots = [5, 10, 15]
+    recs = {k: yolo_baseline(k) for k in shots}
+    if not all(recs.values()):
+        return
+    cols = [("top1", "Classification (top-1)"), ("detection", "Detection"), ("segmentation", "Segmentation")]
+    NUM["yolo_trend"] = {k: {c: [round(recs[k][c][0], 2), round(min(recs[k]["per_subset"][c]), 2), round(max(recs[k]["per_subset"][c]), 2)]
+                             for c, _ in cols} for k in shots}
+    spread = {c: max(max(recs[k]["per_subset"][c]) - min(recs[k]["per_subset"][c]) for k in shots) for c, _ in cols}
+    NUM["yolo_spread"] = {"by_task": {c: round(v, 2) for c, v in spread.items()},
+                          "max_except_segmentation": round(max(v for c, v in spread.items() if c != "segmentation"), 2)}
+    plt.rcParams.update({"font.size": 9, "font.family": "sans-serif"})
+    fig, axes = plt.subplots(1, len(cols), figsize=(9, 3.0), sharey=True)  # one scale, as in Figure 4
+    for ax, (c, h) in zip(axes, cols):
+        ys = [recs[k][c][0] / 100 for k in shots]
+        lo = [min(recs[k]["per_subset"][c]) / 100 for k in shots]
+        hi = [max(recs[k]["per_subset"][c]) / 100 for k in shots]
+        ax.fill_between(shots, lo, hi, color="#555555", alpha=0.18, lw=0)
+        ax.plot(shots, ys, "-o", color="#333333", ms=4, lw=1.4, label="YOLO11s (mean, range over 3 subsets)", zorder=3)
+        if c == "top1":
+            ax.axhline(max(main[n]["mcqa_across"][0] for n in main) / 100, color="#1f78b4", lw=1.2, label="Best VLM (MCQA across for classification)")
+            ax.axhline(max(main[n]["oeq"][0] for n in main) / 100, color="#e31a1c", lw=1.2, ls=(0, (5, 1.5, 1, 1.5)), label="Best VLM, OEQ (judged)")
+            base_col = "oeq"
+        else:
+            ax.axhline(max(main[n][c][0] for n in main) / 100, color="#1f78b4", lw=1.2)
+            base_col = c
+        for kind, style, lab in (("chance", (0, (3, 2)), "Chance"), ("prior", (0, (1, 1.5)), "Prior")):
+            if kind in BASE:
+                ax.axhline(BASE[kind][base_col] / 100, color="#222222", lw=0.9, ls=style, label=lab if c == "top1" else None)
+        ax.set_title(h)
+        ax.set_xticks(shots)
+        ax.set_xlim(4, 16)
+        ax.set_ylim(0, 0.9)
+        ax.yaxis.grid(True, color="#e5e5e5")
+        ax.set_axisbelow(True)
+        for sp in ("top", "right"):
+            ax.spines[sp].set_visible(False)
+    axes[0].set_ylabel("Accuracy (avg. across datasets)")
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="lower center", ncol=3, frameon=False, fontsize=8)
+    fig.tight_layout(rect=(0, 0.2, 1, 1))
+    fig.text(0.5, 0.17, "Training images per class", ha="center", fontsize=9)
+    fig.savefig(os.path.join(PAPER, "fig_yolo_trend.png"), dpi=200)
     plt.close(fig)
 
 
 if __name__ == "__main__":
     data = collect()
     BASE = baselines()
+    YB = yolo_baseline()
     NUM["seeds_per_model"] = {PLAIN[n]: v["seeds"] for n, v in data.items()}
     main = main_table(data)
     ag = agtask_table(data)
@@ -691,6 +904,10 @@ if __name__ == "__main__":
     stats_tables()
     compute_table(data)
     datasets_list()
+    answer_flips()
+    judge_validation()
     figures(main, ag, oeq_fuzzy_by_ag(data))
+    yolo_trend(main)
+    yolo_tests(data)
     json.dump(NUM, open(os.path.join(PAPER, "numbers.json"), "w"), indent=1, default=str)
     print(json.dumps({k: NUM[k] for k in ("seeds_per_model", "main", "compute")}, indent=1))

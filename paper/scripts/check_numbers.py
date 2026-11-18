@@ -46,6 +46,7 @@ def text_numbers():
     s = re.sub(r"\b(Qwen|Gemma|Muse-Glimmer|Nemotron|MiniCPM-V|Ministral|Bolt|RTX|vLLM|v)[-\w.]*", " ", s)  # model names
     s = re.sub(r"\b\d+(\.\d+)?B\b|A\dB|FP8|BF16|GGUF|CUDA \d+(\.\d+)?|\d+K\b", " ", s)
     s = re.sub(r"\b(19|20)\d\d\b", " ", s)                                       # years
+    s = re.sub(r"\b\d+\.\d+\.\d+\b", " ", s)                                  # software versions (3.14.6)
     out = []
     for line_no, line in enumerate(s.split("\n"), 1):
         for m in NUM.finditer(line):
