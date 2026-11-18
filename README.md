@@ -116,7 +116,7 @@ uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --data-dir $DA
 uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 5
 uv run agbench eval profile --data-dir $DATA --models all
 uv run agbench eval profile --data-dir $DATA --models all --redo   # re-profile models already done
-scripts/profile_all_models.sh $DATA                                 # same, deleting each model's weights after
+research/scripts/profile_all_models.sh $DATA                                 # same, deleting each model's weights after
 ```
 
 Resume:
@@ -224,14 +224,14 @@ uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 5 --subset 0 --si
 Farm (Slurm):
 
 ```bash
-J=$(sbatch --parsable scripts/farm_sample_train.sh)
-sbatch --dependency=afterok:$J scripts/farm_yolo.sh experiments/yolo.plan
+J=$(sbatch --parsable research/scripts/farm_sample_train.sh)
+sbatch --dependency=afterok:$J research/scripts/farm_yolo.sh research/experiments/yolo.plan
 ```
 
 ## Paper experiments
 
 ```bash
-DATA=$DATA scripts/run_plan.sh experiments/seeds.plan     # Experiment 1
-DATA=$DATA scripts/run_plan.sh experiments/exp24.plan     # Experiments 2-4
-bash paper/scripts/reproduce.sh                            # stats, tables, figures, number audit, PDF
+DATA=$DATA research/scripts/run_plan.sh research/experiments/seeds.plan     # Experiment 1
+DATA=$DATA research/scripts/run_plan.sh research/experiments/exp24.plan     # Experiments 2-4
+bash research/paper/scripts/reproduce.sh                            # stats, tables, figures, number audit, PDF
 ```

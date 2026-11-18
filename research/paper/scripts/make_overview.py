@@ -4,8 +4,8 @@ One row per task: name and counts, a vertical bar of datasets per agricultural t
 images (badge = classes in that dataset, or questions for VQA; label colour = agricultural task).
 Detection/segmentation tiles show ground-truth boxes; segmentation tiles also show the mask (cyan).
 
-usage: uv run --with matplotlib --with pillow --with numpy python paper/scripts/make_overview.py
-Reads paper/assets/overview/{tiles.json,*.jpg,*_mask.png} and the items of one run; writes paper/fig_overview.png.
+usage: uv run --with matplotlib --with pillow --with numpy python research/paper/scripts/make_overview.py
+Reads research/paper/assets/overview/{tiles.json,*.jpg,*_mask.png} and the items of one run; writes research/paper/fig_overview.png.
 """
 import collections
 import glob
@@ -21,7 +21,7 @@ from PIL import Image
 
 P = Path(__file__).resolve().parents[1]
 A = P / "assets" / "overview"
-RUN = sorted(glob.glob(str(P.parent / os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds") / "s0/*/items.jsonl")))[0]
+RUN = sorted(glob.glob(str(P.parents[1] / os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds") / "s0/*/items.jsonl")))[0]
 
 TASKS = [("classification", "Classification"), ("detection", "Detection"),
          ("segmentation", "Segmentation"), ("image_text_to_text", "VQA")]

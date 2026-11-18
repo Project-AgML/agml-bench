@@ -3,8 +3,8 @@
 (a) false NOTA (x) vs NOTA recall (y) per model, arrow from MCQA within to MCQA across.
 (b) where each model's answers go on withheld-class items: NOTA / a listed class (over-commit) / IDK.
 
-Reads paper/numbers.json ("behaviour", written by make_assets.py); writes paper/fig_behaviour.png.
-usage: uv run --with matplotlib python paper/scripts/make_behaviour.py [--horizontal]
+Reads research/paper/numbers.json ("behaviour", written by make_assets.py); writes research/paper/fig_behaviour.png.
+usage: uv run --with matplotlib python research/paper/scripts/make_behaviour.py [--horizontal]
        panel (b) is drawn as upright bars; --horizontal draws the earlier horizontal version to fig_behaviour_horizontal.png.
 """
 import json

@@ -3,8 +3,8 @@
 For each answer position: share of answers there minus share of items whose correct answer is there (points).
 0 = the model picks that position exactly as often as it should.
 
-Reads paper/numbers.json ("position", written by make_assets.py); writes paper/fig_position.png.
-usage: uv run --with matplotlib python paper/scripts/make_position.py
+Reads research/paper/numbers.json ("position", written by make_assets.py); writes research/paper/fig_position.png.
+usage: uv run --with matplotlib python research/paper/scripts/make_position.py
 """
 import json
 from pathlib import Path

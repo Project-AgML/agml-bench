@@ -295,7 +295,7 @@ def write_report(data: dict, out: Path) -> None:
     fit, per_task, totals, judge, peak, gpu, total_h, hw = (f[k] for k in ("fit", "per_task", "totals", "judge", "peak", "gpu", "total_h", "hw"))
     rows = len(per_task)
     s = data["settings"]
-    md = [f"# Compute profile\n", f"Hardware: {hw}  ", f"Thinking: {s['thinking']} (effort {s['effort']}); "
+    md = ["# Compute profile\n", f"Hardware: {hw}  ", f"Thinking: {s['thinking']} (effort {s['effort']}); "
           f"{s['per_task']} items per task batched, {s['per_task_seq']} sequential.\n",
           "## Recommendation\n", f"- Minimum single GPU: {gpu} GB (largest need {peak:.1f} GB)",
           f"- Full suite, all models + judge, on one GPU: {total_h:.1f} GPU-hours "

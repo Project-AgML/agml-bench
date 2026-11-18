@@ -4,8 +4,8 @@ Six cells (3 x 2), each a prompt, its image, the options and the model's actual 
 Row 1 shows one image under MCQA within, MCQA across and OEQ; row 2 shows a withheld-class MCQA item, grounding
 and a numeric VQA question. Option colours: blue = distractor from the same dataset, purple = from other datasets, green = correct.
 
-usage: uv run --with matplotlib --with pillow --with numpy python paper/scripts/make_prompts.py
-Reads paper/assets/prompts/{cells.json,*.jpg} (made by scripts/extract_prompt_examples.py); writes paper/fig_prompts.png.
+usage: uv run --with matplotlib --with pillow --with numpy python research/paper/scripts/make_prompts.py
+Reads research/paper/assets/prompts/{cells.json,*.jpg} (made by research/paper/scripts/extract_prompt_examples.py); writes research/paper/fig_prompts.png.
 """
 import json
 from pathlib import Path

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Run every line of an experiment plan (<out dir> <model> [agbench eval run args]) in order, one model at a time.
 # Resumable: finished lines are recorded in <plan>.done; an interrupted run resumes in its run dir.
-# usage: DATA=/path/to/base-data scripts/run_plan.sh experiments/seeds.plan
+# usage: DATA=/path/to/base-data research/scripts/run_plan.sh research/experiments/seeds.plan
 set -euo pipefail
 PLAN=$1; DONE=$PLAN.done; touch "$DONE"
 : "${DATA:?set DATA to the base-data dir (agbench sample --data-dir \$DATA)}"

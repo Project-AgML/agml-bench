@@ -1,10 +1,10 @@
 """Build the paper's tables (tables/*.tex), figures (*.png) and numbers.json from the runs.
 
-Run from the repo root:  python3 paper/scripts/make_assets.py
+Run from the repo root:  python3 research/paper/scripts/make_assets.py
 Inputs:  runs/rejudge_v4/exp/seeds/s*/<model>/   (experiment 1: generation seeds, default options; judge v4 verdicts)
          runs/exp/seeds/s*/<model>/compute.json   (generation and original judge time)
-         reports/stats/seeds/stats.md  (agbench eval stats --runs runs/rejudge_v4/exp/seeds)
-         reports/stats/exp24/stats.md  (agbench eval stats --runs runs/runpod_exp/runs --runs runs/rejudge_v4/exp/seeds/s0)
+         research/reports/stats/seeds/stats.md  (agbench eval stats --runs runs/rejudge_v4/exp/seeds)
+         research/reports/stats/exp24/stats.md  (agbench eval stats --runs runs/runpod_exp/runs --runs runs/rejudge_v4/exp/seeds/s0)
 """
 import collections as C
 import glob
@@ -22,13 +22,13 @@ import matplotlib.pyplot as plt  # noqa: E402
 sys.path.insert(0, os.path.dirname(__file__))
 from mdtables import sections  # noqa: E402
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-# Inputs (override to reproduce from your own runs; see paper Appendix D and paper/scripts/reproduce.sh):
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+# Inputs (override to reproduce from your own runs; see paper Appendix D and research/paper/scripts/reproduce.sh):
 #   AGBENCH_SEEDS  Experiment 1 run dirs, one subdir per seed   (default runs/rejudge_v4/exp/seeds)
 #   AGBENCH_EXP24  Experiments 2-4 run dirs                       (default runs/runpod_exp/runs)
-#   AGBENCH_STATS  agbench eval stats outputs (seeds/, exp24/)    (default reports/stats)
+#   AGBENCH_STATS  agbench eval stats outputs (seeds/, exp24/)    (default research/reports/stats)
 SEEDS = os.path.join(ROOT, os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds"))
-STATS = os.path.join(ROOT, os.environ.get("AGBENCH_STATS", "reports/stats"))
+STATS = os.path.join(ROOT, os.environ.get("AGBENCH_STATS", "research/reports/stats"))
 EXP24 = os.path.join(ROOT, os.environ.get("AGBENCH_EXP24", "runs/runpod_exp/runs"))
 #   AGBENCH_BASELINES  naive baselines: prior/<run>, chance/s*/<run> (agbench eval baseline)   (default runs/baselines)
 BASELINES = os.path.join(ROOT, os.environ.get("AGBENCH_BASELINES", "runs/baselines"))
@@ -37,7 +37,7 @@ YOLO = os.path.join(ROOT, os.environ.get("AGBENCH_YOLO", "runs/yolo11s-shared"))
 YOLO_SHOTS = 10  # training images per class of the YOLO baseline in the main results
 YOLO_LABEL = f"YOLO11s, {YOLO_SHOTS} images per class"
 BASE_KINDS = [("chance", "Chance (random answer)")]  # the prior (best constant answer) runs exist but are not reported
-PAPER = os.path.join(ROOT, "paper")
+PAPER = os.path.join(ROOT, "research", "paper")
 TAB = os.path.join(PAPER, "tables")
 os.makedirs(TAB, exist_ok=True)
 

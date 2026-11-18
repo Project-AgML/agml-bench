@@ -4,7 +4,7 @@ fig_judge_samples.png: three OEQ answers from runs/rejudge_v4 seed 0 (models oth
 verdict, reasoning and confidence, next to the fuzzy-match verdict (the first two are drawn).
 fig_judge_prompt.png: the judge system prompt and classification prompt from src/agbench/eval/prompts.yaml.
 
-usage: uv run --with matplotlib --with pillow --with numpy --with pyyaml python paper/scripts/make_judge.py
+usage: uv run --with matplotlib --with pillow --with numpy --with pyyaml python research/paper/scripts/make_judge.py
 """
 import json
 import os
@@ -18,7 +18,7 @@ from matplotlib.patches import FancyBboxPatch, Rectangle
 from PIL import Image
 
 P = Path(__file__).resolve().parents[1]
-ROOT = P.parent
+ROOT = P.parents[1]
 A = P / "assets" / "judge"
 RUN = ROOT / os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds") / "s0"
 INK = "#111111"
