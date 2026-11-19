@@ -1,183 +1,51 @@
-# AGgentic-benchmarks
+# agml-benchmarks
 
-Agricultural benchmarks for evaluating agentic systems.
+Benchmark vision-language models on AgML agricultural datasets: classification, detection, segmentation and VQA.
 
-## Setup
+## Install
 
 ```bash
+git clone git@github.com:Project-AgML/agml-benchmarks.git && cd agml-benchmarks
 uv sync
 hf auth login
+uv tool install vllm          # to serve models with --model
 ```
 
-## Benchmarks
-
-```bash
-uv run agbench bench list
-uv run agbench bench show agml-full-v1
-```
+## Quick start
 
 ```bash
 DATA=/path/to/data_dir
 
 uv run agbench data pull agml-full-v1 --data-dir $DATA
-uv run agbench data pull agml-full-v1 --data-dir $DATA --task classification
-uv run agbench data pull agml-full-v1 --data-dir $DATA --only '^bean_disease_uganda$'
-uv run agbench data status agml-full-v1 --data-dir $DATA
-uv run agbench data verify agml-full-v1 --data-dir $DATA
-```
-
-```bash
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge                        # agml-full-v1 (default)
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --benchmark none               # items built from $DATA
-uv run agbench bench freeze agml-full-v2 --items runs/<run_dir>/items.jsonl --description "..."
-```
-
-```python
-from agbench.eval import Benchmark
-
-Benchmark("/path/to/data_dir", bench="agml-full-v1", tasks=["classification"]).run(MyMethod(), out_dir="runs/my-method")
-```
-
-## Catalog
-
-```bash
-uv run agbench catalog sync                 # fetch latest AgML catalog, print what changed
-uv run agbench catalog diff                 # show upstream changes without saving
-uv run agbench catalog list                 # eligible datasets
-uv run agbench catalog list --all           # include excluded datasets with reason
-uv run agbench catalog list --task image_text_to_text
-```
-
-## base-data
-
-Sampling rules: [docs/subsampling.md](docs/subsampling.md)
-
-```bash
-DATA=/path/to/data_dir
-
-uv run agbench status --data-dir $DATA
-uv run agbench sample --data-dir $DATA
-```
-
-Filter:
-
-```bash
-uv run agbench sample --data-dir $DATA --task classification
-uv run agbench sample --data-dir $DATA --only '^AgroBench$'
-```
-
-Update after a catalog sync:
-
-```bash
-uv run agbench catalog sync
-uv run agbench sample --data-dir $DATA
-```
-
-Other options:
-
-```bash
-uv run agbench sample --data-dir $DATA --refresh          # resample datasets already done
-uv run agbench sample --data-dir $DATA --skip-failed      # do not retry failed datasets
-uv run agbench sample --data-dir $DATA --timeout 1800     # seconds per dataset
-uv run agbench sample --data-dir $DATA --from-manifest    # re-download exact samples in manifests/
-```
-
-## Viewer
-
-```bash
-uv run agbench view --data-dir $DATA
-```
-
-## Benchmark
-
-Rules: [docs/benchmarking.md](docs/benchmarking.md)
-
-Setup:
-
-```bash
-git clone git@github.com:plant-ai-biophysics-lab/AGgentic-benchmarks.git && cd AGgentic-benchmarks
-uv sync
-hf auth login
-uv tool install vllm
-vllm download-kernels
-```
-
-llama.cpp (Nemotron GGUF):
-
-```bash
-git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp
-cmake -B build -DGGML_CUDA=ON && cmake --build build -j 8 --target llama-server
-export LLAMA_SERVER_BIN=$PWD/build/bin/llama-server
-```
-
-```bash
-uv run agbench eval models
-uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judge
-uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --task classification --format mcqa_within
-uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --endpoint http://localhost:8000
-uv run agbench eval judge --run runs/<run_dir>
-uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge
 uv run agbench eval report --runs runs
-uv run agbench eval report --runs runs/full --csv reports/scores/full_low   # scores.csv, ag_tasks.csv, datasets.csv
-uv run agbench eval stats --runs runs/exp/seeds --out reports/stats/seeds
-uv run agbench eval view --runs runs --profile reports/profile
 ```
 
-Options:
+## Run your model
+
+Hugging Face repo or local checkpoint (served with vLLM):
 
 ```bash
---only '^AgroBench$'           # regex on dataset name
---limit-per-dataset 5
---no-thinking
---reasoning-effort medium      # low (default) | medium | high
---concurrency 16
---gen-seed 1                   # sampling seed (replicate runs)
---order-seed 1 --nota-position random   # MCQA: shuffle option order, NOTA/IDK anywhere
---nota-rate 0.5                # MCQA: share of items whose true class is removed
---no-idk                       # MCQA: drop "I don't know"
---run-dir runs/<run_dir>       # resume (with --judge: judge whatever is left)
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge
+uv run agbench eval run --model /path/to/checkpoint --data-dir $DATA --judge
 ```
 
-Compute profile:
+Already served (any OpenAI-compatible endpoint):
 
 ```bash
-uv run agbench eval run --model openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --data-dir $DATA --limit-per-dataset 2 --only '^(bean_disease_uganda|almond_bloom_2023|apple_flower_segmentation|AgriBench)$'
-uv run agbench eval profile --data-dir $DATA --models google/gemma-4-12B-it --per-task 5
-uv run agbench eval profile --data-dir $DATA --models all
-uv run agbench eval profile --data-dir $DATA --models all --redo   # re-profile models already done
-research/scripts/profile_all_models.sh $DATA                                 # same, deleting each model's weights after
+uv run agbench eval run --model my-org/My-VLM --endpoint http://localhost:8000 --data-dir $DATA --judge
 ```
 
-Resume:
+Model settings:
 
 ```bash
-uv run agbench eval run --model Qwen/Qwen3.6-35B-A3B-FP8 --data-dir $DATA --judge --run-dir runs/<run_dir>
-uv run agbench eval judge --run runs/<run_dir>
-uv run agbench eval judge --run runs/<run_dir> --redo   # re-judge everything (after editing the judge prompts)
-uv run agbench eval profile --data-dir $DATA --models all   # keeps models already in reports/profile/profile.json
-```
-
-View results (http://localhost:8502):
-
-```bash
-uv run agbench eval view --runs reports/profile --profile reports/profile
-uv run agbench eval view --runs reports/profile --profile reports/profile --data-dir $DATA   # images under another base-data/ copy
-```
-
-Your own model (any HF repo or local path; vLLM by default):
-
-```bash
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA
-uv run agbench eval run --model /path/to/checkpoint --data-dir $DATA
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --models-file my_models.yaml
-uv run agbench eval profile --models my-org/My-VLM --data-dir $DATA --models-file my_models.yaml
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --endpoint http://localhost:8000
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --models-file my_models.yaml --judge
 ```
 
 ```yaml
-# my_models.yaml (same fields as src/agbench/eval/models.yaml)
+# my_models.yaml (fields as in src/agbench/eval/models.yaml)
 my-org/My-VLM:
-  serve_args: [--reasoning-parser, qwen3, --quantization, awq]
+  serve_args: [--max-model-len, "32768"]
   sampling: {temperature: 0.7, top_p: 0.95}
   thinking: {chat_template_kwargs: {enable_thinking: true}}
   no_thinking: {chat_template_kwargs: {enable_thinking: false}}
@@ -185,82 +53,79 @@ my-org/My-VLM:
   bbox_key_format: {bbox_2d: xyxy_px}   # other box keys: xyxy_1000 | xyxy_px
 ```
 
-Custom method:
+Your own method:
 
 ```bash
-uv add "agbench @ git+ssh://git@github.com/plant-ai-biophysics-lab/AGgentic-benchmarks"
+uv run agbench eval run --method mypkg.methods:MyMethod --data-dir $DATA
 ```
 
 ```python
-from agbench.eval import Benchmark, Method, EvalItem
+from agbench.eval import Benchmark, EvalItem, Method
 
 class MyMethod(Method):
     name = "my-method"
     async def predict(self, item: EvalItem) -> str:
-        ...  # item.images, item.prompt, item.choices, item.task, item.format, item.crop, item.ag_task
+        ...  # item.images, item.prompt, item.choices, item.task, item.format
 
-res = Benchmark("/path/to/data_dir", tasks=["classification"]).run(MyMethod(), out_dir="runs/my-method")
-res = Benchmark("/path/to/data_dir", tasks=["detection"]).run(MyMethod(), out_dir="runs/my-method-det", key_formats={"box_2d": "xyxy_1000"})
+res = Benchmark(DATA, bench="agml-full-v1", tasks=["classification"]).run(MyMethod(), out_dir="runs/my-method")
 res.metrics
 ```
 
+## Options
+
 ```bash
-uv run agbench eval run --method mypkg.methods:MyMethod --data-dir $DATA
-uv run agbench eval check-agtasks           # ag-task mapping gaps after a catalog sync
+--task classification          # classification | detection | segmentation | image_text_to_text
+--format mcqa_within           # mcqa_within | mcqa_across | oeq | grounding | multiple_choice
+--only '^bean_disease_uganda$' # regex on dataset name
+--limit-per-dataset 2          # quick try
+--no-thinking
+--reasoning-effort medium      # low (default) | medium | high
+--concurrency 16
+--gen-seed 1                   # sampling seed (replicate runs)
+--run-dir runs/<run_dir>       # resume
+--benchmark agml-full-v1       # default; 'none' builds items from $DATA
 ```
+
+## Results
+
+```bash
+uv run agbench eval judge --run runs/<run_dir>
+uv run agbench eval report --runs runs
+uv run agbench eval report --runs runs --csv reports/scores     # scores.csv, ag_tasks.csv, datasets.csv
+uv run agbench eval stats --runs runs --out reports/stats
+uv run agbench eval view --runs runs                            # http://localhost:8502
+```
+
+## Benchmarks
+
+```bash
+uv run agbench bench list
+uv run agbench bench show agml-full-v1
+uv run agbench data pull agml-full-v1 --data-dir $DATA --task classification
+uv run agbench data status agml-full-v1 --data-dir $DATA
+uv run agbench data verify agml-full-v1 --data-dir $DATA
+```
+
+## Baselines
+
+```bash
+uv run agbench eval baseline --kind chance --data-dir $DATA --out runs/baselines/chance
+```
+
+```bash
+uv sync --extra yolo
+uv run agbench sample-train --data-dir $DATA --from-manifest
+uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots 10 --subset 0
+```
+
+## More
+
+- New benchmark versions, catalog, sampling, profiling: [docs/building.md](docs/building.md)
+- Paper experiments and reproduction: [research/README.md](research/README.md)
+- Evaluation rules: [docs/benchmarking.md](docs/benchmarking.md)
 
 ## Tests
 
 ```bash
 uv run pytest
-```
-
-## Layout
-
-```
-configs/base_data.yaml                      sampling settings and per-dataset overrides
-catalog/catalog.json                        normalized AgML catalog
-catalog/CHANGES.md                          catalog changes per sync
-manifests/base-data/<task>/<dataset>.json   sampled ids, labels, HF revision
-src/agbench/eval/*.yaml                     prompts, model registry, ag tasks, segmentation class names
-runs/<model>_<time>/                        items.jsonl, predictions.jsonl, metrics.json, crops.json
-reports/profile/                            report.md, report.html, profile.json
-$DATA/base-data/<task>/<dataset>/           images/, masks/, samples.jsonl, meta.json
-```
-
-## Naive baselines
-
-```bash
-uv run agbench eval baseline --data-dir $DATA --kind prior --out runs/baselines/prior
-for s in 0 1 2; do uv run agbench eval baseline --data-dir $DATA --kind chance --gen-seed $s --out runs/baselines/chance/s$s; done
-```
-
-## Few-shot YOLO11 baselines
-
-Training images (`train_sampling` in [configs/base_data.yaml](configs/base_data.yaml); never an evaluated sample):
-
-```bash
-uv run agbench sample-train --data-dir $DATA
-uv run agbench sample-train --data-dir $DATA --from-manifest     # re-download exact samples in manifests/train-data/
-```
-
-```bash
-uv sync --extra yolo
-uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 5 --subset 0 --out runs/yolo
-uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 5 --subset 0 --size n --epochs 2 --only '^bean_disease_uganda$'
-```
-
-Farm (Slurm):
-
-```bash
-J=$(sbatch --parsable research/scripts/farm_sample_train.sh)
-sbatch --dependency=afterok:$J research/scripts/farm_yolo.sh research/experiments/yolo.plan
-```
-
-## Paper experiments
-
-```bash
-DATA=$DATA research/scripts/run_plan.sh research/experiments/seeds.plan     # Experiment 1
-DATA=$DATA research/scripts/run_plan.sh research/experiments/exp24.plan     # Experiments 2-4
-bash research/paper/scripts/reproduce.sh                            # stats, tables, figures, number audit, PDF
 ```
