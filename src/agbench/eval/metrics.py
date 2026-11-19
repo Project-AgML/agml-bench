@@ -96,7 +96,7 @@ def compute(records: list[dict]) -> dict:
     for r in records:
         by_ds[(r["dataset"], cv_key(r), None)].append(r)
         by_ag[(r["dataset"], cv_key(r), r["ag_task"])].append(r)
-    datasets = [{"dataset": d, "cv_task": k, "ag_task": max({x["ag_task"] for x in v}, key=[x["ag_task"] for x in v].count),
+    datasets = [{"dataset": d, "cv_task": k, "ag_task": max(sorted({x["ag_task"] for x in v}), key=[x["ag_task"] for x in v].count),
                  **group(v)} for (d, k, _), v in sorted(by_ds.items())]
     ag_rows = [{"dataset": d, "cv_task": k, "ag_task": a, **group(v)} for (d, k, a), v in sorted(by_ag.items())]
     ag_recs = lambda r: by_ag[(r["dataset"], r["cv_task"], r["ag_task"])]
