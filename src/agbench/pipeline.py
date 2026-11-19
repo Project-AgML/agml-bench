@@ -90,7 +90,9 @@ def status_of(cfg: dict, data_dir: Path, entry: dict) -> str:
 
 # ---------------------------------------------------------------- worker (runs in a subprocess)
 
-def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> dict:
+def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool, manifest: dict | None = None,
+                bundle: dict | None = None) -> dict:
+    """`manifest` (with `bundle`): download exactly these samples for a frozen benchmark; manifests/ is not touched."""
     from agbench import build
     from agbench.hub import Repo
     from agbench.progress import log
@@ -102,7 +104,8 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> 
     rng = rng_for(s_cfg["seed"], name)
     t0 = time.time()
 
-    manifest = json.loads(manifest_path(entry).read_text()) if from_manifest else None
+    if manifest is None and from_manifest:
+        manifest = json.loads(manifest_path(entry).read_text())
     repo = Repo(entry["hf_repo"], revision=manifest["hf_sha"] if manifest else entry.get("hf_sha"))
 
     if manifest:
@@ -143,9 +146,12 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> 
         "sampling_hash": sampling_hash(cfg, name, task), "created": now(), "seconds": round(time.time() - t0, 1),
         "n_samples": len(samples), "info": info, "strata_keys": strata_keys, "catalog": entry,
     }
+    if bundle:
+        meta["benchmark"] = bundle
     (tmp / "meta.json").write_text(json.dumps(meta, indent=1, ensure_ascii=False, default=str))
     # Manifest first: a dataset only counts as done once meta.json appears via the rename.
-    write_manifest(entry, meta, samples)
+    if not bundle:
+        write_manifest(entry, meta, samples)
     shutil.rmtree(out, ignore_errors=True)
     tmp.rename(out)
 
@@ -292,10 +298,17 @@ def worker_main(argv: list[str]) -> int:
     from_manifest = "--from-manifest" in argv
     train = "--train" in argv
     cfg = load_config(config_path)
-    entry = load_catalog()["datasets"][name]
     data_dir = Path(data_dir)
     try:
-        meta = (run_train_dataset if train else run_dataset)(cfg, entry, data_dir, from_manifest)
+        if "--bundle" in argv:
+            from agbench.bench import load
+
+            b = load(argv[argv.index("--bundle") + 1])
+            meta = run_dataset(cfg, b.entry(name), data_dir, True, manifest=b.manifests[name],
+                               bundle={"name": b.name, "hash": b.hash})
+        else:
+            entry = load_catalog()["datasets"][name]
+            meta = (run_train_dataset if train else run_dataset)(cfg, entry, data_dir, from_manifest)
         print(f"  ok: {meta['n_samples']} samples in {meta['seconds']}s")
         return 0
     except Exception as e:
@@ -313,7 +326,7 @@ def record_failure(data_dir: Path, name: str, reason: str, tb: str = "", train: 
 # ---------------------------------------------------------------- orchestrator
 
 def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, timeout: int, from_manifest: bool,
-             train: bool = False) -> dict:
+             train: bool = False, bundle: str | None = None) -> dict:
     from agbench.progress import fmt_duration
 
     results = {"ok": [], "failed": []}
@@ -335,6 +348,8 @@ def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, t
             cmd.append("--from-manifest")
         if train:
             cmd.append("--train")
+        if bundle:
+            cmd += ["--bundle", bundle]
         try:
             rc = subprocess.run(cmd, env=env, timeout=timeout).returncode
         except subprocess.TimeoutExpired:

@@ -9,6 +9,35 @@ uv sync
 hf auth login
 ```
 
+## Benchmarks
+
+```bash
+uv run agbench bench list
+uv run agbench bench show agml-full-v1
+```
+
+```bash
+DATA=/path/to/data_dir
+
+uv run agbench data pull agml-full-v1 --data-dir $DATA
+uv run agbench data pull agml-full-v1 --data-dir $DATA --task classification
+uv run agbench data pull agml-full-v1 --data-dir $DATA --only '^bean_disease_uganda$'
+uv run agbench data status agml-full-v1 --data-dir $DATA
+uv run agbench data verify agml-full-v1 --data-dir $DATA
+```
+
+```bash
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge                        # agml-full-v1 (default)
+uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --benchmark none               # items built from $DATA
+uv run agbench bench freeze agml-full-v2 --items runs/<run_dir>/items.jsonl --description "..."
+```
+
+```python
+from agbench.eval import Benchmark
+
+Benchmark("/path/to/data_dir", bench="agml-full-v1", tasks=["classification"]).run(MyMethod(), out_dir="runs/my-method")
+```
+
 ## Catalog
 
 ```bash

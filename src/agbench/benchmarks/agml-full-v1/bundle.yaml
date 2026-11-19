@@ -1,0 +1,30 @@
+name: agml-full-v1
+description: 'Full AgML VLM benchmark (paper version): 372 datasets; classification,
+  detection, segmentation, VQA'
+created: '2026-11-19T18:25:12+00:00'
+datasets:
+  total: 372
+  classification: 220
+  detection: 105
+  image_text_to_text: 13
+  segmentation: 34
+images: 14134
+items:
+  total: 32456
+  classification/mcqa_across: 9161
+  classification/mcqa_within: 9161
+  classification/oeq: 9161
+  detection/grounding: 1628
+  image_text_to_text/multiple_choice: 1053
+  image_text_to_text/numeric: 236
+  image_text_to_text/open_ended: 1604
+  image_text_to_text/yes_no: 204
+  segmentation/grounding: 248
+judge:
+  model: RedHatAI/gemma-4-31B-it-FP8-dynamic
+  prompt_sha: 073c65389ab6
+files:
+  items.jsonl.gz: daaf343cc1cf3db2451108c26d22a474e2766148ee2e4f81d49542d8b303c354
+  manifests.json.gz: ae2253f76fb03a2a79fce36a25bc8a058921111c6f4cb41126113e9388fbab7d
+  config.yaml: 189ba090cd5465712e682a4920e85bd406dbd4acd105908f31f17dd5a595f7be
+hash: 235c4f1292b037ca

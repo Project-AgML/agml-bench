@@ -163,7 +163,7 @@ class Oracle(Method):
 
 
 def test_benchmark_oracle_scores_perfectly_and_resumes(data_dir, tmp_path):
-    bench = Benchmark(data_dir)
+    bench = Benchmark(data_dir, bench=None)
     res = bench.run(Oracle(), tmp_path / "run")
     assert all(r["accuracy_macro"] == 1.0 and r["f1_macro"] == 1.0 for r in res.metrics["cv_task"])
     assert {r["cv_task"] for r in res.metrics["cv_task"]} == {
@@ -225,7 +225,7 @@ def fake_server():
 
 def test_vlm_method_and_judge_against_fake_server(data_dir, tmp_path, fake_server):
     FakeOpenAI.requests.clear()
-    bench = Benchmark(data_dir, tasks=["classification"], only="tomato")
+    bench = Benchmark(data_dir, tasks=["classification"], only="tomato", bench=None)
     res = bench.run(VLMMethod(fake_server, "google/gemma-4-12B-it", effort="medium"), tmp_path / "r", concurrency=4)
     body = FakeOpenAI.requests[0]
     assert body["chat_template_kwargs"]["enable_thinking"] is True and body["top_k"] == 64

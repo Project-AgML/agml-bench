@@ -3,6 +3,7 @@
 import asyncio
 import inspect
 import json
+import re
 import subprocess
 import time
 from contextlib import nullcontext
@@ -11,6 +12,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
+from agbench.bench import DEFAULT as DEFAULT_BENCH
 from agbench.eval import metrics as mx
 from agbench.eval.client import Prediction
 from agbench.eval.gpu import sampler
@@ -78,20 +80,36 @@ def coverage_md(items) -> str:
 
 
 class Benchmark:
-    """The standard benchmark over a base-data directory.
+    """A benchmark over a base-data directory.
+
+    `bench`: a frozen benchmark (agbench bench list). Its items are used exactly as frozen, for the datasets present
+    in data_dir (agbench data pull). Item ablations (seed != 0 or non-default MCQA options) cannot use frozen items,
+    so they are built from the data with the current code and recorded as a variant of the benchmark.
+    `bench=None`: items built from whatever base-data is in data_dir (development, a new catalog).
 
     >>> Benchmark(data_dir, tasks=["classification"], formats=["mcqa_within"]).run(MyMethod(), out_dir="runs/x")
     """
 
     def __init__(self, data_dir=None, tasks=None, formats=None, only: str | None = None, limit_per_dataset: int | None = None,
-                 seed: int = 0, items=None, mcqa: MCQAOptions | None = None):
+                 seed: int = 0, items=None, mcqa: MCQAOptions | None = None, bench: str | None = DEFAULT_BENCH):
         self.data_dir, self.seed = Path(data_dir) if data_dir else None, seed
         self.args = {"data_dir": str(self.data_dir), "tasks": tasks, "formats": formats, "only": only,
                      "limit_per_dataset": limit_per_dataset, "seed": seed, "mcqa": asdict(mcqa or MCQAOptions())}
+        self.skipped = []
+        if items is None and bench:
+            from agbench.bench import load
+
+            b = load(bench)
+            standard = seed == 0 and (mcqa is None or mcqa == MCQAOptions())
+            self.args["benchmark"] = {"name": b.name, "hash": b.hash, "variant": None if standard else "ablation"}
+            if standard:
+                items, self.skipped = b.items(self.data_dir, tasks, formats, only, limit_per_dataset, seed)
+            else:
+                names = "|".join(re.escape(n) for n in b.datasets(tasks))
+                only = f"(?=.*(?:{only}))^(?:{names})$" if only else f"^(?:{names})$"
         if items is None:
-            items, self.skipped = build_items(self.data_dir, tasks, formats, only, limit_per_dataset, seed, mcqa)
-        else:
-            self.skipped = []
+            items, skipped = build_items(self.data_dir, tasks, formats, only, limit_per_dataset, seed, mcqa)
+            self.skipped += skipped
         self.items = items
 
     def remaining(self, out_dir) -> list:
