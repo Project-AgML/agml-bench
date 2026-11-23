@@ -2,7 +2,7 @@
 
 import hashlib
 
-from agbench.eval.client import Client, Prediction, merge
+from agbench.eval.client import Client, Prediction, api_key_from_env, merge
 from agbench.eval.items import EvalItem
 from agbench.eval.resources import models, prompts
 
@@ -59,7 +59,8 @@ class VLMMethod(Method):
 
     def __init__(self, endpoint: str, model_id: str, thinking: bool = True, effort: str | None = "low",
                  max_tokens: int | None = None, body: dict | None = None, served_name: str | None = None,
-                 gen_seed: int | None = None):
+                 gen_seed: int | None = None, api_key_env: str | None = None):
+        """`api_key_env`: name of the environment variable holding the endpoint's API key (hosted APIs)."""
         self.spec = model_spec(model_id)
         self.name, self.model_id, self.thinking, self.effort = model_id, model_id, thinking, effort
         self.max_tokens = max_tokens or self.spec["max_tokens"]
@@ -67,7 +68,8 @@ class VLMMethod(Method):
         self.system = prompts()["cot_system"] if (thinking and self.spec.get("cot")) else None
         self.box_order = self.spec.get("box_order", "yxyx")
         self.gen_seed = gen_seed  # per-item sampling seed derived from it, so a run is reproducible
-        self.client = Client(endpoint, served_name)
+        self.api_key_env = api_key_env
+        self.client = Client(endpoint, served_name, api_key=api_key_from_env(api_key_env), prefer=model_id)
 
     def prompt(self, item: EvalItem) -> str:
         """The item prompt, with the grounding coordinate order switched to this model's `box_order`."""
@@ -83,4 +85,4 @@ class VLMMethod(Method):
     def config(self) -> dict:
         return {"name": self.name, "model_id": self.model_id, "thinking": self.thinking, "effort": self.effort,
                 "max_tokens": self.max_tokens, "body": self.body, "cot": bool(self.system), "box_order": self.box_order,
-                "gen_seed": self.gen_seed}
+                "gen_seed": self.gen_seed, **({"api_key_env": self.api_key_env} if self.api_key_env else {})}

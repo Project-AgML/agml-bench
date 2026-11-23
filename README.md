@@ -36,6 +36,15 @@ Already served (any OpenAI-compatible endpoint):
 uv run agbench eval run --model my-org/My-VLM --endpoint http://localhost:8000 --data-dir $DATA --judge
 ```
 
+Hosted API (OpenAI-compatible):
+
+```bash
+export OPENAI_API_KEY=...
+uv run agbench eval run --model gpt-5-mini --endpoint https://api.openai.com/v1 --api-key-env OPENAI_API_KEY --concurrency 8 --data-dir $DATA --judge
+uv run agbench eval run --model gemini-2.5-flash --endpoint https://generativelanguage.googleapis.com/v1beta/openai --api-key-env GEMINI_API_KEY --data-dir $DATA --judge
+uv run agbench eval run --model claude-sonnet-5-5 --endpoint https://api.anthropic.com/v1 --api-key-env ANTHROPIC_API_KEY --data-dir $DATA --judge
+```
+
 Model settings:
 
 ```bash
@@ -49,6 +58,7 @@ my-org/My-VLM:
   sampling: {temperature: 0.7, top_p: 0.95}
   thinking: {chat_template_kwargs: {enable_thinking: true}}
   no_thinking: {chat_template_kwargs: {enable_thinking: false}}
+  effort: {low: {reasoning_effort: low}, high: {reasoning_effort: high}}   # request fields per --reasoning-effort
   box_order: xyxy                       # box_2d as [x_min, y_min, x_max, y_max]; default yxyx
   bbox_key_format: {bbox_2d: xyxy_px}   # other box keys: xyxy_1000 | xyxy_px
 ```
@@ -84,17 +94,22 @@ res.metrics
 --gen-seed 1                   # sampling seed (replicate runs)
 --run-dir runs/<run_dir>       # resume
 --benchmark agml-full-v1       # default; 'none' builds items from $DATA
+--strict                       # exit non-zero if the run check fails or the run is not comparable
 ```
 
 ## Results
 
 ```bash
+uv run agbench eval check runs/<run_dir>                        # files, schema, items vs benchmark, coverage, comparable
 uv run agbench eval judge --run runs/<run_dir>
+uv run agbench eval judge --run runs/<run_dir> --judge-model gpt-5-mini --judge-endpoint https://api.openai.com/v1 --judge-api-key-env OPENAI_API_KEY   # not comparable
 uv run agbench eval report --runs runs
 uv run agbench eval report --runs runs --csv reports/scores     # scores.csv, ag_tasks.csv, datasets.csv
 uv run agbench eval stats --runs runs --out reports/stats
 uv run agbench eval view --runs runs                            # http://localhost:8502
 ```
+
+`runs/<run_dir>/run_manifest.json`: agbench version, benchmark name and hash, model and sampling, judge, coverage, `comparable`.
 
 ## Benchmarks
 
