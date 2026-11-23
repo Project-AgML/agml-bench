@@ -80,3 +80,14 @@ def test_failure_reasons_are_actionable():
     assert "pinned revision c421bed no longer exists" in explain(moved, repo, rev)
     assert "read-only" in explain(RuntimeError("403 Forbidden: You have read access"), repo, rev)
     assert explain(ValueError("boom"), repo, rev) == "ValueError: boom"
+
+
+def test_unavailable_dataset_kept_with_notice(full, tmp_path):
+    assert "AgriBench" in full.manifests and "removed from Hugging Face" in full.unavailable["AgriBench"]
+    assert bench.data_status(full, tmp_path, only="^AgriBench$") == {"AgriBench": "unavailable"}
+    assert bench.verify(full, tmp_path, only="^AgriBench$", decode=False) == {}
+    _, skipped = full.items(tmp_path, only="^AgriBench$")
+    assert skipped[0]["reason"].startswith("removed from Hugging Face")
+    _fake_dataset(tmp_path, full, "AgriBench")  # a local copy from before the removal is still used
+    assert bench.data_status(full, tmp_path, only="^AgriBench$") == {"AgriBench": "done"}
+    assert full.items(tmp_path, only="^AgriBench$")[0]

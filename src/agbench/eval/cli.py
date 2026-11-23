@@ -95,7 +95,7 @@ def run(
         raise typer.BadParameter("--nota-position: end | random")
     bench = Benchmark(data_dir, task or None, fmt or None, only, limit_per_dataset, seed,
                       mcqa=MCQAOptions(nota_rate, order_seed, nota_position, idk), bench=_bench(benchmark))
-    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    _echo_items(bench)
     if method:
         m = _load_method(method, method_kwargs)
         rd = run_dir or _run_dir(out, m.name)
@@ -122,6 +122,13 @@ def run(
     _print_summary(rd)
 
 
+def _echo_items(bench) -> None:
+    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    for s in bench.skipped:
+        if s["reason"].startswith("removed from"):  # source repo gone (bundle.yaml: unavailable)
+            typer.echo(f"  note: {s['dataset']} skipped, {s['reason']}")
+
+
 @app.command()
 def baseline(
     data_dir: Path = DataDirOpt,
@@ -141,7 +148,7 @@ def baseline(
     if kind not in KINDS:
         raise typer.BadParameter(f"--kind: {' | '.join(KINDS)}")
     bench = Benchmark(data_dir, task or None, fmt or None, only, None, seed, bench=_bench(benchmark))
-    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    _echo_items(bench)
     m = NaiveBaseline(kind, priors(bench.items), gen_seed)
     rd = _run_dir(out, f"{m.name}_s{gen_seed}" if kind == "chance" else m.name)
     bench.run(m, rd, concurrency=64, resume=False)

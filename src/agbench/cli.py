@@ -321,8 +321,11 @@ def data_pull(
     b = _bundle(name)
     cfg = load_config(b.config_path)
     status = bench.data_status(b, data_dir, task, only)
-    todo = [b.entry(n) for n, s in status.items() if refresh or s != "done"]
-    typer.echo(f"{name}: {len(status)} datasets selected, {len(status) - len(todo)} already present, {len(todo)} to download")
+    gone = [n for n, s in status.items() if s == "unavailable"]
+    todo = [b.entry(n) for n, s in status.items() if s not in ("unavailable", "done") or (refresh and n not in b.unavailable)]
+    typer.echo(f"{name}: {len(status)} datasets selected, {len(status) - len(todo) - len(gone)} already present, {len(todo)} to download"
+               + (f", {len(gone)} unavailable" if gone else ""))
+    _print_unavailable(b, gone)
     if not todo:
         return
     res = pipeline.run_many(cfg, str(b.config_path), todo, Path(data_dir).resolve(),
@@ -334,6 +337,15 @@ def data_pull(
     if res["failed"]:
         typer.echo("Rerun the same command to retry the failed datasets (finished ones are skipped).")
         raise typer.Exit(1)
+
+
+def _print_unavailable(b, names: list[str]) -> None:
+    if not names:
+        return
+    n_items = Counter(r["dataset"] for r in b.raw_items)
+    typer.echo("Unavailable (kept in the benchmark; skipped without a local copy):")
+    for n in names:
+        typer.echo(f"  {n}  {b.unavailable[n]}; {n_items[n]} items")
 
 
 def _print_failures(data_dir: Path, names: list[str]) -> None:
@@ -353,14 +365,17 @@ def data_status(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[st
     """Which of a benchmark's datasets are present (done), missing, stale or failed in a data dir."""
     from agbench import bench
 
-    st = bench.data_status(_bundle(name), data_dir, task, only)
+    b = _bundle(name)
+    st = bench.data_status(b, data_dir, task, only)
     typer.echo("  ".join(f"{k}={v}" for k, v in sorted(Counter(st.values()).items())))
     for n, s in st.items():
-        if s == "failed":
+        if s == "unavailable":
+            typer.echo(f"{s:<11} {n}: {b.unavailable[n]}")
+        elif s == "failed":
             reason = json.loads(pipeline.failure_path(Path(data_dir), n).read_text())["reason"]
-            typer.echo(f"{s:<8} {n}: {reason}")
+            typer.echo(f"{s:<11} {n}: {reason}")
         elif s != "done" or verbose:
-            typer.echo(f"{s:<8} {n}")
+            typer.echo(f"{s:<11} {n}")
 
 
 @data_app.command("verify")
@@ -378,7 +393,9 @@ def data_verify(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[st
     n = len(b.datasets(task, only))
     for ds, errs in bad.items():
         typer.echo(f"{ds}: " + "; ".join(errs[:5]) + (f" (+{len(errs) - 5} more)" if len(errs) > 5 else ""))
-    typer.echo(f"{n - len(bad)} of {n} datasets match {name} (hash {b.hash})")
+    gone = [d for d, s in bench.data_status(b, data_dir, task, only).items() if s == "unavailable"]
+    typer.echo(f"{n - len(bad) - len(gone)} of {n} datasets match {name} (hash {b.hash})")
+    _print_unavailable(b, gone)
     if bad or problems:
         raise typer.Exit(1)
 
