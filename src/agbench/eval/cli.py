@@ -14,6 +14,7 @@ import typer
 app = typer.Typer(no_args_is_help=True, help="Benchmark models on base-data.")
 
 DataDirOpt = typer.Option(..., "--data-dir", help="Data dir with base-data/.")
+BenchOpt = typer.Option("agml-full-v1", "--benchmark", help="Frozen benchmark (agbench bench list); 'none': items built from the base-data in --data-dir.")
 TaskOpt = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text")
 FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native | multiple_choice (ITT)")
 ModelsFileOpt = typer.Option(None, "--models-file", help="YAML of extra/overriding models (models.yaml layout).")
@@ -24,6 +25,10 @@ def _register(files: list[Path] | None):
 
     for f in files or []:
         register_models(f)
+
+
+def _bench(name: str) -> str | None:
+    return None if name.lower() == "none" else name
 
 
 def _run_dir(out: Path, name: str) -> Path:
@@ -75,6 +80,7 @@ def run(
     judge: bool = typer.Option(False, "--judge", help="Judge open-ended answers after the run."),
     judge_endpoint: str = typer.Option(None, "--judge-endpoint"),
     models_file: list[Path] = ModelsFileOpt,
+    benchmark: str = BenchOpt,
 ):
     """Run a model or custom method over the benchmark."""
     _register(models_file)
@@ -88,7 +94,7 @@ def run(
     if nota_position not in ("end", "random"):
         raise typer.BadParameter("--nota-position: end | random")
     bench = Benchmark(data_dir, task or None, fmt or None, only, limit_per_dataset, seed,
-                      mcqa=MCQAOptions(nota_rate, order_seed, nota_position, idk))
+                      mcqa=MCQAOptions(nota_rate, order_seed, nota_position, idk), bench=_bench(benchmark))
     typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
     if method:
         m = _load_method(method, method_kwargs)
@@ -126,6 +132,7 @@ def baseline(
     seed: int = typer.Option(0, "--seed", help="Item seed: which images, distractors and NOTA items."),
     gen_seed: int = typer.Option(0, "--gen-seed", help="chance: random-answer seed; replicate runs use different values."),
     out: Path = typer.Option(Path("runs"), "--out"),
+    benchmark: str = BenchOpt,
 ):
     """Naive baselines (no image used), scored like a model run; no GPU or judge needed."""
     from agbench.eval.baselines import KINDS, NaiveBaseline, exact_oeq_verdicts, priors
@@ -133,7 +140,7 @@ def baseline(
 
     if kind not in KINDS:
         raise typer.BadParameter(f"--kind: {' | '.join(KINDS)}")
-    bench = Benchmark(data_dir, task or None, fmt or None, only, None, seed)
+    bench = Benchmark(data_dir, task or None, fmt or None, only, None, seed, bench=_bench(benchmark))
     typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
     m = NaiveBaseline(kind, priors(bench.items), gen_seed)
     rd = _run_dir(out, f"{m.name}_s{gen_seed}" if kind == "chance" else m.name)

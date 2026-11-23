@@ -1,0 +1,76 @@
+# Catalog source: Project-AgML website data folder.
+catalog:
+  github_repo: Project-AgML/project-agml.github.io
+  branch: main
+  data_path: static/data
+  hf_org: Project-AgML
+
+eligibility:
+  tasks: [image_classification, object_detection, semantic_segmentation, image_text_to_text]
+  sensor_modalities: [rgb]
+  # Image-text datasets ship standard image files regardless of the original sensor.
+  itt_ignore_sensor: true
+
+sampling:
+  seed: 0
+  samples_per_class: 5
+  # Rows whose split is earlier in this list are preferred when picking samples.
+  split_priority: [test, validation, val, dev, train]
+  # Configs whose name contains any of these are never used for cls/det/seg.
+  skip_config_keywords: [augment]
+  # Segmentation needs mask pixels to know which classes appear; cap rows scanned.
+  seg_max_index_rows: 3000
+  itt:
+    per_stratum: 5
+    max_per_dataset: 250
+    # Raise the per-stratum quota so datasets with few strata still reach max_per_dataset.
+    fill_to_cap: true
+    # raw_metadata keys tried (in order) as the primary stratum.
+    primary_keys: [task, question_type, type_id, subset, source, category, answer_type, origin_dataset]
+    # Optional second key, added only if the strata still fit max_per_dataset / per_stratum.
+    secondary_keys: [category, crop, origin_dataset, task_type, subset]
+    max_stratum_values: 60
+
+download:
+  timeout_s: 900
+
+# Per-dataset overrides, keyed by catalog name.
+#   include: true|false        force eligibility
+#   reason: str                note shown in the catalog
+#   config: str                HF config to use
+#   strata: [key, ...]         ITT raw_metadata keys to stratify on
+#   bbox_format: xywh|xyxy|cxcywh   (normalized boxes are detected automatically)
+overrides:
+  iNatAg:
+    include: false
+    reason: species-scale (2,958 classes); enable explicitly
+  iNatAg-mini:
+    include: false
+    reason: species-scale (2,958 classes); enable explicitly
+  rice_seedling_segmentation:
+    include: false
+    reason: mask column holds file paths but mask files are missing from the HF repo
+  sugarbeet_weed_segmentation:
+    include: false
+    reason: mask column holds file paths but mask files are missing from the HF repo
+  GobhiSet_cauliflower_segmentation:
+    include: false
+    reason: masks are empty (all background)
+  LeLePhid_classification:
+    include: false
+    reason: masks are empty (all background)
+  grapevine_organ_segmentation:
+    include: false
+    reason: masks cover the whole image
+  soybean_harvest_damage_segmentation:
+    include: false
+    reason: mask values are noise / inconsistent between images
+
+# Few-shot training images for the supervised baselines (agbench sample-train): disjoint from the evaluated
+# samples above. Each subset is drawn with its own seed; within a subset the smaller shot counts use the same
+# image order, so for classification the 5-shot set is contained in the 10-shot set, and so on.
+train_sampling:
+  seed: 100
+  subsets: 3
+  shots: [5, 10, 15]
+  split_priority: [train, validation, val, dev, test]

@@ -287,7 +287,7 @@ def index_itt(repo: Repo, files, keep_keys: list[str]) -> tuple[list[dict], dict
             strata["qa_format"] = qa_format(q, a)
             rid = row.get("id") or f"{fr.path}:{row_i}"
             strata["id_prefix"] = re.sub(r"[_\-]?\d+$", "", str(rid).rsplit("/", 1)[-1])
-            recs.append({"keys": [], "strata": strata, "question": q[:500],
+            recs.append({"keys": [], "strata": strata, "question": q[:500], "source_id": row.get("id"),
                          "ref": {"file": fr.path, "row": row_i, "config": fr.config, "split": fr.split}})
         prog.add()
     return recs, {"layout": "itt_parquet"}
@@ -389,7 +389,7 @@ def extract(repo: Repo, name: str, task: str, info: dict, recs: list[dict], out_
             samples += _write_itt(repo, name, path, loaded, w)
             continue
         for r, row in loaded:
-            sid = sample_id(name, r["ref"])
+            sid = r.get("sample_id") or sample_id(name, r["ref"])  # a manifest keeps its ids if a repo is re-pinned
             if not row.get("image"):
                 continue
             rel, size = w.save("images", sid, row["image"])
@@ -451,7 +451,7 @@ def _write_itt(repo: Repo, name: str, path: str, loaded, w: Writer) -> list[dict
 
     out = []
     for r, row in loaded:
-        sid = sample_id(name, r["ref"])
+        sid = r.get("sample_id") or sample_id(name, r["ref"])  # a manifest keeps its ids if a repo is re-pinned
         rels = []
         for k, im in enumerate(row.get("images") or []):
             data = im.get("bytes") or fetched.get(im.get("path"))

@@ -55,7 +55,7 @@ def objects_bucket(name: str, entry: dict, labels: list[str]) -> str:
     if not labels:
         return dataset_bucket(name, entry)
     buckets = [class_bucket(name, entry, l) for l in labels]
-    return max(set(buckets), key=buckets.count)
+    return max(sorted(set(buckets)), key=buckets.count)  # a tie goes to the first bucket alphabetically, not to hash order
 
 
 def check(entries: list[dict]) -> list[str]:

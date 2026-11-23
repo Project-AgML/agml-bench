@@ -215,6 +215,174 @@ def view(data_dir: Path = DataDirOpt, port: int = typer.Option(8501, "--port")):
                     "--", "--data-dir", str(Path(data_dir).resolve())])
 
 
+# ---------------------------------------------------------------- frozen benchmarks
+
+bench_app = typer.Typer(no_args_is_help=True)
+data_app = typer.Typer(no_args_is_help=True)
+app.add_typer(bench_app, name="bench", help="Frozen, named benchmark versions (e.g. agml-full-v1).")
+app.add_typer(data_app, name="data", help="Download and check a benchmark's images.")
+BenchArg = typer.Argument("agml-full-v1", help="Benchmark name (agbench bench list).")
+
+
+def _bundle(name: str):
+    from agbench import bench
+
+    try:
+        return bench.load(name)
+    except KeyError as e:
+        typer.echo(e.args[0])
+        raise typer.Exit(1)
+
+
+@bench_app.command("list")
+def bench_list():
+    """Available benchmarks."""
+    from agbench import bench
+
+    for n in bench.list_bundles():
+        b = bench.load(n)
+        typer.echo(f"{n:<20} {b.spec['datasets']['total']:>4} datasets  {b.spec['items']['total']:>6} items  "
+                   f"hash {b.hash}  {b.spec['description']}")
+
+
+@bench_app.command("show")
+def bench_show(name: str = BenchArg):
+    """Size, tasks, judge and hash of a benchmark; checks its files against the hash."""
+    import yaml
+
+    b = _bundle(name)
+    typer.echo(yaml.safe_dump({k: v for k, v in b.spec.items() if k != "files"}, sort_keys=False, allow_unicode=True).rstrip())
+    problems = b.check()
+    typer.echo("files: ok" if not problems else "files: " + "; ".join(problems))
+    if problems:
+        raise typer.Exit(1)
+
+
+@bench_app.command("freeze")
+def bench_freeze(
+    name: str = typer.Argument(..., help="New benchmark name, e.g. agml-full-v2."),
+    items: Path = typer.Option(..., "--items", help="items.jsonl of a run over the full base-data (agbench eval run)."),
+    description: str = typer.Option(..., "--description"),
+    config: Path = ConfigOpt,
+):
+    """Freeze the committed manifests and a run's items into benchmarks/<name>/ (never overwrites one)."""
+    from agbench import bench
+
+    b = bench.freeze(name, items, description, config_path=config)
+    typer.echo(f"{b.path}  hash {b.hash}  {b.spec['items']['total']} items, {b.spec['datasets']['total']} datasets")
+
+
+@bench_app.command("repin")
+def bench_repin(
+    name: str = typer.Argument(..., help="Benchmark name."),
+    dataset: list[str] = typer.Option(..., "--dataset", help="Dataset whose source repo was re-uploaded (repeatable)."),
+    reference: Path = typer.Option(..., "--reference", help="Data dir holding the benchmark's images (the frozen copy)."),
+    write: bool = typer.Option(False, "--write", help="Update the bundle if every sample matched (default: report only)."),
+):
+    """Re-point datasets at a re-uploaded repo's current revision; samples must match the reference copy exactly."""
+    from agbench import bench
+
+    bad = False
+    from agbench.pipeline import explain
+
+    for ds in dataset:
+        b = _bundle(name)
+        try:
+            r = bench.repin(b, ds, reference, write)
+        except Exception as e:
+            typer.echo(f"{ds}: NOT re-pinned: {explain(e, b.entry(ds)['hf_repo'], None)}")
+            bad = True
+            continue
+        status = "written" if r.get("written") else ("ok (dry run)" if r["ok"] else "NOT re-pinned")
+        typer.echo(f"{ds}: {r['samples']} samples, {r['old_revision'][:7]} -> {r['new_revision'][:7]}: {status}")
+        for k, why in (("unmatched", "no row with these images"), ("different", "downloaded images not byte-identical")):
+            if r[k]:
+                typer.echo(f"  {len(r[k])} {why} (e.g. {', '.join(r[k][:3])})")
+        if r["text_changed"]:
+            typer.echo(f"  {r['text_changed']} rows with different conversation text (frozen items unaffected)")
+        bad |= not r["ok"]
+    if bad:
+        raise typer.Exit(1)
+
+
+@data_app.command("pull")
+def data_pull(
+    name: str = BenchArg,
+    data_dir: Path = DataDirOpt,
+    task: list[str] = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text"),
+    only: str = typer.Option(None, "--only", help="Regex on dataset name."),
+    refresh: bool = typer.Option(False, "--refresh", help="Download datasets again even if present."),
+    timeout: int = typer.Option(None, "--timeout", help="Seconds per dataset."),
+):
+    """Download a benchmark's images from the source AgML repos at their pinned revisions."""
+    from agbench import bench
+    from agbench.progress import fmt_duration
+
+    b = _bundle(name)
+    cfg = load_config(b.config_path)
+    status = bench.data_status(b, data_dir, task, only)
+    todo = [b.entry(n) for n, s in status.items() if refresh or s != "done"]
+    typer.echo(f"{name}: {len(status)} datasets selected, {len(status) - len(todo)} already present, {len(todo)} to download")
+    if not todo:
+        return
+    res = pipeline.run_many(cfg, str(b.config_path), todo, Path(data_dir).resolve(),
+                            timeout or cfg["download"]["timeout_s"], True, bundle=name)
+    typer.echo(f"\n{len(res['ok'])} downloaded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
+    _print_failures(data_dir, res["failed"])
+    if res.get("log"):
+        typer.echo(f"Details: {res['log']}")
+    if res["failed"]:
+        typer.echo("Rerun the same command to retry the failed datasets (finished ones are skipped).")
+        raise typer.Exit(1)
+
+
+def _print_failures(data_dir: Path, names: list[str]) -> None:
+    if not names:
+        return
+    typer.echo("\nFailed:")
+    w = max(len(n) for n in names)
+    for n in names:
+        p = pipeline.failure_path(Path(data_dir), n)
+        reason = json.loads(p.read_text())["reason"] if p.exists() else "unknown (no failure record)"
+        typer.echo(f"  {n:<{w}}  {reason}")
+
+
+@data_app.command("status")
+def data_status(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[str] = typer.Option(None, "--task"),
+                only: str = typer.Option(None, "--only"), verbose: bool = typer.Option(False, "-v", "--verbose")):
+    """Which of a benchmark's datasets are present (done), missing, stale or failed in a data dir."""
+    from agbench import bench
+
+    st = bench.data_status(_bundle(name), data_dir, task, only)
+    typer.echo("  ".join(f"{k}={v}" for k, v in sorted(Counter(st.values()).items())))
+    for n, s in st.items():
+        if s == "failed":
+            reason = json.loads(pipeline.failure_path(Path(data_dir), n).read_text())["reason"]
+            typer.echo(f"{s:<8} {n}: {reason}")
+        elif s != "done" or verbose:
+            typer.echo(f"{s:<8} {n}")
+
+
+@data_app.command("verify")
+def data_verify(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[str] = typer.Option(None, "--task"),
+                only: str = typer.Option(None, "--only"),
+                decode: bool = typer.Option(True, "--decode/--no-decode", help="Open every image (slower).")):
+    """Check a local copy against the benchmark: revision, sample ids, every evaluated image present and readable."""
+    from agbench import bench
+
+    b = _bundle(name)
+    problems = b.check()
+    if problems:
+        typer.echo("benchmark files: " + "; ".join(problems))
+    bad = bench.verify(b, data_dir, task, only, decode)
+    n = len(b.datasets(task, only))
+    for ds, errs in bad.items():
+        typer.echo(f"{ds}: " + "; ".join(errs[:5]) + (f" (+{len(errs) - 5} more)" if len(errs) > 5 else ""))
+    typer.echo(f"{n - len(bad)} of {n} datasets match {name} (hash {b.hash})")
+    if bad or problems:
+        raise typer.Exit(1)
+
+
 from agbench.eval.cli import app as eval_app  # noqa: E402
 
 app.add_typer(eval_app, name="eval")
