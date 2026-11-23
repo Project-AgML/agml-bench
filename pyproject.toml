@@ -32,6 +32,8 @@ dependencies = [
 [project.optional-dependencies]
 # Few-shot YOLO11 baselines (agbench eval yolo)
 yolo = ["ultralytics>=8.3.0"]
+# PNG figures (agbench eval report --figures)
+viz = ["matplotlib>=3.11"]
 
 [project.scripts]
 agbench = "agbench.cli:app"

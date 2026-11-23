@@ -599,8 +599,13 @@ def report(
     average: str = typer.Option("macro", "--average", help="macro | micro"),
     out: Path = typer.Option(None, "--out", help="Write the leaderboard markdown here."),
     csv: Path = typer.Option(None, "--csv", help="Write scores.csv (per task), ag_tasks.csv and datasets.csv to this dir."),
+    html: Path = typer.Option(None, "--html", help="Write a self-contained HTML report (charts, tables, runs)."),
+    figures: Path = typer.Option(None, "--figures", help="Write the paper's figures as PNG to this dir (uv sync --extra viz)."),
+    label: list[str] = typer.Option(None, "--label", help="Display name: METHOD_NAME=LABEL (repeatable)."),
+    title: str = typer.Option("AgML benchmark results", "--title", help="HTML report title."),
 ):
-    """Leaderboard across runs."""
+    """Leaderboard across runs. --html and --figures group repeated runs of a setting (sampling seeds) and aggregate
+    them as in the paper: per-dataset mean, macro over datasets, 95% bootstrap CI."""
     from agbench.eval.report import leaderboard_md, load_runs, write_csv
 
     rs = load_runs(runs)
@@ -610,6 +615,19 @@ def report(
         out.write_text(md)
     if csv:
         typer.echo(f"csv: {write_csv(rs, csv)}")
+    if html or figures:
+        from agbench.viz.aggregate import entries
+
+        labels = dict(x.split("=", 1) for x in label or [])
+        es = entries(runs, labels)
+        if html:
+            from agbench.viz.html import write
+
+            typer.echo(f"html: {write(es, html, title)}")
+        if figures:
+            from agbench.viz.figures import agtask, main_results
+
+            typer.echo(f"figures: {main_results(es, figures / 'fig_main_results.png')}, {agtask(es, figures / 'fig_agtask.png')}")
 
 
 @app.command()
