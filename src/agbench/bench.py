@@ -66,6 +66,12 @@ class Bundle:
         return [json.loads(l) for l in self._text("items.jsonl.gz").splitlines()]
 
     @property
+    def unavailable(self) -> dict[str, str]:
+        """Datasets whose source repo is gone, {dataset: notice}. They stay in the benchmark (a local copy is still
+        evaluated); without one their items are skipped."""
+        return {u["dataset"]: f"{u['reason']} ({u['date']})" for u in self.spec.get("unavailable", [])}
+
+    @property
     def config_path(self) -> Path:
         return self.path / "config.yaml"
 
@@ -116,7 +122,8 @@ class Bundle:
             if not present[key]:
                 if key not in seen:
                     seen.add(key)
-                    skipped.append({"dataset": r["dataset"], "task": r["task"], "reason": f"not downloaded (agbench data pull {self.name})"})
+                    why = self.unavailable.get(r["dataset"]) or f"not downloaded (agbench data pull {self.name})"
+                    skipped.append({"dataset": r["dataset"], "task": r["task"], "reason": why})
                 continue
             keep.append(r)
         if limit_per_dataset:
@@ -216,7 +223,8 @@ def freeze(name: str, items_path: Path, description: str, manifest_dir: Path | N
 # ---------------------------------------------------------------- local data
 
 def data_status(b: Bundle, data_dir, task=None, only=None) -> dict[str, str]:
-    """Per dataset: done | missing | stale (wrong revision or different samples) | failed."""
+    """Per dataset: done | missing | stale (wrong revision or different samples) | failed | unavailable (source repo
+    gone, no local copy)."""
     from agbench.pipeline import base_dir, failure_path, TASK_DIRS
 
     out = {}
@@ -228,6 +236,8 @@ def data_status(b: Bundle, data_dir, task=None, only=None) -> dict[str, str]:
             have = {json.loads(l)["sample_id"] for l in open(d / "samples.jsonl")} if (d / "samples.jsonl").exists() else set()
             same = meta.get("hf_sha") == m["hf_sha"] and have == {s["sample_id"] for s in m["samples"]}
             out[n] = "done" if same else "stale"
+        elif n in b.unavailable:
+            out[n] = "unavailable"
         else:
             out[n] = "failed" if failure_path(Path(data_dir), n).exists() else "missing"
     return out
@@ -235,7 +245,8 @@ def data_status(b: Bundle, data_dir, task=None, only=None) -> dict[str, str]:
 
 def verify(b: Bundle, data_dir, task=None, only=None, decode: bool = True) -> dict[str, list[str]]:
     """Problems per dataset in a local copy: not downloaded, wrong revision, missing or extra samples, missing or
-    undecodable images. An empty dict means the local copy matches the bundle."""
+    undecodable images. An empty dict means the local copy matches the bundle. Unavailable datasets (source repo
+    gone) without a local copy are not problems; with one, they are checked like the rest."""
     from PIL import Image, ImageFile
 
     from agbench.pipeline import base_dir, TASK_DIRS
@@ -249,7 +260,8 @@ def verify(b: Bundle, data_dir, task=None, only=None, decode: bool = True) -> di
         m, errs = b.manifests[n], []
         d = base_dir(data_dir) / TASK_DIRS[m["task"]] / n
         if not (d / "meta.json").exists():
-            problems[n] = ["not downloaded"]
+            if n not in b.unavailable:
+                problems[n] = ["not downloaded"]
             continue
         meta = json.loads((d / "meta.json").read_text())
         if meta.get("hf_sha") != m["hf_sha"]:

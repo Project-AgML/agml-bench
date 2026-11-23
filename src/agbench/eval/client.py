@@ -1,8 +1,10 @@
-"""Async client for OpenAI-compatible VLM servers (vLLM, llama-server)."""
+"""Async client for OpenAI-compatible endpoints: vLLM, llama-server, or a hosted API (OpenAI, Gemini, Claude, ...)."""
 
 import asyncio
 import base64
 import io
+import os
+import re
 import time
 from dataclasses import asdict, dataclass
 
@@ -46,19 +48,70 @@ def merge(a: dict, b: dict) -> dict:
     return out
 
 
+class FatalAPIError(RuntimeError):
+    """The endpoint refuses every request (bad key, no access, unknown model): stop the run instead of recording an
+    error for each item."""
+
+
+def api_key_from_env(var: str | None) -> str:
+    """The API key held in environment variable `var` (the key itself is never passed on the command line or saved)."""
+    if not var:
+        return "EMPTY"
+    key = os.environ.get(var)
+    if not key:
+        raise FatalAPIError(f"environment variable {var} is not set (it should hold the API key)")
+    return key
+
+
+def api_base(url: str) -> str:
+    """OpenAI-style base URL: a bare server address gets /v1; a URL that already has a version path is kept."""
+    url = url.rstrip("/")
+    return url if re.search(r"/v\d+[a-z0-9]*(/|$)", url) else url + "/v1"
+
+
 class Client:
     def __init__(self, base_url: str, model: str | None = None, api_key: str = "EMPTY", timeout: float = 1800,
-                 max_pixels: int = MAX_PIXELS, retries: int = 3):
+                 max_pixels: int = MAX_PIXELS, retries: int = 3, prefer: str | None = None):
+        """`model`: the name to send. Unset: `prefer` if the endpoint lists it (or does not list models), else the
+        endpoint's only (or first) model."""
         from openai import AsyncOpenAI
 
-        self.api = AsyncOpenAI(base_url=base_url.rstrip("/") + ("" if base_url.rstrip("/").endswith("/v1") else "/v1"),
-                               api_key=api_key, timeout=timeout, max_retries=0)
-        self.model, self.max_pixels, self.retries = model, max_pixels, retries
+        self.api = AsyncOpenAI(base_url=api_base(base_url), api_key=api_key, timeout=timeout, max_retries=0)
+        self.model, self.prefer, self.max_pixels, self.retries = model, prefer, max_pixels, retries
+        self.token_param, self.dropped = "max_tokens", set()  # adapted to what the endpoint accepts
+        self._lock = asyncio.Lock()
 
     async def resolve_model(self) -> str:
-        if not self.model:
-            self.model = (await self.api.models.list()).data[0].id
+        async with self._lock:
+            if not self.model:
+                try:
+                    ids = [m.id for m in (await self.api.models.list()).data]
+                except Exception as e:
+                    if _fatal(e) and not _status(e) == 404:
+                        raise FatalAPIError(_describe(e)) from e
+                    ids = []
+                if self.prefer and (self.prefer in ids or not ids or len(ids) > 1):
+                    self.model = self.prefer
+                elif ids:
+                    self.model = ids[0]
+                else:
+                    raise FatalAPIError("the endpoint lists no models; pass the model name")
         return self.model
+
+    def _adapt(self, e: Exception) -> bool:
+        """Switch to the parameter spelling a hosted API asks for (e.g. max_completion_tokens; no temperature)."""
+        msg = str(e).lower()
+        if _status(e) != 400:
+            return False
+        if "max_tokens" in msg and "max_completion_tokens" in msg and self.token_param == "max_tokens":
+            self.token_param = "max_completion_tokens"
+            return True
+        for k in ("temperature", "top_p", "top_k", "seed"):
+            if k in msg and ("unsupported" in msg or "not support" in msg or "unrecognized" in msg or "unknown" in msg) \
+                    and k not in self.dropped:
+                self.dropped.add(k)
+                return True
+        return False
 
     async def chat(self, prompt: str, images: list[str], system: str | None = None, max_tokens: int = 16384,
                    body: dict | None = None) -> Prediction:
@@ -67,13 +120,13 @@ class Client:
         encoded = [encode_image(p, self.max_pixels) for p in images]
         content = [{"type": "image_url", "image_url": {"url": u}} for u, _ in encoded] + [{"type": "text", "text": prompt}]
         messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": content}]
-        body = dict(body or {})
-        temperature = body.pop("temperature", None)
-        t0, err = time.perf_counter(), None
-        for attempt in range(self.retries + 1):
+        t0, err, attempt = time.perf_counter(), None, 0
+        while attempt <= self.retries:
+            b = {k: v for k, v in (body or {}).items() if k not in self.dropped}
+            kw = {k: b.pop(k) for k in ("temperature", "top_p", "seed") if k in b}
+            kw[self.token_param] = max_tokens
             try:
-                r = await self.api.chat.completions.create(model=model, messages=messages, max_tokens=max_tokens,
-                                                           temperature=temperature, extra_body=body or None)
+                r = await self.api.chat.completions.create(model=model, messages=messages, extra_body=b or None, **kw)
                 msg = r.choices[0].message
                 reasoning = getattr(msg, "reasoning_content", None) or getattr(msg, "reasoning", None) or ""
                 usage = r.usage
@@ -81,9 +134,29 @@ class Client:
                                   prompt_tokens=getattr(usage, "prompt_tokens", 0) or 0,
                                   completion_tokens=getattr(usage, "completion_tokens", 0) or 0,
                                   latency_s=time.perf_counter() - t0, sent_size=encoded[0][1] if encoded else None)
-            except Exception as e:  # connection drops, 5xx, timeouts
+            except Exception as e:  # connection drops, 5xx, timeouts, rate limits
+                if self._adapt(e):
+                    continue
+                if _fatal(e):
+                    raise FatalAPIError(_describe(e)) from e
                 err = f"{type(e).__name__}: {e}"
+                if _status(e) == 400:  # this request is refused as it is (e.g. image too large); retrying will not help
+                    break
                 if attempt < self.retries:
-                    await asyncio.sleep(2 ** attempt * 5)
+                    await asyncio.sleep(2 ** attempt * (20 if _status(e) == 429 else 5))
+                attempt += 1
         return Prediction(text="", finish_reason="error", latency_s=time.perf_counter() - t0,
                           sent_size=encoded[0][1] if encoded else None, error=err)
+
+
+def _status(e: Exception) -> int | None:
+    return getattr(e, "status_code", None)
+
+
+def _fatal(e: Exception) -> bool:
+    return _status(e) in (401, 403, 404)
+
+
+def _describe(e: Exception) -> str:
+    what = {401: "API key rejected (401)", 403: "no access to this model (403)", 404: "model or endpoint not found (404)"}
+    return f"{what.get(_status(e), type(e).__name__)}: {str(e)[:300]}"

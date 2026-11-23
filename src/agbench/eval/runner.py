@@ -14,7 +14,7 @@ from pathlib import Path
 
 from agbench.bench import DEFAULT as DEFAULT_BENCH
 from agbench.eval import metrics as mx
-from agbench.eval.client import Prediction
+from agbench.eval.client import FatalAPIError, Prediction
 from agbench.eval.gpu import sampler
 from agbench.eval.grade import grade
 from agbench.eval.items import MCQAOptions, build_items
@@ -153,6 +153,8 @@ class Benchmark:
             async with sem:
                 try:
                     pred = await (asyncio.to_thread(method.predict, it) if sync else method.predict(it))
+                except FatalAPIError:
+                    raise
                 except Exception as e:
                     pred = Prediction(text="", finish_reason="error", error=f"{type(e).__name__}: {e}")
                 try:
@@ -183,6 +185,11 @@ class Benchmark:
 
 
 def finalize(out: Path, records: list[dict]) -> Result:
+    """metrics.json and run_manifest.json from the records."""
+    from agbench.eval.check import write_manifest
+
+    out = Path(out)
     m = mx.compute(records)
     (out / "metrics.json").write_text(json.dumps(m, indent=2))
+    write_manifest(out, records)
     return Result(out, m, records)

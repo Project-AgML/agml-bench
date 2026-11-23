@@ -18,6 +18,9 @@ BenchOpt = typer.Option("agml-full-v1", "--benchmark", help="Frozen benchmark (a
 TaskOpt = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text")
 FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native | multiple_choice (ITT)")
 ModelsFileOpt = typer.Option(None, "--models-file", help="YAML of extra/overriding models (models.yaml layout).")
+JudgeEndpointOpt = typer.Option(None, "--judge-endpoint", help="Running OpenAI-compatible server or hosted API for the judge (default: serve the judge model with vLLM).")
+JudgeModelOpt = typer.Option(None, "--judge-model", help="Judge model (default: the reference judge; another judge makes scores not comparable).")
+JudgeKeyOpt = typer.Option(None, "--judge-api-key-env", help="Environment variable holding the --judge-endpoint API key.")
 
 
 def _register(files: list[Path] | None):
@@ -59,7 +62,8 @@ def run(
     model: str = typer.Option(None, "--model", help="Model id: registry entry, any HF repo or local path (served with vLLM)."),
     method: str = typer.Option(None, "--method", help="Custom method as module:Class."),
     method_kwargs: str = typer.Option(None, "--method-kwargs", help="JSON kwargs for --method."),
-    endpoint: str = typer.Option(None, "--endpoint", help="Use a running OpenAI-compatible server instead of launching one."),
+    endpoint: str = typer.Option(None, "--endpoint", help="Use a running OpenAI-compatible server or hosted API instead of launching one."),
+    api_key_env: str = typer.Option(None, "--api-key-env", help="Environment variable holding the --endpoint API key (e.g. OPENAI_API_KEY)."),
     task: list[str] = TaskOpt,
     fmt: list[str] = FormatOpt,
     only: str = typer.Option(None, "--only", help="Regex on dataset name."),
@@ -78,7 +82,10 @@ def run(
     out: Path = typer.Option(Path("runs"), "--out"),
     run_dir: Path = typer.Option(None, "--run-dir", help="Resume into this run dir."),
     judge: bool = typer.Option(False, "--judge", help="Judge open-ended answers after the run."),
-    judge_endpoint: str = typer.Option(None, "--judge-endpoint"),
+    judge_endpoint: str = JudgeEndpointOpt,
+    judge_model: str = JudgeModelOpt,
+    judge_api_key_env: str = JudgeKeyOpt,
+    strict: bool = typer.Option(False, "--strict", help="Exit non-zero if the run check finds errors or the run is not comparable."),
     models_file: list[Path] = ModelsFileOpt,
     benchmark: str = BenchOpt,
 ):
@@ -95,7 +102,7 @@ def run(
         raise typer.BadParameter("--nota-position: end | random")
     bench = Benchmark(data_dir, task or None, fmt or None, only, limit_per_dataset, seed,
                       mcqa=MCQAOptions(nota_rate, order_seed, nota_position, idk), bench=_bench(benchmark))
-    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    _echo_items(bench)
     if method:
         m = _load_method(method, method_kwargs)
         rd = run_dir or _run_dir(out, m.name)
@@ -112,14 +119,24 @@ def run(
             ids = {it.item_id for it in bench.items}
             res = finalize(rd, [r for r in read_jsonl(rd / "predictions.jsonl") if r["item_id"] in ids])
         elif endpoint:
-            res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens, gen_seed=gen_seed), rd, conc, key_formats=kf)
+            res = bench.run(VLMMethod(endpoint, model, thinking, effort, max_tokens, gen_seed=gen_seed, api_key_env=api_key_env),
+                            rd, conc, key_formats=kf)
         else:
             with sampler() as gpu, _served(model, rd, "server.log", gpu, max_model_len=max_model_len) as srv:
                 res = bench.run(VLMMethod(srv.endpoint, model, thinking, effort, max_tokens, gen_seed=gen_seed), rd, conc,
                                 key_formats=kf, gpu=gpu)
     if judge and res.metrics["pending_judge"]:
-        _judge([rd], judge_endpoint, None)
+        _judge([rd], judge_endpoint, judge_model, api_key_env=judge_api_key_env)
     _print_summary(rd)
+    if _print_check(rd) and strict:
+        raise typer.Exit(1)
+
+
+def _echo_items(bench) -> None:
+    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    for s in bench.skipped:
+        if s["reason"].startswith("removed from"):  # source repo gone (bundle.yaml: unavailable)
+            typer.echo(f"  note: {s['dataset']} skipped, {s['reason']}")
 
 
 @app.command()
@@ -141,7 +158,7 @@ def baseline(
     if kind not in KINDS:
         raise typer.BadParameter(f"--kind: {' | '.join(KINDS)}")
     bench = Benchmark(data_dir, task or None, fmt or None, only, None, seed, bench=_bench(benchmark))
-    typer.echo(f"{len(bench.items)} items; {len(bench.skipped)} datasets skipped")
+    _echo_items(bench)
     m = NaiveBaseline(kind, priors(bench.items), gen_seed)
     rd = _run_dir(out, f"{m.name}_s{gen_seed}" if kind == "chance" else m.name)
     bench.run(m, rd, concurrency=64, resume=False)
@@ -497,7 +514,7 @@ def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load
         yield srv
 
 
-def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, redo: bool = False):
+def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, redo: bool = False, api_key_env: str | None = None):
     from agbench.eval.gpu import sampler
     from agbench.eval.judge import judge_run
     from agbench.eval.resources import models
@@ -505,7 +522,7 @@ def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, 
     jm = judge_model or models()["judge"]
     if endpoint:
         for d in run_dirs:
-            judge_run(d, endpoint, jm, redo=redo)
+            judge_run(d, endpoint, jm, redo=redo, api_key_env=api_key_env)
         return
     with sampler() as gpu, _served(jm, run_dirs[0], "judge_server.log", gpu, "judge_load") as srv:
         for d in run_dirs:
@@ -515,14 +532,58 @@ def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, 
 @app.command("judge")
 def judge_cmd(
     run_dir: list[Path] = typer.Option(..., "--run", help="Run dir(s) to judge."),
-    judge_model: str = typer.Option(None, "--judge-model"),
-    endpoint: str = typer.Option(None, "--judge-endpoint"),
+    judge_model: str = JudgeModelOpt,
+    endpoint: str = JudgeEndpointOpt,
+    api_key_env: str = JudgeKeyOpt,
     redo: bool = typer.Option(False, "--redo", help="Re-judge answers that already have a verdict (e.g. after editing the judge prompts)."),
     models_file: list[Path] = ModelsFileOpt,
 ):
     """Judge open-ended answers with the judge model (default gemma-4-31B-it-FP8)."""
     _register(models_file)
-    _judge(run_dir, endpoint, judge_model, redo)
+    _judge(run_dir, endpoint, judge_model, redo, api_key_env)
+    for d in run_dir:
+        _print_check(d)
+
+
+def _print_check(run_dir: Path, verbose: bool = False) -> bool:
+    """Print the run check; True if it found errors or the run is not comparable."""
+    from agbench.eval.check import check_run
+
+    c = check_run(run_dir)
+    st = c["stats"]
+    head = "ok" if not c["errors"] else f"{len(c['errors'])} errors"
+    comp = "comparable" if st.get("comparable") else "not comparable"
+    typer.echo(f"check {run_dir}: {head}; {comp}" + ("" if st.get("complete") in (None, True) else "; incomplete"))
+    for e in c["errors"]:
+        typer.echo(f"  error: {e}")
+    for w in c["warnings"]:
+        typer.echo(f"  {w}")
+    if verbose and st:
+        typer.echo("  " + "  ".join(f"{k}={v}" for k, v in st.items()))
+    return bool(c["errors"]) or not st.get("comparable")
+
+
+@app.command("check")
+def check_cmd(
+    run_dir: list[Path] = typer.Argument(..., help="Run dir(s)."),
+    strict: bool = typer.Option(False, "--strict", help="Also fail on warnings: not comparable, incomplete."),
+    rescore: bool = typer.Option(False, "--rescore", help="Rewrite metrics.json and run_manifest.json from predictions.jsonl."),
+):
+    """Check run dirs: files and prediction schema, items against the frozen benchmark, metrics against predictions,
+    coverage, comparability with the reference results."""
+    from agbench.eval.check import check_run
+    from agbench.eval.runner import finalize, read_jsonl
+
+    fail = False
+    for d in run_dir:
+        if rescore:
+            ids = {r["item_id"] for r in read_jsonl(d / "items.jsonl")}
+            finalize(d, [r for r in read_jsonl(d / "predictions.jsonl") if r["item_id"] in ids])
+        c = check_run(d)
+        _print_check(d, verbose=True)
+        fail |= bool(c["errors"]) or (strict and bool(c["warnings"]))
+    if fail:
+        raise typer.Exit(1)
 
 
 def _print_summary(run_dir: Path):
