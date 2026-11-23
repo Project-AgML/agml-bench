@@ -277,3 +277,99 @@ def verify(b: Bundle, data_dir, task=None, only=None, decode: bool = True) -> di
         if errs:
             problems[n] = errs
     return problems
+
+
+# ---------------------------------------------------------------- re-pinning a recreated source repo
+
+def repin(b: Bundle, name: str, reference_dir, write: bool = False, scratch=None) -> dict:
+    """Point a VQA dataset's manifest at the current revision of its HF repo, for a repo that was deleted and
+    re-uploaded (the pinned revision no longer exists).
+
+    The frozen items hold every question, option and answer, so the source only has to supply the images. Each sample
+    is found in the new upload by the SHA-256 of its images in the reference copy (a data dir holding the benchmark's
+    images; uploads name image files by that hash), preferring a row with the same question when several rows share
+    the image. The chosen rows are then downloaded and must give byte-identical images. Sample ids, and so the
+    frozen items, are unchanged. Rows whose conversation text differs from the reference are counted (`text_changed`):
+    they do not affect frozen-item scores. With `write`, the bundle and manifests/base-data/ are updated only if
+    every sample's images matched."""
+    import hashlib
+    import shutil
+    import tempfile
+    from datetime import datetime, timezone
+
+    from agbench import build
+    from agbench.config import MANIFEST_DIR, load_config
+    from agbench.hub import Repo
+    from agbench.pipeline import TASK_DIRS, base_dir, index_dataset
+    from agbench.sampling import rng_for
+
+    m = b.manifests[name]
+    if m["task"] != "image_text_to_text":
+        raise NotImplementedError("re-pinning matches images by content hash, which only VQA uploads use as file names")
+    cfg = load_config(b.config_path)
+    ref_dir = base_dir(reference_dir) / TASK_DIRS[m["task"]] / name
+    ref = {s["sample_id"]: s for s in (json.loads(l) for l in open(ref_dir / "samples.jsonl"))}
+    repo = Repo(m["hf_repo"], revision=None)
+    recs, info = index_dataset(cfg, m["catalog"], repo, rng_for(cfg["sampling"]["seed"], name))
+    keys: dict = {}
+    for f in sorted({r["ref"]["file"] for r in recs}):
+        for i, x in enumerate(repo.parquet(f).read(columns=["images"]).to_pylist()):
+            keys[(f, i)] = tuple(im.get("path") for im in (x["images"] or []))
+    by_key: dict = {}
+    for r in recs:
+        by_key.setdefault(keys.get((r["ref"]["file"], r["ref"]["row"])), []).append(r)
+
+    report = {"dataset": name, "old_revision": m["hf_sha"], "new_revision": repo.revision, "samples": len(m["samples"]),
+              "unmatched": [], "different": [], "text_changed": 0}
+    new_samples, picks = [], []
+    for s in m["samples"]:
+        rs = ref.get(s["sample_id"])
+        if not rs:
+            report["unmatched"].append(s["sample_id"])
+            continue
+        key = tuple(hashlib.sha256((ref_dir / p).read_bytes()).hexdigest() for p in rs["images"])
+        q = (build._qa(rs["messages"])[0] or "")[:500]
+        cands = by_key.get(key, [])
+        if not cands:
+            report["unmatched"].append(s["sample_id"])
+            continue
+        pick = next((r for r in cands if r["question"] == q), cands[0])
+        picks.append({**pick, "sample_id": s["sample_id"]})
+        new_samples.append({**s, "ref": pick["ref"]})
+
+    tmp = Path(tempfile.mkdtemp(prefix=f"repin_{name}_", dir=scratch))
+    try:
+        got = build.extract(repo, name, m["task"], info, picks, tmp, None)
+        for g in got:
+            r0 = ref[g["sample_id"]]
+            same_imgs = len(g["images"]) == len(r0["images"]) and all(
+                (tmp / a).read_bytes() == (ref_dir / c).read_bytes() for a, c in zip(g["images"], r0["images"]))
+            if not same_imgs:
+                report["different"].append(g["sample_id"])
+            elif g["messages"] != r0["messages"]:
+                report["text_changed"] += 1
+        report["different"] += sorted({p["sample_id"] for p in picks} - {g["sample_id"] for g in got})
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+    report["ok"] = not (report["unmatched"] or report["different"])
+    if write and report["ok"]:
+        m.update(hf_sha=repo.revision, samples=new_samples, info={**m["info"], "layout": info["layout"]})
+        _write_gz(b.path / "manifests.json.gz", json.dumps(b.manifests, ensure_ascii=False, sort_keys=True, default=str))
+        spec = b.spec
+        spec["files"]["manifests.json.gz"] = _sha((b.path / "manifests.json.gz").read_bytes())
+        spec.setdefault("repinned", []).append({
+            "dataset": name, "from": report["old_revision"], "to": repo.revision,
+            "date": datetime.now(timezone.utc).date().isoformat(),
+            "reason": f"source repo re-uploaded; images matched by SHA-256, byte-identical; "
+                      f"{report['text_changed']} of {report['samples']} rows have different conversation text "
+                      f"(frozen items unaffected)"})
+        spec["hash"] = _bundle_hash(spec)
+        (b.path / "bundle.yaml").write_text(yaml.safe_dump(spec, sort_keys=False, allow_unicode=True))
+        mp = MANIFEST_DIR / TASK_DIRS[m["task"]] / f"{name}.json"
+        if mp.exists():
+            committed = json.loads(mp.read_text())
+            committed.update(hf_sha=repo.revision, samples=new_samples)
+            mp.write_text(json.dumps(committed, indent=1, ensure_ascii=False, default=str))
+        report["written"] = True
+    return report
+

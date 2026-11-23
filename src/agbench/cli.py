@@ -272,6 +272,39 @@ def bench_freeze(
     typer.echo(f"{b.path}  hash {b.hash}  {b.spec['items']['total']} items, {b.spec['datasets']['total']} datasets")
 
 
+@bench_app.command("repin")
+def bench_repin(
+    name: str = typer.Argument(..., help="Benchmark name."),
+    dataset: list[str] = typer.Option(..., "--dataset", help="Dataset whose source repo was re-uploaded (repeatable)."),
+    reference: Path = typer.Option(..., "--reference", help="Data dir holding the benchmark's images (the frozen copy)."),
+    write: bool = typer.Option(False, "--write", help="Update the bundle if every sample matched (default: report only)."),
+):
+    """Re-point datasets at a re-uploaded repo's current revision; samples must match the reference copy exactly."""
+    from agbench import bench
+
+    bad = False
+    from agbench.pipeline import explain
+
+    for ds in dataset:
+        b = _bundle(name)
+        try:
+            r = bench.repin(b, ds, reference, write)
+        except Exception as e:
+            typer.echo(f"{ds}: NOT re-pinned: {explain(e, b.entry(ds)['hf_repo'], None)}")
+            bad = True
+            continue
+        status = "written" if r.get("written") else ("ok (dry run)" if r["ok"] else "NOT re-pinned")
+        typer.echo(f"{ds}: {r['samples']} samples, {r['old_revision'][:7]} -> {r['new_revision'][:7]}: {status}")
+        for k, why in (("unmatched", "no row with these images"), ("different", "downloaded images not byte-identical")):
+            if r[k]:
+                typer.echo(f"  {len(r[k])} {why} (e.g. {', '.join(r[k][:3])})")
+        if r["text_changed"]:
+            typer.echo(f"  {r['text_changed']} rows with different conversation text (frozen items unaffected)")
+        bad |= not r["ok"]
+    if bad:
+        raise typer.Exit(1)
+
+
 @data_app.command("pull")
 def data_pull(
     name: str = BenchArg,
@@ -294,11 +327,24 @@ def data_pull(
         return
     res = pipeline.run_many(cfg, str(b.config_path), todo, Path(data_dir).resolve(),
                             timeout or cfg["download"]["timeout_s"], True, bundle=name)
-    typer.echo(f"\n{len(res['ok'])} succeeded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
-    for n in res["failed"]:
-        typer.echo(f"  failed: {n}")
+    typer.echo(f"\n{len(res['ok'])} downloaded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
+    _print_failures(data_dir, res["failed"])
+    if res.get("log"):
+        typer.echo(f"Details: {res['log']}")
     if res["failed"]:
+        typer.echo("Rerun the same command to retry the failed datasets (finished ones are skipped).")
         raise typer.Exit(1)
+
+
+def _print_failures(data_dir: Path, names: list[str]) -> None:
+    if not names:
+        return
+    typer.echo("\nFailed:")
+    w = max(len(n) for n in names)
+    for n in names:
+        p = pipeline.failure_path(Path(data_dir), n)
+        reason = json.loads(p.read_text())["reason"] if p.exists() else "unknown (no failure record)"
+        typer.echo(f"  {n:<{w}}  {reason}")
 
 
 @data_app.command("status")
@@ -310,7 +356,10 @@ def data_status(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[st
     st = bench.data_status(_bundle(name), data_dir, task, only)
     typer.echo("  ".join(f"{k}={v}" for k, v in sorted(Counter(st.values()).items())))
     for n, s in st.items():
-        if s != "done" or verbose:
+        if s == "failed":
+            reason = json.loads(pipeline.failure_path(Path(data_dir), n).read_text())["reason"]
+            typer.echo(f"{s:<8} {n}: {reason}")
+        elif s != "done" or verbose:
             typer.echo(f"{s:<8} {n}")
 
 

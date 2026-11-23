@@ -111,8 +111,8 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool, man
     if manifest:
         log(f"using manifest ({len(manifest['samples'])} samples, revision {manifest['hf_sha'][:7]})")
         info = manifest["info"]
-        recs = [{"ref": s["ref"], "keys": s.get("keys", []), "ann": s.get("ann", {}), "strata": s.get("strata", {})}
-                for s in manifest["samples"]]
+        recs = [{"ref": s["ref"], "keys": s.get("keys", []), "ann": s.get("ann", {}), "strata": s.get("strata", {}),
+                 "sample_id": s["sample_id"]} for s in manifest["samples"]]
         strata_keys = manifest.get("strata_keys")
     else:
         recs, info = index_dataset(cfg, entry, repo, rng)
@@ -299,22 +299,44 @@ def worker_main(argv: list[str]) -> int:
     train = "--train" in argv
     cfg = load_config(config_path)
     data_dir = Path(data_dir)
+    repo, revision = None, None
     try:
         if "--bundle" in argv:
             from agbench.bench import load
 
             b = load(argv[argv.index("--bundle") + 1])
+            repo, revision = b.entry(name)["hf_repo"], b.manifests[name]["hf_sha"]
             meta = run_dataset(cfg, b.entry(name), data_dir, True, manifest=b.manifests[name],
                                bundle={"name": b.name, "hash": b.hash})
         else:
             entry = load_catalog()["datasets"][name]
+            repo = entry["hf_repo"]
             meta = (run_train_dataset if train else run_dataset)(cfg, entry, data_dir, from_manifest)
         print(f"  ok: {meta['n_samples']} samples in {meta['seconds']}s")
         return 0
     except Exception as e:
-        record_failure(data_dir, name, f"{type(e).__name__}: {e}", traceback.format_exc(), train=train)
-        print(f"  failed: {type(e).__name__}: {e}")
+        reason = explain(e, repo, revision)
+        record_failure(data_dir, name, reason, traceback.format_exc(), train=train)
+        print(f"  failed: {reason}")
         return 1
+
+
+def explain(e: Exception, repo: str | None, revision: str | None) -> str:
+    """A failure reason a user can act on, for the errors that come from the source repo rather than the code."""
+    text, kind = str(e), type(e).__name__
+    rev = f" {revision[:7]}" if revision else ""
+    if kind == "RepositoryNotFoundError" or "(repository not found)" in text or "Repository Not Found" in text:
+        return f"source repo {repo} not found (deleted, renamed or private)"
+    if kind == "RevisionNotFoundError" or "(revision not found)" in text or "Invalid rev id" in text:
+        return (f"pinned revision{rev} no longer exists in {repo} (repo re-uploaded or history rewritten; "
+                f"maintainers: agbench bench repin)")
+    if kind == "GatedRepoError" or "gated" in text.lower():
+        return f"{repo} is gated: accept its terms on huggingface.co, then rerun"
+    if "403" in text or "Forbidden" in text:
+        return f"no permission for this on {repo}: your Hugging Face token or org role is read-only"
+    if "401" in text or "Unauthorized" in text:
+        return "not authorized by Hugging Face: run hf auth login, then rerun"
+    return f"{kind}: {text}"[:300]
 
 
 def record_failure(data_dir: Path, name: str, reason: str, tb: str = "", train: bool = False) -> None:
@@ -327,45 +349,86 @@ def record_failure(data_dir: Path, name: str, reason: str, tb: str = "", train: 
 
 def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, timeout: int, from_manifest: bool,
              train: bool = False, bundle: str | None = None) -> dict:
+    """One subprocess per dataset. In a terminal: a progress bar and one line per dataset, with each dataset's
+    detailed output appended to <data_dir>/_logs/<command>.log. Otherwise (a log file, a batch job): every line."""
+    from contextlib import nullcontext
+
     from agbench.progress import fmt_duration
 
     results = {"ok": [], "failed": []}
     t_start = time.time()
-    for i, e in enumerate(entries, 1):
-        name = e["name"]
-        elapsed = time.time() - t_start
-        timing = f"elapsed {fmt_duration(elapsed)}"
-        if i > 1:
-            timing += f", ETA {fmt_duration(elapsed / (i - 1) * (len(entries) - i + 1))}"
-        print(f"[{i}/{len(entries)}] {name} ({e['task']})  [{timing}]", flush=True)
-        scratch = scratch_dir(data_dir, name)
-        scratch.mkdir(parents=True, exist_ok=True)
-        # Any HF cache or Xet chunk written during this dataset lands in scratch and is deleted after.
-        env = dict(os.environ, HF_HUB_CACHE=str(scratch / "hub"), HF_XET_CACHE=str(scratch / "xet"),
-                   HF_DATASETS_CACHE=str(scratch / "datasets"), HF_XET_CHUNK_CACHE_SIZE_BYTES="0")
-        cmd = [sys.executable, "-m", "agbench.pipeline", name, str(data_dir), config_path]
-        if from_manifest:
-            cmd.append("--from-manifest")
-        if train:
-            cmd.append("--train")
-        if bundle:
-            cmd += ["--bundle", bundle]
-        try:
-            rc = subprocess.run(cmd, env=env, timeout=timeout).returncode
-        except subprocess.TimeoutExpired:
-            record_failure(data_dir, name, f"timeout after {timeout}s", train=train)
-            print(f"  failed: timeout after {timeout}s")
-            rc = 1
-        finally:
-            shutil.rmtree(scratch, ignore_errors=True)
-            shutil.rmtree((train_dir if train else dataset_dir)(data_dir, e).with_name(name + ".partial"), ignore_errors=True)
-        results["ok" if rc == 0 else "failed"].append(name)
+    tty = sys.stdout.isatty() and os.environ.get("AGBENCH_PLAIN") != "1"
+    log_path = Path(data_dir) / "_logs" / f"{'pull' if bundle else 'sample-train' if train else 'sample'}.log"
+    bar = None
+    if tty:
+        from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn, TimeElapsedColumn, TimeRemainingColumn
+
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        bar = Progress(TextColumn("{task.description}"), BarColumn(), MofNCompleteColumn(), TimeElapsedColumn(),
+                       TextColumn("left"), TimeRemainingColumn())
+        job = bar.add_task("", total=len(entries))
+    with bar or nullcontext():
+        for i, e in enumerate(entries, 1):
+            name = e["name"]
+            if bar:
+                bar.update(job, description=f"{name[:40]:<40}")
+            else:
+                elapsed = time.time() - t_start
+                timing = f"elapsed {fmt_duration(elapsed)}"
+                if i > 1:
+                    timing += f", ETA {fmt_duration(elapsed / (i - 1) * (len(entries) - i + 1))}"
+                print(f"[{i}/{len(entries)}] {name} ({e['task']})  [{timing}]", flush=True)
+            t0 = time.time()
+            rc = _run_one(e, data_dir, config_path, timeout, from_manifest, train, bundle, log_path if bar else None)
+            results["ok" if rc == 0 else "failed"].append(name)
+            if bar:
+                if rc == 0:
+                    bar.console.print(f"[green]done[/]   {name}  ({fmt_duration(time.time() - t0)})")
+                else:
+                    why = json.loads(failure_path(data_dir, name, train).read_text())["reason"]
+                    bar.console.print(f"[red]failed[/] {name}: {why}")
+                bar.advance(job)
     try:  # only if empty: another run may be downloading into its own subfolder (each dataset's is removed above)
         (Path(data_dir) / ".scratch").rmdir()
     except OSError:
         pass
     results["seconds"] = time.time() - t_start
+    results["log"] = str(log_path) if bar else None
     return results
+
+
+def _run_one(e: dict, data_dir: Path, config_path: str, timeout: int, from_manifest: bool, train: bool,
+             bundle: str | None, log_path: Path | None) -> int:
+    name = e["name"]
+    scratch = scratch_dir(data_dir, name)
+    scratch.mkdir(parents=True, exist_ok=True)
+    # Any HF cache or Xet chunk written during this dataset lands in scratch and is deleted after.
+    env = dict(os.environ, HF_HUB_CACHE=str(scratch / "hub"), HF_XET_CACHE=str(scratch / "xet"),
+               HF_DATASETS_CACHE=str(scratch / "datasets"), HF_XET_CHUNK_CACHE_SIZE_BYTES="0")
+    cmd = [sys.executable, "-m", "agbench.pipeline", name, str(data_dir), config_path]
+    if from_manifest:
+        cmd.append("--from-manifest")
+    if train:
+        cmd.append("--train")
+    if bundle:
+        cmd += ["--bundle", bundle]
+    log = open(log_path, "a") if log_path else None
+    try:
+        if log:
+            log.write(f"\n=== {name} ({e['task']}) {now()}\n")
+            log.flush()
+        rc = subprocess.run(cmd, env=env, timeout=timeout, stdout=log, stderr=subprocess.STDOUT if log else None).returncode
+    except subprocess.TimeoutExpired:
+        record_failure(data_dir, name, f"timeout after {timeout}s (rerun to retry; a slow connection may need --timeout)", train=train)
+        if not log:
+            print(f"  failed: timeout after {timeout}s")
+        rc = 1
+    finally:
+        if log:
+            log.close()
+        shutil.rmtree(scratch, ignore_errors=True)
+        shutil.rmtree((train_dir if train else dataset_dir)(data_dir, e).with_name(name + ".partial"), ignore_errors=True)
+    return rc
 
 
 if __name__ == "__main__":

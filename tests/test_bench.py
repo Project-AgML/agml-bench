@@ -68,3 +68,15 @@ def test_data_status_and_verify(full, tmp_path):
     assert any("missing image" in e for e in problems["bean_disease_uganda"])
     (d / "meta.json").write_text(json.dumps({"hf_sha": "0" * 40}))
     assert bench.data_status(full, tmp_path, only="^bean_disease_uganda$") == {"bean_disease_uganda": "stale"}
+
+
+def test_failure_reasons_are_actionable():
+    from agbench.pipeline import explain
+
+    repo, rev = "Project-AgML/X", "c421bedca8dfa4f33ddd07cca19365dfea4a9657"
+    gone = FileNotFoundError(f"datasets/{repo}@{rev}/train.parquet (repository not found)")
+    assert explain(gone, repo, rev) == f"source repo {repo} not found (deleted, renamed or private)"
+    moved = FileNotFoundError(f"datasets/{repo}@{rev}/train.parquet (revision not found)")
+    assert "pinned revision c421bed no longer exists" in explain(moved, repo, rev)
+    assert "read-only" in explain(RuntimeError("403 Forbidden: You have read access"), repo, rev)
+    assert explain(ValueError("boom"), repo, rev) == "ValueError: boom"

@@ -43,6 +43,13 @@ uv run agbench bench freeze agml-full-v2 --items runs/<run_dir>/items.jsonl --de
 uv run agbench bench show agml-full-v2
 ```
 
+## Source repos
+
+```bash
+uv run agbench bench repin agml-full-v1 --dataset CDDM --reference /path/to/frozen_copy           # report only
+uv run agbench bench repin agml-full-v1 --dataset CDDM --reference /path/to/frozen_copy --write   # re-uploaded repo
+```
+
 ## Ablations
 
 ```bash
