@@ -12,8 +12,8 @@ Runs: the 7 models that took part in every experiment (Nemotron ran only Experim
   Experiments 2-4: runs/runpod_exp/runs/{order/o1-o5, nota/n0.1, nota/n0.5, noidk}
 Fits: classification (MCQA within, MCQA across, OEQ) and, separately, VQA multiple choice.
 
-usage: uv run --with numpy python paper/scripts/make_drivers.py
-writes paper/tables/drivers.tex and paper/drivers.json
+usage: uv run --with numpy python research/paper/scripts/make_drivers.py
+writes research/paper/tables/drivers.tex and research/paper/drivers.json
 """
 import collections
 import glob
@@ -26,11 +26,11 @@ import re
 import numpy as np
 
 P = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT = os.path.dirname(P)
-# Inputs (override to reproduce from your own runs; see paper Appendix D and paper/scripts/reproduce.sh):
+ROOT = os.path.dirname(os.path.dirname(P))
+# Inputs (override to reproduce from your own runs; see paper Appendix D and research/paper/scripts/reproduce.sh):
 #   AGBENCH_SEEDS  Experiment 1 run dirs, one subdir per seed   (default runs/rejudge_v4/exp/seeds)
 #   AGBENCH_EXP24  Experiments 2-4 run dirs                       (default runs/runpod_exp/runs)
-#   AGBENCH_STATS  agbench eval stats outputs (seeds/, exp24/)    (default reports/stats)
+#   AGBENCH_STATS  agbench eval stats outputs (seeds/, exp24/)    (default research/reports/stats)
 SEEDS = os.path.join(ROOT, os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds"))
 MODELS = ["Qwen3.6-35B-A3B", "Qwen3.8-27B", "gemma-4-31B", "gemma-4-12B", "Muse-Glimmer-30B", "MiniCPM-V-4.7", "Ministral-3-14B"]
 DISP = {"gemma-4-31B": "Gemma-4-31B", "gemma-4-12B": "Gemma-4-12B", "MiniCPM-V-4.7": "MiniCPM-V-4.7"}

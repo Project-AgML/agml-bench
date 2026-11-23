@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 from PIL import Image
 
-from agbench.hub import IMAGE_EXTS, Repo, classlabel_names, feature_type, image_format
+from agbench.hub import Repo, classlabel_names, feature_type, image_format
 from agbench.progress import Progress
 from agbench.sampling import qa_format
 

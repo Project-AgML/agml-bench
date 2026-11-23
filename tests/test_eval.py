@@ -1,6 +1,5 @@
 import json
 import threading
-from collections import Counter
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import numpy as np

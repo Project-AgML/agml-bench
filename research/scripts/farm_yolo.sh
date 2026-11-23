@@ -6,13 +6,13 @@
 #SBATCH --time=7-00:00:00
 #SBATCH --signal=B:USR1@900
 # usage (partition, GPUs and CPUs on the command line; several jobs can share one plan). YOLO_CMD=yolo-shared trains one
-# model per task (experiments/yolo_shared.plan, results in runs/yolo11<size>-shared/); the default, yolo, one per dataset:
+# model per task (research/experiments/yolo_shared.plan, results in runs/yolo11<size>-shared/); the default, yolo, one per dataset:
 #   sbatch --account=geminigrp --partition=gpu-a100-h --gpus-per-node=1 --cpus-per-task=32 --mem=120G \
-#          --export=ALL,YOLO_CMD=yolo-shared,YOLO_SIZE=s,PER_GPU=2 scripts/farm_yolo.sh experiments/yolo_shared.plan
+#          --export=ALL,YOLO_CMD=yolo-shared,YOLO_SIZE=s,PER_GPU=2 research/scripts/farm_yolo.sh research/experiments/yolo_shared.plan
 #   sbatch --account=geminigrp --partition=gpu-a100-h --gpus-per-node=1 --cpus-per-task=32 --mem=120G \
-#          --export=ALL,YOLO_SIZE=s,PER_GPU=8 scripts/farm_yolo.sh experiments/yolo.plan
+#          --export=ALL,YOLO_SIZE=s,PER_GPU=8 research/scripts/farm_yolo.sh research/experiments/yolo.plan
 #   sbatch --account=jmearlesgrp --partition=gpum --qos=gpum-users-gpum-qos --gpus-per-node=2 --cpus-per-task=20 --mem=64G \
-#          --export=ALL,YOLO_SIZE=s,PER_GPU=2 scripts/farm_yolo.sh experiments/yolo.plan
+#          --export=ALL,YOLO_SIZE=s,PER_GPU=2 research/scripts/farm_yolo.sh research/experiments/yolo.plan
 # Every worker (PER_GPU per GPU) works through the unfinished plan lines (<shots> <subset>) in plan order, so the lines
 # finish one after another (put the most important first). agbench eval yolo claims each dataset (yolo-shared: each task) with a lock file, so any
 # number of workers in any number of jobs share a line without duplicating work, and a dataset claimed by a job that died
@@ -32,7 +32,7 @@ resubmit() {
   log "time limit near: resubmitting"
   sbatch --account=$SLURM_JOB_ACCOUNT --partition=$SLURM_JOB_PARTITION --qos=$SLURM_JOB_QOS \
          --gpus-per-node=$SLURM_GPUS_PER_NODE --cpus-per-task=$SLURM_CPUS_PER_TASK --mem=${SLURM_MEM_PER_NODE}M \
-         --export=ALL,YOLO_CMD=$YOLO_CMD,YOLO_SIZE=$YOLO_SIZE,PER_GPU=$PER_GPU scripts/farm_yolo.sh $PLAN >> $LOG
+         --export=ALL,YOLO_CMD=$YOLO_CMD,YOLO_SIZE=$YOLO_SIZE,PER_GPU=$PER_GPU research/scripts/farm_yolo.sh $PLAN >> $LOG
   kill $(jobs -p) 2>/dev/null; exit 0
 }
 trap resubmit USR1

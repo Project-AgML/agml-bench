@@ -1,10 +1,10 @@
 """Audit: is every number in the paper's text among the values the pipeline computed?
 
-Extracts each number from paper/main.tex (abstract to end, captions included; references, labels, paths and code
+Extracts each number from research/paper/main.tex (abstract to end, captions included; references, labels, paths and code
 removed) and looks for it, at the precision it is written with, among:
-  - paper/numbers.json and paper/drivers.json   (written by make_assets.py, make_drivers.py)
+  - research/paper/numbers.json and research/paper/drivers.json   (written by make_assets.py, make_drivers.py)
   - the statistics reports <AGBENCH_STATS>/{seeds,exp24}/stats.md   (agbench eval stats)
-  - the generated tables paper/tables/*.tex
+  - the generated tables research/paper/tables/*.tex
   - benchmark counts recomputed from the items of one Experiment 1 run (datasets, classes, images, items)
   - configuration: src/agbench/eval/{models,prompts}.yaml, configs/base_data.yaml, one run.json
 A number is "found" if some source value rounds to it (sign ignored, so "-2.7" and "2.7" match; values in [0, 1]
@@ -14,7 +14,7 @@ states how strict the test is for each precision: integers and counts are a stro
 one-decimal value between 0 and 100 occurs somewhere in the outputs, so for those it only catches gross errors.
 Integers up to 12 (counts such as "three seeds", "Experiment 2") are skipped.
 
-usage: uv run python paper/scripts/check_numbers.py        # report: paper/build/number_check.txt
+usage: uv run python research/paper/scripts/check_numbers.py        # report: research/paper/build/number_check.txt
 """
 import glob
 import json
@@ -24,9 +24,9 @@ import re
 from collections import defaultdict
 
 P = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT = os.path.dirname(P)
+ROOT = os.path.dirname(os.path.dirname(P))
 SEEDS = os.path.join(ROOT, os.environ.get("AGBENCH_SEEDS", "runs/rejudge_v4/exp/seeds"))
-STATS = os.path.join(ROOT, os.environ.get("AGBENCH_STATS", "reports/stats"))
+STATS = os.path.join(ROOT, os.environ.get("AGBENCH_STATS", "research/reports/stats"))
 NUM = re.compile(r"(?<![\w.\\])(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(?![\w])")
 
 

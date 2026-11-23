@@ -211,7 +211,6 @@ def yolo(
     Exit code 0 when the run is complete, 3 when other processes still hold datasets of it."""
     import fcntl
     import os
-    import socket
     import time
 
     from agbench.eval import yolo as Y

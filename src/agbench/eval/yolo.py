@@ -20,10 +20,9 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from agbench.eval.items import NON_CLASSES, _value_hit, build_items, mask_boxes
+from agbench.eval.items import NON_CLASSES, _value_hit, build_items
 from agbench.eval.methods import Method
 from agbench.eval.resources import norm, pretty, prompts, seg_classes
-from agbench.progress import log
 
 TASK_YOLO = {"classification": "-cls", "detection": "", "segmentation": "-seg"}
 IMGSZ = {"classification": 224, "detection": 640, "segmentation": 640}

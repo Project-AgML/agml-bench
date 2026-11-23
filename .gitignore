@@ -6,21 +6,23 @@ __pycache__/
 data/
 .scratch/
 runs/
-/reports/*
-!/reports/stats/
-!/reports/scores/
-/reports/scores/*
-!/reports/scores/seeds/
-!/reports/scores/exp24/
+/research/reports/*
+!/research/reports/stats/
+!/research/reports/scores/
+/research/reports/scores/*
+!/research/reports/scores/seeds/
+!/research/reports/scores/exp24/
 
-# paper build outputs (rebuilt by paper/scripts/reproduce.sh)
-paper/build/
-paper/main.pdf
-paper/paper_overleaf.zip
+# paper build outputs (rebuilt by research/paper/scripts/reproduce.sh)
+research/paper/build/
+research/paper/main.pdf
+research/paper/paper_overleaf.zip
 
 # job bookkeeping written while experiment plans run
-experiments/*.done
-experiments/*.log
-experiments/*.lock
-experiments/*.claims
-experiments/*.claimed.*
+research/experiments/*.done
+research/experiments/*.log
+research/experiments/*.lock
+research/experiments/*.claims
+research/experiments/*.claimed.*
+runs
+/reports/

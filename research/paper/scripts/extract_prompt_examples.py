@@ -1,4 +1,4 @@
-"""One-off: pull the six Figure 2 examples (Gemma-4-31B, seed 0) into paper/assets/prompts/."""
+"""One-off: pull the six Figure 2 examples (Gemma-4-31B, seed 0) into research/paper/assets/prompts/."""
 import json, glob, math, sys
 from pathlib import Path
 from PIL import Image, ImageOps
