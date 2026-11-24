@@ -105,6 +105,9 @@ uv run agbench eval judge --run runs/<run_dir>
 uv run agbench eval judge --run runs/<run_dir> --judge-model gpt-5-mini --judge-endpoint https://api.openai.com/v1 --judge-api-key-env OPENAI_API_KEY   # not comparable
 uv run agbench eval report --runs runs
 uv run agbench eval report --runs runs --csv reports/scores     # scores.csv, ag_tasks.csv, datasets.csv
+uv run agbench eval report --runs runs --html reports/report.html                       # charts, tables, runs; one offline file
+uv sync --extra viz && uv run agbench eval report --runs runs --figures reports/figures   # paper figures (PNG)
+uv run agbench eval report --runs runs --html reports/report.html --label "my-org/My-VLM=My VLM" --label "baseline/chance=Chance"
 uv run agbench eval stats --runs runs --out reports/stats
 uv run agbench eval view --runs runs                            # http://localhost:8502
 ```

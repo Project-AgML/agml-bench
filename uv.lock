@@ -37,6 +37,9 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
+viz = [
+    { name = "matplotlib" },
+]
 yolo = [
     { name = "ultralytics" },
 ]
@@ -51,6 +54,7 @@ requires-dist = [
     { name = "datasets", specifier = ">=5.1.0" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "huggingface-hub", specifier = ">=2.2.0" },
+    { name = "matplotlib", marker = "extra == 'viz'", specifier = ">=3.11" },
     { name = "numpy", specifier = ">=2.5.4" },
     { name = "nvidia-ml-py", specifier = ">=13.615.71" },
     { name = "openai", specifier = ">=3.36.0" },
@@ -67,7 +71,7 @@ requires-dist = [
     { name = "typer", specifier = ">=0.27.3" },
     { name = "ultralytics", marker = "extra == 'yolo'", specifier = ">=8.3.0" },
 ]
-provides-extras = ["yolo"]
+provides-extras = ["yolo", "viz"]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=9.1.1" }]
