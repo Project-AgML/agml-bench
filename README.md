@@ -5,10 +5,17 @@ Benchmark vision-language models on AgML agricultural datasets: classification, 
 ## Install
 
 ```bash
-git clone git@github.com:Project-AgML/agml-benchmarks.git && cd agml-benchmarks
+git clone https://github.com/Project-AgML/agml-benchmarks.git && cd agml-benchmarks
 uv sync
 hf auth login
 uv tool install vllm          # to serve models with --model
+```
+
+Without a clone:
+
+```bash
+uv tool install "agbench[viz] @ git+https://github.com/Project-AgML/agml-benchmarks@v1.0.0"
+agbench bench list
 ```
 
 ## Quick start
