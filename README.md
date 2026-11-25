@@ -1,14 +1,27 @@
 # agml-benchmarks
 
-Benchmark vision-language models on AgML agricultural datasets: classification, detection, segmentation and VQA.
+Benchmark vision-language models on [AgML](https://github.com/Project-AgML/AgML) agricultural datasets: classification, detection, segmentation and VQA.
+
+| Benchmark | Datasets | Items | Hash |
+|---|---|---|---|
+| `agml-full-v1` | 372 | 32,456 | `1876e21c16b413dd` |
+
+AgriBench (in `agml-full-v1`) was removed from Hugging Face; `data pull` skips it and runs report it as unavailable.
 
 ## Install
 
 ```bash
-git clone git@github.com:Project-AgML/agml-benchmarks.git && cd agml-benchmarks
+git clone https://github.com/Project-AgML/agml-benchmarks.git && cd agml-benchmarks
 uv sync
 hf auth login
 uv tool install vllm          # to serve models with --model
+```
+
+Without a clone:
+
+```bash
+uv tool install "agbench[viz] @ git+https://github.com/Project-AgML/agml-benchmarks@v1.0.0"
+agbench bench list
 ```
 
 ## Quick start
@@ -139,7 +152,7 @@ uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots 10 --subse
 ## More
 
 - New benchmark versions, catalog, sampling, profiling: [docs/building.md](docs/building.md)
-- Paper experiments and reproduction: [research/README.md](research/README.md)
+- Paper experiments: [research/README.md](research/README.md)
 - Evaluation rules: [docs/benchmarking.md](docs/benchmarking.md)
 
 ## Tests
@@ -147,3 +160,7 @@ uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots 10 --subse
 ```bash
 uv run pytest
 ```
+
+## License
+
+Code: Apache-2.0 ([LICENSE](LICENSE)). Images and labels: each dataset's own license (`license` in [catalog/catalog.json](catalog/catalog.json)).

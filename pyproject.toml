@@ -1,6 +1,6 @@
 [project]
 name = "agbench"
-version = "0.1.0"
+version = "1.0.0"
 description = "Benchmark vision-language models on AgML agricultural datasets"
 readme = "README.md"
 license = "Apache-2.0"
@@ -28,6 +28,11 @@ dependencies = [
     "tabulate>=0.10.0",
     "typer>=0.27.3",
 ]
+
+[project.urls]
+Repository = "https://github.com/Project-AgML/agml-benchmarks"
+Issues = "https://github.com/Project-AgML/agml-benchmarks/issues"
+AgML = "https://github.com/Project-AgML/AgML"
 
 [project.optional-dependencies]
 # Few-shot YOLO11 baselines (agbench eval yolo)

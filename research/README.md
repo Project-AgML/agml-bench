@@ -22,7 +22,5 @@ sbatch --dependency=afterok:$J --export=ALL,YOLO_CMD=yolo-shared,YOLO_SIZE=s,PER
 ## Reproduce
 
 ```bash
-bash research/paper/scripts/reproduce.sh                                    # stats, tables, figures, number audit, PDF
-bash research/paper/scripts/watch.sh                                        # rebuild the PDF on edits
 uv run python research/scripts/replay_paper.py --data-dir $DATA             # paper answers through agml-full-v1: scores unchanged
 ```
