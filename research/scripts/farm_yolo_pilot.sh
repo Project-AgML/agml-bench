@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=agbench-yolo-pilot
+#SBATCH --job-name=agml-bench-yolo-pilot
 #SBATCH --output=farm_outputs/%A.out
 #SBATCH --error=farm_outputs/%A.err
 #SBATCH --account=jmearlesgrp
@@ -21,6 +21,6 @@ ONLY='^(date_grade_variety_classification|date_palm_leaf_disease_classification|
 uv sync --extra yolo -q
 for S in s x; do
   date "+%F %T start $S"
-  uv run --extra yolo agbench eval yolo --data-dir $DATA --shots 15 --subset 0 --size $S --only "$ONLY" --out runs/yolo_pilot/$S
+  uv run --extra yolo agml-bench eval yolo --data-dir $DATA --shots 15 --subset 0 --size $S --only "$ONLY" --out runs/yolo_pilot/$S
   date "+%F %T end $S rc=$?"
 done

@@ -10,7 +10,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agbench.config import MANIFEST_DIR, TRAIN_MANIFEST_DIR, sampling_hash, train_sampling_hash
+from agml_bench.config import MANIFEST_DIR, TRAIN_MANIFEST_DIR, sampling_hash, train_sampling_hash
 
 TASK_DIRS = {
     "image_classification": "classification",
@@ -93,10 +93,10 @@ def status_of(cfg: dict, data_dir: Path, entry: dict) -> str:
 def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool, manifest: dict | None = None,
                 bundle: dict | None = None) -> dict:
     """`manifest` (with `bundle`): download exactly these samples for a frozen benchmark; manifests/ is not touched."""
-    from agbench import build
-    from agbench.hub import Repo
-    from agbench.progress import log
-    from agbench.sampling import rng_for, select_greedy_cover, select_itt, select_per_class
+    from agml_bench import build
+    from agml_bench.hub import Repo
+    from agml_bench.progress import log
+    from agml_bench.sampling import rng_for, select_greedy_cover, select_itt, select_per_class
 
     name, task = entry["name"], entry["task"]
     s_cfg = cfg["sampling"]
@@ -161,8 +161,8 @@ def run_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool, man
 
 def index_dataset(cfg: dict, entry: dict, repo, rng) -> tuple[list[dict], dict]:
     """Every labelled row of a dataset as a selection record ({ref, keys, ann, strata}), plus layout info."""
-    from agbench import build
-    from agbench.progress import log
+    from agml_bench import build
+    from agml_bench.progress import log
 
     name, task = entry["name"], entry["task"]
     s_cfg = cfg["sampling"]
@@ -200,10 +200,10 @@ def _ref_key(ref: dict) -> str:
 
 def run_train_dataset(cfg: dict, entry: dict, data_dir: Path, from_manifest: bool) -> dict:
     """Few-shot training samples: `subsets` seeded draws of each shot count, never an evaluated sample."""
-    from agbench import build
-    from agbench.hub import Repo
-    from agbench.progress import log
-    from agbench.sampling import rng_for, select_greedy_cover, select_per_class
+    from agml_bench import build
+    from agml_bench.hub import Repo
+    from agml_bench.progress import log
+    from agml_bench.sampling import rng_for, select_greedy_cover, select_per_class
 
     name, task = entry["name"], entry["task"]
     t_cfg = cfg["train_sampling"]
@@ -290,9 +290,9 @@ def write_manifest(entry: dict, meta: dict, samples: list[dict], path: Path | No
 
 
 def worker_main(argv: list[str]) -> int:
-    """Entry point for `python -m agbench.pipeline NAME DATA_DIR CONFIG [--from-manifest]`."""
-    from agbench.catalog import load_catalog
-    from agbench.config import load_config
+    """Entry point for `python -m agml_bench.pipeline NAME DATA_DIR CONFIG [--from-manifest]`."""
+    from agml_bench.catalog import load_catalog
+    from agml_bench.config import load_config
 
     name, data_dir, config_path = argv[:3]
     from_manifest = "--from-manifest" in argv
@@ -302,7 +302,7 @@ def worker_main(argv: list[str]) -> int:
     repo, revision = None, None
     try:
         if "--bundle" in argv:
-            from agbench.bench import load
+            from agml_bench.bench import load
 
             b = load(argv[argv.index("--bundle") + 1])
             repo, revision = b.entry(name)["hf_repo"], b.manifests[name]["hf_sha"]
@@ -329,7 +329,7 @@ def explain(e: Exception, repo: str | None, revision: str | None) -> str:
         return f"source repo {repo} not found (deleted, renamed or private)"
     if kind == "RevisionNotFoundError" or "(revision not found)" in text or "Invalid rev id" in text:
         return (f"pinned revision{rev} no longer exists in {repo} (repo re-uploaded or history rewritten; "
-                f"maintainers: agbench bench repin)")
+                f"maintainers: agml-bench bench repin)")
     if kind == "GatedRepoError" or "gated" in text.lower():
         return f"{repo} is gated: accept its terms on huggingface.co, then rerun"
     if "403" in text or "Forbidden" in text:
@@ -353,11 +353,11 @@ def run_many(cfg: dict, config_path: str, entries: list[dict], data_dir: Path, t
     detailed output appended to <data_dir>/_logs/<command>.log. Otherwise (a log file, a batch job): every line."""
     from contextlib import nullcontext
 
-    from agbench.progress import fmt_duration
+    from agml_bench.progress import fmt_duration
 
     results = {"ok": [], "failed": []}
     t_start = time.time()
-    tty = sys.stdout.isatty() and os.environ.get("AGBENCH_PLAIN") != "1"
+    tty = sys.stdout.isatty() and os.environ.get("AGML_BENCH_PLAIN") != "1"
     log_path = Path(data_dir) / "_logs" / f"{'pull' if bundle else 'sample-train' if train else 'sample'}.log"
     bar = None
     if tty:
@@ -405,7 +405,7 @@ def _run_one(e: dict, data_dir: Path, config_path: str, timeout: int, from_manif
     # Any HF cache or Xet chunk written during this dataset lands in scratch and is deleted after.
     env = dict(os.environ, HF_HUB_CACHE=str(scratch / "hub"), HF_XET_CACHE=str(scratch / "xet"),
                HF_DATASETS_CACHE=str(scratch / "datasets"), HF_XET_CHUNK_CACHE_SIZE_BYTES="0")
-    cmd = [sys.executable, "-m", "agbench.pipeline", name, str(data_dir), config_path]
+    cmd = [sys.executable, "-m", "agml_bench.pipeline", name, str(data_dir), config_path]
     if from_manifest:
         cmd.append("--from-manifest")
     if train:

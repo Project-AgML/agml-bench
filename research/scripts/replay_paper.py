@@ -13,9 +13,9 @@ import math
 import tempfile
 from pathlib import Path
 
-from agbench.eval.client import Prediction, encode_image
-from agbench.eval.methods import Method, key_formats, model_spec
-from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
+from agml_bench.eval.client import Prediction, encode_image
+from agml_bench.eval.methods import Method, key_formats, model_spec
+from agml_bench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
 
 SCORE_KEYS = ("correct", "acc", "parse_ok", "pred_label", "pred_class", "idk", "tp", "fp", "fn", "mean_iou", "rouge_l",
               "token_f1", "needs_judge", "truncated")

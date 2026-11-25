@@ -2,7 +2,7 @@
 
 import re
 
-from agbench.eval.resources import norm
+from agml_bench.eval.resources import norm
 
 MAX_LISTED = 4
 

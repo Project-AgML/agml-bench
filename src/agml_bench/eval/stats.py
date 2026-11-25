@@ -18,10 +18,10 @@ import numpy as np
 import pandas as pd
 from scipy.stats import binomtest, chisquare, wilcoxon
 
-from agbench.eval.metrics import is_correct
-from agbench.eval.report import load_runs, variant
-from agbench.eval.resources import norm, prompts
-from agbench.eval.runner import read_jsonl
+from agml_bench.eval.metrics import is_correct
+from agml_bench.eval.report import load_runs, variant
+from agml_bench.eval.resources import norm, prompts
+from agml_bench.eval.runner import read_jsonl
 
 B = 10_000
 BUCKETS = ("disease", "pest_damage", "species_id", "quality_maturity")

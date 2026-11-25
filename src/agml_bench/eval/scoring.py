@@ -6,7 +6,7 @@ from collections import Counter
 
 from rapidfuzz import fuzz
 
-from agbench.eval.resources import norm
+from agml_bench.eval.resources import norm
 
 FUZZY_THRESHOLD = 60  # paper: similarity >= 0.6 counts as a match
 IOU_THRESHOLD = 0.5

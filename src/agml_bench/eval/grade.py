@@ -2,10 +2,10 @@
 
 from PIL import Image
 
-from agbench.eval import scoring as sc
-from agbench.eval.client import Prediction
-from agbench.eval.items import EvalItem
-from agbench.eval.resources import prompts
+from agml_bench.eval import scoring as sc
+from agml_bench.eval.client import Prediction
+from agml_bench.eval.items import EvalItem
+from agml_bench.eval.resources import prompts
 
 INVALID = "__invalid__"
 

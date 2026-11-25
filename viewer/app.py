@@ -11,9 +11,9 @@ import pandas as pd
 import streamlit as st
 from PIL import Image, ImageDraw
 
-from agbench.catalog import load_catalog
-from agbench.config import CATALOG_DIR, load_config
-from agbench.pipeline import TASK_DIRS, dataset_dir, failure_path, status_of
+from agml_bench.catalog import load_catalog
+from agml_bench.config import CATALOG_DIR, load_config
+from agml_bench.pipeline import TASK_DIRS, dataset_dir, failure_path, status_of
 
 st.set_page_config(page_title="AgML base-data", layout="wide")
 
@@ -141,7 +141,7 @@ def page_dataset():
     cat, df = catalog_frame()
     done = df[df.samples.notna()]
     if done.empty:
-        st.info("No sampled datasets yet. Run `agbench sample --data-dir ...`.")
+        st.info("No sampled datasets yet. Run `agml-bench sample --data-dir ...`.")
         return
     c1, c2 = st.columns([1, 3])
     task = c1.selectbox("Task", sorted(done.task.unique()))

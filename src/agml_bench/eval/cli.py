@@ -14,7 +14,7 @@ import typer
 app = typer.Typer(no_args_is_help=True, help="Benchmark models on base-data.")
 
 DataDirOpt = typer.Option(..., "--data-dir", help="Data dir with base-data/.")
-BenchOpt = typer.Option("agml-full-v1", "--benchmark", help="Frozen benchmark (agbench bench list); 'none': items built from the base-data in --data-dir.")
+BenchOpt = typer.Option("agml-full-v1", "--benchmark", help="Frozen benchmark (agml-bench bench list); 'none': items built from the base-data in --data-dir.")
 TaskOpt = typer.Option(None, "--task", help="classification | detection | segmentation | image_text_to_text")
 FormatOpt = typer.Option(None, "--format", help="mcqa_within | mcqa_across | oeq | grounding | native | multiple_choice (ITT)")
 ModelsFileOpt = typer.Option(None, "--models-file", help="YAML of extra/overriding models (models.yaml layout).")
@@ -24,7 +24,7 @@ JudgeKeyOpt = typer.Option(None, "--judge-api-key-env", help="Environment variab
 
 
 def _register(files: list[Path] | None):
-    from agbench.eval.resources import register_models
+    from agml_bench.eval.resources import register_models
 
     for f in files or []:
         register_models(f)
@@ -46,7 +46,7 @@ def _load_method(path: str, kwargs: str | None):
 @app.command("models")
 def models_cmd(models_file: list[Path] = ModelsFileOpt):
     """List registered models with VRAM estimates."""
-    from agbench.eval.resources import models
+    from agml_bench.eval.resources import models
 
     _register(models_file)
     reg = models()
@@ -91,10 +91,10 @@ def run(
 ):
     """Run a model or custom method over the benchmark."""
     _register(models_file)
-    from agbench.eval.gpu import sampler
-    from agbench.eval.items import MCQAOptions
-    from agbench.eval.methods import VLMMethod, key_formats, model_spec
-    from agbench.eval.runner import Benchmark
+    from agml_bench.eval.gpu import sampler
+    from agml_bench.eval.items import MCQAOptions
+    from agml_bench.eval.methods import VLMMethod, key_formats, model_spec
+    from agml_bench.eval.runner import Benchmark
 
     if not (model or method):
         raise typer.BadParameter("pass --model or --method")
@@ -113,7 +113,7 @@ def run(
         rd = run_dir or _run_dir(out, model)
         kf = key_formats(spec)
         if run_dir and not bench.remaining(rd):
-            from agbench.eval.runner import finalize, read_jsonl
+            from agml_bench.eval.runner import finalize, read_jsonl
 
             typer.echo("all items already done; skipping the model server")
             ids = {it.item_id for it in bench.items}
@@ -142,7 +142,7 @@ def _echo_items(bench) -> None:
 @app.command()
 def baseline(
     data_dir: Path = DataDirOpt,
-    kind: str = typer.Option(..., "--kind", help="chance | prior (see agbench/eval/baselines.py)"),
+    kind: str = typer.Option(..., "--kind", help="chance | prior (see agml_bench/eval/baselines.py)"),
     task: list[str] = TaskOpt,
     fmt: list[str] = FormatOpt,
     only: str = typer.Option(None, "--only", help="Regex on dataset name."),
@@ -152,8 +152,8 @@ def baseline(
     benchmark: str = BenchOpt,
 ):
     """Naive baselines (no image used), scored like a model run; no GPU or judge needed."""
-    from agbench.eval.baselines import KINDS, NaiveBaseline, exact_oeq_verdicts, priors
-    from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
+    from agml_bench.eval.baselines import KINDS, NaiveBaseline, exact_oeq_verdicts, priors
+    from agml_bench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
 
     if kind not in KINDS:
         raise typer.BadParameter(f"--kind: {' | '.join(KINDS)}")
@@ -226,7 +226,7 @@ def yolo(
     size: str = typer.Option("x", "--size", help="YOLO11 size: n | s | m | l | x"),
     epochs: int = typer.Option(100, "--epochs"),
     out: Path = typer.Option(Path("runs/yolo"), "--out"),
-    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agbench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
+    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agml-bench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
 ):
     """Few-shot YOLO11 baseline: per dataset, train on k images per class, score the evaluation items, delete the model.
 
@@ -237,11 +237,11 @@ def yolo(
     import os
     import time
 
-    from agbench.eval import yolo as Y
-    from agbench.eval.baselines import exact_oeq_verdicts
-    from agbench.eval.gpu import sampler
-    from agbench.eval.grade import grade
-    from agbench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
+    from agml_bench.eval import yolo as Y
+    from agml_bench.eval.baselines import exact_oeq_verdicts
+    from agml_bench.eval.gpu import sampler
+    from agml_bench.eval.grade import grade
+    from agml_bench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
 
     dev = Y.device()  # fails fast if CUDA is unavailable, instead of every dataset silently training on the CPU
     typer.echo(f"YOLO device: {dev}")
@@ -262,7 +262,7 @@ def yolo(
 
     write_once(rd / "run.json", json.dumps({
         "method": {"name": label, "baseline": "yolo", "size": size, "epochs": epochs, "shots": shots, "gen_seed": subset},
-        "benchmark": bench.args, "n_items": len(bench.items), "agbench_git": _git_sha(),
+        "benchmark": bench.args, "n_items": len(bench.items), "agml_bench_git": _git_sha(),
         "started": datetime.now().astimezone().isoformat(timespec="seconds")}, indent=2))
     write_once(rd / "items.jsonl", "".join(json.dumps(it.to_dict()) + "\n" for it in bench.items))
     write_once(rd / "crops.json", json.dumps(crop_table(bench.items), indent=2))
@@ -365,7 +365,7 @@ def yolo_shared(
     size: str = typer.Option("s", "--size", help="YOLO11 size: n | s | m | l | x"),
     epochs: int = typer.Option(100, "--epochs"),
     out: Path = typer.Option(Path("runs/yolo11s-shared"), "--out"),
-    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agbench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
+    weights_dir: Path = typer.Option(Path.home() / ".cache" / "agml-bench" / "yolo", "--weights-dir", help="Pretrained YOLO11 weights."),
 ):
     """Few-shot YOLO11 baseline with one model per task: train on the k-shot training images of every dataset of the
     task together (classes merged by normalised name; names without letters stay per dataset), then score every
@@ -376,15 +376,15 @@ def yolo_shared(
     import fcntl
     import os
 
-    from agbench.eval import yolo as Y
-    from agbench.eval.baselines import exact_oeq_verdicts
-    from agbench.eval.gpu import sampler
-    from agbench.eval.grade import grade
-    from agbench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
+    from agml_bench.eval import yolo as Y
+    from agml_bench.eval.baselines import exact_oeq_verdicts
+    from agml_bench.eval.gpu import sampler
+    from agml_bench.eval.grade import grade
+    from agml_bench.eval.runner import Benchmark, coverage_md, crop_table, finalize, read_jsonl, _git_sha
 
     dev = Y.device()
     typer.echo(f"YOLO device: {dev}")
-    os.environ.setdefault("AGBENCH_YOLO_WORKERS", "8")  # one large training per GPU: more data-loading processes
+    os.environ.setdefault("AGML_BENCH_YOLO_WORKERS", "8")  # one large training per GPU: more data-loading processes
     tasks = task or ["classification", "detection", "segmentation"]
     train_root = Path(train_dir or Path(data_dir) / "train-data")
     bench = Benchmark(data_dir, tasks, None, only, None, 0)
@@ -404,7 +404,7 @@ def yolo_shared(
     write_once(rd / "run.json", json.dumps({
         "method": {"name": label, "baseline": "yolo-shared", "size": size, "epochs": epochs, "shots": shots, "gen_seed": subset,
                    "labels": "classes merged by normalised name; names without letters kept per dataset; predictions limited to the item's dataset"},
-        "benchmark": bench.args, "n_items": len(bench.items), "agbench_git": _git_sha(),
+        "benchmark": bench.args, "n_items": len(bench.items), "agml_bench_git": _git_sha(),
         "started": datetime.now().astimezone().isoformat(timespec="seconds")}, indent=2))
     write_once(rd / "items.jsonl", "".join(json.dumps(it.to_dict()) + "\n" for it in bench.items))
     write_once(rd / "crops.json", json.dumps(crop_table(bench.items), indent=2))
@@ -504,8 +504,8 @@ def yolo_shared(
 @contextmanager
 def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load", max_model_len: int | None = None):
     """Start a model server, logging its load time and GPU use to run_dir/compute.json."""
-    from agbench.eval.runner import log_compute
-    from agbench.eval.servers import Server
+    from agml_bench.eval.runner import log_compute
+    from agml_bench.eval.servers import Server
 
     t0 = time.time()
     with Server(model_id, run_dir / log_name, max_model_len=max_model_len) as srv:
@@ -515,9 +515,9 @@ def _served(model_id: str, run_dir: Path, log_name: str, gpu, phase: str = "load
 
 
 def _judge(run_dirs: list[Path], endpoint: str | None, judge_model: str | None, redo: bool = False, api_key_env: str | None = None):
-    from agbench.eval.gpu import sampler
-    from agbench.eval.judge import judge_run
-    from agbench.eval.resources import models
+    from agml_bench.eval.gpu import sampler
+    from agml_bench.eval.judge import judge_run
+    from agml_bench.eval.resources import models
 
     jm = judge_model or models()["judge"]
     if endpoint:
@@ -547,7 +547,7 @@ def judge_cmd(
 
 def _print_check(run_dir: Path, verbose: bool = False) -> bool:
     """Print the run check; True if it found errors or the run is not comparable."""
-    from agbench.eval.check import check_run
+    from agml_bench.eval.check import check_run
 
     c = check_run(run_dir)
     st = c["stats"]
@@ -571,8 +571,8 @@ def check_cmd(
 ):
     """Check run dirs: files and prediction schema, items against the frozen benchmark, metrics against predictions,
     coverage, comparability with the reference results."""
-    from agbench.eval.check import check_run
-    from agbench.eval.runner import finalize, read_jsonl
+    from agml_bench.eval.check import check_run
+    from agml_bench.eval.runner import finalize, read_jsonl
 
     fail = False
     for d in run_dir:
@@ -587,7 +587,7 @@ def check_cmd(
 
 
 def _print_summary(run_dir: Path):
-    from agbench.eval.report import leaderboard_md, load_runs
+    from agml_bench.eval.report import leaderboard_md, load_runs
 
     typer.echo(leaderboard_md(load_runs([run_dir])))
     typer.echo(f"results: {run_dir}")
@@ -606,7 +606,7 @@ def report(
 ):
     """Leaderboard across runs. --html and --figures group repeated runs of a setting (sampling seeds) and aggregate
     them as in the paper: per-dataset mean, macro over datasets, 95% bootstrap CI."""
-    from agbench.eval.report import leaderboard_md, load_runs, write_csv
+    from agml_bench.eval.report import leaderboard_md, load_runs, write_csv
 
     rs = load_runs(runs)
     md = leaderboard_md(rs, average)
@@ -616,16 +616,16 @@ def report(
     if csv:
         typer.echo(f"csv: {write_csv(rs, csv)}")
     if html or figures:
-        from agbench.viz.aggregate import entries
+        from agml_bench.viz.aggregate import entries
 
         labels = dict(x.split("=", 1) for x in label or [])
         es = entries(runs, labels)
         if html:
-            from agbench.viz.html import write
+            from agml_bench.viz.html import write
 
             typer.echo(f"html: {write(es, html, title)}")
         if figures:
-            from agbench.viz.figures import agtask, main_results
+            from agml_bench.viz.figures import agtask, main_results
 
             typer.echo(f"figures: {main_results(es, figures / 'fig_main_results.png')}, {agtask(es, figures / 'fig_agtask.png')}")
 
@@ -647,8 +647,8 @@ def profile(
     models_file: list[Path] = ModelsFileOpt,
 ):
     """Measure VRAM, latency and throughput per model and task; estimate full-run compute."""
-    from agbench.eval.profile import run_profile
-    from agbench.eval.resources import models as reg
+    from agml_bench.eval.profile import run_profile
+    from agml_bench.eval.resources import models as reg
 
     _register(models_file)
     ids = list(reg()["models"]) if models == ["all"] else models
@@ -665,7 +665,7 @@ def stats(
     title: str = typer.Option("MCQA statistics", "--title"),
 ):
     """NOTA/IDK behaviour, seed and option-order stability, and model-vs-model tests, with dataset-bootstrap CIs."""
-    from agbench.eval.stats import write_report
+    from agml_bench.eval.stats import write_report
 
     typer.echo(f"report: {write_report(runs, out, title)}")
 
@@ -691,12 +691,12 @@ def view(
 @app.command("check-agtasks")
 def check_agtasks():
     """List datasets/classes whose ag-task mapping needs a look (uses catalog/catalog.json)."""
-    from agbench import catalog as cat
-    from agbench.eval.agtask import check
+    from agml_bench import catalog as cat
+    from agml_bench.eval.agtask import check
 
     c = cat.load_catalog()
     if c is None:
-        typer.echo("No catalog. Run: agbench catalog sync")
+        typer.echo("No catalog. Run: agml-bench catalog sync")
         raise typer.Exit(1)
     problems = check([e for e in c["datasets"].values() if e["eligible"]])
     for p in problems:

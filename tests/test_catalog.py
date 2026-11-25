@@ -1,5 +1,5 @@
-from agbench.catalog import build_catalog, diff_catalogs
-from agbench.config import load_config
+from agml_bench.catalog import build_catalog, diff_catalogs
+from agml_bench.config import load_config
 
 CFG = load_config()
 

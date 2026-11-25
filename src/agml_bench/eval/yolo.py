@@ -1,5 +1,5 @@
 """Few-shot supervised baselines: one YOLO11 model per dataset, trained on k images per class from train-data/
-(agbench sample-train) and scored on the evaluation items by the same grader as the VLMs.
+(agml-bench sample-train) and scored on the evaluation items by the same grader as the VLMs.
 
 Classification  YOLO11-cls. MCQA: the listed class with the highest probability (it never answers "None of the
                 above" or "I don't know", so withheld-class items are always wrong). OEQ: the most probable class of the
@@ -8,7 +8,7 @@ Detection       YOLO11 on the ground-truth boxes.
 Segmentation    YOLO11-seg on polygons of the mask components (the same components the ground-truth boxes come from);
                 predictions are scored through their boxes, like the VLMs.
 
-usage: agbench eval yolo --data-dir $DATA --shots 5 --subset 0 [--task ...] [--only ...]
+usage: agml-bench eval yolo --data-dir $DATA --shots 5 --subset 0 [--task ...] [--only ...]
 """
 
 import json
@@ -20,9 +20,9 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from agbench.eval.items import NON_CLASSES, _value_hit, build_items
-from agbench.eval.methods import Method
-from agbench.eval.resources import norm, pretty, prompts, seg_classes
+from agml_bench.eval.items import NON_CLASSES, _value_hit, build_items
+from agml_bench.eval.methods import Method
+from agml_bench.eval.resources import norm, pretty, prompts, seg_classes
 
 TASK_YOLO = {"classification": "-cls", "detection": "", "segmentation": "-seg"}
 IMGSZ = {"classification": 224, "detection": 640, "segmentation": 640}
@@ -108,16 +108,16 @@ def prepare(task: str, items, names: list[str], root: Path, dataset_dir: Path | 
 
 
 def device() -> int | str:
-    """GPU 0, or the CPU only when AGBENCH_YOLO_ALLOW_CPU=1. Ultralytics silently falls back to the CPU when CUDA
+    """GPU 0, or the CPU only when AGML_BENCH_YOLO_ALLOW_CPU=1. Ultralytics silently falls back to the CPU when CUDA
     fails to initialise (e.g. a driver/toolkit mismatch on an older GPU), which would make a run look merely slow."""
     import torch
 
     if torch.cuda.is_available():
         return 0
-    if os.environ.get("AGBENCH_YOLO_ALLOW_CPU") == "1":
+    if os.environ.get("AGML_BENCH_YOLO_ALLOW_CPU") == "1":
         return "cpu"
     raise RuntimeError("CUDA is not available to PyTorch (torch %s, built for CUDA %s); refusing to train on the CPU. "
-                       "Set AGBENCH_YOLO_ALLOW_CPU=1 to allow it." % (torch.__version__, torch.version.cuda))
+                       "Set AGML_BENCH_YOLO_ALLOW_CPU=1 to allow it." % (torch.__version__, torch.version.cuda))
 
 
 def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: Path, seed: int, batch: int | None = None) -> Path:
@@ -131,8 +131,8 @@ def train(task: str, data: str, out: Path, size: str, epochs: int, weights_dir: 
         model = YOLO(str(base))
     model.train(data=data, epochs=epochs, imgsz=IMGSZ[task], project=str(out.parent.resolve()), name=out.name, exist_ok=True, device=device(),
                 seed=seed, deterministic=True, val=False, plots=False, verbose=False,
-                workers=int(os.environ.get("AGBENCH_YOLO_WORKERS", "2")),  # data-loading processes per training; few images, so 2 suffice
-                cache=os.environ.get("AGBENCH_YOLO_CACHE") or False,  # "ram": decode the few training images once, not every epoch
+                workers=int(os.environ.get("AGML_BENCH_YOLO_WORKERS", "2")),  # data-loading processes per training; few images, so 2 suffice
+                cache=os.environ.get("AGML_BENCH_YOLO_CACHE") or False,  # "ram": decode the few training images once, not every epoch
                 batch=batch or (16 if task == "classification" else 8))
     return Path(model.trainer.save_dir) / "weights" / "last.pt"
 

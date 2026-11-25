@@ -10,8 +10,8 @@ import math
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agbench.viz.aggregate import AG, CLS_FORMATS, COLS, Entry
-from agbench.viz.figures import MAX_MODELS
+from agml_bench.viz.aggregate import AG, CLS_FORMATS, COLS, Entry
+from agml_bench.viz.figures import MAX_MODELS
 
 
 def _num(x):
@@ -174,7 +174,7 @@ td .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; ma
 <section id="runs" hidden>
   <div class="card">
     <h2>Runs</h2>
-    <p class="note">Comparable: frozen benchmark at its recorded hash, standard items, reference judge (agbench eval check).</p>
+    <p class="note">Comparable: frozen benchmark at its recorded hash, standard items, reference judge (agml-bench eval check).</p>
     <div class="tablewrap" id="table-runs"></div>
   </div>
 </section>
@@ -197,11 +197,11 @@ $("#subtitle").textContent = `${D.entries.length} entries, ${nRuns} runs · ${D.
 
 // theme
 const root = document.documentElement;
-try { const t = localStorage.getItem("agbench-theme"); if (t) root.dataset.theme = t; } catch (e) {}
+try { const t = localStorage.getItem("agml-bench-theme"); if (t) root.dataset.theme = t; } catch (e) {}
 $("#theme").onclick = () => {
   const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
   root.dataset.theme = dark ? "light" : "dark";
-  try { localStorage.setItem("agbench-theme", root.dataset.theme); } catch (e) {}
+  try { localStorage.setItem("agml-bench-theme", root.dataset.theme); } catch (e) {}
 };
 // tabs
 for (const b of document.querySelectorAll("#tabs button")) b.onclick = () => {

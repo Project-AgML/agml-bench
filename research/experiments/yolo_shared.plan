@@ -1,8 +1,8 @@
-# Few-shot YOLO11s baselines, one model per task: <shots> <subset>, one agbench eval yolo-shared run per line.
+# Few-shot YOLO11s baselines, one model per task: <shots> <subset>, one agml-bench eval yolo-shared run per line.
 # Each line trains three models (classification, detection, segmentation) on the k-shot training images of all
-# datasets of the task; classes are merged by normalised name. Training images: agbench sample-train.
+# datasets of the task; classes are merged by normalised name. Training images: agml-bench sample-train.
 # Lines run in this order (5 shots first: enough for the main comparison).
-# Run one line with: uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots <shots> --subset <subset> --size s --out runs/yolo11s-shared
+# Run one line with: uv run --extra yolo agml-bench eval yolo-shared --data-dir $DATA --shots <shots> --subset <subset> --size s --out runs/yolo11s-shared
 5 0
 5 1
 5 2

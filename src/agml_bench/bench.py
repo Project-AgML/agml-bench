@@ -2,7 +2,7 @@
 
 A bundle fixes everything that decides a score: which images (manifests: dataset, HF repo, pinned revision, sample
 refs), the evaluation items built from them (prompt, options, answer, ground truth), and the judge prompt. Images are
-not redistributed: `agbench data pull <bundle>` downloads exactly the listed samples from the source AgML repos at
+not redistributed: `agml-bench data pull <bundle>` downloads exactly the listed samples from the source AgML repos at
 their pinned revisions.
 
     benchmarks/<name>/bundle.yaml        name, description, counts, judge, sha256 of each file, hash
@@ -38,7 +38,7 @@ def _write_gz(path: Path, text: str) -> None:
 
 
 def judge_prompt_sha() -> str:
-    from agbench.eval.resources import prompts
+    from agml_bench.eval.resources import prompts
 
     p = prompts()
     return _sha(json.dumps([p["judge_system"], p["judge_classification"], p["judge_qa"]]).encode())[:12]
@@ -89,7 +89,7 @@ class Bundle:
         return out
 
     def datasets(self, task: list[str] | None = None, only: str | None = None) -> list[str]:
-        from agbench.pipeline import TASK_DIRS
+        from agml_bench.pipeline import TASK_DIRS
 
         return [n for n, m in sorted(self.manifests.items())
                 if (not task or TASK_DIRS[m["task"]] in task or m["task"] in task) and (not only or re.search(only, n))]
@@ -101,8 +101,8 @@ class Bundle:
     def items(self, data_dir, tasks=None, formats=None, only: str | None = None, limit_per_dataset: int | None = None,
               seed: int = 0) -> tuple[list, list[dict]]:
         """Frozen EvalItems for the datasets present in data_dir, plus the selected datasets that are not."""
-        from agbench.eval.items import EvalItem, _unit
-        from agbench.pipeline import base_dir
+        from agml_bench.eval.items import EvalItem, _unit
+        from agml_bench.pipeline import base_dir
 
         data_dir = Path(data_dir)
         present = {}
@@ -122,7 +122,7 @@ class Bundle:
             if not present[key]:
                 if key not in seen:
                     seen.add(key)
-                    why = self.unavailable.get(r["dataset"]) or f"not downloaded (agbench data pull {self.name})"
+                    why = self.unavailable.get(r["dataset"]) or f"not downloaded (agml-bench data pull {self.name})"
                     skipped.append({"dataset": r["dataset"], "task": r["task"], "reason": why})
                 continue
             keep.append(r)
@@ -167,10 +167,10 @@ def freeze(name: str, items_path: Path, description: str, manifest_dir: Path | N
     item are included; a manifest that yields no items (e.g. no usable segmentation classes) is left out."""
     from datetime import datetime, timezone
 
-    from agbench.catalog import load_catalog
-    from agbench.config import DEFAULT_CONFIG, MANIFEST_DIR
-    from agbench.eval.resources import models
-    from agbench.pipeline import TASK_DIRS
+    from agml_bench.catalog import load_catalog
+    from agml_bench.config import DEFAULT_CONFIG, MANIFEST_DIR
+    from agml_bench.eval.resources import models
+    from agml_bench.pipeline import TASK_DIRS
 
     manifest_dir, config_path = Path(manifest_dir or MANIFEST_DIR), Path(config_path or DEFAULT_CONFIG)
     catalog = catalog or load_catalog()
@@ -225,7 +225,7 @@ def freeze(name: str, items_path: Path, description: str, manifest_dir: Path | N
 def data_status(b: Bundle, data_dir, task=None, only=None) -> dict[str, str]:
     """Per dataset: done | missing | stale (wrong revision or different samples) | failed | unavailable (source repo
     gone, no local copy)."""
-    from agbench.pipeline import base_dir, failure_path, TASK_DIRS
+    from agml_bench.pipeline import base_dir, failure_path, TASK_DIRS
 
     out = {}
     for n in b.datasets(task, only):
@@ -249,7 +249,7 @@ def verify(b: Bundle, data_dir, task=None, only=None, decode: bool = True) -> di
     gone) without a local copy are not problems; with one, they are checked like the rest."""
     from PIL import Image, ImageFile
 
-    from agbench.pipeline import base_dir, TASK_DIRS
+    from agml_bench.pipeline import base_dir, TASK_DIRS
 
     ImageFile.LOAD_TRUNCATED_IMAGES = True  # as the model servers and YOLO decode them; only unreadable files count
     need: dict[str, set] = {}
@@ -309,11 +309,11 @@ def repin(b: Bundle, name: str, reference_dir, write: bool = False, scratch=None
     import tempfile
     from datetime import datetime, timezone
 
-    from agbench import build
-    from agbench.config import MANIFEST_DIR, load_config
-    from agbench.hub import Repo
-    from agbench.pipeline import TASK_DIRS, base_dir, index_dataset
-    from agbench.sampling import rng_for
+    from agml_bench import build
+    from agml_bench.config import MANIFEST_DIR, load_config
+    from agml_bench.hub import Repo
+    from agml_bench.pipeline import TASK_DIRS, base_dir, index_dataset
+    from agml_bench.sampling import rng_for
 
     m = b.manifests[name]
     if m["task"] != "image_text_to_text":

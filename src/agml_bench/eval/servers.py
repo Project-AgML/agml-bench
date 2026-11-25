@@ -11,8 +11,8 @@ from pathlib import Path
 
 import requests
 
-from agbench.eval.methods import model_spec
-from agbench.progress import log
+from agml_bench.eval.methods import model_spec
+from agml_bench.progress import log
 
 
 def free_port() -> int:
@@ -33,7 +33,7 @@ def _overlay(model_id: str, overlay: dict) -> str:
     from huggingface_hub import hf_hub_download, snapshot_download
 
     src = Path(snapshot_download(model_id))
-    dst = Path(os.environ.get("AGBENCH_CACHE", Path.home() / ".cache" / "agbench")) / "models" / model_id.replace("/", "__")
+    dst = Path(os.environ.get("AGML_BENCH_CACHE", Path.home() / ".cache" / "agml-bench")) / "models" / model_id.replace("/", "__")
     dst.mkdir(parents=True, exist_ok=True)
     for f in src.iterdir():
         t = dst / f.name

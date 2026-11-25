@@ -16,9 +16,9 @@ import random
 import statistics
 from collections import Counter, defaultdict
 
-from agbench.eval.items import EvalItem
-from agbench.eval.methods import Method, item_seed
-from agbench.eval.resources import norm, prompts
+from agml_bench.eval.items import EvalItem
+from agml_bench.eval.methods import Method, item_seed
+from agml_bench.eval.resources import norm, prompts
 
 LETTERS = "ABCDEFGHIJKLMNOP"
 KINDS = ("chance", "prior")

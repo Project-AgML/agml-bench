@@ -1,7 +1,7 @@
 from collections import Counter
 
-from agbench.build import mask_class_map, to_pixel_xywh
-from agbench.sampling import qa_format, rng_for, select_greedy_cover, select_itt, select_per_class
+from agml_bench.build import mask_class_map, to_pixel_xywh
+from agml_bench.sampling import qa_format, rng_for, select_greedy_cover, select_itt, select_per_class
 
 SPLITS = ["test", "validation", "train"]
 ITT_CFG = {"per_stratum": 5, "max_per_dataset": 40, "primary_keys": ["task"], "secondary_keys": [],

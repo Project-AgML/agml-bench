@@ -3,7 +3,7 @@
 import re
 from functools import cache
 
-from agbench.eval.resources import ag_tasks, norm
+from agml_bench.eval.resources import ag_tasks, norm
 
 
 def split_classes(classes) -> list[str]:
