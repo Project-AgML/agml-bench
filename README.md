@@ -20,7 +20,7 @@ uv tool install vllm          # to serve models with --model
 Without a clone:
 
 ```bash
-uv tool install "agbench[viz] @ git+https://github.com/Project-AgML/agml-benchmarks@v1.0.0"
+uv tool install "agbench[viz]"        # or: pip install "agbench[viz]"
 agbench bench list
 ```
 
@@ -151,9 +151,9 @@ uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots 10 --subse
 
 ## More
 
-- New benchmark versions, catalog, sampling, profiling: [docs/building.md](docs/building.md)
-- Paper experiments: [research/README.md](research/README.md)
-- Evaluation rules: [docs/benchmarking.md](docs/benchmarking.md)
+- New benchmark versions, catalog, sampling, profiling: [docs/building.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/docs/building.md)
+- Paper experiments: [research/README.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/research/README.md)
+- Evaluation rules: [docs/benchmarking.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/docs/benchmarking.md)
 
 ## Tests
 
@@ -163,4 +163,4 @@ uv run pytest
 
 ## License
 
-Code: Apache-2.0 ([LICENSE](LICENSE)). Images and labels: each dataset's own license (`license` in [catalog/catalog.json](catalog/catalog.json)).
+Code: Apache-2.0 ([LICENSE](https://github.com/Project-AgML/agml-benchmarks/blob/main/LICENSE)). Images and labels: each dataset's own license (`license` in [catalog/catalog.json](https://github.com/Project-AgML/agml-benchmarks/blob/main/catalog/catalog.json)).
