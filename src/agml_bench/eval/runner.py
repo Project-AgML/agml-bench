@@ -12,14 +12,14 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-from agbench.bench import DEFAULT as DEFAULT_BENCH
-from agbench.eval import metrics as mx
-from agbench.eval.client import FatalAPIError, Prediction
-from agbench.eval.gpu import sampler
-from agbench.eval.grade import grade
-from agbench.eval.items import MCQAOptions, build_items
-from agbench.eval.methods import Method
-from agbench.progress import Progress, fmt_duration, log
+from agml_bench.bench import DEFAULT as DEFAULT_BENCH
+from agml_bench.eval import metrics as mx
+from agml_bench.eval.client import FatalAPIError, Prediction
+from agml_bench.eval.gpu import sampler
+from agml_bench.eval.grade import grade
+from agml_bench.eval.items import MCQAOptions, build_items
+from agml_bench.eval.methods import Method
+from agml_bench.progress import Progress, fmt_duration, log
 
 
 @dataclass
@@ -82,8 +82,8 @@ def coverage_md(items) -> str:
 class Benchmark:
     """A benchmark over a base-data directory.
 
-    `bench`: a frozen benchmark (agbench bench list). Its items are used exactly as frozen, for the datasets present
-    in data_dir (agbench data pull). Item ablations (seed != 0 or non-default MCQA options) cannot use frozen items,
+    `bench`: a frozen benchmark (agml-bench bench list). Its items are used exactly as frozen, for the datasets present
+    in data_dir (agml-bench data pull). Item ablations (seed != 0 or non-default MCQA options) cannot use frozen items,
     so they are built from the data with the current code and recorded as a variant of the benchmark.
     `bench=None`: items built from whatever base-data is in data_dir (development, a new catalog).
 
@@ -97,7 +97,7 @@ class Benchmark:
                      "limit_per_dataset": limit_per_dataset, "seed": seed, "mcqa": asdict(mcqa or MCQAOptions())}
         self.skipped = []
         if items is None and bench:
-            from agbench.bench import load
+            from agml_bench.bench import load
 
             b = load(bench)
             standard = seed == 0 and (mcqa is None or mcqa == MCQAOptions())
@@ -136,7 +136,7 @@ class Benchmark:
             write_jsonl(pred_path, list(done.values()))
         todo = [it for it in self.items if it.item_id not in done]
         (out / "run.json").write_text(json.dumps({
-            "method": method.config(), "benchmark": self.args, "n_items": len(self.items), "agbench_git": _git_sha(),
+            "method": method.config(), "benchmark": self.args, "n_items": len(self.items), "agml_bench_git": _git_sha(),
             "started": datetime.now(timezone.utc).isoformat(timespec="seconds"), "concurrency": concurrency}, indent=2))
         write_jsonl(out / "items.jsonl", [it.to_dict() for it in self.items])
         (out / "skipped.json").write_text(json.dumps(self.skipped, indent=2))
@@ -186,7 +186,7 @@ class Benchmark:
 
 def finalize(out: Path, records: list[dict]) -> Result:
     """metrics.json and run_manifest.json from the records."""
-    from agbench.eval.check import write_manifest
+    from agml_bench.eval.check import write_manifest
 
     out = Path(out)
     m = mx.compute(records)

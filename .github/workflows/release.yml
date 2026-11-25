@@ -12,7 +12,7 @@ jobs:
       - run: uv build
       - run: |
           uv venv /tmp/v && VIRTUAL_ENV=/tmp/v uv pip install dist/*.whl
-          cd /tmp && /tmp/v/bin/agbench bench list
+          cd /tmp && /tmp/v/bin/agml-bench bench list
       - uses: actions/upload-artifact@v4
         with:
           name: dist

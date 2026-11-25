@@ -5,11 +5,11 @@ import shutil
 import httpx
 import pytest
 
-from agbench import bench
-from agbench.eval.check import check_run
-from agbench.eval.client import Client, FatalAPIError, api_base, api_key_from_env
-from agbench.eval.methods import Method
-from agbench.eval.runner import Benchmark
+from agml_bench import bench
+from agml_bench.eval.check import check_run
+from agml_bench.eval.client import Client, FatalAPIError, api_base, api_key_from_env
+from agml_bench.eval.methods import Method
+from agml_bench.eval.runner import Benchmark
 
 from test_bench import _fake_dataset
 
@@ -22,11 +22,11 @@ def test_api_base():
 
 def test_api_key_from_env(monkeypatch):
     assert api_key_from_env(None) == "EMPTY"
-    monkeypatch.delenv("AGBENCH_TEST_KEY", raising=False)
-    with pytest.raises(FatalAPIError, match="AGBENCH_TEST_KEY is not set"):
-        api_key_from_env("AGBENCH_TEST_KEY")
-    monkeypatch.setenv("AGBENCH_TEST_KEY", "sk-test")
-    assert api_key_from_env("AGBENCH_TEST_KEY") == "sk-test"
+    monkeypatch.delenv("AGML_BENCH_TEST_KEY", raising=False)
+    with pytest.raises(FatalAPIError, match="AGML_BENCH_TEST_KEY is not set"):
+        api_key_from_env("AGML_BENCH_TEST_KEY")
+    monkeypatch.setenv("AGML_BENCH_TEST_KEY", "sk-test")
+    assert api_key_from_env("AGML_BENCH_TEST_KEY") == "sk-test"
 
 
 def _client(handler, **kw) -> Client:
@@ -117,7 +117,7 @@ def test_check_catches_edits(run_dir, tmp_path):
 
 
 def test_other_judge_not_comparable(run_dir):
-    from agbench.eval.check import comparability
+    from agml_bench.eval.check import comparability
 
     run = json.loads((run_dir / "run.json").read_text())
     recs = [{"needs_judge": True, "judge_correct": True}]

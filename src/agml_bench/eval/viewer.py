@@ -1,4 +1,4 @@
-"""Streamlit viewer for benchmark results. Launch with: agbench eval view --runs runs/"""
+"""Streamlit viewer for benchmark results. Launch with: agml-bench eval view --runs runs/"""
 
 import argparse
 import json
@@ -8,8 +8,8 @@ import pandas as pd
 import streamlit as st
 from PIL import Image, ImageDraw
 
-from agbench.eval.report import load_runs, summary_frames
-from agbench.eval.runner import read_jsonl
+from agml_bench.eval.report import load_runs, summary_frames
+from agml_bench.eval.runner import read_jsonl
 
 st.set_page_config(page_title="AgBench results", layout="wide")
 
@@ -54,7 +54,7 @@ def pct(df: pd.DataFrame) -> pd.DataFrame:
 
 def no_runs() -> bool:
     if not runs():
-        st.info(f"No finished runs under {args.runs}. Run `agbench eval run ...` first.")
+        st.info(f"No finished runs under {args.runs}. Run `agml-bench eval run ...` first.")
         return True
     return False
 
@@ -243,7 +243,7 @@ def page_crops():
 
 
 def page_compute():
-    from agbench.eval.profile import actual_frames, profile_frames
+    from agml_bench.eval.profile import actual_frames, profile_frames
 
     st.title("Compute")
     path = Path(args.profile or "") / "profile.json"

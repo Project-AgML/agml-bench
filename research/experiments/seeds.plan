@@ -1,8 +1,8 @@
 # Experiment 1 (generation seeds): every task and format, judged, low reasoning effort.
-# One line per run: <out dir> <model> [agbench eval run args]; run with: scripts/run_plan.sh experiments/seeds.plan
-# Original runs: UC Davis farm cluster, one RTX 6000 Ada per run, agbench commit 9352706, judge prompt v3.
+# One line per run: <out dir> <model> [agml-bench eval run args]; run with: scripts/run_plan.sh experiments/seeds.plan
+# Original runs: UC Davis farm cluster, one RTX 6000 Ada per run, agml-bench commit 9352706, judge prompt v3.
 # The verdicts in the paper were then re-judged with the v4 judge prompt (commit 524ee35, now the default in
-# src/agbench/eval/prompts.yaml) into runs/rejudge_v4/exp/seeds; running this plan with the current code judges with v4 directly.
+# src/agml_bench/eval/prompts.yaml) into runs/rejudge_v4/exp/seeds; running this plan with the current code judges with v4 directly.
 runs/exp/seeds/s0 mistralai/Ministral-3-14B-Instruct-2512 --judge --gen-seed 0
 runs/exp/seeds/s0 openbmb/MiniCPM-V-4.7-35B-A3B-FP8 --judge --gen-seed 0
 runs/exp/seeds/s0 google/gemma-4-12B-it --judge --gen-seed 0

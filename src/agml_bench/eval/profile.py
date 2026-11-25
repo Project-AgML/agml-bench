@@ -10,14 +10,14 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from agbench.eval.gpu import GPUSampler
-from agbench.eval.items import EvalItem, build_items, spread
-from agbench.eval.judge import judge_records
-from agbench.eval.methods import VLMMethod, key_formats, model_spec
-from agbench.eval.resources import models
-from agbench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
-from agbench.eval.servers import Server, delete_weights
-from agbench.progress import log
+from agml_bench.eval.gpu import GPUSampler
+from agml_bench.eval.items import EvalItem, build_items, spread
+from agml_bench.eval.judge import judge_records
+from agml_bench.eval.methods import VLMMethod, key_formats, model_spec
+from agml_bench.eval.resources import models
+from agml_bench.eval.runner import Benchmark, finalize, read_jsonl, write_jsonl
+from agml_bench.eval.servers import Server, delete_weights
+from agml_bench.progress import log
 
 GPU_SIZES = [24, 32, 48, 80, 96, 141, 192]
 

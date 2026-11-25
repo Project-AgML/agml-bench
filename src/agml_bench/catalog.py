@@ -7,7 +7,7 @@ from datetime import date
 import requests
 from huggingface_hub import HfApi
 
-from agbench.config import CATALOG_DIR
+from agml_bench.config import CATALOG_DIR
 
 ITT_TAGS = {"task_categories:image-text-to-text", "task_categories:visual-question-answering"}
 TASK_ALIASES = {"image-text-to-text": "image_text_to_text"}

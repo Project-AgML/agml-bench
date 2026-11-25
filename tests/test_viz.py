@@ -2,11 +2,11 @@ import json
 
 import pytest
 
-from agbench import bench
-from agbench.eval.baselines import NaiveBaseline, priors
-from agbench.eval.methods import Method
-from agbench.eval.runner import Benchmark
-from agbench.viz import aggregate, html
+from agml_bench import bench
+from agml_bench.eval.baselines import NaiveBaseline, priors
+from agml_bench.eval.methods import Method
+from agml_bench.eval.runner import Benchmark
+from agml_bench.viz import aggregate, html
 
 from test_bench import _fake_dataset
 
@@ -62,7 +62,7 @@ def test_html_report_is_self_contained(runs, tmp_path):
 
 def test_figures(runs, tmp_path):
     pytest.importorskip("matplotlib")
-    from agbench.viz.figures import agtask, main_results
+    from agml_bench.viz.figures import agtask, main_results
 
     es = aggregate.entries([runs])
     assert main_results(es, tmp_path / "m.png").stat().st_size > 1000

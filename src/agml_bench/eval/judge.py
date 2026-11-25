@@ -6,11 +6,11 @@ import re
 import time
 from pathlib import Path
 
-from agbench.eval.client import Client, api_key_from_env
-from agbench.eval.methods import model_spec
-from agbench.eval.resources import models, prompts
-from agbench.eval.runner import finalize, log_compute, read_jsonl, write_jsonl
-from agbench.progress import Progress, log
+from agml_bench.eval.client import Client, api_key_from_env
+from agml_bench.eval.methods import model_spec
+from agml_bench.eval.resources import models, prompts
+from agml_bench.eval.runner import finalize, log_compute, read_jsonl, write_jsonl
+from agml_bench.progress import Progress, log
 
 
 def judge_prompt(r: dict) -> str:
@@ -57,7 +57,7 @@ def judge_run(run_dir, endpoint: str, judge_model: str | None = None, concurrenc
     Any judge model behind an OpenAI-compatible endpoint works (`api_key_env`: variable holding a hosted API's key).
     Scores are comparable with the reference results only with the benchmark's reference judge and judge prompt
     (run_manifest.json: comparable)."""
-    from agbench.bench import judge_prompt_sha
+    from agml_bench.bench import judge_prompt_sha
 
     run_dir = Path(run_dir)
     judge_model = judge_model or models()["judge"]

@@ -7,9 +7,9 @@ from pathlib import Path
 
 import typer
 
-from agbench import catalog as cat
-from agbench import pipeline
-from agbench.config import DEFAULT_CONFIG, REPO_ROOT, load_config
+from agml_bench import catalog as cat
+from agml_bench import pipeline
+from agml_bench.config import DEFAULT_CONFIG, REPO_ROOT, load_config
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
 catalog_app = typer.Typer(no_args_is_help=True)
@@ -22,7 +22,7 @@ DataDirOpt = typer.Option(..., "--data-dir", help="Where sampled images are writ
 def _require_catalog() -> dict:
     c = cat.load_catalog()
     if c is None:
-        typer.echo("No catalog yet. Run: agbench catalog sync")
+        typer.echo("No catalog yet. Run: agml-bench catalog sync")
         raise typer.Exit(1)
     return c
 
@@ -160,7 +160,7 @@ def sample(
         return
     res = pipeline.run_many(cfg, str(Path(config).resolve()), todo, Path(data_dir).resolve(),
                             timeout or cfg["download"]["timeout_s"], from_manifest)
-    from agbench.progress import fmt_duration
+    from agml_bench.progress import fmt_duration
 
     typer.echo(f"\n{len(res['ok'])} succeeded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
     for n in res["failed"]:
@@ -200,7 +200,7 @@ def sample_train(
         return
     res = pipeline.run_many(cfg, str(Path(config).resolve()), todo, Path(data_dir).resolve(),
                             timeout or cfg["download"]["timeout_s"], from_manifest, train=True)
-    from agbench.progress import fmt_duration
+    from agml_bench.progress import fmt_duration
 
     typer.echo(f"\n{len(res['ok'])} succeeded, {len(res['failed'])} failed in {fmt_duration(res['seconds'])}")
     for n in res["failed"]:
@@ -221,11 +221,11 @@ bench_app = typer.Typer(no_args_is_help=True)
 data_app = typer.Typer(no_args_is_help=True)
 app.add_typer(bench_app, name="bench", help="Frozen, named benchmark versions (e.g. agml-full-v1).")
 app.add_typer(data_app, name="data", help="Download and check a benchmark's images.")
-BenchArg = typer.Argument("agml-full-v1", help="Benchmark name (agbench bench list).")
+BenchArg = typer.Argument("agml-full-v1", help="Benchmark name (agml-bench bench list).")
 
 
 def _bundle(name: str):
-    from agbench import bench
+    from agml_bench import bench
 
     try:
         return bench.load(name)
@@ -237,7 +237,7 @@ def _bundle(name: str):
 @bench_app.command("list")
 def bench_list():
     """Available benchmarks."""
-    from agbench import bench
+    from agml_bench import bench
 
     for n in bench.list_bundles():
         b = bench.load(n)
@@ -261,12 +261,12 @@ def bench_show(name: str = BenchArg):
 @bench_app.command("freeze")
 def bench_freeze(
     name: str = typer.Argument(..., help="New benchmark name, e.g. agml-full-v2."),
-    items: Path = typer.Option(..., "--items", help="items.jsonl of a run over the full base-data (agbench eval run)."),
+    items: Path = typer.Option(..., "--items", help="items.jsonl of a run over the full base-data (agml-bench eval run)."),
     description: str = typer.Option(..., "--description"),
     config: Path = ConfigOpt,
 ):
     """Freeze the committed manifests and a run's items into benchmarks/<name>/ (never overwrites one)."""
-    from agbench import bench
+    from agml_bench import bench
 
     b = bench.freeze(name, items, description, config_path=config)
     typer.echo(f"{b.path}  hash {b.hash}  {b.spec['items']['total']} items, {b.spec['datasets']['total']} datasets")
@@ -280,10 +280,10 @@ def bench_repin(
     write: bool = typer.Option(False, "--write", help="Update the bundle if every sample matched (default: report only)."),
 ):
     """Re-point datasets at a re-uploaded repo's current revision; samples must match the reference copy exactly."""
-    from agbench import bench
+    from agml_bench import bench
 
     bad = False
-    from agbench.pipeline import explain
+    from agml_bench.pipeline import explain
 
     for ds in dataset:
         b = _bundle(name)
@@ -315,8 +315,8 @@ def data_pull(
     timeout: int = typer.Option(None, "--timeout", help="Seconds per dataset."),
 ):
     """Download a benchmark's images from the source AgML repos at their pinned revisions."""
-    from agbench import bench
-    from agbench.progress import fmt_duration
+    from agml_bench import bench
+    from agml_bench.progress import fmt_duration
 
     b = _bundle(name)
     cfg = load_config(b.config_path)
@@ -363,7 +363,7 @@ def _print_failures(data_dir: Path, names: list[str]) -> None:
 def data_status(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[str] = typer.Option(None, "--task"),
                 only: str = typer.Option(None, "--only"), verbose: bool = typer.Option(False, "-v", "--verbose")):
     """Which of a benchmark's datasets are present (done), missing, stale or failed in a data dir."""
-    from agbench import bench
+    from agml_bench import bench
 
     b = _bundle(name)
     st = bench.data_status(b, data_dir, task, only)
@@ -383,7 +383,7 @@ def data_verify(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[st
                 only: str = typer.Option(None, "--only"),
                 decode: bool = typer.Option(True, "--decode/--no-decode", help="Open every image (slower).")):
     """Check a local copy against the benchmark: revision, sample ids, every evaluated image present and readable."""
-    from agbench import bench
+    from agml_bench import bench
 
     b = _bundle(name)
     problems = b.check()
@@ -400,6 +400,6 @@ def data_verify(name: str = BenchArg, data_dir: Path = DataDirOpt, task: list[st
         raise typer.Exit(1)
 
 
-from agbench.eval.cli import app as eval_app  # noqa: E402
+from agml_bench.eval.cli import app as eval_app  # noqa: E402
 
 app.add_typer(eval_app, name="eval")

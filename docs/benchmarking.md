@@ -1,6 +1,6 @@
 # Benchmarking
 
-Settings: `src/agbench/eval/prompts.yaml`, `models.yaml`, `ag_tasks.yaml`, `seg_classes.yaml`. Options and NOTA items are seeded per sample, so they are reproducible.
+Settings: `src/agml_bench/eval/prompts.yaml`, `models.yaml`, `ag_tasks.yaml`, `seg_classes.yaml`. Options and NOTA items are seeded per sample, so they are reproducible.
 
 | Type | Rule |
 |------|------|

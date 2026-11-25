@@ -6,13 +6,13 @@ import numpy as np
 import pytest
 from PIL import Image
 
-from agbench.eval import Benchmark, Method, VLMMethod
-from agbench.eval import scoring as sc
-from agbench.eval.agtask import class_bucket, itt_bucket, split_classes
-from agbench.eval.crops import phrase, resolve
-from agbench.eval.items import N_OPTIONS, build_items, mask_boxes
-from agbench.eval.judge import judge_run, parse_verdict
-from agbench.eval.resources import prompts
+from agml_bench.eval import Benchmark, Method, VLMMethod
+from agml_bench.eval import scoring as sc
+from agml_bench.eval.agtask import class_bucket, itt_bucket, split_classes
+from agml_bench.eval.crops import phrase, resolve
+from agml_bench.eval.items import N_OPTIONS, build_items, mask_boxes
+from agml_bench.eval.judge import judge_run, parse_verdict
+from agml_bench.eval.resources import prompts
 
 NOTA, IDK = prompts()["nota"], prompts()["idk"]
 
@@ -247,8 +247,8 @@ def test_vlm_method_and_judge_against_fake_server(data_dir, tmp_path, fake_serve
 
     sessions = json.loads((tmp_path / "r" / "compute.json").read_text())
     assert [x["phase"] for x in sessions] == ["generate", "judge", "judge"] and sessions[0]["items"] == len(recs)
-    from agbench.eval.profile import actual_frames
-    from agbench.eval.report import load_runs
+    from agml_bench.eval.profile import actual_frames
+    from agml_bench.eval.report import load_runs
     prof = {"models": [{"model": "google/gemma-4-12B-it", "load_s": 60,
                         "tasks": {k: {"batch": {"throughput_per_s": 2.0}} for k in ("classification/mcqa_within", "classification/mcqa_across", "classification/oeq")}}],
             "judge": {"throughput_per_s": 5.0}}
@@ -280,12 +280,12 @@ def test_parse_verdict():
 def test_register_models_from_yaml(tmp_path, monkeypatch):
     import copy
 
-    from agbench.eval import register_models
-    from agbench.eval.methods import model_spec, request_body
-    from agbench.eval.resources import load
-    from agbench.eval.servers import command
+    from agml_bench.eval import register_models
+    from agml_bench.eval.methods import model_spec, request_body
+    from agml_bench.eval.resources import load
+    from agml_bench.eval.servers import command
 
-    monkeypatch.setattr("agbench.eval.servers._bin", lambda env, default: default)
+    monkeypatch.setattr("agml_bench.eval.servers._bin", lambda env, default: default)
     reg = load("models.yaml")
     saved = copy.deepcopy(reg)
     try:
@@ -309,7 +309,7 @@ def test_register_models_from_yaml(tmp_path, monkeypatch):
 def test_steady_wall_ignores_ramp_down_tail():
     import heapq
     import random
-    from agbench.eval.profile import steady_wall
+    from agml_bench.eval.profile import steady_wall
     rng = random.Random(0)
     lat = [rng.choice([5.0, 10.0, 20.0, 200.0]) for _ in range(300)]
     slots, recs = [0.0] * 32, []
@@ -329,7 +329,7 @@ def test_box_json_after_prose_coordinates():
 
 
 def test_box_order_switches_prompt_and_parser(data_dir, fake_server):
-    from agbench.eval.methods import key_formats, model_spec
+    from agml_bench.eval.methods import key_formats, model_spec
     it = next(i for i in build_items(data_dir, ["detection"])[0])
     xy = VLMMethod(fake_server, "mistralai/Ministral-3-14B-Instruct-2512")
     yx = VLMMethod(fake_server, "google/gemma-4-12B-it")
@@ -342,7 +342,7 @@ def test_box_order_switches_prompt_and_parser(data_dir, fake_server):
 
 def test_profile_effort_variants_load_once(data_dir, tmp_path, fake_server, monkeypatch):
     import contextlib
-    from agbench.eval import profile as pf
+    from agml_bench.eval import profile as pf
     loads = []
 
     @contextlib.contextmanager
@@ -375,7 +375,7 @@ def test_parse_letters_ignores_lowercase_words():
 
 
 def test_mcqa_ablation_options(data_dir):
-    from agbench.eval.items import MCQAOptions
+    from agml_bench.eval.items import MCQAOptions
     mc = lambda **kw: {it.item_id: it for it in build_items(data_dir, ["classification"], ["mcqa_within", "mcqa_across"], mcqa=MCQAOptions(**kw) if kw else None)[0]}
     base = mc()
     assert base == mc(nota_rate=0.3, order_seed=None, nota_position="end", idk=True)  # defaults unchanged
@@ -392,7 +392,7 @@ def test_mcqa_ablation_options(data_dir):
 
 
 def test_gen_seed_is_sent_per_item(data_dir, fake_server, tmp_path):
-    from agbench.eval.methods import item_seed
+    from agml_bench.eval.methods import item_seed
     FakeOpenAI.requests.clear()
     items = build_items(data_dir, ["classification"], ["mcqa_within"])[0][:3]
     Benchmark(items=items).run(VLMMethod(fake_server, "google/gemma-4-12B-it", gen_seed=7), tmp_path / "r", concurrency=1, resume=False)
@@ -401,7 +401,7 @@ def test_gen_seed_is_sent_per_item(data_dir, fake_server, tmp_path):
 
 
 def test_stats_bootstrap_and_tests():
-    from agbench.eval import stats as S
+    from agml_bench.eval import stats as S
     a = {f"d{i}": 0.6 + 0.01 * (i % 3) for i in range(30)}
     b = {k: v - 0.05 for k, v in a.items()}  # A beats B by 5 points on every dataset
     p = S.paired(a, b)

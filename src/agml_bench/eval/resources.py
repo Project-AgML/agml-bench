@@ -12,8 +12,8 @@ HERE = Path(__file__).resolve().parent
 
 @cache
 def load(name: str) -> dict:
-    """Load a packaged YAML; AGBENCH_<NAME> env var points to a replacement file."""
-    override = os.environ.get("AGBENCH_" + Path(name).stem.upper())
+    """Load a packaged YAML; AGML_BENCH_<NAME> env var points to a replacement file."""
+    override = os.environ.get("AGML_BENCH_" + Path(name).stem.upper())
     return yaml.safe_load(Path(override or HERE / name).read_text())
 
 
@@ -23,7 +23,7 @@ def prompts() -> dict:
 
 def models() -> dict:
     reg = load("models.yaml")
-    for p in filter(None, os.environ.get("AGBENCH_MODELS_EXTRA", "").split(os.pathsep)):
+    for p in filter(None, os.environ.get("AGML_BENCH_MODELS_EXTRA", "").split(os.pathsep)):
         if p not in reg.setdefault("_extra", []):
             register_models(p)
     return reg

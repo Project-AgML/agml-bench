@@ -9,7 +9,7 @@ DATA=/path/to/data_dir
 
 DATA=$DATA research/scripts/run_plan.sh research/experiments/seeds.plan     # Experiment 1
 DATA=$DATA research/scripts/run_plan.sh research/experiments/exp24.plan     # Experiments 2-4
-for s in 0 1 2; do uv run agbench eval baseline --data-dir $DATA --kind chance --gen-seed $s --out runs/baselines/chance/s$s; done
+for s in 0 1 2; do uv run agml-bench eval baseline --data-dir $DATA --kind chance --gen-seed $s --out runs/baselines/chance/s$s; done
 ```
 
 YOLO11 baselines (farm, Slurm):

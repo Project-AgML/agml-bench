@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=agbench-yolo
+#SBATCH --job-name=agml-bench-yolo
 #SBATCH --output=farm_outputs/%A.out
 #SBATCH --error=farm_outputs/%A.err
 #SBATCH --nodes=1
@@ -14,7 +14,7 @@
 #   sbatch --account=jmearlesgrp --partition=gpum --qos=gpum-users-gpum-qos --gpus-per-node=2 --cpus-per-task=20 --mem=64G \
 #          --export=ALL,YOLO_SIZE=s,PER_GPU=2 research/scripts/farm_yolo.sh research/experiments/yolo.plan
 # Every worker (PER_GPU per GPU) works through the unfinished plan lines (<shots> <subset>) in plan order, so the lines
-# finish one after another (put the most important first). agbench eval yolo claims each dataset (yolo-shared: each task) with a lock file, so any
+# finish one after another (put the most important first). agml-bench eval yolo claims each dataset (yolo-shared: each task) with a lock file, so any
 # number of workers in any number of jobs share a line without duplicating work, and a dataset claimed by a job that died
 # is picked up again. 15 min before the time limit the job resubmits
 # itself with the same settings if lines remain. Progress in <plan>.log; results in runs/yolo11<size>/.
@@ -37,12 +37,12 @@ resubmit() {
 }
 trap resubmit USR1
 
-( flock 7; uv sync --extra yolo -q ) 7>$HOME/.cache/agbench-uv-sync.lock
-W=$HOME/.cache/agbench/yolo; mkdir -p $W
+( flock 7; uv sync --extra yolo -q ) 7>$HOME/.cache/agml-bench-uv-sync.lock
+W=$HOME/.cache/agml_bench/yolo; mkdir -p $W
 ( flock 8; cd $W && uv run --project /group/jmearlesgrp/scratch/eranario/AGgentic-benchmarks --extra yolo python -c \
   "from ultralytics import YOLO; [YOLO(f'yolo11${YOLO_SIZE}{t}.pt') for t in ('-cls', '', '-seg')]" ) 8>$W/.download.lock
 
-worker() {  # works through the unfinished plan lines in plan order; datasets are claimed inside agbench eval yolo,
+worker() {  # works through the unfinished plan lines in plan order; datasets are claimed inside agml-bench eval yolo,
   local gpu=$1 idx=$2 lines n j l rc progress   # so all workers share the first unfinished line before moving on
   while true; do
     mapfile -t lines < <(todo); n=${#lines[@]}
@@ -52,7 +52,7 @@ worker() {  # works through the unfinished plan lines in plan order; datasets ar
       l=${lines[$j]}
       grep -qxF "$l" $DONE && continue
       read -r SHOTS SUBSET <<< "$l"
-      CUDA_VISIBLE_DEVICES=$gpu uv run --extra yolo agbench eval $YOLO_CMD --data-dir $DATA --shots $SHOTS --subset $SUBSET \
+      CUDA_VISIBLE_DEVICES=$gpu uv run --extra yolo agml-bench eval $YOLO_CMD --data-dir $DATA --shots $SHOTS --subset $SUBSET \
         --size $YOLO_SIZE --out $OUT >> farm_outputs/${OUT#runs/}_${SHOTS}shot_s${SUBSET}.log 2>&1
       rc=$?
       if [ $rc -eq 0 ]; then

@@ -5,8 +5,8 @@ from collections import defaultdict
 import numpy as np
 from sklearn.metrics import f1_score
 
-from agbench.eval.resources import norm
-from agbench.eval.scoring import rouge_l
+from agml_bench.eval.resources import norm
+from agml_bench.eval.scoring import rouge_l
 
 BOX_TASKS = ("detection", "segmentation")
 CLOSED = ("multiple_choice", "yes_no", "numeric")

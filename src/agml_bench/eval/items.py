@@ -10,9 +10,9 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from agbench.eval import agtask, crops
-from agbench.eval.resources import norm, pretty, prompts, seg_classes
-from agbench.eval.scoring import parse_number, parse_yes_no, similarity
+from agml_bench.eval import agtask, crops
+from agml_bench.eval.resources import norm, pretty, prompts, seg_classes
+from agml_bench.eval.scoring import parse_number, parse_yes_no, similarity
 
 TASKS = ["classification", "detection", "segmentation", "image_text_to_text"]
 FORMATS = {

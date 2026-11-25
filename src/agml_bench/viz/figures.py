@@ -6,7 +6,7 @@
 
 from pathlib import Path
 
-from agbench.viz.aggregate import AG, CLS_FORMATS, COLS, Entry
+from agml_bench.viz.aggregate import AG, CLS_FORMATS, COLS, Entry
 
 # Categorical slots in fixed order (validated for colour-vision deficiency; contrast relief: legend + tables)
 PALETTE = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"]

@@ -2,9 +2,9 @@
 
 import hashlib
 
-from agbench.eval.client import Client, Prediction, api_key_from_env, merge
-from agbench.eval.items import EvalItem
-from agbench.eval.resources import models, prompts
+from agml_bench.eval.client import Client, Prediction, api_key_from_env, merge
+from agml_bench.eval.items import EvalItem
+from agml_bench.eval.resources import models, prompts
 
 EFFORTS = ("low", "medium", "high")
 

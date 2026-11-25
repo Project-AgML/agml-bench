@@ -1,4 +1,4 @@
-"""run_manifest.json (what a run was, and whether its scores compare with the reference results) and `agbench eval
+"""run_manifest.json (what a run was, and whether its scores compare with the reference results) and `agml-bench eval
 check`: a run dir's files against the schema and its benchmark."""
 
 import json
@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 
-from agbench.eval import metrics as mx
+from agml_bench.eval import metrics as mx
 
 SCHEMA = 1
 REQUIRED = ("item_id", "dataset", "task", "format", "answer", "text", "correct", "parse_ok", "needs_judge", "judge_correct",
@@ -18,7 +18,7 @@ BY_TASK = {"classification": ("gt_label",), "detection": ("tp", "fp", "fn", "mea
 
 def _version() -> str | None:
     try:
-        return version("agbench")
+        return version("agml-bench")
     except PackageNotFoundError:
         return None
 
@@ -28,7 +28,7 @@ def _read_jsonl(p: Path) -> list[dict]:
 
 
 def _bundle(name: str | None):
-    from agbench import bench
+    from agml_bench import bench
 
     try:
         return bench.load(name) if name else None
@@ -38,7 +38,7 @@ def _bundle(name: str | None):
 
 def comparability(run: dict, records: list[dict]) -> list[str]:
     """Reasons a run's scores are not comparable with the benchmark's reference results (empty: comparable)."""
-    from agbench.bench import judge_prompt_sha
+    from agml_bench.bench import judge_prompt_sha
 
     bm = run.get("benchmark", {}).get("benchmark")
     if not bm:
@@ -55,7 +55,7 @@ def comparability(run: dict, records: list[dict]) -> list[str]:
         j = run.get("judge") or {}
         ref = (b.spec["judge"] if b else {}) or {}
         if any(r.get("needs_judge") and r.get("judge_correct") is None for r in records):
-            why.append("open-ended answers not judged yet (agbench eval judge)")
+            why.append("open-ended answers not judged yet (agml-bench eval judge)")
         elif j:
             if ref and j.get("model") != ref.get("model"):
                 why.append(f"judge {j.get('model')} is not the reference judge {ref.get('model')}")
@@ -65,7 +65,7 @@ def comparability(run: dict, records: list[dict]) -> list[str]:
 
 
 def manifest(run_dir, records: list[dict] | None = None) -> dict | None:
-    """Summary of a run: agbench version, benchmark (name, hash, variant), method and sampling, item seed, judge,
+    """Summary of a run: agml-bench version, benchmark (name, hash, variant), method and sampling, item seed, judge,
     coverage and comparability."""
     run_dir = Path(run_dir)
     if not (run_dir / "run.json").exists():
@@ -89,7 +89,7 @@ def manifest(run_dir, records: list[dict] | None = None) -> dict | None:
             1 for r in b.raw_items if r["dataset"] in cov["unavailable_datasets"])
     why = comparability(run, records)
     return {"schema": SCHEMA, "written": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "agbench": {"version": _version(), "git": run.get("agbench_git")}, "benchmark": bm,
+            "agml_bench": {"version": _version(), "git": run.get("agml_bench_git", run.get("agbench_git"))}, "benchmark": bm,
             "method": run.get("method"), "item_seed": args.get("seed"), "mcqa": args.get("mcqa"),
             "judge": run.get("judge"), "coverage": cov, "comparable": not why, "not_comparable": why}
 
@@ -171,11 +171,11 @@ def check_run(run_dir) -> dict:
     if (run_dir / "metrics.json").exists() and not bad_schema:
         stored = json.loads((run_dir / "metrics.json").read_text())
         fresh = json.loads(json.dumps(mx.compute([r for r in recs if r.get("item_id") in ids])))
-        # A dataset row's ag_task label (its most common bucket) broke ties by set order before agbench 0.1.0's fix;
+        # A dataset row's ag_task label (its most common bucket) broke ties by set order before the 0.1.0 fix;
         # runs from then can carry either label for a tied dataset. Scores are compared; that label is not.
         strip = lambda m: {**m, "datasets": [{k: v for k, v in r.items() if k != "ag_task"} for r in m.get("datasets", [])]}
         if not _same(strip(fresh), strip(stored)):
-            errors.append("metrics.json does not match predictions.jsonl (rewrite it: agbench eval check --rescore)")
+            errors.append("metrics.json does not match predictions.jsonl (rewrite it: agml-bench eval check --rescore)")
     elif not (run_dir / "metrics.json").exists():
         warnings.append("metrics.json missing (run not finished)")
 

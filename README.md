@@ -1,4 +1,4 @@
-# agml-benchmarks
+# agml-bench
 
 Benchmark vision-language models on [AgML](https://github.com/Project-AgML/AgML) agricultural datasets: classification, detection, segmentation and VQA.
 
@@ -11,7 +11,7 @@ AgriBench (in `agml-full-v1`) was removed from Hugging Face; `data pull` skips i
 ## Install
 
 ```bash
-git clone https://github.com/Project-AgML/agml-benchmarks.git && cd agml-benchmarks
+git clone https://github.com/Project-AgML/agml-bench.git && cd agml-bench
 uv sync
 hf auth login
 uv tool install vllm          # to serve models with --model
@@ -20,8 +20,8 @@ uv tool install vllm          # to serve models with --model
 Without a clone:
 
 ```bash
-uv tool install "agbench[viz]"        # or: pip install "agbench[viz]"
-agbench bench list
+uv tool install "agml-bench[viz]"        # or: pip install "agml-bench[viz]"
+agml-bench bench list
 ```
 
 ## Quick start
@@ -29,9 +29,9 @@ agbench bench list
 ```bash
 DATA=/path/to/data_dir
 
-uv run agbench data pull agml-full-v1 --data-dir $DATA
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge
-uv run agbench eval report --runs runs
+uv run agml-bench data pull agml-full-v1 --data-dir $DATA
+uv run agml-bench eval run --model my-org/My-VLM --data-dir $DATA --judge
+uv run agml-bench eval report --runs runs
 ```
 
 ## Run your model
@@ -39,33 +39,33 @@ uv run agbench eval report --runs runs
 Hugging Face repo or local checkpoint (served with vLLM):
 
 ```bash
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --judge
-uv run agbench eval run --model /path/to/checkpoint --data-dir $DATA --judge
+uv run agml-bench eval run --model my-org/My-VLM --data-dir $DATA --judge
+uv run agml-bench eval run --model /path/to/checkpoint --data-dir $DATA --judge
 ```
 
 Already served (any OpenAI-compatible endpoint):
 
 ```bash
-uv run agbench eval run --model my-org/My-VLM --endpoint http://localhost:8000 --data-dir $DATA --judge
+uv run agml-bench eval run --model my-org/My-VLM --endpoint http://localhost:8000 --data-dir $DATA --judge
 ```
 
 Hosted API (OpenAI-compatible):
 
 ```bash
 export OPENAI_API_KEY=...
-uv run agbench eval run --model gpt-5-mini --endpoint https://api.openai.com/v1 --api-key-env OPENAI_API_KEY --concurrency 8 --data-dir $DATA --judge
-uv run agbench eval run --model gemini-2.5-flash --endpoint https://generativelanguage.googleapis.com/v1beta/openai --api-key-env GEMINI_API_KEY --data-dir $DATA --judge
-uv run agbench eval run --model claude-sonnet-5-5 --endpoint https://api.anthropic.com/v1 --api-key-env ANTHROPIC_API_KEY --data-dir $DATA --judge
+uv run agml-bench eval run --model gpt-5-mini --endpoint https://api.openai.com/v1 --api-key-env OPENAI_API_KEY --concurrency 8 --data-dir $DATA --judge
+uv run agml-bench eval run --model gemini-2.5-flash --endpoint https://generativelanguage.googleapis.com/v1beta/openai --api-key-env GEMINI_API_KEY --data-dir $DATA --judge
+uv run agml-bench eval run --model claude-sonnet-5-5 --endpoint https://api.anthropic.com/v1 --api-key-env ANTHROPIC_API_KEY --data-dir $DATA --judge
 ```
 
 Model settings:
 
 ```bash
-uv run agbench eval run --model my-org/My-VLM --data-dir $DATA --models-file my_models.yaml --judge
+uv run agml-bench eval run --model my-org/My-VLM --data-dir $DATA --models-file my_models.yaml --judge
 ```
 
 ```yaml
-# my_models.yaml (fields as in src/agbench/eval/models.yaml)
+# my_models.yaml (fields as in src/agml_bench/eval/models.yaml)
 my-org/My-VLM:
   serve_args: [--max-model-len, "32768"]
   sampling: {temperature: 0.7, top_p: 0.95}
@@ -79,11 +79,11 @@ my-org/My-VLM:
 Your own method:
 
 ```bash
-uv run agbench eval run --method mypkg.methods:MyMethod --data-dir $DATA
+uv run agml-bench eval run --method mypkg.methods:MyMethod --data-dir $DATA
 ```
 
 ```python
-from agbench.eval import Benchmark, EvalItem, Method
+from agml_bench.eval import Benchmark, EvalItem, Method
 
 class MyMethod(Method):
     name = "my-method"
@@ -113,47 +113,47 @@ res.metrics
 ## Results
 
 ```bash
-uv run agbench eval check runs/<run_dir>                        # files, schema, items vs benchmark, coverage, comparable
-uv run agbench eval judge --run runs/<run_dir>
-uv run agbench eval judge --run runs/<run_dir> --judge-model gpt-5-mini --judge-endpoint https://api.openai.com/v1 --judge-api-key-env OPENAI_API_KEY   # not comparable
-uv run agbench eval report --runs runs
-uv run agbench eval report --runs runs --csv reports/scores     # scores.csv, ag_tasks.csv, datasets.csv
-uv run agbench eval report --runs runs --html reports/report.html                       # charts, tables, runs; one offline file
-uv sync --extra viz && uv run agbench eval report --runs runs --figures reports/figures   # paper figures (PNG)
-uv run agbench eval report --runs runs --html reports/report.html --label "my-org/My-VLM=My VLM" --label "baseline/chance=Chance"
-uv run agbench eval stats --runs runs --out reports/stats
-uv run agbench eval view --runs runs                            # http://localhost:8502
+uv run agml-bench eval check runs/<run_dir>                        # files, schema, items vs benchmark, coverage, comparable
+uv run agml-bench eval judge --run runs/<run_dir>
+uv run agml-bench eval judge --run runs/<run_dir> --judge-model gpt-5-mini --judge-endpoint https://api.openai.com/v1 --judge-api-key-env OPENAI_API_KEY   # not comparable
+uv run agml-bench eval report --runs runs
+uv run agml-bench eval report --runs runs --csv reports/scores     # scores.csv, ag_tasks.csv, datasets.csv
+uv run agml-bench eval report --runs runs --html reports/report.html                       # charts, tables, runs; one offline file
+uv sync --extra viz && uv run agml-bench eval report --runs runs --figures reports/figures   # paper figures (PNG)
+uv run agml-bench eval report --runs runs --html reports/report.html --label "my-org/My-VLM=My VLM" --label "baseline/chance=Chance"
+uv run agml-bench eval stats --runs runs --out reports/stats
+uv run agml-bench eval view --runs runs                            # http://localhost:8502
 ```
 
-`runs/<run_dir>/run_manifest.json`: agbench version, benchmark name and hash, model and sampling, judge, coverage, `comparable`.
+`runs/<run_dir>/run_manifest.json`: agml-bench version, benchmark name and hash, model and sampling, judge, coverage, `comparable`.
 
 ## Benchmarks
 
 ```bash
-uv run agbench bench list
-uv run agbench bench show agml-full-v1
-uv run agbench data pull agml-full-v1 --data-dir $DATA --task classification
-uv run agbench data status agml-full-v1 --data-dir $DATA
-uv run agbench data verify agml-full-v1 --data-dir $DATA
+uv run agml-bench bench list
+uv run agml-bench bench show agml-full-v1
+uv run agml-bench data pull agml-full-v1 --data-dir $DATA --task classification
+uv run agml-bench data status agml-full-v1 --data-dir $DATA
+uv run agml-bench data verify agml-full-v1 --data-dir $DATA
 ```
 
 ## Baselines
 
 ```bash
-uv run agbench eval baseline --kind chance --data-dir $DATA --out runs/baselines/chance
+uv run agml-bench eval baseline --kind chance --data-dir $DATA --out runs/baselines/chance
 ```
 
 ```bash
 uv sync --extra yolo
-uv run agbench sample-train --data-dir $DATA --from-manifest
-uv run --extra yolo agbench eval yolo-shared --data-dir $DATA --shots 10 --subset 0
+uv run agml-bench sample-train --data-dir $DATA --from-manifest
+uv run --extra yolo agml-bench eval yolo-shared --data-dir $DATA --shots 10 --subset 0
 ```
 
 ## More
 
-- New benchmark versions, catalog, sampling, profiling: [docs/building.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/docs/building.md)
-- Paper experiments: [research/README.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/research/README.md)
-- Evaluation rules: [docs/benchmarking.md](https://github.com/Project-AgML/agml-benchmarks/blob/main/docs/benchmarking.md)
+- New benchmark versions, catalog, sampling, profiling: [docs/building.md](https://github.com/Project-AgML/agml-bench/blob/main/docs/building.md)
+- Paper experiments: [research/README.md](https://github.com/Project-AgML/agml-bench/blob/main/research/README.md)
+- Evaluation rules: [docs/benchmarking.md](https://github.com/Project-AgML/agml-bench/blob/main/docs/benchmarking.md)
 
 ## Tests
 
@@ -163,4 +163,4 @@ uv run pytest
 
 ## License
 
-Code: Apache-2.0 ([LICENSE](https://github.com/Project-AgML/agml-benchmarks/blob/main/LICENSE)). Images and labels: each dataset's own license (`license` in [catalog/catalog.json](https://github.com/Project-AgML/agml-benchmarks/blob/main/catalog/catalog.json)).
+Code: Apache-2.0 ([LICENSE](https://github.com/Project-AgML/agml-bench/blob/main/LICENSE)). Images and labels: each dataset's own license (`license` in [catalog/catalog.json](https://github.com/Project-AgML/agml-bench/blob/main/catalog/catalog.json)).
